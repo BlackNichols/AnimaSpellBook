@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AnimaSpellBookEntry",
+  "description": "Schema for Anima Beyond Fantasy (Core Exxet) spells for web storage and LaTeX generation",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "category",
+    "action",
+    "type",
+    "daily_maintenance",
+    "effect",
+    "grades",
+    "metadata"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique kebab-case slug identifier (e.g. fire-ball, alter-destiny)",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name of the spell"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["main", "secondary", "free_access"]
+    },
+    "path": {
+      "type": ["string", "null"],
+      "description": "The magic path to which the spell belongs, or null for Free Access",
+      "enum": [
+        "Light",
+        "Darkness",
+        "Creation",
+        "Destruction",
+        "Necromancy",
+        "Fire",
+        "Water",
+        "Earth",
+        "Air",
+        "Essence",
+        "Illusion",
+        "Chaos",
+        "War",
+        "Literature",
+        "Death",
+        "Music",
+        "Nobility",
+        "Sin",
+        "Knowledge",
+        "Blood",
+        "Dreams",
+        "Time",
+        "Peace",
+        "Umbra",
+        "Void",
+        null
+      ]
+    },
+    "path_type": {
+      "type": ["string", "null"],
+      "description": "Whether a main path is major or minor. Null for secondary and free access spells.",
+      "enum": ["major", "minor", null]
+    },
+    "level": {
+      "type": "integer",
+      "description": "Spell level for Main and Secondary path spells",
+      "minimum": 2,
+      "maximum": 100
+    },
+    "level_bracket": {
+      "type": "array",
+      "description": "Spell level range [min, max] for Free Access spells",
+      "items": { "type": "integer" },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "action": {
+      "type": "string",
+      "description": "Action type required to cast the spell",
+      "enum": ["Active", "Passive"]
+    },
+    "type": {
+      "type": "string",
+      "description": "Functional spell type",
+      "enum": ["Effect", "Spiritual", "Automatic", "Defense", "Detection", "Attack"]
+    },
+    "daily_maintenance": {
+      "type": "boolean",
+      "description": "True if maintenance is paid on a daily basis; false if turn-based"
+    },
+    "effect": {
+      "type": "string",
+      "description": "General summary / concept description of the spell"
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Filterable and queryable metadata attributes",
+      "required": ["is_aoe", "magic_resistance_cap"],
+      "properties": {
+        "is_aoe": {
+          "type": "boolean",
+          "description": "Whether the spell affects an area"
+        },
+        "magic_resistance_cap": {
+          "type": ["integer", "null"],
+          "description": "MR value needed to overcome the spell, or null if no MR check"
+        },
+        "tags": {
+          "type": "array",
+          "description": "Search and filter tags (e.g. Damage, Healing, Buff, Barrier)",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "grades": {
+      "type": "object",
+      "description": "The 4 casting grades (Core Exxet). All 4 grades are strictly required.",
+      "required": ["initial", "intermediate", "advanced", "arcane"],
+      "properties": {
+        "initial": { "$ref": "#/$defs/grade" },
+        "intermediate": { "$ref": "#/$defs/grade" },
+        "advanced": { "$ref": "#/$defs/grade" },
+        "arcane": { "$ref": "#/$defs/grade" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "grade": {
+      "type": "object",
+      "required": ["zeon", "min_int", "maintenance", "description"],
+      "properties": {
+        "zeon": {
+          "type": "integer",
+          "description": "Zeon cost to cast at this grade",
+          "minimum": 0
+        },
+        "min_int": {
+          "type": "integer",
+          "description": "Minimum Intelligence characteristic required",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "maintenance": {
+          "type": ["integer", "null"],
+          "description": "Zeon cost to maintain the spell. null if spell cannot be maintained.",
+          "minimum": 0
+        },
+        "description": {
+          "type": "string",
+          "description": "Specific effect and mechanical rules when cast at this grade"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
