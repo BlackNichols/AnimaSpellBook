@@ -61,6 +61,51 @@
           </section>
 
           <section class="filter-section">
+            <button type="button" class="filter-section-toggle" @click="toggleSection('action')" :aria-expanded="isOpen('action').toString()">
+              <span class="filter-section-title">Action</span>
+              <span class="filter-section-chevron" aria-hidden="true" x-text="isOpen('action') ? '▾' : '▸'"></span>
+            </button>
+            <div class="filter-section-body" x-show="isOpen('action')">
+              <div class="checkbox-group" role="radiogroup" aria-label="Action">
+                <label class="checkbox-item"><input type="radio" name="action" :checked="filters.action === 'all'" @change="updateAction('all')" /><span>All</span></label>
+                <label class="checkbox-item"><input type="radio" name="action" :checked="filters.action === 'Active'" @change="updateAction('Active')" /><span>Active</span></label>
+                <label class="checkbox-item"><input type="radio" name="action" :checked="filters.action === 'Passive'" @change="updateAction('Passive')" /><span>Passive</span></label>
+              </div>
+            </div>
+          </section>
+
+          <section class="filter-section">
+            <button type="button" class="filter-section-toggle" @click="toggleSection('types')" :aria-expanded="isOpen('types').toString()">
+              <span class="filter-section-title">Types</span>
+              <span class="filter-section-chevron" aria-hidden="true" x-text="isOpen('types') ? '▾' : '▸'"></span>
+            </button>
+            <div class="filter-section-body" x-show="isOpen('types')">
+              <div class="checkbox-group">
+                <template x-for="t in types" :key="t">
+                  <label class="checkbox-item">
+                    <input type="checkbox" :value="t" :checked="filters.types.includes(t)" @change="updateTypes(t, $event.target.checked)" />
+                    <span x-text="t"></span>
+                  </label>
+                </template>
+              </div>
+            </div>
+          </section>
+
+          <section class="filter-section">
+            <button type="button" class="filter-section-toggle" @click="toggleSection('aoe')" :aria-expanded="isOpen('aoe').toString()">
+              <span class="filter-section-title">Area of Effect</span>
+              <span class="filter-section-chevron" aria-hidden="true" x-text="isOpen('aoe') ? '▾' : '▸'"></span>
+            </button>
+            <div class="filter-section-body" x-show="isOpen('aoe')">
+              <div class="checkbox-group" role="radiogroup" aria-label="Area of Effect">
+                <label class="checkbox-item"><input type="radio" name="aoe" :checked="filters.isAoe === null" @change="updateAoe(null)" /><span>All</span></label>
+                <label class="checkbox-item"><input type="radio" name="aoe" :checked="filters.isAoe === true" @change="updateAoe(true)" /><span>AoE only</span></label>
+                <label class="checkbox-item"><input type="radio" name="aoe" :checked="filters.isAoe === false" @change="updateAoe(false)" /><span>Non-AoE only</span></label>
+              </div>
+            </div>
+          </section>
+
+          <section class="filter-section">
             <button
               type="button"
               class="filter-section-toggle"

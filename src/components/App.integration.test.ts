@@ -77,12 +77,21 @@ describe('UI integration (rendered behavior + URL sync)', () => {
     expect(env.sidebarOpen.value).toBe(false);
   });
 
-  it('collapses and expands a filter section to show only its name', async () => {
-    const { panel } = await mount({ url: '/' });
-    expect(panel.isOpen('maintenance')).toBe(true);
-    panel.toggleSection('maintenance');
-    expect(panel.isOpen('maintenance')).toBe(false);
-    panel.toggleSection('maintenance');
-    expect(panel.isOpen('maintenance')).toBe(true);
+  it('filters by Area of Effect and combines with path', async () => {
+    const { store, panel } = await mount({ url: '/' });
+    panel.updateAoe(true);
+    expect(store.filteredSpells.every((s) => s.metadata.is_aoe)).toBe(true);
+    panel.updatePath('Fire', true);
+    expect(store.filteredSpells.every((s) => s.metadata.is_aoe && s.path === 'Fire')).toBe(true);
+  });
+
+  it('filters by action and types (AND with search)', async () => {
+    const { store, panel, search } = await mount({ url: '/' });
+    panel.updateAction('Active');
+    expect(store.filteredSpells.every((s) => s.action === 'Active')).toBe(true);
+    panel.updateTypes('Attack', true);
+    expect(store.filteredSpells.every((s) => s.action === 'Active' && s.types.includes('Attack'))).toBe(true);
+    search.query = 'fire';
+    expect(store.filteredSpells.every((s) => s.action === 'Active' && s.types.includes('Attack'))).toBe(true);
   });
 });

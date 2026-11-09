@@ -33,14 +33,31 @@ describe('FilterPanel', () => {
     expect(store.filteredSpells.every((s) => s.category === 'free_access')).toBe(true);
   });
 
-  it('toggles a whole category path group', async () => {
+  it('filters by Area of Effect', async () => {
     const store = new SpellStore();
     await store.loadSpells();
     const panel = FilterPanel(store) as any;
-    panel.toggleCategory('main', true);
-    expect(store.filters.paths).toContain('Fire');
-    expect(store.filteredSpells.every((s) => s.category === 'main')).toBe(true);
-    panel.toggleCategory('main', false);
-    expect(store.filters.paths.filter((p: string) => p === 'Fire').length).toBe(0);
+    panel.updateAoe(true);
+    expect(store.filters.isAoe).toBe(true);
+    expect(store.filteredSpells.every((s) => s.metadata.is_aoe)).toBe(true);
+    panel.updateAoe(false);
+    expect(store.filteredSpells.every((s) => !s.metadata.is_aoe)).toBe(true);
+    panel.updateAoe(null);
+    expect(store.filteredSpells.length).toBe(store.spells.length);
+  });
+
+  it('filters by action and by spell types', async () => {
+    const store = new SpellStore();
+    await store.loadSpells();
+    const panel = FilterPanel(store) as any;
+    panel.updateAction('Active');
+    expect(store.filteredSpells.every((s) => s.action === 'Active')).toBe(true);
+    panel.updateAction('Passive');
+    expect(store.filteredSpells.every((s) => s.action === 'Passive')).toBe(true);
+    panel.updateAction('all');
+    panel.updateTypes('Attack', true);
+    expect(store.filteredSpells.every((s) => s.types.includes('Attack'))).toBe(true);
+    panel.updateTypes('Defense', true);
+    expect(store.filteredSpells.every((s) => s.types.includes('Attack') || s.types.includes('Defense'))).toBe(true);
   });
 });

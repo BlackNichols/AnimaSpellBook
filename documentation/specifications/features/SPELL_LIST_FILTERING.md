@@ -41,12 +41,12 @@ All filters combine with **AND** by default. **OR** between filters is a future 
 |--------|------|---------------------|
 | **Category + Path** | Checkbox groups | Main/Secondary paths by name; `free_access` (Free Access). `paths` URL param stores selected keys; AND with other filters. (Implemented) |
 | **Maintenance** | Tri-state | `no` (no maintenance at any grade), `yes` (maintenance on any grade), `daily only` (`daily_maintenance == true`) |
-| **Area of Effect** | Boolean | `metadata.is_aoe` — yes / no |
+| **Area of Effect** | Boolean | `metadata.is_aoe` — All / AoE only / Non-AoE only. (Implemented) |
 | **Level** | Min / Max / Range | Main & Secondary spells: `level` integer.<br>Free Access spells: `level_bracket` `[low, high]` — a bracket overlaps the range if `low <= max AND high >= min`; Free Access spells are excluded when the filter value is not a multiple of 10 |
 | **Zeon cost** | Min / Max / Range | Per-grade `zeon`. Match mode: **any grade** (default) or **highest cost** (arcane grade) |
 | **Min Intelligence** | Min / Max / Range | Per-grade `min_int`. Match mode: **any grade** (default) or **highest** (arcane grade) |
-| **Action** | Single-select | `Active` / `Passive` / `All` |
-| **Types** | Multi-select | `Effect`, `Spiritual`, `Automatic`, `Defense`, `Detection`, `Attack` |
+| **Action** | Single-select | `Active` / `Passive` / `All`. (Implemented) |
+| **Types** | Multi-select | `Effect`, `Spiritual`, `Automatic`, `Defense`, `Detection`, `Attack` (match any selected). (Implemented) |
 
 ## 4. Filter Combination
 

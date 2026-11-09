@@ -7,6 +7,8 @@ export function FilterPanel(store: SpellStore) {
     { key: 'secondary', label: 'Secondary', paths: SECONDARY_PATH_ORDER },
   ];
 
+  const allTypes = ['Attack', 'Defense', 'Effect', 'Detection', 'Automatic', 'Spiritual'] as const;
+
   return {
     openSections: {} as Record<string, boolean>,
     get filters() {
@@ -14,6 +16,9 @@ export function FilterPanel(store: SpellStore) {
     },
     get categories() {
       return categories;
+    },
+    get types() {
+      return allTypes;
     },
     get availablePaths() {
       const seen = new Set<string>();
