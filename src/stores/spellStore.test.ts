@@ -25,4 +25,23 @@ describe('SpellStore.loadSpells', () => {
     expect(firstSecondary).toBeGreaterThan(0);
     expect(firstFree).toBeGreaterThan(firstSecondary);
   });
+
+  it('filters by search query and ranks name matches first', async () => {
+    const store = new SpellStore();
+    await store.loadSpells();
+    const total = store.spells.length;
+    store.setSearchQuery('fire');
+    expect(store.filteredSpells.length).toBeGreaterThan(0);
+    expect(store.filteredSpells.length).toBeLessThan(total);
+    expect(store.filteredSpells[0]!.name.toLowerCase()).toContain('fire');
+  });
+
+  it('restores default order when search query is cleared', async () => {
+    const store = new SpellStore();
+    await store.loadSpells();
+    const defaultIds = store.filteredSpells.map((s) => s.id);
+    store.setSearchQuery('fire');
+    store.setSearchQuery('');
+    expect(store.filteredSpells.map((s) => s.id)).toEqual(defaultIds);
+  });
 });

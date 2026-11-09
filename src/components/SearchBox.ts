@@ -13,5 +13,8 @@ export function SearchBox(store: SpellStore) {
         store.setSearchQuery(val);
       });
     },
+    search() {
+      store.setSearchQuery(this.query);
+    },
   };
 }

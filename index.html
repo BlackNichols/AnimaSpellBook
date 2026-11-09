@@ -18,6 +18,18 @@
       <main class="main-layout">
         <aside class="filter-panel" x-data="filterPanel()" aria-label="Filters" hidden></aside>
         <section class="spell-list" x-data="spellTable()">
+          <div class="search-box" x-data="searchBox()">
+            <label class="visually-hidden" for="spell-search">Search spells</label>
+            <input
+              id="spell-search"
+              class="search-input"
+              type="search"
+              placeholder="Search by name, effect, or grade description"
+              x-model="query"
+              @input="search()"
+              autocomplete="off"
+            />
+          </div>
           <div class="stats-bar" x-cloak>
             <span x-text="`${rows.length} of ${total} spells`"></span>
           </div>
@@ -49,7 +61,6 @@
         </section>
       </main>
 
-      <div x-data="searchBox()" hidden></div>
       <div x-data="urlSync()" hidden></div>
     </div>
 

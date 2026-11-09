@@ -272,6 +272,28 @@ describe('search', () => {
     expect(scoreSpell(mockSpell, '   ')).toBe(1);
   });
 
+  it('matches name, effect, and grade descriptions per spec 2.3', () => {
+    const base = { ...mockSpell, name: 'Other', effect: 'Nothing' };
+    expect(
+      scoreSpell(
+        { ...base, effect: 'Creates fire' },
+        'fire'
+      )
+    ).toBeGreaterThan(0);
+    expect(
+      scoreSpell(
+        {
+          ...base,
+          grades: {
+            ...base.grades,
+            arcane: { ...base.grades.arcane, description: 'Arcane inferno blast' },
+          },
+        },
+        'inferno'
+      )
+    ).toBeGreaterThan(0);
+  });
+
   it('filters and sorts spells', () => {
     const results = filterAndSortSpells(
       [mockSpell],

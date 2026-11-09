@@ -1,4 +1,5 @@
 import { compareSpellsDefault } from '@/utils/sort';
+import { filterAndSortSpells } from '@/utils/search';
 
 const spellModules = import.meta.glob('../../data/spells/**/*.json', {
   eager: true,
@@ -190,7 +191,12 @@ export class SpellStore {
   }
 
   applyFilters() {
-    this.filteredSpells = this.spells;
+    this.filteredSpells = filterAndSortSpells(
+      this.spells,
+      this.filters,
+      this.searchQuery,
+      this.sort
+    );
     this.notify();
   }
 

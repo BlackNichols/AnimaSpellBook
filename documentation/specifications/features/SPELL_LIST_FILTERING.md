@@ -9,7 +9,8 @@ A client-only web page displaying a searchable, filterable list of spells from t
 
 ### 2.1 Columns
 
-- **Default visible columns:** `name`, `path`, `level`, `effect` (labeled "Description" in the UI)
+- **Default visible columns:** `name`, `path`, `level`, `effect` (labeled "Description" in the UI). (Implemented; `effect` is used as the description column for now.)
+
   - `path`: spell path name; Free Access spells display `Free Access` (their `path` is `null`).
   - `level`: `level` for Main/Secondary spells; Free Access spells display their `level_bracket` as `low-high` (e.g. `1-10`).
 - **User-customizable columns:** the user can add or remove columns from all available spell fields

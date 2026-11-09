@@ -5,7 +5,7 @@ import { FilterPanel } from './components/FilterPanel';
 import { SearchBox } from './components/SearchBox';
 import { URLSync } from './components/URLSync';
 
-const spellStore = new SpellStore();
+const spellStore = Alpine.reactive(new SpellStore());
 
 Alpine.data('app', () => ({
   async init() {
