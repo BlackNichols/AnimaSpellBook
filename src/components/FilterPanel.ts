@@ -28,8 +28,18 @@ export function FilterPanel(store: SpellStore) {
         paths: c.paths.filter((p) => seen.size === 0 || seen.has(p)),
       }));
     },
+    isActive(key: string) {
+      const f = store.filters;
+      if (key === 'category') return f.paths.length > 0;
+      if (key === 'action') return f.action !== 'all';
+      if (key === 'types') return f.types.length > 0;
+      if (key === 'aoe') return f.isAoe !== null;
+      if (key === 'maintenance') return f.maintenance !== 'all';
+      return false;
+    },
     isOpen(key: string) {
-      return this.openSections[key] !== false;
+      if (key in this.openSections) return this.openSections[key];
+      return this.isActive(key);
     },
     toggleSection(key: string) {
       this.openSections[key] = !this.isOpen(key);

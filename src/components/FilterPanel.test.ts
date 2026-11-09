@@ -12,13 +12,18 @@ describe('FilterPanel', () => {
     expect(store.filteredSpells.every((s) => s.daily_maintenance)).toBe(true);
   });
 
-  it('toggles a filter section collapsed state', async () => {
+  it('starts filter sections minimized unless selected, and toggles', async () => {
     const store = new SpellStore();
     await store.loadSpells();
     const panel = FilterPanel(store) as any;
+    expect(panel.isOpen('maintenance')).toBe(false);
+    expect(panel.isOpen('action')).toBe(false);
+    panel.toggleSection('maintenance');
     expect(panel.isOpen('maintenance')).toBe(true);
     panel.toggleSection('maintenance');
     expect(panel.isOpen('maintenance')).toBe(false);
+    panel.updateMaintenance('daily');
+    expect(panel.isActive('maintenance')).toBe(true);
   });
 
   it('filters by path and by free access (category+path groups)', async () => {

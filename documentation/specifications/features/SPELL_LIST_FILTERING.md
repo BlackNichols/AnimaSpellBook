@@ -36,6 +36,7 @@ Search results are ranked by full-text search scoring when a query is present.
 ## 3. Filters
 
 All filters combine with **AND** by default. **OR** between filters is a future incremental enhancement.
+Filter sections start minimized unless the filter is selected (including via URL query parameters).
 
 | Filter | Type | Options / semantics |
 |--------|------|---------------------|
