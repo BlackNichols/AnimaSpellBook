@@ -5,10 +5,8 @@ import { FilterPanel } from './components/FilterPanel';
 import { SearchBox } from './components/SearchBox';
 import { URLSync } from './components/URLSync';
 
-// Global spell store instance
 const spellStore = new SpellStore();
 
-// Register Alpine components
 Alpine.data('app', () => ({
   async init() {
     await spellStore.loadSpells();
@@ -20,7 +18,6 @@ Alpine.data('filterPanel', () => FilterPanel(spellStore));
 Alpine.data('searchBox', () => SearchBox(spellStore));
 Alpine.data('urlSync', () => URLSync(spellStore));
 
-// Make Alpine available globally for debugging
 declare global {
   interface Window {
     Alpine: typeof Alpine;

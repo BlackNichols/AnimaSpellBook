@@ -9,14 +9,16 @@ A client-only web page displaying a searchable, filterable list of spells from t
 
 ### 2.1 Columns
 
-- **Default visible columns:** `name`, `description`
+- **Default visible columns:** `name`, `path`, `level`, `effect` (labeled "Description" in the UI)
+  - `path`: spell path name; Free Access spells display `Free Access` (their `path` is `null`).
+  - `level`: `level` for Main/Secondary spells; Free Access spells display their `level_bracket` as `low-high` (e.g. `1-10`).
 - **User-customizable columns:** the user can add or remove columns from all available spell fields
   (path, level, action, types, daily_maintenance, zeon cost, min_int, etc.)
 
 ### 2.2 Sorting
 
 Results can be sorted by:
-- default order,
+- default order (Main paths in order: Light, Darkness, Creation, Destruction, Air, Water, Fire, Earth, Essence, Illusion, Necromancy; then Secondary paths in order: Chaos, War, Literature, Death, Music, Nobility, Peace, Sin, Knowledge, Blood, Dreams, Time, Umbra, Void; then Free Access. Within a path spells are ordered by `level`. Free Access spells are ordered by `level_bracket` start (`1-10`, `10-20`, …), then alphabetically by `name`.),
 - name (asc/desc),
 - level (asc/desc),
 - zeon cost (asc/desc).

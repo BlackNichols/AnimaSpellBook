@@ -1,3 +1,10 @@
+import { compareSpellsDefault } from '@/utils/sort';
+
+const spellModules = import.meta.glob('../../data/spells/**/*.json', {
+  eager: true,
+  import: 'default',
+}) as Record<string, Spell[]>;
+
 export interface Spell {
   id: string;
   name: string;
@@ -67,6 +74,10 @@ export interface ColumnState {
   all: string[];
 }
 
+function loadBundledSpells(): Spell[] {
+  return Object.values(spellModules).flat().sort(compareSpellsDefault);
+}
+
 export class SpellStore {
   spells: Spell[] = [];
   filteredSpells: Spell[] = [];
@@ -88,7 +99,7 @@ export class SpellStore {
   searchQuery = '';
   sort: SortState = { field: 'default', direction: 'asc' };
   columns: ColumnState = {
-    visible: ['name', 'description'],
+    visible: ['name', 'path', 'level', 'effect'],
     all: [],
   };
 
@@ -100,12 +111,11 @@ export class SpellStore {
   }
 
   private notify() {
-    this.subscribers.forEach(fn => fn());
+    this.subscribers.forEach((fn) => fn());
   }
 
   async loadSpells() {
-    const res = await fetch('/src/data/spells.json');
-    this.spells = await res.json();
+    this.spells = loadBundledSpells();
     this.columns.all = this.getAllSpellFields();
     this.applyFilters();
   }
@@ -114,7 +124,7 @@ export class SpellStore {
     if (this.spells.length === 0) return [];
     const sample = this.spells[0]!;
     const fields = new Set<string>();
-    Object.keys(sample).forEach(key => {
+    Object.keys(sample).forEach((key) => {
       if (key !== 'grades' && key !== 'metadata') fields.add(key);
     });
     const gradeKeys = [
@@ -126,8 +136,8 @@ export class SpellStore {
       'description',
     ];
     const grades = ['initial', 'intermediate', 'advanced', 'arcane'];
-    grades.forEach(g => gradeKeys.forEach(k => fields.add(`${g}_${k}`)));
-    Object.keys(sample.metadata || {}).forEach(key => fields.add(`metadata_${key}`));
+    grades.forEach((g) => gradeKeys.forEach((k) => fields.add(`${g}_${k}`)));
+    Object.keys(sample.metadata || {}).forEach((key) => fields.add(`metadata_${key}`));
     return Array.from(fields).sort();
   }
 
@@ -203,9 +213,11 @@ export class SpellStore {
     if (this.sort.field !== 'default')
       params.set('sort', `${this.sort.field}:${this.sort.direction}`);
     if (
-      this.columns.visible.length !== 2 ||
+      this.columns.visible.length !== 4 ||
       this.columns.visible[0] !== 'name' ||
-      this.columns.visible[1] !== 'description'
+      this.columns.visible[1] !== 'path' ||
+      this.columns.visible[2] !== 'level' ||
+      this.columns.visible[3] !== 'effect'
     ) {
       params.set('cols', this.columns.visible.join(','));
     }

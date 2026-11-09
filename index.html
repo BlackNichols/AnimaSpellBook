@@ -1,30 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anima Spellbook</title>
-  <link rel="stylesheet" href="/src/styles/variables.css" />
-  <link rel="stylesheet" href="/src/styles/base.css" />
-  <link rel="stylesheet" href="/src/styles/layout.css" />
-  <link rel="stylesheet" href="/src/styles/components.css" />
-</head>
-<body>
-  <div id="app" x-data="app()">
-    <header class="header">
-      <h1>Anima Spellbook</h1>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anima Spellbook</title>
+    <link rel="stylesheet" href="/src/styles/variables.css" />
+    <link rel="stylesheet" href="/src/styles/base.css" />
+    <link rel="stylesheet" href="/src/styles/layout.css" />
+    <link rel="stylesheet" href="/src/styles/components.css" />
+  </head>
+  <body>
+    <div id="app" x-data="app()">
+      <header class="header">
+        <h1>Anima Spellbook</h1>
+      </header>
 
-    <main class="main-layout">
-      <aside class="filter-panel" x-data="filterPanel()"></aside>
-      <section class="spell-list" x-data="spellTable()"></section>
-    </main>
+      <main class="main-layout">
+        <aside class="filter-panel" x-data="filterPanel()" aria-label="Filters" hidden></aside>
+        <section class="spell-list" x-data="spellTable()">
+          <div class="stats-bar" x-cloak>
+            <span x-text="`${rows.length} of ${total} spells`"></span>
+          </div>
+          <div class="table-wrapper">
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <template x-for="col in columns" :key="col">
+                      <th scope="col" x-text="columnLabel(col)"></th>
+                    </template>
+                  </tr>
+                </thead>
+                <tbody>
+                  <template x-for="spell in rows" :key="spell.id">
+                    <tr>
+                      <template x-for="col in columns" :key="`${spell.id}-${col}`">
+                        <td x-text="formatValue(getField(spell, col))"></td>
+                      </template>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <template x-if="rows.length === 0">
+            <div class="empty-state">No spells loaded.</div>
+          </template>
+        </section>
+      </main>
 
-    <div x-data="searchBox()"></div>
-    <div x-data="urlSync()"></div>
-  </div>
+      <div x-data="searchBox()" hidden></div>
+      <div x-data="urlSync()" hidden></div>
+    </div>
 
-  <script type="module" src="/src/main.ts"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.0/dist/cdn.min.js"></script>
-</body>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>

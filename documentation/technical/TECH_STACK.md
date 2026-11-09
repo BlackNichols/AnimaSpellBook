@@ -15,7 +15,7 @@
 | **Reactivity** | Alpine.js v3 (~15kb gzipped) | Declarative, DOM-native (`x-data`, `x-bind`, `x-on`), zero virtual DOM, trivial to debug in DevTools |
 | **State Management** | Alpine component stores + single global `SpellStore` | Colocated with markup, reactive proxies, no external deps |
 | **Routing / URL Sync** | Native `URLSearchParams` + `history.pushState` | Transparent, bookmarkable, no router library |
-| **Data Loading** | `fetch` + JSON import at build time | Embedded dataset, no runtime I/O after load |
+| **Data Loading** | Build-time bundled JSON only (`import.meta.glob`, eager). **Client-only, no server, no runtime `fetch`.** | All spell data is included in the static build output; no network I/O after load |
 
 ## 3. Styling
 
@@ -38,6 +38,12 @@
 ## 5. Project Structure (Planned)
 
 ```
+data/
+└── spells/                 # Source-of-truth spell dataset (bundled at build time)
+    ├── free_access.json
+    ├── main/*.json
+    └── secondary/*.json
+
 src/
 ├── main.ts                 # App bootstrap, registers Alpine components
 ├── stores/
@@ -52,13 +58,11 @@ src/
 │   ├── search.ts           # Full-text scoring (testable)
 │   ├── sort.ts             # Sort comparators (testable)
 │   └── url.ts              # URL <-> state serialization
-├── styles/
-│   ├── variables.css       # Design tokens (colors, spacing, typography)
-│   ├── base.css            # Reset, typography
-│   ├── components.css      # Component-scoped styles
-│   └── layout.css          # Grid/Flex layouts
-└── data/
-    └── spells.json         # Embedded dataset (from JSON_DATA_FORMAT.md)
+└── styles/
+    ├── variables.css       # Design tokens (colors, spacing, typography)
+    ├── base.css            # Reset, typography
+    ├── components.css      # Component-scoped styles
+    └── layout.css          # Grid/Flex layouts
 ```
 
 ## 6. Key Architectural Principles
@@ -68,3 +72,4 @@ src/
 3. **URL as source of truth for shareable state** — filters, search, sort, columns ↔ `URLSearchParams` (bidirectional)
 4. **No hidden transforms** — CSS is authored CSS; Alpine templates are plain HTML attributes
 5. **Agent-friendly** — every behavior visible in DevTools Elements panel (`x-data`, `x-bind`, CSS vars)
+6. **Static/client-only** — no backend/server; all spell data bundled at build time (no runtime fetch)
