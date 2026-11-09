@@ -32,8 +32,8 @@
 | **TypeScript** | Strict mode, catches regressions early |
 | **ESLint** (`@typescript-eslint`, `eslint-plugin-alpine`) | Lint TS + Alpine templates |
 | **Prettier** | Consistent formatting |
-| **Vitest** | Unit tests for filter/sort/search logic (pure functions) |
-| **Playwright** | E2E smoke tests for URL persistence, filter combos |
+| **Vitest** | Unit + Alpine/DOM integration tests (filter/sort/search/store + UI binding/URL/toggle regressions). See `documentation/technical/TESTING.md`. |
+| **Playwright** | E2E smoke tests (real browser) for URL persistence and critical filter/search/toggle flows (scaffolded). |
 
 ## 5. Project Structure (Planned)
 

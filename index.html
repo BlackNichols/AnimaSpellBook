@@ -10,13 +10,83 @@
     <link rel="stylesheet" href="/src/styles/components.css" />
   </head>
   <body>
-    <div id="app" x-data="app()">
+    <div id="app" x-data="app()" :class="{ 'sidebar-collapsed': !sidebarOpen }">
       <header class="header">
+        <button
+          type="button"
+          class="btn btn-secondary btn-sm sidebar-toggle"
+          @click="toggleSidebar()"
+          :aria-expanded="sidebarOpen.toString()"
+          aria-controls="filter-panel"
+          x-text="sidebarOpen ? 'Hide filters' : 'Show filters'"
+        ></button>
         <h1>Anima Spellbook</h1>
       </header>
 
       <main class="main-layout">
-        <aside class="filter-panel" x-data="filterPanel()" aria-label="Filters" hidden></aside>
+        <aside
+          id="filter-panel"
+          class="filter-panel"
+          x-data="filterPanel()"
+          aria-label="Filters"
+          x-show="sidebarOpen"
+        >
+          <section class="filter-section">
+            <button
+              type="button"
+              class="filter-section-toggle"
+              @click="toggleSection('maintenance')"
+              :aria-expanded="isOpen('maintenance').toString()"
+            >
+              <span class="filter-section-title">Maintenance</span>
+              <span class="filter-section-chevron" aria-hidden="true" x-text="isOpen('maintenance') ? '▾' : '▸'"></span>
+            </button>
+            <div class="filter-section-body" x-show="isOpen('maintenance')">
+              <div class="checkbox-group" role="radiogroup" aria-label="Maintenance">
+                <label class="checkbox-item">
+                  <input
+                    type="radio"
+                    name="maintenance"
+                    value="all"
+                    :checked="filters.maintenance === 'all'"
+                    @change="updateMaintenance('all')"
+                  />
+                  <span>All</span>
+                </label>
+                <label class="checkbox-item">
+                  <input
+                    type="radio"
+                    name="maintenance"
+                    value="no"
+                    :checked="filters.maintenance === 'no'"
+                    @change="updateMaintenance('no')"
+                  />
+                  <span>No maintenance</span>
+                </label>
+                <label class="checkbox-item">
+                  <input
+                    type="radio"
+                    name="maintenance"
+                    value="yes"
+                    :checked="filters.maintenance === 'yes'"
+                    @change="updateMaintenance('yes')"
+                  />
+                  <span>Has maintenance</span>
+                </label>
+                <label class="checkbox-item">
+                  <input
+                    type="radio"
+                    name="maintenance"
+                    value="daily"
+                    :checked="filters.maintenance === 'daily'"
+                    @change="updateMaintenance('daily')"
+                  />
+                  <span>Daily only</span>
+                </label>
+              </div>
+            </div>
+          </section>
+        </aside>
         <section class="spell-list" x-data="spellTable()">
           <div class="search-box" x-data="searchBox()">
             <label class="visually-hidden" for="spell-search">Search spells</label>

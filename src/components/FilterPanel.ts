@@ -5,6 +5,7 @@ export function FilterPanel(store: SpellStore) {
   const allTypes = ['Effect', 'Spiritual', 'Automatic', 'Defense', 'Detection', 'Attack'];
 
   return {
+    openSections: {} as Record<string, boolean>,
     get filters() {
       return store.filters;
     },
@@ -13,6 +14,12 @@ export function FilterPanel(store: SpellStore) {
     },
     get types() {
       return allTypes;
+    },
+    isOpen(key: string) {
+      return this.openSections[key] !== false;
+    },
+    toggleSection(key: string) {
+      this.openSections[key] = !this.isOpen(key);
     },
     updatePaths(path: string, checked: boolean) {
       const paths = [...store.filters.paths];

@@ -1,5 +1,6 @@
 import Alpine from 'alpinejs';
 import { SpellStore } from './stores/spellStore';
+import { AppShell } from './components/AppShell';
 import { SpellTable } from './components/SpellTable';
 import { FilterPanel } from './components/FilterPanel';
 import { SearchBox } from './components/SearchBox';
@@ -8,6 +9,7 @@ import { URLSync } from './components/URLSync';
 const spellStore = Alpine.reactive(new SpellStore());
 
 Alpine.data('app', () => ({
+  ...AppShell(),
   async init() {
     await spellStore.loadSpells();
   },

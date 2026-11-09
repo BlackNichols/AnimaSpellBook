@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { SpellTable } from './SpellTable';
 import { SpellStore } from '../stores/spellStore';
+import type { Spell } from '../stores/spellStore';
 
 describe('SpellTable', () => {
   it('exposes all spells as rows with no filters/sort', async () => {
@@ -21,8 +22,8 @@ describe('SpellTable', () => {
     const store = new SpellStore();
     await store.loadSpells();
     const table = SpellTable(store);
-    const main = table.rows.find((r) => r.category === 'main')!;
-    const free = table.rows.find((r) => r.category === 'free_access')!;
+    const main = table.rows.find((r: Spell) => r.category === 'main')!;
+    const free = table.rows.find((r: Spell) => r.category === 'free_access')!;
     expect(table.getField(main, 'name')).toBe(main.name);
     expect(table.getField(main, 'path')).toBe(main.path);
     expect(table.getField(main, 'level')).toBe(String(main.level));

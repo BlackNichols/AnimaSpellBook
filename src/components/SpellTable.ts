@@ -1,4 +1,4 @@
-import type { SpellStore, Spell } from '@/stores/spellStore';
+import type { SpellStore, Spell } from '../stores/spellStore';
 
 const COLUMN_LABELS: Record<string, string> = {
   name: 'Name',

@@ -44,4 +44,20 @@ describe('SpellStore.loadSpells', () => {
     store.setSearchQuery('');
     expect(store.filteredSpells.map((s) => s.id)).toEqual(defaultIds);
   });
+
+  it('filters by maintenance and combines with search (AND)', async () => {
+    const store = new SpellStore();
+    await store.loadSpells();
+    store.setFilters({ maintenance: 'daily' });
+    expect(store.filteredSpells.length).toBeGreaterThan(0);
+    expect(store.filteredSpells.every((s) => s.daily_maintenance)).toBe(true);
+
+    const dailyCount = store.filteredSpells.length;
+    store.setSearchQuery(store.filteredSpells[0]!.name);
+    expect(store.filteredSpells.length).toBeLessThanOrEqual(dailyCount);
+    expect(store.filteredSpells.every((s) => s.daily_maintenance)).toBe(true);
+
+    store.setFilters({ maintenance: 'all' });
+    store.setSearchQuery('');
+  });
 });
