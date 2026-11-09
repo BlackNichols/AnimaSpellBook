@@ -32,6 +32,35 @@
           x-show="sidebarOpen"
         >
           <section class="filter-section">
+            <button type="button" class="filter-section-toggle" @click="toggleSection('category')" :aria-expanded="isOpen('category').toString()">
+              <span class="filter-section-title">Category &amp; Path</span>
+              <span class="filter-section-chevron" aria-hidden="true" x-text="isOpen('category') ? '▾' : '▸'"></span>
+            </button>
+            <div class="filter-section-body" x-show="isOpen('category')">
+              <template x-for="cat in categories" :key="cat.key">
+                <div class="filter-group">
+                  <label class="checkbox-item">
+                    <input type="checkbox" :checked="categoryState(cat.key) === 'all'" @change="toggleCategory(cat.key, $event.target.checked)" />
+                    <span x-text="cat.label"></span>
+                  </label>
+                  <div class="filter-subgroup">
+                    <template x-for="p in cat.paths" :key="p">
+                      <label class="checkbox-item">
+                        <input type="checkbox" :value="p" :checked="isPathSelected(p)" @change="updatePath(p, $event.target.checked)" />
+                        <span x-text="p"></span>
+                      </label>
+                    </template>
+                  </div>
+                </div>
+              </template>
+              <label class="checkbox-item">
+                <input type="checkbox" value="free_access" :checked="isPathSelected('free_access')" @change="updatePath('free_access', $event.target.checked)" />
+                <span>Free Access</span>
+              </label>
+            </div>
+          </section>
+
+          <section class="filter-section">
             <button
               type="button"
               class="filter-section-toggle"
@@ -44,43 +73,19 @@
             <div class="filter-section-body" x-show="isOpen('maintenance')">
               <div class="checkbox-group" role="radiogroup" aria-label="Maintenance">
                 <label class="checkbox-item">
-                  <input
-                    type="radio"
-                    name="maintenance"
-                    value="all"
-                    :checked="filters.maintenance === 'all'"
-                    @change="updateMaintenance('all')"
-                  />
+                  <input type="radio" name="maintenance" value="all" :checked="filters.maintenance === 'all'" @change="updateMaintenance('all')" />
                   <span>All</span>
                 </label>
                 <label class="checkbox-item">
-                  <input
-                    type="radio"
-                    name="maintenance"
-                    value="no"
-                    :checked="filters.maintenance === 'no'"
-                    @change="updateMaintenance('no')"
-                  />
+                  <input type="radio" name="maintenance" value="no" :checked="filters.maintenance === 'no'" @change="updateMaintenance('no')" />
                   <span>No maintenance</span>
                 </label>
                 <label class="checkbox-item">
-                  <input
-                    type="radio"
-                    name="maintenance"
-                    value="yes"
-                    :checked="filters.maintenance === 'yes'"
-                    @change="updateMaintenance('yes')"
-                  />
+                  <input type="radio" name="maintenance" value="yes" :checked="filters.maintenance === 'yes'" @change="updateMaintenance('yes')" />
                   <span>Has maintenance</span>
                 </label>
                 <label class="checkbox-item">
-                  <input
-                    type="radio"
-                    name="maintenance"
-                    value="daily"
-                    :checked="filters.maintenance === 'daily'"
-                    @change="updateMaintenance('daily')"
-                  />
+                  <input type="radio" name="maintenance" value="daily" :checked="filters.maintenance === 'daily'" @change="updateMaintenance('daily')" />
                   <span>Daily only</span>
                 </label>
               </div>

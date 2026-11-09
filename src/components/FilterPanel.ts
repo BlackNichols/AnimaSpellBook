@@ -1,19 +1,27 @@
-import type { SpellStore, FilterState } from '@/stores/spellStore';
+import type { SpellStore, FilterState, Spell } from '@/stores/spellStore';
+import { MAIN_PATH_ORDER, SECONDARY_PATH_ORDER } from '@/utils/sort';
 
 export function FilterPanel(store: SpellStore) {
-  const allPaths = ['free', 'path1', 'path2', 'path3'];
-  const allTypes = ['Effect', 'Spiritual', 'Automatic', 'Defense', 'Detection', 'Attack'];
+  const categories: { key: 'main' | 'secondary'; label: string; paths: readonly string[] }[] = [
+    { key: 'main', label: 'Main', paths: MAIN_PATH_ORDER },
+    { key: 'secondary', label: 'Secondary', paths: SECONDARY_PATH_ORDER },
+  ];
 
   return {
     openSections: {} as Record<string, boolean>,
     get filters() {
       return store.filters;
     },
-    get paths() {
-      return allPaths;
+    get categories() {
+      return categories;
     },
-    get types() {
-      return allTypes;
+    get availablePaths() {
+      const seen = new Set<string>();
+      for (const s of store.spells as Spell[]) if (s.path) seen.add(s.path);
+      return categories.map((c) => ({
+        ...c,
+        paths: c.paths.filter((p) => seen.size === 0 || seen.has(p)),
+      }));
     },
     isOpen(key: string) {
       return this.openSections[key] !== false;
@@ -21,11 +29,31 @@ export function FilterPanel(store: SpellStore) {
     toggleSection(key: string) {
       this.openSections[key] = !this.isOpen(key);
     },
-    updatePaths(path: string, checked: boolean) {
+    isPathSelected(path: string) {
+      return store.filters.paths.includes(path);
+    },
+    updatePath(path: string, checked: boolean) {
       const paths = [...store.filters.paths];
-      if (checked) paths.push(path);
-      else paths.splice(paths.indexOf(path), 1);
+      if (checked) {
+        if (!paths.includes(path)) paths.push(path);
+      } else {
+        const i = paths.indexOf(path);
+        if (i >= 0) paths.splice(i, 1);
+      }
       store.setFilters({ paths });
+    },
+    toggleCategory(key: 'main' | 'secondary', checked: boolean) {
+      const group = categories.find((c) => c.key === key)?.paths ?? [];
+      const paths = store.filters.paths.filter((p) => !group.includes(p));
+      if (checked) paths.push(...group);
+      store.setFilters({ paths });
+    },
+    categoryState(key: 'main' | 'secondary') {
+      const group = categories.find((c) => c.key === key)?.paths ?? [];
+      const n = group.filter((p) => store.filters.paths.includes(p)).length;
+      if (n === 0) return 'none';
+      if (n === group.length) return 'all';
+      return 'some';
     },
     updateMaintenance(value: FilterState['maintenance']) {
       store.setFilters({ maintenance: value });

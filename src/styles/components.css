@@ -123,10 +123,18 @@ tbody tr:last-child td {
 }
 
 /* Checkbox group */
-.checkbox-group {
+.filter-group {
+  margin-bottom: var(--space-sm);
+}
+.filter-group > .checkbox-item span {
+  font-weight: 600;
+}
+.filter-subgroup {
   display: flex;
   flex-direction: column;
-  gap: var(--space-2);
+  gap: var(--space-xs);
+  padding-left: var(--space-md);
+  margin-top: var(--space-xs);
 }
 
 .checkbox-item {

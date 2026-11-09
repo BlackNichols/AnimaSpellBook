@@ -54,41 +54,14 @@ const mockSpell: Spell = {
 };
 
 describe('filters', () => {
-  it('matches path filter', () => {
-    expect(
-      matchesFilters(mockSpell, {
-        paths: ['Fire'],
-        maintenance: 'all',
-        isAoe: null,
-        levelMin: null,
-        levelMax: null,
-        zeonMin: null,
-        zeonMax: null,
-        zeonMode: 'any',
-        minIntMin: null,
-        minIntMax: null,
-        minIntMode: 'any',
-        action: 'all',
-        types: [],
-      })
-    ).toBe(true);
-    expect(
-      matchesFilters(mockSpell, {
-        paths: ['Water'],
-        maintenance: 'all',
-        isAoe: null,
-        levelMin: null,
-        levelMax: null,
-        zeonMin: null,
-        zeonMax: null,
-        zeonMode: 'any',
-        minIntMin: null,
-        minIntMax: null,
-        minIntMode: 'any',
-        action: 'all',
-        types: [],
-      })
-    ).toBe(false);
+  it('matches category/path filter for named path and free access', () => {
+    const freeSpell = { ...mockSpell, id: 'f', name: 'F', category: 'free_access' as const, path: null, path_type: null, level: null, level_bracket: [1, 10] as [number, number] };
+    const base = { paths: [] as string[], maintenance: 'all' as const, isAoe: null, levelMin: null, levelMax: null, zeonMin: null, zeonMax: null, zeonMode: 'any' as const, minIntMin: null, minIntMax: null, minIntMode: 'any' as const, action: 'all' as const, types: [] as string[] };
+    expect(matchesFilters(mockSpell, { ...base, paths: ['Fire'] })).toBe(true);
+    expect(matchesFilters(mockSpell, { ...base, paths: ['Water'] })).toBe(false);
+    expect(matchesFilters(freeSpell, { ...base, paths: ['free_access'] })).toBe(true);
+    expect(matchesFilters(freeSpell, { ...base, paths: ['Fire'] })).toBe(false);
+    expect(matchesFilters(mockSpell, { ...base, paths: ['Fire', 'free_access'] })).toBe(true);
   });
 
   it('matches maintenance filter', () => {

@@ -39,7 +39,7 @@ All filters combine with **AND** by default. **OR** between filters is a future 
 
 | Filter | Type | Options / semantics |
 |--------|------|---------------------|
-| **Path** | Multi-select | All defined paths plus `null` (Free Access spells) |
+| **Category + Path** | Checkbox groups | Main/Secondary paths by name; `free_access` (Free Access). `paths` URL param stores selected keys; AND with other filters. (Implemented) |
 | **Maintenance** | Tri-state | `no` (no maintenance at any grade), `yes` (maintenance on any grade), `daily only` (`daily_maintenance == true`) |
 | **Area of Effect** | Boolean | `metadata.is_aoe` — yes / no |
 | **Level** | Min / Max / Range | Main & Secondary spells: `level` integer.<br>Free Access spells: `level_bracket` `[low, high]` — a bracket overlaps the range if `low <= max AND high >= min`; Free Access spells are excluded when the filter value is not a multiple of 10 |

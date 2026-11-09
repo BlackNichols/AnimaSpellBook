@@ -1,10 +1,10 @@
 import type { Spell, FilterState } from '@/stores/spellStore';
 
 export function matchesFilters(spell: Spell, filters: FilterState): boolean {
-  // Path filter
+  // Category/Path filter
   if (filters.paths.length > 0) {
-    const spellPath = spell.path ?? 'free';
-    if (!filters.paths.includes(spellPath)) return false;
+    const key = spell.category === 'free_access' ? 'free_access' : (spell.path ?? '');
+    if (!filters.paths.includes(key)) return false;
   }
 
   // Maintenance filter

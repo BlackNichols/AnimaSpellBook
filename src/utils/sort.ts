@@ -6,7 +6,7 @@ export interface SortState {
   direction: SortDirection;
 }
 
-const MAIN_PATH_ORDER = [
+export const MAIN_PATH_ORDER = [
   'Light',
   'Darkness',
   'Creation',
@@ -20,7 +20,7 @@ const MAIN_PATH_ORDER = [
   'Necromancy',
 ] as const;
 
-const SECONDARY_PATH_ORDER = [
+export const SECONDARY_PATH_ORDER = [
   'Chaos',
   'War',
   'Literature',
