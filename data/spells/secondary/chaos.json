@@ -1,0 +1,603 @@
+[
+  {
+    "id": "sense-chaos",
+    "name": "Sense Chaos",
+    "category": "secondary",
+    "path": "Chaos",
+    "path_type": null,
+    "level": 4,
+    "action": "Active",
+    "types": [
+      "Effect",
+      "Detection"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "The wizard is able to notice the fluctuations caused by chaos in the environment, allowing him to sense anything unnatural that occurs within the area of the spell. The spell cannot determine the exact location of the chaos, but the caster is aware of the level of influence that it has over reality in the area.",
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 foot radius."
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 foot radius."
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "800 foot radius."
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "2,000 foot radius / The wizard detects the presence of any being with greater than Gnosis 20 or with greater than Natura +10 that is within the spell’s area of effect unless the being passes a MR 160 check."
+      }
+    }
+  },
+  {
+    "id": "aura-of-chaos",
+    "name": "Aura of Chaos",
+    "category": "secondary",
+    "path": "Chaos",
+    "path_type": null,
+    "level": 14,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 140,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "The wizard causes a surge of energy that alters fate and makes events chaotic and unpredictable. While this spell is active, all affected people with a Natura less than +10 are treated as if they had Natura +10 (although for the purpose of their importance in reality, they retain their original value) and all sorts of unusual and impossible events occur constantly. In other words, it’s as if fate went crazy and anything could happen. At the time of casting this spell, the wizard must decide whether to leave it centered on a particular area or to create an aura that moves with him.",
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 15,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 80 / 30 foot radius / Maximum Presence affected is 100."
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 100 / 60 foot radius / Maximum Presence affected is 120."
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / 120 foot radius / Maximum Presence affected is 140."
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140 / 140 foot radius / Maximum Presence affected is 160."
+      }
+    }
+  },
+  {
+    "id": "probability-alteration",
+    "name": "Probability Alteration",
+    "category": "secondary",
+    "path": "Chaos",
+    "path_type": null,
+    "level": 24,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "The wizard or the person he chooses undergoes a change in his nature that makes the possibility of very lucky or very unlucky actions much greater. Consequently, the target’s Fumble range and Open Roll range are increased by the values indicated by the level of the spell. For example, someone with no Mastery who is affected by this spell at its Basic level would Fumble on a 5 or less and make an Open Roll on an 85 or higher.",
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+2 to Fumble range / –5 to Open Roll range."
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+4 to Fumble range / –10 to Open Roll range."
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+6 to Fumble range / –15 to Open Roll range."
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 14,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+8 to Fumble range / –20 to Open Roll range."
+      }
+    }
+  },
+  {
+    "id": "alter-luck",
+    "name": "Alter Luck",
+    "category": "secondary",
+    "path": "Chaos",
+    "path_type": null,
+    "level": 34,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "The target of this spell has improbable luck, which can be good or bad as chosen by the wizard. Any situation the target is involved in whose result is determined by chance will always have improbable results, whether for good or ill. A card player, for example, would continuously have either incredibly lucky or unlucky streaks. Characters with the Good Luck Advantage or Bad Luck Disadvantage suffer exponentially increased effects. It is possible to avoid these effects by passing a MR check determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120."
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140."
+      },
+      "advanced": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / The good luck or bad luck granted approaches the absurd."
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 14,
+        "maintenance": 15,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180 / As Advanced level, but unless dealing with supernatural beings with a higher Gnosis or Natura, the character will always win or lose against anyone in anything that might have a luck-related outcome."
+      }
+    }
+  },
+  {
+    "id": "paths-of-chaos",
+    "name": "Paths of Chaos",
+    "category": "secondary",
+    "path": "Chaos",
+    "path_type": null,
+    "level": 44,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "The wizard can reroll a certain number of rolls per turn, provided that none of them are a Fumble. It is not possible to reroll the same roll twice.",
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 7,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "One roll per turn."
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Two rolls per turn."
+      },
+      "advanced": {
+        "zeon": 280,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Three rolls per turn."
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 14,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Four rolls per turn or one that is a Fumble."
+      }
+    }
+  },
+  {
+    "id": "chaotic-aberration",
+    "name": "Chaotic Aberration",
+    "category": "secondary",
+    "path": "Chaos",
+    "path_type": null,
+    "level": 54,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Summoning"
+      ]
+    },
+    "effect": "This spell creates a spawn of chaos in reality. The caster does not have any power over the spawn, and it will behave in a completely unpredictable (but almost always violent) manner. The creature must be developed as a Being Between Worlds using the rules described in Chapter 26 of Anima: Beyond Fantasy, but the caster can only determine where half of the creature’s Development Points are spent; the other half are chosen at random by the Game Master. The creature’s Gnosis is determined by the level of the spell, with higher levels resulting in higher Gnosis, up to a maximum of 20 Gnosis. Regardless of the level the spell is cast at, it cannot create creatures of a higher level than the caster. Chaos creatures do not have the ability to receive a soul, so it is impossible to give a spawn of chaos an independent life through the Transmigrate Soul spell or by otherwise transmigrating a spirit into it.",
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 2."
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 4."
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 8."
+      },
+      "arcane": {
+        "zeon": 700,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 12."
+      }
+    }
+  },
+  {
+    "id": "manipulate-chaos",
+    "name": "Manipulate Chaos",
+    "category": "secondary",
+    "path": "Chaos",
+    "path_type": null,
+    "level": 64,
+    "action": "Passive",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 260,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "Through the power of chaos, this spell can change a person’s action, possibly changing its outcome. The spell must be cast immediately after someone performs an action, and the character who took that action must immediately reroll. For example, a character who attempts to jump across a gap and fails can try again. He is “rewound” to the beginning of the jump and must attempt the jump again with a new roll unless he passes a MR check. This spell takes effect automatically and can affect anyone in the vicinity of the wizard at the moment the target completes an action. Creatures with Gnosis 35 or higher or Natura +20 are aware of the change, while others cannot perceive it.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140."
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180 / The wizard can force a single roll to be rerolled up to two times."
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 220 / The wizard can force a single roll to be rerolled up to three times."
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": 260,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 260 / The wizard can force a single roll to be rerolled up to four times."
+      }
+    }
+  },
+  {
+    "id": "chaotic-mutation",
+    "name": "Chaotic Mutation",
+    "category": "secondary",
+    "path": "Chaos",
+    "path_type": null,
+    "level": 74,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "The target of this spell suffers serious mutations in his body, altering both his physiognomy and his powers. The wizard or individual targeted with Chaotic Mutation gets additional Development Points to spend on powers like a Being Between Worlds with Gnosis 25. However, he can only voluntarily choose where to spend half of those Development Points; the other half are determined randomly by the Game Master. Almost always, the power of this spell leaves visible physical changes. A person can pass a MR check at the difficulty set by the level of the spell to resist its effects. The new Development Points increase the target’s level as normal. This spell can only be cast on an individual once.",
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 100 / 100 Development Points."
+      },
+      "intermediate": {
+        "zeon": 400,
+        "min_int": 11,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / 200 Development Points."
+      },
+      "advanced": {
+        "zeon": 800,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140 / 300 Development Points."
+      },
+      "arcane": {
+        "zeon": 1200,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / 400 Development Points / Gnosis 30."
+      }
+    }
+  },
+  {
+    "id": "control-chaos",
+    "name": "Control Chaos",
+    "category": "secondary",
+    "path": "Chaos",
+    "path_type": null,
+    "level": 84,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 260,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "The wizard has the ability to bend chaos to his will, allowing him to get the results he wants from it. Thus, he could simply make a chair break or fold space to create a portal. It is important to note that this spell does not give a character power over chaos if it does not exist in an area, so the more chaotic the environment, the greater his power. For example, if the level of chaos in the environment is too low, the character could not do anything with the spell, while in an area affected strongly by chaos, he could cause almost anything to happen. For the purpose of play, the caster gets the Gnosis powers Influence Reality and Auspice, with a maximum value depending on the level of the spell and the level of chaos in the surroundings. In the event that a being based on chaos is in the wizard’s presence, he can dominate it as an Active Action unless it passes a MR check indicated by the spell’s level. If the creature passes its check, it is immune to the caster’s domination attempts for the duration of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 300,
+        "min_int": 11,
+        "maintenance": 50,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / Up to Gnosis 30."
+      },
+      "intermediate": {
+        "zeon": 500,
+        "min_int": 13,
+        "maintenance": 60,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / Up to Gnosis 35."
+      },
+      "advanced": {
+        "zeon": 800,
+        "min_int": 15,
+        "maintenance": 65,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 200 / Up to Gnosis 40."
+      },
+      "arcane": {
+        "zeon": 1200,
+        "min_int": 17,
+        "maintenance": 75,
+        "resistance": 260,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 260 / Up to Gnosis 45."
+      }
+    }
+  },
+  {
+    "id": "primal-chaos",
+    "name": "Primal Chaos",
+    "category": "secondary",
+    "path": "Chaos",
+    "path_type": null,
+    "level": 94,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "Completely altering the laws of reality, the wizard creates chaos in its purest form, an area where everything stops responding to any laws of reason. Space is distorted; a road leading a character up may actually take him downwards; miles are traveled in seconds and feet in hours. A person can be young and old at the same time, a storm may pummel the area on a sunny day… Nothing makes sense, because the concept of logic has ceased to exist. A normal person will likely go crazy in a few minutes, while all supernatural power may go out of control. The area covered by this spell is determined by its level, is stationary, and is centered on where it was cast.",
+    "grades": {
+      "initial": {
+        "zeon": 500,
+        "min_int": 12,
+        "maintenance": 100,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1,500 foot radius."
+      },
+      "intermediate": {
+        "zeon": 900,
+        "min_int": 14,
+        "maintenance": 180,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3,000 foot radius."
+      },
+      "advanced": {
+        "zeon": 1500,
+        "min_int": 16,
+        "maintenance": 300,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3 mile radius / Any person who is within the Primal Chaos for at least one minute is unavoidably affected by the Chaotic Mutation spell at the Arcane level."
+      },
+      "arcane": {
+        "zeon": 2400,
+        "min_int": 18,
+        "maintenance": 480,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "15 mile radius / As Advanced level, but within a mile of the spell’s center, the rule of chaos is absolute. No laws of reality hold; even matter ceases to exist, becoming simply a set of atoms in constant motion. Everything inside must pass a MR 160 check every five minutes or simply merge with the chaos and disappear forever."
+      }
+    }
+  }
+]

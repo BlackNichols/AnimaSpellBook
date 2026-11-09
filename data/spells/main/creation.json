@@ -1,0 +1,2298 @@
+[
+  {
+    "id": "minor-creation",
+    "name": "Minor Creation",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 2,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Create a simple object or objects each within the presence limit determined by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 object with 25 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5 objects with 25 Presence limit"
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 object with 30 Presence limit"
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5 objects with 30 presence limit"
+      }
+    }
+  },
+  {
+    "id": "reconstruct",
+    "name": "Reconstruct",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 6,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Restores an inorganic object to its original form using the parts or pieces that remain. Note that it is necessary to either have all component parts, or enough material to rebuild the object, otherwise it will remain only partially constructed. The Presence limit of the item able to be affected is determined by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 5,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "20 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "60 Presence limit"
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Presence limit"
+      },
+      "arcane": {
+        "zeon": 280,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 presence limit"
+      }
+    }
+  },
+  {
+    "id": "create-energy",
+    "name": "Create Energy",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 8,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates a number of intensities of the caster’s choice – either Fire, Cold, or Electricity.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 Intensity"
+      },
+      "intermediate": {
+        "zeon": 150,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5 Intensities"
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10 Intensities"
+      },
+      "arcane": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "20 Intensities"
+      }
+    }
+  },
+  {
+    "id": "regeneration",
+    "name": "Regeneration",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 10,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Increases the ability of a body to heal all types of wounds. In game terms, this spell replaces the character’s base regeneration with that described by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Regeneration 4"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Regeneration 8"
+      },
+      "advanced": {
+        "zeon": 150,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Regeneration 12"
+      },
+      "arcane": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Regeneration 16"
+      }
+    }
+  },
+  {
+    "id": "inorganic-modification",
+    "name": "Inorganic Modification",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 12,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Through magic, the caster can alter the form and nature of an inorganic object, transforming it into a completely different thing but of similar spiritual power. In game terms, this spell permits the caster to transform something within the presence limit determined by the level of the spell into something else of equal or lesser presence.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "20 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30 Presence limit"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "40 Presence limit"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 Presence limit"
+      }
+    }
+  },
+  {
+    "id": "increase-resistances",
+    "name": "Increase Resistances",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 16,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Supernaturally increases all resistances of the caster or a character of their choosing by an amount determined by the level of the spell. A character can only be affected by one Increase Resistances spell at a time.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+10 to resistances"
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+20 to resistances"
+      },
+      "advanced": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+30 to resistances"
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 14,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+40 to resistances"
+      }
+    }
+  },
+  {
+    "id": "royal-shield",
+    "name": "Royal Shield",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 18,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Defense"
+    ],
+    "daily_maintenance": false,
+    "effect": "Forms a barrier of Energy that protects the caster from any source of attack. The shield has a number of Life Points determined by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500 Life Points"
+      },
+      "intermediate": {
+        "zeon": 150,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3000 Life Points"
+      },
+      "advanced": {
+        "zeon": 260,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5000 Life Points"
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 12,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10000 Life Points"
+      }
+    }
+  },
+  {
+    "id": "heal",
+    "name": "Heal",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 20,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Causes whomever the spell is directed at to recover a number of Life Points determined by the level of the spell. This does not cause recovery of permanently lost or destroyed limbs, but does reduce penalties caused by Critical hits, up to half the amount of Life Points restored.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 Life Points"
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 Life Points"
+      },
+      "advanced": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "250 Life Points"
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "350 Life Points"
+      }
+    }
+  },
+  {
+    "id": "damage-barrier",
+    "name": "Damage Barrier",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 22,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "The supernatural energies governed by the spell adheres to the body of the designated character, and provide them with certain immunity to damage. In Game Terms, they obtain a damage barrier of the listed value based on the level of the spell (see Anima: Beyond Fantasy - Chapter 14: States and Accidents).",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Damage Barrier 30"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Damage Barrier 50"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Damage Barrier 80"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Damage Barrier 100"
+      }
+    }
+  },
+  {
+    "id": "create-homunculus",
+    "name": "Create Homunculus",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 26,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Homunculi are small magical beings that casters use at times for various purposes, from espionage to housework. The spell creates a number of mystical beings with 500 Development Points (Level 0), as per the rules in Anima: Beyond Fantasy - Chapter 26: Creation of Beings under complete control of the caster. They are a being between worlds with a Gnosis of 5, but given their minor nature, the following rules apply: • The characteristics of the being cannot exceed a score of 5. • Any primary and secondary abilities cannot exceed a score of 50. • Any Intellectual Secondary ability and Mystical ability chosen cannot exceed the ability of their creator. • They cannot have the Gift. • A special -2 penalty to size is applied, and the creature cannot have the Uncommon Size advantage. Outside of these limitations, each homunculi can be completely different.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 Homunculus"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10 Homunculi"
+      },
+      "advanced": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "25 Homunculi"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 15,
+        "maintenance": 35,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Homunculi"
+      }
+    }
+  },
+  {
+    "id": "minor-change",
+    "name": "Minor Change",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 28,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "Permits altering the appearance of an object or being by modifying its form. The change is limited to varying its exterior appearance, and does not alter it’s inherent qualities or nature. In this way, a shining short sword may become old and rusted, but never changed into a walking stick. In the case of living things, this spell can change the size of an individual by up to 2 points, and alter their physical appearance, such as making an ugly overweight man into a young and good looking one. The spell can be resisted with a successful MR check by individuals, and a new check may be repeated once per day. This spell may also affect a number of individuals or objects, as long as their combined presence is within the limit determined by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "80 MR, 60 Presence Limit"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 MR, 90 Presence Limit"
+      },
+      "advanced": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, 120 Presence Limit"
+      },
+      "arcane": {
+        "zeon": 250,
+        "min_int": 15,
+        "maintenance": 25,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR, 180 Presence Limit"
+      }
+    }
+  },
+  {
+    "id": "imitate",
+    "name": "Imitate",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 30,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual",
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Creates an exact copy of an already existing inorganic object within reach of the caster. It creates a perfect imitation of the original that retains all of it’s qualities, including any supernatural ones. The copied object must be within the presence limit determined by the level of the spell. The spell has no effect on animated creatures, but can affect mechanical constructs as long as they have no soul.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30 Presence Limit"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 Presence Limit"
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 Presence Limit"
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 15,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "160 Presence Limit"
+      }
+    }
+  },
+  {
+    "id": "immunity",
+    "name": "Immunity",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 32,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Permits the caster or the character designated by them to be immune to a number of intensities of a determined type, either Fire, Cold, or Electricity. If an attack is made using the type of energy to which the character is immune, each intensity of immunity reduces the base damage of the attack by 5 points. If a resistance check is required, each immunity provides a +5 bonus to such a check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5 Intensities"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "15 Intensities"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "25 Intensities"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "35 Intensities"
+      }
+    }
+  },
+  {
+    "id": "reduction-of-damage",
+    "name": "Reduction of Damage",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 36,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Affects the power of an attack, reducing the force of it’s impact. Upon being cast, this spell reduces the base damage of an attack, by a value determined by the level of the spell. If the damage of the attack is reduced to 0, the attack produces no effect, even if it successfully hits its target. This spell must be declared and cast before any dice are rolled for the attack. Any attack can only be affected by one Reduction of Damage spell at a time.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "-40 to base damage"
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "-60 to base damage"
+      },
+      "advanced": {
+        "zeon": 160,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "-80 to base damage"
+      },
+      "arcane": {
+        "zeon": 240,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "-120 to base damage"
+      }
+    }
+  },
+  {
+    "id": "physical-control",
+    "name": "Physical Control",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 38,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "The caster is able to control the body of a being as though it were a simple puppet. Since the control is purely physical, and not spiritual, the subject being controlled is not obligated to use any supernatural abilities (such as Magic, Ki, or Psychic powers) against their will, although any natural fighting ability is able to be used by the controller. Resisting the spell requires a successful MR check. Once under the caster’s control, the subject has the ability to make a new check once per day, as well as any time they are ordered to do something entirely against their nature.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 6,
+        "maintenance": 25,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "80 MR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 40,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 50,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 60,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      }
+    }
+  },
+  {
+    "id": "raise-abilities",
+    "name": "Raise Abilities",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 40,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Temporarily increases the Secondary Abilities of an individual, providing them with a number of bonus points to distribute freely among them. Any secondary ability affected by this spell cannot exceed Inhuman levels, nor does it grant the caster the ability to perform such actions.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+50 Bonus"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+150 Bonus"
+      },
+      "advanced": {
+        "zeon": 280,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+250 Bonus"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 15,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+400 Bonus"
+      }
+    }
+  },
+  {
+    "id": "fuse",
+    "name": "Fuse",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 42,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Unites two beings into a single form, creating a new individual who possesses the characteristics and abilities of both. The caster designates which capacities prevail, selecting those they are interested in from each individual. If the spell joins a fighter and psychic for example, the resulting individual could have the fighting ability of a warrior, the psychic powers of the mentalist, and the highest Secondary Abilities of each. Control of the resulting unified being falls to whichever of the two wins an opposed Willpower check, although some personality or behaviors of the losing consciousness may remain. The original bodies of the individuals remain in their previous state, and as such when the spell lapses they return to their original state and condition before being fused. The sum of the presences of both subjects cannot exceed the value determined by the level of the spell. It is also possible to merge individuals with things or objects, in which case the GM may determine the advantages or skills they deem relevant from such a merge.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 7,
+        "maintenance": 15,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "80 MR, 80 Presence Limit"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, 100 Presence Limit"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, 150 Presence Limit"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR, 200 Presence Limit"
+      }
+    }
+  },
+  {
+    "id": "create-memories",
+    "name": "Create Memories",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 46,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Permits creation of new memories within the target, without necessarily erasing existing ones. Most of the time, unless the modified memories are very deeply rooted to the person, they will feel slightly confused, but convinced that their memories are real. The caster determines what information they are trying to introduce, regardless of complexity or duration in the subjects mind. Resisting the spell requires a successful MR or PsR check. Although the spell has no maintenance, the individual affected may perform a new resistance check each time something makes them suspect that their memory may be inaccurate.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR",
+        "PsR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 7,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "100 MR or PsR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "120 MR or PsR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "160 MR or PsR"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "200 MR or PsR"
+      }
+    }
+  },
+  {
+    "id": "recover",
+    "name": "Recover",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 48,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Completely restores the physical condition of the subject. It cures a number of life points determined by the level of the spell, and removes all physical penalties, except for those caused by loss of limb or other similar permanent loss. However, this spell does not restore Fatigue points, nor eliminate any status caused by supernatural means.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500 Life Points"
+      },
+      "intermediate": {
+        "zeon": 300,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "750 Life Points"
+      },
+      "advanced": {
+        "zeon": 350,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1000 Life Points"
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1500 Life Points"
+      }
+    }
+  },
+  {
+    "id": "acquire-powers",
+    "name": "Acquire Powers",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 50,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Grants the caster, or the person on whom the spell is cast, the ability to acquire the abilities of supernatural beings. In Game terms, the character receives an additional amount of Development Points to acquire any of the powers listed in Anima: Beyond Fantasy - Chapter 26: Creation of Beings, as though they had a Gnosis of 25. These also temporarily affect the subject’s physical form. If, for example, someone obtained the powers of Natural Flight, it would be logical for them to have developed enormous wings. Characters can only be subject to one Acquire Powers spell at a time.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 7,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 DP"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 DP"
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 13,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 DP"
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 16,
+        "maintenance": 60,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "400 DP"
+      }
+    }
+  },
+  {
+    "id": "create-monstrosity",
+    "name": "Create Monstrosity",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 52,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Create a magical being with the appearance of life, but completely under the control of the caster. This being is developed using the rules for a being between worlds described in Anima: Beyond Fantasy - Chapter 26: Creation of Beings. The creature has a number of Development Points determined by the level of the spell, and has a Gnosis of 20. Regardless of the degree at which the spell is cast, the being cannot exceed the level of it’s creator, and doesn’t have the capacity to receive a soul, so one cannot be given to them through the spells Transmigrate Soul or Provide Soul of this path.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "700 DP (Level 2)"
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "900 DP (Level 4)"
+      },
+      "advanced": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1300 DP (Level 8)"
+      },
+      "arcane": {
+        "zeon": 500,
+        "min_int": 15,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1700 DP (Level 12)"
+      }
+    }
+  },
+  {
+    "id": "protective-aura",
+    "name": "Protective Aura",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 56,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Supernaturally increases all resistances of all designated individuals within the radius specified by the level of the spell. Characters can only be subject to one Protective Aura at a time.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+20 to Resistances, 100m Radius"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+50 to Resistances, 500m Radius"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+80 to Resistances, 1km Radius"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 15,
+        "maintenance": 35,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+120 to Resistances, 10km Radius"
+      }
+    }
+  },
+  {
+    "id": "spiritual-standstill",
+    "name": "Spiritual Standstill",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 58,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "As the name of the spell indicates, this preserves the spirit of the individual on whom it is cast in the same state as the moment it affects them. From that moment on, the affected person does not make any further MR or PsR checks, and remains unalterably in the same spiritual condition. This person cannot be affected by states of any kind, whether positive or negative. The target may resist the effects of the spell when it is cast by succeeding at an MR check. Naturally, once under the spell, the person afflicted may not make another check to free themselves of it’s effects.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 MR"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "advanced": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      }
+    }
+  },
+  {
+    "id": "perfect-shield",
+    "name": "Perfect Shield",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 60,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Defense"
+    ],
+    "daily_maintenance": true,
+    "effect": "Forms a barrier of energy that protects from any source of attack. The shield has a number of life points it can absorb in damage before breaking, but if not broken by the end of the combat turn, it automatically recovers all lost Life Points.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Life Points"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "250 Life Points"
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 13,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500 Life Points"
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 16,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1000 Life Points"
+      }
+    }
+  },
+  {
+    "id": "vitality",
+    "name": "Vitality",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 62,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Creates a state of supernatural vitality in an individual, increasing their maximum life points while the spell is maintained. Characters with damage resistance multiply the listed value by five. Characters can only be affected by one Vitality spell at a time.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+50 Life Points"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+75 Life Points"
+      },
+      "advanced": {
+        "zeon": 250,
+        "min_int": 13,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+100 Life Points"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 16,
+        "maintenance": 35,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+150 Life Points"
+      }
+    }
+  },
+  {
+    "id": "complete-creation",
+    "name": "Complete Creation",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 66,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Creates an object within the specified presence limit. The creation must appear in a location that is logical for it, according to its nature. It would not be possible, for instance, to conjure up a small mountain in midair, and then allow it to fall on someone.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 Presence limit"
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 Presence limit"
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 14,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 Presence limit"
+      }
+    }
+  },
+  {
+    "id": "reinforce-magic",
+    "name": "Reinforce Magic",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 68,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Adds strength to another spell either launched at the same time or that is being maintained. In game terms, it applies the following bonuses: • +20 to the difficulty of any Resistance value • +50% to the base damage of the spell (round down to the nearest multiple of 5) • +50% to the increase to resistances the spell provides (round down to the nearest multiple of 5) • +20% to any other numeric value present in the spell (with the exception of Gnosis values, which are not affected) Once this spell lapses, the added power fades as well.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects spells cast at Base level"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 12,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects spells cast at Intermediate level"
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects spells cast at Advanced level"
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 18,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects spells cast at Arcane level"
+      }
+    }
+  },
+  {
+    "id": "transmute",
+    "name": "Transmute",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 70,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster transforms an inorganic object, converting it permanently into a different object of similar spiritual power. This permits the caster to modify something within the presence limit described by the level of the spell into something else of equal or lesser spiritual power. If the object is innately supernatural, or especially powerful, it can resist by passing an MR check with a difficulty described by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 260,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "50 Presence limit, 120 MR"
+      },
+      "intermediate": {
+        "zeon": 350,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 Presence limit, 160 MR"
+      },
+      "advanced": {
+        "zeon": 500,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "150 Presence limit, 220 MR"
+      },
+      "arcane": {
+        "zeon": 800,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": 260,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 Presence limit, 260 MR"
+      }
+    }
+  },
+  {
+    "id": "metamorphism",
+    "name": "Metamorphism",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 72,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "The caster can transform a person or object into anything they wish (a mouse, a statue, etc.) as long as the Presence of the new form is not higher than the target’s original amount. Living things metamorphosed into non-living objects continue to live in their new forms, even if it happens that they cannot move or breathe. When the spell lapses, the individual or object returns to their original form. Metamorphism does not permit the acquisition of any new essential powers or abilities, except for those possessed by natural creatures with Gnosis 0. Resisting the effects of this spell requires a successful MR check. If unsuccessful, victims are only allowed a new check once per day.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 MR"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "advanced": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 14,
+        "maintenance": 20,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR"
+      }
+    }
+  },
+  {
+    "id": "recreate",
+    "name": "Recreate",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 76,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "By manipulating the essence of both body and soul, the caster is able to restore any damage or loss an individual or object might have suffered. The caster can decide which parts to recreate, and is not obligated to restore the subject to its original state. If they use the spell on a one- eyed, one-armed person, the caster may choose to only recreate the eye, or only the arm, or both at once. Casting this spell on a wounded individual or a damaged object makes any damage or penalty disappear automatically (as long as the caster wishes for it to, of course). Recreate also eliminates the effect of any supernatural ability that has diminished the individual or object physically or spiritually; In game terms it can even restore memories or lost Development Points. The nature of this spell has some limitations, as follows: • It only affects losses or damage suffered artificially, not due to the natural or positive change of the object or individual. In other words, it cannot ‘restore’ a person or thing to an earlier state that was damaged or inferior. • It has no effect on deceased souls, or ones that have passed on into the flow of souls, and so it cannot restore the dead to life. • It can only affect a person or item within the presence limit, and in the special circumstance where the damage was caused by a being with Gnosis at least 15 points higher than that of the caster, the limit for presence of this spell is halved.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 300,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "60 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 500,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 Presence limit"
+      },
+      "advanced": {
+        "zeon": 750,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "180 Presence limit"
+      },
+      "arcane": {
+        "zeon": 1500,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "240 Presence limit"
+      }
+    }
+  },
+  {
+    "id": "create-being",
+    "name": "Create Being",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 78,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Creates a magical being with the appearance of life, but completely under the control of the caster. The entity is developed as a being between worlds with a Gnosis of 25 as described in Anima: Beyond Fantasy - Chapter 26: Creation of Beings, and with a number of development points described by the level of the spell, with the following limitation. Given that this entity’s existence is directly tied to the soul of the caster, the number of beings that are created by and that depend on them (whether through this spell, or the level 82 spells of the minor paths) will limit the maximum level of the entity. The creature can therefore have at most the level of it’s creator minus the number of magical entities they have magically created and are maintaining. For example, if the caster creates only a single being, it is at most one level lower than it’s creator. This applies as two levels less if the caster creates two magical beings, etc. If later, the caster creates more magical beings, the earlier beings automatically drop one level immediately.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 9,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "600 DP (Level 1)"
+      },
+      "intermediate": {
+        "zeon": 400,
+        "min_int": 12,
+        "maintenance": 80,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1000 DP (Level 5)"
+      },
+      "advanced": {
+        "zeon": 600,
+        "min_int": 15,
+        "maintenance": 120,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1400 DP (Level 9)"
+      },
+      "arcane": {
+        "zeon": 1000,
+        "min_int": 17,
+        "maintenance": 200,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1700 DP (Level 12)"
+      }
+    }
+  },
+  {
+    "id": "chimera",
+    "name": "Chimera",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 80,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster, or their victim, ceases to be a natural being. They are reformed as a being between worlds with a Gnosis of 25, enjoying all the advantages and disadvantages that entails. They also obtain the ability to acquire new essential abilities and powers from the rules in Anima: Beyond Fantasy - Chapter 26: Creation of Beings, and permits them to acquire even more development points from disadvantages, up to a limit based on the level of the spell. Excess Development Points acquired in this way raise the character level. For example if they only acquire 170 DP, the character still is considered to have increased by two levels. This spell only works on natural creatures, and thus cannot be cast on beings between worlds or spirits to raise their existing capabilities. All powers and benefits acquired through this spell depend on the physical body of the character, and so if by any means they return to their prior state, or their soul transmigrates into another body or form, they lose the benefits and advantages of this spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+100 DP, with up to 100 DP of disadvantages."
+      },
+      "intermediate": {
+        "zeon": 500,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+200 DP, with up to 100 DP of disadvantages."
+      },
+      "advanced": {
+        "zeon": 1000,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+300 DP, with up to 200 DP of disadvantages."
+      },
+      "arcane": {
+        "zeon": 2500,
+        "min_int": 17,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+400 DP, with up to 200 DP of disadvantages."
+      }
+    }
+  },
+  {
+    "id": "zone-of-safety",
+    "name": "Zone of Safety",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 82,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "Creates a magical zone inside which no person or object can be harmed in any way by anyone or anything. A person within the zone could not, for instance, break down a door or even harm a cockroach by stepping on it by mistake. Zone of Safety automatically affects anyone within it’s area, including the caster. The affected areas radius is determined by the level of the spell, and it remains stationary once cast. To overcome the effect requires a successful MR check, and it is only possible to repeat the check once per day, even if they leave the zone and then re-enter it.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 250,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 350,
+        "min_int": 12,
+        "maintenance": 35,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100m Radius, 140 MR"
+      },
+      "intermediate": {
+        "zeon": 500,
+        "min_int": 15,
+        "maintenance": 50,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "500m Radius, 180 MR"
+      },
+      "advanced": {
+        "zeon": 800,
+        "min_int": 17,
+        "maintenance": 80,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "1km Radius, 220 MR"
+      },
+      "arcane": {
+        "zeon": 1500,
+        "min_int": 18,
+        "maintenance": 150,
+        "resistance": 250,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "5km Radius, 250 MR"
+      }
+    }
+  },
+  {
+    "id": "maintain-magic",
+    "name": "Maintain Magic",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 86,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Through the use of this spell, another existing spell is tied to the world in a more lasting way. In game terms, another spell is provided a pool of Zeon to pay for maintenance of the spell without drawing additional resources from the caster. This does not increase the level of the spell, only the maintenance of the spell as it exists is affected.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500 Zeon"
+      },
+      "intermediate": {
+        "zeon": 500,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "2000 Zeon"
+      },
+      "advanced": {
+        "zeon": 900,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5000 Zeon"
+      },
+      "arcane": {
+        "zeon": 1600,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10000 Zeon"
+      }
+    }
+  },
+  {
+    "id": "provide-soul",
+    "name": "Provide Soul",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 88,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster is able to create a complete soul, giving the breath of life to an object or body able to contain one. If the soul is provided to a magically engendered creature such as those developed by the Create Being spell, or by the Level 82 spells of the minor paths, Provide Soul makes it unnecessary to continue maintaining those beings with the caster’s Zeon. The creature thereby breaks any bond it has with its creator, obtaining free will just like any other being between worlds. Not all souls created by this spell are capable of entering the body into which they are introduced. Any soul created this way must be provided a body within the presence limit described by the level of the spell, and that body cannot already contain a living soul.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 500,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 800,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 Presence limit"
+      },
+      "advanced": {
+        "zeon": 1200,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 Presence limit"
+      },
+      "arcane": {
+        "zeon": 2000,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Presence limit"
+      }
+    }
+  },
+  {
+    "id": "greater-creation",
+    "name": "Greater Creation",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 90,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Gives the caster the gift of creation at their whim, awarding them a pool of Presence to distribute freely between their various constructions or objects. They can create any inanimate object they wish, from castles to mountains, as long as the presence of each object is within the limit described by the level of the spell. Like the other Creation spells, objects created in this way must be done so in a way logical to their nature.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 400,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500 Presence points, 100 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 800,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1000 Presence points, 120 Presence limit"
+      },
+      "advanced": {
+        "zeon": 1200,
+        "min_int": 14,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "2000 Presence points, 140 Presence limit"
+      },
+      "arcane": {
+        "zeon": 2000,
+        "min_int": 16,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5000 Presence points, 180 Presence limit"
+      }
+    }
+  },
+  {
+    "id": "eternal-magic",
+    "name": "Eternal Magic",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 92,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "As the name of the spell indicates, it affects another existing spell and greatly reduces (or even eliminates) the maintenance cost. If the spell in question has a Daily maintenance cost, Eternal Magic stabilizes it, making further maintenance unnecessary. The spell continues to be controlled by it’s caster, but will continue its effect even after their death. If the spell’s maintenance is instead ‘per combat turn’, it becomes one requiring Daily maintenance instead. A spell can only be affected by one Eternal Magic effect at a time, and thus a ‘per combat turn’ spell cannot be made first Daily, and then Eternal.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 600,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects a spell of Base level"
+      },
+      "intermediate": {
+        "zeon": 1000,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects a spell of Intermediate level"
+      },
+      "advanced": {
+        "zeon": 2500,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects a spell of Advanced level"
+      },
+      "arcane": {
+        "zeon": 5000,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects a spell of Arcane level"
+      }
+    }
+  },
+  {
+    "id": "the-barrier",
+    "name": "The Barrier",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 96,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "This unusual spell forms a breach in reality that is capable of separating the world into two parts. The separation cannot be perceived naturally, even by those capable of seeing magic. It may adopt any appearance, from being completely invisible to looking like a simple stone wall. Whatever form it takes, it does not permit anyone so much as a glimpse of what lies beyond it. Usually none are aware of its existence, even when attempting to cross it. If someone attempts to, they exit at another point of the Barrier, completely unaware of what has transpired (it is even possible to immediately turn around and not notice it). Transport is not an automatic spell effect, rather, little by little, reality itself begins to adapt to the exit location almost imperceptibly. To successfully perceive the Barrier, an Inhuman (320) Notice check is required. The Barrier can affect an area or line determined by the level of the spell, and remains in the same location as it is cast. As an example, The Barrier can be used over an island, to separate it from the rest of the natural world. That location disappears from view, and any ship sailing in the area will see only water, being transported immediately to another place to innocently continue their voyage. The Barrier need not be made absolutely perfect. If they choose, the caster may deliberately leave gaps or openings in one or both directions to successfully cross. Even for exceptionally powerful beings, certain requirements must be met to pass through The Barrier. First, they must have a Gnosis of at least 25, and an exact knowledge of The Barrier’s location. If they meet these conditions, they may attempt an MR check to bypass the barrier, and may re-attempt the check once per day if unsuccessful.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 300,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 800,
+        "min_int": 15,
+        "maintenance": 40,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 km2 or in a line, 120 MR"
+      },
+      "intermediate": {
+        "zeon": 2500,
+        "min_int": 16,
+        "maintenance": 45,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "1000 km2 or in a line, 180 MR"
+      },
+      "advanced": {
+        "zeon": 5000,
+        "min_int": 17,
+        "maintenance": 45,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "10000 km2 or in a line, 240 MR"
+      },
+      "arcane": {
+        "zeon": 10000,
+        "min_int": 19,
+        "maintenance": 50,
+        "resistance": 300,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "No size limitations, 300 MR"
+      }
+    }
+  },
+  {
+    "id": "the-gift-of-life",
+    "name": "The Gift of Life",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 98,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster is imbued with the ability to create a new form of life, the first born of a race that has never existed before. The creature can be of any class (Natural, Being Between Worlds, or Spirit) and can be tied to a particular element if desired. The maximum level of the creature cannot be higher than that of the creator. The creator can also choose the Gnosis of the creation, up to a limit of 10 less than their own.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 800,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50DP for Natural beings, 600DP for others."
+      },
+      "intermediate": {
+        "zeon": 2000,
+        "min_int": 17,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100DP for Natural beings, 1100DP for others."
+      },
+      "advanced": {
+        "zeon": 4000,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150DP for Natural beings, 1600DP for others."
+      },
+      "arcane": {
+        "zeon": 8000,
+        "min_int": 19,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200DP for Natural beings, 2100DP for others"
+      }
+    }
+  },
+  {
+    "id": "create",
+    "name": "Create",
+    "category": "main",
+    "path": "Creation",
+    "path_type": "major",
+    "level": 100,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Permits the caster absolute dominion over creation, giving them the ability to create anything they wish: continents, oceans, even entire worlds. In game terms, the caster receives a pool of Presence to create whatever they wish, as long as each object is within the presence limit described by the level of the spell. This spell can also create new fundamental rules of reality. Altering gravity, modifying the rate at which time passes, etc. Anyone with a Gnosis value less than half of the caster’s is affected by such changes, and there is no resistance to such an effect, it merely is.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 1000,
+        "min_int": 17,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1000 Presence points, 180 Presence limit, 1 new fundamental rule."
+      },
+      "intermediate": {
+        "zeon": 3000,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10000 Presence points, 220 Presence limit, 5 new fundamental rules."
+      },
+      "advanced": {
+        "zeon": 6000,
+        "min_int": 19,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10000 Presence points, 260 Presence limit, 10 new fundamental rules."
+      },
+      "arcane": {
+        "zeon": 12000,
+        "min_int": 20,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100000 Presence points, 320 Presence limit, any number of new fundamental rules."
+      }
+    }
+  }
+]

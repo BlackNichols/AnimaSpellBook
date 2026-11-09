@@ -1,0 +1,1822 @@
+[
+  {
+    "id": "natural-affinity",
+    "name": "Natural Affinity",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 2,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Alters the essence of an individual, allowing them to bond with certain creatures. Such creatures recognize them as one of their own, for instance, the spell could be used to grant affinity with wolves, so that a pack would recognize the character as an actual wolf. The types of creatures affected depends on the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Natural animals"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "All natural beings"
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "All natural beings and beings between worlds"
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "All creatures including supernatural beings of high existential power"
+      }
+    }
+  },
+  {
+    "id": "detect-essence",
+    "name": "Detect Essence",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 6,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster is able to detect any being’s base essence in an area around them. The caster does not obtain any real information about the creature, but is able to recognize characteristics such as it’s elemental binding, and at a later time may recognize beings with the same essence or race. Creatures wishing to avoid the effects must succeed at an MR check. As this spell is not a Detection spell, the caster must be aware of the presence of someone nearby to read their essence, but it can affect spiritual and immaterial creatures.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR",
+        "PsR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": 100,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "10m Radius, 100 MR"
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "25m Radius, 140 MR"
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "50m Radius, 160 MR"
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 200,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "100m Radius, 200 MR"
+      }
+    }
+  },
+  {
+    "id": "communication-through-essence",
+    "name": "Communication Through Essence",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 10,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "Establishes a connection between the caster and another living being, making it possible for them to communicate spiritually. Since this communication does not rely on spoken language, it is even possible to communicate with plants or animals. The level of the spell sets what types of creatures are affected.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects animals and plants"
+      },
+      "intermediate": {
+        "zeon": 70,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects all natural beings"
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects natural beings and beings between worlds"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 13,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects any class of being"
+      }
+    }
+  },
+  {
+    "id": "natural-knowledge",
+    "name": "Natural Knowledge",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 12,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Permits the spiritual analysis of information pertaining to a natural beings. A caster using this spell might examine a strange plant and determine its toxicity, or identify any special properties. The types of beings and analysis are determined by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Base properties of animals or plants"
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "All properties of animals or plants"
+      },
+      "advanced": {
+        "zeon": 90,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "All properties of a natural race"
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Base properties and supernatural powers of a natural being"
+      }
+    }
+  },
+  {
+    "id": "healing",
+    "name": "Healing",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 16,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Instantly heals one character by restoring a percentage of their lost life points. This spell does not recover lost limbs, nor does it eliminate the other penalties of criticals, but it does stop any bleeding. In the case of a damage resistant character, half of the percentage is recovered.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "20% Life Points"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "40% Life Points"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "60% Life Points"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80% Life Points"
+      }
+    }
+  },
+  {
+    "id": "soul-barrier",
+    "name": "Soul Barrier",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 20,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Defense"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates a barrier that stops all spiritual attacks affecting supernatural resistances. In game terms, it can stop attacks that force the defender to attempt an MR or PsR check of a certain difficulty or lower. It is not capable of stopping attacks that cause damage and also produce additional effects, such as Rain of Destruction. The shield itself does not have a life point value, as it does not stop attacks that produce damage.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "140 Resistance limit"
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "160 Resistance limit"
+      },
+      "advanced": {
+        "zeon": 90,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 Resistance limit"
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "240 Resistance limit"
+      }
+    }
+  },
+  {
+    "id": "share-senses",
+    "name": "Share Senses",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 22,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "Allows the caster and other characters to share sight and hearing over a long distance. The caster may choose to deny access to their own senses. Characters can avoid being connected by succeeding at either an MR or PsR check, and are entitled to a new attempt every hour. The number of individuals affected besides the caster is limited only by their combined presence.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR",
+        "PsR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": 100,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "100 MR or PsR, 100 Presence limit, 1km"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "160 MR or PsR, 160 Presence limit, 10km"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": 200,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "200 MR or PsR, 190 Presence limit, 50km"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": 240,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "240 MR or PsR, 220 Presence limit, 150km"
+      }
+    }
+  },
+  {
+    "id": "modify-essence",
+    "name": "Modify Essence",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 26,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to modify their own, or another character’s essence. This spell does not grant additional or special abilities as part of the change, but does temporarily alter the animistic base of the being. In game terms, this spell could turn an earth elemental into one of cold, causing it to be vulnerable to heat based effects and attacks. If the creature does possess special powers according to the aspect being modified, it temporarily loses those powers. To avoid this effect it is necessary to succeed at an MR check, which is only repeatable if the being’s base resistance changes.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR"
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR"
+      }
+    }
+  },
+  {
+    "id": "soul-poison",
+    "name": "Soul Poison",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 30,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Soul poison is a supernatural substance, inoculated into the target and spreading throughout their body. The caster is free to determine the effects of the poison, following the guidelines in Anima: Beyond Fantasy – Chapter 14: States and Accidents. The level of the poison is determined by the level of the spell. Additionally, this spell can be used to create antidotes should enough information to deduce one be available.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Poison level 40"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Poison level 50"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Poison level 60"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Poison level 70"
+      }
+    }
+  },
+  {
+    "id": "analyze-soul",
+    "name": "Analyze Soul",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 32,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to spiritually analyze an individual or creature, obtaining detailed information about their natural capacities and powers. Although it does not confer access to the victim’s knowledge, or the level of the abilities that depend on it, the caster can measure the victim’s spiritual potential and their innate capabilities. For example, when directed at a supernatural being, the caster can discover their powers and level, but not what the creature knows, or how good of a fighter it is. To avoid these effects, the target must succeed at an MR check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 7,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR"
+      }
+    }
+  },
+  {
+    "id": "acquire-natural-capacities",
+    "name": "Acquire Natural Capacities",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 36,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Grants the caster or those designated by them the ability to acquire abilities and characteristics of natural beings, such as plants or animals. In game terms, it gives the target a number of additional development points to acquire secondary abilities, essential abilities, and powers described in Anima: Beyond Fantasy - Chapter 26: Creation of Beings. Of secondary abilities, only ones based on Strength, Agility, or Perception can be acquired. Of powers, only those with a Gnosis requirement of 0 can be acquired. Otherwise, the DP is spent according to the current class of the character, and cannot be used to increase primary abilities or acquire supernatural powers. This spell can temporarily alter the appearance of the character, but not their state as a natural creature. For instance, a character acquiring an increased natural damage may sprout horns or claws. A character can only be affected by one application of this spell at a time, and to acquire new powers, the existing spell must be dismissed, and a new spell cast.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 7,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+50 Development Points"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+100 Development Points"
+      },
+      "advanced": {
+        "zeon": 280,
+        "min_int": 13,
+        "maintenance": 60,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+150 Development Points"
+      },
+      "arcane": {
+        "zeon": 360,
+        "min_int": 15,
+        "maintenance": 80,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+200 Development Points"
+      }
+    }
+  },
+  {
+    "id": "revitalize",
+    "name": "Revitalize",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 40,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates an area within which every living being regenerates its wounds and revitalizes itself. People and animals will regain their vigor, while plants will bloom with renewed strength. The spell affects a radius around the caster within which living creatures will be considered to have regeneration 16 as long as they remain in it.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50m Radius"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200m Radius"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500m Radius"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1km Radius"
+      }
+    }
+  },
+  {
+    "id": "life-mind",
+    "name": "Life Mind",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 42,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "Connects the caster’s essence with any living organism in a large area, as long as their Gnosis is 10 or lower, including natural plants and animals. The caster is able to feel what is around those beings using their senses as if they were the caster’s own, but does not allow for control of those creatures. Since this also transmits part of the caster’s spirit, they can cast spells from the creature with half of their Magic Accumulation as if they were physically present. However, this also means that any Spiritual spell cast upon the creature in which the caster finds themselves will also affect the caster. Usually, an affected individual does not realize they are being possessed in this way, even if spells are cast from their body. The instant the caster tries to introduce their essence to the target, a successful MR check by the target will avoid the effects entirely. Once the caster is observing from that body, they are free to ‘jump’ to any other body within range of the spell (as long as that target also fails their resistance roll). Once an individual resists successfully, the caster can no longer affect them, as if they left the area of effect. As this spell is not a Detection spell, it does not allow the caster to know how many valid targets are around them or their exact location, but the caster can direct their power to an area where they are interested in directing their spirit. It is possible, for example, to decide that the caster wants to enter the nearest mind to the point 300 meters to the north, and the spell will search for such a being. However, this method can be of limited use, since it is quite possible that the nearest living organism would be nothing more than a blade of grass. While a part of the casters’ essence resides outside their original body, they are unaware of the events taking place around their true body’s surroundings.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "80 MR, 500m Radius"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, 1km Radius"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, 2km Radius"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, 3km Radius"
+      }
+    }
+  },
+  {
+    "id": "alter-growth",
+    "name": "Alter Growth",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 46,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "Modifies the natural rhythm of an organism's development, accelerating or delaying its evolution. In game terms, it allows multiplying or dividing the aging rate of a living body based on the level of the spell. For example, if this spell is cast at the advanced degree to accelerate someone's aging, each day that passes will be equivalent to fifty for the target. To resist the spell’s effects, the target must succeed at an MR check. Once someone is affected by this spell, he has no right to repeat the resistance check as long as the caster maintains the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 MR, Two times growth rate"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 11,
+        "maintenance": 15,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, Ten times growth rate"
+      },
+      "advanced": {
+        "zeon": 180,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, Fifty times growth rate"
+      },
+      "arcane": {
+        "zeon": 240,
+        "min_int": 16,
+        "maintenance": 20,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, One hundred times growth rate"
+      }
+    }
+  },
+  {
+    "id": "natural-imitation",
+    "name": "Natural Imitation",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 50,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates one or more natural animals, imitating existing species. The beings will be under the absolute control of the caster, who can give them orders through the mystical bond that unites them. The created creatures must be an animal with Gnosis 0 and a race that exists in the world (for example, bears, rabbits, elephants ...). The spell allows you to create a single being (Level 5 limit), or distribute the levels it confers among several creatures. Creations will have all their natural instincts and abilities. As a reference, the caster should use the animals of Anima: Beyond Fantasy – Chapter 25: Common Characters for reference.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "2 Levels"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10 Levels"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "20 Levels"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 Levels"
+      }
+    }
+  },
+  {
+    "id": "spiritual-form",
+    "name": "Spiritual Form",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 52,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Transforms the physical form of an individual into spiritual matter. While in this state, they will apply the rules described in the degree of the spell as if they were a spiritual being (as described in Anima: Beyond Fantasy – Chapter 26: Creation of Beings).",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Intangible to all matter and attacks not able to damage energy."
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 11,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Base, but the character also obtains the ‘Physical Exemption’ essential ability."
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Intermediate, but the character also obtains the power ‘Spiritual Invisibility’."
+      },
+      "arcane": {
+        "zeon": 160,
+        "min_int": 16,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Advanced, but the character also obtains the power ‘Interaction with the world’."
+      }
+    }
+  },
+  {
+    "id": "natural-control",
+    "name": "Natural Control",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 56,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "The caster gains absolute dominion over a single living being with Gnosis 0. Valid targets include plants, animals, and even regular human beings. The caster transmits their orders directly through a mystic connection, without need for language. Resisting the effects of this spell requires a successful MR check. A character cannot substitute their Psychic resistance, since the effect is control through the target’s essence, and not their mind. The victim is allowed a new resistance check every day, as well as any time it receives an order against it’s nature. The target additionally gains a +20 bonus to this check if given an extreme order, such as sacrificing themselves or slaying a loved one.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 20,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "80 MR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 40,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 50,
+        "resistance": 150,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "150 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 60,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      }
+    }
+  },
+  {
+    "id": "state-induction",
+    "name": "State Induction",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 60,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Through manipulation of the soul, the subject can be induced to any of the generic states described in Anima: Beyond Fantasy – Chapter 14: States and Accidents, except for Death. The caster chooses the specific state at the moment the spell is cast, and the target receives a +40 bonus to their resistance roll if ‘Coma’ or ‘Total Paralysis’ are chosen.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 MR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR"
+      }
+    }
+  },
+  {
+    "id": "return-to-the-flow",
+    "name": "Return to the Flow",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 62,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Sends a spirit back to the flow of souls. This spell can affect both a dead soul of a normal creature awaiting the call, and a creature of the Spirit category. The essence vanishes once it arrives to the great beyond unless the entity has a Gnosis level high enough to simply return to the real world. If used against a spiritual undead, it is automatically destroyed as it 49 is separated from the natural course of the world. Avoiding these effects requires a successful MR check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 220,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "220 MR"
+      }
+    }
+  },
+  {
+    "id": "shield-area",
+    "name": "Shield Area",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 66,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "Enchants a certain area, making it impenetrable for a certain type of being. At the time of casting the spell, the caster must choose which kind of beings will be forbidden, although they will have absolute freedom to select as many as desired. It could, for example, prohibit the passage only to fire elementals or allow only humans to enter. The affected area may not be longer in radius than the spell's degree indicates, or double in length if it is instead wall-shaped. That is to say, if cast at base degree, the caster can choose between the area having a radius of 20 meters or a length of 40 meters in line. Any being who has been forbidden and who does not succeed at an MR check will not be able to cross the shield. Anyone who has failed the resistance roll has the right to repeat the roll once an hour. If any of these beings were already inside a shielded area when the spell was cast, they can move freely until they leave the area and intend to re-enter. Shield Area remains static in the place where it is cast.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "20m Radius, 120 MR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "30m Radius, 160 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": 25,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "40m Radius, 180 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "50m Radius, 200 MR"
+      }
+    }
+  },
+  {
+    "id": "supernatural-control",
+    "name": "Supernatural Control",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 70,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "Grants control over a single entity categorized as a Being Between Worlds, or a Spirit. The caster transmits their orders directly through a mystic connection, disregarding any need for language. Any entity wishing to avoid these effects must succeed at an MR check. The target’s Psychic Resistance cannot be used, as the spell exerts control through the essence of the target, and not the mind. Those who fail the roll are entitled to a new resistance roll every day, as well as any time it receives an order that directly opposes it’s nature.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 8,
+        "maintenance": 25,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 MR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 40,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": 50,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 60,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      }
+    }
+  },
+  {
+    "id": "share-essence",
+    "name": "Share Essence",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 72,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "The caster ties the essence of two individuals together in an indivisible unity, so long as their combined presence is within the limit set by the level of the spell. In this way, all damage and Spiritual effects suffered by one equally affects the other. Both individuals use the highest MR of the two against spiritual spells. When the essence of a damage resistant creature is combined with a normal being, the latter only suffers one fifth of the damage from the former. Avoiding these effects requires a successful MR check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 Presence limit, 120 MR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 Presence limit, 140 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": 170,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 Presence limit, 170 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "260 Presence limit, 200 MR"
+      }
+    }
+  },
+  {
+    "id": "transmigrate-soul",
+    "name": "Transmigrate Soul",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 76,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Confers upon the caster the ability to transport any soul in their presence to a new host. The soul can be hosted in a living being, or an inanimate object such as a stone, or sword. A dead body, in good condition, can also serve as a host, in which case the body will return to life. The transmigrated soul adopts the physical capabilities and limitations of the new host, retaining only their intellectual and spiritual abilities. For example, if the new host is a tree, the soul will be able to think, but unable to speak or move, or see with any capacity not innate to their body. Once the transmigration is complete, the soul will remain in it’s new host until it is destroyed. If the soul transmigrates to a body, or object already in possession of a soul, it will naturally face resistance. The two souls engage in a struggle for control of the host, and each roll 1d100 and add their base presence (no open rolls are allowed for this contested check). The results for the winner depend on the margin of victory. • 100+: The victor consumes the other soul and takes control of the host permanently. • 50-99: The weaker soul is pacified for a time, and remains asleep until a significant event awakens it. • 0-50: Temporary control is established, but the weaker soul is awake and entitled to a new check once per day. This spell can be resisted by both the transmigrated soul and the soul of a host, requiring a successful MR check. This spell can affect deceased spirits still awaiting the call, but cannot bring someone back from the flow of souls. If a supernatural spirit is enclosed in a physical body, it may lose it’s mystic powers, and reduce it’s level if necessary.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 15,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "60 Presence limit, 100 MR"
+      },
+      "intermediate": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 20,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 Presence limit, 140 MR"
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 25,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 Presence limit, 160 MR"
+      },
+      "arcane": {
+        "zeon": 540,
+        "min_int": 18,
+        "maintenance": 30,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 Presence limit, 200 MR"
+      }
+    }
+  },
+  {
+    "id": "spiritual-existence",
+    "name": "Spiritual Existence",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 80,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to transcend to a spiritual state, definitively abandoning their physical body. From that moment, they will cease to be a natural creature or being between worlds and will become a spirit with Gnosis 25, enjoying all the advantages (and disadvantages, such as being affected by summoning) that this entails. Additionally, they will have the ability to obtain extra Development Points, which can be used to choose between Essential Abilities and Powers described in Anima: Beyond Fantasy - Chapter 26: Creation of Beings. It also allows you to buy disadvantages and penalties to obtain additional points. Keep in mind that excess development points increases the level of the caster; When using this spell, the sorcerer automatically gains one level (by becoming a spiritual entity) plus an additional one for every 100 DP he obtains without counting disadvantages. This spell only works on natural beings and beings between worlds, so it cannot be cast on spirits to increase their abilities again. In the event that a spiritual being is reincarnated again in a physical form, they will automatically lose the advantages and powers obtained through this spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 DP from disadvantages"
+      },
+      "intermediate": {
+        "zeon": 500,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+100 DP, 100 DP from disadvantages"
+      },
+      "advanced": {
+        "zeon": 1000,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+200 DP, 200 DP from disadvantages"
+      },
+      "arcane": {
+        "zeon": 2500,
+        "min_int": 17,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+300 DP, 300 DP from disadvantages"
+      }
+    }
+  },
+  {
+    "id": "spirit-creation",
+    "name": "Spirit Creation",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 82,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Creates a spiritual creature completely under the magician’s control. This entity is developed as a spirit, subject to the powers and limitations of such beings described in Anima: Beyond Fantasy - Chapter 26: Creation of Beings. The creature has a number of development points based on the level of the spell, and the spirit is created using the same rules as the spell Create Being in the path of creation.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 10,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "600 DP (Level 1)"
+      },
+      "intermediate": {
+        "zeon": 350,
+        "min_int": 12,
+        "maintenance": 70,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "800 DP (Level 3)"
+      },
+      "advanced": {
+        "zeon": 500,
+        "min_int": 14,
+        "maintenance": 100,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1100 DP (Level 6)"
+      },
+      "arcane": {
+        "zeon": 700,
+        "min_int": 16,
+        "maintenance": 140,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1500 DP (Level 10)"
+      }
+    }
+  },
+  {
+    "id": "tie-vital-essence",
+    "name": "Tie Vital Essence",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 86,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Hides a soul in a physical container, without completely detaching it from its original form. The affected person will continue to act through their old body with freedom, since there is still a link with the soul, although this will be nothing more than an immortal empty shell, since his vital essence is safe elsewhere. However, the fact that they do not die does not mean that they are invulnerable. The body is not immune to criticals and they may be incapacitated completely. In addition, although they are unable to perish because of the loss of life points, if these are reduced such or if they suffer from the state of death, their body becomes a lifeless shell that will only heal with supernatural abilities. The carcass without a soul will be immune to the mystical effects of a spiritual nature, that is, any effect that directly affects its essence. On the contrary, the container itself is vulnerable, and if it is destroyed the character will die automatically. Since there is still a link between the body and the object that serves as a hiding place for the soul, they cannot be separated at a great distance at the risk of breaking the union and the individual dies. This distance is determined by the degree of the spell. If someone wants to resist this effect, they must succeed at an MR check, but once failed, they will not have the right to repeat it until they are in physical contact with the container.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 MR, 1km Distance"
+      },
+      "intermediate": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, 5km Distance"
+      },
+      "advanced": {
+        "zeon": 400,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, 50km Distance"
+      },
+      "arcane": {
+        "zeon": 500,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, 150km Distance"
+      }
+    }
+  },
+  {
+    "id": "greenness",
+    "name": "Greenness",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 90,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "By merging their spirit with nature itself, the caster is able to create plant and animal life as they please within a large radius. Such life emerges instantly, regardless of local climate and terrain conditions. However, since the magical energy of the spell has no duration, the extended survival of the newly created life is not guaranteed. Animals and plants created with this spell must belong to natural existing species.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10 km Radius"
+      },
+      "intermediate": {
+        "zeon": 500,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 km Radius"
+      },
+      "advanced": {
+        "zeon": 1000,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "350 km Radius"
+      },
+      "arcane": {
+        "zeon": 2500,
+        "min_int": 17,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "600 km Radius"
+      }
+    }
+  },
+  {
+    "id": "life-dominion",
+    "name": "Life Dominion",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 92,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "By seizing control of a portion of the world’s very essence, the caster gains absolute dominion over all Natural beings in a large area. They transmit their orders to such creatures through a mystical connection, without the need for language or physical proximity. Any entity wishing to resist the effects of this spell must succeed at an MR check. Any affected being is entitled to a new check every day as well as any time they receive an order completely against their nature.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 300,
+        "min_int": 10,
+        "maintenance": 60,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 MR, 100km Radius"
+      },
+      "intermediate": {
+        "zeon": 500,
+        "min_int": 13,
+        "maintenance": 75,
+        "resistance": 130,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "130 MR, 500km Radius"
+      },
+      "advanced": {
+        "zeon": 750,
+        "min_int": 15,
+        "maintenance": 85,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, 1500 km Radius"
+      },
+      "arcane": {
+        "zeon": 1000,
+        "min_int": 18,
+        "maintenance": 100,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR, 2500 km Radius"
+      }
+    }
+  },
+  {
+    "id": "resurrection",
+    "name": "Resurrection",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 96,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Plucks from the flow of souls a person’s very essence, and returns it to life. The difficulty of the spell depends on the time that has elapsed from the moment in which the person died, since the longer this period, the more the spirit is dispersed and rooted within the flow of souls. As such, the individual must be within both the presence and time limits of the degree of the spell. This spell only allows you to bring back the soul of the individual, but you cannot tie it to your body alone, nor heal it directly. To make the resurrection completely effective, the spirit must be transferred to an appropriate body, through the spell Transmigrate Soul. There is the possibility that their time in the afterlife has irreparably affected the soul of the individual, so it is up to the game master to determine the limit and knowledge of the individual. Obviously, it is not possible to resurrect the soul of one who has already been reincarnated, or had their soul destroyed.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 400,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30 Presence limit, 1 Month"
+      },
+      "intermediate": {
+        "zeon": 500,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "60 Presence limit, 1 Year"
+      },
+      "advanced": {
+        "zeon": 600,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 Presence limit, 10 Years"
+      },
+      "arcane": {
+        "zeon": 700,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 Presence limit, 1 Century"
+      }
+    }
+  },
+  {
+    "id": "lord-of-souls",
+    "name": "Lord of Souls",
+    "category": "main",
+    "path": "Essence",
+    "path_type": "minor",
+    "level": 100,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "The caster seizes control of a portion of the flow of souls itself, giving him absolute dominion over all souls, Spirits, and similar beings in a wide radius. Among other uses, the caster can snatch a soul from one body and reintroduce it into an unborn child, thus producing Nephalim. The lord of souls conveys their orders to those under their dominion through a mystical connection that does not require physical proximity nor language. Those wishing to resist these effects must succeed at an MR check, and those who fail this check are entitled to a new check each day, or any time they are given an order completely against their nature. If the caster is attempting to separate the soul from it’s original body, the target receives a special +40 to their resistance roll. Naturally, this spell only affects creatures with souls, and so it does not affect the undead or inanimate constructs.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 600,
+        "min_int": 12,
+        "maintenance": 120,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100km Radius, 120 MR"
+      },
+      "intermediate": {
+        "zeon": 800,
+        "min_int": 14,
+        "maintenance": 160,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "1000km Radius, 140 MR"
+      },
+      "advanced": {
+        "zeon": 1200,
+        "min_int": 16,
+        "maintenance": 240,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "2500km Radius, 180 MR"
+      },
+      "arcane": {
+        "zeon": 1500,
+        "min_int": 18,
+        "maintenance": 300,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "5000km Radius, 200 MR"
+      }
+    }
+  }
+]

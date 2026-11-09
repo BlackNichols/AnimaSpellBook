@@ -1,0 +1,215 @@
+Sense Chaos
+Level: 4 Action: Active
+Effect: The wizard is able to notice the fluctuations caused by chaos in the
+environment, allowing him to sense anything unnatural that occurs within the
+area of the spell. The spell cannot determine the exact location of the chaos,
+but the caster is aware of the level of influence that it has over reality in the
+area.
+Level Basic Intermediate Advanced Arcane
+Zeon 50 80 100 120
+Int. R. 5 8 10 12
+Basic: 150 foot radius.
+Intermediate: 300 foot radius.
+Advanced: 800 foot radius.
+Arcane: 2,000 foot radius / The wizard detects the presence of any being
+with greater than Gnosis 20 or with greater than Natura +10 that is within the
+spell’s area of effect unless the being passes a MR 160 check.
+Maintenance: 5 / 10 / 10 / 15 Daily
+Spell Type: Effect, Detection
+
+Aura of Chaos
+Level: 14 Action: Active
+Effect: The wizard causes a surge of energy that alters fate and makes events
+chaotic and unpredictable. While this spell is active, all affected people with a
+Natura less than +10 are treated as if they had Natura +10 (although for the
+purpose of their importance in reality, they retain their original value) and all
+sorts of unusual and impossible events occur constantly. In other words, it’s as
+if fate went crazy and anything could happen. At the time of casting this spell,
+the wizard must decide whether to leave it centered on a particular area or
+to create an aura that moves with him.
+Level Basic Intermediate Advanced Arcane
+Zeon 60 90 120 150
+Int. R. 6 9 12 15
+Basic: MR 80 / 30 foot radius / Maximum Presence affected is 100.
+Intermediate: MR 100 / 60 foot radius / Maximum Presence affected is
+120.
+Advanced: MR 120 / 120 foot radius / Maximum Presence affected is 140.
+Arcane: MR 140 / 140 foot radius / Maximum Presence affected is 160.
+Maintenance: 15 / 20 / 25 / 30
+Spell Type: Effect
+
+Probability Alteration
+Level: 24 Action: Active
+Effect: The wizard or the person he chooses undergoes a change in his
+nature that makes the possibility of very lucky or very unlucky actions much
+greater. Consequently, the target’s Fumble range and Open Roll range are
+increased by the values indicated by the level of the spell. For example,
+someone with no Mastery who is affected by this spell at its Basic level would
+Fumble on a 5 or less and make an Open Roll on an 85 or higher.
+Level Basic Intermediate Advanced Arcane
+Zeon 80 100 120 140
+Int. R. 8 10 12 14
+Basic: +2 to Fumble range / –5 to Open Roll range.
+Intermediate: +4 to Fumble range / –10 to Open Roll range.
+Advanced: +6 to Fumble range / –15 to Open Roll range.
+Arcane: +8 to Fumble range / –20 to Open Roll range.
+Maintenance: 20 / 20 / 25 / 30
+Spell Type: Spiritual
+
+Alter Luck
+Level: 34 Action: Active
+Effect: The target of this spell has improbable luck, which can be good or bad
+as chosen by the wizard. Any situation the target is involved in whose result is
+determined by chance will always have improbable results, whether for good
+or ill. A card player, for example, would continuously have either incredibly
+lucky or unlucky streaks. Characters with the Good Luck Advantage or Bad
+Luck Disadvantage suffer exponentially increased effects. It is possible to avoid
+these effects by passing a MR check determined by the level of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 80 140 250 400
+Int. R. 8 10 12 14
+Basic: MR 120.
+Intermediate: MR 140.
+Advanced: MR 160 / The good luck or bad luck granted approaches the
+absurd.
+Arcane: MR 180 / As Advanced level, but unless dealing with supernatural
+beings with a higher Gnosis or Natura, the character will always win or lose
+against anyone in anything that might have a luck-related outcome.
+Maintenance: 10 / 10 / 15 / 15
+Spell Type: Spiritual
+
+Paths of Chaos
+Level: 44 Action: Active
+Effect: The wizard can reroll a certain number of rolls per turn, provided
+that none of them are a Fumble. It is not possible to reroll the same roll
+twice.
+Level Basic Intermediate Advanced Arcane
+Zeon 120 180 280 400
+Int. R. 7 9 12 14
+Basic: One roll per turn.
+Intermediate: Two rolls per turn.
+Advanced: Three rolls per turn.
+Arcane: Four rolls per turn or one that is a Fumble.
+Maintenance: 20 / 20 / 25 / 30
+Spell Type: Spiritual
+
+Chaotic Aberration
+Level: 54 Action: Active
+Effect: This spell creates a spawn of chaos in reality. The caster does not have
+any power over the spawn, and it will behave in a completely unpredictable
+(but almost always violent) manner. The creature must be developed as a Being
+Between Worlds using the rules described in Chapter 26 of Anima: Beyond
+Fantasy, but the caster can only determine where half of the creature’s
+Development Points are spent; the other half are chosen at random by the
+Game Master. The creature’s Gnosis is determined by the level of the spell,
+with higher levels resulting in higher Gnosis, up to a maximum of 20 Gnosis.
+Regardless of the level the spell is cast at, it cannot create creatures of a higher
+level than the caster. Chaos creatures do not have the ability to receive a soul,
+so it is impossible to give a spawn of chaos an independent life through the
+Transmigrate Soul spell or by otherwise transmigrating a spirit into it.
+Level Basic Intermediate Advanced Arcane
+Zeon 120 200 300 700
+Int. R. 8 10 12 15
+Basic: Level 2.
+Intermediate: Level 4.
+Advanced: Level 8.
+Arcane: Level 12.
+Maintenance: No
+Spell Type: Effect
+
+Manipulate Chaos
+Level: 64 Action: Passive
+Effect: Through the power of chaos, this spell can change a person’s action,
+possibly changing its outcome. The spell must be cast immediately after someone
+performs an action, and the character who took that action must immediately reroll.
+For example, a character who attempts to jump across a gap and fails can try again.
+He is “rewound” to the beginning of the jump and must attempt the jump again with
+a new roll unless he passes a MR check. This spell takes effect automatically and can
+affect anyone in the vicinity of the wizard at the moment the target completes an
+action. Creatures with Gnosis 35 or higher or Natura +20 are aware of the change,
+while others cannot perceive it.
+Level Basic Intermediate Advanced Arcane
+Zeon 100 200 300 400
+Int. R. 10 12 14 16
+Basic: MR 140.
+Intermediate: MR 180 / The wizard can force a single roll to be rerolled up
+to two times.
+Advanced: MR 220 / The wizard can force a single roll to be rerolled up to
+three times.
+Arcane: MR 260 / The wizard can force a single roll to be rerolled up to four
+times.
+Maintenance: No
+Spell Type: Automatic
+
+Chaotic Mutation
+Level: 74 Action: Active
+Effect: The target of this spell suffers serious mutations in his body, altering
+both his physiognomy and his powers. The wizard or individual targeted with
+Chaotic Mutation gets additional Development Points to spend on powers like a
+Being Between Worlds with Gnosis 25. However, he can only voluntarily choose
+where to spend half of those Development Points; the other half are determined
+randomly by the Game Master. Almost always, the power of this spell leaves
+visible physical changes. A person can pass a MR check at the difficulty set by
+the level of the spell to resist its effects. The new Development Points increase
+the target’s level as normal. This spell can only be cast on an individual once.
+Level Basic Intermediate Advanced Arcane
+Zeon 200 400 800 1,200
+Int. R. 8 11 13 15
+Basic: MR 100 / 100 Development Points.
+Intermediate: MR 120 / 200 Development Points.
+Advanced: MR 140 / 300 Development Points.
+Arcane: MR 160 / 400 Development Points / Gnosis 30.
+Maintenance: No
+Spell Type: Effect
+
+Control Chaos
+Level: 84 Action: Active
+Effect: The wizard has the ability to bend chaos to his will, allowing him to get the
+results he wants from it. Thus, he could simply make a chair break or fold space to
+create a portal. It is important to note that this spell does not give a character power
+over chaos if it does not exist in an area, so the more chaotic the environment, the
+greater his power. For example, if the level of chaos in the environment is too low,
+the character could not do anything with the spell, while in an area affected strongly
+by chaos, he could cause almost anything to happen. For the purpose of play, the
+caster gets the Gnosis powers Influence Reality and Auspice, with a maximum value
+depending on the level of the spell and the level of chaos in the surroundings. In the
+event that a being based on chaos is in the wizard’s presence, he can dominate it
+as an Active Action unless it passes a MR check indicated by the spell’s level. If the
+creature passes its check, it is immune to the caster’s domination attempts for the
+duration of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 300 500 800 1,200
+Int. R. 11 13 15 17
+Basic: MR 120 / Up to Gnosis 30.
+Intermediate: MR 160 / Up to Gnosis 35.
+Advanced: MR 200 / Up to Gnosis 40.
+Arcane: MR 260 / Up to Gnosis 45.
+Maintenance: 50 / 60 / 65 / 75
+Spell Type: Effect
+
+Primal Chaos
+Level: 94 Action: Active
+Effect: Completely altering the laws of reality, the wizard creates chaos in
+its purest form, an area where everything stops responding to any laws of
+reason. Space is distorted; a road leading a character up may actually take him
+downwards; miles are traveled in seconds and feet in hours. A person can be
+young and old at the same time, a storm may pummel the area on a sunny day…
+Nothing makes sense, because the concept of logic has ceased to exist. A normal
+person will likely go crazy in a few minutes, while all supernatural power may
+go out of control. The area covered by this spell is determined by its level, is
+stationary, and is centered on where it was cast.
+Level Basic Intermediate Advanced Arcane
+Zeon 500 900 1,500 2,400
+Int. R. 12 14 16 18
+Basic: 1,500 foot radius.
+Intermediate: 3,000 foot radius.
+Advanced: 3 mile radius / Any person who is within the Primal Chaos for at
+least one minute is unavoidably affected by the Chaotic Mutation spell at the
+Arcane level.
+Arcane: 15 mile radius / As Advanced level, but within a mile of the spell’s
+center, the rule of chaos is absolute. No laws of reality hold; even matter ceases
+to exist, becoming simply a set of atoms in constant motion. Everything inside
+must pass a MR 160 check every five minutes or simply merge with the chaos
+and disappear forever.
+Maintenance: 100 / 180 / 300 / 480 Daily
+Spell Type: Automatic

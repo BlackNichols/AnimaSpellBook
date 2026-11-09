@@ -1,0 +1,172 @@
+Tempo
+Level: 4 Action: Active
+Effect: The wizard isolates himself from the rhythms of the world, ignoring
+distractions in order to focus on all the important sounds around him.
+Consequently, he gets a bonus to the Search Secondary Ability for all checks
+related to sound for the next 10 minutes.
+Level Basic Intermediate Advanced Arcane
+Zeon 30 50 70 100
+Int. R. 5 8 10 12
+Basic: +40 to Search.
+Intermediate: +60 to Search.
+Advanced: +80 to Search.
+Arcane: +100 to Search.
+Maintenance: No
+Spell Type: Effect
+
+Cantabile
+Level: 14 Action: Active
+Effect: This spell allows the character to make his voice or a melody appear
+to come from anywhere he wants within the spell’s range, as determined by its
+level.
+Level Basic Intermediate Advanced Arcane
+Zeon 40 60 80 100
+Int. R. 5 8 10 12
+Basic: 300 foot radius.
+Intermediate: 800 foot radius.
+Advanced: 1,500 foot radius.
+Arcane: 3,000 foot radius.
+Maintenance: 5 / 5 / 5 / 10
+Spell Type: Effect
+
+Plagiarism
+Level: 24 Action: Active
+Effect: This spell gives the wizard the ability to perform any musical piece,
+whether it involves playing an instrument or singing. The wizard must know or
+have heard at least a fragment of the part he wants to perform. The spell grants
+him a level of musical ability when attempting to play the piece determined by
+the level of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 50 70 90 120
+Int. R. 6 8 10 12
+Basic: Music 120.
+Intermediate: Music 180.
+Advanced: Music 240.
+Arcane: Music 280.
+Maintenance: 5 / 5 / 5 / 10
+Spell Type: Effect
+
+Mezzo Forte
+Level: 34 Action: Active
+Effect: The wizard makes a discordant musical note, unleashing a destructive
+sound wave that destroys anything solid it contacts. The attack has very low Base
+Damage, but if it deals damage, the defender must pass a PhR check against a
+difficulty equal to 10 times the Life Points he lost (up to PhR 240) or suffer
+additional damage equal to the degree of failure. For example, if this spell was
+cast at Intermediate level (Base Damage 20) and the attack caused 16 points of
+damage, the victim must check against PhR 160.
+Level Basic Intermediate Advanced Arcane
+Zeon 60 90 120 150
+Int. R. 7 9 11 13
+Basic: 10 Base Damage.
+Intermediate: 20 Base Damage.
+Advanced: 30 Base Damage.
+Arcane: 40 Base Damage.
+Maintenance: No
+Spell Type: Attack
+
+Adagio
+Level: 44 Action: Active
+Effect: This spell creates a song so charged with strong emotions that it
+influences everyone who hears it for at least one full turn. Anyone who does
+so must pass a MR check or be filled with an emotion chosen by the wizard.
+If someone listening to Adagio is able to partially cover his ears, he gets a +40
+bonus to his check. Adagio affects an area around the wizard, and he cannot
+choose specific targets within that area.
+Level Basic Intermediate Advanced Arcane
+Zeon 100 160 220 280
+Int. R. 7 9 11 13
+Basic: MR 120 / 60 foot radius.
+Intermediate: MR 140 / 150 foot radius.
+Advanced: MR 160 / 300 foot radius.
+Arcane: MR 180 / 500 foot radius.
+Maintenance: 5 / 10 / 15 / 20
+Spell Type: Automatic
+
+Allegro
+Level: 54 Action: Active
+Effect: This spell creates the most beautiful melody imaginable, which stuns and
+enthralls those who hear it. Anyone who remains within its radius for two full
+turns must pass a MR check or be Fascinated and unable to take voluntary Active
+Actions. Creatures unable to hear are immune to this spell, and if someone
+hearing the music partially covers his ears, he gets a +40 bonus to his check.
+Level Basic Intermediate Advanced Arcane
+Zeon 100 160 220 280
+Int. R. 7 9 11 13
+Basic: MR 120 / 30 foot radius.
+Intermediate: MR 140 / 80 foot radius.
+Advanced: MR 160 / 150 foot radius.
+Arcane: MR 180 / 300 foot radius.
+Maintenance: 5 / 10 / 15 / 20
+Spell Type: Automatic
+
+Presstisimo
+Level: 64 Action: Active
+Effect: This spell creates a frantic tune that increases the speed of anyone the
+caster chooses within the spell’s radius. Those affected gain a bonus to Initiative
+and increased movement speed.
+Level Basic Intermediate Advanced Arcane
+Zeon 120 180 240 300
+Int. R. 8 10 12 14
+Basic: 30 foot radius / +30 to Initiative / +1 to Movement Value.
+Intermediate: 60 foot radius / +30 to Initiative / +2 to Movement Value.
+Advanced: 100 foot radius / +40 to Initiative / +2 to Movement Value.
+Arcane: 120 foot radius / +50 to Initiative / +3 to Movement Value.
+Maintenance: 5 / 10 / 15 / 20
+Spell Type: Effect
+
+Fortísimo
+Level: 74 Action: Active
+Effect: The wizard gains complete control over any sound produced in the spell’s
+area and may alter it, increase its power, or make it completely undetectable.
+For example, he could bring together small environmental whispers to form a
+beautiful melody or misrepresent a person’s words. Unless the sound has its
+own Presence or is produced by a being with Gnosis 40 or more, there is no
+way to avoid the effects of this spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 120 180 240 300
+Int. R. 8 10 12 14
+Basic: 30 foot radius.
+Intermediate: 80 foot radius.
+Advanced: 150 foot radius.
+Arcane: 300 foot radius.
+Maintenance: 10 / 15 / 20 / 30
+Spell Type: Effect
+
+Marziale
+Level: 84 Action: Active
+Effect: This spell creates a powerful melody that reinforces the innate stamina
+of those in the area who are chosen by the caster. The benefits of multiple
+Marziale auras from the same or different casters are not cumulative.
+Level Basic Intermediate Advanced Arcane
+Zeon 120 180 240 300
+Int. R. 8 10 12 14
+Basic: 30 foot radius / +20 to MR / +2 to Armor Type.
+Intermediate: 80 foot radius / +20 to PhR and MR / +3 to Armor Type.
+Advanced: 150 foot radius / +20 to PhR, MR, and PsR / +4 to Armor Type /
+Damage Barrier 50.
+Arcane: 300 foot radius / +30 to PhR, MR, and PsR / +5 to Armor Type /
+Damage Barrier 60.
+Maintenance: 5 / 10 / 15 / 20
+Spell Type: Effect
+
+Anima
+Level: 94 Action: Active
+Effect: This spell carries a tune of supernatural power which penetrates the
+soul of anyone who hears it. Anima must be cast in combination with a Spiritual
+spell, and contrary to the usual rules, both spells are cast together in one action
+by the wizard (without a penalty for doing so). The wizard must pay the initial
+Zeon costs and the maintenance costs of both spells as normal. However,
+instead of the Spiritual spell taking effect immediately, it becomes Automatic and
+affects everyone within 150 feet of the caster who hears it for at least one full
+turn. The MR check to overcome the Spiritual spell is the same as for the normal
+spell, but if someone partially covers his ears, he gets a +40 bonus to his check.
+Level Basic Intermediate Advanced Arcane
+Zeon 300 450 600 800
+Int. R. 8 10 12 14
+Basic: Affects Basic level spells.
+Intermediate: Affects Intermediate level spells.
+Advanced: Affects Advanced level spells.
+Arcane: Affects Arcane level spells.
+Maintenance: 5 / 10 / 15 / 20
+Spell Type: Automatic

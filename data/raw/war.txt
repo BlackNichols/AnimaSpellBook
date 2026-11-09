@@ -1,0 +1,160 @@
+Morale
+Level: 4 Action: Active
+Effect: This spell inspires the wizards’ allies, boosting their spirits and making them
+immune to the effects of fear or pain. For game purposes, they receive a bonus to
+their Composure until the end of their combat or until 10 minutes have passed.
+Level Basic Intermediate Advanced Arcane
+Zeon 30 60 90 120
+Int. R. 5 8 11 13
+Basic: 30 foot radius / +40 to Composure.
+Intermediate: 150 foot radius / +80 to Composure.
+Advanced: 800 foot radius / +120 to Composure.
+Arcane: 1,500 foot radius / +180 to Composure.
+Maintenance: No
+Spell Type: Effect
+
+Ancestral Rage
+Level: 14 Action: Active
+Effect: This spell wakes a craving for war in the wizard’s allies that makes them
+unstoppable warriors, human beasts full of unparalleled rage. His allies receive a
++10 bonus to Attack and gain the Rage state. Fortunately, the magic also protects
+them from their own anger; they will not lose control or attack each other.
+Level Basic Intermediate Advanced Arcane
+Zeon 40 70 100 130
+Int. R. 6 9 12 15
+Basic: 30 foot radius.
+Intermediate: 150 foot radius.
+Advanced: 800 foot radius.
+Arcane: 1,500 foot radius.
+Maintenance: 5 / 10 / 10 / 15
+Spell Type: Effect
+
+Speed in Battle
+Level: 24 Action: Active
+Effect: The wizard channels the spirit of battle to his allies, making them fight as one
+man and anticipate their enemies’ actions.
+Level Basic Intermediate Advanced Arcane
+Zeon 50 90 120 150
+Int. R. 6 9 12 15
+Basic: 30 foot radius / +10 to Initiative.
+Intermediate: 150 foot radius / +10 to Initiative.
+Advanced: 800 foot radius / +20 to Initiative.
+Arcane: 1,500 foot radius / +20 to Initiative.
+Maintenance: 5 / 10 / 15 / 15
+Spell Type: Effect
+
+Unleashed Destruction
+Level: 34 Action: Active
+Effect: This spell increases the destructive power of any allies near the wizard,
+giving them a bonus to the damage dealt by all their attacks.
+Level Basic Intermediate Advanced Arcane
+Zeon 80 120 160 200
+Int. R. 7 9 12 15
+Basic: 30 foot radius / +20 to Base Damage.
+Intermediate: 150 foot radius / +20 to Base Damage.
+Advanced: 800 foot radius / +30 to Base Damage.
+Arcane: 1,500 foot radius / +40 to Base Damage.
+Maintenance: 5 / 15 / 20 / 20
+Spell Type: Effect
+
+Final Protection
+Level: 44 Action: Active
+Effect: This spell increases the Resistances and Armor Type of all allies close
+to the wizard.
+Level Basic Intermediate Advanced Arcane
+Zeon 80 120 160 200
+Int. R. 7 9 12 15
+Basic: 30 foot radius / +10 to All Resistances / +1 Armor Type.
+Intermediate: 150 foot radius / +10 to All Resistances / +2 Armor Type.
+Advanced: 800 foot radius / +20 to All Resistances / +2 Armor Type.
+Arcane: 1,500 foot radius / +30 to All Resistances / +3 Armor Type.
+Maintenance: 5 / 15 / 20 / 20
+Spell Type: Effect
+
+Relentless March
+Level: 54 Action: Active
+Effect: This spell allows the wizard’s companions to march incessantly, resisting
+fatigue and the elements. For game purposes, this spell gives all allies within
+the spell’s area the effects of the Use of Necessary Energy and Elimination of
+Necessities Ki Abilities.
+Level Basic Intermediate Advanced Arcane
+Zeon 150 200 250 300
+Int. R. 6 9 12 15
+Basic: 30 foot radius.
+Intermediate: 150 foot radius.
+Advanced: 300 foot radius.
+Arcane: 1,500 foot radius.
+Maintenance: 30 / 40 / 50 / 100 Daily
+Spell Type: Effect
+
+Champion
+Level: 64 Action: Active
+Effect: This spell channels the fighting spirit of a group into one warrior, creating
+a ruthless and near-invincible fighter. The spell gives various bonuses to combat
+skills if the champion chosen is fighting alongside his peers. Only one person for
+every 10 in a group may be affected by this spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 140 180 240 350
+Int. R. 10 12 14 16
+Basic: +10 to All Actions / +10 to Base Damage / +10 to Initiative / +2 to
+Armor Type / Maximum group size 50.
+Intermediate: +10 to All Actions / +20 to Base Damage / +20 to Initiative /
++3 to Armor Type / Maximum group size 100.
+Advanced: +20 to All Actions / +20 to Base Damage / +20 to Initiative / +4
+to Armor Type / Maximum group size 200.
+Arcane: +30 to All Actions / +30 to Base Damage / +30 to Initiative / +5 to
+Armor Type / Maximum group size 400.
+Maintenance: 15 / 15 / 20 / 30
+Spell Type: Effect
+
+Accurate Orders
+Level: 74 Action: Active
+Effect: This spell allows the caster or one other target to transmit orders directly
+into the minds of his allies. These messages are automatically sent, without the
+need to talk out loud or to make any sign that might be noticed by unwanted
+people. The character can choose who can hear and who cannot, and can transmit
+several commands at once with a single thought.
+Level Basic Intermediate Advanced Arcane
+Zeon 150 200 250 300
+Int. R. 8 10 12 15
+Basic: 75 foot radius.
+Intermediate: 300 foot radius.
+Advanced: 800 foot radius.
+Arcane: 1,500 foot radius.
+Maintenance: No
+Spell Type: Effect
+
+Master of War
+Level: 84 Action: Passive
+Effect: The wizard can fight physically with any weapon using his offensive and
+defensive Magic Projection for his Attack and Defense Abilities. The maximum
+ability level he can reach is determined by the level of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 200 300 400 500
+Int. R. 10 12 15 18
+Basic: Up to 200 Ability.
+Intermediate: Up to 250 Ability.
+Advanced: Up to 300 Ability.
+Arcane: No limit.
+Maintenance: 10 / 15 / 20 / 25
+Spell Type: Effect
+
+Beyond the End
+Level: 94 Action: Active
+Effect: This spell has power over the martial spirits of the caster’s mortal allies,
+allowing them to continue forward even on the threshold of death. All allies
+within the radius of the spell double the number of negative Life Points they can
+survive to (when using the optional rules for being Between Life and Death from
+the Game Master’s Toolkit, apply a +40 bonus to the PhR check) and suffer
+no penalties for fighting in that state.
+Level Basic Intermediate Advanced Arcane
+Zeon 250 500 750 1,000
+Int. R. 14 16 18 20
+Basic: 75 foot radius.
+Intermediate: 300 foot radius.
+Advanced: 800 foot radius.
+Arcane: 1,500 foot radius / In addition to the effects described, anyone
+affected by this spell can keep fighting at full capacity for two turns after his
+death as long as the spell is maintained for those turns.
+Maintenance: 25 / 50 / 75 / 100
+Spell Type: Effect

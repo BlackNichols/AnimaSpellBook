@@ -34,10 +34,14 @@ export type SpellType =
   | 'Detection'
   | 'Attack';
 
+export type ResistanceType = 'MR' | 'PhR' | 'PsR' | 'VR' | 'DR';
+
 export interface SpellGrade {
   zeon: number;
   min_int: number;
   maintenance: number | null; // null when the spell cannot be maintained
+  resistance?: number | null; // Check difficulty required to resist this grade (or null)
+  resistance_types?: ResistanceType[]; // Types of resistance (e.g. ['MR'], ['PhR'], ['MR', 'PsR'])
   description: string;
 }
 
@@ -50,7 +54,8 @@ export interface SpellGrades {
 
 export interface SpellMetadata {
   is_aoe: boolean;
-  magic_resistance_cap: number | null; // e.g. 140, or null if no MR check
+  resistance_cap: number | null; // Highest resistance difficulty across grades, or null if no check
+  resistance_types?: ResistanceType[]; // Types of resistance (e.g. ['MR'], ['PhR'], ['MR', 'PsR'])
   tags?: string[];
 }
 
@@ -59,7 +64,7 @@ export interface BaseSpell {
   name: string;
   effect: string; // General concept / summary
   action: ActionType;
-  type: SpellType;
+  types: SpellType[];
   daily_maintenance: boolean;
   grades: SpellGrades;
   metadata: SpellMetadata;

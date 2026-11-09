@@ -1,0 +1,562 @@
+[
+  {
+    "id": "tempo",
+    "name": "Tempo",
+    "category": "secondary",
+    "path": "Music",
+    "path_type": null,
+    "level": 4,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "The wizard isolates himself from the rhythms of the world, ignoring distractions in order to focus on all the important sounds around him. Consequently, he gets a bonus to the Search Secondary Ability for all checks related to sound for the next 10 minutes.",
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+40 to Search."
+      },
+      "intermediate": {
+        "zeon": 50,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+60 to Search."
+      },
+      "advanced": {
+        "zeon": 70,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+80 to Search."
+      },
+      "arcane": {
+        "zeon": 100,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+100 to Search."
+      }
+    }
+  },
+  {
+    "id": "cantabile",
+    "name": "Cantabile",
+    "category": "secondary",
+    "path": "Music",
+    "path_type": null,
+    "level": 14,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell allows the character to make his voice or a melody appear to come from anywhere he wants within the spell’s range, as determined by its level.",
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 foot radius."
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "800 foot radius."
+      },
+      "advanced": {
+        "zeon": 80,
+        "min_int": 10,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1,500 foot radius."
+      },
+      "arcane": {
+        "zeon": 100,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3,000 foot radius."
+      }
+    }
+  },
+  {
+    "id": "plagiarism",
+    "name": "Plagiarism",
+    "category": "secondary",
+    "path": "Music",
+    "path_type": null,
+    "level": 24,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell gives the wizard the ability to perform any musical piece, whether it involves playing an instrument or singing. The wizard must know or have heard at least a fragment of the part he wants to perform. The spell grants him a level of musical ability when attempting to play the piece determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Music 120."
+      },
+      "intermediate": {
+        "zeon": 70,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Music 180."
+      },
+      "advanced": {
+        "zeon": 90,
+        "min_int": 10,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Music 240."
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Music 280."
+      }
+    }
+  },
+  {
+    "id": "mezzo-forte",
+    "name": "Mezzo Forte",
+    "category": "secondary",
+    "path": "Music",
+    "path_type": null,
+    "level": 34,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "The wizard makes a discordant musical note, unleashing a destructive sound wave that destroys anything solid it contacts. The attack has very low Base Damage, but if it deals damage, the defender must pass a PhR check against a difficulty equal to 10 times the Life Points he lost (up to PhR 240) or suffer additional damage equal to the degree of failure. For example, if this spell was cast at Intermediate level (Base Damage 20) and the attack caused 16 points of damage, the victim must check against PhR 160.",
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 7,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10 Base Damage."
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "20 Base Damage."
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 11,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30 Base Damage."
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "40 Base Damage."
+      }
+    }
+  },
+  {
+    "id": "adagio",
+    "name": "Adagio",
+    "category": "secondary",
+    "path": "Music",
+    "path_type": null,
+    "level": 44,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell creates a song so charged with strong emotions that it influences everyone who hears it for at least one full turn. Anyone who does so must pass a MR check or be filled with an emotion chosen by the wizard. If someone listening to Adagio is able to partially cover his ears, he gets a +40 bonus to his check. Adagio affects an area around the wizard, and he cannot choose specific targets within that area.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 7,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / 60 foot radius."
+      },
+      "intermediate": {
+        "zeon": 160,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140 / 150 foot radius."
+      },
+      "advanced": {
+        "zeon": 220,
+        "min_int": 11,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / 300 foot radius."
+      },
+      "arcane": {
+        "zeon": 280,
+        "min_int": 13,
+        "maintenance": 20,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180 / 500 foot radius."
+      }
+    }
+  },
+  {
+    "id": "allegro",
+    "name": "Allegro",
+    "category": "secondary",
+    "path": "Music",
+    "path_type": null,
+    "level": 54,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell creates the most beautiful melody imaginable, which stuns and enthralls those who hear it. Anyone who remains within its radius for two full turns must pass a MR check or be Fascinated and unable to take voluntary Active Actions. Creatures unable to hear are immune to this spell, and if someone hearing the music partially covers his ears, he gets a +40 bonus to his check.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 7,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / 30 foot radius."
+      },
+      "intermediate": {
+        "zeon": 160,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140 / 80 foot radius."
+      },
+      "advanced": {
+        "zeon": 220,
+        "min_int": 11,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / 150 foot radius."
+      },
+      "arcane": {
+        "zeon": 280,
+        "min_int": 13,
+        "maintenance": 20,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180 / 300 foot radius."
+      }
+    }
+  },
+  {
+    "id": "presstisimo",
+    "name": "Presstisimo",
+    "category": "secondary",
+    "path": "Music",
+    "path_type": null,
+    "level": 64,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell creates a frantic tune that increases the speed of anyone the caster chooses within the spell’s radius. Those affected gain a bonus to Initiative and increased movement speed.",
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30 foot radius / +30 to Initiative / +1 to Movement Value."
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "60 foot radius / +30 to Initiative / +2 to Movement Value."
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 foot radius / +40 to Initiative / +2 to Movement Value."
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 14,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 foot radius / +50 to Initiative / +3 to Movement Value."
+      }
+    }
+  },
+  {
+    "id": "fortisimo",
+    "name": "Fortísimo",
+    "category": "secondary",
+    "path": "Music",
+    "path_type": null,
+    "level": 74,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "The wizard gains complete control over any sound produced in the spell’s area and may alter it, increase its power, or make it completely undetectable. For example, he could bring together small environmental whispers to form a beautiful melody or misrepresent a person’s words. Unless the sound has its own Presence or is produced by a being with Gnosis 40 or more, there is no way to avoid the effects of this spell.",
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30 foot radius."
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 foot radius."
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 foot radius."
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 14,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 foot radius."
+      }
+    }
+  },
+  {
+    "id": "marziale",
+    "name": "Marziale",
+    "category": "secondary",
+    "path": "Music",
+    "path_type": null,
+    "level": 84,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell creates a powerful melody that reinforces the innate stamina of those in the area who are chosen by the caster. The benefits of multiple Marziale auras from the same or different casters are not cumulative.",
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30 foot radius / +20 to MR / +2 to Armor Type."
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 foot radius / +20 to PhR and MR / +3 to Armor Type."
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 foot radius / +20 to PhR, MR, and PsR / +4 to Armor Type / Damage Barrier 50."
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 14,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 foot radius / +30 to PhR, MR, and PsR / +5 to Armor Type / Damage Barrier 60."
+      }
+    }
+  },
+  {
+    "id": "anima",
+    "name": "Anima",
+    "category": "secondary",
+    "path": "Music",
+    "path_type": null,
+    "level": 94,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell carries a tune of supernatural power which penetrates the soul of anyone who hears it. Anima must be cast in combination with a Spiritual spell, and contrary to the usual rules, both spells are cast together in one action by the wizard (without a penalty for doing so). The wizard must pay the initial Zeon costs and the maintenance costs of both spells as normal. However, instead of the Spiritual spell taking effect immediately, it becomes Automatic and affects everyone within 150 feet of the caster who hears it for at least one full turn. The MR check to overcome the Spiritual spell is the same as for the normal spell, but if someone partially covers his ears, he gets a +40 bonus to his check.",
+    "grades": {
+      "initial": {
+        "zeon": 300,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects Basic level spells."
+      },
+      "intermediate": {
+        "zeon": 450,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects Intermediate level spells."
+      },
+      "advanced": {
+        "zeon": 600,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects Advanced level spells."
+      },
+      "arcane": {
+        "zeon": 800,
+        "min_int": 14,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects Arcane level spells."
+      }
+    }
+  }
+]

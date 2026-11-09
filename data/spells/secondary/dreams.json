@@ -1,0 +1,598 @@
+[
+  {
+    "id": "sense-dreams",
+    "name": "Sense Dreams",
+    "category": "secondary",
+    "path": "Dreams",
+    "path_type": null,
+    "level": 4,
+    "action": "Active",
+    "types": [
+      "Detection"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell allows the caster to locate the dream energies of everyone sleeping around him. In addition, he can tell by the energies they give off whether they are having peaceful dreams or terrible nightmares. To resist this spell, sleepers must pass a MR check with a difficulty determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 5,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / 150 foot radius."
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / 500 foot radius."
+      },
+      "advanced": {
+        "zeon": 80,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 200 / 650 foot radius."
+      },
+      "arcane": {
+        "zeon": 100,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 240 / 1,500 foot radius."
+      }
+    }
+  },
+  {
+    "id": "undisturbed-sleep",
+    "name": "Undisturbed Sleep",
+    "category": "secondary",
+    "path": "Dreams",
+    "path_type": null,
+    "level": 14,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell protects a person from being affected by spells or effects of any kind related to dreaming, giving a bonus to any MR or PsR checks against such spells. Similarly, this spell prevents the target from being teleported involuntarily to the Wake, giving the same bonus to Resistances if someone tries to force him there.",
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+40 to MR or PsR."
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+60 to MR or PsR."
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+80 to MR or PsR."
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+100 to MR or PsR."
+      }
+    }
+  },
+  {
+    "id": "dream-spy",
+    "name": "Dream Spy",
+    "category": "secondary",
+    "path": "Dreams",
+    "path_type": null,
+    "level": 24,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell detects the current happenings in the dreams of a sleeper, whether they are peaceful or nightmarish. It is not possible to manipulate them in any way, but they can be seen in detail. A person can resist this spell by passing a MR check with a difficulty determined by the level of the spell, but if he fails, he may only check once each subsequent day and only if he is aware of the spell or suspects that he may be affected by such a spell.",
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140."
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160."
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180."
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 200 / The caster may project a material image of the target’s dream in front of himself, so anyone close to him can also see into the dream."
+      }
+    }
+  },
+  {
+    "id": "disturbing-dreams",
+    "name": "Disturbing Dreams",
+    "category": "secondary",
+    "path": "Dreams",
+    "path_type": null,
+    "level": 34,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell allows the wizard to alter any dreams (whether peaceful ones or nightmares) within the radius of the spell in any way he wishes. This spell only works if the caster is outside of the dream; it cannot be used in the dream itself or in the Wake. This spell only affects people who are sleeping at the time, and it ends the moment they wake up.",
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 100 / 150 foot radius."
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / 500 foot radius."
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 11,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140 / 800 foot radius."
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / 1,500 foot radius."
+      }
+    }
+  },
+  {
+    "id": "night-walker",
+    "name": "Night Walker",
+    "category": "secondary",
+    "path": "Dreams",
+    "path_type": null,
+    "level": 44,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 150,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell allows the wizard or a person chosen by him to bring his dream self into the real world. Thus, while his body sleeps, he can move freely around the world as a dream form. While someone is in this dream form, he is invisible to the naked eye (except to those capable of seeing spirits) and makes no noise. He is also completely intangible and cannot touch anything material. The maximum distance that the person can move from his physical body is determined by the level of the spell. If the dream form or physical body sustains any damage, the spell is broken.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 mile maximum distance."
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "2 miles maximum distance / The affected person may become visible at will and speak with anyone he chooses."
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 14,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3 miles maximum distance / As Intermediate level, but the character can alter his dream appearance at will, acquiring any shape he can dream of."
+      },
+      "arcane": {
+        "zeon": 160,
+        "min_int": 16,
+        "maintenance": 40,
+        "resistance": 150,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "Any distance / As Advanced level, but he can enter the dream world of any sleeping person if that person fails a MR check against difficulty 150."
+      }
+    }
+  },
+  {
+    "id": "eternal-dream",
+    "name": "Eternal Dream",
+    "category": "secondary",
+    "path": "Dreams",
+    "path_type": null,
+    "level": 54,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 140,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This terrible spell traps its victim in a dream from which he cannot wake until the wizard allows him to, no matter what happens to his body. To resist the effects of the spell, the victim must pass an MR check with a difficulty determined by the level of the spell. Anyone who fails the initial MR check can attempt one MR check per day to break the spell, but suffers a –40 penalty to this check.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 80."
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 100."
+      },
+      "advanced": {
+        "zeon": 180,
+        "min_int": 11,
+        "maintenance": 20,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120."
+      },
+      "arcane": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": 25,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140."
+      }
+    }
+  },
+  {
+    "id": "tear-membrane",
+    "name": "Tear Membrane",
+    "category": "secondary",
+    "path": "Dreams",
+    "path_type": null,
+    "level": 64,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell creates a vortex in reality, establishing a portal to the Wake (or back from it).",
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "The portal only goes one direction and only allows the wizard to pass through."
+      },
+      "intermediate": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Any number of beings may pass through the portal, but only in one direction."
+      },
+      "advanced": {
+        "zeon": 280,
+        "min_int": 14,
+        "maintenance": 60,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Intermediate level, but the portal can be used in both directions."
+      },
+      "arcane": {
+        "zeon": 320,
+        "min_int": 16,
+        "maintenance": 70,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Advanced level, but the caster can determine who can freely cross the portal or decide if anyone who crosses will need to have some special quality or object to do so."
+      }
+    }
+  },
+  {
+    "id": "banish-to-the-wake",
+    "name": "Banish to the Wake",
+    "category": "secondary",
+    "path": "Dreams",
+    "path_type": null,
+    "level": 74,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell allows the wizard to boot the target from the real world to a random place in the Wake. The caster can choose whether he sends the whole target or only his mind (i.e., the target’s body will sleep while his mind goes to the Wake). If the target was already asleep, he cannot feel the dimensional jump, and if he was awake, his body falls into a deep sleep. The spell can also affect creatures native to the Wake, which it destroys completely. To resist this spell, the target must pass a MR check with a difficulty determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 100."
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120."
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140."
+      },
+      "arcane": {
+        "zeon": 160,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160."
+      }
+    }
+  },
+  {
+    "id": "between-dreams-and-reality",
+    "name": "Between Dreams and Reality",
+    "category": "secondary",
+    "path": "Dreams",
+    "path_type": null,
+    "level": 84,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell allows the caster to alter the boundary between the real world and the Wake, temporarily fusing both planes of existence into one. Spirits from the Wake can freely enter the area affected by the spell and leave it back to the Wake. They cannot, however, leave the area of effect to travel in the real world. Creatures that have special powers in the Wake continue to be able to use them in the area affected.",
+    "grades": {
+      "initial": {
+        "zeon": 400,
+        "min_int": 13,
+        "maintenance": 80,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 foot radius."
+      },
+      "intermediate": {
+        "zeon": 500,
+        "min_int": 15,
+        "maintenance": 100,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1,500 foot radius."
+      },
+      "advanced": {
+        "zeon": 700,
+        "min_int": 17,
+        "maintenance": 140,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 mile radius."
+      },
+      "arcane": {
+        "zeon": 900,
+        "min_int": 19,
+        "maintenance": 180,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3 mile radius."
+      }
+    }
+  },
+  {
+    "id": "make-dreams-real",
+    "name": "Make Dreams Real",
+    "category": "secondary",
+    "path": "Dreams",
+    "path_type": null,
+    "level": 94,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Summoning"
+      ]
+    },
+    "effect": "This spell does literally what its name implies: it allows the wizard to bring into the real world any being or object that is in a sleeper’s dreams. For example, it could bring a shield, a warrior, or a horse that the dreamer rode into reality. In doing so, the object actually materializes and gains “substance.” In the case of a living being, the creature is apparently real, but cannot have powers greater than those allowed to a creature with Gnosis 25 or have a class level above that allowed by the level of the spell. In the case of an object, its maximum Presence is determined by the level of the spell. It is important to note that this spell does not allow the caster to see what is actually inside another’s dreams, so it will be necessary to use some other means to “see” exactly what he wants to make real.",
+    "grades": {
+      "initial": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Maximum Presence 80 / Level 3."
+      },
+      "intermediate": {
+        "zeon": 600,
+        "min_int": 14,
+        "maintenance": 60,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Maximum Presence 120 / Level 6."
+      },
+      "advanced": {
+        "zeon": 900,
+        "min_int": 16,
+        "maintenance": 65,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Maximum Presence 160 / Level 9."
+      },
+      "arcane": {
+        "zeon": 1200,
+        "min_int": 18,
+        "maintenance": 75,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Maximum Presence 200 / Level 12."
+      }
+    }
+  }
+]

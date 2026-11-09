@@ -1,0 +1,191 @@
+Sense Dreams
+Level: 4 Action: Active
+Effect: This spell allows the caster to locate the dream energies of everyone
+sleeping around him. In addition, he can tell by the energies they give off
+whether they are having peaceful dreams or terrible nightmares. To resist this
+spell, sleepers must pass a MR check with a difficulty determined by the level
+of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 40 60 80 100
+Int. R. 5 8 10 12
+Basic: MR 120 / 150 foot radius.
+Intermediate: MR 160 / 500 foot radius.
+Advanced: MR 200 / 650 foot radius.
+Arcane: MR 240 / 1,500 foot radius.
+Maintenance: No
+Spell Type: Detection
+
+Undisturbed Sleep
+Level: 14 Action: Active
+Effect: This spell protects a person from being affected by spells or effects
+of any kind related to dreaming, giving a bonus to any MR or PsR checks
+against such spells. Similarly, this spell prevents the target from being teleported
+involuntarily to the Wake, giving the same bonus to Resistances if someone tries
+to force him there.
+Level Basic Intermediate Advanced Arcane
+Zeon 60 80 100 120
+Int. R. 5 8 10 12
+Basic: +40 to MR or PsR.
+Intermediate: +60 to MR or PsR.
+Advanced: +80 to MR or PsR.
+Arcane: +100 to MR or PsR.
+Maintenance: 5 / 5 / 5 / 10 Daily
+Spell Type: Effect
+
+Dream Spy
+Level: 24 Action: Active
+Effect: This spell detects the current happenings in the dreams of a sleeper,
+whether they are peaceful or nightmarish. It is not possible to manipulate them
+in any way, but they can be seen in detail. A person can resist this spell by passing
+a MR check with a difficulty determined by the level of the spell, but if he fails,
+he may only check once each subsequent day and only if he is aware of the spell
+or suspects that he may be affected by such a spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 60 80 100 120
+Int. R. 6 8 10 12
+Basic: MR 140.
+Intermediate: MR 160.
+Advanced: MR 180.
+Arcane: MR 200 / The caster may project a material image of the target’s dream
+in front of himself, so anyone close to him can also see into the dream.
+Maintenance: 10 / 10 / 10 / 15 Daily
+Spell Type: Spiritual
+
+Disturbing Dreams
+Level: 34 Action: Active
+Effect: This spell allows the wizard to alter any dreams (whether peaceful ones
+or nightmares) within the radius of the spell in any way he wishes. This spell only
+works if the caster is outside of the dream; it cannot be used in the dream itself
+or in the Wake.
+This spell only affects people who are sleeping at the time, and it ends the
+moment they wake up.
+Level Basic Intermediate Advanced Arcane
+Zeon 80 100 120 140
+Int. R. 7 9 11 13
+Basic: MR 100 / 150 foot radius.
+Intermediate: MR 120 / 500 foot radius.
+Advanced: MR 140 / 800 foot radius.
+Arcane: MR 160 / 1,500 foot radius.
+Maintenance: 10 / 10 / 10 / 15
+Spell Type: Spiritual
+
+Night Walker
+Level: 44 Action: Active
+Effect: This spell allows the wizard or a person chosen by him to bring his
+dream self into the real world. Thus, while his body sleeps, he can move freely
+around the world as a dream form. While someone is in this dream form, he is
+invisible to the naked eye (except to those capable of seeing spirits) and makes
+no noise. He is also completely intangible and cannot touch anything material.
+The maximum distance that the person can move from his physical body is
+determined by the level of the spell. If the dream form or physical body sustains
+any damage, the spell is broken.
+Level Basic Intermediate Advanced Arcane
+Zeon 100 120 140 160
+Int. R. 10 12 14 16
+Basic: 1 mile maximum distance.
+Intermediate: 2 miles maximum distance / The affected person may become
+visible at will and speak with anyone he chooses.
+Advanced: 3 miles maximum distance / As Intermediate level, but the
+character can alter his dream appearance at will, acquiring any shape he can
+dream of.
+Arcane: Any distance / As Advanced level, but he can enter the dream world of
+any sleeping person if that person fails a MR check against difficulty 150.
+Maintenance: 30 / 30 / 40 / 40 Daily
+Spell Type: Effect
+
+Eternal Dream
+Level: 54 Action: Active
+Effect: This terrible spell traps its victim in a dream from which he cannot
+wake until the wizard allows him to, no matter what happens to his body. To
+resist the effects of the spell, the victim must pass an MR check with a difficulty
+determined by the level of the spell. Anyone who fails the initial MR check can
+attempt one MR check per day to break the spell, but suffers a –40 penalty to
+this check.
+Level Basic Intermediate Advanced Arcane
+Zeon 100 140 180 240
+Int. R. 7 9 11 13
+Basic: MR 80.
+Intermediate: MR 100.
+Advanced: MR 120.
+Arcane: MR 140.
+Maintenance: 10 / 20 / 20 / 25 Daily
+Spell Type: Spiritual
+
+Tear Membrane
+Level: 64 Action: Active
+Effect: This spell creates a vortex in reality, establishing a portal to the Wake
+(or back from it).
+Level Basic Intermediate Advanced Arcane
+Zeon 200 240 280 320
+Int. R. 10 12 14 16
+Basic: The portal only goes one direction and only allows the wizard to pass
+through.
+Intermediate: Any number of beings may pass through the portal, but only
+in one direction.
+Advanced: As Intermediate level, but the portal can be used in both directions.
+Arcane: As Advanced level, but the caster can determine who can freely cross
+the portal or decide if anyone who crosses will need to have some special quality
+or object to do so.
+Maintenance: 40 / 50 / 60 / 70 Daily
+Spell Type: Effect
+
+Banish to the Wake
+Level: 74 Action: Active
+Effect: This spell allows the wizard to boot the target from the real world to a
+random place in the Wake. The caster can choose whether he sends the whole
+target or only his mind (i.e., the target’s body will sleep while his mind goes
+to the Wake). If the target was already asleep, he cannot feel the dimensional
+jump, and if he was awake, his body falls into a deep sleep. The spell can also
+affect creatures native to the Wake, which it destroys completely. To resist this
+spell, the target must pass a MR check with a difficulty determined by the level
+of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 100 120 140 160
+Int. R. 10 12 14 16
+Basic: MR 100.
+Intermediate: MR 120.
+Advanced: MR 140.
+Arcane: MR 160.
+Maintenance: No.
+Spell Type: Spiritual
+
+Between Dreams and Reality
+Level: 84 Action: Active
+Effect: This spell allows the caster to alter the boundary between the real
+world and the Wake, temporarily fusing both planes of existence into one.
+Spirits from the Wake can freely enter the area affected by the spell and leave it
+back to the Wake. They cannot, however, leave the area of effect to travel in the
+real world. Creatures that have special powers in the Wake continue to be able
+to use them in the area affected.
+Level Basic Intermediate Advanced Arcane
+Zeon 400 500 700 900
+Int. R. 13 15 17 19
+Basic: 300 foot radius.
+Intermediate: 1,500 foot radius.
+Advanced: 1 mile radius.
+Arcane: 3 mile radius.
+Maintenance: 80 / 100 / 140 / 180 Daily
+Spell Type: Effect
+
+Make Dreams Real
+Level: 94 Action: Active
+Effect: This spell does literally what its name implies: it allows the wizard to
+bring into the real world any being or object that is in a sleeper’s dreams. For
+example, it could bring a shield, a warrior, or a horse that the dreamer rode into
+reality. In doing so, the object actually materializes and gains “substance.” In the
+case of a living being, the creature is apparently real, but cannot have powers
+greater than those allowed to a creature with Gnosis 25 or have a class level
+above that allowed by the level of the spell. In the case of an object, its maximum
+Presence is determined by the level of the spell. It is important to note that this
+spell does not allow the caster to see what is actually inside another’s dreams,
+so it will be necessary to use some other means to “see” exactly what he wants
+to make real.
+Level Basic Intermediate Advanced Arcane
+Zeon 300 600 900 1,200
+Int. R. 12 14 16 18
+Basic: Maximum Presence 80 / Level 3.
+Intermediate: Maximum Presence 120 / Level 6.
+Advanced: Maximum Presence 160 / Level 9.
+Arcane: Maximum Presence 200 / Level 12.
+Maintenance: 50 / 60 / 65 / 75 Daily
+Spell Type: Effect

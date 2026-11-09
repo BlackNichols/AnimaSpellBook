@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "feel-death",
+    "name": "Feel Death",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 2,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Detection"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster automatically detects any death that occurs within a radius around them and also reveals any undead that fails an MR check.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR",
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "120 MR, 100m Radius"
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "140 MR, 250m Radius"
+      },
+      "advanced": {
+        "zeon": 90,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "160 MR, 500m Radius"
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 180,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "180 MR, 1km Radius"
+      }
+    }
+  },
+  {
+    "id": "see-the-great-beyond",
+    "name": "See The Great Beyond",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 6,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Allows the caster or someone designated by them to see specters and other spiritual creatures invisible to the human eye.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Spectral beings"
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Spectral beings and Souls awaiting the call"
+      },
+      "advanced": {
+        "zeon": 90,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "All classes of spirits"
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "All classes of spirits as well as anything with supernatural characteristics in the area"
+      }
+    }
+  },
+  {
+    "id": "control-scavengers",
+    "name": "Control Scavengers",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 8,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Grants the caster control over creatures that feed mostly on the dead. The affected creatures must all be within the specified area and have an individual presence less than 20. Some possible examples include vultures, crows, and maggots.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10m Radius"
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150m Radius"
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 11,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500m Radius"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "2km Radius"
+      }
+    }
+  },
+  {
+    "id": "spectral-shield",
+    "name": "Spectral Shield",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 10,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Defense"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates a shield of necromantic energy, capable of stopping Spiritual attacks that affect the character’s supernatural resistance, as long as the difficulty is not above the value set by the level of the spell. The spell does not stop any physical attacks.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 260,
+      "resistance_types": [
+        "MR",
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "140 MR"
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 9,
+        "maintenance": 5,
+        "resistance": 180,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "180 MR"
+      },
+      "advanced": {
+        "zeon": 80,
+        "min_int": 11,
+        "maintenance": 10,
+        "resistance": 220,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "220 MR"
+      },
+      "arcane": {
+        "zeon": 100,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": 260,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "260 MR"
+      }
+    }
+  },
+  {
+    "id": "drain-life",
+    "name": "Drain Life",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 12,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to absorb the life force of another living creature, severely injuring it in the process. The caster must be able to physically touch the target, who must succeed at an MR check or lose a number of life points equal to the level of failure. The caster then adds this amount of life points to their own, however they cannot exceed their normal maximum. Creatures with damage resistance lose 5 times the normal amount, but the caster only restores the normal amount to their own life points. For example, if a damage resistant creature fails by 20 points, they would lose 100 LP, but the caster would only restore 20LP.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR",
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "100 MR"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "140 MR"
+      },
+      "advanced": {
+        "zeon": 230,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "180 MR"
+      },
+      "arcane": {
+        "zeon": 320,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 240,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "240 MR"
+      }
+    }
+  },
+  {
+    "id": "necromantic-detection",
+    "name": "Necromantic Detection",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 16,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Detection"
+    ],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to detect any living or undead being within a certain radius. Characters may avoid this detection with a successful MR check.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, 20m Radius"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, 50m Radius"
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 11,
+        "maintenance": 10,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR, 100m Radius"
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "240 MR, 150m Radius"
+      }
+    }
+  },
+  {
+    "id": "talk-to-the-dead",
+    "name": "Talk to the Dead",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 18,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to communicate with dead souls and spirits around them, even if they are not aware of the creature’s exact position. The level of the spirit and that of the spell is what determines if the communication is possible.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 4"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 8"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 12"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 16"
+      }
+    }
+  },
+  {
+    "id": "necromantic-paralysis",
+    "name": "Necromantic Paralysis",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 20,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Freezes the spiritual essence of undead creatures, rendering them unable to move. Any such being in a radius around the caster is automatically subject to the state of Total Paralysis if they fail an MR check.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, 10m Radius"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, 25m Radius"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, 50m Radius"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR, 100m Radius"
+      }
+    }
+  },
+  {
+    "id": "necromitude",
+    "name": "Necromitude",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 22,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Allows an undead creature to recover life points supernaturally. It has no effect upon living creatures.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 Life Points"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Life Points"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 Life Points"
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "250 Life Points"
+      }
+    }
+  },
+  {
+    "id": "death-beam",
+    "name": "Death Beam",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 26,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "effect": "Project a strong necromantic discharge. This is an Energy attack with a base damage based on the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 Base damage"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Base damage"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "140 Base damage"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "180 Base damage"
+      }
+    }
+  },
+  {
+    "id": "raise-corpses",
+    "name": "Raise Corpses",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 28,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "By manipulating necrotic energy, the caster can animate corpses and turn them into zombies or skeletons under their control. The dead do not keep any special abilities or knowledge from their life, as they are merely shells of their former selves. However, they retain natural capabilities, such as natural weapons and some physical characteristics. The power and endurance of the creature varies depending on its body, for example the corpse of a bear is considerably more dangerous than one of a human. Basic information on zombies can be referenced in Anima: Beyond Fantasy – Chapter 25: Common Characters. The caster can raise a number of corpses, as long as their combined presence and individual levels are within the limits set by the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Presence Limit, Max Level 0"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 Presence Limit, Max Level 1"
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 13,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "600 Presence Limit, Max Level 2"
+      },
+      "arcane": {
+        "zeon": 450,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1000 Presence Limit, Max Level 3"
+      }
+    }
+  },
+  {
+    "id": "dead-body",
+    "name": "Dead Body",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 30,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Temporarily stops the bodily functions of an individual without killing them, although they are still able to move and act completely normally. As long as the spell remains active, the character will be extremely resistant to the effects of damage and its consequences, so any physical penalty is halved. Additionally, in the state between life and death, it allows the character to remain conscious and ignore penalties (except those caused by criticals). Anyone who inspects the body will be unable to discover that it is not a true corpse. Affects any character up to the level determined by the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 3"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 6"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 12"
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 14,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 18"
+      }
+    }
+  },
+  {
+    "id": "drain-magic",
+    "name": "Drain Magic",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 32,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Drains the magical energy out of an individual or an object, and transfers it to the caster. Any individual affected by the spell is forced to succeed at an MR check or lose Zeon equal to twice the level of failure, which the caster immediately absorbs.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 260,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      },
+      "advanced": {
+        "zeon": 220,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "220 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 260,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "260 MR"
+      }
+    }
+  },
+  {
+    "id": "destroy-undead",
+    "name": "Destroy Undead",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 36,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Completely destroys the essence of an undead target. Any necromantic enemy targeted by this spell must succeed at an MR check or suffer damage equal to twice the level of failure. Creatures with damage resistance multiply this amount by their damage resistance multiple.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 260,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "intermediate": {
+        "zeon": 160,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "220 MR"
+      },
+      "arcane": {
+        "zeon": 320,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 260,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "260 MR"
+      }
+    }
+  },
+  {
+    "id": "drain-characteristics",
+    "name": "Drain Characteristics",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 38,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "By touching a living creature, the caster can absorb one of the individual’s characteristics, increasing their own in the process. The caster must decide the characteristic being drained before executing the spell. The target loses 1 point from this characteristic for every 10 points by which they fail the associated MR check. If the natural value of the characteristic drained is higher than the caster’s, the drained points are absorbed at a one to one ratio. However if the caster has a higher natural value in this characteristic, they must drain 3 points to absorb 1 to their own. These changes last as long as the spell is maintained, and once dismissed the characteristics recover at a rate of 1 point per hour.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 260,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "intermediate": {
+        "zeon": 150,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "220 MR"
+      },
+      "arcane": {
+        "zeon": 320,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": 260,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "260 MR"
+      }
+    }
+  },
+  {
+    "id": "control-the-dead",
+    "name": "Control The Dead",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 40,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "The caster obtains absolute control over any undead creature in the area when cast. Dominion over the creatures remains active as long as the spell is maintained, but does not affect any other necromantic creatures that approach later. The creatures can avoid these effects by passing a MR check, and are only allowed another attempt when given an order completely contrary to their nature. As such, creatures without will, such as animated corpses, can never be freed.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, 20m Radius"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 11,
+        "maintenance": 15,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, 50m Radius"
+      },
+      "advanced": {
+        "zeon": 180,
+        "min_int": 14,
+        "maintenance": 20,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, 100m Radius"
+      },
+      "arcane": {
+        "zeon": 250,
+        "min_int": 16,
+        "maintenance": 25,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR, 150m Radius"
+      }
+    }
+  },
+  {
+    "id": "wither-life",
+    "name": "Wither Life",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 42,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "Creates a necromantic energy area that immediately kills any lesser life form – such as small animals and plants – around the caster. Any living being with a presence less than 20 within the area automatically rots away at a rapid pace, with no ability to make a resistance roll.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10m Radius"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "20m Radius"
+      },
+      "advanced": {
+        "zeon": 180,
+        "min_int": 14,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30m Radius"
+      },
+      "arcane": {
+        "zeon": 220,
+        "min_int": 16,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50m Radius"
+      }
+    }
+  },
+  {
+    "id": "necromantic-shield",
+    "name": "Necromantic Shield",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 46,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Defense"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates an energy shield from the essence of dead souls to protect against all manner of attacks.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 9,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1000 Life Points"
+      },
+      "intermediate": {
+        "zeon": 160,
+        "min_int": 11,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "2000 Life Points"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3500 Life Points"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5000 Life Points"
+      }
+    }
+  },
+  {
+    "id": "dominate-life",
+    "name": "Dominate Life",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 48,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "Allows the caster to enslave a living being’s soul. The victim can resist by succeeding at an MR check, and is allowed a new check each day. The resistance check may also be repeated if given an order completely against their nature.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 9,
+        "maintenance": 30,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 MR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 11,
+        "maintenance": 40,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": 50,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 60,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR"
+      }
+    }
+  },
+  {
+    "id": "vampire-stigma",
+    "name": "Vampire Stigma",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 50,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "The target of this spell gains the ability to automatically absorb a portion of the damage they personally produce upon their opponents as Life Points. It works on both physical attacks and any spell or mystical power producing direct damage. In the case of damage resistant creatures, this spell absorbs a number of life points equal to damage produced divided by the damage resistance multiple of the creature.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 9,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "20% Absorption"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 11,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "40% Absorption"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "60% Absorption"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100% Absorption"
+      }
+    }
+  },
+  {
+    "id": "spectral-form",
+    "name": "Spectral Form",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 52,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster’s body becomes a crackling mass of pure necromantic energy, granting special abilities.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "The caster is immaterial, and can only be damaged by attacks capable of damaging energy."
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 12,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Base, but those who touch the caster must succeed against an MR or PhR equal to double the caster’s presence, or lose life points equal to half the level of failure."
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 14,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Intermediate, but the caster gains Life Points equal to the loss produced by those who touch them."
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 16,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Advanced, but if the resistance roll is failed by more than 40, they instantly die."
+      }
+    }
+  },
+  {
+    "id": "necromantic-modification",
+    "name": "Necromantic Modification",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 56,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "The undead creature that is the target of this spell feeds upon it’s energy, temporarily gaining new powers and abilities. In game terms, an undead obtains a number of additional Development Points to acquire powers and essential abilities described in Anima: Beyond Fantasy – Chapter 26: Creation of Beings. It does so as a creature with Gnosis 25 of the category it currently exists as. A creature can only be affected by one copy of this spell at any time and it’s effects cannot overlap.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Development Points"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 11,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 Development Points"
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 13,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 Development Points"
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 16,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "400 Development Points"
+      }
+    }
+  },
+  {
+    "id": "summon-the-dead",
+    "name": "Summon The Dead",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 58,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Calls the souls of the dead or specters to the caster. They are able to summon these spirits selectively, although it is possible some other soul may appear in it’s place. Summon the Dead only works upon spirits still awaiting the call, or spectral creatures, with a maximum level based on the level of the spell. It does not affect souls already transmigrated to the Flow of Souls, or those housed in new bodies.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 3"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 6"
+      },
+      "advanced": {
+        "zeon": 160,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 9"
+      },
+      "arcane": {
+        "zeon": 180,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 12"
+      }
+    }
+  },
+  {
+    "id": "raise-specters",
+    "name": "Raise Specters",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 60,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "By dominating the souls of the dead, the caster can pervert their essences and turn them into specters in their service. The ghosts keep a small part of the capacities they used to have in life, but lose the majority of their old powers and attributes. A specter raised by this spell reduces to half (rounded up) their level achieved in life. Although it does use the general rule for spiritual creatures, it obtains an additional 100 Development Points to acquire powers deemed appropriate by the caster with Gnosis 20. This spell only works on newly deceased souls who still await the call to the Flow of Souls. It can affect several spirits at the same time, as long as the sum of their presences are within the limit set by the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 Spirit, 100 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Up to 2 Spirits, 160 Presence limit"
+      },
+      "advanced": {
+        "zeon": 280,
+        "min_int": 14,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Up to 4 Spirits, 220 Presence limit"
+      },
+      "arcane": {
+        "zeon": 320,
+        "min_int": 16,
+        "maintenance": 35,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Up to 6 Spirits, 280 Presence limit"
+      }
+    }
+  },
+  {
+    "id": "drain-life-force",
+    "name": "Drain Life Force",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 62,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Absorbs the life force of an individual and transmits it to whomever is designated by the caster. The character that is to be drained must succeed at an MR check, or lose a point of both Constitution and Power for every 10 points of failure. If the caster wishes, the target may also be aged by this process, by a number of years equal to the level of failure. The absorbed points allow the caster or the subject who receives them to rejuvenate and recover their lost Constitution and Power, up to their natural levels. Characters drained of their vital essence cannot recover it, except through supernatural abilities that allow it (like this one).",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 190,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 MR"
+      },
+      "intermediate": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 130,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "130 MR"
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR"
+      },
+      "arcane": {
+        "zeon": 360,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": 190,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "190 MR"
+      }
+    }
+  },
+  {
+    "id": "kill",
+    "name": "Kill",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 66,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Stops a subject’s bodily functions, causing immediate death. It only works on living beings, and is useless against spirits or constructs, who lack vital natural processes to stop. Those affected must succeed at an MR or PhR check to survive.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 140,
+      "resistance_types": [
+        "MR",
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 80,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "80 MR or PhR"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "100 MR or PhR"
+      },
+      "advanced": {
+        "zeon": 180,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "120 MR or PhR"
+      },
+      "arcane": {
+        "zeon": 220,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "140 MR or PhR"
+      }
+    }
+  },
+  {
+    "id": "soul-beam",
+    "name": "Soul Beam",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 68,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "effect": "Projects a magical energy discharge composed of withered souls. The spell is an Energy attack, and only affects beings with a soul. Lifeless physical bodies, such as walls or constructs, are ignored. Given the nature of the attack, only those able to see spirits are able to perceive it.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Base Damage"
+      },
+      "intermediate": {
+        "zeon": 260,
+        "min_int": 11,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 Base Damage"
+      },
+      "advanced": {
+        "zeon": 380,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 Base Damage"
+      },
+      "arcane": {
+        "zeon": 500,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "400 Base Damage"
+      }
+    }
+  },
+  {
+    "id": "necromantic-chimera",
+    "name": "Necromantic Chimera",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 70,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Creates an undead creature subject to the caster’s control. This entity is developed as a Being Between worlds and Gnosis 25 using the rules described in Anima: Beyond Fantasy – Chapter 26: Creation of Beings. However, the caster cannot create the entity from scratch; in order to develop it, they must gather it’s pieces from several corpses. If looking to endow any power or essential ability, it must find the bodies of those who possessed those powers in life. For example, if wanting to create a creature with natural flight, they must find the corpse of a creature who had that specific ability when alive. The existence of the chimera is linked to the caster’s soul, and as such is subject to the same maximum level rules as the spell Create Being in the path of creation.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 9,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 2"
+      },
+      "intermediate": {
+        "zeon": 360,
+        "min_int": 12,
+        "maintenance": 80,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 6"
+      },
+      "advanced": {
+        "zeon": 500,
+        "min_int": 15,
+        "maintenance": 100,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 10"
+      },
+      "arcane": {
+        "zeon": 800,
+        "min_int": 17,
+        "maintenance": 160,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 13"
+      }
+    }
+  },
+  {
+    "id": "life-perversion",
+    "name": "Life Perversion",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 72,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Corrupts the essence of a living being and stops its natural bodily functions, immediately transforming it into an undead entity. The afflicted character maintains the same characteristics and abilities they had in life – although their animated corpse status naturally grants them the Physical Exemption power. Individuals may avoid these effects by succeeding at an MR or PhR check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 220,
+      "resistance_types": [
+        "MR",
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "100 MR or PhR"
+      },
+      "intermediate": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "140 MR or PhR"
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "180 MR or PhR"
+      },
+      "arcane": {
+        "zeon": 360,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": 220,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "220 MR or PhR"
+      }
+    }
+  },
+  {
+    "id": "vassalage",
+    "name": "Vassalage",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 76,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Permanently ties an undead creature’s soul to that of the caster. Thus, the caster automatically becomes it’s hierarchical superior, and the creature’s existence is now fully dependent on the caster. Although this spell does not endow the necromancer with real control over the creature, their essence is tied together such that if the master is destroyed, the creature perishes as well. The affected undead may avoid these effects by succeeding at an MR or PhR check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 220,
+      "resistance_types": [
+        "MR",
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "100 MR or PhR"
+      },
+      "intermediate": {
+        "zeon": 360,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "140 MR or PhR"
+      },
+      "advanced": {
+        "zeon": 450,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "180 MR or PhR"
+      },
+      "arcane": {
+        "zeon": 540,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": 220,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "220 MR or PhR"
+      }
+    }
+  },
+  {
+    "id": "drain-souls",
+    "name": "Drain Souls",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 78,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster plucks the soul of another person, feeding on their essence and power. The stronger the spirit absorbed, the greater energy received. The individual targeted by this spell must succeed at an MR check, or lose an amount of presence equal to half the level of failure. Every five points lost also subtracts a level, and with it any capacity or power that depended upon it. If the target’s presence reaches 0, their soul is completely consumed and they die. For every 10 points of presence absorbed, the caster temporarily increases one of their characteristics by 1, or obtains 10 Development Points to obtain any essential ability or power of a creature with Gnosis 30. Every day, the caster loses 1 of these temporary characteristics, or 20 of the increased Development Points.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "intermediate": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "advanced": {
+        "zeon": 280,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR"
+      },
+      "arcane": {
+        "zeon": 320,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      }
+    }
+  },
+  {
+    "id": "surpass-death",
+    "name": "Surpass Death",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 80,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Allows a living person to defeat death. In game terms, the target becomes an undead entity without any spiritual ties, and thus can exist in the world on their own power. The spell must be cast at the exact moment of the individuals death – or a few seconds before it (the spell itself does not cause the individual to die). The caster is free to decide if the target in question becomes either a Being Between Worlds or a Spirit, but in either case it acquires a Gnosis of 25. The spell confers a number of extra Development Points to use in acquiring essential abilities and powers described in Anima: Beyond Fantasy – Chapter 26: Creation of Beings. If the caster chooses for the target to become a Spirit, the target must spend 100 of the Development Points gained to that end. Excess development points grant additional levels, as well as other effects described in the spell Chimera in the path of creation. Since this spell only affects living beings, it cannot be used on creatures already of a necromantic nature.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+100 DP, with up to 100 DP of disadvantages."
+      },
+      "intermediate": {
+        "zeon": 500,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+200 DP, with up to 100 DP of disadvantages."
+      },
+      "advanced": {
+        "zeon": 1000,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+300 DP, with up to 200 DP of disadvantages."
+      },
+      "arcane": {
+        "zeon": 2500,
+        "min_int": 17,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+400 DP, with up to 200 DP of disadvantages."
+      }
+    }
+  },
+  {
+    "id": "true-rise",
+    "name": "True Rise",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 82,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Raises a corpse allowing it to maintain it’s knowledge and every one of it’s powers and abilities it had in life. Unfortunately, the raised creature becomes an undead that lacks a true soul. The spell affects deceased creatures or characters with a maximum level based on the level of the spell, and whose bodies are within reach of the caster. If death occurred a long time before the spell is cast, the raised creature’s physical abilities might be damaged. Characters resurrected once through this spell can not be resurrected again. As well, even though it is an undead entity, it retains it’s free will and is not under the caster’s control.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 350,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 3"
+      },
+      "intermediate": {
+        "zeon": 500,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 6"
+      },
+      "advanced": {
+        "zeon": 800,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 9"
+      },
+      "arcane": {
+        "zeon": 1200,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 12"
+      }
+    }
+  },
+  {
+    "id": "well-of-life",
+    "name": "Well of Life",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 86,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates a field of dark energy centered on the necromancer that allows them to absorb half of all lost life points of living beings within a radius around them. These life points go toward healing any sort of wound they have incurred. Well of Life itself does not inflict any damage, but typically casters incorporate this spell with other damaging magics at their disposal.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 300,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50m Radius"
+      },
+      "intermediate": {
+        "zeon": 400,
+        "min_int": 12,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "250m Radius"
+      },
+      "advanced": {
+        "zeon": 500,
+        "min_int": 14,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500m Radius"
+      },
+      "arcane": {
+        "zeon": 600,
+        "min_int": 16,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1km Radius"
+      }
+    }
+  },
+  {
+    "id": "cursed-land",
+    "name": "Cursed Land",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 88,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "By corrupting a small fragment of the world, the caster enchants an area of land, causing any being that dies within to rise instantly as an undead under their control. The deceased automatically become animated corpses, although powerful beings with Gnosis at least 5 points above their Natura, rise as a Specter instead (as if it had been affected by the spell Raise Specter). Creatures can only act while inside of the cursed land. If they leave it’s area, the magic that sustains them disappears, and they die. Once cast, the area affected remains stationary.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 350,
+        "min_int": 9,
+        "maintenance": 35,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1km Radius"
+      },
+      "intermediate": {
+        "zeon": 600,
+        "min_int": 12,
+        "maintenance": 60,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10km Radius"
+      },
+      "advanced": {
+        "zeon": 900,
+        "min_int": 14,
+        "maintenance": 90,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100km Radius"
+      },
+      "arcane": {
+        "zeon": 1500,
+        "min_int": 16,
+        "maintenance": 150,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1000km Radius"
+      }
+    }
+  },
+  {
+    "id": "sustenance",
+    "name": "Sustenance",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 90,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Affects the essence of one or several undead maintained by the caster, allowing for their existence after the caster stops maintaining their existence. For example, if the caster uses Sustenance upon an animated corpse from the spell Raise Corpses, the creature will continue to ‘live’ once the spell has ended. The caster may affect as many undead as desired, as long as their total presence is within the limit set by the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "60 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 300,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 Presence limit"
+      },
+      "advanced": {
+        "zeon": 400,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "240 Presence limit"
+      },
+      "arcane": {
+        "zeon": 500,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "480 Presence limit"
+      }
+    }
+  },
+  {
+    "id": "raw-material",
+    "name": "Raw Material",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 92,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Generates the corrupting energy used by necromancy to resurrect corpses and spirits, enabling the caster to create the raw material necessary to resurrect as corpses at a later stage. The spell forms the necromantic materials, equivalent to a number of human bodies based on the level of the spell. In the case of other, more powerful creatures, a smaller number is used instead based on the GM’s discretion.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 350,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1000 Human bodies"
+      },
+      "intermediate": {
+        "zeon": 500,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10000 Human bodies"
+      },
+      "advanced": {
+        "zeon": 900,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100000 Human bodies"
+      },
+      "arcane": {
+        "zeon": 1500,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1000000 Human bodies"
+      }
+    }
+  },
+  {
+    "id": "lord-of-the-dead",
+    "name": "Lord of the Dead",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 96,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "The caster extends their presence over a large area of the world, subduing all undead creatures in a large area. All such creatures within the area must succeed at an MR check or be subject to the complete control of the caster. If failed, no additional attempts to escape are possible, unless the base resistance value of the creature changes.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": 30,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 km Radius, 140 MR"
+      },
+      "intermediate": {
+        "zeon": 600,
+        "min_int": 14,
+        "maintenance": 60,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "1000 km Radius, 160 MR"
+      },
+      "advanced": {
+        "zeon": 1000,
+        "min_int": 16,
+        "maintenance": 100,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "10000 km Radius, 180 MR"
+      },
+      "arcane": {
+        "zeon": 2000,
+        "min_int": 18,
+        "maintenance": 200,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100000 km Radius, 200 MR"
+      }
+    }
+  },
+  {
+    "id": "come-back-from-the-dead",
+    "name": "Come Back From The Dead",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 98,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Returns a deceased creature’s spirit to the world, even after it has returned to the flow of souls or if their essence has been dispersed. The creature returns as an undead being, but keeps their soul and essence intact. If the body of the deceased still exists, it returns to it. If it does not exist, they may return to a new one provided or become an immaterial specter. As is the case in similar spells, the level of the entity and the time since their death are limiting factors for this spell. Souls that have been utterly destroyed or since resurrected after death can not be affected.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 400,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "One month from death, Level 4"
+      },
+      "intermediate": {
+        "zeon": 800,
+        "min_int": 17,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "One year from death, Level 8"
+      },
+      "advanced": {
+        "zeon": 1600,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Ten years from death, Level 10"
+      },
+      "arcane": {
+        "zeon": 3200,
+        "min_int": 19,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "One Century from death, Level 16"
+      }
+    }
+  },
+  {
+    "id": "the-awakening",
+    "name": "The Awakening",
+    "category": "main",
+    "path": "Necromancy",
+    "path_type": "major",
+    "level": 100,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "The most powerful of the necromantic spells. By corrupting a part of the soul of the world, the caster extends their shadow throughout existence, returning life to the dead and submitting them to the caster’s dominion. The awakening does not have a certain range of action; it equally affects any deceased whose level was not higher than described by the level of the spell. If their spirit still awaits the call, they rise as specters, otherwise as animated corpses. Those beings who have a Gnosis 15 points above their Natura, return as undead with all of their faculties and abilities.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 260,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 900,
+        "min_int": 17,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "50m Radius, 140 MR"
+      },
+      "intermediate": {
+        "zeon": 2000,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100m Radius, 180 MR"
+      },
+      "advanced": {
+        "zeon": 3500,
+        "min_int": 19,
+        "maintenance": null,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "500m Radius, 220 MR"
+      },
+      "arcane": {
+        "zeon": 5000,
+        "min_int": 20,
+        "maintenance": null,
+        "resistance": 260,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "1km Radius, 260 MR"
+      }
+    }
+  }
+]

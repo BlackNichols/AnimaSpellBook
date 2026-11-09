@@ -1,0 +1,2471 @@
+[
+  {
+    "id": "create-light",
+    "name": "Create Light",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 2,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "Create light within the specified radius.",
+    "grades": {
+      "initial": {
+        "zeon": 20,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5m Radius"
+      },
+      "intermediate": {
+        "zeon": 50,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "25m Radius"
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100m Radius"
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500m Radius"
+      }
+    }
+  },
+  {
+    "id": "induce-calm",
+    "name": "Induce Calm",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 6,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 140,
+      "resistance_types": [
+        "MR",
+        "PsR"
+      ],
+      "tags": []
+    },
+    "effect": "Calms individuals feeling fear or hatred within the specified radius from the caster. Causes any Fear, Terror, or Rage states to disappear, even if they are supernatural in origin. This spell can be resisted with a successful MR or PsR check.",
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 5,
+        "maintenance": null,
+        "resistance": 80,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "10m Radius, 80 MR or PsR"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "25m Radius, 100 MR or PsR"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 11,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "50m Radius, 120 MR or PsR"
+      },
+      "arcane": {
+        "zeon": 160,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "100m Radius, 140 MR or PsR"
+      }
+    }
+  },
+  {
+    "id": "blinding-flash",
+    "name": "Blinding Flash",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 8,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "PhR"
+      ],
+      "tags": []
+    },
+    "effect": "Causes a sudden flash of light with the specified radius. It blinds anyone looking at it when it is cast for as many combat turns as they fail the PhR check, divided by 10. It is not possible to designate targets within the area of the flash, and everyone except the caster is equally affected. If someone is actively avoiding looking at the source of the flash, they receive a +40 bonus to their resistance.",
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "10m Radius, 140 PhR"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "25m Radius, 140 PhR"
+      },
+      "advanced": {
+        "zeon": 150,
+        "min_int": 11,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "50m Radius, 140 PhR"
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "100m Radius, 160 PhR"
+      }
+    }
+  },
+  {
+    "id": "shield-of-light",
+    "name": "Shield of Light",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 10,
+    "action": "Passive",
+    "types": [
+      "Defense"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Shield"
+      ]
+    },
+    "effect": "Forms a barrier of Energy that protects the caster from any source of attack. The shield has a number of Life Points based on the spell level when cast, but is only damaged by supernatural attacks. Any attack based on Darkness causes double damage.",
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 Life Points"
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1000 Life Points"
+      },
+      "advanced": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1800 Life Points"
+      },
+      "arcane": {
+        "zeon": 250,
+        "min_int": 14,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3000 Life Points"
+      }
+    }
+  },
+  {
+    "id": "perceive",
+    "name": "Perceive",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 12,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Perception"
+      ]
+    },
+    "effect": "Improves the perception of the caster, increasing their secondary abilities of Notice and Search by the specified amount. Their Magic Appraisal also increases by this amount, but only for the purposes of detecting or measuring magical potency, not to hide it.",
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+50 to abilities"
+      },
+      "intermediate": {
+        "zeon": 150,
+        "min_int": 9,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+150 to abilities"
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 12,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+200 to abilities"
+      },
+      "arcane": {
+        "zeon": 250,
+        "min_int": 14,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+250 to abilities"
+      }
+    }
+  },
+  {
+    "id": "armor-of-light",
+    "name": "Armor of Light",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 16,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Armor"
+      ]
+    },
+    "effect": "Forms a layer of mystical armor with an AT against all types of damage, and a higher value for attacks on the Energy table. Although this counts as a layer of armor, it does not count as an additional layer for the purposes of initiative penalties.",
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 AT, 2 Energy AT"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "2 AT, 5 Energy AT"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "4 AT, 8 Energy AT"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "6 AT, 12 Energy AT"
+      }
+    }
+  },
+  {
+    "id": "banish-shadows",
+    "name": "Banish Shadows",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 18,
+    "action": "Active",
+    "types": [
+      "Spiritual",
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 280,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": [
+        "Anti-Darkness"
+      ]
+    },
+    "effect": "Destroys shadows within the specified radius. Any Darkness based creatures within the radius must pass a MR check or lose double their failure level in Life Points (Damage Resistant creatures increase this amount by their Damage Resistance Multiple). As long as the spell is maintained over the creatures, they must make a new MR check each combat turn.",
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "10m Radius, 140 MR"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100m Radius, 180 MR"
+      },
+      "advanced": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "250m Radius, 220 MR"
+      },
+      "arcane": {
+        "zeon": 250,
+        "min_int": 15,
+        "maintenance": 25,
+        "resistance": 280,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "500m Radius, 280 MR"
+      }
+    }
+  },
+  {
+    "id": "detect-negative-emotions",
+    "name": "Detect Negative Emotions",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 20,
+    "action": "Active",
+    "types": [
+      "Detection"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": [
+        "Detection",
+        "Emotions"
+      ]
+    },
+    "effect": "Detects any negative sentiments such as hatred, fear, or anger within the specified radius. It also senses any creatures based on such emotions. Resisting the effects of the spell requires a successful MR check against the specified difficulty.",
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "25m Radius, 80 MR"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "150m Radius, 140 MR"
+      },
+      "advanced": {
+        "zeon": 160,
+        "min_int": 12,
+        "maintenance": 20,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "500m Radius, 160 MR"
+      },
+      "arcane": {
+        "zeon": 280,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "1km Radius, 200 MR"
+      }
+    }
+  },
+  {
+    "id": "light-beam",
+    "name": "Light Beam",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 22,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Energy Attack"
+      ]
+    },
+    "effect": "Projects a beam of Light based magical energy. This is an attack of the Energy type with a base damage determined by the level of the spell when cast.",
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "60 Base Damage"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "90 Base Damage"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 Base Damage"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 Base Damage"
+      }
+    }
+  },
+  {
+    "id": "hologram",
+    "name": "Hologram",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 26,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Illusion"
+      ]
+    },
+    "effect": "Creates an immaterial luminous form with a maximum size determined by the level of the spell. The caster can give the hologram any appearance they desire, making it very difficult to differentiate it from something real. If they create a creature, it can perform any inhuman action the caster wishes, but will mimic the physical abilities of the caster. If, for example, the hologram is used to simulate an attack, it uses the combat ability of the caster. The hologram cannot touch anyone nor be touched, but if it receives any damage based on energy, it disappears. To detect the hologram is not real, it is necessary to achieve an Almost Impossible (240) Notice check, or a Very Difficult (140) Search check.",
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 m²"
+      },
+      "intermediate": {
+        "zeon": 150,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "15 m²"
+      },
+      "advanced": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 m²"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 m²"
+      }
+    }
+  },
+  {
+    "id": "bonds-of-light",
+    "name": "Bonds of Light",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 28,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Trapping"
+      ]
+    },
+    "effect": "Creates bonds of light that hold the designated target immobile. An attack is made using the rules for Trapping, although the caster suffers no penalty to their ability for performing this maneuver. The bonds use a strength value for the Trapping check based on the level of the spell, and are treated as an Energy based item with a fortitude of 25.",
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "8 Strength"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "12 Strength"
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "15 Strength, Fortitude increases to 30."
+      },
+      "arcane": {
+        "zeon": 180,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "18 Strength, Fortitude increases to 35."
+      }
+    }
+  },
+  {
+    "id": "control-light",
+    "name": "Control Light",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 30,
+    "action": "Active",
+    "types": [
+      "Spiritual",
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 220,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": [
+        "Control"
+      ]
+    },
+    "effect": "Modifies and controls the form, color, or intensity of light in the specified radius. If any Light based beings are in the area, they must pass a MR check with difficulty determined by the level of the spell, or fall under control of the caster. A creature can only repeat the check if ordered to do something against its nature.",
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "20m Radius, 80 MR"
+      },
+      "intermediate": {
+        "zeon": 150,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "150m Radius, 140 MR"
+      },
+      "advanced": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "300m Radius, 180 MR"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 16,
+        "maintenance": 30,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "500m Radius, 220 MR"
+      }
+    }
+  },
+  {
+    "id": "detect-life",
+    "name": "Detect Life",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 32,
+    "action": "Active",
+    "types": [
+      "Detection"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 280,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": [
+        "Detection"
+      ]
+    },
+    "effect": "Detects any life-form within the specified radius. The spell can also determine the number of life-forms and their exact locations. Resisting the spell requires a successful MR check.",
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "25m Radius, 140 MR"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "50m Radius, 180 MR"
+      },
+      "advanced": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "150m Radius, 220 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": 280,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "500m Radius, 280 MR"
+      }
+    }
+  },
+  {
+    "id": "spy-of-light",
+    "name": "Spy of Light",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 36,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Scrying",
+        "Construct"
+      ]
+    },
+    "effect": "Creates a small energy creature of light that moves as the caster wishes, with a flight value of 14. The maximum distance it can travel is determined by the level of the spell. Through it, the caster can see and hear as though they were present physically, but doing so consumes their senses, and they can only see the world through the Spy of Light. Each combat turn, the caster decides whether to use their own senses, or the Spy of Light. The spy of light has a separate Secondary Ability value for Notice and Search. If attacked, it can defend itself with the Magic Projection of the caster. For the purposes of initiative, it acts on the same turn as its controller. It is only possible to attack the Spy of Light with an attack capable of damaging energy, and is destroyed if it receives any damage.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 6,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Notice and Search, 1km distance"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 9,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 Notice and Search, 10km distance"
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": 60,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 Notice and Search, 50km distance"
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 16,
+        "maintenance": 80,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "250 Notice and Search, 500km distance"
+      }
+    }
+  },
+  {
+    "id": "ecstasy",
+    "name": "Ecstasy",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 38,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": [
+        "Debuff",
+        "Pain Immunity"
+      ]
+    },
+    "effect": "Intoxicates anyone in the affected area with a feeling of utter ecstasy. The sensations are so powerful that the victim’s senses are completely clouded, and they receive a -20 all action penalty while affected. However, the same effect makes the spell’s victims completely oblivious and immune to any pain or other affliction based penalty, except for actually being physically incapacitated. Resisting the spell requires a successful MR check determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "10m area, 80 MR"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "50m area, 100 MR"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100m area, 120 MR"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 16,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "250m area, 160 MR"
+      }
+    }
+  },
+  {
+    "id": "banish-negative-emotions",
+    "name": "Banish Negative Emotions",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 40,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 220,
+      "resistance_types": [
+        "MR",
+        "PsR"
+      ],
+      "tags": [
+        "Emotions"
+      ]
+    },
+    "effect": "Temporarily banishes any negative sentiments such as hatred, fear, or anger within the specified radius of the caster. Resisting the spell requires a successful MR or PsR check.",
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "100m Radius, 100 MR or PsR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": 150,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "500m Radius, 150 MR or PsR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "1km Radius, 180 MR or PsR"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 220,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "5km Radius, 220 MR or PsR"
+      }
+    }
+  },
+  {
+    "id": "healing-light",
+    "name": "Healing Light",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 42,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Healing"
+      ]
+    },
+    "effect": "Causes whomever the spell is directed at to recover Life Points based on the level of the spell. This spell does not restore any permanently lost or destroyed limbs, nor does it eliminate any penalties derived from Critical attacks.",
+    "grades": {
+      "initial": {
+        "zeon": 70,
+        "min_int": 7,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "40 Life Points"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 Life Points"
+      },
+      "advanced": {
+        "zeon": 150,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 Life Points"
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "250 Life Points"
+      }
+    }
+  },
+  {
+    "id": "seeking-sphere",
+    "name": "Seeking Sphere",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 46,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Attack",
+        "Energy Attack"
+      ]
+    },
+    "effect": "Unleashes a sphere of luminous energy with a base damage determined by the level of the spell. The caster can control it using their own magic projection until it hits its target. If the target successfully dodges, the Seeking Sphere can continue to attack on the following turn, as it has not been destroyed. When the Seeking Sphere causes damage or is successfully blocked, it explodes and vanishes. If the caster wishes they can abandon active control of it, and it will continue to attack independently with a separate magic projection based on the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 6,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 Magic Projection, 100 Base Damage"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "180 Magic Projection, 120 Base Damage"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "210 Magic Projection, 160 Base Damage"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "240 Magic Projection, 200 Base Damage"
+      }
+    }
+  },
+  {
+    "id": "zone-of-detection",
+    "name": "Zone of Detection",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 48,
+    "action": "Active",
+    "types": [
+      "Detection"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 340,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": [
+        "Detection",
+        "Ward"
+      ]
+    },
+    "effect": "Allows the caster to detect any being within the area of effect that does not succeed a MR check. The Zone of Detection allows the caster to determine how many individuals are in the zone, and their exact locations. It also senses any Detection spells that attempt to enter the area, as long as the caster using them does not succeed at the MR check (regardless of actual location). The spell creates the area with a specified radius, and is stationary in the place it was first cast.",
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "20m Radius, 180 MR"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "80m Radius, 240 MR"
+      },
+      "advanced": {
+        "zeon": 280,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 280,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "150m Radius, 280 MR"
+      },
+      "arcane": {
+        "zeon": 360,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": 340,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "250m Radius, 340 MR"
+      }
+    }
+  },
+  {
+    "id": "enter-anothers-dreams",
+    "name": "Enter Another’s Dreams",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 50,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR",
+        "PsR"
+      ],
+      "tags": [
+        "Dreams"
+      ]
+    },
+    "effect": "Allows the caster to physically enter a sleeper’s dreams. The caster has no control over the dream world of the dreamer, and anything that happens there will be real for the caster. The person must have peaceful dreams to be affected by this spell, and the moment the dream becomes a nightmare, or if the target awakens or dies, the caster abandons the dream world and returns to reality. Any spiritual spell cast on the dreamer while the caster is present in the dream will also affect the caster. The spell can be resisted with a successful MR or PsR check. Once in the target’s dreams, the caster can ‘jump’ to the unconscious of yet another dreamer who is physically within range, as determined by the level of the spell. Naturally, this new target will have their own resistance check. If the dreamer’s consciousness happens to be transported to the wake, the caster is trapped there even if the spell expires.",
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "140 MR or PsR, 10m distance"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "160 MR or PsR, 80m distance"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 200,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "200 MR or PsR, 140m distance"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": 240,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "240 MR or PsR, 200m distance"
+      }
+    }
+  },
+  {
+    "id": "light-form",
+    "name": "Light Form",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 52,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Transformation",
+        "Intangibility"
+      ]
+    },
+    "effect": "The body designated by the caster is transformed into pure luminous energy and becomes intangible to physical and non-energy attacks. While in this state, the transformed person gains a bonus to their secondary abilities of Notice and Search, and a bonus to resistances against any effect based on Light. While in this state, any damage caused by attacks based on Darkness is doubled.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+50 to Notice and Search, +20 to Resistances."
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 11,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+60 to Notice and Search, +30 to Resistances."
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Intermediate, but resistance bonus applies to all effects not based on Darkness."
+      },
+      "arcane": {
+        "zeon": 160,
+        "min_int": 16,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Advanced, but doesn’t suffer double damage from Darkness based attacks."
+      }
+    }
+  },
+  {
+    "id": "blessing",
+    "name": "Blessing",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 56,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Buff"
+      ]
+    },
+    "effect": "Bestows the affected party with incredible energy. Those affected receive an all action bonus, as well as a bonus to all resistances, based on the level of the spell. All allies within the radius of effect from the caster are affected. No one can be affected by the effect of more than one blessing at a time.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+10 All Action Bonus, +10 to Resistances, 5m Radius"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+20 All Action Bonus, +20 to Resistances, 25m Radius"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+30 All Action Bonus, +30 to Resistances, 50m Radius"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+30 All Action Bonus, +30 to Resistances, 150m Radius"
+      }
+    }
+  },
+  {
+    "id": "create-good-feelings",
+    "name": "Create Good Feelings",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 58,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 220,
+      "resistance_types": [
+        "MR",
+        "PsR"
+      ],
+      "tags": [
+        "Emotions"
+      ]
+    },
+    "effect": "Creates positive sentiments such as love, pleasure, or friendship in people designated by the caster within its radius. Those affected can resist the spell by passing a MR or PsR check, and can repeat the check once per day.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "20m Radius, 120 MR or PsR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "100m Radius, 160 MR or PsR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": 180,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "250m Radius, 180 MR or PsR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": 220,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "500m Radius, 220 MR or PsR"
+      }
+    }
+  },
+  {
+    "id": "see-truth",
+    "name": "See Truth",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 60,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Perception",
+        "True Seeing"
+      ]
+    },
+    "effect": "Permits the affected person to perceive supernatural forces that are invisible to the human eye, including magic, psychic matrices, and invisible or supernatural beings, depending on the level of the spell. Although this spell does not directly work against illusion spells as they affect the mind, not the vision of the person, anyone using See Truth against visual illusions can apply a bonus to their MR or PsR checks, since it helps detect their falseness.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Allows sight of Magic, Psychic Matrices, and invisible beings, grants +50 to resistances against illusions."
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Base, but allows sight of Spiritual beings."
+      },
+      "advanced": {
+        "zeon": 180,
+        "min_int": 14,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Intermediate, but +75 to resistances."
+      },
+      "arcane": {
+        "zeon": 250,
+        "min_int": 16,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Advanced, but +100 to resistances"
+      }
+    }
+  },
+  {
+    "id": "shield-from-negative",
+    "name": "Shield from Negative",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 62,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": [
+        "Ward",
+        "Anti-Darkness"
+      ]
+    },
+    "effect": "Enchants a designated area, making it impenetrable for beings based naturally on negative emotions or Darkness. Any such creature entering the zone must pass a MR check or suffer loss of Life Points equal to the margin of failure. Additionally, upon failing the check, such a creature receives an immediate -40 All Action Penalty. The affected zone has a radius determined by the level of the spell, and is stationary in the place it is cast.",
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 7,
+        "maintenance": 15,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "20m Radius, 120 MR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100m Radius, 140 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "250m Radius, 160 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "500m Radius, 180 MR"
+      }
+    }
+  },
+  {
+    "id": "find",
+    "name": "Find",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 66,
+    "action": "Active",
+    "types": [
+      "Detection"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 260,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": [
+        "Detection",
+        "Locate"
+      ]
+    },
+    "effect": "The caster can locate any person, place, or thing, and know its exact location in that moment regardless of the distance separating them. Anything can be found, whether an individual object, a type of object, or simply something that fulfills a specified condition. For example, the caster can try to locate a city; the thief who stole his crosier (even if he doesn’t know who did it), or the closest eligible maiden of royal blood. Objects, places, or people affected must pass a MR check to avoid being located. Large locations apply a -40 to penalty to this check.",
+    "grades": {
+      "initial": {
+        "zeon": 160,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      },
+      "advanced": {
+        "zeon": 260,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "220 MR"
+      },
+      "arcane": {
+        "zeon": 320,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": 260,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "260 MR"
+      }
+    }
+  },
+  {
+    "id": "restore",
+    "name": "Restore",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 68,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Healing",
+        "Restoration"
+      ]
+    },
+    "effect": "Allows the affected person to recover from any penalties including those caused by fatigue, hunger, physical damage, and even spells, although not from actual physical loss of body parts from Critical attacks. Restore also automatically restores fatigue based on the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Eliminates up to -40 penalty, and up to 2 Fatigue."
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Eliminates up to -80 penalty, and up to 5 Fatigue."
+      },
+      "advanced": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Eliminates up to -120 penalty, and up to 10 Fatigue."
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Eliminates any level of penalty, Restores all missing Fatigue."
+      }
+    }
+  },
+  {
+    "id": "hypnotic-display",
+    "name": "Hypnotic Display",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 70,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 220,
+      "resistance_types": [
+        "MR",
+        "PsR"
+      ],
+      "tags": [
+        "Incapacitate",
+        "Illusion"
+      ]
+    },
+    "effect": "Creates a spectacle of light in a specified place that has a fascinating and dumbfounding effect. All characters looking directly at the display cannot help but continue to watch it. It is effective for a radius specified by the level of the spell, and anyone seeing it must succeed at a MR or PsR check to avoid its effects. Those successfully affected can perform passive actions, but cannot move, and can make new resistance checks every time they are attacked.",
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 10,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "1km Radius, 120 MR or PsR"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": 150,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "5km Radius, 150 MR or PsR"
+      },
+      "advanced": {
+        "zeon": 280,
+        "min_int": 14,
+        "maintenance": 10,
+        "resistance": 180,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "15km Radius, 180 MR or PsR"
+      },
+      "arcane": {
+        "zeon": 360,
+        "min_int": 16,
+        "maintenance": 15,
+        "resistance": 220,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "25km Radius, 220 MR or PsR"
+      }
+    }
+  },
+  {
+    "id": "catastrophic-light",
+    "name": "Catastrophic Light",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 72,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Attack",
+        "Energy Attack"
+      ]
+    },
+    "effect": "Creates a deadly discharge of Light with a base damage and area determined by the level of the spell. This is an attack on the Energy table.",
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 Base Damage, 25m Radius"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 Base Damage, 100m Radius"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 Base Damage, 150m Radius"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "250 Base Damage, 250m Radius"
+      }
+    }
+  },
+  {
+    "id": "luminous-material-objects",
+    "name": "Luminous Material Objects",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 76,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Creation"
+      ]
+    },
+    "effect": "Forms a material object from luminous energy. Whether it is something as complex as a clock, or as simple as a sword. The object cannot exceed the presence limit determined by the level of the spell, but is treated as a quality item. As an exception to the normal rule, the quality of this object does not affect its presence.",
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "60 Presence limit, +5 Quality"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 12,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Presence limit, +10 Quality"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 14,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "140 Presence limit, +10 Quality"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 16,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "180 Presence limit, +15 Quality"
+      }
+    }
+  },
+  {
+    "id": "travel-by-light",
+    "name": "Travel by Light",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 78,
+    "action": "Active",
+    "types": [
+      "Spiritual",
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": [
+        "Teleportation"
+      ]
+    },
+    "effect": "Transports individuals or objects designated by the caster from one source of light to another that must be within a set distance. The quantity of presence that can be transported this way is increased with each level of the spell. If one wishes to resist the effect, they must succeed at an MR check.",
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100km, 250 Presence limit, 120 MR"
+      },
+      "intermediate": {
+        "zeon": 360,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "1000km, 500 Presence limit, 140 MR"
+      },
+      "advanced": {
+        "zeon": 450,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "5000km, 1000 Presence limit, 180 MR"
+      },
+      "arcane": {
+        "zeon": 600,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "15000km, 2000 Presence limit, 200 MR"
+      }
+    }
+  },
+  {
+    "id": "lordship-over-dreams",
+    "name": "Lordship Over Dreams",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 80,
+    "action": "Active",
+    "types": [
+      "Spiritual",
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": [
+        "Dreams"
+      ]
+    },
+    "effect": "Permits control over any type of dream of an individual that does not succeed at an MR check. The caster will have the ability to control the dream world of the sleeper as if they were an entity with Gnosis 45. In the event that the dream becomes one fed by negative energy – that is, becomes a nightmare, their Gnosis is only 30. Spells that the sorcerer is able to cast thanks only to their elevated Gnosis (such as divine magic) have no effect outside the spatial limits of the spell, and their effects vanish as soon as the caster leaves the dream or the Wake.",
+    "grades": {
+      "initial": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": 60,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "intermediate": {
+        "zeon": 400,
+        "min_int": 14,
+        "maintenance": 65,
+        "resistance": 150,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "150 MR, If the caster is in the wake, they also control their surroundings as a being with Gnosis 40, as long as they are in an area fed by positive energy. In neutral areas, their Gnosis is only 30. This effect remains stationary to the area of the Wake when cast, and only if there are no similar entities in the area."
+      },
+      "advanced": {
+        "zeon": 500,
+        "min_int": 16,
+        "maintenance": 70,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, As Intermediate, but the caster has Gnosis 35 in neutral areas."
+      },
+      "arcane": {
+        "zeon": 750,
+        "min_int": 18,
+        "maintenance": 80,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR, As Advanced, but the caster may influence all positive areas of the wake simultaneously."
+      }
+    }
+  },
+  {
+    "id": "create-being-of-light",
+    "name": "Create Being of Light",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 82,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "High Magic",
+        "Summoning",
+        "Construct"
+      ]
+    },
+    "effect": "Creates a luminous being with the appearance of life, but completely under the control of the caster. The entity is developed as a Being Between Worlds, using the powers and limitations of Light Elementals explained in Anima: Beyond Fantasy - Chapter 26: Creation of Beings. This creature has a number of Development Points (DP) based on the level of the spell, which dictates its level for the purposes of presence and abilities.",
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 10,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "600DP (Level 1)"
+      },
+      "intermediate": {
+        "zeon": 350,
+        "min_int": 12,
+        "maintenance": 70,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "800DP (Level 3)"
+      },
+      "advanced": {
+        "zeon": 500,
+        "min_int": 14,
+        "maintenance": 100,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1100DP (Level 6)"
+      },
+      "arcane": {
+        "zeon": 700,
+        "min_int": 16,
+        "maintenance": 140,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1500DP (Level 10)"
+      }
+    }
+  },
+  {
+    "id": "reflecting-prism",
+    "name": "Reflecting Prism",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 86,
+    "action": "Passive",
+    "types": [
+      "Defense"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "High Magic",
+        "Shield",
+        "Reflection"
+      ]
+    },
+    "effect": "Creates a body of light that works like a prismatic shield, reflecting any spell, psychic attack, or Ki technique back at its caster. For the attack to be reflected, Reflecting Prism must successfully block the attack, and the attack must lose a Spell Clash against a spell with an equivalent base damage designated by the spell level. If defending against an area attack, the prism does not reflect the entire spell; it still affects anyone in the area of the spell except for the holder of the Reflecting Prism. This spell does not reflect Spiritual spells. The caster can use his magic projection ability for the reflected attack. Like other supernatural shields, it has a number of Life Points determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 160,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 base damage, 800 Life Points"
+      },
+      "intermediate": {
+        "zeon": 250,
+        "min_int": 13,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 base damage, 1500 Life Points"
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "140 base damage, 3000 Life Points"
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 17,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "180 base damage, 6000 Life Points"
+      }
+    }
+  },
+  {
+    "id": "radius-of-omniscience",
+    "name": "Radius of Omniscience",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 88,
+    "action": "Passive",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "High Magic",
+        "Omniscience",
+        "Perception"
+      ]
+    },
+    "effect": "Permits the caster to be omniscient concerning any occurrence or thought within a certain radius of their location. Affects only individuals under the designated presence whom do not have a higher Gnosis than the caster. The caster will automatically know everything that is happening and everything thought by individuals affected within the radius. No resistance is possible for this effect.",
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500m Radius, 60 Presence"
+      },
+      "intermediate": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "2km Radius, 80 Presence"
+      },
+      "advanced": {
+        "zeon": 400,
+        "min_int": 15,
+        "maintenance": 60,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10km Radius, 100 Presence"
+      },
+      "arcane": {
+        "zeon": 800,
+        "min_int": 18,
+        "maintenance": 65,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50km Radius, 120 Presence"
+      }
+    }
+  },
+  {
+    "id": "predict",
+    "name": "Predict",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 90,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "High Magic",
+        "Divination"
+      ]
+    },
+    "effect": "Permits the caster to foresee future events that can happen around a given person, place, or thing. Predict will show the caster the most probable destiny awaiting someone or something, providing detailed information about future events. The period of time covered is determined by the level of the spell, The Game Master can truthfully tell the caster what events will occur in the future. Of course, these predictions are not infallible; as what is seen is only the most probable destiny, which may be changed through the intervention of higher powers or the actions of persons with elevated Gnosis.",
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 year"
+      },
+      "intermediate": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5 years"
+      },
+      "advanced": {
+        "zeon": 450,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 years – If predicting something happening within 1 day, it will be very accurate"
+      },
+      "arcane": {
+        "zeon": 600,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 years – If predicting something happening within 1 year, it will be very accurate"
+      }
+    }
+  },
+  {
+    "id": "prison-of-light",
+    "name": "Prison of Light",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 92,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": [
+        "Divine Magic",
+        "Imprisonment"
+      ]
+    },
+    "effect": "Encloses the victim in an inescapable world of light, a separate universe with no interaction with our own. While the victim is imprisoned, they will have no knowledge of anything that happens outside the prison, nor does anyone outside have knowledge of the prisoner. To break free, the prison is considered a damage resistant creature with AT 10, with a number of life points based on the level of the spell. However, any damage suffered from the outside is doubled automatically. The prison additionally recovers from damage with a regeneration value of 19. If the target of the spell fails an MR check, they are imprisoned and do not have the opportunity for a subsequent roll. If they wish to leave, they must break free from the prison. The caster may not lock themselves into their own Prison of Light.",
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 14,
+        "maintenance": 40,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "10,000 Life Points, 140 MR"
+      },
+      "intermediate": {
+        "zeon": 350,
+        "min_int": 16,
+        "maintenance": 70,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "250,000 Life Points, 180 MR"
+      },
+      "advanced": {
+        "zeon": 500,
+        "min_int": 18,
+        "maintenance": 100,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "500,000 Life Points, 220 MR"
+      },
+      "arcane": {
+        "zeon": 800,
+        "min_int": 20,
+        "maintenance": 160,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "The Prison can not be broken from within, but possesses 500,000 Life Points for attacks from the outside, 240 MR"
+      }
+    }
+  },
+  {
+    "id": "one-with-the-light",
+    "name": "One with the Light",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 96,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Divine Magic",
+        "Meditation",
+        "Regeneration"
+      ]
+    },
+    "effect": "Permits the caster to enter a state of utter meditation where their body becomes one with the Light. They abandon this world and ascend into the flow of souls to nourish themselves from its energies, apart from, and without knowledge of anything happening elsewhere. In this state, they multiply their Zeon Regeneration rate by 10, and cure their wounds with a regeneration of 16. Although there is no maintenance cost for this spell, the caster can be in the flow of souls for a maximum time period based on the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 day"
+      },
+      "intermediate": {
+        "zeon": 400,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 week"
+      },
+      "advanced": {
+        "zeon": 600,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 month"
+      },
+      "arcane": {
+        "zeon": 800,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 year"
+      }
+    }
+  },
+  {
+    "id": "ascension",
+    "name": "Ascension",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 98,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Divine Magic",
+        "Gnosis"
+      ]
+    },
+    "effect": "Exchanges the material essence of a person for divine energy, modifying their spirit through pure supernatural power. While in this state, the caster or their target is imbued with elevated Gnosis determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 500,
+        "min_int": 14,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Gnosis 30"
+      },
+      "intermediate": {
+        "zeon": 1000,
+        "min_int": 16,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Gnosis 35"
+      },
+      "advanced": {
+        "zeon": 2000,
+        "min_int": 18,
+        "maintenance": 45,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Gnosis 40"
+      },
+      "arcane": {
+        "zeon": 5000,
+        "min_int": 20,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Gnosis 45"
+      }
+    }
+  },
+  {
+    "id": "holocaust-of-light",
+    "name": "Holocaust of Light",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 100,
+    "action": "Active",
+    "types": [
+      "Attack",
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": [
+        "Divine Magic",
+        "Attack",
+        "Annihilation"
+      ]
+    },
+    "effect": "Unleashes the power of Light in its purest state, sweeping away everything in the spiritual as well as material world. The freed energy sweeps up and devours everything, unifying its existence to the Light. Even elemental creatures of light are assimilated by its power. The Holocaust of Light creates a great luminous dome within which everything is dissolved. It is an Energy attack with damage and radius determined by the level of the spell. Anyone receiving damage, regardless of the amount, must pass an MR check with difficulty 160 or be joined with the light, and automatically be destroyed in both body and soul. It is not possible to designate targets within the radius of this spell; all except the caster are equally affected.",
+    "grades": {
+      "initial": {
+        "zeon": 600,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100m Radius, 350 Base damage"
+      },
+      "intermediate": {
+        "zeon": 1000,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100km Radius, 500 Base damage"
+      },
+      "advanced": {
+        "zeon": 2500,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "10000km Radius, 800 Base damage"
+      },
+      "arcane": {
+        "zeon": 10000,
+        "min_int": 20,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "1AU (Astronomical Unit) Radius, 1000 Base damage."
+      }
+    }
+  }
+]

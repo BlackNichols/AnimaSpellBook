@@ -1,0 +1,2462 @@
+[
+  {
+    "id": "change-color",
+    "name": "Change Color",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [1, 10],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": true,
+    "effect": "Changes the color of a material, object, or person whose presence is within the given limit. Resisting requires a successful MR check. Those affected cannot repeat the check as long as the spell remains active.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 160,
+      "resistance_types": ["MR"],
+      "tags": []
+    },
+    "grades": {
+      "initial": {"zeon": 350, "min_int": 12, "maintenance": 5, "resistance": 100, "resistance_types": ["MR"], "description": "40 Presence limit, 100 MR"},
+      "intermediate": {"zeon": 500, "min_int": 14, "maintenance": 5, "resistance": 120, "resistance_types": ["MR"], "description": "60 Presence limit, 120 MR"},
+      "advanced": {"zeon": 900, "min_int": 16, "maintenance": 5, "resistance": 140, "resistance_types": ["MR"], "description": "80 Presence limit, 140 MR"},
+      "arcane": {"zeon": 1500, "min_int": 18, "maintenance": 10, "resistance": 160, "resistance_types": ["MR"], "description": "100 Presence limit, 160 MR"}
+    }
+  },
+  {
+    "id": "cleanliness",
+    "name": "Cleanliness",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [1, 10],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Removes any minor physical impurities (such as dirt or bad odors) in the target’s body and clothes. It can also be used to clean places or objects, provided their presence is within the limit set by the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {"zeon": 30, "min_int": 5, "maintenance": null, "resistance": null, "resistance_types": [], "description": "40 Presence limit"},
+      "intermediate": {"zeon": 60, "min_int": 8, "maintenance": null, "resistance": null, "resistance_types": [], "description": "80 Presence limit"},
+      "advanced": {"zeon": 100, "min_int": 10, "maintenance": null, "resistance": null, "resistance_types": [], "description": "120 Presence limit"},
+      "arcane": {"zeon": 140, "min_int": 12, "maintenance": null, "resistance": null, "resistance_types": [], "description": "140 Presence limit"}
+    }
+  },
+  {
+    "id": "free-access-create-fire",
+    "name": "Create Fire",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [1, 10],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Creates fire intensities if cast upon a flammable substance. If the fire catches on the material, maintenance is no longer required.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {"zeon": 40, "min_int": 6, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "1 Intensity"},
+      "intermediate": {"zeon": 80, "min_int": 8, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "3 Intensities"},
+      "advanced": {"zeon": 110, "min_int": 10, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "6 Intensities"},
+      "arcane": {"zeon": 130, "min_int": 12, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "9 Intensities"}
+    }
+  },
+  {
+    "id": "create-music",
+    "name": "Create Music",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [1, 10],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Creates audible music within a radius. The piece is performed with an independent music ability based on the level of the spell. This can only play pieces the caster is familiar with, even if only in a vague way.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {"zeon": 50, "min_int": 5, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "10m Radius, 80 Music"},
+      "intermediate": {"zeon": 80, "min_int": 8, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "50m Radius, 120 Music"},
+      "advanced": {"zeon": 100, "min_int": 10, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "150m Radius, 180 Music"},
+      "arcane": {"zeon": 120, "min_int": 12, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "250m Radius, 240 Music"}
+    }
+  },
+  {
+    "id": "jump",
+    "name": "Jump",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [1, 10],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Supernaturally increases the target’s ability to jump. In game terms, the target adds a bonus to their Jump secondary ability.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {"zeon": 50, "min_int": 5, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "+50 to Jump"},
+      "intermediate": {"zeon": 80, "min_int": 8, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "+100 to Jump"},
+      "advanced": {"zeon": 100, "min_int": 10, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "+150 to Jump, allows Inhuman difficulty results."},
+      "arcane": {"zeon": 140, "min_int": 12, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "+200 to Jump, allows Zen difficulty results."}
+    }
+  },
+  {
+    "id": "magic-detection",
+    "name": "Magic Detection",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [1, 10],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "The caster automatically detects any source of magic around them. If it is hidden, the spell employs a final Magic Appraisal ability determined by the level of the spell.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": ["Detection"]
+    },
+    "grades": {
+      "initial": {"zeon": 40, "min_int": 5, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "25m Radius, 140 Magic Appraisal"},
+      "intermediate": {"zeon": 80, "min_int": 8, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "100m Radius, 180 Magic Appraisal"},
+      "advanced": {"zeon": 120, "min_int": 10, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "200m Radius, 200 Magic Appraisal"},
+      "arcane": {"zeon": 150, "min_int": 12, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "300m Radius, 240 Magic Appraisal"}
+    }
+  },
+  {
+    "id": "move-objects",
+    "name": "Move Objects",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [1, 10],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Moves inorganic objects without the need for physical contact, with a flight value of 10. The maximum weight is determined by the level of the spell",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {"zeon": 30, "min_int": 5, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "10 kg"},
+      "intermediate": {"zeon": 70, "min_int": 8, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "50 kg"},
+      "advanced": {"zeon": 90, "min_int": 10, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "100 kg"},
+      "arcane": {"zeon": 120, "min_int": 12, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "150 kg"}
+    }
+  },
+  {
+    "id": "opening",
+    "name": "Opening",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [1, 10],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to open any closed door using an independent Lockpicking ability based on the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {"zeon": 30, "min_int": 5, "maintenance": null, "resistance": null, "resistance_types": [], "description": "80 Lockpicking"},
+      "intermediate": {"zeon": 70, "min_int": 8, "maintenance": null, "resistance": null, "resistance_types": [], "description": "140 Lockpicking"},
+      "advanced": {"zeon": 100, "min_int": 10, "maintenance": null, "resistance": null, "resistance_types": [], "description": "240 Lockpicking"},
+      "arcane": {"zeon": 140, "min_int": 12, "maintenance": null, "resistance": null, "resistance_types": [], "description": "280 Lockpicking"}
+    }
+  },
+  {
+    "id": "static-message",
+    "name": "Static Message",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [1, 10],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Mark a place or object with a written message. The caster can make it appear and disappear at will, even if not physically present (although they do not know if anyone is there to read it).",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {"zeon": 30, "min_int": 5, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "50 Word limit"},
+      "intermediate": {"zeon": 70, "min_int": 8, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "150 Word limit"},
+      "advanced": {"zeon": 120, "min_int": 10, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "250 Word limit"},
+      "arcane": {"zeon": 180, "min_int": 12, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "500 Word limit"}
+    }
+  },
+  {
+    "id": "stop-fall",
+    "name": "Stop Fall",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [1, 10],
+    "action": "Passive",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Cancel the effects of a fall from great heights. In game terms, it completely eliminates the impact suffered when falling from a high distance, or reduces it if above the listed amount. It can affect several targets, as long as their combined presence is within the limit set by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {"zeon": 40, "min_int": 5, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "50m Height, 60 Presence limit"},
+      "intermediate": {"zeon": 80, "min_int": 8, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "150m Height, 160 Presence limit"},
+      "advanced": {"zeon": 160, "min_int": 10, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "500m Height, 240 Presence limit"},
+      "arcane": {"zeon": 240, "min_int": 12, "maintenance": 25, "resistance": null, "resistance_types": [], "description": "No height limit, 320 Presence limit"}
+    }
+  },
+  {
+    "id": "tie",
+    "name": "Tie",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [1, 10],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "This spell causes chains, ropes, or any type of string to be tied with an independent Sleight of Hand ability. Alternately, the caster may command ropes to tie up a subject, in which case the target must defend against an automatic trapping attack of the same difficulty as the Sleight of Hand value. The Strength value of the binding once struck depends on the material used. For example, thick rope would have a Strength value of 10, and metallic chains a value of 12. Rope and other bindings are not directly created by the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {"zeon": 40, "min_int": 5, "maintenance": null, "resistance": null, "resistance_types": [], "description": "120 Slight of Hand or Attack"},
+      "intermediate": {"zeon": 80, "min_int": 8, "maintenance": null, "resistance": null, "resistance_types": [], "description": "140 Slight of Hand or Attack"},
+      "advanced": {"zeon": 120, "min_int": 10, "maintenance": null, "resistance": null, "resistance_types": [], "description": "180 Slight of Hand or Attack"},
+      "arcane": {"zeon": 160, "min_int": 12, "maintenance": null, "resistance": null, "resistance_types": [], "description": "240 Slight of Hand or Attack"}
+    }
+  },
+  {
+    "id": "undo-writing",
+    "name": "Undo Writing",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [1, 10],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Removes a certain amount of characters or letters on an object or surface. This does not destroy the material upon which it is written, just the characters or letters upon it. For example, on a sheet of paper the ink would disappear, while on an engraving the stone would be filled. Can only affect objects within the presence limit set by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {"zeon": 40, "min_int": 5, "maintenance": null, "resistance": null, "resistance_types": [], "description": "500 Text characters, 30 Presence limit."},
+      "intermediate": {"zeon": 80, "min_int": 8, "maintenance": null, "resistance": null, "resistance_types": [], "description": "5000 Text characters, 60 Presence limit."},
+      "advanced": {"zeon": 120, "min_int": 10, "maintenance": null, "resistance": null, "resistance_types": [], "description": "50000 Text characters, 90 Presence limit."},
+      "arcane": {"zeon": 160, "min_int": 12, "maintenance": null, "resistance": null, "resistance_types": [], "description": "250000 Text characters, 120 Presence limit."}
+    }
+  },
+  {
+    "id": "attract-minor-vermin",
+    "name": "Attract Minor Vermin",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [10, 20],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Summons a mass of vermin (toads, lizards, wasps, rats….) to the place designated by the caster. The appearance is not automatic, but are instead immediately attracted from the closest areas where they are naturally. This spell does not grant control over the beings summoned, but the caster can determine what types of vermin they can attract.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Summoning"]},
+    "grades": {
+      "initial": {"zeon": 30, "min_int": 6, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "Attracts 500 animals"},
+      "intermediate": {"zeon": 80, "min_int": 9, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "Attracts 10,000 animals"},
+      "advanced": {"zeon": 140, "min_int": 11, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "Attracts 100,000 animals"},
+      "arcane": {"zeon": 180, "min_int": 13, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "Attracts multiple millions of animals"}
+    }
+  },
+  {
+    "id": "breathe-liquids",
+    "name": "Breathe Liquids",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [10, 20],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Grants the ability to breathe in any liquid as if it were air. Several subjects may be affected, as long as their combined presence is within the limit set by the level of the spell.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 40, "min_int": 6, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "60 Presence limit"},
+      "intermediate": {"zeon": 80, "min_int": 9, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "100 Presence limit"},
+      "advanced": {"zeon": 120, "min_int": 11, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "200 Presence limit"},
+      "arcane": {"zeon": 160, "min_int": 13, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "320 Presence limit"}
+    }
+  },
+  {
+    "id": "climb",
+    "name": "Climb",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [10, 20],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Supernaturally increases an individual’s ability to scale any surface, adding a bonus to their Climb secondary ability.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 50, "min_int": 6, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "+50 Climb"},
+      "intermediate": {"zeon": 80, "min_int": 9, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "+100 Climb"},
+      "advanced": {"zeon": 120, "min_int": 11, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "+150 Climb, allows Inhuman difficulty results."},
+      "arcane": {"zeon": 160, "min_int": 13, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "+200 Climb, allows Zen difficulty results."}
+    }
+  },
+  {
+    "id": "create-sounds",
+    "name": "Create Sounds",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [10, 20],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Creates a sound in a specific place.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 40, "min_int": 6, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "At 50m"},
+      "intermediate": {"zeon": 50, "min_int": 9, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "At 200m"},
+      "advanced": {"zeon": 120, "min_int": 11, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "At 500m"},
+      "arcane": {"zeon": 160, "min_int": 13, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "At 1km"}
+    }
+  },
+  {
+    "id": "enchant",
+    "name": "Enchant",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [10, 20],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Grants an object or place a supernatural element, allowing it to affect intangible beings and spells. For instance, if cast upon a weapon, it will be able to inflict damage to supernatural beings (using the object’s presence). Likewise, an enchanted wall cannot be pierced by supernatural beings or mystical effects. This effect can be applied to any number of items within the presence limit set by the level of the spell.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 50, "min_int": 6, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "40 Presence limit"},
+      "intermediate": {"zeon": 80, "min_int": 9, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "60 Presence limit"},
+      "advanced": {"zeon": 100, "min_int": 11, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "90 Presence limit"},
+      "arcane": {"zeon": 130, "min_int": 13, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "120 Presence limit"}
+    }
+  },
+  {
+    "id": "fog",
+    "name": "Fog",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [10, 20],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Forms a fog with a density determined by the caster, which remains stationary where it was cast.",
+    "metadata": {"is_aoe": true, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 60, "min_int": 6, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "100m Radius"},
+      "intermediate": {"zeon": 120, "min_int": 9, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "250m Radius"},
+      "advanced": {"zeon": 180, "min_int": 11, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "500m Radius"},
+      "arcane": {"zeon": 240, "min_int": 13, "maintenance": 25, "resistance": null, "resistance_types": [], "description": "1km Radius"}
+    }
+  },
+  {
+    "id": "infinite-bag",
+    "name": "Infinite Bag",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [10, 20],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Allows a sack, bag, or chest to be filled with materials that greatly exceed its natural capacity, without increasing its weight. The caster is always able to extract what they desire from the bag, but others will take things out at random. You cannot store objects that do not physically fit inside the container, such as a spear inside a small bag. If the spell ends, any items will reappear, and the container may even burst.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 40, "min_int": 5, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "10x capacity"},
+      "intermediate": {"zeon": 80, "min_int": 8, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "30x capacity"},
+      "advanced": {"zeon": 100, "min_int": 10, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "40x capacity"},
+      "arcane": {"zeon": 120, "min_int": 12, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "50x capacity"}
+    }
+  },
+  {
+    "id": "inhumanity",
+    "name": "Inhumanity",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [10, 20],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "The target of this spell may reach inhuman difficulty in any field or subject. Keep in mind this does not mean that the actions performed by these subjects are automatically of inhuman difficulty, merely that they can achieve that difficulty if their skill rolls or attributes allow it.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 30, "min_int": 6, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "Can achieve Inhumanity in a single ability."},
+      "intermediate": {"zeon": 80, "min_int": 9, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "Can achieve Inhumanity in all abilities."},
+      "advanced": {"zeon": 100, "min_int": 11, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "As Intermediate, but can also achieve Zen in a single ability."},
+      "arcane": {"zeon": 120, "min_int": 13, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "Can achieve Zen in all abilities."}
+    }
+  },
+  {
+    "id": "pass-without-leaving-trace",
+    "name": "Pass Without Leaving Trace",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [10, 20],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Eliminates the physical traces left behind by a person. To follow in the footsteps of someone affected by this spell, it is necessary to succeed at a Track check of Impossible (280) difficulty. This spell can affect any number of targets as long as their combined presence is within the limit set by the spell.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 60, "min_int": 6, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "120 Presence limit"},
+      "intermediate": {"zeon": 140, "min_int": 9, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "180 Presence limit"},
+      "advanced": {"zeon": 220, "min_int": 11, "maintenance": 25, "resistance": null, "resistance_types": [], "description": "240 Presence limit, the difficulty of finding tracks increases to Inhuman (320)"},
+      "arcane": {"zeon": 340, "min_int": 13, "maintenance": 35, "resistance": null, "resistance_types": [], "description": "320 Presence limit, the difficulty of finding tracks increases to Zen (440)"}
+    }
+  },
+  {
+    "id": "recreate-image",
+    "name": "Recreate Image",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [10, 20],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Recreates the image of something the caster has seen before. The appearance is that of a translucent hologram without substance, which remains motionless in the place it was created.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Illusion"]},
+    "grades": {
+      "initial": {"zeon": 40, "min_int": 6, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "1 m2"},
+      "intermediate": {"zeon": 70, "min_int": 9, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "5 m2"},
+      "advanced": {"zeon": 100, "min_int": 11, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "10 m2"},
+      "arcane": {"zeon": 130, "min_int": 13, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "15 m2, The image appears so real a Very Difficult (140) Notice check or Moderate (80) Search check is required to avoid deception."}
+    }
+  },
+  {
+    "id": "repair",
+    "name": "Repair",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [10, 20],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Fully repair an inorganic object. It does not recreate any lost parts, so it is necessary to preserve the pieces or have necessary raw materials for repair. This can be used on anything from weapons to buildings as long as its presence is within the limit set by the level of the spell.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Repair"]},
+    "grades": {
+      "initial": {"zeon": 60, "min_int": 6, "maintenance": null, "resistance": null, "resistance_types": [], "description": "30 Presence limit"},
+      "intermediate": {"zeon": 90, "min_int": 9, "maintenance": null, "resistance": null, "resistance_types": [], "description": "50 Presence limit"},
+      "advanced": {"zeon": 120, "min_int": 12, "maintenance": null, "resistance": null, "resistance_types": [], "description": "70 Presence limit"},
+      "arcane": {"zeon": 150, "min_int": 15, "maintenance": null, "resistance": null, "resistance_types": [], "description": "90 Presence limit"}
+    }
+  },
+  {
+    "id": "slippery-area",
+    "name": "Slippery Area",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [10, 20],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Enchants an area, rendering it as slippery as wet ice. Crossing the area without slipping requires an Acrobatics or Athleticism check of Difficult (120) while walking, or Absurd (180) if Running.",
+    "metadata": {"is_aoe": true, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 50, "min_int": 6, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "5m Radius"},
+      "intermediate": {"zeon": 100, "min_int": 9, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "25m Radius"},
+      "advanced": {"zeon": 160, "min_int": 11, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "50m Radius"},
+      "arcane": {"zeon": 240, "min_int": 13, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "100m Radius, Walking difficulty increases to Very Difficult (140), while running requires an Impossible (280) difficulty check."}
+    }
+  },
+  {
+    "id": "cause-fear",
+    "name": "Cause Fear",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [20, 30],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": false,
+    "effect": "Those in a radius around the caster are prisoners of a terrible magical fear of the caster should they fail an MR check.",
+    "metadata": {"is_aoe": true, "resistance_cap": 160, "resistance_types": ["MR"], "tags": []},
+    "grades": {
+      "initial": {"zeon": 100, "min_int": 10, "maintenance": 10, "resistance": 100, "resistance_types": ["MR"], "description": "5m Radius, 100 MR"},
+      "intermediate": {"zeon": 120, "min_int": 12, "maintenance": 15, "resistance": 120, "resistance_types": ["MR"], "description": "15m Radius, 120 MR"},
+      "advanced": {"zeon": 140, "min_int": 14, "maintenance": 15, "resistance": 140, "resistance_types": ["MR"], "description": "25m Radius, 140 MR"},
+      "arcane": {"zeon": 160, "min_int": 16, "maintenance": 20, "resistance": 160, "resistance_types": ["MR"], "description": "50m Radius, 160 MR"}
+    }
+  },
+  {
+    "id": "close-with-magic",
+    "name": "Close With Magic",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [20, 30],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Automatically closes any door or lock, increasing the difficulty necessary to open it. Although the lock is enchanted, it is not necessary to maintain the spell, as the lock remains until it is opened. This spell however can only affect one lock at a time.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 100, "min_int": 6, "maintenance": null, "resistance": null, "resistance_types": [], "description": "+1 Difficulty Level"},
+      "intermediate": {"zeon": 120, "min_int": 9, "maintenance": null, "resistance": null, "resistance_types": [], "description": "+2 Difficulty Levels"},
+      "advanced": {"zeon": 140, "min_int": 11, "maintenance": null, "resistance": null, "resistance_types": [], "description": "+3 Difficulty Levels"},
+      "arcane": {"zeon": 160, "min_int": 13, "maintenance": null, "resistance": null, "resistance_types": [], "description": "+4 Difficulty Levels"}
+    }
+  },
+  {
+    "id": "clouds",
+    "name": "Clouds",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [20, 30],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Forms a thick layer of clouds. The caster has complete control over them, being able to move or shape them as they desire.",
+    "metadata": {"is_aoe": true, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 6, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "100m Radius"},
+      "intermediate": {"zeon": 140, "min_int": 9, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "250m Radius"},
+      "advanced": {"zeon": 200, "min_int": 11, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "500m Radius"},
+      "arcane": {"zeon": 260, "min_int": 13, "maintenance": 30, "resistance": null, "resistance_types": [], "description": "1km Radius"}
+    }
+  },
+  {
+    "id": "contraceptive-protection",
+    "name": "Contraceptive Protection",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [20, 30],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "The character or those chosen by them are prevented from contracting sexually transmitted diseases or conceiving offspring. This can affect several individuals as long as the sum of their presence is within the limit set by the spell.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 60, "min_int": 6, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "80 Presence Limit"},
+      "intermediate": {"zeon": 90, "min_int": 9, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "180 Presence Limit"},
+      "advanced": {"zeon": 120, "min_int": 12, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "260 Presence Limit"},
+      "arcane": {"zeon": 150, "min_int": 15, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "380 Presence Limit"}
+    }
+  },
+  {
+    "id": "levitation",
+    "name": "Levitation",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [20, 30],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Grants a target the ability to rise or fall through the air at will, but does not permit horizontal movement in the same way.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 50, "min_int": 6, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "Flight Value 4"},
+      "intermediate": {"zeon": 80, "min_int": 9, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "Flight Value 6"},
+      "advanced": {"zeon": 100, "min_int": 11, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "Flight Value 8"},
+      "arcane": {"zeon": 120, "min_int": 13, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "Flight Value 10"}
+    }
+  },
+  {
+    "id": "magic-shield",
+    "name": "Magic Shield",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [20, 30],
+    "action": "Passive",
+    "types": ["Defense"],
+    "daily_maintenance": false,
+    "effect": "Creates a magical shield that protects from any type of attack, including those of a supernatural nature.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Shield"]},
+    "grades": {
+      "initial": {"zeon": 60, "min_int": 6, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "300 Life Points"},
+      "intermediate": {"zeon": 120, "min_int": 9, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "1000 Life Points"},
+      "advanced": {"zeon": 180, "min_int": 11, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "2000 Life Points"},
+      "arcane": {"zeon": 240, "min_int": 13, "maintenance": 25, "resistance": null, "resistance_types": [], "description": "3000 Life Points"}
+    }
+  },
+  {
+    "id": "magical-protection",
+    "name": "Magical Protection",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [20, 30],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Grants increased armor against all manner of attacks except for Energy attacks. It can be combined with any other armor as an additional layer, but as an exception does not impose initiative penalties for doing so.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Armor"]},
+    "grades": {
+      "initial": {"zeon": 60, "min_int": 6, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "2 AT"},
+      "intermediate": {"zeon": 90, "min_int": 9, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "4 AT"},
+      "advanced": {"zeon": 120, "min_int": 12, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "6 AT"},
+      "arcane": {"zeon": 150, "min_int": 15, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "8 AT"}
+    }
+  },
+  {
+    "id": "net",
+    "name": "Net",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [20, 30],
+    "action": "Active",
+    "types": ["Attack", "Effect"],
+    "daily_maintenance": false,
+    "effect": "This spell creates high density magical fibers, which act as a very sticky web. It has a number of uses such as blocking an area, or throwing directly on individuals. Any creature within its radius is trapped with a strength value of 10 for the spell. The net also has a pool of life points it can sustain damage with before breaking, with an AT of 4. Being supernatural substance, the net can only be damaged by Heat or other attacks capable of damaging energy.",
+    "metadata": {"is_aoe": true, "resistance_cap": null, "resistance_types": [], "tags": ["Trapping"]},
+    "grades": {
+      "initial": {"zeon": 60, "min_int": 6, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "3m2, 500 Life Points"},
+      "intermediate": {"zeon": 90, "min_int": 9, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "6m2, 750 Life Points"},
+      "advanced": {"zeon": 120, "min_int": 11, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "9m2, 1000 Life Points"},
+      "arcane": {"zeon": 150, "min_int": 13, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "12m2, 1500 Life Points, Strength value increases to 12"}
+    }
+  },
+  {
+    "id": "send-message",
+    "name": "Send Message",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [20, 30],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Send a verbal or written message to a known person or place within the distance set by the level of the spell. The message can be in any language, but is limited by the number of words.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Communication"]},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 6, "maintenance": null, "resistance": null, "resistance_types": [], "description": "10 km, 500 Words"},
+      "intermediate": {"zeon": 100, "min_int": 9, "maintenance": null, "resistance": null, "resistance_types": [], "description": "100 km, 1000 Words"},
+      "advanced": {"zeon": 120, "min_int": 11, "maintenance": null, "resistance": null, "resistance_types": [], "description": "250 km, 2500 Words"},
+      "arcane": {"zeon": 140, "min_int": 13, "maintenance": null, "resistance": null, "resistance_types": [], "description": "1000 km, 5000 Words"}
+    }
+  },
+  {
+    "id": "serenity",
+    "name": "Serenity",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [20, 30],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": false,
+    "effect": "Instills a sense of peace and tranquility to the target of the spell, causing them to calm themselves even if terrified, or full of rage. In game terms, this spell nullifies any state of fear, terror, or rage suffered by the affected target, unless they are of a supernatural origin.",
+    "metadata": {"is_aoe": false, "resistance_cap": 180, "resistance_types": ["MR"], "tags": []},
+    "grades": {
+      "initial": {"zeon": 50, "min_int": 6, "maintenance": 5, "resistance": 120, "resistance_types": ["MR"], "description": "120 MR"},
+      "intermediate": {"zeon": 70, "min_int": 9, "maintenance": 10, "resistance": 140, "resistance_types": ["MR"], "description": "140 MR"},
+      "advanced": {"zeon": 100, "min_int": 11, "maintenance": 10, "resistance": 160, "resistance_types": ["MR"], "description": "160 MR"},
+      "arcane": {"zeon": 130, "min_int": 13, "maintenance": 15, "resistance": 180, "resistance_types": ["MR"], "description": "180 MR"}
+    }
+  },
+  {
+    "id": "free-access-speed",
+    "name": "Speed",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [20, 30],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Elevates the reactions and movement value of the subject. Any increase to the target’s movement value over 12 are halved.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Buff"]},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 6, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "+20 Initiative, +1 Movement value"},
+      "intermediate": {"zeon": 120, "min_int": 9, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "+40 Initiative, +2 Movement value"},
+      "advanced": {"zeon": 160, "min_int": 11, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "+60 Initiative, +4 Movement value"},
+      "arcane": {"zeon": 200, "min_int": 13, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "+80 Initiative, +6 Movement value"}
+    }
+  },
+  {
+    "id": "understand-languages",
+    "name": "Understand Languages",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [20, 30],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Temporarily allows the caster to understand an unknown language, whether in written or spoken form.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 100, "min_int": 7, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "Basic Languages, spoken and known by many people in all countries of the world."},
+      "intermediate": {"zeon": 160, "min_int": 10, "maintenance": 35, "resistance": null, "resistance_types": [], "description": "Strange and unusual languages, spoken by small minorities or no longer used in greater society."},
+      "advanced": {"zeon": 200, "min_int": 12, "maintenance": 40, "resistance": null, "resistance_types": [], "description": "Unique languages and forgotten or dead languages."},
+      "arcane": {"zeon": 240, "min_int": 15, "maintenance": 50, "resistance": null, "resistance_types": [], "description": "All languages"}
+    }
+  },
+  {
+    "id": "alter-size",
+    "name": "Alter Size",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [30, 40],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": false,
+    "effect": "Increase or decrease the size of the person or object the spell is cast upon. Regardless of the spell level used, the size of the target can not be reduced below 1. Resisting the effects requires a successful MR check.",
+    "metadata": {"is_aoe": false, "resistance_cap": 160, "resistance_types": ["MR"], "tags": []},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 7, "maintenance": 10, "resistance": 100, "resistance_types": ["MR"], "description": "± 2 Size, 100 MR"},
+      "intermediate": {"zeon": 100, "min_int": 10, "maintenance": 10, "resistance": 120, "resistance_types": ["MR"], "description": "± 4 Size, 120 MR"},
+      "advanced": {"zeon": 140, "min_int": 12, "maintenance": 15, "resistance": 140, "resistance_types": ["MR"], "description": "± 6 Size, 140 MR"},
+      "arcane": {"zeon": 180, "min_int": 14, "maintenance": 20, "resistance": 160, "resistance_types": ["MR"], "description": "± 8 Size, 160 MR"}
+    }
+  },
+  {
+    "id": "change-of-outlook",
+    "name": "Change of Outlook",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [30, 40],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": true,
+    "effect": "Modifies the facial and bodily appearance of the subject on which it is cast. The caster can alter the victim’s skin color or physiognomy, but does not vary the height or weight of the victim beyond the limits of their size value. To resist these effects, it is necessary to succeed at an MR check. Once failed, it is only possible to repeat the check once a day.",
+    "metadata": {"is_aoe": false, "resistance_cap": 130, "resistance_types": ["MR"], "tags": []},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 7, "maintenance": 10, "resistance": 100, "resistance_types": ["MR"], "description": "100 MR"},
+      "intermediate": {"zeon": 100, "min_int": 10, "maintenance": 10, "resistance": 110, "resistance_types": ["MR"], "description": "110 MR"},
+      "advanced": {"zeon": 120, "min_int": 12, "maintenance": 15, "resistance": 120, "resistance_types": ["MR"], "description": "120 MR"},
+      "arcane": {"zeon": 140, "min_int": 14, "maintenance": 15, "resistance": 130, "resistance_types": ["MR"], "description": "130 MR"}
+    }
+  },
+  {
+    "id": "eliminate-dreams",
+    "name": "Eliminate Dreams",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [30, 40],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": true,
+    "effect": "It suppresses the ability of an individual to dream. If cast on a target in the wake, they will be immediately expelled to the real world. The spell can be resisted with a successful MR check, although if failed it can only be repeated once a day.",
+    "metadata": {"is_aoe": false, "resistance_cap": 240, "resistance_types": ["MR"], "tags": ["Dreams"]},
+    "grades": {
+      "initial": {"zeon": 50, "min_int": 6, "maintenance": 5, "resistance": 120, "resistance_types": ["MR"], "description": "120 MR"},
+      "intermediate": {"zeon": 100, "min_int": 9, "maintenance": 10, "resistance": 160, "resistance_types": ["MR"], "description": "160 MR"},
+      "advanced": {"zeon": 150, "min_int": 11, "maintenance": 15, "resistance": 200, "resistance_types": ["MR"], "description": "200 MR"},
+      "arcane": {"zeon": 200, "min_int": 14, "maintenance": 15, "resistance": 240, "resistance_types": ["MR"], "description": "240 MR"}
+    }
+  },
+  {
+    "id": "eliminate-spells",
+    "name": "Eliminate Spells",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [30, 40],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Destroy an active spell whose Zeon value does not exceed that indicated by the spell's level when cast.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 150, "min_int": 7, "maintenance": null, "resistance": null, "resistance_types": [], "description": "60 Maximum Zeon Value"},
+      "intermediate": {"zeon": 200, "min_int": 10, "maintenance": null, "resistance": null, "resistance_types": [], "description": "80 Maximum Zeon Value"},
+      "advanced": {"zeon": 240, "min_int": 12, "maintenance": null, "resistance": null, "resistance_types": [], "description": "100 Maximum Zeon Value"},
+      "arcane": {"zeon": 280, "min_int": 14, "maintenance": null, "resistance": null, "resistance_types": [], "description": "120 Maximum Zeon Value"}
+    }
+  },
+  {
+    "id": "extend-presence",
+    "name": "Extend Presence",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [30, 40],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "The caster can separate their soul from their body at will, allowing them to act remotely as if they were truly there. While the caster is separated, they will not be able to move, but will be able to make their soul return to their body whenever desired without having to end the spell. The expanded presence can touch physical objects and even attack, but it will be invisible to the human eye; It is only possible to notice it through the use of Ki detection, the ability to see spirits, or some other means of seeing ethereal bodies (although if their presence is holding something, that object is perfectly visible). The presence is intangible and can only be damaged by attacks capable of damaging energy. Any loss of life points will also affect the caster’s body. The maximum distance that the presence can separate from the body is determined by the level of the spell.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 100, "min_int": 7, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "5m Radius"},
+      "intermediate": {"zeon": 150, "min_int": 10, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "25m Radius"},
+      "advanced": {"zeon": 200, "min_int": 12, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "50m Radius"},
+      "arcane": {"zeon": 250, "min_int": 15, "maintenance": 25, "resistance": null, "resistance_types": [], "description": "100m Radius, also creates copies of objects brought by the caster allowing their expanded presence to use them."}
+    }
+  },
+  {
+    "id": "heal-diseases",
+    "name": "Heal Diseases",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [30, 40],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Automatically heals any disease up to a certain disease level. This can affect a number of individuals, as long as the sum of their presence is within the limit set by the level of the spell.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Healing"]},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 8, "maintenance": null, "resistance": null, "resistance_types": [], "description": "Disease Level 30, 80 Presence Limit"},
+      "intermediate": {"zeon": 140, "min_int": 11, "maintenance": null, "resistance": null, "resistance_types": [], "description": "Disease Level 50, 120 Presence Limit"},
+      "advanced": {"zeon": 200, "min_int": 13, "maintenance": null, "resistance": null, "resistance_types": [], "description": "Disease Level 70, 180 Presence Limit"},
+      "arcane": {"zeon": 300, "min_int": 16, "maintenance": null, "resistance": null, "resistance_types": [], "description": "Disease Level 100, 240 Presence Limit"}
+    }
+  },
+  {
+    "id": "invoke-aggressiveness",
+    "name": "Invoke Aggressiveness",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [30, 40],
+    "action": "Active",
+    "types": ["Automatic"],
+    "daily_maintenance": false,
+    "effect": "Automatically increases the aggressiveness of all living beings close to the caster, should they fail an MR check. Those affected are subject to the Rage state and act in a violent manner toward any individual or thing targetable by their anger.",
+    "metadata": {"is_aoe": true, "resistance_cap": 140, "resistance_types": ["MR"], "tags": ["Emotions"]},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 7, "maintenance": 10, "resistance": 80, "resistance_types": ["MR"], "description": "20m Radius, 80 MR"},
+      "intermediate": {"zeon": 120, "min_int": 10, "maintenance": 10, "resistance": 100, "resistance_types": ["MR"], "description": "40m Radius, 100 MR"},
+      "advanced": {"zeon": 160, "min_int": 12, "maintenance": 15, "resistance": 120, "resistance_types": ["MR"], "description": "60m Radius, 120 MR"},
+      "arcane": {"zeon": 200, "min_int": 14, "maintenance": 15, "resistance": 140, "resistance_types": ["MR"], "description": "80m Radius, 140 MR"}
+    }
+  },
+  {
+    "id": "magic-beam",
+    "name": "Magic Beam",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [30, 40],
+    "action": "Active",
+    "types": ["Attack"],
+    "daily_maintenance": false,
+    "effect": "Projects a magical discharge, which is an attack of the Energy type.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Energy Attack"]},
+    "grades": {
+      "initial": {"zeon": 60, "min_int": 6, "maintenance": null, "resistance": null, "resistance_types": [], "description": "40 Base Damage"},
+      "intermediate": {"zeon": 90, "min_int": 9, "maintenance": null, "resistance": null, "resistance_types": [], "description": "60 Base Damage"},
+      "advanced": {"zeon": 120, "min_int": 11, "maintenance": null, "resistance": null, "resistance_types": [], "description": "80 Base Damage"},
+      "arcane": {"zeon": 150, "min_int": 14, "maintenance": null, "resistance": null, "resistance_types": [], "description": "100 Base Damage"}
+    }
+  },
+  {
+    "id": "purification",
+    "name": "Purification",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [30, 40],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Purify a target by eliminating any harmful element, such as poisons and toxins. Purification only affects harmful elements of a body that do not belong to it. In this way, the poison that a snake possesses naturally will not be altered, since it is something natural for that creature, but it will be eliminated if inoculated into a bite victim.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Healing"]},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 7, "maintenance": null, "resistance": null, "resistance_types": [], "description": "Poison Level 30"},
+      "intermediate": {"zeon": 100, "min_int": 10, "maintenance": null, "resistance": null, "resistance_types": [], "description": "Poison Level 50"},
+      "advanced": {"zeon": 120, "min_int": 12, "maintenance": null, "resistance": null, "resistance_types": [], "description": "Poison Level 70"},
+      "arcane": {"zeon": 140, "min_int": 14, "maintenance": null, "resistance": null, "resistance_types": [], "description": "Poison Level 90"}
+    }
+  },
+  {
+    "id": "resistance-to-pain",
+    "name": "Resistance To Pain",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [30, 40],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Increases the endurance of a living being, giving a bonus to the secondary ability Withstand Pain.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Buff"]},
+    "grades": {
+      "initial": {"zeon": 60, "min_int": 6, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "+50 Withstand Pain"},
+      "intermediate": {"zeon": 90, "min_int": 9, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "+100 Withstand Pain"},
+      "advanced": {"zeon": 120, "min_int": 11, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "+150 Withstand Pain, allows Inhuman difficulty results."},
+      "arcane": {"zeon": 150, "min_int": 14, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "+200 Withstand Pain, allows Zen difficulty results."}
+    }
+  },
+  {
+    "id": "sense-feelings",
+    "name": "Sense Feelings",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [30, 40],
+    "action": "Active",
+    "types": ["Detection"],
+    "daily_maintenance": false,
+    "effect": "Detects a certain feeling in those individuals who are within a radius close to the caster. The caster must choose what emotion they wish to perceive. Affected subjects may resist with a successful MR or PsR check.",
+    "metadata": {"is_aoe": true, "resistance_cap": 180, "resistance_types": ["MR", "PsR"], "tags": ["Detection", "Emotions"]},
+    "grades": {
+      "initial": {"zeon": 60, "min_int": 7, "maintenance": 5, "resistance": 120, "resistance_types": ["MR", "PsR"], "description": "50m Radius, 120 MR or PsR"},
+      "intermediate": {"zeon": 90, "min_int": 10, "maintenance": 5, "resistance": 140, "resistance_types": ["MR", "PsR"], "description": "100m Radius, 140 MR or PsR"},
+      "advanced": {"zeon": 120, "min_int": 13, "maintenance": 10, "resistance": 160, "resistance_types": ["MR", "PsR"], "description": "250m Radius, 160 MR or PsR"},
+      "arcane": {"zeon": 150, "min_int": 16, "maintenance": 10, "resistance": 180, "resistance_types": ["MR", "PsR"], "description": "500m Radius, 180 MR or PsR"}
+    }
+  },
+  {
+    "id": "true-close",
+    "name": "True Close",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [30, 40],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Through this spell, the caster automatically obstructs any type of door, shutter, or window. If for example, it is cast upon an open door, it will close by itself. If upon the latch, it will physically bar the exit. While the spell is maintained, it is not possible to open the door physically, and only mystical effects or destruction will open it. The maximum presence of the opening affected is determined by the level of the spell.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 7, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "20 Presence Limit"},
+      "intermediate": {"zeon": 160, "min_int": 10, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "40 Presence Limit"},
+      "advanced": {"zeon": 200, "min_int": 12, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "60 Presence Limit"},
+      "arcane": {"zeon": 240, "min_int": 14, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "80 Presence Limit"}
+    }
+  },
+  {
+    "id": "absorb-information",
+    "name": "Absorb Information",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [40, 50],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "The caster absorbs written or visual knowledge within sight or reach. Thus, it is possible for example, to read a book in a few seconds by touching its cover and remember the details as if it had been perused carefully. A character who tries to remember information memorized using this spell decreases the difficulty of any Memorize check by 2 degrees.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 8, "maintenance": null, "resistance": null, "resistance_types": [], "description": "A short and not very complex book."},
+      "intermediate": {"zeon": 180, "min_int": 10, "maintenance": null, "resistance": null, "resistance_types": [], "description": "A large and complex book."},
+      "advanced": {"zeon": 320, "min_int": 12, "maintenance": null, "resistance": null, "resistance_types": [], "description": "The equivalent of an encyclopedia."},
+      "arcane": {"zeon": 500, "min_int": 16, "maintenance": null, "resistance": null, "resistance_types": [], "description": "The knowledge of an entire library."}
+    }
+  },
+  {
+    "id": "alter-energy",
+    "name": "Alter Energy",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [40, 50],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": true,
+    "effect": "The caster can transform intensities of any kind of elemental intensity into another, such as converting fire into electricity. If these intensities are magical or have their own presence (such as an elemental) they can resist with a successful MR check. This spell does not harm any elemental being affected, but does change it’s nature.",
+    "metadata": {"is_aoe": false, "resistance_cap": 180, "resistance_types": ["MR"], "tags": []},
+    "grades": {
+      "initial": {"zeon": 100, "min_int": 8, "maintenance": 10, "resistance": 120, "resistance_types": ["MR"], "description": "10 Intensities, 120 MR"},
+      "intermediate": {"zeon": 160, "min_int": 10, "maintenance": 20, "resistance": 140, "resistance_types": ["MR"], "description": "15 Intensities, 140 MR"},
+      "advanced": {"zeon": 200, "min_int": 12, "maintenance": 20, "resistance": 160, "resistance_types": ["MR"], "description": "20 Intensities, 160 MR"},
+      "arcane": {"zeon": 240, "min_int": 14, "maintenance": 25, "resistance": 180, "resistance_types": ["MR"], "description": "25 Intensities, 180 MR"}
+    }
+  },
+  {
+    "id": "cancel-magic",
+    "name": "Cancel Magic",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [40, 50],
+    "action": "Active",
+    "types": ["Automatic"],
+    "daily_maintenance": false,
+    "effect": "Cancels the effects of all spells (including those of the caster) within a radius around the caster, as long as their Zeon value does not exceed the limit set by the level of the spell. Keep in mind this does not destroy the spell, but simply neutralizes the effects while in the area.",
+    "metadata": {"is_aoe": true, "resistance_cap": null, "resistance_types": [], "tags": ["Anti-Magic"]},
+    "grades": {
+      "initial": {"zeon": 150, "min_int": 8, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "10m Radius, 60 Maximum Zeon Value"},
+      "intermediate": {"zeon": 200, "min_int": 10, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "25m Radius, 100 Maximum Zeon Value"},
+      "advanced": {"zeon": 240, "min_int": 12, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "50m Radius, 140 Maximum Zeon Value"},
+      "arcane": {"zeon": 280, "min_int": 14, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "100m Radius, 180 Maximum Zeon Value"}
+    }
+  },
+  {
+    "id": "cause-sickness",
+    "name": "Cause Sickness",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [40, 50],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": false,
+    "effect": "Causes the victim to fall ill should they fail the DR check.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 60, "min_int": 8, "maintenance": null, "resistance": null, "resistance_types": [], "description": "Disease Level 30"},
+      "intermediate": {"zeon": 100, "min_int": 10, "maintenance": null, "resistance": null, "resistance_types": [], "description": "Disease Level 50"},
+      "advanced": {"zeon": 140, "min_int": 12, "maintenance": null, "resistance": null, "resistance_types": [], "description": "Disease Level 70"},
+      "arcane": {"zeon": 200, "min_int": 15, "maintenance": null, "resistance": null, "resistance_types": [], "description": "Disease Level 90"}
+    }
+  },
+  {
+    "id": "curse",
+    "name": "Curse",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [40, 50],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": true,
+    "effect": "Causes a series of negative conditions on the person it affects. It causes misfortune when certain actions are performed by the victim: maintaining a romantic relationship, writing poetry, helping someone… The caster decides what exactly the action is, as well as it’s consequences, within the limit set by the level of the spell. By it’s nature, the spell does not influence only those directly targeted, but also others who interact with them if they enter the designation of the curse. In this case, every individual is entitled to their own MR check. For example, a young girl who is interested in forming a relationship with a boy affected by a curse that prevents others from falling in love with him, would feel discouraged from this action should she fail the MR of the spell. New resistance checks may only be performed when the condition is met an additional time.",
+    "metadata": {"is_aoe": false, "resistance_cap": 180, "resistance_types": ["MR"], "tags": ["Curse"]},
+    "grades": {
+      "initial": {"zeon": 200, "min_int": 8, "maintenance": 10, "resistance": 120, "resistance_types": ["MR"], "description": "120 MR, Only affects very specific acts (such as falling in love with a certain person, or writing a poem for the king) and only produces the inability to achieve such goals with complete success."},
+      "intermediate": {"zeon": 350, "min_int": 10, "maintenance": 20, "resistance": 140, "resistance_types": ["MR"], "description": "140 MR, Affects generic acts (falling in love, fighting, helping others…) produces true misfortune, where the target cannot achieve the goal; or if cursing a primary or secondary ability, a -60 penalty every time it is used."},
+      "advanced": {"zeon": 500, "min_int": 13, "maintenance": 25, "resistance": 160, "resistance_types": ["MR"], "description": "160 MR, Affects any act or condition, producing any number of negative effects to those affected (pain, crying blood, inability to speak…); or if cursing a primary or secondary ability, a -80 penalty every time it is used"},
+      "arcane": {"zeon": 700, "min_int": 16, "maintenance": 35, "resistance": 180, "resistance_types": ["MR"], "description": "180 MR, Any level of complexity imaginable and produces major effects, such as death, to those who fall within it’s consequences."}
+    }
+  },
+  {
+    "id": "friendship",
+    "name": "Friendship",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [40, 50],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": true,
+    "effect": "Creates a bond of friendship towards another person designated by the caster. Keep in mind the victim does not become stupid, so they do not blindly obey their ‘friend’, but instead act according to their personality. To overcome the effects of this spell, a successful MR or PsR check is required. Subsequently, the resistance roll is repeated only once a day, or when something may cast doubt upon the companionship this spell creates.",
+    "metadata": {"is_aoe": false, "resistance_cap": 180, "resistance_types": ["MR", "PsR"], "tags": ["Emotions"]},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 8, "maintenance": 10, "resistance": 120, "resistance_types": ["MR", "PsR"], "description": "120 MR or PsR"},
+      "intermediate": {"zeon": 120, "min_int": 10, "maintenance": 15, "resistance": 140, "resistance_types": ["MR", "PsR"], "description": "140 MR or PsR"},
+      "advanced": {"zeon": 180, "min_int": 12, "maintenance": 20, "resistance": 160, "resistance_types": ["MR", "PsR"], "description": "160 MR or PsR"},
+      "arcane": {"zeon": 220, "min_int": 14, "maintenance": 25, "resistance": 180, "resistance_types": ["MR", "PsR"], "description": "180 MR or PsR"}
+    }
+  },
+  {
+    "id": "quick-transport",
+    "name": "Quick Transport",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [40, 50],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": false,
+    "effect": "Transport the target up to a specified distance. This allows the transported individual to pass through solid matter, provided it is not considered an energy barrier. Additionally, they cannot be transported to a place of a different nature than the one they’re currently in (for example, by making someone appear in the air).",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Teleportation"]},
+    "grades": {
+      "initial": {"zeon": 60, "min_int": 6, "maintenance": null, "resistance": null, "resistance_types": [], "description": "25m"},
+      "intermediate": {"zeon": 90, "min_int": 9, "maintenance": null, "resistance": null, "resistance_types": [], "description": "100m"},
+      "advanced": {"zeon": 120, "min_int": 12, "maintenance": null, "resistance": null, "resistance_types": [], "description": "200m"},
+      "arcane": {"zeon": 150, "min_int": 15, "maintenance": null, "resistance": null, "resistance_types": [], "description": "350m"}
+    }
+  },
+  {
+    "id": "read-minds",
+    "name": "Read Minds",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [40, 50],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": true,
+    "effect": "Allows the caster to delve into the thoughts or memories of an individual. It is at the GM’s discretion to decide the number of combat turns needed to find the desired information, depending on how deeply hidden it is in the character’s memory. The affected can resist with either an MR or PsR check. As long as the caster can read the intentions of their victim, he receives a +30 bonus to any opposed check against the target.",
+    "metadata": {"is_aoe": false, "resistance_cap": 180, "resistance_types": ["MR", "PsR"], "tags": ["Mind"]},
+    "grades": {
+      "initial": {"zeon": 100, "min_int": 8, "maintenance": 10, "resistance": 80, "resistance_types": ["MR", "PsR"], "description": "80 MR or PsR"},
+      "intermediate": {"zeon": 160, "min_int": 10, "maintenance": 20, "resistance": 120, "resistance_types": ["MR", "PsR"], "description": "120 MR or PsR"},
+      "advanced": {"zeon": 200, "min_int": 12, "maintenance": 20, "resistance": 140, "resistance_types": ["MR", "PsR"], "description": "140 MR or PsR"},
+      "arcane": {"zeon": 240, "min_int": 15, "maintenance": 25, "resistance": 180, "resistance_types": ["MR", "PsR"], "description": "180 MR or PsR"}
+    }
+  },
+  {
+    "id": "send-dreams",
+    "name": "Send Dreams",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [40, 50],
+    "action": "Active",
+    "types": ["Automatic"],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to send images and words to the subconscious of a sleeper. This does not work as a communication system, since the caster will have no record of what the dreamer says or does. The messages can be sent to any subject, regardless of distance. The only conditions needed to be affected is to be both asleep and chosen by the caster.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Dreams"]},
+    "grades": {
+      "initial": {"zeon": 120, "min_int": 8, "maintenance": null, "resistance": null, "resistance_types": [], "description": "The dream is vague and not very illuminating, allowing only fragmented images, disjointed phrases and sounds."},
+      "intermediate": {"zeon": 180, "min_int": 10, "maintenance": null, "resistance": null, "resistance_types": [], "description": "The dream is value, but is allowed to show sequences and places to the dreamer."},
+      "advanced": {"zeon": 240, "min_int": 12, "maintenance": null, "resistance": null, "resistance_types": [], "description": "The dreams are clear and convey an understandable message, as well as images and sequences devised by the caster."},
+      "arcane": {"zeon": 300, "min_int": 15, "maintenance": null, "resistance": null, "resistance_types": [], "description": "The dreams are completely clear and the dreamer has a vague awareness similar to that of the caster, allowing the dreamer to even ask questions or interact with what they see in the dream."}
+    }
+  },
+  {
+    "id": "show-the-invisible",
+    "name": "Show The Invisible",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [40, 50],
+    "action": "Active",
+    "types": ["Automatic"],
+    "daily_maintenance": false,
+    "effect": "Show any invisible force or presence, displaying it in plain sight to anyone. This spell reveals both supernatural effects and beings of a spiritual or invisible nature. Affected creatures may avoid these effects with a successful MR check. The effect remains as long as the entity is within the radius of the spell.",
+    "metadata": {"is_aoe": true, "resistance_cap": 240, "resistance_types": ["MR"], "tags": ["Detection"]},
+    "grades": {
+      "initial": {"zeon": 60, "min_int": 6, "maintenance": 5, "resistance": 120, "resistance_types": ["MR"], "description": "25m Radius, 120 MR"},
+      "intermediate": {"zeon": 90, "min_int": 9, "maintenance": 5, "resistance": 160, "resistance_types": ["MR"], "description": "50m Radius, 160 MR"},
+      "advanced": {"zeon": 120, "min_int": 12, "maintenance": 10, "resistance": 200, "resistance_types": ["MR"], "description": "100m Radius, 200 MR"},
+      "arcane": {"zeon": 150, "min_int": 15, "maintenance": 10, "resistance": 240, "resistance_types": ["MR"], "description": "250m Radius, 240 MR"}
+    }
+  },
+  {
+    "id": "slow",
+    "name": "Slow",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [40, 50],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": false,
+    "effect": "Diminishes the movement speed of the target, causing a movement penalty if they do not succeed on an MR check. This cannot reduce the target to below a movement value of 1.",
+    "metadata": {"is_aoe": false, "resistance_cap": 180, "resistance_types": ["MR"], "tags": ["Debuff"]},
+    "grades": {
+      "initial": {"zeon": 60, "min_int": 8, "maintenance": 10, "resistance": 120, "resistance_types": ["MR"], "description": "-2 Movement Value, 120 MR"},
+      "intermediate": {"zeon": 90, "min_int": 10, "maintenance": 10, "resistance": 140, "resistance_types": ["MR"], "description": "-4 Movement Value, 140 MR"},
+      "advanced": {"zeon": 120, "min_int": 12, "maintenance": 15, "resistance": 160, "resistance_types": ["MR"], "description": "-8 Movement Value, 160 MR"},
+      "arcane": {"zeon": 150, "min_int": 15, "maintenance": 15, "resistance": 180, "resistance_types": ["MR"], "description": "-12 Movement Value, 180 MR"}
+    }
+  },
+  {
+    "id": "undo",
+    "name": "Undo",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [40, 50],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Destroy up to the listed mass of any inorganic material, provided it does not succeed at an MR check.",
+    "metadata": {"is_aoe": false, "resistance_cap": 140, "resistance_types": ["MR"], "tags": ["Destruction"]},
+    "grades": {
+      "initial": {"zeon": 100, "min_int": 8, "maintenance": null, "resistance": 80, "resistance_types": ["MR"], "description": "50 kg, 80 MR"},
+      "intermediate": {"zeon": 140, "min_int": 10, "maintenance": null, "resistance": 100, "resistance_types": ["MR"], "description": "100 kg, 100 MR"},
+      "advanced": {"zeon": 180, "min_int": 12, "maintenance": null, "resistance": 120, "resistance_types": ["MR"], "description": "250 kg, 120 MR"},
+      "arcane": {"zeon": 240, "min_int": 15, "maintenance": null, "resistance": 140, "resistance_types": ["MR"], "description": "500 kg, 140 MR"}
+    }
+  },
+  {
+    "id": "acid-cloud",
+    "name": "Acid Cloud",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [50, 60],
+    "action": "Active",
+    "types": ["Automatic"],
+    "daily_maintenance": false,
+    "effect": "Forms a corrosive cloud, which melts any material by mere contact. All bodies in contact with the cloud must succeed at a PhR check or lose an amount of life points equal to the level of failure. If an object fails this check by 50 points or more, it loses 1 level of quality. Each turn that a body is exposed to the cloud and fails the associated resistance check, it applies a cumulative -10 penalty to subsequent checks. The caster can move the cloud at a speed determined by the level of the spell. All bodies inside it’s area of effect the turn after it is formed are affected. Naturally, it is not possible to distinguish targets inside the spell’s area, including the caster themselves.",
+    "metadata": {"is_aoe": true, "resistance_cap": 180, "resistance_types": ["PhR"], "tags": ["Damage", "Acid"]},
+    "grades": {
+      "initial": {"zeon": 100, "min_int": 8, "maintenance": 10, "resistance": 120, "resistance_types": ["PhR"], "description": "5m Radius, Flight Value 6, 120 PhR"},
+      "intermediate": {"zeon": 160, "min_int": 10, "maintenance": 20, "resistance": 140, "resistance_types": ["PhR"], "description": "10m Radius, Flight Value 8, 140 PhR"},
+      "advanced": {"zeon": 240, "min_int": 13, "maintenance": 35, "resistance": 160, "resistance_types": ["PhR"], "description": "20m Radius, Flight Value 10, 160 PhR"},
+      "arcane": {"zeon": 320, "min_int": 16, "maintenance": 35, "resistance": 180, "resistance_types": ["PhR"], "description": "50m Radius, Flight Value 12, 180 PhR"}
+    }
+  },
+  {
+    "id": "blindness",
+    "name": "Blindness",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [50, 60],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": false,
+    "effect": "Anyone within the radius of the spell except the caster will lose their sense of sight if they fail the associated MR check.",
+    "metadata": {"is_aoe": true, "resistance_cap": 160, "resistance_types": ["MR"], "tags": ["Debuff"]},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 8, "maintenance": 10, "resistance": 100, "resistance_types": ["MR"], "description": "5m Radius, 100 MR"},
+      "intermediate": {"zeon": 120, "min_int": 10, "maintenance": 15, "resistance": 120, "resistance_types": ["MR"], "description": "25m Radius, 120 MR"},
+      "advanced": {"zeon": 160, "min_int": 13, "maintenance": 20, "resistance": 140, "resistance_types": ["MR"], "description": "50m Radius, 140 MR"},
+      "arcane": {"zeon": 200, "min_int": 15, "maintenance": 20, "resistance": 160, "resistance_types": ["MR"], "description": "100m Radius, 160 MR"}
+    }
+  },
+  {
+    "id": "deafness",
+    "name": "Deafness",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [50, 60],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": false,
+    "effect": "Anyone within the radius of the spell except the caster will go deaf if they fail the associated MR check.",
+    "metadata": {"is_aoe": true, "resistance_cap": 180, "resistance_types": ["MR"], "tags": ["Debuff"]},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 8, "maintenance": 5, "resistance": 120, "resistance_types": ["MR"], "description": "5m Radius, 120 MR"},
+      "intermediate": {"zeon": 100, "min_int": 10, "maintenance": 5, "resistance": 140, "resistance_types": ["MR"], "description": "25m Radius, 140 MR"},
+      "advanced": {"zeon": 120, "min_int": 13, "maintenance": 10, "resistance": 160, "resistance_types": ["MR"], "description": "50m Radius, 160 MR"},
+      "arcane": {"zeon": 140, "min_int": 15, "maintenance": 10, "resistance": 180, "resistance_types": ["MR"], "description": "100m Radius, 180 MR"}
+    }
+  },
+  {
+    "id": "eliminate-fatigue",
+    "name": "Eliminate Fatigue",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [50, 60],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Magically induces recovery from physical exhaustion, allowing the designated individual to regain fatigue points.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Healing"]},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 8, "maintenance": null, "resistance": null, "resistance_types": [], "description": "1 Fatigue Point"},
+      "intermediate": {"zeon": 100, "min_int": 10, "maintenance": null, "resistance": null, "resistance_types": [], "description": "3 Fatigue Points"},
+      "advanced": {"zeon": 120, "min_int": 12, "maintenance": null, "resistance": null, "resistance_types": [], "description": "5 Fatigue Points"},
+      "arcane": {"zeon": 140, "min_int": 14, "maintenance": null, "resistance": null, "resistance_types": [], "description": "7 Fatigue Points"}
+    }
+  },
+  {
+    "id": "heal-wounds",
+    "name": "Heal Wounds",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [50, 60],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Heals any kind of wound and restores a number of life points to the target. This type of healing will not regenerate missing organs or other effects of criticals, but will stop the effects of bleeding.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Healing"]},
+    "grades": {
+      "initial": {"zeon": 100, "min_int": 8, "maintenance": null, "resistance": null, "resistance_types": [], "description": "40 Life Points"},
+      "intermediate": {"zeon": 140, "min_int": 10, "maintenance": null, "resistance": null, "resistance_types": [], "description": "80 Life Points"},
+      "advanced": {"zeon": 180, "min_int": 13, "maintenance": null, "resistance": null, "resistance_types": [], "description": "160 Life Points"},
+      "arcane": {"zeon": 220, "min_int": 16, "maintenance": null, "resistance": null, "resistance_types": [], "description": "320 Life Points"}
+    }
+  },
+  {
+    "id": "inability-to-speak",
+    "name": "Inability to Speak",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [50, 60],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": false,
+    "effect": "Any creature within the radius of the spell becomes mute unless they succeed at the MR check.",
+    "metadata": {"is_aoe": true, "resistance_cap": 220, "resistance_types": ["MR"], "tags": ["Debuff"]},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 8, "maintenance": 5, "resistance": 120, "resistance_types": ["MR"], "description": "5m Radius, 120 MR"},
+      "intermediate": {"zeon": 100, "min_int": 10, "maintenance": 5, "resistance": 150, "resistance_types": ["MR"], "description": "25m Radius, 150 MR"},
+      "advanced": {"zeon": 120, "min_int": 12, "maintenance": 10, "resistance": 190, "resistance_types": ["MR"], "description": "50m Radius, 190 MR"},
+      "arcane": {"zeon": 140, "min_int": 14, "maintenance": 10, "resistance": 220, "resistance_types": ["MR"], "description": "100m Radius, 220 MR"}
+    }
+  },
+  {
+    "id": "leave-unprotected",
+    "name": "Leave Unprotected",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [50, 60],
+    "action": "Active",
+    "types": ["Automatic"],
+    "daily_maintenance": false,
+    "effect": "Reduces the AT of the defender, if they (or their armor) does not succeed at an MR check. The only condition to be affected by this spell is to be designated by the caster and fail the associated resistance check.",
+    "metadata": {"is_aoe": false, "resistance_cap": 200, "resistance_types": ["MR"], "tags": ["Debuff"]},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 8, "maintenance": 10, "resistance": 140, "resistance_types": ["MR"], "description": "-2 AT, 140 MR"},
+      "intermediate": {"zeon": 100, "min_int": 10, "maintenance": 10, "resistance": 160, "resistance_types": ["MR"], "description": "-4 AT, 160 MR"},
+      "advanced": {"zeon": 120, "min_int": 12, "maintenance": 15, "resistance": 180, "resistance_types": ["MR"], "description": "-6 AT, 180 MR"},
+      "arcane": {"zeon": 140, "min_int": 14, "maintenance": 15, "resistance": 200, "resistance_types": ["MR"], "description": "-8 AT, 200 MR"}
+    }
+  },
+  {
+    "id": "magic-saddle",
+    "name": "Magic Saddle",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [50, 60],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Creates a supernatural being, with the sole purpose of serving as a riding mount. The creature has no attack ability and will defend itself using the rules for a damage resistant creature. While moving, the creature uses the rules of the Weight Elimination Ki ability and Athleticism 200.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Summoning", "Mount"]},
+    "grades": {
+      "initial": {"zeon": 100, "min_int": 8, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "Movement 10, Strength 10, 500 Life Points, Max Size 20."},
+      "intermediate": {"zeon": 140, "min_int": 10, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "Movement 12, Strength 12, 1000 Life Points, Max Size 22."},
+      "advanced": {"zeon": 180, "min_int": 12, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "Movement 14, Strength 14, 1500 Life Points, Max Size 24."},
+      "arcane": {"zeon": 220, "min_int": 15, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "Movement 15, Strength 15, 2000 Life Points, Max Size 28."}
+    }
+  },
+  {
+    "id": "merge-with-body",
+    "name": "Merge With Body",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [50, 60],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Merges one or more objects such as weapons, armor, lock-picks, etc. with the individual designated by the caster, with a presence limit determined by the level of the spell. The object remains hidden under any visible form desired, such as a scar or tattoo, until such time as the person containing it decides to remove it. While hidden, the carrier will not have any penalty applied for the object’s weight or size, but cannot use it for it’s benefits. It is not possible to merge something that exceeds more than ten times the size of the person acting as the container. Separating the object and externalizing it requires a full combat turn.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 60, "min_int": 6, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "80 Presence Limit"},
+      "intermediate": {"zeon": 90, "min_int": 9, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "180 Presence Limit"},
+      "advanced": {"zeon": 120, "min_int": 12, "maintenance": 25, "resistance": null, "resistance_types": [], "description": "280 Presence Limit"},
+      "arcane": {"zeon": 150, "min_int": 15, "maintenance": 30, "resistance": null, "resistance_types": [], "description": "320 Presence Limit"}
+    }
+  },
+  {
+    "id": "sleep",
+    "name": "Sleep",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [50, 60],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": true,
+    "effect": "Induces a deep sleep on all subjects within an area. Those affected must succeed at an MR check or be immersed in a deep sleep in just over a minute. If however the check is failed by more than 20 points, the effects are immediate. As long as the spell is maintained, the affected individuals cannot wake up. Any cause that would allow the bewitched to wake up while it is still maintained will be given the opportunity to resist again.",
+    "metadata": {"is_aoe": true, "resistance_cap": 140, "resistance_types": ["MR"], "tags": ["Incapacitate"]},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 8, "maintenance": 10, "resistance": 80, "resistance_types": ["MR"], "description": "10m Radius, 80 MR"},
+      "intermediate": {"zeon": 120, "min_int": 10, "maintenance": 10, "resistance": 100, "resistance_types": ["MR"], "description": "25m Radius, 100 MR"},
+      "advanced": {"zeon": 160, "min_int": 12, "maintenance": 15, "resistance": 120, "resistance_types": ["MR"], "description": "50m Radius, 120 MR"},
+      "arcane": {"zeon": 200, "min_int": 14, "maintenance": 15, "resistance": 140, "resistance_types": ["MR"], "description": "100m Radius, 140 MR"}
+    }
+  },
+  {
+    "id": "visualize-cartography",
+    "name": "Visualize Cartography",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [50, 60],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to visualize the elements of the land that are close to them, within a radius. This cannot locate specific individuals or constructions, but larger formations such as cities, rivers, and mountains.",
+    "metadata": {"is_aoe": true, "resistance_cap": null, "resistance_types": [], "tags": ["Detection"]},
+    "grades": {
+      "initial": {"zeon": 60, "min_int": 8, "maintenance": null, "resistance": null, "resistance_types": [], "description": "25 km Radius"},
+      "intermediate": {"zeon": 90, "min_int": 10, "maintenance": null, "resistance": null, "resistance_types": [], "description": "100 km Radius"},
+      "advanced": {"zeon": 120, "min_int": 13, "maintenance": null, "resistance": null, "resistance_types": [], "description": "250 km Radius"},
+      "arcane": {"zeon": 150, "min_int": 15, "maintenance": null, "resistance": null, "resistance_types": [], "description": "1000 km Radius"}
+    }
+  },
+  {
+    "id": "walk-on-walls",
+    "name": "Walk on Walls",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [50, 60],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Allows an individual to move on walls or ceilings as if they were the floor, completely annulling any rule of gravity.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 60, "min_int": 8, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "Can move up to ¼ movement."},
+      "intermediate": {"zeon": 80, "min_int": 10, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "Can move up to ½ movement."},
+      "advanced": {"zeon": 100, "min_int": 12, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "Can move up to full movement."},
+      "arcane": {"zeon": 120, "min_int": 15, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "Can move or stand still with absolute control on any surface, such as a falling feather, thread, or jump from one drop of rain to another."}
+    }
+  },
+  {
+    "id": "body-to-magic",
+    "name": "Body to Magic",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [60, 70],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "The body of the character designated by the caster is transformed into magic, granting special benefits based on the level of the spell.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 100, "min_int": 10, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "Can only be damaged by attacks that can damage energy."},
+      "intermediate": {"zeon": 120, "min_int": 11, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "As Base, but allows free movement through any material that is not an energy barrier."},
+      "advanced": {"zeon": 140, "min_int": 13, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "As Intermediate, but the character gains +10 MA"},
+      "arcane": {"zeon": 160, "min_int": 16, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "As Advanced, but all damage from magical effects and spells is halved."}
+    }
+  },
+  {
+    "id": "create-emotion",
+    "name": "Create Emotion",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [60, 70],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": true,
+    "effect": "Creates a designated feeling or emotion within a particular character who does not succeed at an MR or PsR check. Affected characters are allowed a new check every day, or in the case they have serious suspicion they are being supernaturally influenced.",
+    "metadata": {"is_aoe": false, "resistance_cap": 180, "resistance_types": ["MR", "PsR"], "tags": ["Emotions"]},
+    "grades": {
+      "initial": {"zeon": 120, "min_int": 8, "maintenance": 15, "resistance": 120, "resistance_types": ["MR", "PsR"], "description": "120 MR or PsR"},
+      "intermediate": {"zeon": 180, "min_int": 11, "maintenance": 20, "resistance": 140, "resistance_types": ["MR", "PsR"], "description": "140 MR or PsR"},
+      "advanced": {"zeon": 220, "min_int": 13, "maintenance": 25, "resistance": 160, "resistance_types": ["MR", "PsR"], "description": "160 MR or PsR"},
+      "arcane": {"zeon": 280, "min_int": 16, "maintenance": 30, "resistance": 180, "resistance_types": ["MR", "PsR"], "description": "180 MR or PsR"}
+    }
+  },
+  {
+    "id": "forgetfulness",
+    "name": "Forgetfulness",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [60, 70],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": false,
+    "effect": "Affects the memory of the target, making them forget everything the caster desires. If the memories being erased are deeply rooted to the character affected, they may apply a +40 bonus to the MR or PsR roll. In spite of not having maintenance, the target may be allowed a new resistance roll if they find something that can make them remember those forgotten memories. This spell cannot affect a character’s abilities or powers, only their conscious memories.",
+    "metadata": {"is_aoe": false, "resistance_cap": 180, "resistance_types": ["MR", "PsR"], "tags": ["Memory"]},
+    "grades": {
+      "initial": {"zeon": 120, "min_int": 8, "maintenance": null, "resistance": 120, "resistance_types": ["MR", "PsR"], "description": "120 MR or PsR"},
+      "intermediate": {"zeon": 160, "min_int": 11, "maintenance": null, "resistance": 140, "resistance_types": ["MR", "PsR"], "description": "140 MR or PsR"},
+      "advanced": {"zeon": 200, "min_int": 13, "maintenance": null, "resistance": 160, "resistance_types": ["MR", "PsR"], "description": "160 MR or PsR"},
+      "arcane": {"zeon": 240, "min_int": 16, "maintenance": null, "resistance": 180, "resistance_types": ["MR", "PsR"], "description": "180 MR or PsR"}
+    }
+  },
+  {
+    "id": "increase-physical-characteristics",
+    "name": "Increase Physical Characteristics",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [60, 70],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Increases one of the four physical characteristics of a character: Dexterity, Agility, Strength, or Constitution. In the event that an attribute is increased above 12, any further increases are reduced by half. A character can only be affected by one increased characteristic at a time.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Buff"]},
+    "grades": {
+      "initial": {"zeon": 100, "min_int": 9, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "+1 to the characteristic"},
+      "intermediate": {"zeon": 120, "min_int": 11, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "+3 to the characteristic"},
+      "advanced": {"zeon": 140, "min_int": 14, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "+5 to the characteristic"},
+      "arcane": {"zeon": 160, "min_int": 16, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "+7 to the characteristic"}
+    }
+  },
+  {
+    "id": "increase-psychic-characteristics",
+    "name": "Increase Psychic Characteristics",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [60, 70],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Increases one of the four mental characteristics of a character: Intelligence, Power, Willpower, or Perception. In the event that an attribute is increased above 12, any further increases are reduced by half. If Intelligence is increased, it does not allow the caster to increase the maximum potential of their spells. A character can only be affected by one increased characteristic at a time.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Buff"]},
+    "grades": {
+      "initial": {"zeon": 100, "min_int": 9, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "+1 to the characteristic"},
+      "intermediate": {"zeon": 120, "min_int": 11, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "+3 to the characteristic"},
+      "advanced": {"zeon": 140, "min_int": 14, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "+5 to the characteristic"},
+      "arcane": {"zeon": 160, "min_int": 16, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "+7 to the characteristic"}
+    }
+  },
+  {
+    "id": "magic-weapon",
+    "name": "Magic Weapon",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [60, 70],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Creates a magical weapon from pure magic. The weapon is considered of the quality determined by the level of the spell, and can innately damage energy.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Creation", "Weapon"]},
+    "grades": {
+      "initial": {"zeon": 140, "min_int": 9, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "+5 Quality"},
+      "intermediate": {"zeon": 200, "min_int": 11, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "+10 Quality"},
+      "advanced": {"zeon": 240, "min_int": 14, "maintenance": 25, "resistance": null, "resistance_types": [], "description": "+15 Quality"},
+      "arcane": {"zeon": 280, "min_int": 16, "maintenance": 30, "resistance": null, "resistance_types": [], "description": "+20 Quality"}
+    }
+  },
+  {
+    "id": "minor-alteration",
+    "name": "Minor Alteration",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [60, 70],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to mold the shape of inorganic matter, transmuting an object into one of similar shape and presence. For example, it is possible to convert a harpoon to a spear, as they are both similarly shaped and have the same presence. However, the same harpoon could not be molded into a two-handed sword, as their presence and shape are considerably different.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Transformation"]},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 9, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "30 Presence limit"},
+      "intermediate": {"zeon": 160, "min_int": 11, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "50 Presence limit"},
+      "advanced": {"zeon": 240, "min_int": 14, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "70 Presence limit"},
+      "arcane": {"zeon": 320, "min_int": 16, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "100 Presence limit"}
+    }
+  },
+  {
+    "id": "paralyze",
+    "name": "Paralyze",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [60, 70],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": false,
+    "effect": "Inflicts the state of Complete Paralysis on any target within the spell’s area that fails an MR check.",
+    "metadata": {"is_aoe": true, "resistance_cap": 140, "resistance_types": ["MR"], "tags": ["Incapacitate"]},
+    "grades": {
+      "initial": {"zeon": 140, "min_int": 8, "maintenance": 15, "resistance": 80, "resistance_types": ["MR"], "description": "10m Radius, 80 MR"},
+      "intermediate": {"zeon": 200, "min_int": 9, "maintenance": 20, "resistance": 100, "resistance_types": ["MR"], "description": "25m Radius, 100 MR"},
+      "advanced": {"zeon": 240, "min_int": 13, "maintenance": 25, "resistance": 120, "resistance_types": ["MR"], "description": "50m Radius, 120 MR"},
+      "arcane": {"zeon": 280, "min_int": 16, "maintenance": 30, "resistance": 140, "resistance_types": ["MR"], "description": "100m Radius, 140 MR"}
+    }
+  },
+  {
+    "id": "plague",
+    "name": "Plague",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [60, 70],
+    "action": "Active",
+    "types": ["Automatic"],
+    "daily_maintenance": false,
+    "effect": "Causes a disease to spread endemically. In Game terms, this spell must be cast on a subject or place infected with a disease no greater than the limit imposed by the level of the spell, and by doing so automatically spreads it to all individuals within it’s area of effect. The people affected are entitled to a DR against the disease to avoid it’s effects. The only condition to be affected is to be within the area when it is cast.",
+    "metadata": {"is_aoe": true, "resistance_cap": null, "resistance_types": [], "tags": ["Disease"]},
+    "grades": {
+      "initial": {"zeon": 140, "min_int": 8, "maintenance": null, "resistance": null, "resistance_types": [], "description": "20 Disease level limit, 1km Radius."},
+      "intermediate": {"zeon": 200, "min_int": 11, "maintenance": null, "resistance": null, "resistance_types": [], "description": "40 Disease level limit, 5km Radius."},
+      "advanced": {"zeon": 240, "min_int": 13, "maintenance": null, "resistance": null, "resistance_types": [], "description": "60 Disease level limit, 10km Radius."},
+      "arcane": {"zeon": 280, "min_int": 16, "maintenance": null, "resistance": null, "resistance_types": [], "description": "80 Disease level limit, 25km Radius, the difficulty of the DR is increased by 10 points."}
+    }
+  },
+  {
+    "id": "rejection",
+    "name": "Rejection",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [60, 70],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Enchants a physical body with magical energy, producing a strong rejection to anyone who touches it. The spell causes an impact on anyone coming into contact with the subject, and the spell has it’s own Strength value for this purpose. As in similar scenarios, the GM must determine the damage suffered by the character pushed by the impact, depending on the difference in opposed check and the elements in the environment. The maximum presence of the affected subject cannot exceed the limit set by the level of the spell.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 8, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "30 Presence limit, Strength 8"},
+      "intermediate": {"zeon": 120, "min_int": 11, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "40 Presence limit, Strength 10"},
+      "advanced": {"zeon": 180, "min_int": 13, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "50 Presence limit, Strength 12"},
+      "arcane": {"zeon": 220, "min_int": 16, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "60 Presence limit, Strength 14"}
+    }
+  },
+  {
+    "id": "resist",
+    "name": "Resist",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [60, 70],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Increase one of the resistances of the subject. Only one type is increased, such as PhR or MR, not all resistances.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Buff"]},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 8, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "+20 to resistance value."},
+      "intermediate": {"zeon": 100, "min_int": 11, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "+40 to resistance value."},
+      "advanced": {"zeon": 120, "min_int": 13, "maintenance": 25, "resistance": null, "resistance_types": [], "description": "+60 to resistance value."},
+      "arcane": {"zeon": 140, "min_int": 16, "maintenance": 30, "resistance": null, "resistance_types": [], "description": "+80 to resistance value."}
+    }
+  },
+  {
+    "id": "weakness",
+    "name": "Weakness",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [60, 70],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": false,
+    "effect": "The target of the spell is subject to the state of Weakness as explained in Anima: Beyond Fantasy – Chapter 14: States and Accidents.",
+    "metadata": {"is_aoe": false, "resistance_cap": 180, "resistance_types": ["MR"], "tags": ["Debuff"]},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 9, "maintenance": 10, "resistance": 120, "resistance_types": ["MR"], "description": "120 MR"},
+      "intermediate": {"zeon": 100, "min_int": 11, "maintenance": 10, "resistance": 140, "resistance_types": ["MR"], "description": "140 MR"},
+      "advanced": {"zeon": 120, "min_int": 14, "maintenance": 15, "resistance": 160, "resistance_types": ["MR"], "description": "160 MR"},
+      "arcane": {"zeon": 140, "min_int": 16, "maintenance": 15, "resistance": 180, "resistance_types": ["MR"], "description": "180 MR"}
+    }
+  },
+  {
+    "id": "containment",
+    "name": "Containment",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [70, 80],
+    "action": "Active",
+    "types": ["Automatic"],
+    "daily_maintenance": true,
+    "effect": "Enchants a certain place by making any creature that enters or is already inside unable to leave it’s border unless they succeed at an MR check. Although they can move within the interior area freely, it will be completely impossible to cross outside the barrier. Once a subject fails to resist, they are not entitled to any new resistance check for as long as the spell is maintained, unless for some reason their resistance score increases. The only condition to be affected is simply to be inside the area any time after the turn it is cast. For this reason, the caster will be unable to choose targets affected in the area, and will themselves be contained if they remain in the area.",
+    "metadata": {"is_aoe": true, "resistance_cap": 180, "resistance_types": ["MR"], "tags": ["Ward", "Containment"]},
+    "grades": {
+      "initial": {"zeon": 200, "min_int": 9, "maintenance": 40, "resistance": 120, "resistance_types": ["MR"], "description": "10m Radius, 120 MR"},
+      "intermediate": {"zeon": 240, "min_int": 11, "maintenance": 50, "resistance": 140, "resistance_types": ["MR"], "description": "25m Radius, 140 MR"},
+      "advanced": {"zeon": 280, "min_int": 14, "maintenance": 60, "resistance": 160, "resistance_types": ["MR"], "description": "50m Radius, 160 MR"},
+      "arcane": {"zeon": 320, "min_int": 16, "maintenance": 65, "resistance": 180, "resistance_types": ["MR"], "description": "100m Radius, 180 MR"}
+    }
+  },
+  {
+    "id": "defensive-erudition",
+    "name": "Defensive Erudition",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [70, 80],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Increases the caster’s own defensive magic projection. Characters can only be affected by one Defensive Erudition at a time.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Buff"]},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 9, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "+20 Defensive projection"},
+      "intermediate": {"zeon": 120, "min_int": 11, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "+30 Defensive projection"},
+      "advanced": {"zeon": 160, "min_int": 13, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "+40 Defensive projection"},
+      "arcane": {"zeon": 200, "min_int": 16, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "+50 Defensive projection"}
+    }
+  },
+  {
+    "id": "deflect-trajectory",
+    "name": "Deflect Trajectory",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [70, 80],
+    "action": "Passive",
+    "types": ["Defense", "Effect"],
+    "daily_maintenance": false,
+    "effect": "Modifies the trajectory of a moving body, redirecting it in the way the caster wishes. Affects any amount of mass, whether small like an arrow or as large as a moving ship. Keep in mind it does not allow movement of a static body, but only modifying the route that one already in motion takes. This may also be used as a defense against material attacks, such as slashes or projectiles. In the event the caster achieves a successful defense with magic projection, they may redirect the attack to another foe. The effects of this spell in either case can be avoided by a successful MR check.",
+    "metadata": {"is_aoe": false, "resistance_cap": 240, "resistance_types": ["MR"], "tags": ["Defense"]},
+    "grades": {
+      "initial": {"zeon": 100, "min_int": 9, "maintenance": null, "resistance": 140, "resistance_types": ["MR"], "description": "140 MR"},
+      "intermediate": {"zeon": 160, "min_int": 11, "maintenance": null, "resistance": 160, "resistance_types": ["MR"], "description": "160 MR"},
+      "advanced": {"zeon": 220, "min_int": 13, "maintenance": null, "resistance": 200, "resistance_types": ["MR"], "description": "200 MR"},
+      "arcane": {"zeon": 300, "min_int": 16, "maintenance": null, "resistance": 240, "resistance_types": ["MR"], "description": "240 MR"}
+    }
+  },
+  {
+    "id": "detection-mark",
+    "name": "Detection Mark",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [70, 80],
+    "action": "Active",
+    "types": ["Effect", "Spiritual"],
+    "daily_maintenance": true,
+    "effect": "Enchants a person, object, or place, allowing the caster to attune their senses to it. In this way, the caster may use their perception abilities as if present with the subject, as long as their distance is no greater than the limit set by the level of the spell. In addition, the caster is always aware of where the mark is in relation to their own location. Living beings and supernatural objects being targeted by this spell may attempt an MR check to avoid it’s effects.",
+    "metadata": {"is_aoe": false, "resistance_cap": 180, "resistance_types": ["MR"], "tags": ["Detection", "Mark"]},
+    "grades": {
+      "initial": {"zeon": 100, "min_int": 9, "maintenance": 10, "resistance": 120, "resistance_types": ["MR"], "description": "10km Radius, 120 MR"},
+      "intermediate": {"zeon": 120, "min_int": 11, "maintenance": 15, "resistance": 140, "resistance_types": ["MR"], "description": "100km Radius, 140 MR"},
+      "advanced": {"zeon": 140, "min_int": 13, "maintenance": 15, "resistance": 160, "resistance_types": ["MR"], "description": "1000km Radius, 160 MR"},
+      "arcane": {"zeon": 160, "min_int": 16, "maintenance": 20, "resistance": 180, "resistance_types": ["MR"], "description": "Any distance, 180 MR"}
+    }
+  },
+  {
+    "id": "dominion",
+    "name": "Dominion",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [70, 80],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to dominate the will of anyone who does not succeed at an MR or PsR check. The affected person is only entitled to a new check every time they are ordered to perform an act that goes completely against their nature. If the order is exceptionally against the target’s nature, they may apply a +20 bonus to their resistance roll.",
+    "metadata": {"is_aoe": false, "resistance_cap": 160, "resistance_types": ["MR", "PsR"], "tags": ["Control"]},
+    "grades": {
+      "initial": {"zeon": 160, "min_int": 9, "maintenance": 20, "resistance": 100, "resistance_types": ["MR", "PsR"], "description": "100 MR or PsR"},
+      "intermediate": {"zeon": 200, "min_int": 11, "maintenance": 20, "resistance": 120, "resistance_types": ["MR", "PsR"], "description": "120 MR or PsR"},
+      "advanced": {"zeon": 240, "min_int": 13, "maintenance": 25, "resistance": 140, "resistance_types": ["MR", "PsR"], "description": "140 MR or PsR"},
+      "arcane": {"zeon": 280, "min_int": 16, "maintenance": 30, "resistance": 160, "resistance_types": ["MR", "PsR"], "description": "160 MR or PsR"}
+    }
+  },
+  {
+    "id": "free-access-flight",
+    "name": "Flight",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [70, 80],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Grants the subject the ability to move through the air at will with a supernatural flight speed.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Movement"]},
+    "grades": {
+      "initial": {"zeon": 100, "min_int": 8, "maintenance": 5, "resistance": null, "resistance_types": [], "description": "Flight value 8"},
+      "intermediate": {"zeon": 120, "min_int": 11, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "Flight value 10"},
+      "advanced": {"zeon": 140, "min_int": 13, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "Flight value 12"},
+      "arcane": {"zeon": 160, "min_int": 16, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "Flight value 14"}
+    }
+  },
+  {
+    "id": "invisibility",
+    "name": "Invisibility",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [70, 80],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Makes one or more bodies designated by the caster invisible. Observers can perceive the alterations an invisible body produces by overcoming a Notice or Search check set by the level of the spell.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Invisibility"]},
+    "grades": {
+      "initial": {"zeon": 160, "min_int": 9, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "Notice of Impossible (280); Search of Absurd (180)"},
+      "intermediate": {"zeon": 200, "min_int": 11, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "Notice of Inhuman (320); Search of Almost Impossible (240)"},
+      "advanced": {"zeon": 240, "min_int": 13, "maintenance": 25, "resistance": null, "resistance_types": [], "description": "Notice of Zen (440); Search of Impossible (280)"},
+      "arcane": {"zeon": 280, "min_int": 16, "maintenance": 30, "resistance": null, "resistance_types": [], "description": "Cannot be perceived with the sense of sight."}
+    }
+  },
+  {
+    "id": "levitation-sphere",
+    "name": "Levitation Sphere",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [70, 80],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": true,
+    "effect": "Causes objects and creatures in the area of effect to levitate. The caster can decide what levitates and what doesn’t, regardless of weight or size. Objects and people suspended in the air are moved by the caster with a flight value of 6 unless they succeed at an MR check. Only animate beings and constructs endowed with supernatural characteristics are allowed to attempt this resistance.",
+    "metadata": {"is_aoe": true, "resistance_cap": 140, "resistance_types": ["MR"], "tags": ["Movement"]},
+    "grades": {
+      "initial": {"zeon": 150, "min_int": 8, "maintenance": 15, "resistance": 80, "resistance_types": ["MR"], "description": "25m Radius, 80 MR."},
+      "intermediate": {"zeon": 200, "min_int": 11, "maintenance": 20, "resistance": 100, "resistance_types": ["MR"], "description": "150m Radius, 100 MR."},
+      "advanced": {"zeon": 250, "min_int": 13, "maintenance": 25, "resistance": 120, "resistance_types": ["MR"], "description": "250m Radius, 120 MR."},
+      "arcane": {"zeon": 300, "min_int": 16, "maintenance": 30, "resistance": 140, "resistance_types": ["MR"], "description": "350m Radius, 140 MR"}
+    }
+  },
+  {
+    "id": "offensive-erudition",
+    "name": "Offensive Erudition",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [70, 80],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Increases the caster’s offensive magic projection. Only one Offensive Erudition spell may affect a character at a time.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Buff"]},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 9, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "+20 Offensive projection"},
+      "intermediate": {"zeon": 120, "min_int": 11, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "+30 Offensive projection"},
+      "advanced": {"zeon": 160, "min_int": 13, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "+40 Offensive projection"},
+      "arcane": {"zeon": 200, "min_int": 16, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "+50 Offensive projection"}
+    }
+  },
+  {
+    "id": "perfect-target",
+    "name": "Perfect Target",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [70, 80],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Magically enchants a conventional projectile so that, once shot, it will reach its target inescapably. The projectile still uses the ability of it’s launcher, and if used to attack an individual, it is defended against using the conventional rules for projectile defense. However, the supernatural spell’s power gives the attacker a bonus to their roll, allowing them to ignore any penalty of Anima: Beyond Fantasy – Table 44: Projectile Modifiers, as well as distance to the target. In other words, it will always reach it’s target, no matter where the launcher is. Perfect Target must be used in the same combat turn as the projectile is launched.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Buff", "Projectile"]},
+    "grades": {
+      "initial": {"zeon": 80, "min_int": 9, "maintenance": null, "resistance": null, "resistance_types": [], "description": "+40 Attack ability"},
+      "intermediate": {"zeon": 100, "min_int": 11, "maintenance": null, "resistance": null, "resistance_types": [], "description": "+60 Attack ability"},
+      "advanced": {"zeon": 120, "min_int": 13, "maintenance": null, "resistance": null, "resistance_types": [], "description": "+80 Attack ability"},
+      "arcane": {"zeon": 140, "min_int": 16, "maintenance": null, "resistance": null, "resistance_types": [], "description": "+100 Attack ability"}
+    }
+  },
+  {
+    "id": "stall-spell",
+    "name": "Stall Spell",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [70, 80],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Allows a second spell to be ‘stored’ inside an object, so that it may be used by other sorcerers. Stall spell must be cast at the same time as the intended spell, so that the second spell instead of functioning normally, will be stuck inside something. The stalled spell may be activated later, by any sorcerer who enters the matching Zeonic cost into the container as when it was cast. The holder of the object will control the spell as if they were the caster, and may even pay it’s maintenance if applicable. The stalled spell may be used more than once, provided the holder pays the same cost each time. As an example; an archmage has placed a fireball spell at Base grade inside of a cane. From that moment on, any character that possesses that cane may pay the 50 Zeon to trigger a fireball.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Storage"]},
+    "grades": {
+      "initial": {"zeon": 150, "min_int": 9, "maintenance": null, "resistance": null, "resistance_types": [], "description": "80 Zeon limit"},
+      "intermediate": {"zeon": 200, "min_int": 11, "maintenance": null, "resistance": null, "resistance_types": [], "description": "120 Zeon limit"},
+      "advanced": {"zeon": 250, "min_int": 13, "maintenance": null, "resistance": null, "resistance_types": [], "description": "180 Zeon limit"},
+      "arcane": {"zeon": 300, "min_int": 16, "maintenance": null, "resistance": null, "resistance_types": [], "description": "240 Zeon limit"}
+    }
+  },
+  {
+    "id": "uselessness",
+    "name": "Uselessness",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [70, 80],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": false,
+    "effect": "The target becomes clumsy and unable to perform physical maneuvers. The target must succeed at an MR check or suffer a penalty to all physical actions equivalent to the level of failure. Naturally this penalty does not apply to magical, psychic, or perceptual abilities.",
+    "metadata": {"is_aoe": false, "resistance_cap": 220, "resistance_types": ["MR"], "tags": ["Debuff"]},
+    "grades": {
+      "initial": {"zeon": 120, "min_int": 8, "maintenance": 15, "resistance": 120, "resistance_types": ["MR"], "description": "120 MR"},
+      "intermediate": {"zeon": 180, "min_int": 11, "maintenance": 20, "resistance": 140, "resistance_types": ["MR"], "description": "140 MR"},
+      "advanced": {"zeon": 240, "min_int": 13, "maintenance": 25, "resistance": 180, "resistance_types": ["MR"], "description": "180 MR"},
+      "arcane": {"zeon": 300, "min_int": 16, "maintenance": 30, "resistance": 220, "resistance_types": ["MR"], "description": "220 MR"}
+    }
+  },
+  {
+    "id": "disenchantment",
+    "name": "Disenchantment",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [80, 90],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Automatically destroy a magic item. The caster can choose whether the object is completely destroyed or simply stripped of it’s supernatural properties.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Destruction"]},
+    "grades": {
+      "initial": {"zeon": 200, "min_int": 10, "maintenance": null, "resistance": null, "resistance_types": [], "description": "80 Presence limit"},
+      "intermediate": {"zeon": 250, "min_int": 13, "maintenance": null, "resistance": null, "resistance_types": [], "description": "100 Presence limit"},
+      "advanced": {"zeon": 320, "min_int": 15, "maintenance": null, "resistance": null, "resistance_types": [], "description": "120 Presence limit"},
+      "arcane": {"zeon": 400, "min_int": 17, "maintenance": null, "resistance": null, "resistance_types": [], "description": "140 Presence limit"}
+    }
+  },
+  {
+    "id": "eliminate-needs",
+    "name": "Eliminate Needs",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [80, 90],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Completely eliminates any physical needs of an individual. In game terms, as long as the spell is maintained, the subject will not be affected by the effects of hunger, fatigue, or sleep, completely ignoring any penalties caused by them (or by their lack of them). The character can continue to spend fatigue points to increase their physical actions, and are recovered at a rate of 1 point per hour passively, and does not suffer negative effects from very low fatigue points.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": []},
+    "grades": {
+      "initial": {"zeon": 300, "min_int": 10, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "As described under the effects section."},
+      "intermediate": {"zeon": 360, "min_int": 12, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "As Base, but will also ignore natural climate effects such as heat or cold."},
+      "advanced": {"zeon": 420, "min_int": 14, "maintenance": 25, "resistance": null, "resistance_types": [], "description": "As Intermediate, but will also ignore any all action penalty not caused by supernatural effects."},
+      "arcane": {"zeon": 480, "min_int": 16, "maintenance": 25, "resistance": null, "resistance_types": [], "description": "As advanced, but the character recovers fatigue at a rate of 1 point per combat turn."}
+    }
+  },
+  {
+    "id": "gate",
+    "name": "Gate",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [80, 90],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Creates a magical portal between two distant places. Anyone crossing it will move instantly to the other opening. This spell is fixed in place once cast at both the connecting points, so the caster cannot change it’s location later. The caster may also decide when casting if it works in both directions, or only transports one way. The portals can only transmit a maximum amount of presence per day; this value, along with the size of the portal opening as well as the maximum distance that can separate the points are determined by the level of the spell.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Teleportation"]},
+    "grades": {
+      "initial": {"zeon": 500, "min_int": 10, "maintenance": 25, "resistance": null, "resistance_types": [], "description": "500 Presence limit, 5m opening, 1000km distance."},
+      "intermediate": {"zeon": 600, "min_int": 12, "maintenance": 30, "resistance": null, "resistance_types": [], "description": "1000 Presence limit, 15m opening, 5000km distance."},
+      "advanced": {"zeon": 700, "min_int": 14, "maintenance": 35, "resistance": null, "resistance_types": [], "description": "2000 Presence limit, 25m opening, 25000km distance."},
+      "arcane": {"zeon": 800, "min_int": 16, "maintenance": 40, "resistance": null, "resistance_types": [], "description": "No presence limit, 50m opening, any distance."}
+    }
+  },
+  {
+    "id": "immortality",
+    "name": "Immortality",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [80, 90],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "While this spell remains active, the caster or their target does not age nor suffer the effects of the passage of time. Thus, they will be an immortal being, except in the face of a violent death. If this spell ceases to be maintained or is destroyed, the individual recovers their age at a very rapid rate.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Protection"]},
+    "grades": {
+      "initial": {"zeon": 300, "min_int": 10, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "As described under the effects section."},
+      "intermediate": {"zeon": 400, "min_int": 13, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "As Base, but also immune to natural poisons and disease."},
+      "advanced": {"zeon": 500, "min_int": 15, "maintenance": 25, "resistance": null, "resistance_types": [], "description": "As Intermediate, but also immune to blood loss or physical damage not of supernatural origin."},
+      "arcane": {"zeon": 600, "min_int": 17, "maintenance": 30, "resistance": null, "resistance_types": [], "description": "As Advanced, but the character can suffer any level of physical damage without dying, unless it produces a lethal critical hit on a vulnerable point (this does not eliminate any penalties due to damage)."}
+    }
+  },
+  {
+    "id": "location",
+    "name": "Location",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [80, 90],
+    "action": "Active",
+    "types": ["Detection"],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to find a person, object, or place, and know it’s exact location at the time, provided it’s within the distance set by the level of the spell. The caster can look for anything concrete, but not using subjective qualities. For example, the caster may not use this spell to locate his brother’s killer unless he knows exactly who that is. To avoid detection, people or qualifying objects must succeed at an MR check. Large places will apply a -40 to this roll.",
+    "metadata": {"is_aoe": false, "resistance_cap": 220, "resistance_types": ["MR"], "tags": ["Detection", "Locate"]},
+    "grades": {
+      "initial": {"zeon": 300, "min_int": 10, "maintenance": null, "resistance": 120, "resistance_types": ["MR"], "description": "100km, 120 MR"},
+      "intermediate": {"zeon": 360, "min_int": 12, "maintenance": null, "resistance": 140, "resistance_types": ["MR"], "description": "1000km, 140 MR"},
+      "advanced": {"zeon": 420, "min_int": 14, "maintenance": null, "resistance": 180, "resistance_types": ["MR"], "description": "10000km, 180 MR"},
+      "arcane": {"zeon": 480, "min_int": 16, "maintenance": null, "resistance": 220, "resistance_types": ["MR"], "description": "Any distance, 220 MR"}
+    }
+  },
+  {
+    "id": "magic-prism",
+    "name": "Magic Prism",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [80, 90],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Solidifies magic creating a supernatural vessel for Zeon. In game terms, it forms a magical container that can hold an amount of Zeon based on the level of the spell, though when created it is empty. Only one Magic Prism spell may be active for a character at a time.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Creation", "Storage"]},
+    "grades": {
+      "initial": {"zeon": 200, "min_int": 10, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "400 Zeon"},
+      "intermediate": {"zeon": 240, "min_int": 12, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "800 Zeon"},
+      "advanced": {"zeon": 280, "min_int": 14, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "1500 Zeon"},
+      "arcane": {"zeon": 320, "min_int": 16, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "3000 Zeon"}
+    }
+  },
+  {
+    "id": "natural-spell",
+    "name": "Natural Spell",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [80, 90],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Allows the caster to bind to their essence one or more spells that are prepared in advance, granting them the ability to be cast later as many times as the caster wishes as if they were innate spells, without having to spend any Zeon. In this way, the caster can innately execute one of said spells each combat turn.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Magic"]},
+    "grades": {
+      "initial": {"zeon": 350, "min_int": 10, "maintenance": 70, "resistance": null, "resistance_types": [], "description": "100 Zeon limit"},
+      "intermediate": {"zeon": 420, "min_int": 13, "maintenance": 85, "resistance": null, "resistance_types": [], "description": "140 Zeon limit"},
+      "advanced": {"zeon": 480, "min_int": 15, "maintenance": 100, "resistance": null, "resistance_types": [], "description": "180 Zeon limit"},
+      "arcane": {"zeon": 540, "min_int": 17, "maintenance": 110, "resistance": null, "resistance_types": [], "description": "220 Zeon limit"}
+    }
+  },
+  {
+    "id": "physical-immunity",
+    "name": "Physical Immunity",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [80, 90],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "The designated individual or object becomes completely invulnerable to any damage that is not capable of damaging energy. It is possible to choose as many targets as desired, as long as the sum of their presences does not exceed what is set by the level of the spell.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Defense", "Immunity"]},
+    "grades": {
+      "initial": {"zeon": 200, "min_int": 10, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "60 Presence limit"},
+      "intermediate": {"zeon": 240, "min_int": 12, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "80 Presence limit"},
+      "advanced": {"zeon": 280, "min_int": 14, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "100 Presence limit"},
+      "arcane": {"zeon": 320, "min_int": 16, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "120 Presence limit"}
+    }
+  },
+  {
+    "id": "prepare-spell",
+    "name": "Prepare Spell",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [80, 90],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Allows the caster to introduce a second spell up to the Zeon limit set by this spell inside an object or individual, to cast automatically in the future, without accumulation or preparation. This and the second spell must be cast at the same time, so that instead of functioning normally, the second spell remains to be used later. The prepared spell may be activated by the caster’s will, the will of the person it is being stored in, or the one in possession of the enchanted object. It uses the magic projection of the original caster, unless the second person or holder of the object intends to use their own. Once cast, the prepared spell disappears. If this spell’s maintenance cost ceases to be paid, the prepared spell is also lost. It is only possible to use one prepared spell per combat turn, regardless of the amount stored. Any object or person can hold up to four times their presence in Zeonic value of prepared spells. That is, an individual of 50 presence can hold up to 400 Zeon worth of prepared spells stored inside them.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Magic", "Storage"]},
+    "grades": {
+      "initial": {"zeon": 200, "min_int": 10, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "100 Zeon limit"},
+      "intermediate": {"zeon": 300, "min_int": 12, "maintenance": 30, "resistance": null, "resistance_types": [], "description": "200 Zeon limit"},
+      "advanced": {"zeon": 360, "min_int": 14, "maintenance": 40, "resistance": null, "resistance_types": [], "description": "300 Zeon limit"},
+      "arcane": {"zeon": 420, "min_int": 16, "maintenance": 45, "resistance": null, "resistance_types": [], "description": "400 Zeon limit"}
+    }
+  },
+  {
+    "id": "spell-return",
+    "name": "Spell Return",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [80, 90],
+    "action": "Passive",
+    "types": ["Automatic"],
+    "daily_maintenance": false,
+    "effect": "Returns an active spell against it’s originator, or any other target chosen. The returned spell uses the original projection of the person who executed it. This is an automatic effect, and so no resistance is allowed.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Reflection"]},
+    "grades": {
+      "initial": {"zeon": 150, "min_int": 10, "maintenance": null, "resistance": null, "resistance_types": [], "description": "100 Zeon limit"},
+      "intermediate": {"zeon": 200, "min_int": 12, "maintenance": null, "resistance": null, "resistance_types": [], "description": "120 Zeon limit"},
+      "advanced": {"zeon": 240, "min_int": 14, "maintenance": null, "resistance": null, "resistance_types": [], "description": "140 Zeon limit"},
+      "arcane": {"zeon": 280, "min_int": 16, "maintenance": null, "resistance": null, "resistance_types": [], "description": "160 Zeon limit"}
+    }
+  },
+  {
+    "id": "steal-spell",
+    "name": "Steal Spell",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [80, 90],
+    "action": "Active",
+    "types": ["Automatic"],
+    "daily_maintenance": false,
+    "effect": "Subtracts the magical essence of a spell, cutting the ties with the sorcerer who cast it and linking it to another. In game terms, the caster takes control of a spell that is not theirs, controlling it from that moment onward as if they had cast it themselves. The stolen spell may not have a Zeonic value greater than the limit set by the level of this spell, and it is only possible to steal those spells that have maintenance; not spells whose effects are immediate and automatic. The original caster may attempt to resist these effects by succeeding at an MR check.",
+    "metadata": {"is_aoe": false, "resistance_cap": 180, "resistance_types": ["MR"], "tags": ["Control", "Magic"]},
+    "grades": {
+      "initial": {"zeon": 200, "min_int": 10, "maintenance": null, "resistance": 120, "resistance_types": ["MR"], "description": "120 Zeon limit, 120 MR"},
+      "intermediate": {"zeon": 280, "min_int": 12, "maintenance": null, "resistance": 140, "resistance_types": ["MR"], "description": "180 Zeon limit, 140 MR"},
+      "advanced": {"zeon": 340, "min_int": 14, "maintenance": null, "resistance": 160, "resistance_types": ["MR"], "description": "240 Zeon limit, 160 MR"},
+      "arcane": {"zeon": 400, "min_int": 16, "maintenance": null, "resistance": 180, "resistance_types": ["MR"], "description": "300 Zeon limit, 180 MR"}
+    }
+  },
+  {
+    "id": "teletransportation-free-access",
+    "name": "Teletransportation",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [80, 90],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "The caster or their targets is teleported to another position. This allows for passage through physical bodies between these points, provided they are not energy barriers. It can affect as many individuals as desired, provided their total presence is within the limit set by the level of the spell.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Teleportation"]},
+    "grades": {
+      "initial": {"zeon": 300, "min_int": 10, "maintenance": null, "resistance": null, "resistance_types": [], "description": "50km Distance, 80 Presence limit"},
+      "intermediate": {"zeon": 480, "min_int": 12, "maintenance": null, "resistance": null, "resistance_types": [], "description": "1000km Distance, 180 Presence limit"},
+      "advanced": {"zeon": 560, "min_int": 14, "maintenance": null, "resistance": null, "resistance_types": [], "description": "5000km Distance, 240 Presence limit"},
+      "arcane": {"zeon": 640, "min_int": 16, "maintenance": null, "resistance": null, "resistance_types": [], "description": "10000km Distance, 320 Presence limit"}
+    }
+  },
+  {
+    "id": "conditioning",
+    "name": "Conditioning",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [90, 100],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Causes other spells used by the caster to halt until a predetermined circumstance. This spell must be cast at the same time as the conditioned spells, such that instead of functioning normally, the conditioned spells will wait to be activated until the circumstance the caster has designated. Each spell may be subject to a different condition, but once chosen, cannot be changed later. The spell will be activated at the same instant the condition occurs, even if the caster themselves is not aware of it. For example, the caster may condition a Stop Fall spell to the circumstance of ‘falling from great height’, or a necromancer may condition the spell Surpass Death to ‘the moment I die’. The spell itself remains either Active or Passive as the normal rules state, but always end up being used at the end of the combat turn in which the condition is met if the caster cannot act in the turn the condition happens. The conditioned spells require no maintenance as they are not active, but if this spell ceases to be maintained, the conditioned spells are also lost. As many spells can be conditioned as desired, so long as each spell does not exceed the maximum Zeonic value determined by the level of this spell. A character can only be affected by one Conditioning spell at a time.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Magic"]},
+    "grades": {
+      "initial": {"zeon": 300, "min_int": 11, "maintenance": 30, "resistance": null, "resistance_types": [], "description": "100 Zeon limit"},
+      "intermediate": {"zeon": 400, "min_int": 13, "maintenance": 40, "resistance": null, "resistance_types": [], "description": "150 Zeon limit"},
+      "advanced": {"zeon": 500, "min_int": 15, "maintenance": 50, "resistance": null, "resistance_types": [], "description": "200 Zeon limit"},
+      "arcane": {"zeon": 600, "min_int": 17, "maintenance": 60, "resistance": null, "resistance_types": [], "description": "250 Zeon limit"}
+    }
+  },
+  {
+    "id": "eye-of-time",
+    "name": "Eye of Time",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [90, 100],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "The caster can send his senses into the past, to observe any event that happened long ago in their current place as if they were present at that time. The caster can observe any time within the period determined by the level of the spell, moving their senses backward and forward within that range at will.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Divination"]},
+    "grades": {
+      "initial": {"zeon": 200, "min_int": 11, "maintenance": 10, "resistance": null, "resistance_types": [], "description": "10 Years"},
+      "intermediate": {"zeon": 300, "min_int": 13, "maintenance": 15, "resistance": null, "resistance_types": [], "description": "100 Years"},
+      "advanced": {"zeon": 400, "min_int": 15, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "1000 Years"},
+      "arcane": {"zeon": 500, "min_int": 17, "maintenance": 25, "resistance": null, "resistance_types": [], "description": "Any amount of time"}
+    }
+  },
+  {
+    "id": "imitate-spells",
+    "name": "Imitate Spells",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [90, 100],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to imitate a spell that is in their presence. Spells cast in the same turn as Imitate Spells, as well as those maintained during that turn, can be imitated. This can even apply to spells of High or Divine magic, without the usual need for the caster to have superior Gnosis to cast them. The caster chooses whether to use their own magic projection for the imitated spell, or the value of the original caster. The maximum Zeonic value for imitated spells is determined by the level of this spell when cast. Maintenance is as per the imitated spell.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Magic"]},
+    "grades": {
+      "initial": {"zeon": 300, "min_int": 10, "maintenance": null, "resistance": null, "resistance_types": [], "description": "100 Zeon limit"},
+      "intermediate": {"zeon": 400, "min_int": 12, "maintenance": null, "resistance": null, "resistance_types": [], "description": "150 Zeon limit"},
+      "advanced": {"zeon": 500, "min_int": 14, "maintenance": null, "resistance": null, "resistance_types": [], "description": "200 Zeon limit"},
+      "arcane": {"zeon": 600, "min_int": 16, "maintenance": null, "resistance": null, "resistance_types": [], "description": "250 Zeon limit"}
+    }
+  },
+  {
+    "id": "innate-magic",
+    "name": "Innate Magic",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [90, 100],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Exponentially increases the environmental magical potential of an area, thus increasing the capacity for sorcerers to use innate magic. In game terms, this enchants a static area, within which innate spells have additional potential to what a sorcerer’s MA indicates. The caster has the ability to choose whether this increase affects everyone equally, or if only they benefit from the effect.",
+    "metadata": {"is_aoe": true, "resistance_cap": null, "resistance_types": [], "tags": ["Magic"]},
+    "grades": {
+      "initial": {"zeon": 200, "min_int": 10, "maintenance": 50, "resistance": null, "resistance_types": [], "description": "25m Radius, +10 Zeonic value for innate magic."},
+      "intermediate": {"zeon": 300, "min_int": 12, "maintenance": 60, "resistance": null, "resistance_types": [], "description": "100m Radius, +20 Zeonic value for innate magic."},
+      "advanced": {"zeon": 400, "min_int": 14, "maintenance": 70, "resistance": null, "resistance_types": [], "description": "250m Radius, +30 Zeonic value for innate magic."},
+      "arcane": {"zeon": 500, "min_int": 16, "maintenance": 80, "resistance": null, "resistance_types": [], "description": "500m Radius, +40 Zeonic value for innate magic."}
+    }
+  },
+  {
+    "id": "link-maintenance",
+    "name": "Link Maintenance",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [90, 100],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to link the maintenance payment for one of their spells to another individual or object, forcing the spending of the new target’s Zeon in an unconscious way. This link can only be used on people who possess the Gift, or upon magical beings or objects, which can avoid being affected with a successful MR check. If the linked individual does not realize they are being targeted by this spell, they are not entitled to a new resistance check. If noticed, however, a new resistance check is able to be performed depending on the type of spell linked. In the case of daily maintenance spells a check is allowed each day, and for all others a new check is allowed every five rounds. The moment that a resistance is successful or if the linked target runs out of Zeon, the effect of the link disappears forever.",
+    "metadata": {"is_aoe": false, "resistance_cap": 180, "resistance_types": ["MR"], "tags": ["Magic", "Control"]},
+    "grades": {
+      "initial": {"zeon": 100, "min_int": 10, "maintenance": null, "resistance": 120, "resistance_types": ["MR"], "description": "120 MR"},
+      "intermediate": {"zeon": 150, "min_int": 12, "maintenance": null, "resistance": 140, "resistance_types": ["MR"], "description": "140 MR"},
+      "advanced": {"zeon": 200, "min_int": 14, "maintenance": null, "resistance": 160, "resistance_types": ["MR"], "description": "160 MR"},
+      "arcane": {"zeon": 250, "min_int": 16, "maintenance": null, "resistance": 180, "resistance_types": ["MR"], "description": "180 MR"}
+    }
+  },
+  {
+    "id": "possession",
+    "name": "Possession",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [90, 100],
+    "action": "Active",
+    "types": ["Spiritual"],
+    "daily_maintenance": true,
+    "effect": "Allows the caster to take control of the body of another individual, temporarily moving a portion of their soul into the host. This dominion allows the caster to either use the abilities of the possessed individual, or their own (this is chosen each combat turn to use one or the other, in no case may they use both). In the case that the host body’s abilities are chosen, the physical characteristics will be that of the host, and not the caster. If the individual does not have a physical form similar to that of the caster, they will apply a -20 to -40 penalty, at the GM’s discretion, due to the difficulty in controlling the new body correctly. While this spell is maintained, the caster’s original body remains in a coma. Attacks unable to damage energy will only affect the host body, but if they are supernatural, both the host and the caster receive the full damage. If the host body is a damage resistant creature, the caster suffers only one tenth the damage that the host body receives in this case. In the event the host body dies, but the caster still has life points remaining, the soul immediately returns to the caster’s body. To avoid the effects of this spell, it is necessary to succeed at an MR check. This check may be repeated once per day that passes, or every time the victim take an action completely against their nature.",
+    "metadata": {"is_aoe": false, "resistance_cap": 220, "resistance_types": ["MR"], "tags": ["Control", "Possession"]},
+    "grades": {
+      "initial": {"zeon": 300, "min_int": 10, "maintenance": 30, "resistance": 120, "resistance_types": ["MR"], "description": "120 MR"},
+      "intermediate": {"zeon": 400, "min_int": 12, "maintenance": 40, "resistance": 140, "resistance_types": ["MR"], "description": "140 MR"},
+      "advanced": {"zeon": 500, "min_int": 14, "maintenance": 50, "resistance": 180, "resistance_types": ["MR"], "description": "180 MR"},
+      "arcane": {"zeon": 600, "min_int": 16, "maintenance": 60, "resistance": 220, "resistance_types": ["MR"], "description": "220 MR"}
+    }
+  },
+  {
+    "id": "predestination",
+    "name": "Predestination",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [90, 100],
+    "action": "Active",
+    "types": ["Automatic"],
+    "daily_maintenance": false,
+    "effect": "Through this spell the magician can modify the coming events according to their desire, predestining different events in the future. The caster may designate the complexity of these events in any way they wish. It is possible that they preordain one event, leaving to chance the many small events that lead to it’s realization, or on the contrary determine each of these aspects leading to the ultimate end. Preordained events may be set for a specific date or may be scheduled to repeat eternally throughout time – Solstices in leap years for example. Although it is not intended for this spell to cause a completely impossible result, the possibilities are limited only by the imagination of the caster. Given the enormous complexity of this spell, some examples are provided to demonstrate it’s uses. An approximate predestination would be for the caster to designate that misfortune befall a family and all their offspring, condemning their line to a horrible death before reaching a certain age. On the other hand, should the caster wish to be more explicit, they could condemn the first born of this family to be murdered by wild wolves on the very night of their birth. Naturally, not all predestination need be negative; the caster may wish to predestine a child to become king. However, the future created by this spell is not absolute and inevitable; there is always a chance of its prevention from coming true. Anyone outside the limits preordained by the caster, that is, anyone whom is outside those that must attempt an MR check, has the ability to keep destiny from being fulfilled. In order to neutralize the actions of any third parties, the caster may plan ahead and add security measures within the limits of the spell. A good example of this would be the inclusion of a clause stating that any who try to thwart destiny will be murdered by wolves. To prevent this spell from working, a single MR check is performed by the person, creature, or object directly affected by the predestination with the highest resistance at the time of it’s casting. Those within it’s effects are unable to resist, and chance will play against any decision they make to achieve the end goals. The MR check may only be repeated when one of the predetermined events is met, so that the greater degree of details the spell is crafted with, the greater the chances it can be avoided. If any of the spell’s predestined events are thwarted, the entire spell stops working. The only condition to be affected by the spell is to be within the narrative created by the caster.",
+    "metadata": {"is_aoe": false, "resistance_cap": 240, "resistance_types": ["MR"], "tags": ["Divination"]},
+    "grades": {
+      "initial": {"zeon": 600, "min_int": 12, "maintenance": null, "resistance": 140, "resistance_types": ["MR"], "description": "140 MR"},
+      "intermediate": {"zeon": 900, "min_int": 15, "maintenance": null, "resistance": 170, "resistance_types": ["MR"], "description": "170 MR"},
+      "advanced": {"zeon": 1200, "min_int": 17, "maintenance": null, "resistance": 200, "resistance_types": ["MR"], "description": "200 MR"},
+      "arcane": {"zeon": 1500, "min_int": 19, "maintenance": null, "resistance": 240, "resistance_types": ["MR"], "description": "240 MR"}
+    }
+  },
+  {
+    "id": "seal",
+    "name": "Seal",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [90, 100],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": false,
+    "effect": "Seal an active Spiritual spell within a person, making it impossible to be freed from the spell’s effects. This spell is used on a previously cast Spiritual spell, successfully cast upon an individual who failed their resistance roll. Thus, until that spell is destroyed or otherwise no longer maintained, the affected individual loses all ability to perform a new resistance roll, regardless of what the general rules of the associated spell says. It has no effects on a spell without maintenance, or those that affect an area instead of an individual.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Control", "Magic"]},
+    "grades": {
+      "initial": {"zeon": 200, "min_int": 11, "maintenance": null, "resistance": null, "resistance_types": [], "description": "Affects spells at Base level."},
+      "intermediate": {"zeon": 360, "min_int": 13, "maintenance": null, "resistance": null, "resistance_types": [], "description": "Affects spells at Intermediate level."},
+      "advanced": {"zeon": 420, "min_int": 15, "maintenance": null, "resistance": null, "resistance_types": [], "description": "Affects spells at Advanced level."},
+      "arcane": {"zeon": 480, "min_int": 17, "maintenance": null, "resistance": null, "resistance_types": [], "description": "Affects spells at Arcane level."}
+    }
+  },
+  {
+    "id": "shield-against-powers",
+    "name": "Shield Against Powers",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [90, 100],
+    "action": "Active",
+    "types": ["Automatic"],
+    "daily_maintenance": true,
+    "effect": "The caster creates an area that prevents the use of supernatural powers of any kind. Inside, no summon, spell, psychic power, or Ki Technique who’s difficulty, Zeonic value, Psychic Potential, or Ki cost exceeds what the degree of the spell indicates. This area remains stationary to where it was cast, and affects everyone within, including the caster.",
+    "metadata": {"is_aoe": true, "resistance_cap": null, "resistance_types": [], "tags": ["Ward", "Anti-Magic"]},
+    "grades": {
+      "initial": {"zeon": 300, "min_int": 11, "maintenance": 30, "resistance": null, "resistance_types": [], "description": "50m Radius, 180 Summoning, 100 Zeon, 140 Potential, 8 Ki cost."},
+      "intermediate": {"zeon": 360, "min_int": 13, "maintenance": 40, "resistance": null, "resistance_types": [], "description": "150m Radius, 240 Summoning, 150 Zeon, 180 Potential, 14 Ki cost."},
+      "advanced": {"zeon": 420, "min_int": 15, "maintenance": 45, "resistance": null, "resistance_types": [], "description": "300m Radius, 280 Summoning, 200 Zeon, 240 Potential, 22 Ki cost."},
+      "arcane": {"zeon": 480, "min_int": 17, "maintenance": 50, "resistance": null, "resistance_types": [], "description": "500m Radius, 320 Summoning, 250 Zeon, 280 Potential, 30 Ki cost."}
+    }
+  },
+  {
+    "id": "strengthen-magic",
+    "name": "Strengthen Magic",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [90, 100],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Intensifies the power of magic used by the caster, making spells they cast harder to destroy. While maintained, all spells of the caster are considered to have ‘fake’ Zeon points added to the Zeonic value of their spells. Since these points are not real, they do not add any additional effects or increase the casting level of the spells. They merely increase their value for the purposes of comparing to abilities that affect and destroy spells. If, for example, the caster uses Strengthen Magic in the base level (+50 points), and uses the spell Create Light at base level (50 Zeonic value), the potential of the Light spell would not be increased to any higher level, but a second sorcerer using Destroy Magic at base grade (50 Zeon limit) would not be able to destroy the light spell.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Magic", "Protection"]},
+    "grades": {
+      "initial": {"zeon": 200, "min_int": 11, "maintenance": 20, "resistance": null, "resistance_types": [], "description": "+50 Zeon"},
+      "intermediate": {"zeon": 360, "min_int": 13, "maintenance": 40, "resistance": null, "resistance_types": [], "description": "+100 Zeon"},
+      "advanced": {"zeon": 480, "min_int": 15, "maintenance": 50, "resistance": null, "resistance_types": [], "description": "+150 Zeon"},
+      "arcane": {"zeon": 600, "min_int": 17, "maintenance": 60, "resistance": null, "resistance_types": [], "description": "+250 Zeon"}
+    }
+  },
+  {
+    "id": "the-gift-of-knowledge",
+    "name": "The Gift of Knowledge",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [90, 100],
+    "action": "Active",
+    "types": ["Effect"],
+    "daily_maintenance": true,
+    "effect": "Using magic, the caster obtains intellectual knowledge that they do not know. This spell grants the caster or their designated target a number of bonus points to the Intellectual field of secondary abilities, which they may distribute as they deem appropriately. This cannot exceed 340 points towards a single ability. For example, if you get 100 points, you can increase the History skill by 40 points, Science by 30 points, and Animals by 30 points. Characters can only benefit from one Gift of Knowledge spell at a time.",
+    "metadata": {"is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["Buff", "Knowledge"]},
+    "grades": {
+      "initial": {"zeon": 200, "min_int": 10, "maintenance": 30, "resistance": null, "resistance_types": [], "description": "+100 Points"},
+      "intermediate": {"zeon": 300, "min_int": 12, "maintenance": 45, "resistance": null, "resistance_types": [], "description": "+250 Points"},
+      "advanced": {"zeon": 400, "min_int": 14, "maintenance": 60, "resistance": null, "resistance_types": [], "description": "+400 Points"},
+      "arcane": {"zeon": 500, "min_int": 16, "maintenance": 75, "resistance": null, "resistance_types": [], "description": "+600 Points"}
+    }
+  },
+  {
+    "id": "the-magistrate",
+    "name": "The Magistrate",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [90, 100],
+    "action": "Active",
+    "types": ["Automatic"],
+    "daily_maintenance": true,
+    "effect": "This spell creates an area in which the caster becomes an absolute judge of what happens, obtaining the ability to intervene in the decisions of all present. If desired, they can veto any active action of those inside the area, prohibiting them from doing anything the caster doesn’t wish for them to do. The caster is unable to subject anyone to their direct control, but can prevent them from acting freely. This intervention is a passive action, so it interrupts even those who have won the initiative roll. The caster must be aware of any action for them to veto it. Every time a character wants to perform an act that is prohibited by the caster, they must succeed at an MR check, or will not be able to perform the action. However, even if someone manages to resist, they are not totally free from the spell, since in the next round they will still submit to the will of the magistrate if they do not resist again. This spell remains stationary to the area where cast, and the only condition to be affected is to be within the area.",
+    "metadata": {"is_aoe": true, "resistance_cap": 260, "resistance_types": ["MR"], "tags": ["Control"]},
+    "grades": {
+      "initial": {"zeon": 450, "min_int": 12, "maintenance": 45, "resistance": 140, "resistance_types": ["MR"], "description": "50m Radius, 140 MR"},
+      "intermediate": {"zeon": 600, "min_int": 14, "maintenance": 60, "resistance": 180, "resistance_types": ["MR"], "description": "100m Radius, 180 MR"},
+      "advanced": {"zeon": 800, "min_int": 16, "maintenance": 80, "resistance": 220, "resistance_types": ["MR"], "description": "500m Radius, 220 MR"},
+      "arcane": {"zeon": 1000, "min_int": 18, "maintenance": 100, "resistance": 260, "resistance_types": ["MR"], "description": "1km Radius, 260 MR"}
+    }
+  }
+]

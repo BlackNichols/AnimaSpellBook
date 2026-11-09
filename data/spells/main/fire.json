@@ -1,0 +1,1776 @@
+[
+  {
+    "id": "create-fire",
+    "name": "Create Fire",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 2,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Creates a fire with the given intensity. The flame itself is magical and does not require fuel. If placed upon a flammable material, the material will burn naturally even after the spell has dissipated.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 Intensity"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5 Intensities"
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "8 Intensities"
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10 Intensities"
+      }
+    }
+  },
+  {
+    "id": "put-out-fire",
+    "name": "Put Out Fire",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 6,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect",
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Reduces heat or fire by a number of intensities, based on the level of the spell. Bear in mind that some sources of fire, such as Volcanoes, reproduce themselves automatically when not fully extinguished. When cast upon a Fire based being, the creature suffers 5 points of damage for each level of intensity diminished – Provided they fail the associated MR check. Creatures with damage resistance receive 25 points of damage per intensity instead.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR",
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "-1 Intensity, 100 MR"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "-5 Intensities, 120 MR"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "-10 Intensities, 140 MR"
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "-15 Intensities, 180 MR"
+      }
+    }
+  },
+  {
+    "id": "fire-immunity",
+    "name": "Fire Immunity",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 10,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Grants the caster or whomever they designate immunity to a number of heat intensities based on the level of the spell. When attacked from an attack based on fire the base damage is reduced by 5 per intensity the target is immune from. In addition, the immune character receives a +5 bonus to Resistances against fire based effects per intensity immunity.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5 Intensities"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "12 Intensities"
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "20 Intensities"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30 Intensities"
+      }
+    }
+  },
+  {
+    "id": "detect-heat",
+    "name": "Detect Heat",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 12,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Detection"
+    ],
+    "daily_maintenance": false,
+    "effect": "Enables the caster to locate any source of heat in an area determined by the level of the spell. The caster can feel the intensity level and size of the heat source, and even perceive heat coming from warm- blooded creatures, but not from inanimate or immaterial beings, such as constructs or undead. Living creatures can avoid detection by the spell by succeeding at an MR check.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 220,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "25m Radius, 120 MR"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 150,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "50m Radius, 150 MR"
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100m Radius, 180 MR"
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "250m Radius, 220 MR"
+      }
+    }
+  },
+  {
+    "id": "fire-ball",
+    "name": "Fire Ball",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 16,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "effect": "Projects a Heat based fire attack which explodes in a radius around the target. The caster cannot select targets within the explosion area.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5m Radius, 50 Base damage"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "25m Radius, 100 Base damage"
+      },
+      "advanced": {
+        "zeon": 160,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80m Radius, 140 Base damage"
+      },
+      "arcane": {
+        "zeon": 250,
+        "min_int": 15,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150m Radius, 160 Base damage"
+      }
+    }
+  },
+  {
+    "id": "control-fire",
+    "name": "Control Fire",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 20,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect",
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Grants the caster control of a number of fire intensities. They can alter different aspects of the flames, such as color and smoke production. If used on a fire based creature, the caster has complete control of the being should it fail a MR check. Beings controlled in this way cannot repeat the check unless given a command directly opposed to their nature.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "5 Intensities, 100 MR"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "8 Intensities, 120 MR"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "12 Intensities, 140 MR"
+      },
+      "arcane": {
+        "zeon": 180,
+        "min_int": 15,
+        "maintenance": 20,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "15 Intensities, 180 MR"
+      }
+    }
+  },
+  {
+    "id": "fire-barrier",
+    "name": "Fire Barrier",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 22,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic",
+      "Defense"
+    ],
+    "daily_maintenance": false,
+    "effect": "Raises a powerful wall of fire. Anyone who tries to traverse it will automatically receive a Heat based attack against an Almost Impossible ability (that is, an automatic attack of final skill 240). Receiving damage does not prevent a character from crossing the wall. Additionally, the sorcerer can use it as a magic shield to stop any attacks based on water, cold or fire. The maximum length of the barrier as well as the damage is based on the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "2m Length, 80 Base damage, 300 Life Points"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5m Length, 90 Base Damage, 500 Life Points"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10m Length, 100 Base Damage, 800 Life Points, Blocks attacks based on energy"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "15m Length, 100 Base Damage, 1500 Life Points, Blocks any attack"
+      }
+    }
+  },
+  {
+    "id": "igneous-weapon",
+    "name": "Igneous Weapon",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 26,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Infuses a weapon with fire, thus upgrading it’s attack into one based on Heat. This eldritch fire increases the weapon’s base damage, without altering it’s other properties like fortitude and breakage.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+10 Base damage"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+20 Base damage"
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 11,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+30 Base damage"
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 14,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+40 Base damage"
+      }
+    }
+  },
+  {
+    "id": "heat-wave",
+    "name": "Heat Wave",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 30,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "effect": "Projects a high temperature wave that acts as a Heat based attack. Since these pressure waves are invisible to the human eye, the victim must either be able to see magic, have thermal vision, or pass an Absurd (180) level Notice check in order to avoid the blinded penalty against the attack.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 Base damage"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "70 Base damage"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "90 Base damage"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "110 Base damage"
+      }
+    }
+  },
+  {
+    "id": "read-the-ashes",
+    "name": "Read the Ashes",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 32,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Transports the caster’s senses into the past, allowing them to see the causes of a specific fire. The caster must be present in the remains of the fire, and while performing the spell, they are not aware of their true surroundings. The amount of time passed since the fire occurred must be within the limit set by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 day"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 week"
+      },
+      "advanced": {
+        "zeon": 220,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 month"
+      },
+      "arcane": {
+        "zeon": 340,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 year"
+      }
+    }
+  },
+  {
+    "id": "raise-weather-temperature",
+    "name": "Raise Weather Temperature",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 36,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Increases the ambient temperature within the spell’s area. If the temperature rises more than 10 degrees above the record temperature of the area, any further increase is reduced by half.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 7,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+5°C, 1km Radius"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 10,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+10°C, 5km Radius"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+20°C, 10km Radius"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 60,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+30°C, 15km Radius"
+      }
+    }
+  },
+  {
+    "id": "fire-mine",
+    "name": "Fire Mine",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 40,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Creates an igneous mine ready to explode in a radius around a designated point. The explosion is considered a Heat attack, with base damage set by the level of the spell. The extent of the damage is also set by the proximity of the target to the center of the mine upon it’s activation. • If the distance between the character and the mine is more than half of the explosion area, they must defend against an automatic attack of Almost Impossible difficulty (a final attack of 240). • If the distance between the character and the mine is less than half the explosion area, they must defend against an automatic attack of Impossible difficulty (a final attack of 280) • If the character is less than five meters from the source of the mine, they must defend against an automatic attack of Inhuman difficulty (a final attack of 320) The mine is placed at a particular place or object when cast, and can be activated as an active action. It is not possible to select targets inside the explosion area, including the caster themselves.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10m Radius, 80 Base damage"
+      },
+      "intermediate": {
+        "zeon": 160,
+        "min_int": 10,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50m Radius, 120 Base damage"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150m Radius, 180 Base damage"
+      },
+      "arcane": {
+        "zeon": 320,
+        "min_int": 15,
+        "maintenance": 60,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "250m Radius, 240 Base damage"
+      }
+    }
+  },
+  {
+    "id": "increase-critical",
+    "name": "Increase Critical",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 42,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Adds a bonus to the Critical Level when determining effects for specific attacks. The spell must be cast before dice are rolled to determine the overall effect of the critical.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+20 to the Critical level"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+40 to the Critical level"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+60 to the Critical level"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+80 to the Critical level"
+      }
+    }
+  },
+  {
+    "id": "dry",
+    "name": "Dry",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 46,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Immediately dry any wet body or object within the designated radius. This effect can be used to harm elementals based on water. Any such being targeted must pass an MR or PhR check or suffer life point loss equal to double the level of failure. If used in hostility against living organisms that require water to survive (including humans), its effects can also be harmful, but damage is only half the level of failure for such creatures.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR",
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "100 MR or PhR, 5m Radius"
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "120 MR or PhR, 15m Radius"
+      },
+      "advanced": {
+        "zeon": 180,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "140 MR or PhR, 25m Radius"
+      },
+      "arcane": {
+        "zeon": 240,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "160 MR or PhR, 35m Radius"
+      }
+    }
+  },
+  {
+    "id": "melt",
+    "name": "Melt",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 50,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Heats up any inorganic object the caster desires within it’s radius, causing it to reach extremely high temperatures. The intensity of heat causes any object that fails a PhR check to melt in a number of rounds equal to its fortitude. Anyone in contact with the object must discard it quickly or suffer injuries according to Anima: Beyond Fantasy - Table 73: In Flames.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 140,
+      "resistance_types": [
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": 80,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "80 PhR, 10m Radius"
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 100,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "100 PhR, 50m Radius"
+      },
+      "advanced": {
+        "zeon": 180,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 120,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "120 PhR, 100m Radius"
+      },
+      "arcane": {
+        "zeon": 240,
+        "min_int": 14,
+        "maintenance": 15,
+        "resistance": 140,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "140 PhR, 150m Radius"
+      }
+    }
+  },
+  {
+    "id": "body-of-fire",
+    "name": "Body of Fire",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 52,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Transforms a designated body into one of fire. Once transformed, a fiery body becomes immune to all attacks not based on cold, water, or energy. All methods of fire extinguishing (sand, foam, etc.) will injure the character in this state. Anyone who comes into contact with the flame body must pass a PhR check with a special difficulty equal to twice the caster’s presence. Failure damages the individual equal to half the level of failure, and every Heat AT the character has increases their resistance to this effect by +5.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As described under the effects section."
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 11,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Base, but also gives +30 Resistance against Fire based effects."
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Intermediate, but the subject can pass through small passages that any flame could pass through."
+      },
+      "arcane": {
+        "zeon": 160,
+        "min_int": 16,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Advanced, but immune to any Cold or Water attack not able to damage energy."
+      }
+    }
+  },
+  {
+    "id": "vital-sacrifice",
+    "name": "Vital Sacrifice",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 56,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Allows the caster to consume their own life force to increase their physical abilities. This spell grants the passive ability to temporarily sacrifice life points up to a limit each combat turn to obtain a bonus for a given action. Every 5 life points sacrificed this way will provide the character +5 to one of their rolls (in the case of damage resistant creatures, multiply the life point cost by their life point multiple). This bonus will only be applicable to physical actions, but can be added to primary abilities such as attack, defense or Magic Projection. Despite being a passive action, it is necessary to declare the amount sacrificed before any dice are rolled. It is also possible that the caster decides to confer this ability on another individual, then it is the target who decides how many points to spend in each case. Life points lost in this way are recovered at a rate of 10 a day, no matter what the natural Regeneration of the character indicates (that is, they count as a Sacrifice). This spell’s effects do not overlap, and only one sacrifice spell may be active on an individual at a time.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 Life Points per turn limit"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Life Points per turn limit"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 Life Points per turn limit"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 Life Points per turn limit"
+      }
+    }
+  },
+  {
+    "id": "incinerate",
+    "name": "Incinerate",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 60,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Set on fire any body designated by the caster, organic or inorganic, by the mere condition of being in their presence. In game terms, the caster will make a 1d100 roll and add a bonus for Anima: Beyond Fantasy - Table 76: In Flames, for each target they wish to incinerate within a certain area. Avoiding the effects requires a successful MR check.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "50m Radius, 140 MR, +100 to result"
+      },
+      "intermediate": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100m Radius, 160 MR, +120 to result"
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 14,
+        "maintenance": 15,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "150m Radius, 180 MR, +140 to result"
+      },
+      "arcane": {
+        "zeon": 260,
+        "min_int": 16,
+        "maintenance": 20,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200m Radius, 200 MR, +160 to result"
+      }
+    }
+  },
+  {
+    "id": "consume-essence",
+    "name": "Consume Essence",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 62,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates a terrifying supernatural aura around the caster that can destroy the vital essences of people, consuming their energy and preventing them from healing by natural means. Anyone in the radius of the spell must pass an MR check or suffer damage to both their Life Points and Zeon reserve equal to their level of failure. Life Points lost this way can not be recovered naturally, and must instead be restored by healing spells or other supernatural means. Zeon points lost in this way must be absorbed from other casters or from Zeonic containers.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 220,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "10m Radius, 120 MR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "25m Radius, 160 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "50m Radius, 200 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "250m Radius, 220 MR"
+      }
+    }
+  },
+  {
+    "id": "power-sacrifice",
+    "name": "Power Sacrifice",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 66,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Allows the caster to consume their own magical energy in order to increase their magical prowess. In game terms, the caster gains the passive ability to spend Zeon to temporarily increase their Magic Accumulation. For every 10 points of Zeon sacrificed for this purpose the caster gains +5 to their MA for the combat turn. This spell’s effects do not overlap, and only one Sacrifice spell may be active on an individual at a time.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "20 Zeon per turn limit"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 Zeon per turn limit"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 Zeon per turn limit"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 Zeon per turn limit"
+      }
+    }
+  },
+  {
+    "id": "direct-critical",
+    "name": "Direct Critical",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 70,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Causes an internal explosion within the target, causing a critical automatically. In game terms, the target receives the equivalent of a critical at a given level, although they have the ability to counter it with their PhR using the general rules. To avoid the effects altogether, the target can succeed at an MR check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, 120 Critical"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 11,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, 140 Critical"
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR, 180 Critical"
+      },
+      "arcane": {
+        "zeon": 280,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR, 220 Critical"
+      }
+    }
+  },
+  {
+    "id": "magic-for-capacities",
+    "name": "Magic for Capacities",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 72,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Allows the caster to consume their own magical reserve to increase their characteristics and abilities. In game terms, the caster gains the 39 passive ability to gain a +1 to one Characteristic for the current combat turn for every 25 Zeon sacrificed. The maximum number of Zeon points a character can sacrifice per combat turn is set by the level of the spell. Effects of this spell do not overlap, and only one Sacrifice spell can be active on an individual at a time.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 Zeon per turn limit"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Zeon per turn limit"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 Zeon per turn limit"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 Zeon per turn limit"
+      }
+    }
+  },
+  {
+    "id": "fire-storm",
+    "name": "Fire Storm",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 76,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster selects an area where within a heavy fire storm appears, burning everything inside it to the ground. Every turn, individuals encompassed within the area will suffer an automatic attack using the Heat attack type and has a base damage of 100. The storm affects all within it, including the caster, and remains stationary from where it was cast.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "25m Radius, final attack 180"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150m Radius, final attack 240"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200m Radius, final attack 280"
+      },
+      "arcane": {
+        "zeon": 280,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "250m Radius, final attack 320"
+      }
+    }
+  },
+  {
+    "id": "consume-life-for-magic",
+    "name": "Consume Life for Magic",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 80,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Allows the caster to consume their own vital energy in order to increase their magical reserves. In game terms, the spell grants the caster the passive ability temporarily sacrifice Life Points to recover Zeon. For every 5 life points sacrificed up to the limit per combat turn, the caster regains 100 points of Zeon. Damage resistant creatures sacrifice this number of life points multiplied by their damage resistance multiple. Life points lost this way recover at a rate of 10 per day, regardless of the character’s natural regeneration or magical healing they may employ (that is, it follows the rules for Sacrifice). Multiples of this spell do not overlap, and a character can only have one sacrifice spell active at a time.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "20 Life Points per turn limit"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 Life Points per turn limit"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "140 Life Points per turn limit"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 Life Points per turn limit"
+      }
+    }
+  },
+  {
+    "id": "create-ifreet",
+    "name": "Create Ifreet",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 82,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Creates a seemingly live creature completely under the magician’s control. This entity is developed as a Being Between Worlds, subject to the elemental powers and limitations of Fire Elementals described in Anima: Beyond Fantasy - Chapter 26: Creation of Beings. The creature has a number of development points based on the level of the spell, and the elemental is created using the same rules as the spell Create Being in the path of creation.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 10,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "600 DP (Level 1)"
+      },
+      "intermediate": {
+        "zeon": 350,
+        "min_int": 12,
+        "maintenance": 70,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "800 DP (Level 3)"
+      },
+      "advanced": {
+        "zeon": 500,
+        "min_int": 14,
+        "maintenance": 100,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1100 DP (Level 6)"
+      },
+      "arcane": {
+        "zeon": 700,
+        "min_int": 16,
+        "maintenance": 140,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1500 DP (Level 10)"
+      }
+    }
+  },
+  {
+    "id": "pyre",
+    "name": "Pyre",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 86,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Creates a large amount of fire intensities, which continue to burn even with no fuel to consume as long as the spell is maintained. If set upon flammable material, it will burn naturally after the spell has ended.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 10,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "15 Intensities"
+      },
+      "intermediate": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "25 Intensities"
+      },
+      "advanced": {
+        "zeon": 350,
+        "min_int": 14,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "35 Intensities"
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 18,
+        "maintenance": 35,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "45 Intensities"
+      }
+    }
+  },
+  {
+    "id": "devastation",
+    "name": "Devastation",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 90,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates a massive explosion within the given area, which counts as a Heat attack with base damage 200, though it can damage energy and immaterial beings. The caster cannot designate specific targets within the area; everything is affected.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1km Radius"
+      },
+      "intermediate": {
+        "zeon": 300,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5km Radius"
+      },
+      "advanced": {
+        "zeon": 400,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10km Radius"
+      },
+      "arcane": {
+        "zeon": 500,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "15km Radius"
+      }
+    }
+  },
+  {
+    "id": "sacrificing-others",
+    "name": "Sacrificing Others",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 92,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect",
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "This spell binds other individuals’ essence and vital force to the caster, enabling them to be consumed for the caster’s advantage. In game terms, it allows the caster to use the Life Points and Zeon of those affected by this spell for the spells of sacrifice in this path, namely: • Vital Sacrifice • Magic for Capacities • Power Sacrifice • Consume Life for Magic This spell’s area is stationary once cast, and the caster may select any number of individuals within it to draw from. The effects can be avoided with a successful MR check, which those inside the area may repeat once per day, or at the time when their energy is to be consumed.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 13,
+        "maintenance": 50,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "1km Radius, MR 120"
+      },
+      "intermediate": {
+        "zeon": 350,
+        "min_int": 15,
+        "maintenance": 70,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "2km Radius, MR 140"
+      },
+      "advanced": {
+        "zeon": 500,
+        "min_int": 17,
+        "maintenance": 100,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "3km Radius, MR 160"
+      },
+      "arcane": {
+        "zeon": 750,
+        "min_int": 19,
+        "maintenance": 150,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "5km Radius, MR 180"
+      }
+    }
+  },
+  {
+    "id": "lord-of-fire",
+    "name": "Lord of Fire",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 96,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "The caster is able to control all heat within a large area. This dominion extends to control over planetary magma, allowing the caster to produce violent volcanic eruptions. All fire based creatures within the area must succeed an MR check or be dominated by the caster. Pass or fail, no subsequent check is allowed unless the base resistance values of the creature changes.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 300,
+        "min_int": 10,
+        "maintenance": 30,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 km Radius, MR 140"
+      },
+      "intermediate": {
+        "zeon": 450,
+        "min_int": 12,
+        "maintenance": 45,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "1000 km Radius, MR 180"
+      },
+      "advanced": {
+        "zeon": 600,
+        "min_int": 15,
+        "maintenance": 60,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "10000 km Radius, MR 200"
+      },
+      "arcane": {
+        "zeon": 1000,
+        "min_int": 18,
+        "maintenance": 100,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "Affects all heat sources in the world, MR 240"
+      }
+    }
+  },
+  {
+    "id": "armageddon",
+    "name": "Armageddon",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "minor",
+    "level": 100,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "The ultimate fire spell allows the caster to consume a portion of the world’s very essence, incinerating everything, even souls. Any entity inside the area, organic or inorganic, must succeed at an MR check every minute to avoid being physically and spiritually incinerated. During the maintenance of the spell, no life form can be created or born within the spell’s area of influence.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 450,
+        "min_int": 15,
+        "maintenance": 90,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "10km Radius, 140 MR"
+      },
+      "intermediate": {
+        "zeon": 800,
+        "min_int": 16,
+        "maintenance": 100,
+        "resistance": 150,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "25km Radius, 150 MR"
+      },
+      "advanced": {
+        "zeon": 1200,
+        "min_int": 17,
+        "maintenance": 105,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "50km Radius, 160 MR"
+      },
+      "arcane": {
+        "zeon": 1600,
+        "min_int": 18,
+        "maintenance": 110,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "150km Radius, 180 MR"
+      }
+    }
+  }
+]

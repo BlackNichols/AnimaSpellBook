@@ -1,0 +1,193 @@
+Detect Sin
+Level: 4 Action: Active
+Effect: This spell allows the caster to see the sins the target has committed. He
+will not get specific information about them (he will know generally what type
+of sin the target committed but not specifically what it was), but can feel how
+severe it was and approximately how long ago it happened. For example, he
+might know that a person has lied recently, but not where or why he lied. The
+caster will detect the greatest sins first, starting with the most recent. Multiple
+sins of the same type can be detected. Casting the spell on the same target a
+second time will provide the same sins (unless the Resistance roll is different, in
+which case more or less can be revealed, or unless the target has committed
+new serious sins).
+Level Basic Intermediate Advanced Arcane
+Zeon 40 60 90 120
+Int. R. 6 8 10 12
+Basic: MR 120.
+Intermediate: MR 140.
+Advanced: MR 160.
+Arcane: MR 180.
+Maintenance: No
+Spell Type: Detection
+
+Imbue with Sin
+Level: 14 Action: Active
+Effect: The target of the spell is compelled to commit the cardinal sin that
+he is the most closely associated with. A glutton would feel the need to eat
+constantly and insatiably, while a lustful person would fall into the arms of
+anyone he considered remotely attractive. The target is only affected if he fails a
+MR check, and he can check again to end the spell every time he is confronted
+with something that might cause him to sin in this way — although even if he
+passes, his normal impulses may still drive him to sin.
+Level Basic Intermediate Advanced Arcane
+Zeon 50 70 100 140
+Int. R. 6 8 10 12
+Basic: MR 120.
+Intermediate: MR 140.
+Advanced: MR 160.
+Arcane: MR 180.
+Maintenance: 5 / 10 / 10 / 15 Daily
+Spell Type: Spiritual
+
+Gluttony
+Level: 24 Action: Active
+Effect: This spell allows the wizard to automatically gain a portion of all the Zeon
+points (rounded up to the nearest 5) and Ki points spent in the spell’s radius around
+him. For example, if a wizard has Gluttony maintained at its Basic level and another
+wizard casts a spell inside its range that costs 100 Zeon, the wizard maintaining
+Gluttony will gain 10 of those Zeon points. Gluttony has no effect on Innate spells
+or magical powers that do not consume Zeon or Ki, and it also does not affect the
+caster’s own spells or Ki Abilities.
+Level Basic Intermediate Advanced Arcane
+Zeon 60 100 140 180
+Int. R. 7 9 11 13
+Basic: 30 foot radius / Absorbs 10%.
+Intermediate: 60 foot radius / Absorbs 20%.
+Advanced: 130 foot radius / Absorbs 30%.
+Arcane: 200 foot radius / Absorbs 50%.
+Maintenance: 5 / 5 / 10 / 10
+Spell Type: Effect
+
+Lust
+Level: 34 Action: Active
+Effect: The target of this spell becomes a magnet for anyone attracted to his
+gender. Anyone who sees the target and does not pass a MR check with a difficulty
+determined by the level of the spell feels immensely attracted to the target, while
+those who fail the check by more than 40 points feel an obsessive and unhealthy
+attraction, abandoning reason and making every effort to possess the object of
+their lust. Any individual affected can repeat the check every hour. The target
+of the spell can resist it as well by passing a MR check with the same difficulty,
+repeatable every hour.
+Level Basic Intermediate Advanced Arcane
+Zeon 60 100 120 150
+Int. R. 7 9 11 13
+Basic: MR 140.
+Intermediate: MR 160.
+Advanced: MR 180.
+Arcane: MR 200.
+Maintenance: 5 / 5 / 10 / 10
+Spell Type: Spiritual
+
+Greed
+Level: 44 Action: Active
+Effect: This spell snatches away something that is in the target’s possession,
+making it disappear from him and appear in front of the caster. The object
+chosen does not need to have a clear way to “move” towards the caster; the
+spell can teleport any object, from one held in the target’s hands to the clothes
+or armor he is wearing. The object chosen cannot have a maximum Presence
+exceeding that allowed by the level of the spell. Someone who is aware that one
+of his possessions is a target of this spell can try to resist its effects by passing a
+MR check.
+Level Basic Intermediate Advanced Arcane
+Zeon 50 80 120 260
+Int. R. 8 10 12 14
+Basic: MR 120 / Maximum Presence 50.
+Intermediate: MR 140 / Maximum Presence 80.
+Advanced: MR 160 / Maximum Presence 100.
+Arcane: MR 180 / Maximum Presence 120.
+Maintenance: No
+Spell Type: Automatic
+
+Sloth
+Level: 54 Action: Active
+Effect: This spell causes the target to fall into a deep state of laziness. For the
+duration of the spell, he can only take Passive Actions. To resist the effects of this
+spell, the target must pass a MR check with a difficulty determined by the level
+of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 60 80 100 120
+Int. R. 7 9 11 13
+Basic: MR 100.
+Intermediate: MR 120.
+Advanced: MR 140.
+Arcane: MR 160.
+Maintenance: 5 / 5 / 10 / 10
+Spell Type: Effect
+
+Pride
+Level: 64 Action: Active
+Effect: The target of this spell feels enormous self-confidence and disregards
+the skills of those around him. Some of the target’s abilities are increased, giving
+him bonuses determined by the level of the spell. However, his special abilities
+are very limited, and he becomes unable to use Ki Abilities or Techniques,
+Psychic Powers of Levels 2 or 3, or spells of a level higher than 40. To avoid the
+effects of this spell, the target must pass a MR check at a difficulty determined
+by the level of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 80 100 120 150
+Int. R. 7 9 11 13
+Basic: MR 120 / +10 to All Actions / +50 to Style.
+Intermediate: MR 140 / +20 to All Actions / +100 to Style.
+Advanced: MR 160 / +20 to All Actions / +150 to Style / +100 to
+Withstand Pain.
+Arcane: MR 180 / +30 to All Actions / +200 to Style / +150 to
+Withstand Pain.
+Maintenance: 5 / 5 / 10 / 10
+Spell Type: Spiritual
+
+Anger
+Level: 74 Action: Active
+Effect: The target of this spell enters an uncontrollable berserker rage,
+immediately attacking the object of his fury. The wizard may choose both
+a target for the spell and a person to be the object of this rage. To withstand
+the effects of this spell, the target must pass a MR
+check with a difficulty determined by the
+level of the spell. In addition to the normal
+conditions for ending a spell, when the
+person who is the object of the rage is dead,
+the spell ends.
+Level Basic Intermediate Advanced Arcane
+Zeon 100 140 180 220
+Int. R. 8 10 12 14
+Basic: MR 120.
+Intermediate: MR 140.
+Advanced: MR 160.
+Arcane: MR 180.
+Maintenance: 5 / 5 / 10 / 10
+Spell Type: Spiritual
+
+Envy
+Level: 84 Action: Active
+Effect: The target of this spell must pass a MR check at a difficulty
+determined by the level of the spell. If he fails, he suffers all effects
+that the wizard suffers, both positive and negative, as long as the
+spell is maintained. For example, if the caster suffers damage, the
+target will suffer the same damage, or if the caster is affected by a
+spell, the target will also be affected.
+Level Basic Intermediate Advanced Arcane
+Zeon 100 150 200 250
+Int. R. 9 11 13 15
+Basic: MR 120.
+Intermediate: MR 140.
+Advanced: MR 160.
+Arcane: MR 180.
+Maintenance: 5 / 5 / 10 / 10
+Spell Type: Spiritual
+
+Seed of Evil
+Level: 94 Action: Active
+Effect: This spell causes an affected individual to become inherently
+evil and lose concept of morality. The character will immediately begin
+to act wickedly. A truly pure person who lacks any concept of evil is
+immune to this spell. To withstand the effects of this spell, the target
+must pass a MR check with a difficulty determined by the level of the
+spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 120 180 260 320
+Int. R. 10 12 14 16
+Basic: MR 120.
+Intermediate: MR 140.
+Advanced: MR 160.
+Arcane: MR 180.
+Maintenance: No
+Spell Type: Spiritual

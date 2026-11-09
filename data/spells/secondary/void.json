@@ -1,0 +1,576 @@
+[
+  {
+    "id": "shadow-void",
+    "name": "Shadow Void",
+    "category": "secondary",
+    "path": "Void",
+    "path_type": null,
+    "level": 4,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 150,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell brings into being a fragment of the void, a mere shadow of nothingness that partially absorbs light, reduces the amount of oxygen in the area, and takes away vital energy from its surroundings. Anyone in the area affected by this spell must pass a MR check or lose a point of Fatigue if they are living beings or two Intensities if they are an elemental.",
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": null,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 80 / 15 foot radius."
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 100 / 30 foot radius."
+      },
+      "advanced": {
+        "zeon": 90,
+        "min_int": 11,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / 50 foot radius."
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 150,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 150 / 100 foot radius."
+      }
+    }
+  },
+  {
+    "id": "void-wave",
+    "name": "Void Wave",
+    "category": "secondary",
+    "path": "Void",
+    "path_type": null,
+    "level": 14,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Anti-Shield"
+      ]
+    },
+    "effect": "This spell releases a small wave of void capable of disintegrating any supernatural protection. It causes no damage to enemies, but has devastating effects when directed against a supernatural shield. A Void Wave is invisible to the naked eye, except to those able to see magic.",
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 Base Damage against shields."
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "250 Base Damage against shields."
+      },
+      "advanced": {
+        "zeon": 90,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "400 Base Damage against shields."
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "600 Base Damage against shields."
+      }
+    }
+  },
+  {
+    "id": "void-shield",
+    "name": "Void Shield",
+    "category": "secondary",
+    "path": "Void",
+    "path_type": null,
+    "level": 24,
+    "action": "Passive",
+    "types": [
+      "Defense"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell creates a barrier that absorbs particles and converts all attacks received into nothingness. Besides having Life Points like a normal supernatural shield, the barrier automatically cancels any supernatural power that strikes it if the attacker cannot pass a Willpower or Power check with a difficulty determined by the level of the spell. That is, if an opponent launches an Attack or Spiritual spell against a wizard who is protected behind an Intermediate level Void Shield and the wizard makes a successful defense, the attacker must pass a Willpower or Power 16 check or his attack is canceled without causing any damage to the shield. Similarly, any inanimate physical object stopped by the shield must pass a PhR check or be destroyed immediately.",
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "PhR 100 / 200 Life Points / Difficulty 14."
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "PhR 120 / 300 Life Points / Difficulty 16."
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "PhR 140 / 400 Life Points / Difficulty 18."
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "PhR 160 / 500 Life Points / Difficulty 20."
+      }
+    }
+  },
+  {
+    "id": "reality-vortex",
+    "name": "Reality Vortex",
+    "category": "secondary",
+    "path": "Void",
+    "path_type": null,
+    "level": 34,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This ability creates an area full of millions of microscopic voids around the caster. Any individual who is in it for more than a turn must pass a MR check each turn or suffer damage equal to half the degree of failure, lose Ki points equal to half the degree of failure, and lose Zeon points equal to the degree of failure. This spell does not discriminate between people within the vortex, and affects everyone, including the caster. The effect is stationary once cast.",
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": 5,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 100 / 15 foot radius."
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / 30 foot radius."
+      },
+      "advanced": {
+        "zeon": 180,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140 / 60 foot radius."
+      },
+      "arcane": {
+        "zeon": 240,
+        "min_int": 15,
+        "maintenance": 20,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / 130 foot radius."
+      }
+    }
+  },
+  {
+    "id": "black-blade-of-doom",
+    "name": "Black Blade of Doom",
+    "category": "secondary",
+    "path": "Void",
+    "path_type": null,
+    "level": 44,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell summons the void in its purest form, shaping a crackling blade of power in the caster’s hands. This weapon can be wielded to make attacks with the Cut Attack Type using the caster’s Magic Projection or Attack Ability and completely ignores all Armor Types. The wizard can keep the blade active to make further attacks in later turns, but each turn he wishes to do so, he must pass a Willpower check against a difficulty of 12 or lose control of the sword. Every time he passes, the difficulty of the next check increases by 1. If he fails, the sword turns against him, attacking with his best Attack Ability +50, and then disappears.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 Base Damage."
+      },
+      "intermediate": {
+        "zeon": 150,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 Base Damage."
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "160 Base Damage."
+      },
+      "arcane": {
+        "zeon": 250,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 Base Damage."
+      }
+    }
+  },
+  {
+    "id": "void-aura",
+    "name": "Void Aura",
+    "category": "secondary",
+    "path": "Void",
+    "path_type": null,
+    "level": 54,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell covers the caster with an aura of void that protects him from the effects of supernatural attacks, providing Armor Type against Energy and devouring any spell or Psychic Power with a level below that indicated. Unfortunately, this spell does not discriminate between friendly and enemy powers, and devours all without distinction. The aura is invisible, but the wizard and his immediate surroundings seem tenuously attached to reality.",
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 6,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Armor Type 4 / Zeonic Value 60 / Psychic Potential 80."
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Armor Type 6 / Zeonic Value 90 / Psychic Potential 120."
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Armor Type 8 / Zeonic Value 120 / Psychic Potential 140."
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 15,
+        "maintenance": 35,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Armor Type 10 / Zeonic Value 160 / Psychic Potential 180."
+      }
+    }
+  },
+  {
+    "id": "black-spots",
+    "name": "Black Spots",
+    "category": "secondary",
+    "path": "Void",
+    "path_type": null,
+    "level": 64,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell creates a vortex around the wizard filled with vortices of nothingness that move up and down chaotically. Anyone within that area must pass an Athletics, Acrobatics, or Defense check against a difficulty set by the spell level or collide with a black spot. If this occurs, the character must pass a MR or PhR check with a difficulty determined by the spell level or suffer damage equal to half the degree of failure, lose Ki points equal to half the degree of failure, and lose Zeon points equal to the degree of failure. It is impossible to designate targets for this spell; everyone in the area is affected, including the caster. Once cast, the area of effect moves with the caster; he is always at the center of it.",
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PhR 120 / Difficulty 120 / 30 foot radius."
+      },
+      "intermediate": {
+        "zeon": 250,
+        "min_int": 10,
+        "maintenance": 25,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PhR 140 / Difficulty 140 / 60 foot radius."
+      },
+      "advanced": {
+        "zeon": 350,
+        "min_int": 12,
+        "maintenance": 35,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PhR 160 / Difficulty 180 / 150 foot radius."
+      },
+      "arcane": {
+        "zeon": 500,
+        "min_int": 15,
+        "maintenance": 50,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PhR 180 / Difficulty 240 / 300 foot radius."
+      }
+    }
+  },
+  {
+    "id": "protection-from-void",
+    "name": "Protection from Void",
+    "category": "secondary",
+    "path": "Void",
+    "path_type": null,
+    "level": 74,
+    "action": "Active",
+    "types": [
+      "Defense"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell covers the caster in supernatural energy that repels void effects. Any spell or power related to the void has no effect on him and cannot damage him.",
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Protects against spells from of this sub-Path."
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 12,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Basic level, but the character is also immune to effects and attacks from void-based creatures, such as Etrien Gnosos."
+      },
+      "advanced": {
+        "zeon": 280,
+        "min_int": 14,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "The character is immune to any effects related to the void, but not the primal void."
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 16,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Advanced level, but the character can survive even in the primal void."
+      }
+    }
+  },
+  {
+    "id": "implosion",
+    "name": "Implosion",
+    "category": "secondary",
+    "path": "Void",
+    "path_type": null,
+    "level": 84,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This terrifying spell creates a point of nothingness on the inside of something that attracts all its interior mass, causing it to implode and disappear completely. Since this spell absorbs flesh, bones, and organs, it not only causes damage but also inflicts an automatic Critical with a bonus determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 Base Damage / +20 to Critical level."
+      },
+      "intermediate": {
+        "zeon": 500,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "400 Base Damage / +40 to Critical level."
+      },
+      "advanced": {
+        "zeon": 750,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500 Base Damage / +60 to Critical level."
+      },
+      "arcane": {
+        "zeon": 1000,
+        "min_int": 20,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "800 Base Damage / +100 to Critical level."
+      }
+    }
+  },
+  {
+    "id": "door-to-nowhere",
+    "name": "Door to Nowhere",
+    "category": "secondary",
+    "path": "Void",
+    "path_type": null,
+    "level": 94,
+    "action": "Passive",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Teleportation"
+      ]
+    },
+    "effect": "This spell opens a portal into absolute nothingness, the primal void that will one day devour the universe. Anyone who walks through the door will automatically cease to exist without any possible Resistance check. Only beings with Gnosis 35 or more, objects of equivalent Presence, or individuals who are somehow protected against the void can survive there, but even they will slowly lose points from their Power Characteristic at a rate of 1 per day, which recuperate at the same rate once the individuals are out of the void. Naturally, someone within the portal is virtually immune to any kind of attack, since attacks will dissipate into the void. The dimensions of the portal are determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 300,
+        "min_int": 11,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3 foot radius."
+      },
+      "intermediate": {
+        "zeon": 500,
+        "min_int": 13,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "8 foot radius."
+      },
+      "advanced": {
+        "zeon": 800,
+        "min_int": 15,
+        "maintenance": 80,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "25 foot radius."
+      },
+      "arcane": {
+        "zeon": 1200,
+        "min_int": 18,
+        "maintenance": 120,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "75 foot radius."
+      }
+    }
+  }
+]

@@ -1,0 +1,542 @@
+[
+  {
+    "id": "morale",
+    "name": "Morale",
+    "category": "secondary",
+    "path": "War",
+    "path_type": null,
+    "level": 4,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell inspires the wizards’ allies, boosting their spirits and making them immune to the effects of fear or pain. For game purposes, they receive a bonus to their Composure until the end of their combat or until 10 minutes have passed.",
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30 foot radius / +40 to Composure."
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 foot radius / +80 to Composure."
+      },
+      "advanced": {
+        "zeon": 90,
+        "min_int": 11,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "800 foot radius / +120 to Composure."
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1,500 foot radius / +180 to Composure."
+      }
+    }
+  },
+  {
+    "id": "ancestral-rage",
+    "name": "Ancestral Rage",
+    "category": "secondary",
+    "path": "War",
+    "path_type": null,
+    "level": 14,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell wakes a craving for war in the wizard’s allies that makes them unstoppable warriors, human beasts full of unparalleled rage. His allies receive a +10 bonus to Attack and gain the Rage state. Fortunately, the magic also protects them from their own anger; they will not lose control or attack each other.",
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30 foot radius."
+      },
+      "intermediate": {
+        "zeon": 70,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 foot radius."
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "800 foot radius."
+      },
+      "arcane": {
+        "zeon": 130,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1,500 foot radius."
+      }
+    }
+  },
+  {
+    "id": "speed-in-battle",
+    "name": "Speed in Battle",
+    "category": "secondary",
+    "path": "War",
+    "path_type": null,
+    "level": 24,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "The wizard channels the spirit of battle to his allies, making them fight as one man and anticipate their enemies’ actions.",
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30 foot radius / +10 to Initiative."
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 foot radius / +10 to Initiative."
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "800 foot radius / +20 to Initiative."
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1,500 foot radius / +20 to Initiative."
+      }
+    }
+  },
+  {
+    "id": "unleashed-destruction",
+    "name": "Unleashed Destruction",
+    "category": "secondary",
+    "path": "War",
+    "path_type": null,
+    "level": 34,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell increases the destructive power of any allies near the wizard, giving them a bonus to the damage dealt by all their attacks.",
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30 foot radius / +20 to Base Damage."
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 9,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 foot radius / +20 to Base Damage."
+      },
+      "advanced": {
+        "zeon": 160,
+        "min_int": 12,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "800 foot radius / +30 to Base Damage."
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 15,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1,500 foot radius / +40 to Base Damage."
+      }
+    }
+  },
+  {
+    "id": "final-protection",
+    "name": "Final Protection",
+    "category": "secondary",
+    "path": "War",
+    "path_type": null,
+    "level": 44,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell increases the Resistances and Armor Type of all allies close to the wizard.",
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30 foot radius / +10 to All Resistances / +1 Armor Type."
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 9,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 foot radius / +10 to All Resistances / +2 Armor Type."
+      },
+      "advanced": {
+        "zeon": 160,
+        "min_int": 12,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "800 foot radius / +20 to All Resistances / +2 Armor Type."
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 15,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1,500 foot radius / +30 to All Resistances / +3 Armor Type."
+      }
+    }
+  },
+  {
+    "id": "relentless-march",
+    "name": "Relentless March",
+    "category": "secondary",
+    "path": "War",
+    "path_type": null,
+    "level": 54,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell allows the wizard’s companions to march incessantly, resisting fatigue and the elements. For game purposes, this spell gives all allies within the spell’s area the effects of the Use of Necessary Energy and Elimination of Necessities Ki Abilities.",
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 6,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30 foot radius."
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 9,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 foot radius."
+      },
+      "advanced": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 foot radius."
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 100,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1,500 foot radius."
+      }
+    }
+  },
+  {
+    "id": "champion",
+    "name": "Champion",
+    "category": "secondary",
+    "path": "War",
+    "path_type": null,
+    "level": 64,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell channels the fighting spirit of a group into one warrior, creating a ruthless and near-invincible fighter. The spell gives various bonuses to combat skills if the champion chosen is fighting alongside his peers. Only one person for every 10 in a group may be affected by this spell.",
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+10 to All Actions / +10 to Base Damage / +10 to Initiative / +2 to Armor Type / Maximum group size 50."
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+10 to All Actions / +20 to Base Damage / +20 to Initiative / +3 to Armor Type / Maximum group size 100."
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 14,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+20 to All Actions / +20 to Base Damage / +20 to Initiative / +4 to Armor Type / Maximum group size 200."
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 16,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+30 to All Actions / +30 to Base Damage / +30 to Initiative / +5 to Armor Type / Maximum group size 400."
+      }
+    }
+  },
+  {
+    "id": "accurate-orders",
+    "name": "Accurate Orders",
+    "category": "secondary",
+    "path": "War",
+    "path_type": null,
+    "level": 74,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell allows the caster or one other target to transmit orders directly into the minds of his allies. These messages are automatically sent, without the need to talk out loud or to make any sign that might be noticed by unwanted people. The character can choose who can hear and who cannot, and can transmit several commands at once with a single thought.",
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "75 foot radius."
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 foot radius."
+      },
+      "advanced": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "800 foot radius."
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1,500 foot radius."
+      }
+    }
+  },
+  {
+    "id": "master-of-war",
+    "name": "Master of War",
+    "category": "secondary",
+    "path": "War",
+    "path_type": null,
+    "level": 84,
+    "action": "Passive",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "The wizard can fight physically with any weapon using his offensive and defensive Magic Projection for his Attack and Defense Abilities. The maximum ability level he can reach is determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Up to 200 Ability."
+      },
+      "intermediate": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Up to 250 Ability."
+      },
+      "advanced": {
+        "zeon": 400,
+        "min_int": 15,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Up to 300 Ability."
+      },
+      "arcane": {
+        "zeon": 500,
+        "min_int": 18,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "No limit."
+      }
+    }
+  },
+  {
+    "id": "beyond-the-end",
+    "name": "Beyond the End",
+    "category": "secondary",
+    "path": "War",
+    "path_type": null,
+    "level": 94,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell has power over the martial spirits of the caster’s mortal allies, allowing them to continue forward even on the threshold of death. All allies within the radius of the spell double the number of negative Life Points they can survive to (when using the optional rules for being Between Life and Death from the Game Master’s Toolkit, apply a +40 bonus to the PhR check) and suffer no penalties for fighting in that state.",
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 14,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "75 foot radius."
+      },
+      "intermediate": {
+        "zeon": 500,
+        "min_int": 16,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 foot radius."
+      },
+      "advanced": {
+        "zeon": 750,
+        "min_int": 18,
+        "maintenance": 75,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "800 foot radius."
+      },
+      "arcane": {
+        "zeon": 1000,
+        "min_int": 20,
+        "maintenance": 100,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1,500 foot radius / In addition to the effects described, anyone affected by this spell can keep fighting at full capacity for two turns after his death as long as the spell is maintained for those turns."
+      }
+    }
+  }
+]

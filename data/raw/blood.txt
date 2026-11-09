@@ -1,0 +1,181 @@
+Slow Pulse
+Level: 4 Action: Active
+Effect: This spell affects its target’s bloodstream, slowing it down if it is
+abnormally fast (as in the case of someone feeling extreme emotions such as
+anger or fear). The target feels relaxed and does not feel any strong emotions,
+whether from natural or magical causes. This feeling of calm is so strong that
+for the next minute the target suffers a –10 penalty to all physical actions. To
+resist the effects of this spell, the target must pass a MR check with a difficulty
+determined by the level of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 30 60 100 150
+Int. R. 5 8 10 13
+Basic: MR 80.
+Intermediate: MR 100.
+Advanced: MR 120.
+Arcane: MR 160.
+Maintenance: No
+Spell Type: Spiritual
+
+Clot
+Level: 14 Action: Active
+Effect: This spell magically heals wounds, preventing blood loss and closing
+cuts. A person can only be affected by this spell once per day.
+Level Basic Intermediate Advanced Arcane
+Zeon 40 80 120 160
+Int. R. 6 8 10 13
+Basic: Automatically stops any bleeding.
+Intermediate: Heals 20% of any Life Points lost from cuts or bleeding.
+Advanced: Heals 40% of any Life Points lost from cuts or bleeding.
+Arcane: Heals 60% of any Life Points lost from cuts or bleeding.
+Maintenance: No
+Spell Type: Effect
+
+Cold Blood
+Level: 24 Action: Active
+Effect: This spell changes the targets’ blood to accommodate external
+conditions. Thus, targets are not affected by adverse weather and can survive
+icy wastelands or burning deserts with equal ease. The spell may affect as many
+targets as the caster wishes, provided that the sum of their Presences is no
+greater than that allowed by the level of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 50 90 120 150
+Int. R. 6 9 12 15
+Basic: Maximum Presence 60.
+Intermediate: Maximum Presence 100.
+Advanced: Maximum Presence 180.
+Arcane: Maximum Presence 300.
+Maintenance: 5 / 20 / 25 / 30 Daily
+Spell Type: Effect
+
+Blood Creation
+Level: 34 Action: Active
+Effect: This spell creates an object or weapon from the wizard’s own blood,
+crystallized into an extremely hard magical material. Unfortunately, this requires
+the caster to sacrifice some of his blood, losing Life Points in the process that
+recover at the rate of a Sacrifice (i.e., 10 LP per day).
+Level Basic Intermediate Advanced Arcane
+Zeon 80 120 160 200
+Int. R. 6 9 12 15
+Basic: –10 Life Points / Quality +0 / Object up to 5 lbs.
+Intermediate: –20 Life Points / Quality +5 / Object up to 15 lbs.
+Advanced: –40 Life Points / Quality +10 / Object up to 50 lbs.
+Arcane: –60 Life Points / Quality +15 / Object up to 80 lbs.
+Maintenance: 10 / 40 / 50 / 60
+Spell Type: Effect
+
+Transfusion
+Level: 44 Action: Active
+Effect: This spell separates some of the vital energy from the caster’s blood
+and transfers it to an ally, effectively transferring some of the caster’s Life
+Points. The amount of Life Points the caster sacrifices is multiplied by an amount
+determined by the level of the spell. For example, if a wizard casts Transfusion
+at the Intermediate level and sacrifices 10 Life Points, his chosen ally will recover
+50 Life Points. This spell does not regenerate severed limbs or other permanent
+losses, but it does reduce penalties caused by Criticals by an amount equal to the
+Life Points the caster sacrificed. The Life Points the caster gives up recover at the
+rate of a Sacrifice (i.e., 10 LP per day).
+Level Basic Intermediate Advanced Arcane
+Zeon 40 60 80 100
+Int. R. 6 8 10 12
+Basic: 2x the Life Points sacrificed.
+Intermediate: 5x the Life Points sacrificed.
+Advanced: 10x the Life Points sacrificed.
+Arcane: 20x the Life Points sacrificed.
+Maintenance: No
+Spell Type: Effect
+
+Exsanguinate
+Level: 54 Action: Active
+Effect: This spell causes any wounds the target sustains to bleed horribly,
+greatly increasing the damage he suffers from attacks. While this spell is active,
+whenever the target is struck by an attack that deals Impact, Cut, or Thrust
+damage, he suffers additional damage as determined by the level of the spell.
+Exsanguinate will not amplify damage caused by the Heat, Cold, Electricity, or
+Energy Attack Types. To avoid this spell’s effects, the target must pass a MR
+check against the spell when it is first cast on him. Whenever the target suffers
+damage that has been amplified by the spell, he may repeat the MR check to end
+the spell’s effects after the damage has been suffered.
+Level Basic Intermediate Advanced Arcane
+Zeon 100 150 200 250
+Int. R. 6 9 12 15
+Basic: MR 120 / Increases damage taken by 50%.
+Intermediate: MR 140 / Doubles damage taken.
+Advanced: MR 160 / Triples damage taken.
+Arcane: MR 180 / Quadruples damage taken.
+Maintenance: 10 / 15 / 20 / 25
+Spell Type: Spiritual
+
+Vampirism
+Level: 64 Action: Active
+Effect: This spell causes a chosen weapon to drink some of the blood of anyone
+it injures, channeling their life force into its wielder to restore his lost Life Points. If
+it is used to attack a creature with Damage Resistance, the amount of Life Points
+drained is divided by 10.
+Level Basic Intermediate Advanced Arcane
+Zeon 150 200 250 300
+Int. R. 8 10 12 15
+Basic: Drains 10% of the points of damage dealt.
+Intermediate: Drains 20% of the points of damage dealt.
+Advanced: Drains 30% of the points of damage dealt.
+Arcane: Drains 40% of the points of damage dealt.
+Maintenance: 10 / 10 / 15 / 15
+Spell Type: Effect
+
+Tears of Blood
+Level: 74 Action: Active
+Effect: This horrific incantation causes the blood in the target’s heart to
+expand and burst the heart from within. The target must pass a PhR or MR
+check; if he fails by more than 40 points, he dies automatically, and if he fails by
+less than 40, he suffers damage as described in each level of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 280 320 360 400
+Int. R. 10 13 15 17
+Basic: PhR or MR 140 / 50 Base Damage.
+Intermediate: PhR or MR 180 / 100 Base Damage.
+Advanced: PhR or MR 220 / 150 Base Damage.
+Arcane: PhR or MR 260 / 200 Base Damage.
+Maintenance: No
+Spell Type: Spiritual
+
+Flowing Blood
+Level: 84 Action: Passive
+Effect: This spell makes the blood in the wizard’s allies’ bodies pump faster,
+greatly increasing their abilities. However, the pressure the targets’ hearts are
+under causes internal damage and may kill them if the spell continues for too
+long.
+Level Basic Intermediate Advanced Arcane
+Zeon 200 240 300 340
+Int. R. 10 12 15 17
+Basic: +10 to All Actions / –5 Life Points per turn.
+Intermediate: +20 to All Actions / –15 Life Points per turn.
+Advanced: +40 to All Actions / –30 Life Points per turn.
+Arcane: +60 to All Actions / –50 Life Points per turn.
+Maintenance: 40 / 50/ 60 / 70
+Spell Type: Effect
+
+World of Blood
+Level: 94 Action: Active
+Effect: This spell gives the caster complete control over all blood within the
+spell’s range. His mastery is such that he can do anything from crippling living
+creatures to forming objects from blood that has already been shed. Any
+individual within range must pass a PhR or MR check to avoid being controlled
+by the wizard like a marionette for one turn and suffering damage equal to
+twice the degree of failure. Once a target passes the check, he cannot be
+controlled or damaged in this manner for the rest of the duration of the spell.
+The caster can affect one target per turn in this manner, either the same target
+again or a different target as he chooses. Affecting a target in this manner is an
+Active Action. If the caster wants to use blood as a means of attack or defense
+(by creating blades, thorns, or shields, for example), he can do so at will using
+his Magic Projection. Both the damage of his attacks and the strength of his
+shields are determined by the level of the spell, but he can only use this part of
+the ability if there is enough blood around him to do so.
+Level Basic Intermediate Advanced Arcane
+Zeon 280 320 360 400
+Int. R. 10 13 15 17
+Basic: PhR or MR 120 / 60 Damage / 500 Life Points.
+Intermediate: PhR or MR 140 / 90 Damage / 1,200 Life Points.
+Advanced: PhR or MR 160 / 120 Damage / 2,400 Life Points.
+Arcane: PhR or MR 180 / 150 Damage / 3,600 Life Points.
+Maintenance: No
+Spell Type: Spiritual

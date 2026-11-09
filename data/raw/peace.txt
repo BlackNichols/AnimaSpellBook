@@ -1,0 +1,171 @@
+Shield of Salvation
+Level: 4 Action: Passive
+Effect: This spell creates a protective barrier that protects against all kinds
+of attacks. It can protect several targets, as indicated by the level of the spell,
+without suffering extra damage or applying a penalty to the caster’s Defense
+Ability (see Anima: Beyond Fantasy page 93). The targets must stay within
+the listed radius of the caster. If a target leaves that area, he loses the protection
+until he returns to that area. The caster can be, but does not have to be, one of
+the people protected.
+Level Basic Intermediate Advanced Arcane
+Zeon 50 100 160 240
+Int. R. 6 8 10 14
+Basic: 60 foot radius / The shield has 300 Life Points / It can protect up to two
+people without penalty.
+Intermediate: 150 foot radius / The shield has 900 Life Points / It can protect
+up to five people without penalty.
+Advanced: 300 foot radius / The shield has 1,500 Life Points / It can protect
+up to eight people without penalty.
+Arcane: 500 foot radius / The shield has 3,000 Life Points / It can protect up
+to 12 people without penalty.
+Maintenance: 5 / 15 / 20 / 25
+Spell Type: Defense
+
+Internal Balance
+Level: 14 Action: Passive
+Effect: This spell causes a level of inner peace in the wizard or his target that
+makes him immune to any effect that might influence his emotions.
+Level Basic Intermediate Advanced Arcane
+Zeon 120 180 240 300
+Int. R. 6 9 12 15
+Basic: The character becomes immune to negative psychological states.
+Intermediate: As Basic level, but the character also gains +40 to his Resistance
+checks against any effects that try to alter his emotions.
+Advanced: As Intermediate level, but the bonus to Resistance checks is +80.
+Arcane: The character cannot be affected by any effect that would alter his
+behavior against his will.
+Maintenance: 15 / 20 / 25 / 30 Daily
+Spell Type: Effect
+
+Defender
+Level: 24 Action: Active
+Effect: This spell grants a bonus to the Defensive Ability of the targets when
+they use the Pure Defense maneuver. It affects as many people as the caster
+desires, provided that the sum of their Presences is no greater than the amount
+allowed by the level of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 60 100 140 200
+Int. R. 6 8 10 12
+Basic: +20 to Defense Ability / Maximum Presence 60.
+Intermediate: +20 to Defense Ability / Maximum Presence 100.
+Advanced: +30 to Defense Ability / Maximum Presence 150.
+Arcane: +40 to Defense Ability / Maximum Presence 250.
+Maintenance: 10 / 10 / 15 / 20
+Spell Type: Effect
+
+Detect Harmony
+Level: 34 Action: Active
+Effect: This spell allows the wizard to perceive whether those within the spell’s
+radius have peaceful or violent feelings as long as they do not pass a MR check
+with a difficulty determined by the level of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 80 100 120 140
+Int. R. 8 10 12 14
+Basic: MR 100 / 30 foot radius.
+Intermediate: MR 120 / 80 foot radius.
+Advanced: MR 140 / 150 foot radius.
+Arcane: MR 160 / 300 foot radius.
+Maintenance: 10 / 10 / 15 / 15
+Spell Type: Detection
+
+Haven of Peace
+Level: 44 Action: Active
+Effect: This spell creates an area within which all aggressive instinct disappears.
+Anyone who enters it must pass a MR check at a difficulty determined by the
+level of the spell or lose any desire to behave violently. A person successfully
+affected by this spell cannot repeat the check unless something happens that
+would be reasonably likely to renew his aggressive behavior. Someone who
+passes the MR check does not need to check again unless he leaves the spell’s
+area and returns. The area remains centered on the location it was cast.
+Level Basic Intermediate Advanced Arcane
+Zeon 160 220 280 300
+Int. R. 8 10 12 14
+Basic: MR 100 / 30 foot radius.
+Intermediate: MR 120 / 80 foot radius.
+Advanced: MR 140 / 150 foot radius.
+Arcane: MR 160 / 300 foot radius.
+Maintenance: 20 / 25 / 30 / 30 Daily
+Spell Type: Automatic
+
+Sign of Peace
+Level: 54 Action: Passive
+Effect: This spell negates an attack action directed against the caster. He can
+affect any attack that has him as a target (even if other individuals would also
+be affected by the attack) and prevent it from doing any harm whatsoever. To
+avoid this effect, the attack’s initiator must pass a MR check with a difficulty
+determined by the level of the spell. An attack can only be affected once by
+Sign of Peace.
+Level Basic Intermediate Advanced Arcane
+Zeon 100 180 260 340
+Int. R. 8 10 12 14
+Basic: MR 120.
+Intermediate: MR 160.
+Advanced: MR 200.
+Arcane: MR 240.
+Maintenance: No
+Spell Type: Automatic
+
+Absolute Defense
+Level: 64 Action: Active
+Effect: This spell allows the caster to apply a bonus to his defensive Magic
+Projection as long as he does not take any offensive actions during a given turn.
+Level Basic Intermediate Advanced Arcane
+Zeon 50 80 110 140
+Int. R. 6 9 12 15
+Basic: +20 to defensive Magic Projection.
+Intermediate: +30 to defensive Magic Projection.
+Advanced: +40 to defensive Magic Projection.
+Arcane: +50 to defensive Magic Projection.
+Maintenance: 10 / 10 / 15 / 15
+Spell Type: Effect
+
+Wings of Salvation
+Level: 74 Action: Passive
+Effect: This spell creates a protective barrier that protects against any attack.
+The spell protects all individuals within the radius of the spell (whom the caster
+wishes to protect) without suffering extra damage and without applying a
+penalty to the Defensive Ability of the caster.
+Level Basic Intermediate Advanced Arcane
+Zeon 150 250 350 450
+Int. R. 9 11 13 15
+Basic: 15 foot radius / The shield has 500 Life Points.
+Intermediate: 50 foot radius / The shield has 1,200 Life Points.
+Advanced: 80 foot radius / The shield has 2,500 Life Points.
+Arcane: 150 foot radius / The shield has 5,000 Life Points.
+Maintenance: 15 / 25 / 35 / 45
+Spell Type: Defense
+
+Absolute Peace
+Level: 84 Action: Active
+Effect: The target of this spell is filled with pure peace and loses all desire for
+violence. Someone who fails the MR check cannot consciously take an offensive
+action against anyone ever again. Since the target’s violent nature disappears
+altogether, this spell requires no maintenance.
+Level Basic Intermediate Advanced Arcane
+Zeon 120 180 240 300
+Int. R. 9 11 13 15
+Basic: MR 120.
+Intermediate: MR 140.
+Advanced: MR 160.
+Arcane: MR 180.
+Maintenance: No
+Spell Type: Spiritual
+
+Peace on Earth
+Level: 94 Action: Active
+Effect: When this spell is cast, it creates an area of total non-violence, where
+no conflicts or wars can take place. Everyone who enters the area must pass a
+MR check or forget the very concept of violence or confrontation and become
+unable to carry out violent actions. A person who fails the check cannot repeat
+the check unless he leaves the spell area (ending the effect for him) and re-enters
+it, while those who pass the check must re-check every time they try to perform
+a violent act within the area.
+Level Basic Intermediate Advanced Arcane
+Zeon 350 600 1,000 1,600
+Int. R. 8 10 12 14
+Basic: MR 120 / 1 mile radius.
+Intermediate: MR 140 / 3 mile radius.
+Advanced: MR 160 / 10 mile radius.
+Arcane: MR 180 / 30 mile radius.
+Maintenance: 35 / 60 / 100 / 160 Daily
+Spell Type: Automatic

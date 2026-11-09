@@ -1,0 +1,181 @@
+Eyes of the Other Side
+Level: 4 Action: Active
+Effect: This spell allows the wizard to see people’s deepest fears as well as their
+disorders and madnesses. While this spell is active, anyone capable of seeing
+spirits notices that the character’s eyes have turned completely black, as if an
+inner darkness has devoured them. To avoid this spell’s effects, an individual
+must pass a MR or PsR check against a difficulty level determined by the level
+of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 30 60 90 120
+Int. R. 5 8 11 14
+Basic: MR or PsR 120 / The character can sense if a person is afraid or not.
+Intermediate: MR or PsR 140 / The character can perceive not only whether
+a person is or is not scared at the moment, but also the cause and where it
+comes from.
+Advanced: MR or PsR 160 / The character can perceive people’s general fears
+and problems, even when they do not look scared.
+Arcane: MR or PsR 180 / The character perceives both disorders and imagined
+fears, and sees visual representations of those fears walk beside their hosts.
+Maintenance: 5 / 5 / 5 / 10
+Spell Type: Detection
+
+Shadow of Fear
+Level: 14 Action: Active
+Effect: This spell affects an area, making it dark and gloomy to others. It is important
+to note that different people can perceive the same area in a different way, depending
+on what they consider lugubrious, but all will find it depressing.
+Level Basic Intermediate Advanced Arcane
+Zeon 40 70 100 130
+Int. R. 6 9 12 15
+Basic: 150 foot radius.
+Intermediate: 800 foot radius.
+Advanced: 1,500 foot radius.
+Arcane: 1 mile radius.
+Maintenance: No
+Spell Type: Effect
+
+Whispers from the Other Side
+Level: 24 Action: Active
+Effect: This spell fills an area with whispering voices that cause primal terror
+in the hearts of men. Anyone within range of the spell who hears the voices for
+more than five turns must pass a MR or PsR check at a difficulty determined by
+the level of the spell or suffer Fear.
+Level Basic Intermediate Advanced Arcane
+Zeon 60 100 160 200
+Int. R. 6 9 12 15
+Basic: MR or PsR 80 / 30 foot radius.
+Intermediate: MR or PsR 100 / 80 foot radius.
+Advanced: MR or PsR 120 / 150 foot radius.
+Arcane: MR or PsR 140 / 300 foot radius.
+Maintenance: 5 / 5 / 10 / 10
+Spell Type: Automatic
+
+Trail of Madness
+Level: 34 Action: Active
+Effect: The wizard fills his target’s mind with insane ideas and concepts,
+upsetting his perception of the world and making him go temporarily mad. The
+target of this spell must pass a MR or PsR check against a difficulty determined
+by the level of the spell or suffer a temporary insanity such as psychosis,
+schizophrenia, or paranoia and lose the ability to control his own actions. An
+affected person may only repeat his Resistance check once per day.
+Level Basic Intermediate Advanced Arcane
+Zeon 80 100 120 140
+Int. R. 7 10 13 15
+Basic: MR or PsR 120.
+Intermediate: MR or PsR 140.
+Advanced: MR or PsR 160.
+Arcane: MR or PsR 180.
+Maintenance: 5 / 10 / 15 / 20
+Spell Type: Spiritual
+
+Dream Stalker
+Level: 44 Action: Active
+Effect: This spell allows the wizard to convert his victim’s dreams into a prison
+where his soul is trapped in an endless nightmare. The target is immersed in an
+eternal sleep in which he is constantly beset by unspeakable monsters and other
+creatures that chase and try to kill him. This spell must be cast on an individual
+who is dreaming, and if he fails his MR or PsR check, he cannot wake up until the
+spell is ended. The target is only entitled to a new check each time he considers
+himself to have bested the nightmares in the hellish world he has been cast into.
+Level Basic Intermediate Advanced Arcane
+Zeon 100 140 180 240
+Int. R. 7 10 13 15
+Basic: MR or PsR 120.
+Intermediate: MR or PsR 160.
+Advanced: MR or PsR 200.
+Arcane: MR or PsR 240.
+Maintenance: 10 / 15 / 20 / 25 Daily
+Spell Type: Spiritual
+
+Heighten Madness
+Level: 54 Action: Active
+Effect: This spell exacerbates the fears and follies of everyone within its area
+of effect. Everyone in the area who does not pass a MR or PsR check becomes
+terrified of whatever frightens him the most and becomes temporarily insane,
+suffering from profound dementia. The check may only be repeated once per
+day or when a target’s Resistances increase.
+Level Basic Intermediate Advanced Arcane
+Zeon 120 180 240 300
+Int. R. 6 9 12 15
+Basic: MR or PsR 120 / 150 foot radius.
+Intermediate: MR or PsR 140 / 300 foot radius.
+Advanced: MR or PsR 160 / 800 foot radius.
+Arcane: MR or PsR 180 / 1,500 foot radius.
+Maintenance: 15 / 20 / 25 / 30 Daily
+Spell Type: Spiritual
+
+Terror
+Level: 64 Action: Active
+Effect: This spell temporarily causes the Terror state in everyone around the
+caster. The wizard may decide the cause of the terror for those affected.
+Level Basic Intermediate Advanced Arcane
+Zeon 80 140 200 240
+Int. R. 8 10 12 15
+Basic: MR or PsR 120 / 30 foot radius.
+Intermediate: MR or PsR 140 / 150 foot radius.
+Advanced: MR or PsR 180 / 300 foot radius.
+Arcane: MR or PsR 200 / 800 foot radius.
+Maintenance: 10 / 15 / 20 / 25
+Spell Type: Spiritual
+
+Lord of Fools
+Level: 74 Action: Active
+Effect: This spell grants the caster the ability to control any person suffering
+from dementia, altering his perceptions of reality at will. Those affected must be
+within the spell’s area of effect and suffering from severe dementia. Those who
+have only a temporary insanity can apply a +40 to Resistance checks against
+this spell. Those affected may only repeat the check once per day or when they
+increase their Resistances.
+Level Basic Intermediate Advanced Arcane
+Zeon 200 300 400 500
+Int. R. 10 12 14 16
+Basic: MR or PsR 140 / 300 foot radius.
+Intermediate: MR or PsR 160 / 800 foot radius.
+Advanced: MR or PsR 180 / 1 mile radius.
+Arcane: MR or PsR 200 / 3 mile radius.
+Maintenance: No
+Spell Type: Automatic
+
+Incarnation of Fear
+Level: 84 Action: Active
+Effect: This spell creates a pure embodiment of a person’s fear, a Being
+Between Worlds born from the deepest terrors of the target’s subconscious.
+The creature is real in all respects, but only the target and individuals who fear
+the same thing as the target are able to see it or interact with it (similarly, the
+creature can only see or touch those who fear it). When casting this spell,
+the caster must choose a person in his presence to be the target. The target
+is automatically affected (without the need to make an attack roll) and must
+pass a MR or PsR check at a difficulty determined by the level of the spell. If
+the target fails the check, a being with the likeness of the target’s fears instantly
+takes shape. The being’s behavior depends on the nature of the target’s fears.
+It will always be inimical to him, but will not necessarily simply attack him. The
+creature can have any powers or class level, provided the powers do not require
+higher than Gnosis 30 and the class level does not exceed the limits imposed by
+the level of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 150 250 500 700
+Int. R. 10 12 15 18
+Basic: MR or PsR 140 / Level 4.
+Intermediate: MR or PsR 160 / Level 8.
+Advanced: MR or PsR 180 / Level 12.
+Arcane: MR or PsR 200 / Level 15.
+Maintenance: 15 / 25 / 50 / 70
+Spell Type: Automatic
+
+Fear Made Flesh
+Level: 94 Action: Active
+Effect: This spell causes the character to become a source of absolute terror.
+He causes fear in all types of creatures, even those that are normally immune
+to psychological effects. Anyone in his presence automatically suffers from Fear,
+without any possible Resistance, and must also pass a MR or PsR check or
+suffer Terror.
+Level Basic Intermediate Advanced Arcane
+Zeon 250 350 450 600
+Int. R. 11 13 15 17
+Basic: MR or PsR 120.
+Intermediate: MR or PsR 140.
+Advanced: MR or PsR 200.
+Arcane: MR or PsR 240.
+Maintenance: No
+Spell Type: Automatic

@@ -1,0 +1,632 @@
+[
+  {
+    "id": "detect-sin",
+    "name": "Detect Sin",
+    "category": "secondary",
+    "path": "Sin",
+    "path_type": null,
+    "level": 4,
+    "action": "Active",
+    "types": [
+      "Detection"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell allows the caster to see the sins the target has committed. He will not get specific information about them (he will know generally what type of sin the target committed but not specifically what it was), but can feel how severe it was and approximately how long ago it happened. For example, he might know that a person has lied recently, but not where or why he lied. The caster will detect the greatest sins first, starting with the most recent. Multiple sins of the same type can be detected. Casting the spell on the same target a second time will provide the same sins (unless the Resistance roll is different, in which case more or less can be revealed, or unless the target has committed new serious sins).",
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120."
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140."
+      },
+      "advanced": {
+        "zeon": 90,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160."
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180."
+      }
+    }
+  },
+  {
+    "id": "imbue-with-sin",
+    "name": "Imbue with Sin",
+    "category": "secondary",
+    "path": "Sin",
+    "path_type": null,
+    "level": 14,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "The target of the spell is compelled to commit the cardinal sin that he is the most closely associated with. A glutton would feel the need to eat constantly and insatiably, while a lustful person would fall into the arms of anyone he considered remotely attractive. The target is only affected if he fails a MR check, and he can check again to end the spell every time he is confronted with something that might cause him to sin in this way — although even if he passes, his normal impulses may still drive him to sin.",
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120."
+      },
+      "intermediate": {
+        "zeon": 70,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140."
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160."
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180."
+      }
+    }
+  },
+  {
+    "id": "gluttony",
+    "name": "Gluttony",
+    "category": "secondary",
+    "path": "Sin",
+    "path_type": null,
+    "level": 24,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell allows the wizard to automatically gain a portion of all the Zeon points (rounded up to the nearest 5) and Ki points spent in the spell’s radius around him. For example, if a wizard has Gluttony maintained at its Basic level and another wizard casts a spell inside its range that costs 100 Zeon, the wizard maintaining Gluttony will gain 10 of those Zeon points. Gluttony has no effect on Innate spells or magical powers that do not consume Zeon or Ki, and it also does not affect the caster’s own spells or Ki Abilities.",
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 7,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30 foot radius / Absorbs 10%."
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "60 foot radius / Absorbs 20%."
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 11,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "130 foot radius / Absorbs 30%."
+      },
+      "arcane": {
+        "zeon": 180,
+        "min_int": 13,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 foot radius / Absorbs 50%."
+      }
+    }
+  },
+  {
+    "id": "lust",
+    "name": "Lust",
+    "category": "secondary",
+    "path": "Sin",
+    "path_type": null,
+    "level": 34,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "The target of this spell becomes a magnet for anyone attracted to his gender. Anyone who sees the target and does not pass a MR check with a difficulty determined by the level of the spell feels immensely attracted to the target, while those who fail the check by more than 40 points feel an obsessive and unhealthy attraction, abandoning reason and making every effort to possess the object of their lust. Any individual affected can repeat the check every hour. The target of the spell can resist it as well by passing a MR check with the same difficulty, repeatable every hour.",
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 7,
+        "maintenance": 5,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140."
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": 5,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160."
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 11,
+        "maintenance": 10,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180."
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 13,
+        "maintenance": 10,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 200."
+      }
+    }
+  },
+  {
+    "id": "greed",
+    "name": "Greed",
+    "category": "secondary",
+    "path": "Sin",
+    "path_type": null,
+    "level": 44,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell snatches away something that is in the target’s possession, making it disappear from him and appear in front of the caster. The object chosen does not need to have a clear way to “move” towards the caster; the spell can teleport any object, from one held in the target’s hands to the clothes or armor he is wearing. The object chosen cannot have a maximum Presence exceeding that allowed by the level of the spell. Someone who is aware that one of his possessions is a target of this spell can try to resist its effects by passing a MR check.",
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / Maximum Presence 50."
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140 / Maximum Presence 80."
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / Maximum Presence 100."
+      },
+      "arcane": {
+        "zeon": 260,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180 / Maximum Presence 120."
+      }
+    }
+  },
+  {
+    "id": "sloth",
+    "name": "Sloth",
+    "category": "secondary",
+    "path": "Sin",
+    "path_type": null,
+    "level": 54,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell causes the target to fall into a deep state of laziness. For the duration of the spell, he can only take Passive Actions. To resist the effects of this spell, the target must pass a MR check with a difficulty determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 7,
+        "maintenance": 5,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 100."
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 9,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120."
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 11,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140."
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 13,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160."
+      }
+    }
+  },
+  {
+    "id": "pride",
+    "name": "Pride",
+    "category": "secondary",
+    "path": "Sin",
+    "path_type": null,
+    "level": 64,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "The target of this spell feels enormous self-confidence and disregards the skills of those around him. Some of the target’s abilities are increased, giving him bonuses determined by the level of the spell. However, his special abilities are very limited, and he becomes unable to use Ki Abilities or Techniques, Psychic Powers of Levels 2 or 3, or spells of a level higher than 40. To avoid the effects of this spell, the target must pass a MR check at a difficulty determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / +10 to All Actions / +50 to Style."
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": 5,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140 / +20 to All Actions / +100 to Style."
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 11,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / +20 to All Actions / +150 to Style / +100 to Withstand Pain."
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 13,
+        "maintenance": 10,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180 / +30 to All Actions / +200 to Style / +150 to Withstand Pain."
+      }
+    }
+  },
+  {
+    "id": "anger",
+    "name": "Anger",
+    "category": "secondary",
+    "path": "Sin",
+    "path_type": null,
+    "level": 74,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "The target of this spell enters an uncontrollable berserker rage, immediately attacking the object of his fury. The wizard may choose both a target for the spell and a person to be the object of this rage. To withstand the effects of this spell, the target must pass a MR check with a difficulty determined by the level of the spell. In addition to the normal conditions for ending a spell, when the person who is the object of the rage is dead, the spell ends.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120."
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 10,
+        "maintenance": 5,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140."
+      },
+      "advanced": {
+        "zeon": 180,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160."
+      },
+      "arcane": {
+        "zeon": 220,
+        "min_int": 14,
+        "maintenance": 10,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180."
+      }
+    }
+  },
+  {
+    "id": "envy",
+    "name": "Envy",
+    "category": "secondary",
+    "path": "Sin",
+    "path_type": null,
+    "level": 84,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "The target of this spell must pass a MR check at a difficulty determined by the level of the spell. If he fails, he suffers all effects that the wizard suffers, both positive and negative, as long as the spell is maintained. For example, if the caster suffers damage, the target will suffer the same damage, or if the caster is affected by a spell, the target will also be affected.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120."
+      },
+      "intermediate": {
+        "zeon": 150,
+        "min_int": 11,
+        "maintenance": 5,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140."
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 13,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160."
+      },
+      "arcane": {
+        "zeon": 250,
+        "min_int": 15,
+        "maintenance": 10,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180."
+      }
+    }
+  },
+  {
+    "id": "seed-of-evil",
+    "name": "Seed of Evil",
+    "category": "secondary",
+    "path": "Sin",
+    "path_type": null,
+    "level": 94,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell causes an affected individual to become inherently evil and lose concept of morality. The character will immediately begin to act wickedly. A truly pure person who lacks any concept of evil is immune to this spell. To withstand the effects of this spell, the target must pass a MR check with a difficulty determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120."
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140."
+      },
+      "advanced": {
+        "zeon": 260,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160."
+      },
+      "arcane": {
+        "zeon": 320,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180."
+      }
+    }
+  }
+]

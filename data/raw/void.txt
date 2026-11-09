@@ -1,0 +1,189 @@
+Shadow Void
+Level: 4 Action: Active
+Effect: This spell brings into being a fragment of the void, a mere shadow of
+nothingness that partially absorbs light, reduces the amount of oxygen in the
+area, and takes away vital energy from its surroundings. Anyone in the area
+affected by this spell must pass a MR check or lose a point of Fatigue if they are
+living beings or two Intensities if they are an elemental.
+Level Basic Intermediate Advanced Arcane
+Zeon 30 60 90 120
+Int. R. 5 8 11 14
+Basic: MR 80 / 15 foot radius.
+Intermediate: MR 100 / 30 foot radius.
+Advanced: MR 120 / 50 foot radius.
+Arcane: MR 150 / 100 foot radius.
+Maintenance: No
+Spell Type: Spiritual
+
+Void Wave
+Level: 14 Action: Active
+Effect: This spell releases a small wave of void capable of disintegrating any
+supernatural protection. It causes no damage to enemies, but has devastating
+effects when directed against a supernatural shield. A Void Wave is invisible to
+the naked eye, except to those able to see magic.
+Level Basic Intermediate Advanced Arcane
+Zeon 30 60 90 120
+Int. R. 6 9 12 15
+Basic: 120 Base Damage against shields.
+Intermediate: 250 Base Damage against shields.
+Advanced: 400 Base Damage against shields.
+Arcane: 600 Base Damage against shields.
+Maintenance: No
+Spell Type: Attack
+
+Void Shield
+Level: 24 Action: Passive
+Effect: This spell creates a barrier that absorbs particles and converts all attacks
+received into nothingness. Besides having Life Points like a normal supernatural
+shield, the barrier automatically cancels any supernatural power that strikes
+it if the attacker cannot pass a Willpower or Power check with a difficulty
+determined by the level of the spell. That is, if an opponent launches an Attack
+or Spiritual spell against a wizard who is protected behind an Intermediate level
+Void Shield and the wizard makes a successful defense, the attacker must pass
+a Willpower or Power 16 check or his attack is canceled without causing any
+damage to the shield. Similarly, any inanimate physical object stopped by the
+shield must pass a PhR check or be destroyed immediately.
+Level Basic Intermediate Advanced Arcane
+Zeon 50 90 120 150
+Int. R. 6 9 12 15
+Basic: PhR 100 / 200 Life Points / Difficulty 14.
+Intermediate: PhR 120 / 300 Life Points / Difficulty 16.
+Advanced: PhR 140 / 400 Life Points / Difficulty 18.
+Arcane: PhR 160 / 500 Life Points / Difficulty 20.
+Maintenance: 5 / 20 / 25 / 30
+Spell Type: Defense
+
+Reality Vortex
+Level: 34 Action: Active
+Effect: This ability creates an area full of millions of microscopic voids around
+the caster. Any individual who is in it for more than a turn must pass a MR check
+each turn or suffer damage equal to half the degree of failure, lose Ki points
+equal to half the degree of failure, and lose Zeon points equal to the degree of
+failure. This spell does not discriminate between people within the vortex, and
+affects everyone, including the caster. The effect is stationary once cast.
+Level Basic Intermediate Advanced Arcane
+Zeon 80 120 180 240
+Int. R. 7 10 13 15
+Basic: MR 100 / 15 foot radius.
+Intermediate: MR 120 / 30 foot radius.
+Advanced: MR 140 / 60 foot radius.
+Arcane: MR 160 / 130 foot radius.
+Maintenance: 5 / 10 / 15 / 20
+Spell Type: Automatic
+
+Black Blade of Doom
+Level: 44 Action: Active
+Effect: This spell summons the void in its purest form, shaping a crackling blade
+of power in the caster’s hands. This weapon can be wielded to make attacks
+with the Cut Attack Type using the caster’s Magic Projection or Attack Ability
+and completely ignores all Armor Types. The wizard can keep the blade active
+to make further attacks in later turns, but each turn he wishes to do so, he must
+pass a Willpower check against a difficulty of 12 or lose control of the sword.
+Every time he passes, the difficulty of the next check increases by 1. If he fails,
+the sword turns against him, attacking with his best Attack Ability +50, and then
+disappears.
+Level Basic Intermediate Advanced Arcane
+Zeon 100 150 200 250
+Int. R. 6 9 12 15
+Basic: 80 Base Damage
+Intermediate: 120 Base Damage.
+Advanced: 160 Base Damage.
+Arcane: 200 Base Damage.
+Maintenance: 5 / 10 / 10 / 15
+Spell Type: Attack
+
+Void Aura
+Level: 54 Action: Active
+Effect: This spell covers the caster with an aura of void that protects him
+from the effects of supernatural attacks, providing Armor Type against Energy
+and devouring any spell or Psychic Power with a level below that indicated.
+Unfortunately, this spell does not discriminate between friendly and enemy
+powers, and devours all without distinction. The aura is invisible, but the wizard
+and his immediate surroundings seem tenuously attached to reality.
+Level Basic Intermediate Advanced Arcane
+Zeon 120 180 240 350
+Int. R. 6 9 12 15
+Basic: Armor Type 4 / Zeonic Value 60 / Psychic Potential 80.
+Intermediate: Armor Type 6 / Zeonic Value 90 / Psychic Potential 120.
+Advanced: Armor Type 8 / Zeonic Value 120 / Psychic Potential 140.
+Arcane: Armor Type 10 / Zeonic Value 160 / Psychic Potential 180.
+Maintenance: 15 / 20 / 25 / 35 Daily
+Spell Type: Effect
+
+Black Spots
+Level: 64 Action: Active
+Effect: This spell creates a vortex around the wizard filled with vortices of
+nothingness that move up and down chaotically. Anyone within that area must
+pass an Athletics, Acrobatics, or Defense check against a difficulty set by the spell
+level or collide with a black spot. If this occurs, the character must pass a MR or
+PhR check with a difficulty determined by the spell level or suffer damage equal
+to half the degree of failure, lose Ki points equal to half the degree of failure,
+and lose Zeon points equal to the degree of failure. It is impossible to designate
+targets for this spell; everyone in the area is affected, including the caster. Once
+cast, the area of effect moves with the caster; he is always at the center of it.
+Level Basic Intermediate Advanced Arcane
+Zeon 150 250 350 500
+Int. R. 8 10 12 15
+Basic: MR or PhR 120 / Difficulty 120 / 30 foot radius.
+Intermediate: MR or PhR 140 / Difficulty 140 / 60 foot radius.
+Advanced: MR or PhR 160 / Difficulty 180 / 150 foot radius.
+Arcane: MR or PhR 180 / Difficulty 240 / 300 foot radius.
+Maintenance: 15 / 25 / 35 / 50
+Spell Type: Automatic
+
+Protection from Void
+Level: 74 Action: Active
+Effect: This spell covers the caster in supernatural energy that repels void
+effects. Any spell or power related to the void has no effect on him and cannot
+damage him.
+Level Basic Intermediate Advanced Arcane
+Zeon 140 200 280 400
+Int. R. 10 12 14 16
+Basic: Protects against spells from of this sub-Path.
+Intermediate: As Basic level, but the character is also immune to effects and
+attacks from void-based creatures, such as Etrien Gnosos.
+Advanced: The character is immune to any effects related to the void, but not
+the primal void.
+Arcane: As Advanced level, but the character can survive even in the primal
+void.
+Maintenance: 15 / 20 / 30 / 40
+Spell Type: Attack
+
+Implosion
+Level: 84 Action: Active
+Effect: This terrifying spell creates a point of nothingness on the inside of
+something that attracts all its interior mass, causing it to implode and disappear
+completely. Since this spell absorbs flesh, bones, and organs, it not only causes
+damage but also inflicts an automatic Critical with a bonus determined by the level
+of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 250 500 750 1,000
+Int. R. 14 16 18 20
+Basic: 200 Base Damage / +20 to Critical level.
+Intermediate: 400 Base Damage / +40 to Critical level.
+Advanced: 500 Base Damage / +60 to Critical level.
+Arcane: 800 Base Damage / +100 to Critical level.
+Maintenance: No
+Spell Type: Attack
+
+Door to Nowhere
+Level: 94 Action: Passive
+Effect: This spell opens a portal into absolute nothingness, the primal void
+that will one day devour the universe. Anyone who walks through the door will
+automatically cease to exist without any possible Resistance check. Only beings
+with Gnosis 35 or more, objects of equivalent Presence, or individuals who
+are somehow protected against the void can survive there, but even they will
+slowly lose points from their Power Characteristic at a rate of 1 per day, which
+recuperate at the same rate once the individuals are out of the void. Naturally,
+someone within the portal is virtually immune to any kind of attack, since
+attacks will dissipate into the void. The dimensions of the portal are determined
+by the level of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 300 500 800 1,200
+Int. R. 11 13 15 18
+Basic: 3 foot radius.
+Intermediate: 8 foot radius.
+Advanced: 25 foot radius.
+Arcane: 75 foot radius.
+Maintenance: 30 / 50 / 80 / 120
+Spell Type: Effect

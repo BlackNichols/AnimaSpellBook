@@ -12,7 +12,7 @@ This specification defines the LaTeX layout and generation rules to render the J
 * **Column Separation**: `0.8cm` separation with a subtle vertical rule (`0.2pt`).
 * **Visual Hierarchy**:
   * **Spell Name**: Large, bold, stylized dark red (`RGB: 128, 16, 16`).
-  * **Classification Subtitle**: Small, bold, dark grey (`RGB: 60, 60, 60`) indicating Path, Level, Action, Type, AoE status, and Magic Resistance cap.
+  * **Classification Subtitle**: Small, bold, dark grey (`RGB: 60, 60, 60`) indicating Path, Level, Action, Type, AoE status, and resistance cap.
   * **Concept Description**: Small, italicized body text.
   * **Metrics Table**: Compact 4-column summary table (`Init.`, `Inter.`, `Adv.`, `Arcane`) with Zeon, Minimum Intelligence, and Maintenance.
   * **Grade Descriptions**: Detailed mechanics formatted with bold grade labels.
@@ -28,8 +28,8 @@ When generating LaTeX from the JSON database:
 | Special characters (`%`, `&`, `_`, `#`) | Must be escaped: `\%`, `\&`, `\_`, `\#`. |
 | `maintenance == null` | Rendered as `--` (dash) to indicate unmaintainable. |
 | `maintenance` numeric | Rendered as integer value. If `daily_maintenance == true`, optionally marked (e.g. `10 (D)` or noted in header). |
-| `magic_resistance_cap == null` | Omitted from header or marked `MR: --`. |
-| `magic_resistance_cap` numeric | Formatted as `MR: <val>` (e.g. `MR: 140`). |
+| `resistance_cap == null` | Omitted from header or marked `Res: --`. |
+| `resistance_cap` numeric | Formatted as `<types>: <val>` using `resistance_types` (e.g. `MR: 140`, `MR/PsR: 120`, `PhR: 140`). |
 | `is_aoe == true` | Formatted as `AoE: Yes` (or `Área`). |
 | `category == "free_access"` | Header shows bracket: `Free Access [10-20]`. |
 
@@ -42,7 +42,7 @@ The standard layout is packaged into an 8-argument macro:
 ```latex
 \newcommand{\animaspell}[8]{
   % #1: Name (e.g. Bola de Fuego)
-  % #2: Subheader (Path/Level, Action, Type, Maint frequency, MR, AoE)
+  % #2: Subheader (Path/Level, Action, Type, Maint frequency, Resistance, AoE)
   % #3: Zeon values row (z1 & z2 & z3 & z4)
   % #4: Intelligence values row (i1 & i2 & i3 & i4)
   % #5: Maintenance values row (m1 & m2 & m3 & m4)
@@ -188,10 +188,16 @@ def format_maint(val, is_daily):
         return "--"
     return f"{val} (D)" if is_daily else str(val)
 
+def format_resistance(resistance_cap, resistance_types):
+    if resistance_cap is None:
+        return ""
+    label = "/".join(resistance_types) if resistance_types else "Res"
+    return f" $\\bullet$ {label}: {resistance_cap}"
+
 template_code = r"""
 \animaspell
   { {{- escape_tex(spell.name) -}} }
-  { {{- spell.path or "Free Access" }} (Level {{ spell.level if spell.level else (spell.level_bracket[0] ~ "-" ~ spell.level_bracket[1]) }}) $\bullet$ {{ spell.action }} / {{ spell.type }}{{ " $\bullet$ AoE" if spell.metadata.is_aoe }}{{ " $\bullet$ MR: " ~ spell.metadata.magic_resistance_cap if spell.metadata.magic_resistance_cap }} }
+  { {{- spell.path or "Free Access" }} (Level {{ spell.level if spell.level else (spell.level_bracket[0] ~ "-" ~ spell.level_bracket[1]) }}) $\bullet$ {{ spell.action }} / {{ spell.types | join(", ") }}{{ " $\bullet$ AoE" if spell.metadata.is_aoe }}{{ format_resistance(spell.metadata.resistance_cap, spell.metadata.resistance_types) }} }
   { {{ spell.grades.initial.zeon }} & {{ spell.grades.intermediate.zeon }} & {{ spell.grades.advanced.zeon }} & {{ spell.grades.arcane.zeon }} }
   { {{ spell.grades.initial.min_int }} & {{ spell.grades.intermediate.min_int }} & {{ spell.grades.advanced.min_int }} & {{ spell.grades.arcane.min_int }} }
   { {{ format_maint(spell.grades.initial.maintenance, spell.daily_maintenance) }} & {{ format_maint(spell.grades.intermediate.maintenance, spell.daily_maintenance) }} & {{ format_maint(spell.grades.advanced.maintenance, spell.daily_maintenance) }} & {{ format_maint(spell.grades.arcane.maintenance, spell.daily_maintenance) }} }

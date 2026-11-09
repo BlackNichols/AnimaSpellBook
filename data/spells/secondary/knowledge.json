@@ -1,0 +1,582 @@
+[
+  {
+    "id": "categorize",
+    "name": "Categorize",
+    "category": "secondary",
+    "path": "Knowledge",
+    "path_type": null,
+    "level": 4,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell grants the caster knowledge about the nature of an object. Target objects can range from a plate of food, which would give him knowledge of the recipes used to make the meal, to a complex device, which would grant him a rudimentary understanding of how the device was built and what materials were used. This spell does not give the caster the knowledge of how to build the object, but at least guides him in the direction of the needed components, materials, or tools. Objects or buildings that are particularly complex or that have a very high Presence are immune to this spell.",
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "The caster knows which field of study includes the object – cooking, mechanisms, clockwork, ironworking, etc. – but gains no further information."
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 7,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "The caster learns about the materials that compose the object and gains a rough idea of the percentage of each in the final object."
+      },
+      "advanced": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "The caster gains a vague idea of how the object works, but not how it was made."
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 11,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "The caster learns vaguely how the object was created, but not well enough to recreate it himself."
+      }
+    }
+  },
+  {
+    "id": "knowledge",
+    "name": "Knowledge",
+    "category": "secondary",
+    "path": "Knowledge",
+    "path_type": null,
+    "level": 14,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell gives the caster innate knowledge regarding a chosen subject. He gains a new value in the knowledge-related Secondary Ability he chooses, replacing his base value. He forgets the knowledge and reverts to his base value when he stops maintaining the spell. A character may cast several copies of this spell and maintain them simultaneously, but must choose a different ability each time.",
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "40 in the chosen knowledge-related ability."
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "60 in the chosen knowledge-related ability."
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 11,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 in the chosen knowledge-related ability."
+      },
+      "arcane": {
+        "zeon": 160,
+        "min_int": 13,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 in the chosen knowledge-related ability."
+      }
+    }
+  },
+  {
+    "id": "know-weakness",
+    "name": "Know Weakness",
+    "category": "secondary",
+    "path": "Knowledge",
+    "path_type": null,
+    "level": 24,
+    "action": "Active",
+    "types": [
+      "Detection"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell allows the caster to see the imperfections and weaknesses of something or someone. If it is cast on a being, the caster knows his faults and weaknesses, while if it is cast on an object, the caster will learn if there is a weak point and where it is. This spell can uncover vulnerable points in creatures and objects. The target must be in the vicinity of the caster, and if the target wishes to resist the spell’s effects, the target must pass a MR check with a difficulty determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 7,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120."
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140."
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 11,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160."
+      },
+      "arcane": {
+        "zeon": 180,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180."
+      }
+    }
+  },
+  {
+    "id": "learn-the-truth",
+    "name": "Learn the Truth",
+    "category": "secondary",
+    "path": "Knowledge",
+    "path_type": null,
+    "level": 34,
+    "action": "Active",
+    "types": [
+      "Detection"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 140,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell allows the wizard to magically discern when someone is lying to him. If a person tells a lie to the caster’s face, that person must pass a MR check with the difficulty determined by the level of the spell. If he fails, the caster will know that he lied, although the spell does not convey exactly what the lie was.",
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 80."
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 9,
+        "maintenance": 15,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 100."
+      },
+      "advanced": {
+        "zeon": 160,
+        "min_int": 11,
+        "maintenance": 20,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120."
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 13,
+        "maintenance": 20,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140."
+      }
+    }
+  },
+  {
+    "id": "magical-knowledge",
+    "name": "Magical Knowledge",
+    "category": "secondary",
+    "path": "Knowledge",
+    "path_type": null,
+    "level": 44,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell grants the caster the knowledge of how to cast a spell of his choice. The spell must be one that he does not know how to cast already, and one that is not of a higher Path Level than that allowed by the level option of the Magical Knowledge spell. Once Magical Knowledge has been cast, the wizard has a maximum of five turns to cast the new spell. After five turns or when the new spell is cast, it disappears from his mind. This spell does not allow the caster to learn or cast a spell from a Path or sub-Path that is closed to followers of this sub-Path.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "A spell of up to level 20."
+      },
+      "intermediate": {
+        "zeon": 150,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "A spell of up to level 30."
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "A spell of up to level 40."
+      },
+      "arcane": {
+        "zeon": 250,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "A spell of up to level 50."
+      }
+    }
+  },
+  {
+    "id": "combat-knowledge",
+    "name": "Combat Knowledge",
+    "category": "secondary",
+    "path": "Knowledge",
+    "path_type": null,
+    "level": 54,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell grants the wizard the ability to sense and understand an adversary’s abilities and combat tactics and to anticipate its movements. Therefore, if the target fails the MR check, the caster gets a bonus to all abilities when using them directly against the target. The target affected by this spell must be in the caster’s presence.",
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": 5,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140 / +20 to all opposed actions."
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / +30 to all opposed actions."
+      },
+      "advanced": {
+        "zeon": 160,
+        "min_int": 11,
+        "maintenance": 20,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180 / +30 to all opposed actions."
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 13,
+        "maintenance": 20,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 200 / +40 to all opposed actions."
+      }
+    }
+  },
+  {
+    "id": "learning",
+    "name": "Learning",
+    "category": "secondary",
+    "path": "Knowledge",
+    "path_type": null,
+    "level": 64,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell grants its target the ability to learn at a seemingly-impossible rate, reducing the amount of study and practice needed for him to master new knowledge. For example, if the target was trying to learn a spell and had Learning cast on him at the Basic level, the difficulty of learning the spell would be decreased by one level.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Decreases learning difficulties by one level."
+      },
+      "intermediate": {
+        "zeon": 150,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Decreases learning difficulties by two levels."
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 12,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Decreases learning difficulties by three levels."
+      },
+      "arcane": {
+        "zeon": 250,
+        "min_int": 14,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Decreases learning difficulties by four levels."
+      }
+    }
+  },
+  {
+    "id": "advice",
+    "name": "Advice",
+    "category": "secondary",
+    "path": "Knowledge",
+    "path_type": null,
+    "level": 74,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "As the name suggests, this spell gives the caster wise advice on an issue or question. The spell will not guess or use knowledge beyond the caster’s; it interprets the knowledge he already has in order to give the best advice possible.",
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "The caster gets a tip on the best decision to make. The prediction is highly accurate, but certainly not perfect."
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "The spell shows the caster the spectrum of possible actions and potential consequences and suggests the most appropriate."
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 11,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "The caster receives good counsel on the decisions he must make. The accuracy and usefulness of this advice is very high."
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 13,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "The caster receives detailed advice about all possible actions and their consequences, as well as an approximate percentage of success for each."
+      }
+    }
+  },
+  {
+    "id": "give-knowledge",
+    "name": "Give Knowledge",
+    "category": "secondary",
+    "path": "Knowledge",
+    "path_type": null,
+    "level": 84,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell allows the caster to transfer knowledge from one individual to another. For example, he could cause someone to lose his knowledge of archeology or occult rituals and give that knowledge to someone else for the duration of the spell. In game terms, Give Knowledge allows knowledge to be transferred whose value does not exceed that determined by the level of the spell. The caster may choose whether to transfer all relevant information, or just that on a particular subject. This spell also allows him to transfer spells up to a maximum Path Level equal to the value indicated by the spell. In this case, if the caster transfers 40 Magic Levels of Light magic from someone who has 70 Magic Levels in the Path of Light, the donor would lose the ability to cast spells from levels 2 to 40, but could continue to cast spells from levels 42 to 70. It is important to remember that this spell does not transfer the Gift, so if spells are transferred to someone without that Advantage, he cannot use them. To resist the effects of this spell, the target must pass a MR check with a difficulty determined by the level of the spell. An affected person may repeat the check only once per day.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / Intellectual Ability up to 50 or Magic Level up to 20."
+      },
+      "intermediate": {
+        "zeon": 150,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140 / Intellectual Ability up to 100 or Magic Level up to 40."
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / Intellectual Ability up to 150 or Magic Level up to 60."
+      },
+      "arcane": {
+        "zeon": 250,
+        "min_int": 14,
+        "maintenance": 20,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180 / Intellectual Ability up to 200 or Magic Level up to 80."
+      }
+    }
+  },
+  {
+    "id": "life",
+    "name": "Life",
+    "category": "secondary",
+    "path": "Knowledge",
+    "path_type": null,
+    "level": 94,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell temporarily gives the character new life experiences, allowing him to augment his skills and knowledge for a few moments. For game purposes, the caster gains temporary additional levels, giving him additional Development Points, which he can spend as normal and which are lost when the spell is no longer maintained. The effects of this spell do not stack, and a wizard can only benefit from one Life spell at a time.",
+    "grades": {
+      "initial": {
+        "zeon": 400,
+        "min_int": 10,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+1 Level."
+      },
+      "intermediate": {
+        "zeon": 600,
+        "min_int": 12,
+        "maintenance": 60,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+2 Levels."
+      },
+      "advanced": {
+        "zeon": 800,
+        "min_int": 14,
+        "maintenance": 80,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+3 Levels."
+      },
+      "arcane": {
+        "zeon": 1000,
+        "min_int": 16,
+        "maintenance": 100,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+4 Levels."
+      }
+    }
+  }
+]

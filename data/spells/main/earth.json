@@ -1,0 +1,1744 @@
+[
+  {
+    "id": "detect-minerals",
+    "name": "Detect Minerals",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 2,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Detection"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster can detect a particular mineral’s location within the radius of the spell, provided it is not behind an energy barrier. This allows them to gather information about the location, relative size, and purity of the material, but not it’s shape.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 20,
+        "min_int": 5,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10m Radius"
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50m Radius"
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150m Radius"
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500m Radius"
+      }
+    }
+  },
+  {
+    "id": "mineral-control",
+    "name": "Mineral Control",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 6,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect",
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "Enables the caster to move, reshape, and control any mineral substance within the presence limit set by the level of the spell. However, the caster cannot endow the minerals with any capacities it does not already possess. In other words, the caster may reshape a pebble into an arrowhead, but cannot make it inflict electrical damage. Some golems and earth elementals can be controlled with this spell, unless they succeed at an MR check to resist. The check can only be repeated if the creature’s resistance values change, or if given an order contrary to it’s very nature.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 140,
+      "resistance_types": [
+        "MR",
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": 100,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "30 Presence limit, 100 MR"
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "60 Presence limit, 120 MR"
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 130,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "90 Presence limit, 130 MR"
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "120 Presence limit, 140 MR"
+      }
+    }
+  },
+  {
+    "id": "weight-increment",
+    "name": "Weight Increment",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 10,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect",
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "Increases the weight of a physical body - organic or inorganic.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+20Kg"
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 8,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+120Kg"
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+200Kg"
+      },
+      "arcane": {
+        "zeon": 320,
+        "min_int": 12,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+300Kg"
+      }
+    }
+  },
+  {
+    "id": "transform-mineral",
+    "name": "Transform Mineral",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 12,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Changes one type of material into another, modifying it’s natural composition. It can affect rocks and metals as long as its base presence and weight is within the limit set by the level of the spell. For instance, it can turn a piece of limestone into a gold nugget.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30 Presence limit, 10Kg limit"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 Presence limit, 50Kg limit"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 11,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "70 Presence limit, 100Kg limit"
+      },
+      "arcane": {
+        "zeon": 160,
+        "min_int": 13,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "90 Presence limit, 250Kg limit"
+      }
+    }
+  },
+  {
+    "id": "firmness",
+    "name": "Firmness",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 16,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Enhances the endurance of individuals or objects, making them more resistant to physical damage. When cast upon a living organism, it grants a bonus to their Physical Resistance (PhR) for the purposes of avoiding the effects of criticals. If used upon an object, it increases the fortitude of that object. Only one target may be designated by this spell, and they can only have one Firmness effect at a time.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 60,
+      "resistance_types": [
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": 20,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "+3 Fortitude, +20 PhR"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 30,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "+5 Fortitude, +30 PhR"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 11,
+        "maintenance": 15,
+        "resistance": 45,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "+7 Fortitude, +45 PhR"
+      },
+      "arcane": {
+        "zeon": 160,
+        "min_int": 13,
+        "maintenance": 20,
+        "resistance": 60,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "+9 Fortitude, +60 PhR"
+      }
+    }
+  },
+  {
+    "id": "stone-barrier",
+    "name": "Stone Barrier",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 20,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Defense"
+    ],
+    "daily_maintenance": false,
+    "effect": "Raises a material barrier allowing the caster to repel any attack, even those based on energy. However, the shield is unable to stop any Spiritual effect that calls only for a successful MR or PsR check. In addition to the usual Life Points for absorbing attacks, the Stone Barrier possesses a Damage Barrier.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "600 Life points, Damage Barrier 60"
+      },
+      "intermediate": {
+        "zeon": 160,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1600 Life points, Damage Barrier 100"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3000 Life points, Damage Barrier 150"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5000 Life points, Damage Barrier 200"
+      }
+    }
+  },
+  {
+    "id": "slowness",
+    "name": "Slowness",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 22,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Decreases the reaction speed and mobility of an individual. In game terms, if they do not succeed at an MR check, their initiative and movement value is decreased based on the level of the spell. If the movement penalty reduces the character’s movement value to 0, every extra point of movement value subtracted is instead converted to a cumulative All Action Penalty of -20.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, -50 Initiative, -2 Movement Value"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, -70 Initiative, -4 Movement Value"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, -90 Initiative, -6 Movement Value"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR, -120 Initiative, -10 Movement Value"
+      }
+    }
+  },
+  {
+    "id": "shell",
+    "name": "Shell",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 26,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Creates a physical shell which counts as armor, with it’s own AT value to all types of attack, except for Energy attacks. Even though this counts as an additional layer of armor, no initiative penalty is applied.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "2 AT"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "4 AT"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "6 AT"
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 15,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "8 AT"
+      }
+    }
+  },
+  {
+    "id": "magnetic-shield",
+    "name": "Magnetic Shield",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 30,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Defense"
+    ],
+    "daily_maintenance": false,
+    "effect": "By controlling magnetic fields around themselves, the caster raises a shield with the ability to repel any attack from a metallic source made against them, including bullets and arrows with metallic tips. In such cases, the shield’s magnetism causes a distortion that results in a -50 penalty to the attackers’ offensive abilities. The shield has a number of life points to absorb attacks, but is only able to be damaged by attacks capable of damaging energy. Naturally, this shield is practically useless against attacks of an immaterial or spiritual nature.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 Life points"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "600 Life points"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 11,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "900 Life points"
+      },
+      "arcane": {
+        "zeon": 160,
+        "min_int": 14,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1200 Life points"
+      }
+    }
+  },
+  {
+    "id": "pass-through-solid-matter",
+    "name": "Pass Through Solid Matter",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 32,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Allows the caster or those designated by them to pass through solid objects. The recipients of this spell do not exactly become immaterial, as they are still affected by the ambient heat or cold, but they can completely ignore any object not capable of stopping energy. In this way, characters can decide to pass through anything from walls to sword blades as if they did not exist. It is possible for the character to determine what materials they wish to pass through and what remains solid to them. This spell can affect a number of individuals as long as their combined presence is within the limit set by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "140 Presence limit"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "180 Presence limit"
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 14,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "240 Presence limit"
+      }
+    }
+  },
+  {
+    "id": "earth-spike",
+    "name": "Earth Spike",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 36,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "effect": "Giant stone spikes erupt from the ground and impale targets upon the surface. This spell conjures a number of spikes with a Base Damage of 60, that use the Thrust attack type. These attacks can be used against a single target, or multiple, but cannot damage immaterial beings or those only capable of being damaged by energy, unless this attack is combined with an Enchant spell. Though this is an attack spell, it cannot be used to perform a spell clash, and it cannot be used against a target which at that moment is 10 meters or more from a solid surface.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "2 Spikes"
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "4 Spikes"
+      },
+      "advanced": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "6 Spikes"
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "8 Spikes"
+      }
+    }
+  },
+  {
+    "id": "breakage",
+    "name": "Breakage",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 40,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Through magic, the caster increases an object’s ability to break things. In game terms, the breakage of the object or weapon increases.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+4 Breakage"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+8 Breakage"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+12 Breakage"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+15 Breakage"
+      }
+    }
+  },
+  {
+    "id": "telemetry",
+    "name": "Telemetry",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 42,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to read the history of an object with which they come into contact with, perceiving the important events that have happened to it within the amount of time in the past determined by the level of the spell. This spell can also be used on individuals, but in those cases the target may avoid the effects by succeeding at an MR check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "80 MR, 1 Month"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, 1 Year"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, 10 Years"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, 1 Century"
+      }
+    }
+  },
+  {
+    "id": "magnetic-control",
+    "name": "Magnetic Control",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 46,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Grants the caster control over all magnetic fields within a radius around them. In that area, it allows the caster to dictate the movement of any metallic body with a force equivalent to an independent Strength value, set by the level of the spell. The control over magnetism is such that any action is considered an Automatic effect upon the metal. This allows, for example, the full paralysis of an individual fully in metal armor with no associated MR check, or to snatch a sword directly from an opponent’s hands, requiring no Magic Projection to do so. Alternatively, characters can overcome these effects by opposing the Strength of the spell with either their own Strength, or Agility. If used to make an attack with a metal weapon at a distance, use the rules for the Psychic power Minor Psychokinesis and the caster’s Magic projection. This act of control is an active action, and thus the caster must have the active combat initiative to execute it (and thus cannot use it as a defense). If a body is composed of metal only in part (such as an axe head with a weighty shaft of wood), or is shielded with energy barriers, the Strength value of the spell receives a -4 penalty.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10 Strength, 25m Radius"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "12 Strength, 150m Radius"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "13 Strength, 350m Radius"
+      },
+      "arcane": {
+        "zeon": 320,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "14 Strength, 500m Radius"
+      }
+    }
+  },
+  {
+    "id": "forge",
+    "name": "Forge",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 50,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Employs magic to forge and create objects, using the equivalent of a Forge ability determined by the level of the spell. Since this act of creation is based on supernatural means, no modifiers in Anima: Beyond Fantasy – Table 17: Time Employed applies. Additionally, there is no need for proper forging equipment. This spell does not replace or produce 43 the base materials, such as steel, necessary to forge the specific item, and it is required for the caster to provide them.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 160,
+        "min_int": 7,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 Forge ability"
+      },
+      "intermediate": {
+        "zeon": 270,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "180 Forge ability"
+      },
+      "advanced": {
+        "zeon": 360,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "240 Forge ability"
+      },
+      "arcane": {
+        "zeon": 450,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "280 Forge ability"
+      }
+    }
+  },
+  {
+    "id": "solid-body",
+    "name": "Solid Body",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 52,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "The targeted individual becomes immensely solid with stone-like resistance. When cast upon individuals, they receive natural armor which defends against all types of attacks (except for those of the Energy type), and a natural damage barrier equal to twice their Presence. As well, the character’s muscles strengthen, granting a bonus to their Strength score, but reducing their movement value by 2. The transformed individual appears to be made of different materials based on the level of the spell; Rock, Steel, Diamond, and Malebolgium.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As described under the effects section, with 6 AT, +1 Strength"
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 11,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Base, with AT 8, +2 Strength"
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Intermediate, with AT 10, +3 Strength, and only physical attacks capable of damaging energy can harm the individual."
+      },
+      "arcane": {
+        "zeon": 160,
+        "min_int": 16,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Advanced, with AT 12, +4 Strength, physical attacks that can damage energy inflict only half damage."
+      }
+    }
+  },
+  {
+    "id": "resistance",
+    "name": "Resistance",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 56,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Confers the temporary ability to absorb almost any damage inflicted on the individual. It provides a pool of additional Life Points, and the affected individual uses the rules for Damage Resistance, with a damage resistance multiple based on their size category. This prevents the character from using other defensive abilities just as a damage resistance creature. These bonus life points from this spell are subtracted before the character’s own when suffering any damage.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+500 Life Points"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+1200 Life Points"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+2000 Life Points"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+3000 Life Points"
+      }
+    }
+  },
+  {
+    "id": "petrify",
+    "name": "Petrify",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 60,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "Transforms the target into a stone statue. The victim cannot move and has no awareness of the events going on around them for the duration of the spell. This can be maintained for years, but the affected character does not age. As soon as the spell dissipates, the individual returns to their original condition. Any damage or breakage to the statue can result in injury, or even death, to the actual character. The target of the spell can resist it’s effects by succeeding at an MR check. Upon failure, the subject is allowed a new check the following day for the first attempt, and then any subsequent attempt at weekly intervals.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 220,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 150,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "150 MR"
+      },
+      "advanced": {
+        "zeon": 260,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      },
+      "arcane": {
+        "zeon": 320,
+        "min_int": 16,
+        "maintenance": 20,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "220 MR"
+      }
+    }
+  },
+  {
+    "id": "fissure",
+    "name": "Fissure",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 62,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Causes a violent, but highly concentrated tremor that splits the earth, creating a fissure. The dimensions of the fissure’s maximum length and width are determined by the level of the spell, and can be between 20 to 50 meters deep. Individuals in the area of the fissure forming must pass an Agility check to avoid falling into the fissure and suffering the appropriate impact damage. Constructions in the area can also be severely damaged, as long as their damage barrier is sufficiently low. If they are above the limit set by the level of the spell, their structure is too dense or sturdy to be trapped or damaged by the fissure.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10m Length, 3m Width, Damage Barrier 40 or lower."
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "25m Length, 8m Width, Damage Barrier 60 or lower."
+      },
+      "advanced": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "36m Length, 12m Width, Damage Barrier 80 or lower."
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "48m Length, 15m Width, Damage Barrier 100 or lower."
+      }
+    }
+  },
+  {
+    "id": "reverse-gravity",
+    "name": "Reverse Gravity",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 66,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "Completely alters gravity in a particular area, reversing it’s force. In a way, it turns the world upside down. Everything within the area begins to ‘fall’ into the sky up to a maximum height set by the level of the spell. The caster may impose limits on this spell, such as only affecting the interior of a particular structure. Naturally, any object rooted or otherwise fixed to the ground does not fall. Individuals may avoid the effects entirely by succeeding at an MR check. The area affected remains stationary after being cast.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 40,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "25m Radius, 50m Height, 120 MR"
+      },
+      "intermediate": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 50,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "50m Radius, 100m Height, 140 MR"
+      },
+      "advanced": {
+        "zeon": 280,
+        "min_int": 14,
+        "maintenance": 60,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100m Radius, 200m Height, 160 MR"
+      },
+      "arcane": {
+        "zeon": 320,
+        "min_int": 16,
+        "maintenance": 65,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "150m Radius, 300m Height, 180 MR"
+      }
+    }
+  },
+  {
+    "id": "mineral-creation",
+    "name": "Mineral Creation",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 70,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Allows the caster to create anything they desire, provided it is composed of minerals or metals. The created object must be within the presence limit set by the level of the spell, and must appear in a logical location according to it’s form.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "40 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "70 Presence limit"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Presence limit"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "140 Presence limit"
+      }
+    }
+  },
+  {
+    "id": "terrain-erudition",
+    "name": "Terrain Erudition",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 72,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster gains an immediate and total knowledge of everything in contact with the ground for a large area around them. Both constructions and living creatures can be detected straightaway, provided they are not immaterial in nature. The spell does not affect any places sealed with energy barriers.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 7,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500m Radius"
+      },
+      "intermediate": {
+        "zeon": 270,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3km Radius"
+      },
+      "advanced": {
+        "zeon": 360,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10km Radius"
+      },
+      "arcane": {
+        "zeon": 450,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "15km Radius"
+      }
+    }
+  },
+  {
+    "id": "earthquake",
+    "name": "Earthquake",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 76,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Causes a devastating tremor in a large area with enough potential to destroy a city. Any construction with a Damage Barrier lower than 40 is immediately destroyed in the area, while those above 150 are not damaged at all. Those between 40 and 150 receive 5 points of damage in the first round, and is doubled every round thereafter (10 in the second, 20 in the third, etc.) All individuals in the area suffer the logical consequences for falling debris based on their surroundings.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500m Radius"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3km Radius"
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10km Radius"
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 14,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "15km Radius"
+      }
+    }
+  },
+  {
+    "id": "gravity-destruction",
+    "name": "Gravity Destruction",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 80,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates a high pressure gravity ‘bubble’ that can trap any physical entity and damage it to the point where it bursts. Trapped creatures must succeed at a PhR check of difficulty 180 each combat turn, or be subject to damage equal to half of the failure level. Characters receive a +5 bonus to this check for every point of Impact AT they possess. The extreme forces prevent the target from escaping the area of effect unless it succeeds at an opposed Strength check against the spell, which uses a value of 16. The power is so great that even immaterial beings are partially affected, though they apply a +40 bonus to the resistance roll, and +6 to their effective strength to escape. The spell affects everyone but the caster within it’s area, and is stationary once cast.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "20m Radius"
+      },
+      "intermediate": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50m Radius"
+      },
+      "advanced": {
+        "zeon": 320,
+        "min_int": 15,
+        "maintenance": 35,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100m Radius"
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 17,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100m Radius"
+      }
+    }
+  },
+  {
+    "id": "create-golem",
+    "name": "Create Golem",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 82,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Creates a seemingly live creature completely under the magician’s control. This entity is developed as a Being Between Worlds, subject to the elemental powers and limitations of Earth Elementals described in Anima: Beyond Fantasy - Chapter 26: Creation of Beings. The creature has a number of development points based on the level of the spell, and the elemental is created using the same rules as the spell Create Being in the path of creation.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 10,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "600 DP (Level 1)"
+      },
+      "intermediate": {
+        "zeon": 350,
+        "min_int": 12,
+        "maintenance": 70,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "800 DP (Level 3)"
+      },
+      "advanced": {
+        "zeon": 500,
+        "min_int": 14,
+        "maintenance": 100,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1100 DP (Level 6)"
+      },
+      "arcane": {
+        "zeon": 700,
+        "min_int": 16,
+        "maintenance": 140,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1500 DP (Level 10)"
+      }
+    }
+  },
+  {
+    "id": "gravity-increment",
+    "name": "Gravity Increment",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 86,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Increases the mass of the atmosphere itself in a particular area, thus increasing the force of gravity, and therefore, the weight of everything inside. In game terms, the weight of all targets designated by the caster within the area of the spell increases. The spell’s location remains stationary after being cast.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100m Radius, Double weight"
+      },
+      "intermediate": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200m Radius, Triple weight"
+      },
+      "advanced": {
+        "zeon": 280,
+        "min_int": 14,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300m Radius, Five times weight"
+      },
+      "arcane": {
+        "zeon": 320,
+        "min_int": 16,
+        "maintenance": 35,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "400m Radius, Ten times weight"
+      }
+    }
+  },
+  {
+    "id": "meteor",
+    "name": "Meteor",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 90,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to control the trajectory of one or more meteors and throw them from the heavens to cause unprecedented devastation. Despite being an attack spell, the arrival of each meteor requires between one and ten rounds after the cast to arrive, determined by rolling 1d10 to determine it’s arrival in combat turns after the spell is cast. Each meteor produces an attack with a base damage of 200 to the impact site and 10 meters around it, using either the Heat or Impact attack type. Everything within 50 meters of the central impact will suffer the effects of the blast wave, which is an attack with 60 base damage and an impact with a Strength score of 14. Naturally, the spell cannot produce it’s full effects if cast indoors or underground, so it’s consequences can be altered depending on the environment.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 Meteor"
+      },
+      "intermediate": {
+        "zeon": 250,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5 Meteors"
+      },
+      "advanced": {
+        "zeon": 350,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10 Meteors"
+      },
+      "arcane": {
+        "zeon": 450,
+        "min_int": 17,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "15 Meteors"
+      }
+    }
+  },
+  {
+    "id": "gravity-control",
+    "name": "Gravity Control",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 92,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Grants the caster the ability to completely control all gravitational forces within the area. Within this zone, the caster will have absolute dominion over gravity, able to cancel it, increase or decrease it’s value up to 10 times normal strength, or reverse it. Every character in the area is automatically influenced by the chosen effects.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 350,
+        "min_int": 12,
+        "maintenance": 70,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 km Radius"
+      },
+      "intermediate": {
+        "zeon": 500,
+        "min_int": 14,
+        "maintenance": 100,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "750 km Radius"
+      },
+      "advanced": {
+        "zeon": 650,
+        "min_int": 16,
+        "maintenance": 130,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1500 km Radius"
+      },
+      "arcane": {
+        "zeon": 800,
+        "min_int": 18,
+        "maintenance": 160,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5000 km Radius"
+      }
+    }
+  },
+  {
+    "id": "one-with-the-earth",
+    "name": "One with the Earth",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 96,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "The caster merges their essence with the world, obtaining complete control over all minerals and metals in a large area. This allows them to alter the face of the earth by creating or removing mountains and valleys, redirecting rivers, and so forth. Every stone based creature within the spells area is required to succeed at an MR check in order to avoid being under the caster’s complete control. Upon failure, the creature can only repeat a check if their base resistance changes.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 300,
+        "min_int": 10,
+        "maintenance": 30,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 km Radius, MR 140"
+      },
+      "intermediate": {
+        "zeon": 450,
+        "min_int": 12,
+        "maintenance": 45,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "1000 km Radius, MR 180"
+      },
+      "advanced": {
+        "zeon": 600,
+        "min_int": 15,
+        "maintenance": 60,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "10000 km Radius, MR 200"
+      },
+      "arcane": {
+        "zeon": 1000,
+        "min_int": 18,
+        "maintenance": 100,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "Affects all mineral sources in the world, MR 240"
+      }
+    }
+  },
+  {
+    "id": "atomic-control",
+    "name": "Atomic Control",
+    "category": "main",
+    "path": "Earth",
+    "path_type": "minor",
+    "level": 100,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster is able to mold the atomic matter of their surroundings like clay. To them, everything that moves is nothing but a set of atoms to manipulate as they desire. They gain full dominion over all organic and inorganic matter within the area. There is no limit to what the caster can do to with a body or object under their control; they may alter it’s shape and appearance, transform it into something else, or simply scatter its atoms, thereby causing it’s utter destruction. Since this spell controls physical matter, it has no effect on souls or completely immaterial bodies. Those wishing to avoid the effects must immediately succeed at an MR or PhR check, or they are forever subject to the control of the caster.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR",
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 450,
+        "min_int": 12,
+        "maintenance": 45,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "100m Radius, 140 MR or PhR"
+      },
+      "intermediate": {
+        "zeon": 800,
+        "min_int": 14,
+        "maintenance": 80,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "250m Radius, 160 MR or PhR"
+      },
+      "advanced": {
+        "zeon": 1200,
+        "min_int": 16,
+        "maintenance": 120,
+        "resistance": 200,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "500m Radius, 200 MR or PhR"
+      },
+      "arcane": {
+        "zeon": 1600,
+        "min_int": 18,
+        "maintenance": 160,
+        "resistance": 240,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "1 km Radius, 240 MR or PhR"
+      }
+    }
+  }
+]

@@ -1,0 +1,1726 @@
+[
+  {
+    "id": "raise-wind",
+    "name": "Raise Wind",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 2,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Conjures a draft of wind with a maximum speed and width determined by the level of the spell. The caster needs to be in the open or in an area likely to experience such drafts. Once created, the length of the draft is 10 times the width.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "20 Km/hour, 25m Maximum width"
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "40 Km/hour, 50m Maximum width"
+      },
+      "advanced": {
+        "zeon": 90,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 Km/hour, 75m Maximum width"
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Km/hour, 100m Maximum width"
+      }
+    }
+  },
+  {
+    "id": "move",
+    "name": "Move",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 6,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to move inanimate objects without physical contact. In Game terms, as long as the objects affected are within the weight limit, they can be moved by the caster with a flight speed of 10.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10 Kg Weight limit"
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 Kg Weight limit"
+      },
+      "advanced": {
+        "zeon": 90,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Kg Weight limit"
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "250 Kg Weight limit"
+      }
+    }
+  },
+  {
+    "id": "weight-reduction",
+    "name": "Weight Reduction",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 10,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Reduces the material or person’s body weight by a given amount, based on the level of the spell. Anything affected by this spell is reduced to a minimum of 1kg.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "-20 Kg"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "-150 Kg"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 10,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "-300 Kg"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 12,
+        "maintenance": 35,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "-500 Kg"
+      }
+    }
+  },
+  {
+    "id": "stop-breathing",
+    "name": "Stop Breathing",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 12,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Anyone affected by this spell no longer needs to breathe, and is no longer affected by a lack of air. It can affect as many individuals as desired, as long as their combined presence is within the limit set by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 Presence limit"
+      },
+      "advanced": {
+        "zeon": 110,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 Presence limit"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "350 Presence limit"
+      }
+    }
+  },
+  {
+    "id": "free-motion",
+    "name": "Free Motion",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 16,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "This target of this spell is able to move freely along any type of solid surface, completely untouched by gravity. Individuals under the spell are able to walk on water or run on walls and ceilings. The caster may apply this spell to multiple individuals, as long as their combined presence is within the limit set by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 Presence limit"
+      },
+      "advanced": {
+        "zeon": 110,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "160 Presence limit"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "240 Presence limit"
+      }
+    }
+  },
+  {
+    "id": "air-blow",
+    "name": "Air Blow",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 20,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster unleashes a potent strike of air that can either hit a single long distance target or a group of people together over a distance. In the latter case, the width is determined by the level of the spell. The blast exerts pressure equivalent to an independent strength based on the level of the spell, and hitting a single target increases this value by +2. Though modest, a blast of air can cause real damage equivalent to twice the bonus of the blow’s strength, and uses the Impact attack type. Since this attack is caused merely by the air, only those who pass an Absurd (180) difficulty, or have the ability to otherwise see magic, can perceive of the attack at all.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5m width, 6 Strength"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "20m width, 9 Strength"
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 11,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30m width, 12 Strength"
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50m width, 14 Strength"
+      }
+    }
+  },
+  {
+    "id": "air-screen",
+    "name": "Air Screen",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 22,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Defense"
+    ],
+    "daily_maintenance": false,
+    "effect": "Forms a barrier of air that offers protection from all kinds of attacks, except for those based on Electricity or Energy. In addition, the strong winds raised by the spell hinders any physical projectiles either fired and thrown by the enemy, causing a -50 penalty to the projectile’s final Attack value. The amount of life points the shield has is determined by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 Life Points"
+      },
+      "intermediate": {
+        "zeon": 160,
+        "min_int": 8,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1500 Life Points"
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "2000 Life Points"
+      },
+      "arcane": {
+        "zeon": 240,
+        "min_int": 14,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3500 Life Points"
+      }
+    }
+  },
+  {
+    "id": "automatic-transportation",
+    "name": "Automatic Transportation",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 26,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "The target of this spell can be transported up to a distance determined by the level of the spell, allowing them to pass through any physical object such as walls or doors – provided they are not energy barriers. The caster may apply this to as many individuals as desired, as long as their combined presence is within the limit set by the level of the spell. Those that wish to resist this effect must succeed at an MR check. Those that are to be transported to an unnatural location (such as mid-air) may apply a +40 bonus to this resistance check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 Presence limit, 50m"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "90 Presence limit, 250m"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 Presence limit, 400m"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 Presence limit, 1km"
+      }
+    }
+  },
+  {
+    "id": "flight",
+    "name": "Flight",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 30,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Grants the target the ability to move through the air, with a flight value determined by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Flight value 4"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Flight value 8"
+      },
+      "advanced": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Flight value 12"
+      },
+      "arcane": {
+        "zeon": 240,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Flight value 15"
+      }
+    }
+  },
+  {
+    "id": "reaction-increase",
+    "name": "Reaction Increase",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 32,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Increases the subject’s reaction time, adding a bonus to their initiative based on the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+30 Initiative"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+60 Initiative"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+90 Initiative"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+120 Initiative"
+      }
+    }
+  },
+  {
+    "id": "electrify",
+    "name": "Electrify",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 36,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Electrifies physical bodies, inflicting strong discharges on any who touch them. Anyone coming into physical contact with an electrified body, including the caster, must succeed at a PhR check per combat turn they remain in contact with the object, or suffer a loss of life points equal to half the level of failure. For the purposes of resistance and weakness, this is considered an Electricity attack. The electrified body cannot be above certain requirements for presence and maximum size, determined by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": 100,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "30 Presence limit, 100 PhR, 1m Length"
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": 120,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "40 Presence limit, 120 PhR, 3m Length"
+      },
+      "advanced": {
+        "zeon": 160,
+        "min_int": 13,
+        "maintenance": 20,
+        "resistance": 140,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "60 Presence limit, 140 PhR, 5m Length"
+      },
+      "arcane": {
+        "zeon": 240,
+        "min_int": 15,
+        "maintenance": 25,
+        "resistance": 160,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "80 Presence limit, 160 PhR, 10m Length"
+      }
+    }
+  },
+  {
+    "id": "air-cut",
+    "name": "Air Cut",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 40,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "effect": "Produces a strong gust of wind capable of inflicting cuts on any surface it comes into contact with. The cut affects an area in a line where no targets can be selected within. The length of this line is determined by the level of the spell, but the base damage is always 80, and is of the Cut attack type. The excessive force of this attack also reduces enemy AT by 2.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3m"
+      },
+      "intermediate": {
+        "zeon": 150,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "12m"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "25m"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50m"
+      }
+    }
+  },
+  {
+    "id": "speed",
+    "name": "Speed",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 42,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Increases the target’s speed. In game terms, it doubles the movement value allowed to characters. The caster may apply this bonus to as many individuals as desired, as long as their combined presence is within the limit set by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 Presence limit"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 Presence limit"
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 14,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "160 Presence limit"
+      }
+    }
+  },
+  {
+    "id": "lightning",
+    "name": "Lightning",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 46,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "effect": "Sets off a lightning strike, with a base damage of 100. The caster can choose to strike a single target, or multiple. If a single target is chosen, a bonus is applied to the base damage. In the latter case, after hitting it’s target, the electricity bounces to nearby targets within a 15 meter radius, causing a new attack with identical characteristics. Although the caster cannot choose these additional targets, they themselves are immune from these attacks. If there are no targets within the area, the lightning either vanishes or harmlessly strikes the ground.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+10 Damage or 1 bounce"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+40 Damage or 10 bounces"
+      },
+      "advanced": {
+        "zeon": 280,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+80 Damage or 15 bounces"
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+150 Damage or 25 bounces"
+      }
+    }
+  },
+  {
+    "id": "whirlwind",
+    "name": "Whirlwind",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 50,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster raises a mighty whirlwind with a maximum radius determined by the level of the spell. It leaves nothing but a trail of destruction behind it, and any subject within the area will automatically suffer an attack of 180 Final Attack value, with a base damage of 40 of the Impact type. In addition, anyone affected must pass an Opposed Strength or Agility check against the spell, which uses a Strength of 12. Upon failure, the victims are sucked into the air within the whirlwind, and suffer a -60 All action penalty while they remain inside. Once the spell ends, any suspended bodies fall from a distance of between 100 and 130 meters. The only condition for being affected is being within the area after the first round where the whirlwind is created, but does not affect immaterial bodies or those not affected by air. The caster may propel the whirlwind as desired with a movement value of 8.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 7,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3m Radius"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "6m Radius"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "12m Radius"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 60,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "25m Radius"
+      }
+    }
+  },
+  {
+    "id": "ethereal-form",
+    "name": "Ethereal Form",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 52,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Transforms a designated body into one of air, rendering it intangible and therefore immune to all matter and attacks not able to damage energy. For as long as the spell lasts, the subject is only visible to individuals who succeed at a Notice check of Almost Impossible (240) difficulty, or a Search check of Very Difficult (140). Those who can see magic can also see the ethereal individual. Although unable to fully pass through physical matter, those affected can pass through any crack or gap that allows the passage of air.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As described under the effects section."
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 11,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Base, but can also move through the air."
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Intermediate, but those able to see magic must pass a Notice of Very Difficult, or a search of Medium to see those affected."
+      },
+      "arcane": {
+        "zeon": 160,
+        "min_int": 16,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Advanced, but any attack based on Cut or Thrust able to damage energy produces only half damage to those affected."
+      }
+    }
+  },
+  {
+    "id": "air-control",
+    "name": "Air Control",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 56,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect",
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Endows the caster with dominion over air and any other gaseous substance within an area around them, determined by the level of the spell. The caster can manipulate the air and any gaseous current at will, for instance, they can deprive an entire area of air, or change the course of a tornado. If a being of air enters the area or it is cast upon them, the caster may attempt to control the creature. The creature can attempt to resist this effect with a successful MR check.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 220,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, 50m Radius"
+      },
+      "intermediate": {
+        "zeon": 150,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, 300m Radius"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": 25,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR, 500m Radius"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 15,
+        "maintenance": 35,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "220 MR, 1km Radius"
+      }
+    }
+  },
+  {
+    "id": "electricity-control",
+    "name": "Electricity Control",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 60,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect",
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Grants control over the form and direction of electrical sources and currents, as long as their intensity is within the limit set by the level of the spell. If faced with a being based on electricity, the caster can attempt to control it, unless the creature succeeds at an MR check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 220,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "5 Intensities, 120 MR"
+      },
+      "intermediate": {
+        "zeon": 150,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "15 Intensities, 140 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": 25,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "25 Intensities, 180 MR"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 15,
+        "maintenance": 35,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "40 Intensities, 220 MR"
+      }
+    }
+  },
+  {
+    "id": "defensive-movement",
+    "name": "Defensive Movement",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 62,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Defense"
+    ],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to move away from the reach of an attack. When cast, the spell uses the caster’s Magic Projection ability in place of their Dodge ability. The caster may only defend themselves this way against a maximum number of attacks per combat turn, determined by the level of the spell. For defense against area attacks, the spell grants the caster a separate movement value to determine if they can escape the area.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 7,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3 Dodges, Movement value 8"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "9 Dodges, Movement value 12"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "15 Dodges, Movement value 16"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "No limit, Movement value 18"
+      }
+    }
+  },
+  {
+    "id": "teletransportation",
+    "name": "Teletransportation",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 66,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster, or the character appointed by them, is transported up to a maximum distance set by the level of the spell. This spell allows those transported to pass through solid objects to reach their destination, provided they are not energy barriers. The desired destination of the spell must be well known by the caster to be transported exactly to its location, otherwise the destination is approximate. The caster may affect as many targets as desired, as long as their combined presence is within the limit determined by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 180,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10 km, 80 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 300,
+        "min_int": 11,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10000 km, 150 Presence limit"
+      },
+      "advanced": {
+        "zeon": 450,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100000 km, 240 Presence limit"
+      },
+      "arcane": {
+        "zeon": 600,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Any distance, 350 Presence limit"
+      }
+    }
+  },
+  {
+    "id": "immateriality",
+    "name": "Immateriality",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 70,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect",
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "The designated body becomes completely immaterial, thus turning intangible to all non-energy based creatures, objects, and attacks. While remaining in this state, the subject in question will not be able to touch or be touched, and can pass through any material not of a supernatural origin. If cast upon an unwilling target, the target must pass an MR check to avoid it’s effects. Should they fail the check and become immaterial, they are entitled to a new check each day. The caster may affect as many targets as desired, so long as their combined presence is within the limit set by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 6,
+        "maintenance": 15,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 MR, 80 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, 120 Presence limit"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, 160 Presence limit"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR, 200 Presence limit"
+      }
+    }
+  },
+  {
+    "id": "hurricane",
+    "name": "Hurricane",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 72,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates a tremendous gale that sweeps away everything within a large area. All characters inside the area must succeed an opposed characteristics check against Strength 12, or be taken by the wind. All constructions within the area with a damage barrier lower than 60 is destroyed automatically, while those with damage barriers below 120 suffer 10 points of damage each turn until they are destroyed utterly. Especially sturdy structures with damage barriers above 120 remain unaffected by the magical hurricane. Bodies dragged by the wind remain suspended in the air until the spell dissipates, at which point they plunge to the ground. Distance to the ground can vary according to both the environment and the casters’ desires, but at no point may it exceed 300 meters. Characters who succeed at the opposed check are safe and make no further checks as long as they remain immobile. The GM may decide to apply a bonus to the affected characters’ checks depending on their circumstances.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500m Radius"
+      },
+      "intermediate": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1km Radius"
+      },
+      "advanced": {
+        "zeon": 450,
+        "min_int": 14,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "2km Radius"
+      },
+      "arcane": {
+        "zeon": 600,
+        "min_int": 16,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5km Radius, the Strength value of the hurricane increases to 14"
+      }
+    }
+  },
+  {
+    "id": "solid-air",
+    "name": "Solid Air",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 76,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect",
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "effect": "Solidifies the very air, producing resistant, compact matter. The magician may choose its form and location, but the area of the solidified air is limited to an area based on the level of the spell. Possible uses of this spell are to obstruct an entrance with a solid block of air, or building an invisible bridge to cover a gap, for example. Only attacks capable of damaging energy can affect the solid air, and it is counted as having 150 Life Points per 15m before breaking. The only way this substance can be seen is by the viewer passing a Notice check of Inhuman (320), or a Search check of Absurd (180). An additional use for this spell is to fence people in, preventing them from moving freely. When used with this purpose, attacks may be performed with the rules for trapping; no penalties apply to the magician’s projection ability for this purpose, and the spell is considered to have a Strength value of 14 for opposed checks.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "25m Radius"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 11,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150m Radius"
+      },
+      "advanced": {
+        "zeon": 260,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300m Radius"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 16,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500m Radius, the Strength value increases to 16"
+      }
+    }
+  },
+  {
+    "id": "weather-control",
+    "name": "Weather Control",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 80,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "The caster can fully control the weather within the specified radius. They have the power to modify any meteorological element at will. Thus the caster may create gradually the desired climatic situation.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 9,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5 km Radius"
+      },
+      "intermediate": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": 60,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "25 km Radius"
+      },
+      "advanced": {
+        "zeon": 380,
+        "min_int": 14,
+        "maintenance": 80,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 km Radius"
+      },
+      "arcane": {
+        "zeon": 500,
+        "min_int": 16,
+        "maintenance": 100,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1000 km Radius"
+      }
+    }
+  },
+  {
+    "id": "create-sylph",
+    "name": "Create Sylph",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 82,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Creates a seemingly live creature completely under the caster’s control. This entity is developed as a Being Between Worlds, subject to the elemental powers and limitations of Air Elementals described in Anima: Beyond Fantasy - Chapter 26: Creation of Beings. The creature has a number of development points based on the level of the spell, and the elemental is created using the same rules as the spell Create Being in the path of creation.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 10,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "600 DP (Level 1)"
+      },
+      "intermediate": {
+        "zeon": 350,
+        "min_int": 12,
+        "maintenance": 70,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "800 DP (Level 3)"
+      },
+      "advanced": {
+        "zeon": 500,
+        "min_int": 14,
+        "maintenance": 100,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1100 DP (Level 6)"
+      },
+      "arcane": {
+        "zeon": 700,
+        "min_int": 16,
+        "maintenance": 140,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1500 DP (Level 10)"
+      }
+    }
+  },
+  {
+    "id": "superior-psychokinesis",
+    "name": "Superior Psychokinesis",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 86,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Allows the caster to move both organic and inorganic bodies at a distance, without the need for physical contact. Objects moved by this spell can travel up to a speed equivalent to flight value 10. Superior Psychokinesis can affect any number of objects as long as their combined weight is within the limit based on the level of the spell. Any living creature may resist the spell by succeeding at an MR check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 160,
+        "min_int": 10,
+        "maintenance": 35,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 Tons, 100 MR"
+      },
+      "intermediate": {
+        "zeon": 280,
+        "min_int": 12,
+        "maintenance": 40,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "10000 Tons, 120 MR"
+      },
+      "advanced": {
+        "zeon": 400,
+        "min_int": 14,
+        "maintenance": 50,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "25000 Tons, 140 MR"
+      },
+      "arcane": {
+        "zeon": 550,
+        "min_int": 16,
+        "maintenance": 60,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "150000 Tons, 160 MR"
+      }
+    }
+  },
+  {
+    "id": "relocate-magic",
+    "name": "Relocate Magic",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 90,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "The caster is able to transport the magical sources supporting an active spell from one place to another. In this way, the caster can relocate spells that are place-oriented, individual-oriented, and object-oriented. A character casting this spell may relocate any maintained spell with a Zeon value lower than the limit, even if the spell is not their own. Maximum relocation distance is determined by the general rules for magic projection. When relocating a Spiritual type spell, all effects are treated exactly as if the spell was just cast, allowing those affected a new chance to defend themselves with their normal resistance check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Zeon limit"
+      },
+      "intermediate": {
+        "zeon": 270,
+        "min_int": 11,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 Zeon limit"
+      },
+      "advanced": {
+        "zeon": 360,
+        "min_int": 13,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 Zeon limit"
+      },
+      "arcane": {
+        "zeon": 450,
+        "min_int": 16,
+        "maintenance": 45,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "400 Zeon limit"
+      }
+    }
+  },
+  {
+    "id": "passive-magic",
+    "name": "Passive Magic",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 92,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Envelops the magical essence of the caster, allowing magic to flow within them in an instinctive manner. The caster is at one with magic, and they respond to events as a single union. In game terms, as long as the caster maintains the spell, all other spells that they perform occur as Passive actions, including Attack and Spiritual type spells.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects spells cast at Base level"
+      },
+      "intermediate": {
+        "zeon": 400,
+        "min_int": 12,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects spells cast at Intermediate level"
+      },
+      "advanced": {
+        "zeon": 550,
+        "min_int": 14,
+        "maintenance": 55,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects spells cast at Advanced level"
+      },
+      "arcane": {
+        "zeon": 800,
+        "min_int": 16,
+        "maintenance": 80,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects spells cast at Arcane level"
+      }
+    }
+  },
+  {
+    "id": "lord-of-the-air",
+    "name": "Lord of the Air",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 96,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "Grants a character control of all air or electricity nuclei, regardless of their composition or intensity, within a given area. This dominion also allows for weather manipulation and the creation of gales, storms, or gusts 30 of wind of all sizes. All air and electricity based creatures in the area will immediately be controlled by the caster unless they succeed at an MR check. Once passed or failed, this check cannot be repeated, unless their base resistance values change.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 300,
+        "min_int": 10,
+        "maintenance": 30,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 km Radius, MR 140"
+      },
+      "intermediate": {
+        "zeon": 450,
+        "min_int": 12,
+        "maintenance": 45,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "1000 km Radius, MR 180"
+      },
+      "advanced": {
+        "zeon": 600,
+        "min_int": 14,
+        "maintenance": 60,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "10000 km Radius, MR 200"
+      },
+      "arcane": {
+        "zeon": 1000,
+        "min_int": 16,
+        "maintenance": 100,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100000 km Radius, MR 240"
+      }
+    }
+  },
+  {
+    "id": "a-place-in-the-world",
+    "name": "A Place in the World",
+    "category": "main",
+    "path": "Air",
+    "path_type": "minor",
+    "level": 100,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster modifies the very order of the flow of souls, thus altering reality itself. Even though this spell is not able to change the essence of things or even their shape, the spell grants the caster the ability to move them and place them wherever they desire within the area of the spell. Any object or being, either physical or spiritual, can be teleported anywhere. There is no combat round limitation on the number or condition of beings that can be moved. The only way for a character to avoid these effects is to succeed at an MR check, or to leave the affected area.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 280,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 450,
+        "min_int": 12,
+        "maintenance": 45,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "50 km Radius, 140 MR"
+      },
+      "intermediate": {
+        "zeon": 800,
+        "min_int": 14,
+        "maintenance": 80,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "250 km Radius, 180 MR"
+      },
+      "advanced": {
+        "zeon": 1200,
+        "min_int": 16,
+        "maintenance": 120,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "500 km Radius, 240 MR"
+      },
+      "arcane": {
+        "zeon": 1600,
+        "min_int": 18,
+        "maintenance": 200,
+        "resistance": 280,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "1000 km Radius, 280 MR"
+      }
+    }
+  }
+]

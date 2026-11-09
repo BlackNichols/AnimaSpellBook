@@ -52,7 +52,7 @@ Free Access spells do not belong to any path (`path: null`).
 | `level` | `number \| null` | Integer level for Main and Secondary spells (`null` for Free Access). |
 | `level_bracket` | `[number, number] \| null` | Dual level bounds for Free Access spells (`null` for Main / Secondary). |
 | `action` | `enum` | `"Active"` or `"Passive"`. |
-| `type` | `enum` | `"Effect"`, `"Spiritual"`, `"Automatic"`, `"Defense"`, `"Detection"`, or `"Attack"`. |
+| `types` | `enum[]` | Array of spell types: `"Effect"`, `"Spiritual"`, `"Automatic"`, `"Defense"`, `"Detection"`, or `"Attack"`. Most spells have one type; some have two (e.g. `["Spiritual", "Effect"]`). |
 | `daily_maintenance` | `boolean` | `true` if maintenance is paid daily; `false` if paid per combat turn. |
 | `effect` | `string` | General concept and narrative summary of the spell. |
 | `grades` | `object` | Co-located casting level characteristics across all 4 grades. |
@@ -77,6 +77,8 @@ Each grade contains:
 | `zeon` | `number` | Zeon points required to cast at this grade. |
 | `min_int` | `number` | Minimum Intelligence required to access this grade. |
 | `maintenance` | `number \| null` | Zeon cost to maintain. **Must be `null`** if the spell cannot be maintained. |
+| `resistance` | `number \| null` | Resistance check difficulty required at this grade, or `null` if none. |
+| `resistance_types` | `ResistanceType[]` | Resistance types applicable at this grade (e.g. `["MR"]`, `["MR", "PsR"]`, `["PhR"]`). Empty array when `resistance` is `null`. |
 | `description` | `string` | Specific mechanical rules and effect when cast at this grade. |
 
 ---
@@ -88,7 +90,8 @@ Formalized fields used by the website for fast searching and filtering:
 | Property | Type | Description |
 |---|---|---|
 | `is_aoe` | `boolean` | `true` if the spell affects an Area of Effect (AoE). |
-| `magic_resistance_cap` | `number \| null` | Magic Resistance (MR) target to overcome (e.g. `140`), or `null` if no MR check applies. |
+| `resistance_cap` | `number \| null` | Highest resistance difficulty across all grades (e.g. `140`), or `null` if no resistance check applies. |
+| `resistance_types` | `ResistanceType[]` | Resistance types used to overcome the spell (e.g. `["MR"]`, `["MR", "PsR"]`, `["PhR"]`). Empty array when `resistance_cap` is `null`. |
 | `tags` | `string[]` | Optional query tags (e.g. `["Damage", "Heat", "Projectile"]`). |
 
 ---
@@ -116,10 +119,14 @@ export type SpellType =
   | 'Detection'
   | 'Attack';
 
+export type ResistanceType = 'MR' | 'PhR' | 'PsR' | 'VR' | 'DR';
+
 export interface SpellGrade {
   zeon: number;
   min_int: number;
   maintenance: number | null; // null if unmaintainable
+  resistance: number | null;  // resistance check difficulty, or null if none
+  resistance_types: ResistanceType[]; // empty array when resistance is null
   description: string;
 }
 
@@ -132,7 +139,8 @@ export interface SpellGrades {
 
 export interface SpellMetadata {
   is_aoe: boolean;
-  magic_resistance_cap: number | null;
+  resistance_cap: number | null;        // highest difficulty across grades, or null
+  resistance_types: ResistanceType[];   // empty array when resistance_cap is null
   tags?: string[];
 }
 
@@ -141,7 +149,7 @@ export interface BaseSpell {
   name: string;
   effect: string;
   action: ActionType;
-  type: SpellType;
+  types: SpellType[];  // array; most spells have one entry, some have two
   daily_maintenance: boolean;
   grades: SpellGrades;
   metadata: SpellMetadata;
@@ -188,7 +196,7 @@ export type Spell = MainPathSpell | SecondaryPathSpell | FreeAccessSpell;
     "name",
     "category",
     "action",
-    "type",
+    "types",
     "daily_maintenance",
     "effect",
     "grades",
@@ -235,9 +243,13 @@ export type Spell = MainPathSpell | SecondaryPathSpell | FreeAccessSpell;
       "type": "string",
       "enum": ["Active", "Passive"]
     },
-    "type": {
-      "type": "string",
-      "enum": ["Effect", "Spiritual", "Automatic", "Defense", "Detection", "Attack"]
+    "types": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["Effect", "Spiritual", "Automatic", "Defense", "Detection", "Attack"]
+      },
+      "minItems": 1
     },
     "daily_maintenance": {
       "type": "boolean"
@@ -247,10 +259,17 @@ export type Spell = MainPathSpell | SecondaryPathSpell | FreeAccessSpell;
     },
     "metadata": {
       "type": "object",
-      "required": ["is_aoe", "magic_resistance_cap"],
+      "required": ["is_aoe", "resistance_cap", "resistance_types"],
       "properties": {
         "is_aoe": { "type": "boolean" },
-        "magic_resistance_cap": { "type": ["integer", "null"] },
+        "resistance_cap": { "type": ["integer", "null"] },
+        "resistance_types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["MR", "PhR", "PsR", "VR", "DR"]
+          }
+        },
         "tags": {
           "type": "array",
           "items": { "type": "string" }
@@ -274,11 +293,19 @@ export type Spell = MainPathSpell | SecondaryPathSpell | FreeAccessSpell;
   "$defs": {
     "grade": {
       "type": "object",
-      "required": ["zeon", "min_int", "maintenance", "description"],
+      "required": ["zeon", "min_int", "maintenance", "resistance", "resistance_types", "description"],
       "properties": {
         "zeon": { "type": "integer", "minimum": 0 },
         "min_int": { "type": "integer", "minimum": 1, "maximum": 20 },
         "maintenance": { "type": ["integer", "null"], "minimum": 0 },
+        "resistance": { "type": ["integer", "null"] },
+        "resistance_types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["MR", "PhR", "PsR", "VR", "DR"]
+          }
+        },
         "description": { "type": "string" }
       },
       "additionalProperties": false
@@ -302,12 +329,13 @@ export type Spell = MainPathSpell | SecondaryPathSpell | FreeAccessSpell;
   "level": 12,
   "level_bracket": null,
   "action": "Active",
-  "type": "Attack",
+  "types": ["Attack"],
   "daily_maintenance": false,
   "effect": "Creates a sphere of flames that flies towards the target and detonates upon impact.",
   "metadata": {
     "is_aoe": true,
-    "magic_resistance_cap": null,
+    "resistance_cap": null,
+    "resistance_types": [],
     "tags": ["Damage", "Fire", "Projectile"]
   },
   "grades": {
@@ -315,24 +343,32 @@ export type Spell = MainPathSpell | SecondaryPathSpell | FreeAccessSpell;
       "zeon": 40,
       "min_int": 6,
       "maintenance": null,
+      "resistance": null,
+      "resistance_types": [],
       "description": "Inflicts a base damage of 40 Heat in a 5-meter radius."
     },
     "intermediate": {
       "zeon": 70,
       "min_int": 7,
       "maintenance": null,
+      "resistance": null,
+      "resistance_types": [],
       "description": "Inflicts a base damage of 60 Heat in a 10-meter radius."
     },
     "advanced": {
       "zeon": 110,
       "min_int": 9,
       "maintenance": null,
+      "resistance": null,
+      "resistance_types": [],
       "description": "Inflicts a base damage of 80 Heat in a 25-meter radius."
     },
     "arcane": {
       "zeon": 150,
       "min_int": 11,
       "maintenance": null,
+      "resistance": null,
+      "resistance_types": [],
       "description": "Inflicts a base damage of 100 Heat in a 50-meter radius."
     }
   }
@@ -350,12 +386,13 @@ export type Spell = MainPathSpell | SecondaryPathSpell | FreeAccessSpell;
   "level": 24,
   "level_bracket": null,
   "action": "Active",
-  "type": "Spiritual",
+  "types": ["Spiritual"],
   "daily_maintenance": false,
   "effect": "Disrupts the thread of probability surrounding an opponent.",
   "metadata": {
     "is_aoe": false,
-    "magic_resistance_cap": 140,
+    "resistance_cap": 140,
+    "resistance_types": ["MR"],
     "tags": ["Debuff", "Luck"]
   },
   "grades": {
@@ -363,24 +400,32 @@ export type Spell = MainPathSpell | SecondaryPathSpell | FreeAccessSpell;
       "zeon": 50,
       "min_int": 6,
       "maintenance": 10,
+      "resistance": 80,
+      "resistance_types": ["MR"],
       "description": "Target suffers a -20 penalty to all rolls for 1 turn."
     },
     "intermediate": {
       "zeon": 90,
       "min_int": 8,
       "maintenance": 20,
+      "resistance": 100,
+      "resistance_types": ["MR"],
       "description": "Target suffers a -40 penalty to all rolls for 1 turn."
     },
     "advanced": {
       "zeon": 130,
       "min_int": 10,
       "maintenance": 30,
+      "resistance": 120,
+      "resistance_types": ["MR"],
       "description": "Target suffers a -60 penalty to all rolls for 1 turn."
     },
     "arcane": {
       "zeon": 180,
       "min_int": 12,
       "maintenance": 40,
+      "resistance": 140,
+      "resistance_types": ["MR"],
       "description": "Target suffers a -80 penalty to all rolls for 1 turn."
     }
   }
@@ -398,12 +443,13 @@ export type Spell = MainPathSpell | SecondaryPathSpell | FreeAccessSpell;
   "level": null,
   "level_bracket": [10, 20],
   "action": "Active",
-  "type": "Defense",
+  "types": ["Defense"],
   "daily_maintenance": false,
   "effect": "Forms a barrier of raw energy to absorb incoming impacts.",
   "metadata": {
     "is_aoe": false,
-    "magic_resistance_cap": null,
+    "resistance_cap": null,
+    "resistance_types": [],
     "tags": ["Shield", "Barrier"]
   },
   "grades": {
@@ -411,24 +457,32 @@ export type Spell = MainPathSpell | SecondaryPathSpell | FreeAccessSpell;
       "zeon": 30,
       "min_int": 5,
       "maintenance": null,
+      "resistance": null,
+      "resistance_types": [],
       "description": "Absorbs up to 200 points of physical damage."
     },
     "intermediate": {
       "zeon": 60,
       "min_int": 7,
       "maintenance": null,
+      "resistance": null,
+      "resistance_types": [],
       "description": "Absorbs up to 400 points of physical damage."
     },
     "advanced": {
       "zeon": 90,
       "min_int": 9,
       "maintenance": null,
+      "resistance": null,
+      "resistance_types": [],
       "description": "Absorbs up to 700 points of physical damage."
     },
     "arcane": {
       "zeon": 130,
       "min_int": 10,
       "maintenance": null,
+      "resistance": null,
+      "resistance_types": [],
       "description": "Absorbs up to 1200 points of physical damage."
     }
   }

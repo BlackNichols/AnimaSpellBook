@@ -1,0 +1,586 @@
+[
+  {
+    "id": "temporal-knowledge",
+    "name": "Temporal Knowledge",
+    "category": "secondary",
+    "path": "Time",
+    "path_type": null,
+    "level": 4,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell allows the character to supernaturally perceive the passing of time.",
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Allows the caster to supernaturally perceive the time and date at the moment of casting according to a calendar known to the caster."
+      },
+      "intermediate": {
+        "zeon": 50,
+        "min_int": 7,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Basic level, but the caster perceives the time with absolute accuracy down to seconds and milliseconds. It also allows him to feel if there is some kind of supernatural disturbance in the flow of time close to him."
+      },
+      "advanced": {
+        "zeon": 70,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Intermediate level, but the character can set an alarm at the moment of casting and automatically feel when the chosen moment has arrived. For example, he might set an alarm to notify himself when a period of four hours, 12 minutes, and seven seconds has passed since the spell was cast."
+      },
+      "arcane": {
+        "zeon": 90,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Advanced level, but the caster can calculate the period of time an event will take to finish, for example how long it would take for a person walking at constant speed to cross a beach or for a melody to finish."
+      }
+    }
+  },
+  {
+    "id": "temporal-acceleration",
+    "name": "Temporal Acceleration",
+    "category": "secondary",
+    "path": "Time",
+    "path_type": null,
+    "level": 14,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell accelerates the wizard within the flow of time. While he sees the world in slow motion, to everyone else he is a blur of motion. In game terms, the caster or a chosen individual receives various bonuses as determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+10 to All Actions / Movement Value +1 / +20 to Initiative."
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+15 to All Actions / Movement Value +2 / +30 to Initiative."
+      },
+      "advanced": {
+        "zeon": 180,
+        "min_int": 12,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+20 to All Actions / Movement Value +2 / +40 to Initiative."
+      },
+      "arcane": {
+        "zeon": 240,
+        "min_int": 15,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+25 to All Actions / Movement Value +3 / +50 to Initiative."
+      }
+    }
+  },
+  {
+    "id": "slow-time",
+    "name": "Slow Time",
+    "category": "secondary",
+    "path": "Time",
+    "path_type": null,
+    "level": 24,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell affects an area within which every individual chosen by the caster is pulled into a temporarily slow flow of time. Consequently, those affected move much more slowly and suffer penalties according to the level of the spell. The area affected by Slow Time remains stationary at the point where it is cast. Those affected must pass a MR check to overcome the spell’s effects, but someone who has failed the check may not repeat the check unless he leaves the spell’s area and then re-enters it.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 100 / 30 foot radius / Movement Value –2 / –40 to Initiative."
+      },
+      "intermediate": {
+        "zeon": 150,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / 80 foot radius / –10 to All Actions / Movement Value –4 / –60 to Initiative."
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 12,
+        "maintenance": 20,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140 / 150 foot radius / –20 to All Actions / Movement Value –6 / –80 to Initiative."
+      },
+      "arcane": {
+        "zeon": 250,
+        "min_int": 15,
+        "maintenance": 25,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / 300 foot radius / –30 to All Actions / Movement Value –8 / –100 to Initiative."
+      }
+    }
+  },
+  {
+    "id": "stall-time",
+    "name": "Stall Time",
+    "category": "secondary",
+    "path": "Time",
+    "path_type": null,
+    "level": 34,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell creates a supernatural bubble that is “watertight” to the flow of time; until the spell ceases to function, the state of everything inside cannot change. For game purposes, this spell “memorizes” the state and condition of everything in a range determined by the level of the spell at the moment it is cast, preventing any damage that anyone might deal or receive thereafter from having any effect on the body or mind of anyone struck. For example, while this spell is maintained, a wounded character will remain at the same amount of Life Points even if he later suffers further damage and even if that damage would be enough to kill him. Similarly, the negative effects of damage or exertion, such as pain or fatigue, do not take effect at the time.\n\nUnfortunately, Stall Time can only delay the effects of what has actually happened, not allow them to be avoided completely, so any injury that a person or object suffered during the stagnant period of time immediately appears as soon as the spell ends. That means that if someone should have died from damage taken within a Stall Time zone and subsequently received a lot of healing, the healing does not take effect when the spell ends; the person died long ago. The caster can choose freely what is affected by the spell and what can be freely damaged or destroyed. However, this spell never affects the caster; he is the glue that binds the past and present. The area affected by Stall Time is stationary in the location it was cast.",
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "15 foot radius."
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 11,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30 foot radius."
+      },
+      "advanced": {
+        "zeon": 280,
+        "min_int": 13,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 foot radius."
+      },
+      "arcane": {
+        "zeon": 380,
+        "min_int": 15,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 foot radius."
+      }
+    }
+  },
+  {
+    "id": "stop-time",
+    "name": "Stop Time",
+    "category": "secondary",
+    "path": "Time",
+    "path_type": null,
+    "level": 44,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell makes time stand still inside a given space. Beginning with the turn after the spell is cast, every individual or thing in the area of effect is frozen in time if it fails an MR check. Persons or things frozen in time are completely impervious; nothing can interact with them, touch them, or damage them, and they cannot interact with anything else in any way. Creatures with Gnosis 40 or more can ignore this effect and interact freely with frozen things. Anyone affected by this spell can only repeat the MR check once a day. The area affected by Stop Time remains at the location it was cast, and the caster cannot choose specific targets; everyone is affected equally except for the caster.",
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 9,
+        "maintenance": 40,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / 30 foot radius."
+      },
+      "intermediate": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": 60,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140 / 80 foot radius."
+      },
+      "advanced": {
+        "zeon": 400,
+        "min_int": 14,
+        "maintenance": 80,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / 150 foot radius."
+      },
+      "arcane": {
+        "zeon": 500,
+        "min_int": 16,
+        "maintenance": 100,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180 / 300 foot radius."
+      }
+    }
+  },
+  {
+    "id": "rewind",
+    "name": "Rewind",
+    "category": "secondary",
+    "path": "Time",
+    "path_type": null,
+    "level": 54,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell affects the essence of a person, moving his “life” backwards in time. Naturally, the person concerned does not travel to the past himself; his essence merely reverts to the way it was at an earlier point in time. Thus, an elder could become a young man, or an adult could become a mere child (or even a baby). Unfortunately, the spell also removes the character’s memories, so he loses that part of his life, forgetting his memories or losing (or gaining) capabilities that changed in the lost years. Naturally, this essence reversion can also change the affected person’s level. This spell cannot restore severed limbs, end effects, or undo damage caused by beings with Gnosis 40 or higher. To resist the spell’s effects, the target must pass a MR check with a difficulty determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / Go back up to one day."
+      },
+      "intermediate": {
+        "zeon": 350,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140 / Go back up to one month."
+      },
+      "advanced": {
+        "zeon": 450,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / Go back up to one year."
+      },
+      "arcane": {
+        "zeon": 600,
+        "min_int": 17,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180 / Go back up to one decade."
+      }
+    }
+  },
+  {
+    "id": "undo-time",
+    "name": "Undo Time",
+    "category": "secondary",
+    "path": "Time",
+    "path_type": null,
+    "level": 64,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell makes the flow of time run backward, rewinding any event that has occurred within a period determined by the level of the spell. Thus, the caster can repeat a few turns or even restore life to someone who died in that period of time. Only the caster, beings with Natura +15 or greater, or divine creatures will remain aware of what happened in the rewound period; for the rest, those moments never passed. This spell cannot undo actions in which a being with Gnosis 40 or more was directly involved, unless the caster has an even higher Gnosis, nor return to life a soul that has been destroyed or desecrated.\n\nIt is important to point out that time in general does not flow backwards, but rather the spell separates out a small part of the space-time continuum and makes it rewind briefly. This way, the short temporal distortion is less harmful to the flow of time.\n\nBoth the affected area and the period of time that can be rewound are determined by the level of the spell. No Resistance check is possible.",
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 11,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 foot radius / 15 seconds (five turns)."
+      },
+      "intermediate": {
+        "zeon": 350,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 foot radius / 30 seconds (10 turns)."
+      },
+      "advanced": {
+        "zeon": 500,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "800 foot radius / One minute."
+      },
+      "arcane": {
+        "zeon": 800,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 mile radius / One hour."
+      }
+    }
+  },
+  {
+    "id": "time-jump",
+    "name": "Time Jump",
+    "category": "secondary",
+    "path": "Time",
+    "path_type": null,
+    "level": 74,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell sends a person or object forward in time. For game purposes, the target disappears in an instant and reappears in the same place sometime later. While the target does not perceive any period of time passing and only sees his environment shift suddenly, those around him at the moment of casting see him disappear completely. The caster may choose how much time ahead the target jumps, within the limits defined by the level of the spell. However, there is an additional limit to its effects. There are certain moments in history, marking important events, which are spiritually impossible to avoid. Therefore, if the Time Jump passes through one of them, the spell ends ahead of schedule and the target returns to reality at that moment. The target can resist the spell by passing a MR check with a difficulty determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 11,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / Up to 10 minutes."
+      },
+      "intermediate": {
+        "zeon": 350,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / Up to one day."
+      },
+      "advanced": {
+        "zeon": 450,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 200 / Up to one month."
+      },
+      "arcane": {
+        "zeon": 600,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 240 / Up to one year."
+      }
+    }
+  },
+  {
+    "id": "temporal-loop",
+    "name": "Temporal Loop",
+    "category": "secondary",
+    "path": "Time",
+    "path_type": null,
+    "level": 84,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "High Magic"
+      ]
+    },
+    "effect": "This spell creates a loop in a period of time, where events are constantly repeated over and over again. While the spell is maintained, when the end of the period determined by the caster is reached, the period of time starts over and its events begin again. Except for individuals designated by the caster or with Gnosis higher than 35 (or those with Natura +15 or greater), nobody will be aware that history is repeating itself.\n\nThis spell has a defined area of effect, yet this does not mean that the progress of time has stopped outside the area. When the spell ends, only the last repetition of time is considered to have actually taken place. Creatures with Gnosis of 40 or more are always aware of the place and position of all temporal loops in existence at any time.\n\nIf desired, the caster may set a specific event as the end of the spell so that if matters turn out a certain way, the spell ends immediately.\n\nThe maintenance of this spell is calculated in a special way. Contrary to the general rules, the caster must pay the cost of maintenance at the end of each of the designated periods. That is, if the time loop lasts 10 minutes, the caster must spend the maintenance cost every 10 minutes. Unfortunately, by tying his essence to a static moment in history, the caster of Temporal Loop cannot recover Zeon in any way while the spell remains active.\n\nResistance Checks are not possible against a Temporal Loop.\n\nSpecial Limitation: Contrary to the general rules for Free Access spells and sub-Paths, Temporal Loop is considered a High Magic spell.",
+    "grades": {
+      "initial": {
+        "zeon": 400,
+        "min_int": 11,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "800 foot radius / Up to one day."
+      },
+      "intermediate": {
+        "zeon": 600,
+        "min_int": 14,
+        "maintenance": 60,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1,500 foot radius / Up to one week."
+      },
+      "advanced": {
+        "zeon": 900,
+        "min_int": 16,
+        "maintenance": 90,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 mile radius / Up to one month."
+      },
+      "arcane": {
+        "zeon": 1400,
+        "min_int": 18,
+        "maintenance": 140,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3 mile radius / Up to one year."
+      }
+    }
+  },
+  {
+    "id": "overlap-time",
+    "name": "Overlap Time",
+    "category": "secondary",
+    "path": "Time",
+    "path_type": null,
+    "level": 94,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Divine Magic"
+      ]
+    },
+    "effect": "This spell allows the caster to create a linkage between present and past, making both join for a moment. In doing so, all that happened at a certain time in the past is reflected in the present, as if it had always been there.\n\nIn actuality, the past does not change at all; the present is modified to incorporate the previous timeline. Both the people and the things that existed at that time and place reappear today. There is no limit to the number of items that can be brought into the affected area; there may be whole armies or eons-old cities that suddenly arrive. These beings and objects are not truly copies, but at the same time, they are not completely real; they are objects outside their natural timeline, and their existence is jarring to reality.\n\nIn the case of overlapping two identical things in the exact same place (as with durable construction and geography), reality becomes whichever has more Presence, or if both Presences are very similar, they mix and give a result somewhere between the two. If one person was in the same place both times, the result is always unstable; the two might be merged into one, exist as separate entities, or even be both completely destroyed.\n\nHowever, this spell has its limits. First, it cannot “bring” from the past anyone or anything that was uncreated or whose soul was destroyed (in the latter case, the body would appear, but it would be an empty shell). Moreover, if a unique object of Power Level 5 is brought from the past while it still exists in the present day, the manifestation of the object is incomplete, possessing qualities very inferior to those of the present version.\n\nSpecial Limitation: Contrary to the general rules for Free Access spells and sub-Paths, Overlap Time is considered a Divine Magic spell.",
+    "grades": {
+      "initial": {
+        "zeon": 500,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "15 foot radius / Up to one year in the past."
+      },
+      "intermediate": {
+        "zeon": 800,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 foot radius / Up to 10 years in the past."
+      },
+      "advanced": {
+        "zeon": 1250,
+        "min_int": 17,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1,500 foot radius / Up to 100 years in the past."
+      },
+      "arcane": {
+        "zeon": 2500,
+        "min_int": 19,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 mile radius / Up to 1,000 years in the past."
+      }
+    }
+  }
+]

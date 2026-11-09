@@ -1,0 +1,610 @@
+[
+  {
+    "id": "autopsy",
+    "name": "Autopsy",
+    "category": "secondary",
+    "path": "Death",
+    "path_type": null,
+    "level": 4,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell determines the cause of a creature’s death and the time it occurred. The spell does not specify whether the target was killed by someone or, if so, who was responsible, but could determine if, for example, someone died because of a massive impact or from a particular type of disease. The level of the spell determines how recently the target had to have died in order for the spell to work. Beyond the listed time period, the spell gains no information.",
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 4,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 hour."
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 day."
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 week."
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 month."
+      }
+    }
+  },
+  {
+    "id": "resistance-to-death",
+    "name": "Resistance to Death",
+    "category": "secondary",
+    "path": "Death",
+    "path_type": null,
+    "level": 14,
+    "action": "Passive",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell protects against any effect that might cause automatic death. It gives a bonus to the target’s Resistances against such effects.",
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+20 to Resistances."
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+40 to Resistances."
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+60 to Resistances."
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 14,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+80 to Resistances."
+      }
+    }
+  },
+  {
+    "id": "minor-extermination",
+    "name": "Minor Extermination",
+    "category": "secondary",
+    "path": "Death",
+    "path_type": null,
+    "level": 24,
+    "action": "Active",
+    "types": [
+      "Effect",
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 120,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell kills a creature with Presence 20 or less chosen by the caster and within a given distance from him if it fails a MR check determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": null,
+        "resistance": 60,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 60 / 30 foot radius."
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 80 / 80 foot radius."
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 11,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 100 / 150 foot radius."
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / 225 foot radius."
+      }
+    }
+  },
+  {
+    "id": "knockout",
+    "name": "Knockout",
+    "category": "secondary",
+    "path": "Death",
+    "path_type": null,
+    "level": 34,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell kills someone who is about to die. The target must be Between Life and Death, and it automatically dies if it fails a MR check of the difficulty determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 7,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140."
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160."
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 11,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180."
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 200."
+      }
+    }
+  },
+  {
+    "id": "put-to-rest",
+    "name": "Put to Rest",
+    "category": "secondary",
+    "path": "Death",
+    "path_type": null,
+    "level": 44,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": [
+        "Anti-Undead"
+      ]
+    },
+    "effect": "This spell automatically destroys all undead creatures without a soul in the spell’s area. Undead creatures can resist its effects by passing a MR check determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 7,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / 30 foot radius."
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140 / 80 foot radius."
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / 150 foot radius."
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180 / 225 foot radius."
+      }
+    }
+  },
+  {
+    "id": "sense-death",
+    "name": "Sense Death",
+    "category": "secondary",
+    "path": "Death",
+    "path_type": null,
+    "level": 54,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Detection"
+      ]
+    },
+    "effect": "This spell makes the caster able to sense death nearby. He becomes aware of those who have died or are dying close to him.",
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "The caster knows if someone died within 300 feet of him less than an hour ago, or if there is someone in that radius is who is currently dying and will likely pass on in the next minute."
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "The caster knows if someone died within 500 feet of him less than an hour ago, or if there is someone in that radius who is likely to die in the next 10 minutes. This predictive ability does not allow him to know any specifics; he only senses the death."
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "The caster feels death clearly. In a 500 foot radius, he can tell if someone died around him in the past and how far in life each living person is, as well as likely or unlikely causes of their deaths."
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Advanced level, but the caster is able to perceive the probable cause of death of those who died in the past and those who may die in the near future."
+      }
+    }
+  },
+  {
+    "id": "memento-mori",
+    "name": "Memento Mori",
+    "category": "secondary",
+    "path": "Death",
+    "path_type": null,
+    "level": 64,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 140,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell kills any living creature within its area, regardless of their nature or condition. Targets may ignore its effects by passing a MR check with the difficulty determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 80 / 15 foot radius."
+      },
+      "intermediate": {
+        "zeon": 150,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 100 / 30 foot radius."
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / 80 foot radius."
+      },
+      "arcane": {
+        "zeon": 260,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140 / 150 foot radius."
+      }
+    }
+  },
+  {
+    "id": "deadly-curse",
+    "name": "Deadly Curse",
+    "category": "secondary",
+    "path": "Death",
+    "path_type": null,
+    "level": 74,
+    "action": "Active",
+    "types": [
+      "Spiritual",
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "The caster can make a target die at a time determined by him and in a way he chooses. He creates a “prophecy of death” as he sees fit. For this spell to work, the caster must hit his target with it, and the target must fail a MR check with the difficulty determined by the level of the spell. From that time on, all other individuals directly involved in the events leading up to the death can also prevent the spell’s effects by passing a MR check with the same difficulty.",
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 9,
+        "maintenance": 15,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120."
+      },
+      "intermediate": {
+        "zeon": 250,
+        "min_int": 11,
+        "maintenance": 25,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160."
+      },
+      "advanced": {
+        "zeon": 350,
+        "min_int": 13,
+        "maintenance": 35,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 200."
+      },
+      "arcane": {
+        "zeon": 500,
+        "min_int": 15,
+        "maintenance": 50,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 240."
+      }
+    }
+  },
+  {
+    "id": "stop-death",
+    "name": "Stop Death",
+    "category": "secondary",
+    "path": "Death",
+    "path_type": null,
+    "level": 84,
+    "action": "Passive",
+    "types": [
+      "Effect",
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "The target of this spell becomes temporarily immortal. This does not mean that he becomes undead, just that as long as the spell lasts, death has no power over him. This spell has no effect on powers that directly destroy the soul or the like.",
+    "grades": {
+      "initial": {
+        "zeon": 350,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Target automatically ignores any effect that causes automatic death, but can be killed by physical damage."
+      },
+      "intermediate": {
+        "zeon": 500,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "The character cannot be killed by physical damage. However, if his body is damaged to a level that would kill him, he dies automatically if the spell’s effects end before he can be cured. This does not protect from death caused by a Critical on a vulnerable point or by decapitation."
+      },
+      "advanced": {
+        "zeon": 800,
+        "min_int": 14,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Intermediate level, but the character cannot die from Criticals, no matter what their consequences."
+      },
+      "arcane": {
+        "zeon": 1200,
+        "min_int": 16,
+        "maintenance": 60,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Advanced level, but the character also ignores all penalties to his actions caused by physical damage or deterioration."
+      }
+    }
+  },
+  {
+    "id": "death",
+    "name": "Death",
+    "category": "secondary",
+    "path": "Death",
+    "path_type": null,
+    "level": 94,
+    "action": "Active",
+    "types": [
+      "Effect",
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 140,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "The wizard gains absolute power over death and may decide who lives and who dies in the area of this spell. As an automatic effect once per turn, the caster can choose any living creature in the area to die if the creature fails a PhR or MR check against a value determined by the level of the spell. Anyone who passes the check once cannot be again affected by this spell in their lifetime by the same wizard.",
+    "grades": {
+      "initial": {
+        "zeon": 400,
+        "min_int": 12,
+        "maintenance": 40,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "PhR or MR 80 / 1,500 foot radius."
+      },
+      "intermediate": {
+        "zeon": 750,
+        "min_int": 14,
+        "maintenance": 75,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "PhR or MR 100 / 3,000 foot radius."
+      },
+      "advanced": {
+        "zeon": 1200,
+        "min_int": 16,
+        "maintenance": 120,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "PhR or MR 120 / 3 mile radius."
+      },
+      "arcane": {
+        "zeon": 2000,
+        "min_int": 18,
+        "maintenance": 200,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "PhR or MR 140 / 6 mile radius."
+      }
+    }
+  }
+]

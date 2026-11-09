@@ -1,0 +1,1785 @@
+[
+  {
+    "id": "spring",
+    "name": "Spring",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 2,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Draws forth any nearby underground current or stream, causing a spring to flow from the spot designated by the caster. The spell affects natural liquids within a distance determined by the level of the spell, but it cannot draw forth through any energy barriers.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100m Radius"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "250m Radius"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500m Radius"
+      },
+      "arcane": {
+        "zeon": 180,
+        "min_int": 12,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 km Radius"
+      }
+    }
+  },
+  {
+    "id": "create-chill",
+    "name": "Create Chill",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 6,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates intensities of cold or ice. The temperature of the substance will remain stable for as long as the spell is maintained.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 Intensity"
+      },
+      "intermediate": {
+        "zeon": 50,
+        "min_int": 7,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3 Intensities"
+      },
+      "advanced": {
+        "zeon": 90,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5 Intensities"
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "8 Intensities"
+      }
+    }
+  },
+  {
+    "id": "aquatic-capability",
+    "name": "Aquatic Capability",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 10,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Grants it’s recipients the ability to both breathe and move freely through an aquatic environment. The targets of this spell can use their maximum movement value underwater, as well as breathe normally, and resist any effects of ambient water pressure. The caster can affect as many targets with this spell as desired, as long as their combined presence is within the limit determined by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 5,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 70,
+        "min_int": 8,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Presence limit"
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 Presence limit"
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "350 Presence limit"
+      }
+    }
+  },
+  {
+    "id": "cold-immunity",
+    "name": "Cold Immunity",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 12,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Grants the recipient immunity to a number of cold intensities based on the level of the spell. When suffering any attack based on Cold or Ice, every intensity to which the character is immune reduces the base damage of the attack by 5 points. Additionally, if a spiritual effect based on cold or ice causes a resistance check, each intensity of immunity grants a +5 resistance bonus to that check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5 Intensities"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "12 Intensities"
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "20 Intensities"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30 Intensities"
+      }
+    }
+  },
+  {
+    "id": "protection-bubble",
+    "name": "Protection Bubble",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 16,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Defense"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates a bubble of magical energy that envelops the caster or their target. Any attack with a base damage less than the barrier value provided by the level of the spell is halted, and rendered completely ineffective. Any attack higher than the stated value immediately shatters the bubble.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "40 Base damage"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "90 Base damage"
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 Base damage"
+      },
+      "arcane": {
+        "zeon": 220,
+        "min_int": 15,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "160 Base damage"
+      }
+    }
+  },
+  {
+    "id": "water-impact",
+    "name": "Water Impact",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 20,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster unleashes an offensive burst of water. Although this attack uses the Impact attack type, it is automatically capable of damaging energy. The spell’s level determines it’s base damage, and it produces an Impact upon the target with a given Strength value, which staggers and pushes the target from the force of the impact.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 5,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "40 Base damage, 8 Strength"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "60 Base damage, 10 Strength"
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 Base damage, 12 Strength"
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Base damage, 14 Strength"
+      }
+    }
+  },
+  {
+    "id": "liquid-control",
+    "name": "Liquid Control",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 22,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect",
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "Grants the caster complete control over an amount of liquid mass in the nearby area. The caster may alter the physical characteristics of this fluid (such as color and clarity) as well as it’s solidity. The liquid can even be moved without contact. When used against an elemental based on water, the caster can attempt to control the creature unless it succeeds at an MR check. Creatures that fail this check may attempt a new check each day. In Addition, this spell can also manipulate the bloodstreams of living organisms. However, in these cases the victims may attempt either an MR or PhR check, and they receive a +40 bonus. This style of manipulation allows the caster to apply an all action penalty, as well as damage per combat turn, equal to half the level of failure for the check. Victims who fail the check for this style of manipulation are allowed a new check every 5 combat turns.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR",
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": 100,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "5 L, 100 MR or PhR"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "50 L, 120 MR or PhR"
+      },
+      "advanced": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "500 L, 140 MR or PhR"
+      },
+      "arcane": {
+        "zeon": 220,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": 180,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "5000 L, 180 MR or PhR"
+      }
+    }
+  },
+  {
+    "id": "freeze-emotions",
+    "name": "Freeze Emotions",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 26,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Stops a person’s emotions, granting them psychological immunity to all emotional states (both positive and negative), with some exceptions. At Base, it cannot stop Pain, nor any state applied by supernatural entities. Additional effects are based on higher levels of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects natural psychological states"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Base, but also stops pain"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Intermediate, but also stops supernatural states"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As advanced, but the caster may choose which emotions and states are stopped, while allowing others."
+      }
+    }
+  },
+  {
+    "id": "control-cold",
+    "name": "Control Cold",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 30,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect",
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Grants the caster the ability to control a number of cold intensities. Control Cold empowers the caster to alter the potency to half of it’s original value, changing it’s shape, or sculpting it’s form as they please. When this spell is directed at a being based on cold or ice, the caster can attempt to control it, unless the creature succeeds at an MR check. A creature controlled in this way is allowed to attempt a new check each day.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "5 Intensities, 100 MR"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "8 Intensities, 120 MR"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "12 Intensities, 140 MR"
+      },
+      "arcane": {
+        "zeon": 180,
+        "min_int": 15,
+        "maintenance": 20,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "15 Intensities, 180 MR"
+      }
+    }
+  },
+  {
+    "id": "freeze",
+    "name": "Freeze",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 32,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Inflicts intense cold on either a single individual or several people at once, freezing their bodies and enclosing them in ice prisons. Freeze affects an area based on the level of the spell, and all within that area must succeed at an MR check. If targeted at an individual, the difficulty of the check is increased by +20. The consequences of a failure depend on the level of failure: • 20 or less: Minor paralysis • 80 or less: Partial paralysis • 81 or more: Total paralysis",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "5m Radius, 120 MR"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "10m Radius, 140 MR"
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "25m Radius, 160 MR"
+      },
+      "arcane": {
+        "zeon": 220,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "50m Radius, 180 MR"
+      }
+    }
+  },
+  {
+    "id": "ice-screen",
+    "name": "Ice Screen",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 36,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Defense"
+    ],
+    "daily_maintenance": false,
+    "effect": "Forms an ice barrier that offers protection from any source of attack. Whenever the shield successfully repels an energy attack based on Light or Darkness, it can reflect the attack using the same final attack ability as the strike had originally. The strength of the shield in life points is determined by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "400 Life points"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1500 Life points"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "2500 Life points"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "4000 Life points"
+      }
+    }
+  },
+  {
+    "id": "create-liquids",
+    "name": "Create Liquids",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 40,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Allows the caster to produce a number of Liters of water or similar substance. In the cases where the presence of the desired material is higher than water, the quantity can be reduced by the GM as they see fit. Supernatural or mystical liquids cannot be created using this spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50L"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500L"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5000L"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 16,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50000L"
+      }
+    }
+  },
+  {
+    "id": "ice-attack",
+    "name": "Ice Attack",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 42,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "effect": "Releases a strong ice based attack that can automatically damage energy. The caster can decide whether an attack is based on either the Cold or the Thrust attack type. Either way, the choice does not affect the base damage of the spell, which is determined by the level it is cast at.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Base damage"
+      },
+      "intermediate": {
+        "zeon": 160,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 Base damage"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 Base damage"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "250 Base damage"
+      }
+    }
+  },
+  {
+    "id": "crystallization",
+    "name": "Crystallization",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 46,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Transforms a body into a crystal, rendering it fragile and brittle. The target must succeed at an MR or PhR check to stop their whole body from freezing and being subject to an immediate state of Minor Paralysis. In addition, all damage received is automatically considered a Critical, regardless of the actual damage value. Creatures with Damage Resistance ignores the automatic critical effect, and instead treats their entire body as a vulnerable point.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR",
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "140 MR or PhR"
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "160 MR or PhR"
+      },
+      "advanced": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 180,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "180 MR or PhR"
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 14,
+        "maintenance": 20,
+        "resistance": 200,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "200 MR or PhR"
+      }
+    }
+  },
+  {
+    "id": "reflected-control",
+    "name": "Reflected Control",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 50,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "Mystically ties the victim’s body to the caster’s, forcing the target to mimic the caster’s every move. In a way, the targeted individual behaves like a mirror image, automatically duplicating the caster. In order to resist the effects of this spell, the target must succeed at an MR check. Victims may attempt new checks if the caster forces them to engage in an action contrary to their nature.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": 5,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "80 MR"
+      },
+      "intermediate": {
+        "zeon": 160,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 130,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "130 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 15,
+        "maintenance": 20,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR"
+      }
+    }
+  },
+  {
+    "id": "liquid-body",
+    "name": "Liquid Body",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 52,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Transforms a designated body into a liquid substance, rendering it immune to many types of attacks and able to shift it’s form at the caster’s will. Because of this, the Liquid Body can transform it’s appendages into natural weapons, with a +5 quality bonus. This limited metamorphism is very effective, and so anyone observing them must pass a Notice check of Very Difficult to perceive it’s liquid nature. Although not strictly an immaterial being, liquefied bodies are able to pass through any opening or hole that water can. While in this state, those affected are completely invulnerable to any attack of the Thrust and Cut attack types while those based on Impact will have half of their regular damage. If an attack is capable of damaging energy, it acts normally against a liquefied character. Characters in this state are vulnerable to the paralyzing cold, and related effects, suffering a resistance penalty of -20 to checks against them.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As described under the effects section."
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 11,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Base, but can also move through the water with their natural movement value."
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Intermediate, but weapon quality increases to +10."
+      },
+      "arcane": {
+        "zeon": 160,
+        "min_int": 16,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Advanced, but any attack based on Cold or Thrust able to damage energy produces only half damage to those affected."
+      }
+    }
+  },
+  {
+    "id": "reflect-states",
+    "name": "Reflect States",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 56,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster creates a mystic mirror, with the ability to reflect any supernatural state of which the caster, or any nearby individual, may be the target of. The effect automatically reflects upon the originator, who must succeed at an MR check to avoid falling victim to their own effect. For example, if the caster falls prey to a terrible magical pain, the spell would force the character causing the pain to succeed at an MR check or undergo the same suffering. The reflected state remains for as long as the original target continues to suffer the effects, or until this spell is dissipated. Each effect can only be reflected (or attempted to be reflected) once.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 220,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": 150,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "150 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": 25,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      },
+      "arcane": {
+        "zeon": 320,
+        "min_int": 16,
+        "maintenance": 35,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "220 MR"
+      }
+    }
+  },
+  {
+    "id": "ice-storm",
+    "name": "Ice Storm",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 60,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates a heavy ice storm that freezes anything within it. Anyone within it’s range must succeed at a PhR check every 5 combat turns they remain within or automatically suffer 10 damage from the cold, and a -5 all action penalty, which accumulates with successive failures. Due to the extreme conditions and intense blizzards called forth by the storm, all perceptive ability checks have their difficulty increased by 2 levels. The storm has a radius from the origination point but remains stationary, and once a turn has passed from it’s creation, anyone inside must attempt the resistance check.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "50m Radius, 140 PhR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "150m Radius, 140 PhR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "500m Radius, 160 PhR"
+      },
+      "arcane": {
+        "zeon": 320,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": 180,
+        "resistance_types": [
+          "PhR"
+        ],
+        "description": "1km Radius, 180 PhR"
+      }
+    }
+  },
+  {
+    "id": "tide-control",
+    "name": "Tide Control",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 62,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "The caster gains a limited control over the sea tide and river currents, and they are able to alter their course and strength. Through the use of this spell, the caster can even create small underwater earthquakes, tidal waves, or reverse the course of a river. The spell has a maximum area of influence, which the caster may relocate after casting the spell.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 6,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500m Radius"
+      },
+      "intermediate": {
+        "zeon": 300,
+        "min_int": 9,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1km Radius"
+      },
+      "advanced": {
+        "zeon": 450,
+        "min_int": 12,
+        "maintenance": 45,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3km Radius"
+      },
+      "arcane": {
+        "zeon": 600,
+        "min_int": 15,
+        "maintenance": 60,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5km Radius"
+      }
+    }
+  },
+  {
+    "id": "water-confinement",
+    "name": "Water Confinement",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 66,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "Produces a huge water mass that swallows all individuals it encounters. Whomever is trapped inside will move as if diving and will soon drown if unable to breathe in a liquid environment. Potent currents also push prisoners inside to the center of the prison, making it difficult to escape. Any attempt to do so requires succeeding at an opposed STR check, for which the spell uses a value of 14. Characters trapped inside can increase their effective Strength score by +1 for every level of difficulty above Easy they achieve with a Swim check. The water mass appears as a cube, whose area is determined by the level of the spell. All creatures inside the area of effect after the first round it is cast must attempt the opposed check.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10 m3"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 m3"
+      },
+      "advanced": {
+        "zeon": 280,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 m3"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 16,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 m3, Strength increased to 15"
+      }
+    }
+  },
+  {
+    "id": "glacier",
+    "name": "Glacier",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 70,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "As implied by the name, this spell creates an immense glacial zone around the caster, totally independent of the prevailing weather conditions. The surroundings immediately are covered with ice and snow, while the temperature drops several degrees below freezing. Natural weather phenomena will not affect the cold for as long as the spell is maintained. The radius is dictated by the level of the spell, and cannot be moved once determined.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1km Radius"
+      },
+      "intermediate": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": 60,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3km Radius"
+      },
+      "advanced": {
+        "zeon": 400,
+        "min_int": 14,
+        "maintenance": 80,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5km Radius"
+      },
+      "arcane": {
+        "zeon": 500,
+        "min_int": 16,
+        "maintenance": 100,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10km Radius"
+      }
+    }
+  },
+  {
+    "id": "tsunami",
+    "name": "Tsunami",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 72,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Raises a devastating Tsunami that ravages the coast for a given length. The eldritch tsunami destroys any construction with a damage barrier less than 80. Those above are still greatly damaged, but functional. All individuals along the area suffer the logical consequences.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1km Length"
+      },
+      "intermediate": {
+        "zeon": 350,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10km Length"
+      },
+      "advanced": {
+        "zeon": 450,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "20km Length"
+      },
+      "arcane": {
+        "zeon": 550,
+        "min_int": 17,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "30km Length, damage barrier limit 90."
+      }
+    }
+  },
+  {
+    "id": "soul-reflection",
+    "name": "Soul Reflection",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 76,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect",
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "effect": "Produces a spiritual reflection of a person or creature. The result is an animistic copy of the individual, featuring each and every quality present in the original. In game terms, the entity is identical to the original – except that it is a spiritual being. Although endowed with the capacity to interact with the real world, and visible to all (unless the original is also invisible), it is immune to attacks not capable of damaging energy. Powers of the original creature that require an elevated Gnosis above 20 cannot be duplicated. The reflection will obey the caster’s orders, but it can only materialize in the presence of the subject upon whose likeness it reflects. It can also only target beings within the level limit set by the level of the spell. Unwilling targets can attempt a MR check to avoid being copied, and the caster cannot target themselves.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "Level 3, 140 MR"
+      },
+      "intermediate": {
+        "zeon": 280,
+        "min_int": 12,
+        "maintenance": 30,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "Level 5, 160 MR"
+      },
+      "advanced": {
+        "zeon": 320,
+        "min_int": 14,
+        "maintenance": 35,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "Level 8, with powers up to Gnosis 25, MR 180"
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 16,
+        "maintenance": 40,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "Level 12, with powers up to Gnosis 30, MR 200"
+      }
+    }
+  },
+  {
+    "id": "slow-time-water",
+    "name": "Slow Time",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 80,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "Acting upon the fabric of space-time of a specific section of reality, time’s pace is slowed in such a way that it passes at a much slower rate for everyone within – including the caster. One minute in the area may equal one hour outside of it, or even longer, based on the level of the spell. The spell also has a final radius, but the zone initially only expands from the caster at a rate of 10 meters per combat turn. If someone enters it later, they are equally influenced. Only great and powerful entities, with a Gnosis value greater than 30, can avoid the consequences of the spell by succeeding at an MR check.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100m Radius, 120 MR, time slowed to one tenth of normal"
+      },
+      "intermediate": {
+        "zeon": 320,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200m Radius, 140 MR, time slowed to one hundredth of normal"
+      },
+      "advanced": {
+        "zeon": 450,
+        "min_int": 14,
+        "maintenance": 30,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "500m Radius, 160 MR, time slowed to one thousandth of normal"
+      },
+      "arcane": {
+        "zeon": 600,
+        "min_int": 16,
+        "maintenance": 35,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "1km Radius, 180 MR, time slowed to one millionth of normal"
+      }
+    }
+  },
+  {
+    "id": "create-undine",
+    "name": "Create Undine",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 82,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Creates a seemingly live creature completely under the control of the caster. This entity is developed as a Being Between Worlds, subject to the elemental powers and limitations of Water Elementals described in Anima: Beyond Fantasy - Chapter 26: Creation of Beings. The creature has a number of development points based on the level of the spell, and the elemental is created using the same rules as the spell Create Being in the path of creation.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 10,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "600 DP (Level 1)"
+      },
+      "intermediate": {
+        "zeon": 350,
+        "min_int": 12,
+        "maintenance": 70,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "800 DP (Level 3)"
+      },
+      "advanced": {
+        "zeon": 500,
+        "min_int": 14,
+        "maintenance": 100,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1100 DP (Level 6)"
+      },
+      "arcane": {
+        "zeon": 700,
+        "min_int": 16,
+        "maintenance": 140,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1500 DP (Level 10)"
+      }
+    }
+  },
+  {
+    "id": "freeze-magic",
+    "name": "Freeze Magic",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 86,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Freezes magic itself, temporarily stopping spells and canceling their effects. Spells do not dissipate while they are stopped. However, they are suspended and unable to affect anything, and they also do not require maintenance while in this state. Freeze magic affects spells both from the caster and from other characters, provided their combined Zeon is within the limit set by the level of the spell. The suspended spells will regain activity as soon as Freeze Magic dissipates. As this is a passive spell, it can even be used to stop spells activated within the same turn it is cast.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 9,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 Zeon limit"
+      },
+      "intermediate": {
+        "zeon": 400,
+        "min_int": 12,
+        "maintenance": 75,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "250 Zeon limit"
+      },
+      "advanced": {
+        "zeon": 550,
+        "min_int": 15,
+        "maintenance": 90,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 Zeon limit"
+      },
+      "arcane": {
+        "zeon": 800,
+        "min_int": 18,
+        "maintenance": 110,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "400 Zeon limit"
+      }
+    }
+  },
+  {
+    "id": "inside-the-mirror",
+    "name": "Inside the Mirror",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 90,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "The caster can conjure a reflection of a territory, thus creating a parallel reality in image and likeness of an actual place in the world. The reflection will be identical, duplicating the exact condition of buildings, flora, and weather present in the original at the time the spell is cast. Only living beings with presence greater than 20, or locales with exceptional characteristics cannot be duplicated. The caster creates as well several doors that connect the real world to their creation in whatever place or form they desire when the spell is cast. There is no limit to the number of doors that is made – provided there is at least one.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 300,
+        "min_int": 9,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500m Radius"
+      },
+      "intermediate": {
+        "zeon": 480,
+        "min_int": 12,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "2km Radius"
+      },
+      "advanced": {
+        "zeon": 600,
+        "min_int": 15,
+        "maintenance": 60,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5km Radius"
+      },
+      "arcane": {
+        "zeon": 800,
+        "min_int": 17,
+        "maintenance": 70,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10km Radius, can also imitate beings with presence 30 or below"
+      }
+    }
+  },
+  {
+    "id": "lord-of-ice",
+    "name": "Lord of Ice",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 92,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "Grants the caster control of all cold or ice nuclei within the area – regardless of their number of intensities. They can decrease ambient temperature in the area and crystallize ice wherever needed. Any cold- based creature within the area must succeed at an MR check or be completely under the control of the caster. These beings only can reattempt their resistance check again when their base resistance value changes or if they are ordered to do something against their very nature.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 300,
+        "min_int": 10,
+        "maintenance": 30,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 km Radius, MR 140"
+      },
+      "intermediate": {
+        "zeon": 450,
+        "min_int": 12,
+        "maintenance": 45,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "1000 km Radius, MR 180"
+      },
+      "advanced": {
+        "zeon": 600,
+        "min_int": 14,
+        "maintenance": 60,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "10000 km Radius, MR 200"
+      },
+      "arcane": {
+        "zeon": 1000,
+        "min_int": 16,
+        "maintenance": 100,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100000 km Radius, MR 240"
+      }
+    }
+  },
+  {
+    "id": "lord-of-water",
+    "name": "Lord of Water",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 96,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "Grants absolute control over all liquid substances within it’s area. The caster can manipulate oceans, rivers and lakes of any size, molding them at will as if they were extensions of the caster. All water based creatures in the area will immediately be controlled by the caster unless they succeed at an MR check. These beings only can reattempt their resistance check again when their base resistance value changes or if they are ordered to do something against their very nature.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 300,
+        "min_int": 10,
+        "maintenance": 30,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 km Radius, MR 140"
+      },
+      "intermediate": {
+        "zeon": 450,
+        "min_int": 12,
+        "maintenance": 45,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "1000 km Radius, MR 180"
+      },
+      "advanced": {
+        "zeon": 600,
+        "min_int": 15,
+        "maintenance": 60,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "10000 km Radius, MR 200"
+      },
+      "arcane": {
+        "zeon": 1000,
+        "min_int": 18,
+        "maintenance": 100,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "Affects all liquids in the world, MR 240"
+      }
+    }
+  },
+  {
+    "id": "a-perfect-world",
+    "name": "A Perfect World",
+    "category": "main",
+    "path": "Water",
+    "path_type": "minor",
+    "level": 100,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "Freezes reality itself, grinding the passage of time to a complete stop. Existence is frozen for the duration of the spell, and only the caster can move actively and freely upon the surroundings. During this time, they are unable to regenerate Zeon. It is only possible for supremely powerful beings with either a Gnosis of 35 or a Gnosis value 20 above their natura can even attempt to resist, and to do so requires succeeding against an MR check. Obviously, failure means they are frozen in existence, and cannot repeat the check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 260,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 450,
+        "min_int": 12,
+        "maintenance": 90,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "intermediate": {
+        "zeon": 800,
+        "min_int": 15,
+        "maintenance": 115,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      },
+      "advanced": {
+        "zeon": 1200,
+        "min_int": 17,
+        "maintenance": 130,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "220 MR"
+      },
+      "arcane": {
+        "zeon": 1600,
+        "min_int": 20,
+        "maintenance": 145,
+        "resistance": 260,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "260 MR"
+      }
+    }
+  }
+]

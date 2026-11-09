@@ -1,0 +1,172 @@
+Autopsy
+Level: 4 Action: Active
+Effect: This spell determines the cause of a creature’s death and the time it
+occurred. The spell does not specify whether the target was killed by someone
+or, if so, who was responsible, but could determine if, for example, someone
+died because of a massive impact or from a particular type of disease. The level
+of the spell determines how recently the target had to have died in order for
+the spell to work. Beyond the listed time period, the spell gains no information.
+Level Basic Intermediate Advanced Arcane
+Zeon 50 80 100 120
+Int. R. 4 8 10 12
+Basic: 1 hour.
+Intermediate: 1 day.
+Advanced: 1 week.
+Arcane: 1 month.
+Maintenance: No
+Spell Type: Effect
+
+Resistance to Death
+Level: 14 Action: Passive
+Effect: This spell protects against any effect that might cause automatic death.
+It gives a bonus to the target’s Resistances against such effects.
+Level Basic Intermediate Advanced Arcane
+Zeon 60 90 120 140
+Int. R. 6 9 12 14
+Basic: +20 to Resistances.
+Intermediate: +40 to Resistances.
+Advanced: +60 to Resistances.
+Arcane: +80 to Resistances.
+Maintenance: 10 / 10 / 15 / 15 Daily
+Spell Type: Effect
+
+Minor Extermination
+Level: 24 Action: Active
+Effect: This spell kills a creature with Presence 20 or less chosen by the caster
+and within a given distance from him if it fails a MR check determined by the level
+of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 80 100 120 140
+Int. R. 7 9 11 13
+Basic: MR 60 / 30 foot radius.
+Intermediate: MR 80 / 80 foot radius.
+Advanced: MR 100 / 150 foot radius.
+Arcane: MR 120 / 225 foot radius.
+Maintenance: No
+Spell Type: Effect, Spiritual
+
+Knockout
+Level: 34 Action: Active
+Effect: This spell kills someone who is about to die. The target must be
+Between Life and Death, and it automatically dies if it fails a MR check of the
+difficulty determined by the level of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 60 80 100 120
+Int. R. 7 9 11 13
+Basic: MR 140.
+Intermediate: MR 160.
+Advanced: MR 180.
+Arcane: MR 200.
+Maintenance: No
+Spell Type: Automatic
+
+Put to Rest
+Level: 44 Action: Active
+Effect: This spell automatically destroys all undead creatures without a soul in
+the spell’s area. Undead creatures can resist its effects by passing a MR check
+determined by the level of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 60 90 120 150
+Int. R. 7 10 13 15
+Basic: MR 120 / 30 foot radius.
+Intermediate: MR 140 / 80 foot radius.
+Advanced: MR 160 / 150 foot radius.
+Arcane: MR 180 / 225 foot radius.
+Maintenance: No
+Spell Type: Spiritual
+
+Sense Death
+Level: 54 Action: Active
+Effect: This spell makes the caster able to sense death nearby. He becomes
+aware of those who have died or are dying close to him.
+Level Basic Intermediate Advanced Arcane
+Zeon 80 100 120 150
+Int. R. 7 10 13 15
+Basic: The caster knows if someone died within 300 feet of him less than an
+hour ago, or if there is someone in that radius is who is currently dying and will
+likely pass on in the next minute.
+Intermediate: The caster knows if someone died within 500 feet of him less
+than an hour ago, or if there is someone in that radius who is likely to die in the
+next 10 minutes. This predictive ability does not allow him to know any specifics;
+he only senses the death.
+Advanced: The caster feels death clearly. In a 500 foot radius, he can tell if
+someone died around him in the past and how far in life each living person is, as
+well as likely or unlikely causes of their deaths.
+Arcane: As Advanced level, but the caster is able to perceive the probable
+cause of death of those who died in the past and those who may die in the near
+future.
+Maintenance: 10 / 10 / 15 / 15
+Spell Type: Effect
+
+Memento Mori
+Level: 64 Action: Active
+Effect: This spell kills any living creature within its area, regardless of their
+nature or condition. Targets may ignore its effects by passing a MR check with
+the difficulty determined by the level of the spell.
+Level Basic Intermediate Advanced Arcane
+Zeon 120 150 200 260
+Int. R. 8 10 13 15
+Basic: MR 80 / 15 foot radius.
+Intermediate: MR 100 / 30 foot radius.
+Advanced: MR 120 / 80 foot radius.
+Arcane: MR 140 / 150 foot radius.
+Maintenance: No
+Spell Type: Spiritual
+
+Deadly Curse
+Level: 74 Action: Active
+Effect: The caster can make a target die at a time determined by him and in a
+way he chooses. He creates a “prophecy of death” as he sees fit. For this spell to
+work, the caster must hit his target with it, and the target must fail a MR check
+with the difficulty determined by the level of the spell. From that time on, all
+other individuals directly involved in the events leading up to the death can also
+prevent the spell’s effects by passing a MR check with the same difficulty.
+Level Basic Intermediate Advanced Arcane
+Zeon 150 250 350 500
+Int. R. 9 11 13 15
+Basic: MR 120.
+Intermediate: MR 160.
+Advanced: MR 200.
+Arcane: MR 240.
+Maintenance: 15 / 25 / 35 / 50 Daily
+Spell Type: Spiritual, Automatic
+
+Stop Death
+Level: 84 Action: Passive
+Effect: The target of this spell becomes temporarily immortal. This does not
+mean that he becomes undead, just that as long as the spell lasts, death has no
+power over him. This spell has no effect on powers that directly destroy the soul
+or the like.
+Level Basic Intermediate Advanced Arcane
+Zeon 350 500 800 1,200
+Int. R. 10 12 14 16
+Basic: Target automatically ignores any effect that causes automatic death, but
+can be killed by physical damage.
+Intermediate: The character cannot be killed by physical damage. However,
+if his body is damaged to a level that would kill him, he dies automatically if the
+spell’s effects end before he can be cured. This does not protect from death
+caused by a Critical on a vulnerable point or by decapitation.
+Advanced: As Intermediate level, but the character cannot die from Criticals,
+no matter what their consequences.
+Arcane: As Advanced level, but the character also ignores all penalties to his
+actions caused by physical damage or deterioration.
+Maintenance: 15 / 25 / 40 / 60
+Spell Type: Effect, Spiritual
+
+Death
+Level: 94 Action: Active
+Effect: The wizard gains absolute power over death and may decide who lives
+and who dies in the area of this spell. As an automatic effect once per turn, the
+caster can choose any living creature in the area to die if the creature fails a PhR
+or MR check against a value determined by the level of the spell. Anyone who
+passes the check once cannot be again affected by this spell in their lifetime by
+the same wizard.
+Level Basic Intermediate Advanced Arcane
+Zeon 400 750 1,200 2,000
+Int. R. 12 14 16 18
+Basic: PhR or MR 80 / 1,500 foot radius.
+Intermediate: PhR or MR 100 / 3,000 foot radius.
+Advanced: PhR or MR 120 / 3 mile radius.
+Arcane: PhR or MR 140 / 6 mile radius.
+Maintenance: 40 / 75 / 120 / 200 Daily
+Spell Type: Effect, Automatic

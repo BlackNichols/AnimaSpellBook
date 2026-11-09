@@ -1,0 +1,2497 @@
+[
+  {
+    "id": "fragility",
+    "name": "Fragility",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 2,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Alters the solidity of an object, reducing its sturdiness and making it easier to break. Anything affected automatically loses its damage barrier; if cast on arms or armor, they receive a penalty to their fortitude. This spell can affect a number of objects within it’s presence limit, based on the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "-2 Fortitude, 30 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "-4 Fortitude, 60 Presence limit"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "-8 Fortitude, 90 Presence limit"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "-12 Fortitude, 120 presence limit"
+      }
+    }
+  },
+  {
+    "id": "dismantle",
+    "name": "Dismantle",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 6,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Dismantles an object into its various pieces. This spell only affects inanimate objects within a limit set by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 5,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "20 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "40 Presence limit"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "60 Presence limit"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 presence limit"
+      }
+    }
+  },
+  {
+    "id": "destroy-energy",
+    "name": "Destroy Energy",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 8,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Destroys a number of intensities of the caster’s choice – either Fire, Cold, or Electricity. If cast upon an elemental associated with the chosen element, they must pass a successful MR check or immediately lose 5 Life Points per intensity destroyed.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR",
+        "PsR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 5,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "1 Intensity, 100 MR"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "5 Intensities, 120 MR"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "10 Intensities, 140 MR"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "20 Intensities, 160 MR"
+      }
+    }
+  },
+  {
+    "id": "minor-destruction",
+    "name": "Minor Destruction",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 10,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Affects the essence of a lifeless material object, destroying it completely, as long as it’s presence is within the limit set by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "20 Presence Limit"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "40 Presence Limit"
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 11,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "60 Presence Limit"
+      },
+      "arcane": {
+        "zeon": 180,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 Presence Limit"
+      }
+    }
+  },
+  {
+    "id": "sphere-of-destruction",
+    "name": "Sphere of Destruction",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 12,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "effect": "Projects one or more spheres of destructive magical energy, based on the level of the spell. These spheres have a base damage of 30, and can be used to attack multiple targets. If chosen to do so, targets are chosen when the spell is cast.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 Sphere"
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "3 Spheres"
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5 Spheres"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "7 Spheres"
+      }
+    }
+  },
+  {
+    "id": "increase-weakness",
+    "name": "Increase Weakness",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 16,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "Finds a being’s weak points, and makes them even weaker supernaturally. In game terms, it doubles the penalties an individual suffers for an existing weakness or vulnerability. For example, an elemental who is especially vulnerable to light would suffer quadruple damage, instead of the standard double damage for such an attack. A character weak to poison would find their PsnR reduced to one quarter it’s value, instead of the standard one half for such a disadvantage. To avoid these effects, the target must pass an MR check, and are only permitted another check when affected by their weaknesses.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR",
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "120 MR"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "140 MR"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "160 MR"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 200,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "200 MR"
+      }
+    }
+  },
+  {
+    "id": "destroy-magic",
+    "name": "Destroy Magic",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 18,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Destroys completely any spell whose Zeon value is within the limit determined by the level of the spell. Since Destroy Magic is passive, it may be employed to nullify any spell launched in the same combat turn.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 Zeon limit"
+      },
+      "intermediate": {
+        "zeon": 150,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "120 Zeon limit"
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 Zeon limit"
+      },
+      "arcane": {
+        "zeon": 500,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "350 Zeon limit"
+      }
+    }
+  },
+  {
+    "id": "aggravate-damage",
+    "name": "Aggravate Damage",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 20,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Increases the base damage of an attack (whether physical or supernatural), by an amount determined by the level of the spell. For example, if an attacker is wielding a weapon with a base damage of 60, using this spell increases it to 90. In spite of this spell being Passive, it must be cast before any dice are rolled for an associated attack.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+30 Base damage"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+50 Base damage"
+      },
+      "advanced": {
+        "zeon": 150,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+90 Base damage"
+      },
+      "arcane": {
+        "zeon": 220,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+120 Base damage"
+      }
+    }
+  },
+  {
+    "id": "destruction-of-matrices",
+    "name": "Destruction of Matrices",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 22,
+    "level_bracket": null,
+    "action": "Passive",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Unravels the energy composing the matrices of a psychic power. Any active power of the determined difficulty rating based on the level of the spell is destroyed, though the psychic may manifest the powers again at a later time. Since this spell is passive, it may be employed to nullify any psychic power launched in the same combat turn.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Medium (80)"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Very Difficult (140)"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Almost Impossible (240)"
+      },
+      "arcane": {
+        "zeon": 320,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Inhuman (320)"
+      }
+    }
+  },
+  {
+    "id": "wound",
+    "name": "Wound",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 26,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Afflicts the physical condition of an individual, doing damage to it’s health. Produces wounds and damage equal to a percentage of the victim’s Life Points. This is calculated using their current life points, not their total. To resist the effects of the spell, the target must succeed at an MR check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR",
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "20% Life Points, 120 MR"
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "40% Life Points, 140 MR"
+      },
+      "advanced": {
+        "zeon": 180,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "60% Life Points, 160 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "80% Life Points, 200 MR"
+      }
+    }
+  },
+  {
+    "id": "destroy-ki",
+    "name": "Destroy Ki",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 28,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "The magic unleashed by this spell penetrates the soul of the victim, dissolving their Ki reserves. The victim must pass a successful MR check, or lose a number of ki points equal to their level of failure.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 220,
+      "resistance_types": [
+        "MR",
+        "PsR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "140 MR"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "160 MR"
+      },
+      "advanced": {
+        "zeon": 220,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "180 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 220,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "220 MR"
+      }
+    }
+  },
+  {
+    "id": "produce-damage",
+    "name": "Produce Damage",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 30,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster automatically causes a wound to appear on an individual’s body. If the victim does not pass an MR check, they suffer a number of points of damage directly to their Life Point total. Creatures with Damage Resistance multiplies the damage value by their damage resistance multiple.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, 50 Damage"
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, 100 Damage"
+      },
+      "advanced": {
+        "zeon": 180,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, 180 Damage"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR, 250 Damage"
+      }
+    }
+  },
+  {
+    "id": "destruction-of-senses",
+    "name": "Destruction of Senses",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 32,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Cuts off the senses of an individual unless they pass an MR check. The caster may choose which senses to eliminate in this way.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 280,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 MR"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR"
+      },
+      "arcane": {
+        "zeon": 280,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": 280,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "280 MR"
+      }
+    }
+  },
+  {
+    "id": "mystic-bolt",
+    "name": "Mystic Bolt",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 36,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "effect": "Projects a mystical bolt at a single target. This spell uses the Energy attack type with a base damage determined by the spell level.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Base Damage"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 Base Damage"
+      },
+      "advanced": {
+        "zeon": 220,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 Base Damage"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "250 Base Damage"
+      }
+    }
+  },
+  {
+    "id": "unravel-ties",
+    "name": "Unravel Ties",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 38,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster undoes any type of bond that permits a summoner to control their summoned creatures. This may be used with equal effect on either the controller or the controlled creature, but it is always the controller’s MR that is used for the associated check. If cast upon the creature, it only affects that creature’s bond, but if cast upon the summoner directly, it breaks an additional binding for each 10 points by which they fail the associated MR check. If used against a summoner’s Familiar, he gains a +40 bonus to the MR check, as the bond is especially deep between the two souls.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR"
+      },
+      "arcane": {
+        "zeon": 500,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR"
+      }
+    }
+  },
+  {
+    "id": "destroy-resistances",
+    "name": "Destroy Resistances",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 40,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "The target affected by this spell has all of their Resistances reduced by an amount equal to the margin of failure for the associated MR check determined by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "intermediate": {
+        "zeon": 160,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "240 MR"
+      }
+    }
+  },
+  {
+    "id": "undo-states",
+    "name": "Undo States",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 42,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Automatically removes any states described in Anima: Beyond Fantasy Chapter 14 – States and Accidents, or any other equivalent. This spell can affect a number of targets as long as their total presence is within the limit set by the level of the spell. This cannot undo any penalties from physical deficiencies caused by Critical attacks. Resisting the effects of this spell requires a successful MR check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 7,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 Presence Limit, 120 MR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 Presence Limit, 140 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "300 Presence Limit, 160 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "400 Presence Limit, 200 MR"
+      }
+    }
+  },
+  {
+    "id": "dome-of-destruction",
+    "name": "Dome of Destruction",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 46,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "effect": "Unleashes a dome of supernatural energy that bursts over an area set by the level of the spell. The attack is of the Energy attack type, and the level of the spell also determines its base damage.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 7,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10m Radius, 80 Base damage"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50m Radius, 120 Base damage"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100m Radius, 160 Base damage"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150m Radius, 200 Base damage"
+      }
+    }
+  },
+  {
+    "id": "zone-of-decay",
+    "name": "Zone of Decay",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 48,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "Covers a fixed area, within which all forms of life begin to rot and decay at an accelerated pace. Anyone within the Zone of Decay loses 10% of their total Life Points unless they succeed at an MR check. Each combat turn they remain within the zone they must make a new check, regardless of their success or failure in previous turns. The condition for being affected is by simply remaining in the area.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 7,
+        "maintenance": 15,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 MR, 10m Radius"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, 30m Radius"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, 60m Radius"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR, 100m Radius"
+      }
+    }
+  },
+  {
+    "id": "aura-of-destruction",
+    "name": "Aura of Destruction",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 50,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Enchants a place or object, granting it or the area within it an aura of magic that destroys anything that comes into contact with it. Anyone who touches it or enters the area must succeed at an MR check, or lose as many life points equal to their level of failure. The maximum presence for the object, and/or the area affected is determined by the level of the spell, and affects anyone including the caster.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 100,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "80 MR, 60 Presence limit, 1m Radius"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 MR, 90 Presence limit, 5m Radius"
+      },
+      "advanced": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "80 MR, 60 Presence limit, 15m Radius"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "80 MR, 60 Presence limit, 25m Radius"
+      }
+    }
+  },
+  {
+    "id": "destroy-memories",
+    "name": "Destroy Memories",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 52,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Affects the memories of an individual, making them forget whatever the caster wishes. The spell does not affect a person’s abilities, only their conscious memories. Avoiding the effect requires a successful MR or PsR check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR",
+        "PsR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 7,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "100 MR or PsR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "120 MR or PsR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "160 MR or PsR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "200 MR or PsR"
+      }
+    }
+  },
+  {
+    "id": "block-learning",
+    "name": "Block Learning",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 56,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Impedes the ability of an individual to learn, completely preventing them from developing or acquiring new knowledge. In game terms, a person is under the effects of the spell cannot acquire new Experience Points nor develop any abilities or powers. To avoid these effects, they must succeed at an MR check with a difficulty set by the level of the spell. If unsuccessful, a new check may only be attempted once per day.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": 15,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR"
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR"
+      },
+      "arcane": {
+        "zeon": 500,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "240 MR"
+      }
+    }
+  },
+  {
+    "id": "forbid",
+    "name": "Forbid",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 58,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster vetoes some specific action by the spell’s victim, completely preventing them from even attempting the action. In game terms, the spell forbids only Active actions. Resisting the spell’s effects requires a successful MR check. If the forbidden action is very general, like attacking or moving, the target may add a special bonus to their check between +10 and +30, at the GM’s discretion.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": 25,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 16,
+        "maintenance": 30,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "240 MR"
+      }
+    }
+  },
+  {
+    "id": "destroy-powers",
+    "name": "Destroy Powers",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 60,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "The victim of this spell is completely unable to use any of their supernatural powers. They are thereby prevented from using any magical, psychic, or Ki powers they possess. Mystical beings also lose all their powers (although not any natural abilities). To avoid the effects of the spell, the target must succeed at an MR check with a difficulty set by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 220,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 7,
+        "maintenance": 15,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "220 MR"
+      }
+    }
+  },
+  {
+    "id": "greater-mystic-bolt",
+    "name": "Greater Mystic Bolt",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 62,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "effect": "Projects a powerful supernatural bolt. The attack is of the Energy attack type and has a base damage determined by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 Damage"
+      },
+      "intermediate": {
+        "zeon": 300,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 Damage"
+      },
+      "advanced": {
+        "zeon": 450,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "450 Damage"
+      },
+      "arcane": {
+        "zeon": 600,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "600 Damage"
+      }
+    }
+  },
+  {
+    "id": "destroy-will",
+    "name": "Destroy Will",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 66,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Affects an area, within which any individual who does not succeed at an MR check automatically loses the ability to make decisions. In game terms, while a person is influenced by this spell, they cannot undertake any Active action, even moving, except in the cases of necessity.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 160,
+        "min_int": 8,
+        "maintenance": 20,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, 10m Radius"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, 25m Radius"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": 25,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, 50m Radius"
+      },
+      "arcane": {
+        "zeon": 280,
+        "min_int": 16,
+        "maintenance": 30,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR, 100m Radius"
+      }
+    }
+  },
+  {
+    "id": "zone-of-weakness",
+    "name": "Zone of Weakness",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 68,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "The caster weakens the fibers of reality itself within a given area, making everything inside become fragile and vulnerable. Any damage produced within the spells area is automatically doubled, and characters suffer the effects of Critical hits as if their entire body was a vulnerable point. Structures and constructions automatically lose their Damage Barrier, and objects with a Fortitude rating such as swords and armor suffer a -5 penalty to said Fortitude. The spell remains stationary once cast. Resisting the spell’s effects requires a successful MR check, and a failed check may only be repeated once per day. However, leaving the area removes the spells effects immediately.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, 25m Radius"
+      },
+      "intermediate": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": 30,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, 100m Radius"
+      },
+      "advanced": {
+        "zeon": 400,
+        "min_int": 14,
+        "maintenance": 40,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR, 250m Radius"
+      },
+      "arcane": {
+        "zeon": 500,
+        "min_int": 16,
+        "maintenance": 50,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR, 500m Radius"
+      }
+    }
+  },
+  {
+    "id": "essence-of-destruction",
+    "name": "Essence of Destruction",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 70,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster alters the material of a person or creature, transforming it into a form of pure destructive energy capable of devouring anything it comes into contact with. While in this state, they can only be damaged by attacks capable of damaging energy, and anyone coming into contact with them must pass an MR check, with a special difficulty rating equal to twice the presence of the transformed person. If unsuccessful, the level of the spell determines the effects of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 9,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Damage equal to the failure level."
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 12,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Damage and All Action Penalty equal to the failure level."
+      },
+      "advanced": {
+        "zeon": 250,
+        "min_int": 14,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Intermediate, but Damage is equal to twice the failure level."
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 16,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Damage and All Action Penalty equal to twice the failure level."
+      }
+    }
+  },
+  {
+    "id": "death-destruction",
+    "name": "Death",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 72,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "The caster is capable of producing the death of a living being by separating their soul from their body. The power of this spell is so great, it can even kill purely supernatural beings or necromantic creatures, converting them simply into a dead soul or even destroying them completely. To resist the effects of this spell, it is necessary to beat an MR or PhR check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR",
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "120 MR or PhR"
+      },
+      "intermediate": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "140 MR or PhR"
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "160 MR or PhR"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "180 MR or PhR"
+      }
+    }
+  },
+  {
+    "id": "devouring-zone",
+    "name": "Devouring Zone",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 76,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "Like a deadly vortex, the Devouring Zone spreads, shredding the essence of everything it finds in its path by slowly consuming it. Little by little, the things this spell reaches weaken until they are unmade, whether they are material objects or living beings. Every day the victims (either people or objects) remain within the area, they must pass a MR or PhR check, or temporarily have their presence reduced by 5 points. If their presence falls to 0 from this effect, they decompose, leaving little to no trace. Living beings also receive an All Action Penalty equivalent to twice the Presence points lost to this effect. The spiritual damage is treated as if Sacrificed, and recovers at a rate of 5 points per day once outside the area of effect.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 270,
+      "resistance_types": [
+        "MR",
+        "PhR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 9,
+        "maintenance": 25,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "500m Radius, 140 MR or PhR"
+      },
+      "intermediate": {
+        "zeon": 360,
+        "min_int": 12,
+        "maintenance": 40,
+        "resistance": 195,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "6km Radius, 195 MR or PhR"
+      },
+      "advanced": {
+        "zeon": 450,
+        "min_int": 15,
+        "maintenance": 45,
+        "resistance": 240,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "10.5km Radius, 240 MR or PhR"
+      },
+      "arcane": {
+        "zeon": 600,
+        "min_int": 17,
+        "maintenance": 55,
+        "resistance": 270,
+        "resistance_types": [
+          "MR",
+          "PhR"
+        ],
+        "description": "13.5km Radius, 270 MR or PhR"
+      }
+    }
+  },
+  {
+    "id": "destroy-capabilities",
+    "name": "Destroy Capabilities",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 78,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Destroys part of the abilities or powers of an individual, stripping them of those powers forever. The caster freely removes a number of Development Points from the affected person, removing them from any ability they desire. They could, for instance, cut the victim’s Attack ability by 30 Development Points, and the remaining amount could be from a secondary ability of the caster’s choice. It is also possible to destroy the supernatural powers of mystical creatures with this spell, using the point values in Anima: Beyond Fantasy - Chapter 26: Creation of Beings for reference. This power also allows the destruction of advantages bought with Creation Points, at a cost of 100 DP per CP removed. Resisting this spell requires a successful MR check, but if failed, it cannot be repeated as the removal is permanent.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "-50 DP, 120 MR"
+      },
+      "intermediate": {
+        "zeon": 250,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "-100 DP, 160 MR"
+      },
+      "advanced": {
+        "zeon": 350,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "-150 DP, 200 MR"
+      },
+      "arcane": {
+        "zeon": 500,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "-200 DP, 240 MR"
+      }
+    }
+  },
+  {
+    "id": "sever-existence",
+    "name": "Sever Existence",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 80,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "As though wielding a knife of nothingness, the caster can cut through reality itself, annihilating anything in their path. Anything that comes into contact with the spell is destroyed both physically and spiritually, leaving no sign that it ever existed, and does not return to the flow of souls. To resist this effect, an affected individual must pass an MR check. The spell can either be used in a line, with a distance and difficulty for the check determined by the level of the spell, or focused into a single point, increasing the associated difficulty by 20. In spite of being a Spiritual spell, the cut in reality is visible to anyone, even someone incapable of seeing magic.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 350,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, 10m Line"
+      },
+      "intermediate": {
+        "zeon": 500,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, 100m Line"
+      },
+      "advanced": {
+        "zeon": 600,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR, 250m Line"
+      },
+      "arcane": {
+        "zeon": 800,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "240 MR, 1km Line"
+      }
+    }
+  },
+  {
+    "id": "rain-of-destruction",
+    "name": "Rain of Destruction",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 82,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Attack"
+    ],
+    "daily_maintenance": false,
+    "effect": "The spell unleashes a storm of selective blasts that destroy only the targets designated by the caster within it’s area. It has a base damage determined by the level of the spell, and is an Energy attack. Additionally, if it impacts a target and causes damage to them, the victim must pass an MR check, or lose a quantity of life points equal to the level of failure.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 260,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "50m Radius, 200 Damage, 140 MR"
+      },
+      "intermediate": {
+        "zeon": 350,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "150m Radius, 250 Damage, 180 MR"
+      },
+      "advanced": {
+        "zeon": 450,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "500m Radius, 300 Damage, 220 MR"
+      },
+      "arcane": {
+        "zeon": 600,
+        "min_int": 17,
+        "maintenance": null,
+        "resistance": 260,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "1km Radius, 400 Damage, 260 MR"
+      }
+    }
+  },
+  {
+    "id": "destruction-of-zeon",
+    "name": "Destruction of Zeon",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 86,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "By directly affecting the essence of magic, this spell is capable of dissipating the power of another active spell, automatically diminishing it’s Zeon value by an amount determined by the level of the spell. If this diminishes the spell below it’s Zeon value for the matching grade of the spell, it is reduced to the next lowest level. If this reduces the spell below it’s base cost, the spell is instead dismissed.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects Base level spells, -50 Zeon"
+      },
+      "intermediate": {
+        "zeon": 400,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects Intermediate level spells, -150 Zeon"
+      },
+      "advanced": {
+        "zeon": 600,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects Advanced level spells, -250 Zeon"
+      },
+      "arcane": {
+        "zeon": 700,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects Arcane level spells, -350 Zeon"
+      }
+    }
+  },
+  {
+    "id": "sweep-from-the-heavens",
+    "name": "Sweep from the Heavens",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 88,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "By destroying its very essence, this spell takes away the divine presence of an entity, temporarily transforming it into an earthly creature. In game terms, the creature affected by this spell has its Gnosis value reduced. That reduction affects what powers or abilities the entity has if they depend on Gnosis, and as such cannot use them while in their reduced state. Resisting the spell requires a successful MR check, and it cannot be repeated in the event of a failure while the spell is maintained.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 260,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "-5 Gnosis, 120 MR"
+      },
+      "intermediate": {
+        "zeon": 600,
+        "min_int": 14,
+        "maintenance": 30,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "-10 Gnosis, 160 MR"
+      },
+      "advanced": {
+        "zeon": 1000,
+        "min_int": 16,
+        "maintenance": 50,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "-15 Gnosis, 200 MR"
+      },
+      "arcane": {
+        "zeon": 2000,
+        "min_int": 18,
+        "maintenance": 100,
+        "resistance": 260,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "-20 Gnosis, 260 MR"
+      }
+    }
+  },
+  {
+    "id": "void",
+    "name": "Void",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 90,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Forms a sphere of absolute destruction that absorbs into itself all physical and spiritual matter around it, unmaking them completely. The sphere must be located in open space when cast, and remains in a fixed location until the spell ends. Once cast, it begins suck in anything within it’s area of influence. The power of attraction of the spell employs an equivalent force to a Strength 14 to pull in its victims, and anyone failing an opposed characteristics check is pulled 30m per point of failure towards the center. The central void is so powerful, that anyone or anything coming into contact with it weakens until it disappears. Each combat turn they remain in the central void’s radius, they must succeed at two resistance checks. The first, an MR check, where failure will reduce the victim’s Zeon equal to the level of failure. The second is a PhR check, where failure will reduce the victim’s Life points equal to the level of failure. If the character is completely drained of Zeon, they begin to permanently lose a point of Power for every 100 points of Zeon they would lose. If their power falls to 0 this way, or if they die from loss of Life Points, their being is totally absorbed by the nothingness. Although the caster is not affected by the attracting power of the void, he will suffer it’s consequences if placed in it’s nucleus like anyone else.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "50m Radius Vortex, 120 MR and PhR, 5m Radius Nucleus,"
+      },
+      "intermediate": {
+        "zeon": 350,
+        "min_int": 14,
+        "maintenance": 40,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "500m Radius Vortex, 160 MR and PhR, 15m Radius Nucleus"
+      },
+      "advanced": {
+        "zeon": 500,
+        "min_int": 16,
+        "maintenance": 45,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "1km Radius Vortex, 200 MR and PhR, 25m Radius Nucleus"
+      },
+      "arcane": {
+        "zeon": 800,
+        "min_int": 18,
+        "maintenance": 55,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "3km Radius Vortex, 240 MR and PhR, 50m Radius Nucleus"
+      }
+    }
+  },
+  {
+    "id": "greater-destruction",
+    "name": "Greater Destruction",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 92,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Provides the ability for the caster to destroy part of the material world on a grand scale, disintegrating even large constructions such as entire cities or vast areas of land. This spell can affect as many inorganic objects as desired as long as the their presence is within the limit imposed by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 350,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "100 Presence Limit"
+      },
+      "intermediate": {
+        "zeon": 600,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "160 Presence Limit"
+      },
+      "advanced": {
+        "zeon": 900,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 Presence Limit"
+      },
+      "arcane": {
+        "zeon": 1500,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "240 Presence Limit"
+      }
+    }
+  },
+  {
+    "id": "destroy-souls",
+    "name": "Destroy Souls",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 96,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "The power unleashed by this spell sweeps away all spiritual matter around the caster, ending the existence of anyone who does not resist its effects. Any individual within the radius from the point where the spell is unleashed must succeed at an MR check against a difficulty set by the level of the spell, or their soul is completely disintegrated, causing immediate death.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 220,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 500,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "5 km Radius, MR 100"
+      },
+      "intermediate": {
+        "zeon": 800,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "50 km Radius, MR 140"
+      },
+      "advanced": {
+        "zeon": 1500,
+        "min_int": 17,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "250 km Radius, MR 180"
+      },
+      "arcane": {
+        "zeon": 2500,
+        "min_int": 19,
+        "maintenance": null,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "1000 km Radius, MR 220"
+      }
+    }
+  },
+  {
+    "id": "chaos",
+    "name": "Chaos",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 98,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "A spell of almost insuperable power, since it is capable of shaking even the very pillars of reality. Upon being unleashed, the caster causes the very order of things to crumble, altering the balance of all things in a completely unexpected way. Inside this zone of chaos, nothing works as it should, and all events are unnaturally twisted. For example, Chaos can affect gravity, making some things light as feathers and others as heavy as lead. It can affect the weather, causing icy winds only yards from a tropical gale or heat wave. This spell does not affect only the natural elements, though. It can influence the feelings and instincts of living beings, making lovers hate each other with a passion, or irreconcilable enemies capable of bonds of peace. This spell can even affect the passage of time, making it flow more quickly or slowly (this said, it cannot allow you to travel to the past). This is all to say, Chaos is capable of affecting practically any imaginable facet of reality. The caster can designate specific aspects of reality they wish to alter, or on the other hand, transform all of reality completely. In either case, this spell does not give the caster direct control of the changes, so the results and consequences can be as the name of the spell implies, completely chaotic. The spell has a radius based on the level of the spell, and is stationary once cast. Additionally, especially powerful beings have the ability to resist this change, depending on the level of the spell, as their spiritual and existential force is great enough to maintain order.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 700,
+        "min_int": 14,
+        "maintenance": 70,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects Gnosis 10 beings, 100 km Radius"
+      },
+      "intermediate": {
+        "zeon": 1200,
+        "min_int": 16,
+        "maintenance": 80,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects Gnosis 20 beings, 1000 km Radius"
+      },
+      "advanced": {
+        "zeon": 2000,
+        "min_int": 18,
+        "maintenance": 90,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects Gnosis 30 beings, 10000 km Radius"
+      },
+      "arcane": {
+        "zeon": 5000,
+        "min_int": 20,
+        "maintenance": 100,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects Gnosis 40 beings, no distance limitations."
+      }
+    }
+  },
+  {
+    "id": "uncreation",
+    "name": "Uncreation",
+    "category": "main",
+    "path": "Destruction",
+    "path_type": "major",
+    "level": 100,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "This spell permits the caster to designate an aspect of existence, one as far reaching as a city, or a race of peoples, or as precise as a single individual, and simply make it cease to exist. The unmade item, or person, is erased from reality with all the consequences this implies, so that it had never existed. No one who knew of what was unmade can remember it, and all events it may have affected are modified as though what was unmade had no hand in it; even returning to life those whose deaths the unmade may have caused (as long as the victim’s souls remain). Only entities with a Gnosis of 40, or those who have ascended with a value 20 higher than their Natura will remember the unmade, due to their superior existential force. To avoid the effects of this spell, even if it targets a multitude of people or objects, the highest value among them is used to perform a MR check. It is only possible to unmake those things that exist in the present, and not something purely in the past.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 1000,
+        "min_int": 17,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "intermediate": {
+        "zeon": 2500,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR"
+      },
+      "advanced": {
+        "zeon": 5000,
+        "min_int": 19,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR"
+      },
+      "arcane": {
+        "zeon": 10000,
+        "min_int": 20,
+        "maintenance": null,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "240 MR"
+      }
+    }
+  }
+]

@@ -1,0 +1,586 @@
+[
+  {
+    "id": "slow-pulse",
+    "name": "Slow Pulse",
+    "category": "secondary",
+    "path": "Blood",
+    "path_type": null,
+    "level": 4,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell affects its target’s bloodstream, slowing it down if it is abnormally fast (as in the case of someone feeling extreme emotions such as anger or fear). The target feels relaxed and does not feel any strong emotions, whether from natural or magical causes. This feeling of calm is so strong that for the next minute the target suffers a –10 penalty to all physical actions. To resist the effects of this spell, the target must pass a MR check with a difficulty determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": null,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 80."
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 100."
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120."
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160."
+      }
+    }
+  },
+  {
+    "id": "clot",
+    "name": "Clot",
+    "category": "secondary",
+    "path": "Blood",
+    "path_type": null,
+    "level": 14,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Healing"
+      ]
+    },
+    "effect": "This spell magically heals wounds, preventing blood loss and closing cuts. A person can only be affected by this spell once per day.",
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Automatically stops any bleeding."
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Heals 20% of any Life Points lost from cuts or bleeding."
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Heals 40% of any Life Points lost from cuts or bleeding."
+      },
+      "arcane": {
+        "zeon": 160,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Heals 60% of any Life Points lost from cuts or bleeding."
+      }
+    }
+  },
+  {
+    "id": "cold-blood",
+    "name": "Cold Blood",
+    "category": "secondary",
+    "path": "Blood",
+    "path_type": null,
+    "level": 24,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell changes the targets’ blood to accommodate external conditions. Thus, targets are not affected by adverse weather and can survive icy wastelands or burning deserts with equal ease. The spell may affect as many targets as the caster wishes, provided that the sum of their Presences is no greater than that allowed by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Maximum Presence 60."
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Maximum Presence 100."
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Maximum Presence 180."
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Maximum Presence 300."
+      }
+    }
+  },
+  {
+    "id": "blood-creation",
+    "name": "Blood Creation",
+    "category": "secondary",
+    "path": "Blood",
+    "path_type": null,
+    "level": 34,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell creates an object or weapon from the wizard’s own blood, crystallized into an extremely hard magical material. Unfortunately, this requires the caster to sacrifice some of his blood, losing Life Points in the process that recover at the rate of a Sacrifice (i.e., 10 LP per day).",
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "–10 Life Points / Quality +0 / Object up to 5 lbs."
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 9,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "–20 Life Points / Quality +5 / Object up to 15 lbs."
+      },
+      "advanced": {
+        "zeon": 160,
+        "min_int": 12,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "–40 Life Points / Quality +10 / Object up to 50 lbs."
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 15,
+        "maintenance": 60,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "–60 Life Points / Quality +15 / Object up to 80 lbs."
+      }
+    }
+  },
+  {
+    "id": "transfusion",
+    "name": "Transfusion",
+    "category": "secondary",
+    "path": "Blood",
+    "path_type": null,
+    "level": 44,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": [
+        "Healing"
+      ]
+    },
+    "effect": "This spell separates some of the vital energy from the caster’s blood and transfers it to an ally, effectively transferring some of the caster’s Life Points. The amount of Life Points the caster sacrifices is multiplied by an amount determined by the level of the spell. For example, if a wizard casts Transfusion at the Intermediate level and sacrifices 10 Life Points, his chosen ally will recover 50 Life Points. This spell does not regenerate severed limbs or other permanent losses, but it does reduce penalties caused by Criticals by an amount equal to the Life Points the caster sacrificed. The Life Points the caster gives up recover at the rate of a Sacrifice (i.e., 10 LP per day).",
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "2x the Life Points sacrificed."
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "5x the Life Points sacrificed."
+      },
+      "advanced": {
+        "zeon": 80,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "10x the Life Points sacrificed."
+      },
+      "arcane": {
+        "zeon": 100,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "20x the Life Points sacrificed."
+      }
+    }
+  },
+  {
+    "id": "exsanguinate",
+    "name": "Exsanguinate",
+    "category": "secondary",
+    "path": "Blood",
+    "path_type": null,
+    "level": 54,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell causes any wounds the target sustains to bleed horribly, greatly increasing the damage he suffers from attacks. While this spell is active, whenever the target is struck by an attack that deals Impact, Cut, or Thrust damage, he suffers additional damage as determined by the level of the spell. Exsanguinate will not amplify damage caused by the Heat, Cold, Electricity, or Energy Attack Types. To avoid this spell’s effects, the target must pass a MR check against the spell when it is first cast on him. Whenever the target suffers damage that has been amplified by the spell, he may repeat the MR check to end the spell’s effects after the damage has been suffered.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / Increases damage taken by 50%."
+      },
+      "intermediate": {
+        "zeon": 150,
+        "min_int": 9,
+        "maintenance": 15,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140 / Doubles damage taken."
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 12,
+        "maintenance": 20,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / Triples damage taken."
+      },
+      "arcane": {
+        "zeon": 250,
+        "min_int": 15,
+        "maintenance": 25,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180 / Quadruples damage taken."
+      }
+    }
+  },
+  {
+    "id": "vampirism",
+    "name": "Vampirism",
+    "category": "secondary",
+    "path": "Blood",
+    "path_type": null,
+    "level": 64,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell causes a chosen weapon to drink some of the blood of anyone it injures, channeling their life force into its wielder to restore his lost Life Points. If it is used to attack a creature with Damage Resistance, the amount of Life Points drained is divided by 10.",
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Drains 10% of the points of damage dealt."
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Drains 20% of the points of damage dealt."
+      },
+      "advanced": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Drains 30% of the points of damage dealt."
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Drains 40% of the points of damage dealt."
+      }
+    }
+  },
+  {
+    "id": "tears-of-blood",
+    "name": "Tears of Blood",
+    "category": "secondary",
+    "path": "Blood",
+    "path_type": null,
+    "level": 74,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 260,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This horrific incantation causes the blood in the target’s heart to expand and burst the heart from within. The target must pass a PhR or MR check; if he fails by more than 40 points, he dies automatically, and if he fails by less than 40, he suffers damage as described in each level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 280,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "PhR or MR 140 / 50 Base Damage."
+      },
+      "intermediate": {
+        "zeon": 320,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "PhR or MR 180 / 100 Base Damage."
+      },
+      "advanced": {
+        "zeon": 360,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "PhR or MR 220 / 150 Base Damage."
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 17,
+        "maintenance": null,
+        "resistance": 260,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "PhR or MR 260 / 200 Base Damage."
+      }
+    }
+  },
+  {
+    "id": "flowing-blood",
+    "name": "Flowing Blood",
+    "category": "secondary",
+    "path": "Blood",
+    "path_type": null,
+    "level": 84,
+    "action": "Passive",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell makes the blood in the wizard’s allies’ bodies pump faster, greatly increasing their abilities. However, the pressure the targets’ hearts are under causes internal damage and may kill them if the spell continues for too long.",
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 40,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+10 to All Actions / –5 Life Points per turn."
+      },
+      "intermediate": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 50,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+20 to All Actions / –15 Life Points per turn."
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 60,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+40 to All Actions / –30 Life Points per turn."
+      },
+      "arcane": {
+        "zeon": 340,
+        "min_int": 17,
+        "maintenance": 70,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+60 to All Actions / –50 Life Points per turn."
+      }
+    }
+  },
+  {
+    "id": "world-of-blood",
+    "name": "World of Blood",
+    "category": "secondary",
+    "path": "Blood",
+    "path_type": null,
+    "level": 94,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell gives the caster complete control over all blood within the spell’s range. His mastery is such that he can do anything from crippling living creatures to forming objects from blood that has already been shed. Any individual within range must pass a PhR or MR check to avoid being controlled by the wizard like a marionette for one turn and suffering damage equal to twice the degree of failure. Once a target passes the check, he cannot be controlled or damaged in this manner for the rest of the duration of the spell. The caster can affect one target per turn in this manner, either the same target again or a different target as he chooses. Affecting a target in this manner is an Active Action. If the caster wants to use blood as a means of attack or defense (by creating blades, thorns, or shields, for example), he can do so at will using his Magic Projection. Both the damage of his attacks and the strength of his shields are determined by the level of the spell, but he can only use this part of the ability if there is enough blood around him to do so.",
+    "grades": {
+      "initial": {
+        "zeon": 280,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "PhR or MR 120 / 60 Damage / 500 Life Points."
+      },
+      "intermediate": {
+        "zeon": 320,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "PhR or MR 140 / 90 Damage / 1,200 Life Points."
+      },
+      "advanced": {
+        "zeon": 360,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "PhR or MR 160 / 120 Damage / 2,400 Life Points."
+      },
+      "arcane": {
+        "zeon": 400,
+        "min_int": 17,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "PhR or MR 180 / 150 Damage / 3,600 Life Points."
+      }
+    }
+  }
+]

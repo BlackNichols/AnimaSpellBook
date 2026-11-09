@@ -99,15 +99,19 @@
     "metadata": {
       "type": "object",
       "description": "Filterable and queryable metadata attributes",
-      "required": ["is_aoe", "magic_resistance_cap"],
+      "required": ["is_aoe", "resistance_cap", "resistance_types"],
       "properties": {
         "is_aoe": {
           "type": "boolean",
           "description": "Whether the spell affects an area"
         },
-        "magic_resistance_cap": {
+        "resistance_cap": {
           "type": ["integer", "null"],
-          "description": "MR value needed to overcome the spell, or null if no MR check"
+          "description": "Resistance value needed to overcome the spell, or null if no resistance check"
+        },
+        "resistance_types": {
+          "type": "array",
+          "description": "Resistances used to overcome the spell"
         },
         "tags": {
           "type": "array",

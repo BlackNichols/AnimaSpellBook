@@ -1,0 +1,1938 @@
+[
+  {
+    "id": "illusory-sound",
+    "name": "Illusory Sound",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 2,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to create any sound, including human voices, in an area around them. All subjects within the area must pass an MR check to disbelieve the effect, though the caster may choose those within the area who hear the illusion.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR",
+        "PsR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": 100,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "100 MR, 20m Radius"
+      },
+      "intermediate": {
+        "zeon": 50,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "120 MR, 50m Radius"
+      },
+      "advanced": {
+        "zeon": 90,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "140 MR, 100m Radius"
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "160 MR, 250m Radius"
+      }
+    }
+  },
+  {
+    "id": "illusory-smell",
+    "name": "Illusory Smell",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 6,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates an illusory smell that affects all targets within an area that the caster chooses, who must succeed at an MR check to avoid the deception.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR",
+        "PsR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": 100,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "100 MR, 20m Radius"
+      },
+      "intermediate": {
+        "zeon": 50,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "120 MR, 50m Radius"
+      },
+      "advanced": {
+        "zeon": 90,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "140 MR, 100m Radius"
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "160 MR, 250m Radius"
+      }
+    }
+  },
+  {
+    "id": "illusory-touch",
+    "name": "Illusory Touch",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 10,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "Distorts the touch or taste of a particular element. The caster decides the element’s new taste or feel. Those who interact with it and designated by the caster must succeed at an MR check or be deceived.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 MR, 20m Radius"
+      },
+      "intermediate": {
+        "zeon": 50,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, 50m Radius"
+      },
+      "advanced": {
+        "zeon": 90,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, 100m Radius"
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, 250m Radius"
+      }
+    }
+  },
+  {
+    "id": "visual-illusion",
+    "name": "Visual Illusion",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 12,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates a false image that can deceive the viewer. The image must remain static and have a size within the area described by the level of the spell. It affects anyone who the caster designates can view it and who fail the associated MR check.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 MR, 10m Radius"
+      },
+      "intermediate": {
+        "zeon": 70,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, 25m Radius"
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, 50m Radius"
+      },
+      "arcane": {
+        "zeon": 130,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, 100m Radius"
+      }
+    }
+  },
+  {
+    "id": "detect-illusions",
+    "name": "Detect Illusions",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 16,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "Enables the caster to sense the presence of all illusion spells in an area around them in a radius, automatically revealing them.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects Base level spells"
+      },
+      "intermediate": {
+        "zeon": 160,
+        "min_int": 8,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects Intermediate level spells"
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects Advanced level spells"
+      },
+      "arcane": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Affects Arcane level spells"
+      }
+    }
+  },
+  {
+    "id": "sweet-talk",
+    "name": "Sweet Talk",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 20,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Enhances a person’s charisma and personal charm. In game terms, the character affected receives a bonus to their Leadership and Persuasion secondary abilities.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+50 to abilities"
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+80 to abilities"
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+100 to abilities"
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+120 to abilities"
+      }
+    }
+  },
+  {
+    "id": "alter-appearance",
+    "name": "Alter Appearance",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 22,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Allows the caster to change the appearance of an individual or object into that of another of their choice. This spell only allows an increase or decrease of one’s size by two degrees. All subjects in contact with the image can attempt to disbelieve with an MR check. Once failed, a new check is only allowed when they have reason to doubt the identity or appearance of the affected target.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "240 MR"
+      }
+    }
+  },
+  {
+    "id": "illusory-invisibility",
+    "name": "Illusory Invisibility",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 26,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to make any being or object vanish from sight, as long as their combined presence is within the limit set by the level of the spell. Only individuals who pass an MR check can observe the presence of the characters through their visual senses.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 210,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, 140 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 9,
+        "maintenance": 5,
+        "resistance": 150,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "150 MR, 200 Presence limit"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR, 260 Presence limit"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": 10,
+        "resistance": 210,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "210 MR, 320 Presence limit"
+      }
+    }
+  },
+  {
+    "id": "mirror-image",
+    "name": "Mirror Image",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 30,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates a number of copies of a specific target. These are only illusory images, and cannot be separated by more than 10 meters from each other. Acting as mirrors of their target, they perform the same actions as them. Any copy hit by an attack capable of damaging energy is immediately destroyed. Discerning the copies from the original requires a successful MR check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "5 Copies, 120 MR"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "10 Copies, 140 MR"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "20 Copies, 160 MR"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 14,
+        "maintenance": 15,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "50 Copies, 180 MR"
+      }
+    }
+  },
+  {
+    "id": "total-illusion",
+    "name": "Total Illusion",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 32,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates a complete illusion that can deceive all five of a victim’s natural senses. The caster can create anything inanimate they desire. The illusion is destroyed if damaged by an attack capable of damaging energy. This spell automatically affects anyone capable of seeing, hearing, or feeling the illusion and not succeeding at an MR check.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 5,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 10,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "240 MR"
+      }
+    }
+  },
+  {
+    "id": "confusion",
+    "name": "Confusion",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 36,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Confounds all five natural senses of a single target. The victim must succeed at an MR check or suffer a penalty equal to their failure level to all perception based secondary abilities. Furthermore, if failed by a margin of 40 or greater, they suffer an All Action Penalty of -20 due to dizziness. The target is not entitled to a new resistance check unless they increase their base resistance value.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "intermediate": {
+        "zeon": 70,
+        "min_int": 9,
+        "maintenance": 5,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR"
+      },
+      "advanced": {
+        "zeon": 90,
+        "min_int": 11,
+        "maintenance": 5,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 13,
+        "maintenance": 10,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR"
+      }
+    }
+  },
+  {
+    "id": "create-illusory-being",
+    "name": "Create Illusory Being",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 40,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "Creates an illusory being. The entity is fashioned according to the caster’s desires, using the rules described in Anima: Beyond Fantasy – Chapter 26: Creation of Beings. This is a being between worlds, however, its illusory nature automatically grants it the Physical Exemption ability. This creature can be at most 2 levels above the level of the caster. Because the creature is not real, it can not inflict damage or affect physical reality whatsoever. All attacks incapable of damaging energy pass right through it, causing no damage in any way. The spell must be cast upon a specific area with a given radius, and all those within must succeed at an MR check to disbelieve the creature’s existence. Even though the spell is circumscribed to a specific area, the creature may chase after someone outside the range of the spell, however it remains unseen to any not previously within the spell’s area. Just as characters who succeed at the Mr check do not perceive the creature, it likewise cannot perceive those who succeed to disbelieve it, and will ignore them.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 7,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, 700 Development Points (level 2), 20m Radius"
+      },
+      "intermediate": {
+        "zeon": 90,
+        "min_int": 10,
+        "maintenance": 5,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, 900 Development Points (level 4), 50m Radius"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 13,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, 1200 Development Points (level 7), 100m Radius"
+      },
+      "arcane": {
+        "zeon": 150,
+        "min_int": 15,
+        "maintenance": 10,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR, 1500 Development Points (level 10), 250m Radius"
+      }
+    }
+  },
+  {
+    "id": "resistance-to-illusions",
+    "name": "Resistance to Illusions",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 42,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "Increases the subject’s MR value against illusory effects. This only affects a subject’s resistances against spells of this path or those with a similar illusory nature. An individual can only be affected by this spell once, and multiples do not overlap.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 80,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": 20,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "+20 MR"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 40,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "+40 MR"
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 60,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "+60 MR"
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 14,
+        "maintenance": 15,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "+80 MR"
+      }
+    }
+  },
+  {
+    "id": "detect-lie",
+    "name": "Detect Lie",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 46,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "Automatically detects any lie told in the caster’s presence. Every time a lie is deliberately told before them, the liar must succeed at either an MR or PsR check to prevent the caster from finding out. Lies unknowingly told are unaffected by this spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR",
+        "PsR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "120 MR or PsR"
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "140 MR or PsR"
+      },
+      "advanced": {
+        "zeon": 160,
+        "min_int": 13,
+        "maintenance": 20,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "160 MR or PsR"
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 15,
+        "maintenance": 20,
+        "resistance": 180,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "180 MR or PsR"
+      }
+    }
+  },
+  {
+    "id": "ghostly-illusion",
+    "name": "Ghostly Illusion",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 50,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates one or more objects, which are governed by the rules for a Ghostly spell. Any inanimate object the caster desires can be produced, from a sword to a wall, provided the theoretical presence of the object is within the limit set by the level of the spell. A character or creature can avoid the spell and ignore the illusion if they succeed at an MR check. The check is only allowed to be repeated if the character has a reason to doubt the reality of the object.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 210,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, 60 Presence limit"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": 150,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "150 MR, 80 Presence limit"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR, 100 Presence limit"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": 210,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "210 MR, 120 Presence limit"
+      }
+    }
+  },
+  {
+    "id": "distort-detection",
+    "name": "Distort Detection",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 52,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "Grants the caster the ability to alter the result of any supernatural detection around them. They can falsify the information in any way they desire, increasing or decreasing it’s potential, its abilities, or location of detection. The character that casts the detection ability must succeed at an MR check to avoid being deceived. The spell does not work directly against individuals within the area of effect, but against the detection method itself. Therefore, if someone tries to detect something that is within the radius of the spell, they must also succeed at the MR check or be affected. It would, for example, affect a sorcerer who from miles away tries to magically locate the caster or someone next to them. For this same reason, by directly affecting the means of detection, the person who uses it does not realize that they had to overcome the MR check to avoid being deceived.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 220,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 7,
+        "maintenance": 15,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, 10m Radius"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, 50m Radius"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": 25,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR, 250m Radius"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "220 MR, 500m Radius"
+      }
+    }
+  },
+  {
+    "id": "lie",
+    "name": "Lie",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 56,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "Allows the caster to convince their audience to believe anything they say, no matter how ridiculous or absurd. The affected parties will not necessarily obey orders from them, but they will believe what is said as true. Any victim may avoid the results of this spell by succeeding at an MR check, which is able to be reattempted each hour. In cases of exceptionally unbelievable lies, or if the victims are warned of this ability, they may apply a +40 to their resistance.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 MR"
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 11,
+        "maintenance": 15,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 14,
+        "maintenance": 15,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "arcane": {
+        "zeon": 160,
+        "min_int": 16,
+        "maintenance": 20,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR"
+      }
+    }
+  },
+  {
+    "id": "destroy-illusions",
+    "name": "Destroy Illusions",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 60,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Destroys any Active spell belonging to the path of Illusion, as long as it’s Zeon value is within the limit set by the level of the spell.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 Zeon limit"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "140 Zeon limit"
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "200 Zeon limit"
+      },
+      "arcane": {
+        "zeon": 500,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 Zeon limit"
+      }
+    }
+  },
+  {
+    "id": "ghostly-being",
+    "name": "Ghostly Being",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 62,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates a ghostly being. The entity is fashioned according to the caster’s desires, using the rules described in Anima: Beyond Fantasy – Chapter 26: Creation of Beings. This spell functions for all intents and purposes like the spell Illusory Being from this path, except for that whomever fails the MR check is subject to the rules for Ghostly spells. It is possible to perform a new resistance roll only if a character has reason to disbelieve the reality of the entity. The being can be a maximum of 3 levels above the caster.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR, 700 Development Points (level 2), 20m Radius"
+      },
+      "intermediate": {
+        "zeon": 120,
+        "min_int": 11,
+        "maintenance": 15,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, 900 Development Points (level 4), 50m Radius"
+      },
+      "advanced": {
+        "zeon": 150,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR, 1200 Development Points (level 7), 100m Radius"
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 16,
+        "maintenance": 20,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR, 1500 Development Points (level 10), 250m Radius"
+      }
+    }
+  },
+  {
+    "id": "gullibility",
+    "name": "Gullibility",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 66,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Weakens a target’s resistance against Illusion spells. The affected party must succeed at an MR check or suffer a penalty against Illusion spells equal to their failure level. This penalty applies to both MR and PsR checks made by the character.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR"
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 14,
+        "maintenance": 15,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "200 MR"
+      }
+    }
+  },
+  {
+    "id": "ghostly-attack",
+    "name": "Ghostly Attack",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 70,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Attack",
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Projects a discharge of energy that uses the rules for Ghostly spells, though the caster can choose the attack type it is perceived as to the victim. Characters can avoid the damage of the spell by succeeding at an MR check. Due to the illusory nature of the attack, it cannot clash with other spells.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "100 Base damage, 140 MR"
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 Base damage, 160 MR"
+      },
+      "advanced": {
+        "zeon": 220,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "250 Base damage, 180 MR"
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "300 Base damage, 200 MR"
+      }
+    }
+  },
+  {
+    "id": "the-gift-of-lying",
+    "name": "The Gift of Lying",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 72,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "The caster gains the ability to force their victim to lie. The lying behavior can be about anything the victim says, or restricted to a certain subject. The affected individual may not indicate that they are lying, nor give any truthful information about the subject in any way. This can be avoided with a successful MR or PsR check, which can only be repeated once a day upon failure.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 220,
+      "resistance_types": [
+        "MR",
+        "PsR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "140 MR or PsR"
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "160 MR or PsR"
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 14,
+        "maintenance": 25,
+        "resistance": 180,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "180 MR or PsR"
+      },
+      "arcane": {
+        "zeon": 320,
+        "min_int": 16,
+        "maintenance": 35,
+        "resistance": 220,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "220 MR or PsR"
+      }
+    }
+  },
+  {
+    "id": "illusory-life",
+    "name": "Illusory Life",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 76,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "effect": "Grants the caster the ability to introduce false memories into the mind of an individual. The caster can alter their memories, including any and all new data they desire. Any person influenced by this spell is not able to differentiate illusory memories from their own. Once the individual fails the associated MR or PsR check, they are not entitled to a new roll, unless they find reason to disbelieve their memories.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR",
+        "PsR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 140,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": 140,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "140 MR or PsR"
+      },
+      "intermediate": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "160 MR or PsR"
+      },
+      "advanced": {
+        "zeon": 260,
+        "min_int": 13,
+        "maintenance": 30,
+        "resistance": 180,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "180 MR or PsR"
+      },
+      "arcane": {
+        "zeon": 320,
+        "min_int": 16,
+        "maintenance": 35,
+        "resistance": 200,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "200 MR or PsR"
+      }
+    }
+  },
+  {
+    "id": "major-illusion",
+    "name": "Major Illusion",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 80,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "Creates an enormous illusion able to affect all five natural senses. The spell develops over a large area, within which anyone can see, hear, feel, smell, and taste whatever the caster desires. For instance, the caster may trick someone into thinking a whole town is deserted, while in actuality it is a thriving city. Any character entering the area affected is automatically affected unless they pass an MR check. Affected characters can only receive a new check opportunity when encountering a reason to doubt the reality around them.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR",
+        "PsR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 9,
+        "maintenance": 25,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "120 MR, 1km Radius"
+      },
+      "intermediate": {
+        "zeon": 350,
+        "min_int": 12,
+        "maintenance": 35,
+        "resistance": 160,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "160 MR, 5km Radius"
+      },
+      "advanced": {
+        "zeon": 500,
+        "min_int": 15,
+        "maintenance": 50,
+        "resistance": 200,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "200 MR, 10km Radius"
+      },
+      "arcane": {
+        "zeon": 700,
+        "min_int": 18,
+        "maintenance": 70,
+        "resistance": 240,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "240 MR, 20km Radius"
+      }
+    }
+  },
+  {
+    "id": "fix-illusion",
+    "name": "Fix Illusion",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 82,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "effect": "Creates a ‘permanent’ illusion. In game terms, it adds a number of Zeon points to be used for maintenance of any spell of the path of illusion. Bear in mind this amount will not serve to increase the degree at which the spell is cast, and only provides the ability to maintain the illusion constantly. This cannot be used to maintain any free access spell, even if the ‘slot’ used is within the path of illusion.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+1000 Zeon"
+      },
+      "intermediate": {
+        "zeon": 360,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+1500 Zeon"
+      },
+      "advanced": {
+        "zeon": 450,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+3000 Zeon"
+      },
+      "arcane": {
+        "zeon": 600,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+5000 Zeon"
+      }
+    }
+  },
+  {
+    "id": "illusion-of-the-senses",
+    "name": "Illusion of the Senses",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 86,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "effect": "Allows the caster to lead a subject to believe whatever the caster wishes. Though the caster does not actually modify reality, the spell convinces the affected character that an illusion is so real, they will act as if it is so in every aspect. For example, if the caster wishes to trick someone into thinking they have lost all of their arms and legs, the character will lose all feeling in those limbs and fall to the ground in the belief that they have in fact, lost them. Another example of this could be a fighter suffering from wounds who is led to believe that not only are they in perfect shape, but also that they possess a +50 all action bonus (which is of course, fictional). A character convinced they are dead falls immediately into unconsciousness. If the associated MR or PsR is failed, they receive a new check only upon being convinced they are being deceived.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 220,
+      "resistance_types": [
+        "MR",
+        "PsR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": 120,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "120 MR or PsR"
+      },
+      "intermediate": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": 150,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "150 MR or PsR"
+      },
+      "advanced": {
+        "zeon": 300,
+        "min_int": 14,
+        "maintenance": 30,
+        "resistance": 190,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "190 MR or PsR"
+      },
+      "arcane": {
+        "zeon": 350,
+        "min_int": 16,
+        "maintenance": 35,
+        "resistance": 220,
+        "resistance_types": [
+          "MR",
+          "PsR"
+        ],
+        "description": "220 MR or PsR"
+      }
+    }
+  },
+  {
+    "id": "non-existence",
+    "name": "Non-Existence",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 90,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "The target of this spell cannot be perceived by any of the natural senses – although they still materially exist. Others cannot see, hear, smell, touch, or taste the presence of the individual in any way. In addition, the target does not leave any visible trace or marks behind while the spell is maintained. The only way to realize a non-existent character’s presence is via supernatural means (such as magic, ki, or psychic detections). A character can resist the effects of the spell by passing an MR check. Those who fail are entitled to repeat it every time they have reason to believe there is another being around.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 11,
+        "maintenance": 25,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "120 MR"
+      },
+      "intermediate": {
+        "zeon": 300,
+        "min_int": 13,
+        "maintenance": 30,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "advanced": {
+        "zeon": 400,
+        "min_int": 15,
+        "maintenance": 40,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "160 MR"
+      },
+      "arcane": {
+        "zeon": 500,
+        "min_int": 17,
+        "maintenance": 50,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      }
+    }
+  },
+  {
+    "id": "deceive-death",
+    "name": "Deceive Death",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 92,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "effect": "The caster manages to deceive death itself. In game terms, while active, the individual will not die in any way, as the flow of souls ignores their presence and will not claim them. Although the spirit will not leave the body, the physical form can be shattered, and the character continues to suffer the negative effects of such damage. This spell only affects characters within a certain level limit. This spell does not protect from an effect that completely destroys the soul of the individual.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 500,
+        "min_int": 10,
+        "maintenance": 100,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 5"
+      },
+      "intermediate": {
+        "zeon": 800,
+        "min_int": 15,
+        "maintenance": 160,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 10"
+      },
+      "advanced": {
+        "zeon": 1200,
+        "min_int": 17,
+        "maintenance": 240,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 15"
+      },
+      "arcane": {
+        "zeon": 1500,
+        "min_int": 19,
+        "maintenance": 300,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "Level 20"
+      }
+    }
+  },
+  {
+    "id": "world-of-lies",
+    "name": "World of Lies",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 96,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "effect": "Creates an artificial reality that the caster can modify as they please. They might create a city out of nowhere and turn it into a fantasy land all in the next combat turn, for example. Imagination is the only limit. This spell covers a large radius within which all illusions apply the Ghostly spell rules. Everyone entering the spell’s area must succeed at an MR check or fall beneath the power of this spell. World of Lies also allows the caster to create ghostly creatures to populate it, and is given a number of levels to distribute for this purpose – although none of them can have more than half the level of the caster, rounded up. For example, a level 10 caster can create 100 level 1 beings, or 20 of level 5, or any combination between. These beings are created as beings between worlds, using the rules described in Anima: Beyond Fantasy – Chapter 26: Creation of Beings. These creatures have illusory intelligence and life, and are able to act independently or follow the orders of the caster. Anyone who fails the resistance check can only repeat it when encountering something causing them to doubt the reality of their surroundings.",
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 260,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 500,
+        "min_int": 13,
+        "maintenance": 50,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR, 1km Radius, 100 Levels"
+      },
+      "intermediate": {
+        "zeon": 900,
+        "min_int": 15,
+        "maintenance": 90,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR, 100km Radius, 500 Levels"
+      },
+      "advanced": {
+        "zeon": 1400,
+        "min_int": 17,
+        "maintenance": 140,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "220 MR, 1000km Radius, 1500 Levels"
+      },
+      "arcane": {
+        "zeon": 2000,
+        "min_int": 19,
+        "maintenance": 200,
+        "resistance": 260,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "260 MR, 10000km Radius, 5000 Levels"
+      }
+    }
+  },
+  {
+    "id": "false-reality",
+    "name": "False Reality",
+    "category": "main",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 100,
+    "level_bracket": null,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "effect": "This spell creates a distorted reality, and makes the false real. In this way, events that can never have taken place can be invented and made to produce effects upon the present. History is not truly altered, since the spell only manages to change the state of things at the time it is cast, however few are able to tell the difference. The spell cannot accomplish the impossible; it can only alter feasible events which are likely to have happened if the appropriate situation is described by the caster. For example, the caster may say a certain mountain pass has been blocked due to a landslide caused by thieves making a daring escape. According to this set of events, the False Reality spell would create a random group of burglars and all individuals in the pass at the time. As another example, the caster could claim that a non-existent entity called Ethon is about to destroy a city. They only need justify this by saying it was born by magic of a great sorcerer in the past – it is all up to the creativity they put into the lie. Calculating whom needs to attempt an MR check for this spell is difficult to do; the being or object within the lie that has the highest resistance or those affected by it is considered. In the first example above, it seems natural that the landslide rocks or the thieves themselves need pass the check. However, if there is a high level individual in the designated pass at the time, he could use his own resistance value instead of those of the thieves. In the “Ethon” example, the most logical approach would be for the GM to find a suitable sorcerer to create such a being, and use their resistance. Keep in mind, that the greater event described, the more likely powerful entities are related to the event. Since this spell does not directly change history, it is not possible to bring the dead back to life, nor make someone die within the distant past. The reason for this is that it is not feasible to return someone from a time or place where the flow of souls has claimed them. However, if an event is described that implies a change preventing someone’s death or returning them to life, they would do so without a soul, as an empty shell of what they really were. This spell additionally does not increase or decrease the abilities or characteristics of any characters involved. As well, any being with Gnosis superior to the caster need not attempt a check to disbelieve the story.",
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "grades": {
+      "initial": {
+        "zeon": 600,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "140 MR"
+      },
+      "intermediate": {
+        "zeon": 1000,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "180 MR"
+      },
+      "advanced": {
+        "zeon": 2000,
+        "min_int": 18,
+        "maintenance": null,
+        "resistance": 220,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "220 MR"
+      },
+      "arcane": {
+        "zeon": 3000,
+        "min_int": 19,
+        "maintenance": null,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "240 MR"
+      }
+    }
+  }
+]

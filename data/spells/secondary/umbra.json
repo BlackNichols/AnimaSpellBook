@@ -1,0 +1,634 @@
+[
+  {
+    "id": "eyes-of-the-other-side",
+    "name": "Eyes of the Other Side",
+    "category": "secondary",
+    "path": "Umbra",
+    "path_type": null,
+    "level": 4,
+    "action": "Active",
+    "types": [
+      "Detection"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell allows the wizard to see people’s deepest fears as well as their disorders and madnesses. While this spell is active, anyone capable of seeing spirits notices that the character’s eyes have turned completely black, as if an inner darkness has devoured them. To avoid this spell’s effects, an individual must pass a MR or PsR check against a difficulty level determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 30,
+        "min_int": 5,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 120 / The character can sense if a person is afraid or not."
+      },
+      "intermediate": {
+        "zeon": 60,
+        "min_int": 8,
+        "maintenance": 5,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 140 / The character can perceive not only whether a person is or is not scared at the moment, but also the cause and where it comes from."
+      },
+      "advanced": {
+        "zeon": 90,
+        "min_int": 11,
+        "maintenance": 5,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 160 / The character can perceive people’s general fears and problems, even when they do not look scared."
+      },
+      "arcane": {
+        "zeon": 120,
+        "min_int": 14,
+        "maintenance": 10,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 180 / The character perceives both disorders and imagined fears, and sees visual representations of those fears walk beside their hosts."
+      }
+    }
+  },
+  {
+    "id": "shadow-of-fear",
+    "name": "Shadow of Fear",
+    "category": "secondary",
+    "path": "Umbra",
+    "path_type": null,
+    "level": 14,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell affects an area, making it dark and gloomy to others. It is important to note that different people can perceive the same area in a different way, depending on what they consider lugubrious, but all will find it depressing.",
+    "grades": {
+      "initial": {
+        "zeon": 40,
+        "min_int": 6,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 foot radius."
+      },
+      "intermediate": {
+        "zeon": 70,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "800 foot radius."
+      },
+      "advanced": {
+        "zeon": 100,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1,500 foot radius."
+      },
+      "arcane": {
+        "zeon": 130,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "1 mile radius."
+      }
+    }
+  },
+  {
+    "id": "whispers-from-the-other-side",
+    "name": "Whispers from the Other Side",
+    "category": "secondary",
+    "path": "Umbra",
+    "path_type": null,
+    "level": 24,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 140,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell fills an area with whispering voices that cause primal terror in the hearts of men. Anyone within range of the spell who hears the voices for more than five turns must pass a MR or PsR check at a difficulty determined by the level of the spell or suffer Fear.",
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": 80,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 80 / 30 foot radius."
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 9,
+        "maintenance": 5,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 100 / 80 foot radius."
+      },
+      "advanced": {
+        "zeon": 160,
+        "min_int": 12,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 120 / 150 foot radius."
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 15,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 140 / 300 foot radius."
+      }
+    }
+  },
+  {
+    "id": "trail-of-madness",
+    "name": "Trail of Madness",
+    "category": "secondary",
+    "path": "Umbra",
+    "path_type": null,
+    "level": 34,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "The wizard fills his target’s mind with insane ideas and concepts, upsetting his perception of the world and making him go temporarily mad. The target of this spell must pass a MR or PsR check against a difficulty determined by the level of the spell or suffer a temporary insanity such as psychosis, schizophrenia, or paranoia and lose the ability to control his own actions. An affected person may only repeat his Resistance check once per day.",
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 7,
+        "maintenance": 5,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 120."
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 140."
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 13,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 160."
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 15,
+        "maintenance": 20,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 180."
+      }
+    }
+  },
+  {
+    "id": "dream-stalker",
+    "name": "Dream Stalker",
+    "category": "secondary",
+    "path": "Umbra",
+    "path_type": null,
+    "level": 44,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell allows the wizard to convert his victim’s dreams into a prison where his soul is trapped in an endless nightmare. The target is immersed in an eternal sleep in which he is constantly beset by unspeakable monsters and other creatures that chase and try to kill him. This spell must be cast on an individual who is dreaming, and if he fails his MR or PsR check, he cannot wake up until the spell is ended. The target is only entitled to a new check each time he considers himself to have bested the nightmares in the hellish world he has been cast into.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 7,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 120."
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 160."
+      },
+      "advanced": {
+        "zeon": 180,
+        "min_int": 13,
+        "maintenance": 20,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 200."
+      },
+      "arcane": {
+        "zeon": 240,
+        "min_int": 15,
+        "maintenance": 25,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 240."
+      }
+    }
+  },
+  {
+    "id": "heighten-madness",
+    "name": "Heighten Madness",
+    "category": "secondary",
+    "path": "Umbra",
+    "path_type": null,
+    "level": 54,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell exacerbates the fears and follies of everyone within its area of effect. Everyone in the area who does not pass a MR or PsR check becomes terrified of whatever frightens him the most and becomes temporarily insane, suffering from profound dementia. The check may only be repeated once per day or when a target’s Resistances increase.",
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 6,
+        "maintenance": 15,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 120 / 150 foot radius."
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 140 / 300 foot radius."
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 160 / 800 foot radius."
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 180 / 1,500 foot radius."
+      }
+    }
+  },
+  {
+    "id": "terror",
+    "name": "Terror",
+    "category": "secondary",
+    "path": "Umbra",
+    "path_type": null,
+    "level": 64,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell temporarily causes the Terror state in everyone around the caster. The wizard may decide the cause of the terror for those affected.",
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 120 / 30 foot radius."
+      },
+      "intermediate": {
+        "zeon": 140,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 140 / 150 foot radius."
+      },
+      "advanced": {
+        "zeon": 200,
+        "min_int": 12,
+        "maintenance": 20,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 180 / 300 foot radius."
+      },
+      "arcane": {
+        "zeon": 240,
+        "min_int": 15,
+        "maintenance": 25,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 200 / 800 foot radius."
+      }
+    }
+  },
+  {
+    "id": "lord-of-fools",
+    "name": "Lord of Fools",
+    "category": "secondary",
+    "path": "Umbra",
+    "path_type": null,
+    "level": 74,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell grants the caster the ability to control any person suffering from dementia, altering his perceptions of reality at will. Those affected must be within the spell’s area of effect and suffering from severe dementia. Those who have only a temporary insanity can apply a +40 to Resistance checks against this spell. Those affected may only repeat the check once per day or when they increase their Resistances.",
+    "grades": {
+      "initial": {
+        "zeon": 200,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 140 / 300 foot radius."
+      },
+      "intermediate": {
+        "zeon": 300,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 160 / 800 foot radius."
+      },
+      "advanced": {
+        "zeon": 400,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 180 / 1 mile radius."
+      },
+      "arcane": {
+        "zeon": 500,
+        "min_int": 16,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 200 / 3 mile radius."
+      }
+    }
+  },
+  {
+    "id": "incarnation-of-fear",
+    "name": "Incarnation of Fear",
+    "category": "secondary",
+    "path": "Umbra",
+    "path_type": null,
+    "level": 84,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 200,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": [
+        "Summoning"
+      ]
+    },
+    "effect": "This spell creates a pure embodiment of a person’s fear, a Being Between Worlds born from the deepest terrors of the target’s subconscious. The creature is real in all respects, but only the target and individuals who fear the same thing as the target are able to see it or interact with it (similarly, the creature can only see or touch those who fear it). When casting this spell, the caster must choose a person in his presence to be the target. The target is automatically affected (without the need to make an attack roll) and must pass a MR or PsR check at a difficulty determined by the level of the spell. If the target fails the check, a being with the likeness of the target’s fears instantly takes shape. The being’s behavior depends on the nature of the target’s fears. It will always be inimical to him, but will not necessarily simply attack him. The creature can have any powers or class level, provided the powers do not require higher than Gnosis 30 and the class level does not exceed the limits imposed by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 140 / Level 4."
+      },
+      "intermediate": {
+        "zeon": 250,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 160 / Level 8."
+      },
+      "advanced": {
+        "zeon": 500,
+        "min_int": 15,
+        "maintenance": 50,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 180 / Level 12."
+      },
+      "arcane": {
+        "zeon": 700,
+        "min_int": 18,
+        "maintenance": 70,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 200 / Level 15."
+      }
+    }
+  },
+  {
+    "id": "fear-made-flesh",
+    "name": "Fear Made Flesh",
+    "category": "secondary",
+    "path": "Umbra",
+    "path_type": null,
+    "level": 94,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell causes the character to become a source of absolute terror. He causes fear in all types of creatures, even those that are normally immune to psychological effects. Anyone in his presence automatically suffers from Fear, without any possible Resistance, and must also pass a MR or PsR check or suffer Terror.",
+    "grades": {
+      "initial": {
+        "zeon": 250,
+        "min_int": 11,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 120."
+      },
+      "intermediate": {
+        "zeon": 350,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 140."
+      },
+      "advanced": {
+        "zeon": 450,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 200."
+      },
+      "arcane": {
+        "zeon": 600,
+        "min_int": 17,
+        "maintenance": null,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR or PsR 240."
+      }
+    }
+  }
+]

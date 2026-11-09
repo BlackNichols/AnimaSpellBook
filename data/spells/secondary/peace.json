@@ -1,0 +1,592 @@
+[
+  {
+    "id": "shield-of-salvation",
+    "name": "Shield of Salvation",
+    "category": "secondary",
+    "path": "Peace",
+    "path_type": null,
+    "level": 4,
+    "action": "Passive",
+    "types": [
+      "Defense"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell creates a protective barrier that protects against all kinds of attacks. It can protect several targets, as indicated by the level of the spell, without suffering extra damage or applying a penalty to the caster’s Defense Ability (see Anima: Beyond Fantasy page 93). The targets must stay within the listed radius of the caster. If a target leaves that area, he loses the protection until he returns to that area. The caster can be, but does not have to be, one of the people protected.",
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 5,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "60 foot radius / The shield has 300 Life Points / It can protect up to two people without penalty."
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 foot radius / The shield has 900 Life Points / It can protect up to five people without penalty."
+      },
+      "advanced": {
+        "zeon": 160,
+        "min_int": 10,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "300 foot radius / The shield has 1,500 Life Points / It can protect up to eight people without penalty."
+      },
+      "arcane": {
+        "zeon": 240,
+        "min_int": 14,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "500 foot radius / The shield has 3,000 Life Points / It can protect up to 12 people without penalty."
+      }
+    }
+  },
+  {
+    "id": "internal-balance",
+    "name": "Internal Balance",
+    "category": "secondary",
+    "path": "Peace",
+    "path_type": null,
+    "level": 14,
+    "action": "Passive",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell causes a level of inner peace in the wizard or his target that makes him immune to any effect that might influence his emotions.",
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 6,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "The character becomes immune to negative psychological states."
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 9,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Basic level, but the character also gains +40 to his Resistance checks against any effects that try to alter his emotions."
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 12,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "As Intermediate level, but the bonus to Resistance checks is +80."
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": 30,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "The character cannot be affected by any effect that would alter his behavior against his will."
+      }
+    }
+  },
+  {
+    "id": "defender",
+    "name": "Defender",
+    "category": "secondary",
+    "path": "Peace",
+    "path_type": null,
+    "level": 24,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell grants a bonus to the Defensive Ability of the targets when they use the Pure Defense maneuver. It affects as many people as the caster desires, provided that the sum of their Presences is no greater than the amount allowed by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 60,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+20 to Defense Ability / Maximum Presence 60."
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+20 to Defense Ability / Maximum Presence 100."
+      },
+      "advanced": {
+        "zeon": 140,
+        "min_int": 10,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+30 to Defense Ability / Maximum Presence 150."
+      },
+      "arcane": {
+        "zeon": 200,
+        "min_int": 12,
+        "maintenance": 20,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+40 to Defense Ability / Maximum Presence 250."
+      }
+    }
+  },
+  {
+    "id": "detect-harmony",
+    "name": "Detect Harmony",
+    "category": "secondary",
+    "path": "Peace",
+    "path_type": null,
+    "level": 34,
+    "action": "Active",
+    "types": [
+      "Detection"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell allows the wizard to perceive whether those within the spell’s radius have peaceful or violent feelings as long as they do not pass a MR check with a difficulty determined by the level of the spell.",
+    "grades": {
+      "initial": {
+        "zeon": 80,
+        "min_int": 8,
+        "maintenance": 10,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 100 / 30 foot radius."
+      },
+      "intermediate": {
+        "zeon": 100,
+        "min_int": 10,
+        "maintenance": 10,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / 80 foot radius."
+      },
+      "advanced": {
+        "zeon": 120,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140 / 150 foot radius."
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 14,
+        "maintenance": 15,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / 300 foot radius."
+      }
+    }
+  },
+  {
+    "id": "haven-of-peace",
+    "name": "Haven of Peace",
+    "category": "secondary",
+    "path": "Peace",
+    "path_type": null,
+    "level": 44,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 160,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell creates an area within which all aggressive instinct disappears. Anyone who enters it must pass a MR check at a difficulty determined by the level of the spell or lose any desire to behave violently. A person successfully affected by this spell cannot repeat the check unless something happens that would be reasonably likely to renew his aggressive behavior. Someone who passes the MR check does not need to check again unless he leaves the spell’s area and returns. The area remains centered on the location it was cast.",
+    "grades": {
+      "initial": {
+        "zeon": 160,
+        "min_int": 8,
+        "maintenance": 20,
+        "resistance": 100,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 100 / 30 foot radius."
+      },
+      "intermediate": {
+        "zeon": 220,
+        "min_int": 10,
+        "maintenance": 25,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / 80 foot radius."
+      },
+      "advanced": {
+        "zeon": 280,
+        "min_int": 12,
+        "maintenance": 30,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140 / 150 foot radius."
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 14,
+        "maintenance": 30,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / 300 foot radius."
+      }
+    }
+  },
+  {
+    "id": "sign-of-peace",
+    "name": "Sign of Peace",
+    "category": "secondary",
+    "path": "Peace",
+    "path_type": null,
+    "level": 54,
+    "action": "Passive",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 240,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "This spell negates an attack action directed against the caster. He can affect any attack that has him as a target (even if other individuals would also be affected by the attack) and prevent it from doing any harm whatsoever. To avoid this effect, the attack’s initiator must pass a MR check with a difficulty determined by the level of the spell. An attack can only be affected once by Sign of Peace.",
+    "grades": {
+      "initial": {
+        "zeon": 100,
+        "min_int": 8,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120."
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 10,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160."
+      },
+      "advanced": {
+        "zeon": 260,
+        "min_int": 12,
+        "maintenance": null,
+        "resistance": 200,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 200."
+      },
+      "arcane": {
+        "zeon": 340,
+        "min_int": 14,
+        "maintenance": null,
+        "resistance": 240,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 240."
+      }
+    }
+  },
+  {
+    "id": "absolute-defense",
+    "name": "Absolute Defense",
+    "category": "secondary",
+    "path": "Peace",
+    "path_type": null,
+    "level": 64,
+    "action": "Active",
+    "types": [
+      "Effect"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell allows the caster to apply a bonus to his defensive Magic Projection as long as he does not take any offensive actions during a given turn.",
+    "grades": {
+      "initial": {
+        "zeon": 50,
+        "min_int": 6,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+20 to defensive Magic Projection."
+      },
+      "intermediate": {
+        "zeon": 80,
+        "min_int": 9,
+        "maintenance": 10,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+30 to defensive Magic Projection."
+      },
+      "advanced": {
+        "zeon": 110,
+        "min_int": 12,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+40 to defensive Magic Projection."
+      },
+      "arcane": {
+        "zeon": 140,
+        "min_int": 15,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "+50 to defensive Magic Projection."
+      }
+    }
+  },
+  {
+    "id": "wings-of-salvation",
+    "name": "Wings of Salvation",
+    "category": "secondary",
+    "path": "Peace",
+    "path_type": null,
+    "level": 74,
+    "action": "Passive",
+    "types": [
+      "Defense"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": null,
+      "resistance_types": [],
+      "tags": []
+    },
+    "effect": "This spell creates a protective barrier that protects against any attack. The spell protects all individuals within the radius of the spell (whom the caster wishes to protect) without suffering extra damage and without applying a penalty to the Defensive Ability of the caster.",
+    "grades": {
+      "initial": {
+        "zeon": 150,
+        "min_int": 9,
+        "maintenance": 15,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "15 foot radius / The shield has 500 Life Points."
+      },
+      "intermediate": {
+        "zeon": 250,
+        "min_int": 11,
+        "maintenance": 25,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "50 foot radius / The shield has 1,200 Life Points."
+      },
+      "advanced": {
+        "zeon": 350,
+        "min_int": 13,
+        "maintenance": 35,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "80 foot radius / The shield has 2,500 Life Points."
+      },
+      "arcane": {
+        "zeon": 450,
+        "min_int": 15,
+        "maintenance": 45,
+        "resistance": null,
+        "resistance_types": [],
+        "description": "150 foot radius / The shield has 5,000 Life Points."
+      }
+    }
+  },
+  {
+    "id": "absolute-peace",
+    "name": "Absolute Peace",
+    "category": "secondary",
+    "path": "Peace",
+    "path_type": null,
+    "level": 84,
+    "action": "Active",
+    "types": [
+      "Spiritual"
+    ],
+    "daily_maintenance": false,
+    "metadata": {
+      "is_aoe": false,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "The target of this spell is filled with pure peace and loses all desire for violence. Someone who fails the MR check cannot consciously take an offensive action against anyone ever again. Since the target’s violent nature disappears altogether, this spell requires no maintenance.",
+    "grades": {
+      "initial": {
+        "zeon": 120,
+        "min_int": 9,
+        "maintenance": null,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120."
+      },
+      "intermediate": {
+        "zeon": 180,
+        "min_int": 11,
+        "maintenance": null,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140."
+      },
+      "advanced": {
+        "zeon": 240,
+        "min_int": 13,
+        "maintenance": null,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160."
+      },
+      "arcane": {
+        "zeon": 300,
+        "min_int": 15,
+        "maintenance": null,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180."
+      }
+    }
+  },
+  {
+    "id": "peace-on-earth",
+    "name": "Peace on Earth",
+    "category": "secondary",
+    "path": "Peace",
+    "path_type": null,
+    "level": 94,
+    "action": "Active",
+    "types": [
+      "Automatic"
+    ],
+    "daily_maintenance": true,
+    "metadata": {
+      "is_aoe": true,
+      "resistance_cap": 180,
+      "resistance_types": [
+        "MR"
+      ],
+      "tags": []
+    },
+    "effect": "When this spell is cast, it creates an area of total non-violence, where no conflicts or wars can take place. Everyone who enters the area must pass a MR check or forget the very concept of violence or confrontation and become unable to carry out violent actions. A person who fails the check cannot repeat the check unless he leaves the spell area (ending the effect for him) and re-enters it, while those who pass the check must re-check every time they try to perform a violent act within the area.",
+    "grades": {
+      "initial": {
+        "zeon": 350,
+        "min_int": 8,
+        "maintenance": 35,
+        "resistance": 120,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 120 / 1 mile radius."
+      },
+      "intermediate": {
+        "zeon": 600,
+        "min_int": 10,
+        "maintenance": 60,
+        "resistance": 140,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 140 / 3 mile radius."
+      },
+      "advanced": {
+        "zeon": 1000,
+        "min_int": 12,
+        "maintenance": 100,
+        "resistance": 160,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 160 / 10 mile radius."
+      },
+      "arcane": {
+        "zeon": 1600,
+        "min_int": 14,
+        "maintenance": 160,
+        "resistance": 180,
+        "resistance_types": [
+          "MR"
+        ],
+        "description": "MR 180 / 30 mile radius."
+      }
+    }
+  }
+]

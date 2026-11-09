@@ -1,0 +1,182 @@
+Reality Pen
+Level: 4 Action: Active
+Effect: This spell creates a supernatural pen that can write on any surface without
+the need for ink. If a wizard uses it in the casting of a Literature spell, he can
+enhance the spell’s effects, reducing its Zeon cost by half. For example, a Missive
+spell cast at the Basic level would cost 40 Zeon instead of 80.
+Level Basic Intermediate Advanced Arcane
+Zeon 30 80 100 120
+Int. R. 5 8 10 12
+Basic: Affects Basic level Literature spells.
+Intermediate: Affects Intermediate level Literature spells.
+Advanced: Affects Advanced level Literature spells.
+Arcane: Affects Arcane level Literature spells.
+Maintenance: 5 / 10 / 10 / 15 Daily
+Spell Type: Effect
+
+Missive
+Level: 14 Action: Active
+Effect: After writing a letter, a wizard can use this spell to send it to an individual
+he personally knows. The letter and its envelope disappear in a flash and a cloud
+of smoke, reappearing moments later next to the recipient. The range of the
+spell depends on its level. The letter can enter enchanted structures with lower
+Presence than the caster as long as there is enough space for the letter to enter,
+for example, “slipping” the letter under the door in the form of smoke.
+Level Basic Intermediate Advanced Arcane
+Zeon 80 140 200 280
+Int. R. 6 9 12 15
+Basic: 6 miles.
+Intermediate: 60 miles.
+Advanced: 600 miles.
+Arcane: Anywhere.
+Maintenance: No
+Spell Type: Effect
+
+Travel Diary
+Level: 24 Action: Active
+Effect: This spell enchants a normal, blank book to record all the wizard’s
+experiences, as if he were writing a detailed diary. The level of the spell
+determines the maximum time period the book will record from the time of
+casting.
+Level Basic Intermediate Advanced Arcane
+Zeon 100 180 240 300
+Int. R. 6 9 12 15
+Basic: 1 day.
+Intermediate: 1 week.
+Advanced: 1 month.
+Arcane: 1 year.
+Maintenance: 5 / 20 / 25 / 30 Daily
+Spell Type: Effect
+
+Written Order
+Level: 34 Action: Active
+Effect: This spell allows the wizard to write a simple command on a scroll that
+will affect the first person to read it, forcing him to comply if he fails to resist the
+spell. The command will work even if it is hidden among other phrases, although
+the affected person can get between a +20 and a +60 bonus to his Resistance
+check if the command goes against his nature.
+This spell can be repeated several times and chained to create a complex order,
+such as “Open the door” then “Forget it happened.” The words lose power
+after the spell affects a person or is resisted by him, and the command is treated
+as ordinary writing from then on.
+Level Basic Intermediate Advanced Arcane
+Zeon 120 240 360 480
+Int. R. 6 9 12 15
+Basic: MR or PsR 120.
+Intermediate: MR or PsR 140.
+Advanced: MR or PsR 160.
+Arcane: MR or PsR 180.
+Maintenance: No
+Spell Type: Automatic
+
+Shield of Words
+Level: 44 Action: Passive
+Effect: Using a magical pen to draw characters in the air, the wizard creates
+a shield of words that deflects both physical and supernatural attacks. Each
+turn, the shield regenerates Life Points equal to the wizard’s base ability in Art
+(Literature).
+Level Basic Intermediate Advanced Arcane
+Zeon 150 200 250 300
+Int. R. 8 10 12 15
+Basic: 200 Life Points. Intermediate: 500 Life Points.
+Advanced: 800 Life Points.
+Arcane: 1,200 Life Points.
+Maintenance: 15 / 20 / 25 / 30
+Spell Type: Defense
+
+Theater of Life
+Level: 54 Action: Active
+Effect: This spell allows the wizard to modify the behavior of people around
+him by writing on a surface the actions he wants them to take. Basically, the
+wizard becomes the writer of a play, turning people into actors who perform
+their tasks as he dictates. This spell can affect many people, provided their
+combined Presences do not exceed the limit set by the level of the spell. For
+someone to be affected, he must be within the area of the spell and the caster
+must know his true name, though everyone affected may pass a MR or PsR
+check to avoid the spell’s effects. If the narrator stops writing and those affected
+have no new orders to follow, they will stay still, waiting for their next roles.
+Level Basic Intermediate Advanced Arcane
+Zeon 240 360 480 600
+Int. R. 6 9 12 15
+Basic: MR or PsR 120 / 60 foot radius / Presence Limit 100.
+Intermediate: MR or PsR 140 / 120 foot radius / Presence Limit 180.
+Advanced: MR or PsR 160 / 240 foot radius / Presence Limit 240.
+Arcane: MR or PsR 180 / 500 foot radius / Presence Limit 320.
+Maintenance: 15 / 20 / 25 / 30
+Spell Type: Automatic
+
+Compendium
+Level: 64 Action: Active
+Effect: This spell enchants a book to answer any questions submitted to it so that
+when someone asks it a question a reply will appear in its pages. Unfortunately,
+the book cannot answer all questions; when the Compendium spell is cast,
+the affected manuscript receives a number of points in all Intellectual abilities
+determined by the level of the spell, and will give an appropriate response based
+on what an expert with the same score in the subject would know.
+Level Basic Intermediate Advanced Arcane
+Zeon 120 260 380 500
+Int. R. 7 10 13 15
+Basic: 120 points in all Intellectual abilities.
+Intermediate: 240 points in all Intellectual abilities.
+Advanced: 320 points in all Intellectual abilities.
+Arcane: 440 points in all Intellectual abilities.
+Maintenance: 10 / 20 / 30 / 40 Daily
+Spell Type: Effect
+
+Playwright
+Level: 74 Action: Active
+Effect: This spell changes reality to create plausible events that do not directly affect
+another living being. For example, if the wizard falls from a roof he can “declare” that
+he falls onto a hay cart, or if he wants to enter a locked building, he can “narrate”
+that the door is open and it will be true. The options this spell offers are endless,
+as long as the elements and objects involved are simple and do not have a total
+Presence that exceeds what the level of the spell allows.
+Level Basic Intermediate Advanced Arcane
+Zeon 280 320 480 700
+Int. R. 10 12 14 16
+Basic: Maximum Presence 40.
+Intermediate: Maximum Presence 80.
+Advanced: Maximum Presence 120.
+Arcane: Maximum Presence 160.
+Maintenance: No
+Spell Type: Effect
+
+Simulacrum
+Level: 84 Action: Active
+Effect: This spell creates a “minor character” with the personality and skills
+the wizard desires. To do so, the caster must describe in a book the personality,
+history, and nature of that individual, who believes he is really as he has been
+described. The Simulacrum’s existence is tied to the book, so if it is destroyed,
+he disappears immediately.
+The Simulacrum’s level cannot exceed the level allowed by the spell or the
+wizard’s level.
+Level Basic Intermediate Advanced Arcane
+Zeon 400 600 800 1,200
+Int. R. 10 12 14 17
+Basic: Level 2.
+Intermediate: Level 5.
+Advanced: Level 7.
+Arcane: Level 10.
+Maintenance: 40 / 60 / 80 / 120 Daily
+Spell Type: Effect
+
+Tragedy
+Level: 94 Action: Active
+Effect: This spell is the ultimate transformation of reality. The wizard can alter the
+fate of another living creature to end its life as he pleases. The caster can choose
+any outcome he wants for the life of a person such as “Stumbling, he fell mortally
+skewered on his sword” or “The sky brightened, and in between the storm clouds,
+lightning struck him like the arrow of a vengeful god.” Someone targeted by this spell
+must have been observed by the caster at least once, and the caster must know the
+person’s true name. To avoid the effects of Tragedy, either the target or anyone else
+involved in the target’s fate must overcome the spell’s MR. Any target who does so
+becomes immune to this spell (when cast by the same wizard) for the rest of his life.
+Level Basic Intermediate Advanced Arcane
+Zeon 500 900 1,400 2,500
+Int. R. 12 15 17 19
+Basic: MR 120.
+Intermediate: MR 140.
+Advanced: MR 160
+Arcane: MR 180
+Maintenance: No
+Spell Type: Automatic
