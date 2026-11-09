@@ -1,0 +1,82 @@
+[
+  {
+    "id": "spell_001",
+    "name": "Fireball",
+    "category": "main",
+    "path": "Fire",
+    "path_type": "major",
+    "level": 10,
+    "level_bracket": null,
+    "action": "Active",
+    "types": ["Attack", "Effect"],
+    "daily_maintenance": false,
+    "effect": "Creates a ball of fire that explodes on impact",
+    "grades": {
+      "initial": { "zeon": 20, "min_int": 8, "maintenance": null, "resistance": "Dodge", "resistance_types": [], "description": "Small fireball, 10ft radius" },
+      "intermediate": { "zeon": 40, "min_int": 10, "maintenance": null, "resistance": "Dodge", "resistance_types": [], "description": "Medium fireball, 20ft radius" },
+      "advanced": { "zeon": 60, "min_int": 12, "maintenance": 2, "resistance": "Dodge", "resistance_types": [], "description": "Large fireball, 30ft radius, can maintain" },
+      "arcane": { "zeon": 80, "min_int": 14, "maintenance": 4, "resistance": "Dodge", "resistance_types": [], "description": "Massive fireball, 40ft radius, sustained" }
+    },
+    "metadata": { "is_aoe": true, "resistance_cap": null, "resistance_types": [], "tags": ["fire", "combat"] }
+  },
+  {
+    "id": "spell_002",
+    "name": "Healing Light",
+    "category": "main",
+    "path": "Light",
+    "path_type": "major",
+    "level": 5,
+    "level_bracket": null,
+    "action": "Active",
+    "types": ["Effect", "Spiritual"],
+    "daily_maintenance": false,
+    "effect": "Restores hit points to target",
+    "grades": {
+      "initial": { "zeon": 10, "min_int": 6, "maintenance": null, "resistance": "None", "resistance_types": [], "description": "Heals 10 HP" },
+      "intermediate": { "zeon": 20, "min_int": 8, "maintenance": null, "resistance": "None", "resistance_types": [], "description": "Heals 25 HP" },
+      "advanced": { "zeon": 35, "min_int": 10, "maintenance": 1, "resistance": "None", "resistance_types": [], "description": "Heals 50 HP, can maintain" },
+      "arcane": { "zeon": 50, "min_int": 12, "maintenance": 2, "resistance": "None", "resistance_types": [], "description": "Heals 100 HP, sustained" }
+    },
+    "metadata": { "is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["healing", "support"] }
+  },
+  {
+    "id": "spell_003",
+    "name": "Invisibility",
+    "category": "secondary",
+    "path": "Illusion",
+    "path_type": "minor",
+    "level": 15,
+    "level_bracket": null,
+    "action": "Active",
+    "types": ["Effect", "Defense"],
+    "daily_maintenance": true,
+    "effect": "Renders target invisible",
+    "grades": {
+      "initial": { "zeon": 30, "min_int": 10, "maintenance": 2, "resistance": "None", "resistance_types": [], "description": "Invisible for 1 minute" },
+      "intermediate": { "zeon": 50, "min_int": 12, "maintenance": 4, "resistance": "None", "resistance_types": [], "description": "Invisible for 10 minutes" },
+      "advanced": { "zeon": 75, "min_int": 14, "maintenance": 6, "resistance": "None", "resistance_types": [], "description": "Invisible for 1 hour" },
+      "arcane": { "zeon": 100, "min_int": 16, "maintenance": 8, "resistance": "None", "resistance_types": [], "description": "Invisible for 8 hours, perfect" }
+    },
+    "metadata": { "is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["stealth", "utility"] }
+  },
+  {
+    "id": "spell_004",
+    "name": "Magic Missile",
+    "category": "free_access",
+    "path": null,
+    "path_type": null,
+    "level": null,
+    "level_bracket": [1, 20],
+    "action": "Active",
+    "types": ["Attack"],
+    "daily_maintenance": false,
+    "effect": "Automatically hits target with force bolts",
+    "grades": {
+      "initial": { "zeon": 5, "min_int": 4, "maintenance": null, "resistance": "None", "resistance_types": [], "description": "1 bolt, 1d4+1 damage" },
+      "intermediate": { "zeon": 10, "min_int": 6, "maintenance": null, "resistance": "None", "resistance_types": [], "description": "2 bolts, 1d4+1 each" },
+      "advanced": { "zeon": 15, "min_int": 8, "maintenance": null, "resistance": "None", "resistance_types": [], "description": "3 bolts, 1d4+1 each" },
+      "arcane": { "zeon": 20, "min_int": 10, "maintenance": null, "resistance": "None", "resistance_types": [], "description": "5 bolts, 1d4+1 each" }
+    },
+    "metadata": { "is_aoe": false, "resistance_cap": null, "resistance_types": [], "tags": ["force", "combat"] }
+  }
+]
