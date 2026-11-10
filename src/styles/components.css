@@ -215,7 +215,7 @@ tbody tr:last-child td {
   padding: var(--space-4);
   background: var(--color-bg-elevated);
   border-bottom: 1px solid var(--color-border);
-  margin: calc(-1 * var(--space-4)) calc(-1 * var(--space-4)) var(--space-4);
+  margin: 0 calc(-1 * var(--space-4)) var(--space-4);
 }
 
 .search-input {
