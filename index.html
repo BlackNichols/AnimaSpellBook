@@ -61,6 +61,19 @@
           </section>
 
           <section class="filter-section">
+            <button type="button" class="filter-section-toggle" @click="toggleSection('level')" :aria-expanded="isOpen('level').toString()">
+              <span class="filter-section-title">Level</span>
+              <span class="filter-section-chevron" aria-hidden="true" x-text="isOpen('level') ? '▾' : '▸'"></span>
+            </button>
+            <div class="filter-section-body" x-show="isOpen('level')">
+              <div class="filter-range">
+                <label class="range-item"><span>Min</span><input type="number" min="0" step="10" :value="filters.levelMin ?? ''" @input="updateLevelMin($event.target.value === '' ? null : +$event.target.value)" /></label>
+                <label class="range-item"><span>Max</span><input type="number" min="0" step="10" :value="filters.levelMax ?? ''" @input="updateLevelMax($event.target.value === '' ? null : +$event.target.value)" /></label>
+              </div>
+            </div>
+          </section>
+
+          <section class="filter-section">
             <button type="button" class="filter-section-toggle" @click="toggleSection('action')" :aria-expanded="isOpen('action').toString()">
               <span class="filter-section-title">Action</span>
               <span class="filter-section-chevron" aria-hidden="true" x-text="isOpen('action') ? '▾' : '▸'"></span>

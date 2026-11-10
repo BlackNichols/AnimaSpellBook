@@ -192,6 +192,18 @@ describe('filters', () => {
     ).toBe(false);
   });
 
+  it('matches level filter for free access by bracket overlap and multiple-of-10 rule', () => {
+    const free = { ...mockSpell, id: 'f', name: 'F', category: 'free_access' as const, path: null, path_type: null, level: null, level_bracket: [1, 10] as [number, number] };
+    const free50 = { ...free, id: 'f50', level_bracket: [50, 60] as [number, number] };
+    const base = { paths: [] as string[], maintenance: 'all' as const, isAoe: null, levelMin: null, levelMax: null, zeonMin: null, zeonMax: null, zeonMode: 'any' as const, minIntMin: null, minIntMax: null, minIntMode: 'any' as const, action: 'all' as const, types: [] as string[] };
+    expect(matchesFilters(free, { ...base, levelMin: 0, levelMax: 10 })).toBe(true);
+    expect(matchesFilters(free, { ...base, levelMin: 10, levelMax: 20 })).toBe(false);
+    expect(matchesFilters(free, { ...base, levelMin: 20, levelMax: 30 })).toBe(false);
+    expect(matchesFilters(free, { ...base, levelMin: 5, levelMax: 10 })).toBe(false);
+    expect(matchesFilters(free50, { ...base, levelMax: 50 })).toBe(false);
+    expect(matchesFilters(free50, { ...base, levelMin: 50, levelMax: 60 })).toBe(true);
+  });
+
   it('matches zeon filter with any mode', () => {
     // 'any' mode uses minimum zeon across grades (10, 20, 30, 40) = 10
     expect(

@@ -35,6 +35,9 @@ export function matchesFilters(spell: Spell, filters: FilterState): boolean {
       if (!spell.level_bracket) return false;
       const [low, high] = spell.level_bracket;
       if (low > max || high < min) return false;
+      // Exclude bracket that starts at/above max bound or ends at/below min bound
+      if (filters.levelMax !== null && low >= filters.levelMax) return false;
+      if (filters.levelMin !== null && high <= filters.levelMin) return false;
       // Exclude free access when filter value is not multiple of 10
       if (
         (filters.levelMin !== null && filters.levelMin % 10 !== 0) ||

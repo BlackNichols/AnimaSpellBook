@@ -85,6 +85,14 @@ describe('UI integration (rendered behavior + URL sync)', () => {
     expect(store.filteredSpells.every((s) => s.metadata.is_aoe && s.path === 'Fire')).toBe(true);
   });
 
+  it('opens filter sections when selected via query parameters', async () => {
+    const { panel } = await mount({ url: '/?maintenance=daily&paths=Fire&levelMin=1&levelMax=10' });
+    expect(panel.isOpen('maintenance')).toBe(true);
+    expect(panel.isOpen('category')).toBe(true);
+    expect(panel.isOpen('level')).toBe(true);
+    expect(panel.isOpen('action')).toBe(false);
+  });
+
   it('filters by action and types (AND with search)', async () => {
     const { store, panel, search } = await mount({ url: '/' });
     panel.updateAction('Active');

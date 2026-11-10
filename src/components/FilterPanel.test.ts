@@ -51,18 +51,19 @@ describe('FilterPanel', () => {
     expect(store.filteredSpells.length).toBe(store.spells.length);
   });
 
-  it('filters by action and by spell types', async () => {
+  it('filters by level range (main and free-access brackets)', async () => {
     const store = new SpellStore();
     await store.loadSpells();
     const panel = FilterPanel(store) as any;
-    panel.updateAction('Active');
-    expect(store.filteredSpells.every((s) => s.action === 'Active')).toBe(true);
-    panel.updateAction('Passive');
-    expect(store.filteredSpells.every((s) => s.action === 'Passive')).toBe(true);
-    panel.updateAction('all');
-    panel.updateTypes('Attack', true);
-    expect(store.filteredSpells.every((s) => s.types.includes('Attack'))).toBe(true);
-    panel.updateTypes('Defense', true);
-    expect(store.filteredSpells.every((s) => s.types.includes('Attack') || s.types.includes('Defense'))).toBe(true);
+    panel.updateLevelMin(1);
+    panel.updateLevelMax(10);
+    expect(panel.isActive('level')).toBe(true);
+    expect(store.filteredSpells.every((s) => {
+      if (s.category === 'free_access') return (s.level_bracket?.[0] ?? 99) <= 10 && (s.level_bracket?.[1] ?? 0) >= 1;
+      return (s.level ?? 0) >= 1 && (s.level ?? 0) <= 10;
+    })).toBe(true);
+    panel.updateLevelMin(null);
+    panel.updateLevelMax(null);
+    expect(store.filteredSpells.length).toBe(store.spells.length);
   });
 });

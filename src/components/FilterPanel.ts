@@ -35,6 +35,7 @@ export function FilterPanel(store: SpellStore) {
       if (key === 'types') return f.types.length > 0;
       if (key === 'aoe') return f.isAoe !== null;
       if (key === 'maintenance') return f.maintenance !== 'all';
+      if (key === 'level') return f.levelMin !== null || f.levelMax !== null;
       return false;
     },
     isOpen(key: string) {

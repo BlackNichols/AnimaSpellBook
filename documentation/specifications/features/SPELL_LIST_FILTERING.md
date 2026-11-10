@@ -43,7 +43,7 @@ Filter sections start minimized unless the filter is selected (including via URL
 | **Category + Path** | Checkbox groups | Main/Secondary paths by name; `free_access` (Free Access). `paths` URL param stores selected keys; AND with other filters. (Implemented) |
 | **Maintenance** | Tri-state | `no` (no maintenance at any grade), `yes` (maintenance on any grade), `daily only` (`daily_maintenance == true`) |
 | **Area of Effect** | Boolean | `metadata.is_aoe` — All / AoE only / Non-AoE only. (Implemented) |
-| **Level** | Min / Max / Range | Main & Secondary spells: `level` integer.<br>Free Access spells: `level_bracket` `[low, high]` — a bracket overlaps the range if `low <= max AND high >= min`; Free Access spells are excluded when the filter value is not a multiple of 10 |
+| **Level** | Min / Max / Range | Main & Secondary: `level`. Free Access: bracket `[low,high]` included only when it overlaps the range and `low < max` / `high > min` (e.g. max 50 excludes 50-60); excluded when a filter bound is not a multiple of 10. (Implemented UI + logic) |
 | **Zeon cost** | Min / Max / Range | Per-grade `zeon`. Match mode: **any grade** (default) or **highest cost** (arcane grade) |
 | **Min Intelligence** | Min / Max / Range | Per-grade `min_int`. Match mode: **any grade** (default) or **highest** (arcane grade) |
 | **Action** | Single-select | `Active` / `Passive` / `All`. (Implemented) |

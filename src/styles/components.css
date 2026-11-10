@@ -123,8 +123,19 @@ tbody tr:last-child td {
 }
 
 /* Checkbox group */
-.filter-group {
-  margin-bottom: var(--space-sm);
+.filter-range {
+  display: flex;
+  gap: var(--space-sm);
+}
+.range-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  font-size: 0.85rem;
+}
+.range-item input {
+  width: 100%;
 }
 .filter-group > .checkbox-item span {
   font-weight: 600;
