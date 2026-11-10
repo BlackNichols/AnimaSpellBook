@@ -9,8 +9,25 @@ export function FilterPanel(store: SpellStore) {
 
   const allTypes = ['Attack', 'Defense', 'Effect', 'Detection', 'Automatic', 'Spiritual'] as const;
 
+  const keys = ['category', 'level', 'action', 'types', 'aoe', 'maintenance'];
+  const initialOpen: Record<string, boolean> = {};
+  const getFilters = () => store.filters;
+  const isActive = (key: string) => {
+    const f = getFilters();
+    if (key === 'category') return f.paths.length > 0;
+    if (key === 'action') return f.action !== 'all';
+    if (key === 'types') return f.types.length > 0;
+    if (key === 'aoe') return f.isAoe !== null;
+    if (key === 'maintenance') return f.maintenance !== 'all';
+    if (key === 'level') return f.levelMin !== null || f.levelMax !== null;
+    return false;
+  };
+  for (const k of keys) {
+    if (isActive(k)) initialOpen[k] = true;
+  }
+
   return {
-    openSections: {} as Record<string, boolean>,
+    openSections: initialOpen as Record<string, boolean>,
     get filters() {
       return store.filters;
     },
@@ -28,19 +45,12 @@ export function FilterPanel(store: SpellStore) {
         paths: c.paths.filter((p) => seen.size === 0 || seen.has(p)),
       }));
     },
-    isActive(key: string) {
-      const f = store.filters;
-      if (key === 'category') return f.paths.length > 0;
-      if (key === 'action') return f.action !== 'all';
-      if (key === 'types') return f.types.length > 0;
-      if (key === 'aoe') return f.isAoe !== null;
-      if (key === 'maintenance') return f.maintenance !== 'all';
-      if (key === 'level') return f.levelMin !== null || f.levelMax !== null;
-      return false;
-    },
+    isActive,
     isOpen(key: string) {
-      if (key in this.openSections) return this.openSections[key];
-      return this.isActive(key);
+      if (Object.prototype.hasOwnProperty.call(this.openSections, key)) {
+        return this.openSections[key] === true;
+      }
+      return isActive(key);
     },
     toggleSection(key: string) {
       this.openSections[key] = !this.isOpen(key);

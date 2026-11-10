@@ -36,7 +36,7 @@
               <span class="filter-section-title">Category &amp; Path</span>
               <span class="filter-section-chevron" aria-hidden="true" x-text="isOpen('category') ? '▾' : '▸'"></span>
             </button>
-            <div class="filter-section-body" x-show="isOpen('category')">
+            <div class="filter-section-body" x-show="isOpen('category')" style="display:none">
               <template x-for="cat in categories" :key="cat.key">
                 <div class="filter-group">
                   <label class="checkbox-item">
@@ -65,7 +65,7 @@
               <span class="filter-section-title">Level</span>
               <span class="filter-section-chevron" aria-hidden="true" x-text="isOpen('level') ? '▾' : '▸'"></span>
             </button>
-            <div class="filter-section-body" x-show="isOpen('level')">
+            <div class="filter-section-body" x-show="isOpen('level')" style="display:none">
               <div class="filter-range">
                 <label class="range-item"><span>Min</span><input type="number" min="0" step="10" :value="filters.levelMin ?? ''" @input="updateLevelMin($event.target.value === '' ? null : +$event.target.value)" /></label>
                 <label class="range-item"><span>Max</span><input type="number" min="0" step="10" :value="filters.levelMax ?? ''" @input="updateLevelMax($event.target.value === '' ? null : +$event.target.value)" /></label>
@@ -78,7 +78,7 @@
               <span class="filter-section-title">Action</span>
               <span class="filter-section-chevron" aria-hidden="true" x-text="isOpen('action') ? '▾' : '▸'"></span>
             </button>
-            <div class="filter-section-body" x-show="isOpen('action')">
+            <div class="filter-section-body" x-show="isOpen('action')" style="display:none">
               <div class="checkbox-group" role="radiogroup" aria-label="Action">
                 <label class="checkbox-item"><input type="radio" name="action" :checked="filters.action === 'all'" @change="updateAction('all')" /><span>All</span></label>
                 <label class="checkbox-item"><input type="radio" name="action" :checked="filters.action === 'Active'" @change="updateAction('Active')" /><span>Active</span></label>
@@ -92,7 +92,7 @@
               <span class="filter-section-title">Types</span>
               <span class="filter-section-chevron" aria-hidden="true" x-text="isOpen('types') ? '▾' : '▸'"></span>
             </button>
-            <div class="filter-section-body" x-show="isOpen('types')">
+            <div class="filter-section-body" x-show="isOpen('types')" style="display:none">
               <div class="checkbox-group">
                 <template x-for="t in types" :key="t">
                   <label class="checkbox-item">
@@ -109,7 +109,7 @@
               <span class="filter-section-title">Area of Effect</span>
               <span class="filter-section-chevron" aria-hidden="true" x-text="isOpen('aoe') ? '▾' : '▸'"></span>
             </button>
-            <div class="filter-section-body" x-show="isOpen('aoe')">
+            <div class="filter-section-body" x-show="isOpen('aoe')" style="display:none">
               <div class="checkbox-group" role="radiogroup" aria-label="Area of Effect">
                 <label class="checkbox-item"><input type="radio" name="aoe" :checked="filters.isAoe === null" @change="updateAoe(null)" /><span>All</span></label>
                 <label class="checkbox-item"><input type="radio" name="aoe" :checked="filters.isAoe === true" @change="updateAoe(true)" /><span>AoE only</span></label>
@@ -128,7 +128,7 @@
               <span class="filter-section-title">Maintenance</span>
               <span class="filter-section-chevron" aria-hidden="true" x-text="isOpen('maintenance') ? '▾' : '▸'"></span>
             </button>
-            <div class="filter-section-body" x-show="isOpen('maintenance')">
+            <div class="filter-section-body" x-show="isOpen('maintenance')" style="display:none">
               <div class="checkbox-group" role="radiogroup" aria-label="Maintenance">
                 <label class="checkbox-item">
                   <input type="radio" name="maintenance" value="all" :checked="filters.maintenance === 'all'" @change="updateMaintenance('all')" />
@@ -149,6 +149,28 @@
               </div>
             </div>
           </section>
+          <script>
+            (function () {
+              try {
+                var p = new URLSearchParams(location.search);
+                var active = {
+                  category: !!p.get('paths'),
+                  level: p.has('levelMin') || p.has('levelMax'),
+                  action: p.get('action') && p.get('action') !== 'all',
+                  types: !!p.get('types'),
+                  aoe: p.has('aoe'),
+                  maintenance: p.get('maintenance') && p.get('maintenance') !== 'all',
+                };
+                var root = document.currentScript && document.currentScript.parentElement;
+                if (!root) return;
+                var bodies = root.querySelectorAll('.filter-section-body');
+                var keys = ['category','level','action','types','aoe','maintenance'];
+                for (var i = 0; i < bodies.length && i < keys.length; i++) {
+                  if (active[keys[i]]) bodies[i].style.display = '';
+                }
+              } catch (e) {}
+            })();
+          </script>
         </aside>
         <section class="spell-list" x-data="spellTable()">
           <div class="search-box" x-data="searchBox()">
