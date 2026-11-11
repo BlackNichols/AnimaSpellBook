@@ -44,7 +44,7 @@ Filter sections start minimized unless the filter is selected (including via URL
 | **Maintenance** | Tri-state | `no` (no maintenance at any grade), `yes` (maintenance on any grade), `daily only` (`daily_maintenance == true`) |
 | **Area of Effect** | Boolean | `metadata.is_aoe` — All / AoE only / Non-AoE only. (Implemented) |
 | **Level** | Min / Max / Range | Main & Secondary: `level`. Free Access: bracket `[low,high]` included only when it overlaps the range and `low < max` / `high > min` (e.g. max 50 excludes 50-60); excluded when a filter bound is not a multiple of 10. (Implemented UI + logic) |
-| **Zeon cost** | Min / Max / Range | Per-grade `zeon`. Match mode: **any grade** (default) or **highest cost** (arcane grade) |
+| **Zeon cost** | Min / Max / Range | Per-grade `zeon`. Match mode: **any grade** (default) or **highest cost** (arcane). (Implemented) |
 | **Min Intelligence** | Min / Max / Range | Per-grade `min_int`. Match mode: **any grade** (default) or **highest** (arcane grade) |
 | **Action** | Single-select | `Active` / `Passive` / `All`. (Implemented) |
 | **Types** | Multi-select | `Effect`, `Spiritual`, `Automatic`, `Defense`, `Detection`, `Attack` (match any selected). (Implemented) |

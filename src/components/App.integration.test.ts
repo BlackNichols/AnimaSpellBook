@@ -86,11 +86,22 @@ describe('UI integration (rendered behavior + URL sync)', () => {
   });
 
   it('opens filter sections when selected via query parameters', async () => {
-    const { panel } = await mount({ url: '/?maintenance=daily&paths=Fire&levelMin=1&levelMax=10' });
+    const { panel } = await mount({ url: '/?maintenance=daily&paths=Fire&levelMin=1&levelMax=10&zeonMin=10' });
     expect(panel.isOpen('maintenance')).toBe(true);
     expect(panel.isOpen('category')).toBe(true);
     expect(panel.isOpen('level')).toBe(true);
+    expect(panel.isOpen('zeon')).toBe(true);
     expect(panel.isOpen('action')).toBe(false);
+  });
+
+  it('filters by zeon cost and opens from URL', async () => {
+    const { store, panel } = await mount({ url: '/?zeonMin=35&zeonMax=45&zeonMode=any' });
+    expect(panel.isOpen('zeon')).toBe(true);
+    expect(store.filteredSpells.length).toBeGreaterThan(0);
+    expect(store.filteredSpells.every((s) => {
+      const v = Math.min(s.grades.initial.zeon, s.grades.intermediate.zeon, s.grades.advanced.zeon, s.grades.arcane.zeon);
+      return v >= 35 && v <= 45;
+    })).toBe(true);
   });
 
   it('filters by action and types (AND with search)', async () => {

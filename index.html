@@ -119,6 +119,23 @@
           </section>
 
           <section class="filter-section">
+            <button type="button" class="filter-section-toggle" @click="toggleSection('zeon')" :aria-expanded="isOpen('zeon').toString()">
+              <span class="filter-section-title">Zeon Cost</span>
+              <span class="filter-section-chevron" aria-hidden="true" x-text="isOpen('zeon') ? '▾' : '▸'"></span>
+            </button>
+            <div class="filter-section-body" x-show="isOpen('zeon')" style="display:none">
+              <div class="filter-range">
+                <label class="range-item"><span>Min</span><input type="number" min="0" :value="filters.zeonMin ?? ''" @input="updateZeonMin($event.target.value === '' ? null : +$event.target.value)" /></label>
+                <label class="range-item"><span>Max</span><input type="number" min="0" :value="filters.zeonMax ?? ''" @input="updateZeonMax($event.target.value === '' ? null : +$event.target.value)" /></label>
+              </div>
+              <div class="checkbox-group" role="radiogroup" aria-label="Zeon match mode" style="margin-top: var(--space-xs)">
+                <label class="checkbox-item"><input type="radio" name="zeonMode" :checked="filters.zeonMode === 'any'" @change="updateZeonMode('any')" /><span>Any grade</span></label>
+                <label class="checkbox-item"><input type="radio" name="zeonMode" :checked="filters.zeonMode === 'highest'" @change="updateZeonMode('highest')" /><span>Highest (arcane)</span></label>
+              </div>
+            </div>
+          </section>
+
+          <section class="filter-section">
             <button
               type="button"
               class="filter-section-toggle"
@@ -159,12 +176,13 @@
                   action: p.get('action') && p.get('action') !== 'all',
                   types: !!p.get('types'),
                   aoe: p.has('aoe'),
+                  zeon: p.has('zeonMin') || p.has('zeonMax') || (p.get('zeonMode') && p.get('zeonMode') !== 'any'),
                   maintenance: p.get('maintenance') && p.get('maintenance') !== 'all',
                 };
                 var root = document.currentScript && document.currentScript.parentElement;
                 if (!root) return;
                 var bodies = root.querySelectorAll('.filter-section-body');
-                var keys = ['category','level','action','types','aoe','maintenance'];
+                var keys = ['category','level','action','types','aoe','zeon','maintenance'];
                 for (var i = 0; i < bodies.length && i < keys.length; i++) {
                   if (active[keys[i]]) bodies[i].style.display = '';
                 }

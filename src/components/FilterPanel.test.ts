@@ -66,4 +66,22 @@ describe('FilterPanel', () => {
     panel.updateLevelMax(null);
     expect(store.filteredSpells.length).toBe(store.spells.length);
   });
+
+  it('filters by zeon cost range and mode', async () => {
+    const store = new SpellStore();
+    await store.loadSpells();
+    const panel = FilterPanel(store) as any;
+    panel.updateZeonMin(35);
+    panel.updateZeonMax(45);
+    panel.updateZeonMode('any');
+    expect(panel.isActive('zeon')).toBe(true);
+    expect(store.filteredSpells.length).toBeGreaterThan(0);
+    expect(store.filteredSpells.every((s) => {
+      const v = Math.min(s.grades.initial.zeon, s.grades.intermediate.zeon, s.grades.advanced.zeon, s.grades.arcane.zeon);
+      return v >= 35 && v <= 45;
+    })).toBe(true);
+    panel.updateZeonMin(null);
+    panel.updateZeonMax(null);
+    expect(store.filters.zeonMode).toBe('any');
+  });
 });

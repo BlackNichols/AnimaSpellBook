@@ -9,7 +9,7 @@ export function FilterPanel(store: SpellStore) {
 
   const allTypes = ['Attack', 'Defense', 'Effect', 'Detection', 'Automatic', 'Spiritual'] as const;
 
-  const keys = ['category', 'level', 'action', 'types', 'aoe', 'maintenance'];
+  const keys = ['category', 'level', 'action', 'types', 'aoe', 'maintenance', 'zeon'];
   const initialOpen: Record<string, boolean> = {};
   const getFilters = () => store.filters;
   const isActive = (key: string) => {
@@ -20,6 +20,7 @@ export function FilterPanel(store: SpellStore) {
     if (key === 'aoe') return f.isAoe !== null;
     if (key === 'maintenance') return f.maintenance !== 'all';
     if (key === 'level') return f.levelMin !== null || f.levelMax !== null;
+    if (key === 'zeon') return f.zeonMin !== null || f.zeonMax !== null || f.zeonMode !== 'any';
     return false;
   };
   for (const k of keys) {
@@ -53,7 +54,8 @@ export function FilterPanel(store: SpellStore) {
       return isActive(key);
     },
     toggleSection(key: string) {
-      this.openSections[key] = !this.isOpen(key);
+      const next = !this.isOpen(key);
+      this.openSections = { ...this.openSections, [key]: next };
     },
     isPathSelected(path: string) {
       return store.filters.paths.includes(path);
