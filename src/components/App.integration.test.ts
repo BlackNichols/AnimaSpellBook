@@ -104,6 +104,16 @@ describe('UI integration (rendered behavior + URL sync)', () => {
     })).toBe(true);
   });
 
+  it('filters by min intelligence and opens from URL', async () => {
+    const { store, panel } = await mount({ url: '/?minIntMin=8&minIntMax=10&minIntMode=any' });
+    expect(panel.isOpen('minInt')).toBe(true);
+    expect(store.filteredSpells.length).toBeGreaterThan(0);
+    expect(store.filteredSpells.every((s) => {
+      const v = Math.min(s.grades.initial.min_int, s.grades.intermediate.min_int, s.grades.advanced.min_int, s.grades.arcane.min_int);
+      return v >= 8 && v <= 10;
+    })).toBe(true);
+  });
+
   it('filters by action and types (AND with search)', async () => {
     const { store, panel, search } = await mount({ url: '/' });
     panel.updateAction('Active');

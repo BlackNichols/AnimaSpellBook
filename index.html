@@ -136,6 +136,23 @@
           </section>
 
           <section class="filter-section">
+            <button type="button" class="filter-section-toggle" @click="toggleSection('minInt')" :aria-expanded="isOpen('minInt').toString()">
+              <span class="filter-section-title">Min Intelligence</span>
+              <span class="filter-section-chevron" aria-hidden="true" x-text="isOpen('minInt') ? '▾' : '▸'"></span>
+            </button>
+            <div class="filter-section-body" x-show="isOpen('minInt')" style="display:none">
+              <div class="filter-range">
+                <label class="range-item"><span>Min</span><input type="number" min="0" :value="filters.minIntMin ?? ''" @input="updateMinIntMin($event.target.value === '' ? null : +$event.target.value)" /></label>
+                <label class="range-item"><span>Max</span><input type="number" min="0" :value="filters.minIntMax ?? ''" @input="updateMinIntMax($event.target.value === '' ? null : +$event.target.value)" /></label>
+              </div>
+              <div class="checkbox-group" role="radiogroup" aria-label="Min Intelligence match mode" style="margin-top: var(--space-xs)">
+                <label class="checkbox-item"><input type="radio" name="minIntMode" :checked="filters.minIntMode === 'any'" @change="updateMinIntMode('any')" /><span>Any grade</span></label>
+                <label class="checkbox-item"><input type="radio" name="minIntMode" :checked="filters.minIntMode === 'highest'" @change="updateMinIntMode('highest')" /><span>Highest (arcane)</span></label>
+              </div>
+            </div>
+          </section>
+
+          <section class="filter-section">
             <button
               type="button"
               class="filter-section-toggle"
@@ -177,12 +194,13 @@
                   types: !!p.get('types'),
                   aoe: p.has('aoe'),
                   zeon: p.has('zeonMin') || p.has('zeonMax') || (p.get('zeonMode') && p.get('zeonMode') !== 'any'),
+                  minInt: p.has('minIntMin') || p.has('minIntMax') || (p.get('minIntMode') && p.get('minIntMode') !== 'any'),
                   maintenance: p.get('maintenance') && p.get('maintenance') !== 'all',
                 };
                 var root = document.currentScript && document.currentScript.parentElement;
                 if (!root) return;
                 var bodies = root.querySelectorAll('.filter-section-body');
-                var keys = ['category','level','action','types','aoe','zeon','maintenance'];
+                var keys = ['category','level','action','types','aoe','zeon','minInt','maintenance'];
                 for (var i = 0; i < bodies.length && i < keys.length; i++) {
                   if (active[keys[i]]) bodies[i].style.display = '';
                 }

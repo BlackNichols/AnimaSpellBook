@@ -84,4 +84,21 @@ describe('FilterPanel', () => {
     panel.updateZeonMax(null);
     expect(store.filters.zeonMode).toBe('any');
   });
+
+  it('filters by min intelligence range and mode', async () => {
+    const store = new SpellStore();
+    await store.loadSpells();
+    const panel = FilterPanel(store) as any;
+    panel.updateMinIntMin(8);
+    panel.updateMinIntMax(10);
+    panel.updateMinIntMode('any');
+    expect(panel.isActive('minInt')).toBe(true);
+    expect(store.filteredSpells.length).toBeGreaterThan(0);
+    expect(store.filteredSpells.every((s) => {
+      const v = Math.min(s.grades.initial.min_int, s.grades.intermediate.min_int, s.grades.advanced.min_int, s.grades.arcane.min_int);
+      return v >= 8 && v <= 10;
+    })).toBe(true);
+    panel.updateMinIntMin(null);
+    panel.updateMinIntMax(null);
+  });
 });

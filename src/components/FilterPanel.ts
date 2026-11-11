@@ -9,7 +9,7 @@ export function FilterPanel(store: SpellStore) {
 
   const allTypes = ['Attack', 'Defense', 'Effect', 'Detection', 'Automatic', 'Spiritual'] as const;
 
-  const keys = ['category', 'level', 'action', 'types', 'aoe', 'maintenance', 'zeon'];
+  const keys = ['category', 'level', 'action', 'types', 'aoe', 'maintenance', 'zeon', 'minInt'];
   const initialOpen: Record<string, boolean> = {};
   const getFilters = () => store.filters;
   const isActive = (key: string) => {
@@ -21,6 +21,7 @@ export function FilterPanel(store: SpellStore) {
     if (key === 'maintenance') return f.maintenance !== 'all';
     if (key === 'level') return f.levelMin !== null || f.levelMax !== null;
     if (key === 'zeon') return f.zeonMin !== null || f.zeonMax !== null || f.zeonMode !== 'any';
+    if (key === 'minInt') return f.minIntMin !== null || f.minIntMax !== null || f.minIntMode !== 'any';
     return false;
   };
   for (const k of keys) {
