@@ -269,7 +269,7 @@
       "initial": {
         "zeon": 50,
         "min_int": 6,
-        "maintenance": 5,
+        "maintenance": null,
         "resistance": null,
         "resistance_types": [],
         "description": "5m Radius, 50 Base damage"
@@ -277,7 +277,7 @@
       "intermediate": {
         "zeon": 100,
         "min_int": 9,
-        "maintenance": 5,
+        "maintenance": null,
         "resistance": null,
         "resistance_types": [],
         "description": "25m Radius, 100 Base damage"
@@ -285,7 +285,7 @@
       "advanced": {
         "zeon": 160,
         "min_int": 12,
-        "maintenance": 10,
+        "maintenance": null,
         "resistance": null,
         "resistance_types": [],
         "description": "80m Radius, 140 Base damage"
@@ -293,7 +293,7 @@
       "arcane": {
         "zeon": 250,
         "min_int": 15,
-        "maintenance": 10,
+        "maintenance": null,
         "resistance": null,
         "resistance_types": [],
         "description": "150m Radius, 160 Base damage"
