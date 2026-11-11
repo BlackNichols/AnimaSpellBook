@@ -22,6 +22,7 @@ function displayLevel(spell: Spell): string {
 
 export function SpellTable(store: SpellStore) {
   return {
+    expandedId: null as string | null,
     get rows() {
       return store.filteredSpells;
     },
@@ -30,6 +31,12 @@ export function SpellTable(store: SpellStore) {
     },
     get total() {
       return store.spells.length;
+    },
+    isExpanded(spell: Spell) {
+      return this.expandedId === spell.id;
+    },
+    toggleExpanded(spell: Spell) {
+      this.expandedId = this.expandedId === spell.id ? null : spell.id;
     },
     columnLabel(field: string) {
       return COLUMN_LABELS[field] ?? field;

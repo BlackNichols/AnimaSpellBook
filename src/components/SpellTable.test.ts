@@ -33,4 +33,16 @@ describe('SpellTable', () => {
       `${free.level_bracket?.[0]}-${free.level_bracket?.[1]}`
     );
   });
+
+  it('toggles expanded spell details', async () => {
+    const store = new SpellStore();
+    await store.loadSpells();
+    const table = SpellTable(store) as any;
+    const spell = table.rows[0]!;
+    expect(table.isExpanded(spell)).toBe(false);
+    table.toggleExpanded(spell);
+    expect(table.isExpanded(spell)).toBe(true);
+    table.toggleExpanded(spell);
+    expect(table.isExpanded(spell)).toBe(false);
+  });
 });

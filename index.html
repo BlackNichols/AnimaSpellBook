@@ -234,15 +234,37 @@
                     </template>
                   </tr>
                 </thead>
-                <tbody>
-                  <template x-for="spell in rows" :key="spell.id">
-                    <tr>
+                <template x-for="spell in rows" :key="spell.id">
+                  <tbody class="spell-group">
+                    <tr class="spell-row" @click="toggleExpanded(spell)" :class="{ expanded: isExpanded(spell) }">
                       <template x-for="col in columns" :key="`${spell.id}-${col}`">
                         <td x-text="formatValue(getField(spell, col))"></td>
                       </template>
                     </tr>
-                  </template>
-                </tbody>
+                    <tr class="spell-detail-row" x-show="isExpanded(spell)">
+                      <td :colspan="columns.length">
+                        <div class="spell-detail">
+                          <dl class="spell-detail-meta">
+                            <div><dt>Action</dt><dd x-text="spell.action"></dd></div>
+                            <div><dt>Types</dt><dd x-text="spell.types.join(', ') || '—'"></dd></div>
+                            <template x-if="spell.daily_maintenance"><div><dt>Daily maintenance</dt><dd></dd></div></template>
+                          </dl>
+                          <template x-for="g in [{k:'initial',l:'Initial'},{k:'intermediate',l:'Intermediate'},{k:'advanced',l:'Advanced'},{k:'arcane',l:'Arcane'}]" :key="g.k">
+                            <div class="spell-grade">
+                              <h4 class="spell-grade-title" x-text="g.l"></h4>
+                              <div class="spell-grade-stats">
+                                <span><strong>Zeon:</strong> <span x-text="spell.grades[g.k].zeon"></span></span>
+                                <span><strong>Min Int:</strong> <span x-text="spell.grades[g.k].min_int"></span></span>
+                                <span><strong>Maintenance:</strong> <span x-text="spell.grades[g.k].maintenance ?? '—'"></span></span>
+                              </div>
+                              <p class="spell-grade-desc" x-text="spell.grades[g.k].description"></p>
+                            </div>
+                          </template>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </template>
               </table>
             </div>
           </div>

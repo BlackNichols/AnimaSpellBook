@@ -286,9 +286,43 @@ tbody tr:last-child td {
   color: var(--color-primary);
 }
 
+/* Spell detail (expanded row) */
+.spell-row {
+  cursor: pointer;
+}
+.spell-row.expanded td {
+  border-bottom-color: transparent;
+}
+.spell-detail-row td {
+  padding: 0;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg);
+}
+.spell-detail {
+  padding: var(--space-3) var(--space-4);
+  display: grid;
+  gap: var(--space-3);
+}
+.spell-detail-effect {
+  margin: 0;
+  white-space: pre-wrap;
+}
+.spell-detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin: 0;
+}
+.spell-detail-meta div { display: flex; gap: var(--space-1); }
+.spell-detail-meta dt { font-weight: var(--font-semibold); }
+.spell-detail-meta dd { margin: 0; }
+.spell-grade { border-top: 1px solid var(--color-border); padding-top: var(--space-2); }
+.spell-grade-title { margin: 0 0 var(--space-1); font-size: var(--text-sm); }
+.spell-grade-stats { display: flex; flex-wrap: wrap; gap: var(--space-3); font-size: var(--text-sm); }
+.spell-grade-desc { margin: var(--space-1) 0 0; font-size: var(--text-sm); }
+
 /* Stats bar */
 .stats-bar {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: var(--space-3) var(--space-4);
