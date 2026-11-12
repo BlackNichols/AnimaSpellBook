@@ -24,13 +24,17 @@
       </header>
 
       <main class="main-layout">
-        <aside
-          id="filter-panel"
-          class="filter-panel"
-          x-data="filterPanel()"
-          aria-label="Filters"
-          x-show="sidebarOpen"
-        >
+        <template x-if="isSpellListView">
+          <aside
+            id="filter-panel"
+            class="filter-panel"
+            x-data="filterPanel()"
+            aria-label="Filters"
+            x-show="sidebarOpen"
+          >
+          <div class="filter-panel-header">
+            <button type="button" class="btn btn-secondary btn-sm" @click="clearFilters()">Clear filters</button>
+          </div>
           <section class="filter-section">
             <button type="button" class="filter-section-toggle" @click="toggleSection('category')" :aria-expanded="isOpen('category').toString()">
               <span class="filter-section-title">Category &amp; Path</span>
@@ -59,6 +63,7 @@
               </label>
             </div>
           </section>
+
 
           <section class="filter-section">
             <button type="button" class="filter-section-toggle" @click="toggleSection('level')" :aria-expanded="isOpen('level').toString()">
@@ -208,7 +213,8 @@
             })();
           </script>
         </aside>
-        <section class="spell-list" x-data="spellTable()">
+        </template>
+        <section class="spell-list" x-show="isSpellListView" x-data="spellTable()">
           <div class="search-box" x-data="searchBox()">
             <label class="visually-hidden" for="spell-search">Search spells</label>
             <input
@@ -272,9 +278,13 @@
             <div class="empty-state">No spells loaded.</div>
           </template>
         </section>
+        <section class="spellbooks-view" x-show="isSpellbooksView" aria-label="Spellbooks">
+          <h2>Spellbooks</h2>
+          <p>Spellbook management is not yet available in this view.</p>
+          <button type="button" class="btn btn-secondary" @click="goToSpellList()">Back to spell list</button>
+        </section>
       </main>
 
-      <div x-data="urlSync()" hidden></div>
     </div>
 
     <script type="module" src="/src/main.ts"></script>
