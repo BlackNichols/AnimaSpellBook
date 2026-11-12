@@ -54,6 +54,26 @@ describe('Router (Chunk 1 foundational)', () => {
     expect(window.location.search).toContain('q=fire');
   });
 
+  it('deep-links directly to /spellbooks on start', async () => {
+    resetEnv('/spellbooks');
+    const { createRouter } = await loadRouter();
+    const router = createRouter(store);
+    router.start();
+    expect(router.route.view).toBe('spellbooks');
+    expect(window.location.pathname).toBe('/spellbooks');
+  });
+
+  it('resolves and starts under base path /AnimaSpellBook/', async () => {
+    resetEnv('/AnimaSpellBook/spelllist?q=fire');
+    const { createRouter } = await loadRouter();
+    const router = createRouter(store, { base: '/AnimaSpellBook/' });
+    const result = router.resolve(window.location.pathname + window.location.search);
+    expect(result).toEqual({ type: 'route', view: 'spelllist' });
+    router.start();
+    expect(router.route.view).toBe('spelllist');
+    expect(store.searchQuery).toBe('fire');
+  });
+
   it('clear filters resets search/filter state and URL params on spelllist', async () => {
     resetEnv('/spelllist?q=fire&maintenance=daily&paths=Fire');
     const { createRouter } = await loadRouter();
