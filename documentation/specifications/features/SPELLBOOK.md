@@ -2,11 +2,11 @@
 
 ## 1. Overview
 
-Allow users to build and manage spellbooks containing spells their character can cast, arranged in a custom order. Spellbooks can be viewed in-app, persisted locally, exported/imported as JSON, and exported as PDF. The web spellbook view and the PDF export must be visually identical (including pagination).
+Allow users to build and manage spellbooks containing spells their character can cast, arranged in a custom order. Spellbooks can be viewed in-app, persisted locally, exported/imported as JSON, and exported as PDF. The web spellbook view and the read-only PDF export must have good-enough visual/layout parity (same content and order, equivalent styling intent) with searchable text across supported browsers.
 
 **Scope (this iteration):** spell selection/addition, sections and ordering, spellbook management, local persistence, JSON export/import, PDF export, and the spellbook view.
 
-**Out of scope (this iteration):** per-spell user notes/custom text edits, URL-encoded spellbooks, combined JSON+PDF export, print-only styling differences, file-upload import UX specifics (functional behavior is JSON payload import), navigating from a spellbook entry back to spell details, a “clear spellbook” action, and drag-and-drop ordering.
+**Out of scope (this iteration):** per-spell user notes/custom text edits, URL-encoded spellbooks, combined JSON+PDF export, pixel-perfect web/PDF pagination parity, file-upload import UX specifics (functional behavior is JSON payload import), navigating from a spellbook entry back to spell details, a “clear spellbook” action, and drag-and-drop ordering.
 
 ## 2. Data identity & integrity
 
@@ -18,8 +18,10 @@ Allow users to build and manage spellbooks containing spells their character can
 ## 3. Views & navigation
 
 - **Primary screens:** (1) **Spell list** (existing search/filter/browse view) and (2) **Spellbook** view. Users can move between them seamlessly.
-- **No-spellbook state:** If no spellbooks exist (first visit or after deleting the last), show only the spell list. A spellbook is not required to exist until created.
-- **Active spellbook:** Only one spellbook is editable/active at a time. Users can switch the active spellbook via a spellbook selector/list.
+- **No-spellbook state:** If no spellbooks exist (first visit or after deleting the last), there is no editable spellbook. `/spellbooks` remains reachable and shows a management/empty state allowing the user to create a new spellbook; the spell list remains available at `/spelllist`. A spellbook is not required to exist until created.
+- **Active spellbook:** Only one spellbook is editable/active at a time. `/spellbooks/:id` is the editable view for that spellbook and navigating to it makes it active. `/spellbooks` is a management view (selector/list and create) and does not edit a specific book. Users can switch the active spellbook via the spellbook selector/list.
+- **Routing:** `/` redirects to `/spelllist` (preserving query params). `/spellbooks` shows spellbook management (selector and create). `/spellbooks/:id` opens the specified spellbook for editing if it exists; if the ID is missing/unknown, redirect to `/spelllist`. Full spellbook content is never stored in the URL; only route and spellbook ID identify the view. Spell list filter/search state may be preserved across navigation and restored on return to `/spelllist`.
+- **Clear filters:** The spell list provides a “Clear filters” control that resets all active search/filter criteria to their defaults (so users can quickly recover if preserved filters are no longer desired).
 
 ## 4. Adding spells to a spellbook
 
@@ -82,15 +84,15 @@ Sections are ordered relative to each other. The user reorders sections by editi
 - **Create:** Creates a new spellbook with a default name (e.g. “Spellbook 1”, incrementing the counter for new spellbooks; name uniqueness is not enforced). The user may rename it.
 - **Duplicate spellbook:** Supported (alternative to a “clear spellbook” action). Duplicates content/structure into a new spellbook (new UUID, default/incremented name per creation rules). The duplicate can be made active and managed like any other spellbook.
 - **Rename:** The user can rename any spellbook.
-- **Delete:** The user can delete a spellbook. If the deleted book was active: switch to another spellbook at random if one exists; otherwise return to the no-spellbook state (spell list only).
-- **Switch:** Via a spellbook selector/list.
+- **Delete:** The user can delete a spellbook. If the deleted book was active, navigate to `/spellbooks` (spellbook management). `/spellbooks` remains reachable even when no spellbooks exist and provides an empty state with the ability to create a new one.
+- **Switch:** Via a spellbook selector/list (selecting a spellbook opens its `/spellbooks/:id` view and makes it active).
 
 ## 8. Persistence, export & import
 
 ### 8.1 Local persistence (non-destructive)
 
 - **Auto-save & restore:** All changes are auto-saved to `localStorage` and restored on revisit. `localStorage` state is JSON.
-- **Sharing:** Users share spellbooks via the JSON payload. URLs must not reference `localStorage`, and full spellbooks are not stored in the URL in this iteration.
+- **Sharing:** Users share spellbooks via the JSON payload. URLs must not reference `localStorage`, and full spellbooks are not stored in the URL in this iteration. URL routes may identify views and the active spellbook by ID (e.g. `/spelllist`, `/spellbooks/:id`) but must not encode spellbook content. Spell list filter/search state may be preserved across navigation and restored on return to the spell list; a “Clear filters” control resets it.
 
 ### 8.2 JSON export/import
 
@@ -101,19 +103,24 @@ Sections are ordered relative to each other. The user reorders sections by editi
 
 ### 8.3 PDF export
 
-- **Trigger:** User-initiated download only (non-destructive export; not restorable as application state).
-- **Filename:** A default filename is provided; the user can choose the location/name via the OS save dialog. No other export options in this iteration (no section selection, no paper-size choice).
+- **Trigger:** User-initiated export via the browser print dialog (Save as PDF); non-destructive and not restorable as application state.
+- **Rendering:** Export uses a dedicated read-only spellbook rendering (no edit/management controls). Pagination is produced with Paged.js to provide consistent, print-ready A4 pages across supported browsers.
+- **Preview:** No custom in-app preview is required; the browser print dialog provides the preview/print flow.
+- **Searchable text:** The exported/saved PDF must contain selectable, searchable text (e.g. spell names findable via Ctrl+F).
+- **Filename:** A default filename is provided; the user can choose the location/name via the OS/browser save dialog. No other export options in this iteration (no section selection, no paper-size choice).
+- **Supported browsers:** At least Chromium and Firefox for export/pagination behavior (no browser-specific solution where possible).
 - **Independence:** PDF export does not bundle or auto-download JSON.
 
 ## 9. Spellbook display & layout (web and PDF)
 
 - **Content:** All spell information is always shown for every spell (no minimized/collapsed content in the spellbook).
-- **Visual parity:** Web and PDF must be visually identical, including pagination and breaks.
+- **Web vs PDF parity:** The PDF is a read-only export (edit/reorder/move/remove controls are not shown). Web and PDF must have good-enough visual and layout parity (same content, section/spell order, and equivalent styling intent) across supported browsers (at least Chromium and Firefox). Pagination is generated for print/PDF via Paged.js for cross-browser consistency; exact pixel-perfect pagination is not required.
+- **Searchable PDF text:** PDF content must remain real/selectable text so it is searchable (e.g. Ctrl+F).
 - **Page format:** A4 portrait with standard margins for this document type.
 - **Columns:** Two-column layout per page. Spell flow/order: **fill the left column top-to-bottom, then the right column top-to-bottom** (per page), with variable-height spells.
 - **Splitting rules:** A spell may split across columns but should avoid splitting across pages. If a single spell cannot fit wholly on a page/available space, allow splitting across pages as a last resort.
 - **Headers/footers/metadata:**
-  - **Spellbook title:** Optional name shown at the very start of the spellbook (web and PDF). If empty/unnamed, display “Spellbook”.
+  - **Spellbook title:** Optional name shown at the very start of the spellbook (web and PDF/export). If empty/unnamed, display “Spellbook”.
   - **Section headers:** Show the name of each named section. The default/unnamed section has no header.
   - **Page numbers:** Shown at the bottom of each page.
   - **Excluded:** No generation date and no path labels as page/section metadata.
@@ -126,6 +133,6 @@ Sections are ordered relative to each other. The user reorders sections by editi
 - Deleting a non-last named section requires choosing to delete contained spells or move them to another section.
 - Moving a spell places it at the end of the target section; adding spells appends them in the displayed/filtered order.
 - An empty named section renders (header only) in web/PDF and is preserved in JSON/PDF exports.
-- Web view and exported PDF render the same content, order, styling, and pagination on A4.
+- Web view and exported PDF render the same spellbook content and order with good-enough visual/layout parity (read-only export, no edit controls), with searchable text, across supported browsers.
 - JSON import of an invalid payload shows an error and applies no partial state; unknown spell IDs are skipped with an error summary.
-- Deleting the active spellbook switches to a random remaining spellbook, or returns to the no-spellbook (spell list only) state if none remain.
+- Deleting the active spellbook navigates to `/spellbooks` (management); if no spellbooks remain, `/spellbooks` shows an empty state allowing creation. Unknown `/spellbooks/:id` redirects to `/spelllist`.
