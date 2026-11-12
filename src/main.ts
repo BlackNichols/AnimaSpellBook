@@ -7,17 +7,30 @@ import { SearchBox } from './components/SearchBox';
 import { createRouter } from './router/router';
 
 const spellStore = Alpine.reactive(new SpellStore());
-const router = createRouter(spellStore);
+const router = createRouter(spellStore, { base: import.meta.env.BASE_URL });
+
+const routeState = Alpine.reactive({
+  view: router.route.view as 'spelllist' | 'spellbooks',
+  path: router.route.path,
+  search: router.route.search,
+});
+
+router.onRouteChange(() => {
+  routeState.view = router.route.view;
+  routeState.path = router.route.path;
+  routeState.search = router.route.search;
+});
+
 const appShell = {
   ...AppShell(),
   get route() {
-    return router.route;
+    return routeState;
   },
   get isSpellListView() {
-    return router.route.view === 'spelllist';
+    return routeState.view === 'spelllist';
   },
   get isSpellbooksView() {
-    return router.route.view === 'spellbooks';
+    return routeState.view === 'spellbooks';
   },
   clearFilters() {
     router.clearFilters();

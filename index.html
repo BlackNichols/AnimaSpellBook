@@ -214,7 +214,7 @@
           </script>
         </aside>
         </template>
-        <section class="spell-list" x-show="isSpellListView" x-data="spellTable()">
+        <section class="spell-list" x-if="isSpellListView" x-show="isSpellListView" x-data="spellTable()">
           <div class="search-box" x-data="searchBox()">
             <label class="visually-hidden" for="spell-search">Search spells</label>
             <input
