@@ -1,0 +1,6 @@
+{
+  "$schema": "https://app.kilo.ai/config.json",
+  "plugin": [
+    "../kilo-tdd-plugin/src/plugin.ts"
+  ]
+}
