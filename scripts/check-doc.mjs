@@ -32,25 +32,46 @@ function hasHeading(re) { return lines.some(l => re.test(l)); }
 function findLineIndex(re) { return lines.findIndex(l => re.test(l)); }
 function escapeRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 
-function valueAfterLabel(label, { allowNA = false } = {}) {
-  const re = new RegExp(`^\\s*-\\s*\\*\\*${escapeRe(label)}\\*\\*\\s*:?(.*)$`);
+function labelPattern(label) {
+  // Accept "**Label:** value" (colon inside bold, as in templates/docs) and "**Label**: value"
+  return `\\*\\*${escapeRe(label)}:?\\*\\*\\s*:?`;
+}
+
+function extractLabelValue(line, label) {
+  const re = new RegExp(`^\\s*-\\s*${labelPattern(label)}\\s*(.*)$`);
+  const m = line.match(re);
+  return m ? (m[1] || '') : null;
+}
+
+function normalizeValue(v) {
+  return (v || '').replace(/<!--.*?-->/g, '').trim();
+}
+
+function classifyValue(raw, { allowNA = false } = {}) {
+  const v = normalizeValue(raw);
+  if (!v) return { ok: false, value: raw.trim(), reason: 'empty' };
+  if (/^<[^>]+>$/.test(v)) return { ok: false, value: v, reason: 'placeholder' };
+  if (/^YYYY-MM-DD$/i.test(v)) return { ok: false, value: v, reason: 'placeholder date' };
+  if (!allowNA && /^(tbd|todo|n\/a|none|\?\??)$/i.test(v)) return { ok: false, value: v, reason: 'unresolved placeholder' };
+  return { ok: true, value: v };
+}
+
+function valueAfterLabel(label, opts = {}) {
   for (const l of lines) {
-    const m = l.match(re);
-    if (m) {
-      let v = (m[1] || '').trim();
-      if (!v) return { ok: false, value: v, reason: 'empty' };
-      if (/^<[^>]+>$/.test(v)) return { ok: false, value: v, reason: 'placeholder' };
-      if (/^YYYY-MM-DD$/i.test(v)) return { ok: false, value: v, reason: 'placeholder date' };
-      if (!allowNA && /^(tbd|todo|n\/a|none|\?\??)$/i.test(v)) return { ok: false, value: v, reason: 'unresolved placeholder' };
-      return { ok: true, value: v };
-    }
+    const raw = extractLabelValue(l, label);
+    if (raw !== null) return classifyValue(raw, opts);
   }
   return { ok: false, value: '', reason: 'missing' };
 }
 
 function requireLabel(label, opts) {
   const r = valueAfterLabel(label, opts);
-  if (!r.ok) errors.push(`metadata/field "${label}" ${r.reason}${r.reason === 'missing' ? '' : ` (value: ${JSON.stringify(r.value)})`}`);
+  if (!r.ok) errors.push(`metadata/field "${label}" ${r.reason}${r.value ? ` (value: ${JSON.stringify(r.value)})` : ''}`);
+}
+
+function requireBlockLabel(block, label, context, opts) {
+  const r = blockHasLabel(block, label, opts);
+  if (!r.ok) errors.push(`${context} missing or invalid field: "${label}" (${r.reason}${r.value ? `, value: ${JSON.stringify(r.value)}` : ''})`);
 }
 
 function sectionContent(startRe, endRes) {
@@ -80,13 +101,26 @@ function hasTableWithData(block) {
   return false;
 }
 
-function blockHasLabel(block, label) {
-  if (!block) return false;
-  const re = new RegExp(`^\\s*-\\s*\\*\\*${escapeRe(label)}\\*\\*\\s*:?\\s*(.+)$`, 'm');
-  const m = block.match(re);
-  if (!m) return false;
-  const v = m[1].trim();
-  return v && !/^<[^>]+>$/.test(v);
+function blockHasLabel(block, label, opts = {}) {
+  if (!block) return { ok: false, reason: 'missing' };
+  const blockLines = block.split(/\r?\n/);
+  for (let i = 0; i < blockLines.length; i++) {
+    const raw = extractLabelValue(blockLines[i], label);
+    if (raw === null) continue;
+    const direct = classifyValue(raw, opts);
+    if (direct.ok) return direct;
+    // Allow label content to be provided on following lines/list items until the next labeled field
+    let rest = '';
+    for (let j = i + 1; j < blockLines.length; j++) {
+      const l = blockLines[j];
+      if (/^\s*-\s*\*\*.+?\*\*/.test(l) || /^#{1,6}\s+/.test(l)) break;
+      rest += l + '\n';
+    }
+    const follow = classifyValue(rest, opts);
+    if (follow.ok) return follow;
+    return { ok: false, value: normalizeValue(raw) || normalizeValue(rest), reason: direct.reason === 'empty' ? follow.reason || 'empty' : direct.reason };
+  }
+  return { ok: false, reason: 'missing' };
 }
 
 if (type === 'spec') {
@@ -113,14 +147,14 @@ if (type === 'spec') {
 
   const sec1 = sectionContent(sections[0][0], [sections[1][0]]);
   for (const label of ['Goal / user-visible behavior', 'In scope', 'Out of scope / non-goals', 'Constraints', 'Assumptions', 'Unknowns / open questions']) {
-    if (!blockHasLabel(sec1, label)) errors.push(`section 1 missing or empty field: "${label}"`);
+    requireBlockLabel(sec1, label, 'section 1');
   }
 
   const sec2 = sectionContent(sections[1][0], [sections[2][0]]);
   const decisionHeads = (sec2 || '').match(/^###\s+D\d+\./gm) || [];
   if (decisionHeads.length === 0) errors.push('section 2 must contain at least one decision heading "### D1. ..."');
   for (const label of ['Status', 'Context / problem', 'Options considered', 'Decision', 'Rationale', 'Consequences / tradeoffs']) {
-    if (!blockHasLabel(sec2, label)) errors.push(`section 2 missing or empty field: "${label}" (required per decision)`);
+    requireBlockLabel(sec2, label, 'section 2 (per decision)');
   }
 
   const sec3 = sectionContent(sections[2][0], [sections[3][0]]);
@@ -132,7 +166,7 @@ if (type === 'spec') {
     'Interfaces / contracts affected',
     'Boundary contracts & validation',
   ]) {
-    if (!blockHasLabel(sec3, label)) errors.push(`section 3 missing or empty field: "${label}"`);
+    requireBlockLabel(sec3, label, 'section 3');
   }
 
   const sec4 = sectionContent(sections[3][0], [sections[4][0]]);
@@ -146,12 +180,12 @@ if (type === 'spec') {
 
   const sec8 = sectionContent(sections[7][0], [sections[8][0]]);
   for (const label of ['Contracts to uphold', 'Boundary validation to uphold', 'Cross-cutting invariants to uphold', 'Feature-specific invariants to uphold', 'Design/quality to uphold', 'Test adequacy expectations', 'High-risk areas / focus', 'References']) {
-    if (!blockHasLabel(sec8, label)) errors.push(`section 8 missing or empty field: "${label}"`);
+    requireBlockLabel(sec8, label, 'section 8');
   }
 
   const sec9 = sectionContent(sections[8][0], []);
   if (!sec9 || !/\S/.test(sec9.replace(/^##.*$/m, '').replace(/<!--.*?-->/gs, ''))) errors.push('section 9 must have content');
-  if (!blockHasLabel(sec9, 'Suggested slice boundaries/risks for planning (non-sequencing)')) errors.push('section 9 missing or empty field: "Suggested slice boundaries/risks for planning (non-sequencing)"');
+  requireBlockLabel(sec9, 'Suggested slice boundaries/risks for planning (non-sequencing)', 'section 9');
 
 } else if (type === 'plan') {
   if (!/^#\s+Plan:\s*\S+/.test(lines[0] || '') || /<Feature\/Topic>/.test(lines[0] || '')) {
@@ -174,7 +208,7 @@ if (type === 'spec') {
 
   const sec1 = sectionContent(sections[0][0], [sections[1][0]]);
   for (const label of ['Goal', 'In scope (chunks cover)', 'Out of scope']) {
-    if (!blockHasLabel(sec1, label)) errors.push(`Goal & Scope missing or empty field: "${label}"`);
+    requireBlockLabel(sec1, label, 'Goal & Scope');
   }
 
   const sec2 = sectionContent(sections[1][0], [sections[2][0]]);
@@ -182,7 +216,7 @@ if (type === 'spec') {
   if (chunkHeads.length === 0) errors.push('Chunks section must contain at least one "### Chunk N — ..." heading');
   if (sec2) {
     for (const label of ['Status', 'Functional perimeter', 'Acceptance criteria (traceable to functional spec)', 'Dependencies', 'Notable risks / contracts', 'Verification']) {
-      if (!blockHasLabel(sec2, label)) errors.push(`chunk missing or empty field: "${label}"`);
+      requireBlockLabel(sec2, label, 'chunk');
     }
     if (!/\n\s*- \[[ xX]\]\s+\S+/.test(sec2)) errors.push('at least one chunk must include a populated acceptance criterion checkbox (- [ ] ...)');
   }
