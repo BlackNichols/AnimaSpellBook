@@ -29,6 +29,18 @@ test('preserves and restores list filter state across navigation away and back t
   await expect(page.locator('#spell-search')).toHaveValue('fire');
 });
 
+test('deep-link subset params on /spelllist reset omitted filters to defaults', async ({ page }) => {
+  await page.goto('/spelllist?q=fire&maintenance=daily');
+  await expect(page.locator('#spell-search')).toHaveValue('fire');
+  await page.goto('/spelllist?q=light');
+  await expect(page).toHaveURL(/\/spelllist\?q=light$/);
+  await expect(page.locator('#spell-search')).toHaveValue('light');
+  const firePath = page.locator('#path-fire, input[type="checkbox"][value="Fire"]').first();
+  if (await firePath.count()) {
+    await expect(firePath).not.toBeChecked();
+  }
+});
+
 test('deep-links and refreshes nested /spellbooks route with correct rendered view and assets', async ({ page }) => {
   await page.goto('/spellbooks');
   await expect(page).toHaveURL(/\/spellbooks$/);

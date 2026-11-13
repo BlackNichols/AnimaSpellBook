@@ -140,7 +140,7 @@ if (type === 'spec') {
     [/^##\s+5\.\s+Risk → Test Mapping\b/, '## 5. Risk → Test Mapping'],
     [/^##\s+6\.\s+Feature-Specific Invariants\b/, '## 6. Feature-Specific Invariants (if any)'],
     [/^##\s+7\.\s+Validation Spikes\b/, '## 7. Validation Spikes'],
-    [/^##\s+8\.\s+Reviewer Guidelines\b/, '## 8. Reviewer Guidelines (for `/review`)'],
+    [/^##\s+8\.\s+Reviewer Guidelines\b/, '## 8. Reviewer Guidelines (for `/assess`)'],
     [/^##\s+9\.\s+Handoff to Planning\b/, '## 9. Handoff to Planning'],
   ];
   for (const [re, name] of sections) if (!hasHeading(re)) errors.push(`missing section: ${name}`);

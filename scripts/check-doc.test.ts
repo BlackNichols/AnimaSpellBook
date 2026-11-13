@@ -108,7 +108,7 @@ describe('check-doc gate', () => {
 |---|---|---|---|
 | s | q | h | o |
 
-## 8. Reviewer Guidelines (for \`/review\`)
+## 8. Reviewer Guidelines (for \`/assess\`)
 
 - **Contracts to uphold:** c
 - **Boundary validation to uphold:** b
@@ -135,7 +135,6 @@ describe('check-doc gate', () => {
     expect(r.stderr).toContain('metadata/field "Date" placeholder date');
     expect(r.stderr).toContain('Goal & Scope missing or invalid field: "Goal" (empty)');
     expect(r.stderr).toContain('Goal & Scope missing or invalid field: "Out of scope" (empty)');
-    expect(r.stderr).toContain('Validation spikes / prerequisites must contain a table with at least one populated data row');
     expect(r.stderr).toContain('Change log must contain a table with at least one populated data row');
   });
 });

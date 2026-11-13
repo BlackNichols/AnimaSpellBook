@@ -230,12 +230,35 @@ export class SpellStore {
     return params;
   }
 
+  private resetToDefaults() {
+    this.searchQuery = '';
+    this.filters = {
+      paths: [],
+      maintenance: 'all',
+      isAoe: null,
+      levelMin: null,
+      levelMax: null,
+      zeonMin: null,
+      zeonMax: null,
+      zeonMode: 'any',
+      minIntMin: null,
+      minIntMax: null,
+      minIntMode: 'any',
+      action: 'all',
+      types: [],
+    };
+    this.sort = { field: 'default', direction: 'asc' };
+    this.columns.visible = ['name', 'path', 'level', 'effect'];
+  }
+
   fromURLParams(params: URLSearchParams) {
+    this.resetToDefaults();
+
     const q = params.get('q');
     if (q !== null) this.searchQuery = q;
 
     const paths = params.get('paths');
-    if (paths) this.filters.paths = paths.split(',');
+    if (paths) this.filters.paths = paths.split(',').filter(Boolean);
 
     const maintenance = params.get('maintenance');
     if (maintenance) this.filters.maintenance = maintenance as FilterState['maintenance'];
@@ -271,19 +294,19 @@ export class SpellStore {
     if (action) this.filters.action = action as FilterState['action'];
 
     const types = params.get('types');
-    if (types) this.filters.types = types.split(',');
+    if (types) this.filters.types = types.split(',').filter(Boolean);
 
     const sort = params.get('sort');
     if (sort) {
       const [field, direction] = sort.split(':');
       this.sort = {
         field: field as SortState['field'],
-        direction: direction as SortState['direction'],
+        direction: (direction as SortState['direction']) || 'asc',
       };
     }
 
     const cols = params.get('cols');
-    if (cols) this.columns.visible = cols.split(',');
+    if (cols) this.columns.visible = cols.split(',').filter(Boolean);
 
     this.applyFilters();
   }

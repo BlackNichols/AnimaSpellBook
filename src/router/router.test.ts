@@ -74,6 +74,24 @@ describe('Router (Chunk 1 foundational)', () => {
     expect(store.searchQuery).toBe('fire');
   });
 
+  it('deep-links with subset params and clears stale prior list state to defaults', async () => {
+    resetEnv('/spelllist?q=fire&maintenance=daily&paths=Fire');
+    const { createRouter } = await loadRouter();
+    const router = createRouter(store);
+    router.start();
+    expect(store.searchQuery).toBe('fire');
+    expect(store.filters.maintenance).toBe('daily');
+    router.navigate('/spelllist?q=light');
+    expect(window.location.pathname).toBe('/spelllist');
+    expect(window.location.search).toBe('?q=light');
+    expect(store.searchQuery).toBe('light');
+    expect(store.filters.maintenance).toBe('all');
+    expect(store.filters.paths).toEqual([]);
+    expect(store.filters.action).toBe('all');
+    expect(store.sort).toEqual({ field: 'default', direction: 'asc' });
+    expect(store.columns.visible).toEqual(['name', 'path', 'level', 'effect']);
+  });
+
   it('clear filters resets search/filter state and URL params on spelllist', async () => {
     resetEnv('/spelllist?q=fire&maintenance=daily&paths=Fire');
     const { createRouter } = await loadRouter();
