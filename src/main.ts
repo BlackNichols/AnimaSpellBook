@@ -93,11 +93,11 @@ const appShell = {
     spellbookStore.load();
     await spellStore.loadSpells();
     router.start();
-    this.$watch?.('route.spellbookId', () => {
-      const book = this.activeSpellbook as any;
+    (this as { $watch?: (expr: string, cb: () => void) => void }).$watch?.('route.spellbookId', () => {
+      const book = this.activeSpellbook;
       this.editingName = book?.name ?? '';
     });
-    const book = this.activeSpellbook as any;
+    const book = this.activeSpellbook;
     this.editingName = book?.name ?? '';
   },
 };
