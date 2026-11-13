@@ -27,7 +27,7 @@ Default order (recommended, not a straitjacket). Each chunk is independently val
   - [x] SPA fallback and asset/base handling support deep-link/refresh of nested History routes in dev/build/preview for supported base paths (`/`, `/AnimaSpellBook/`) with automated E2E coverage for affected routing/serving behavior (§3, §10, testing guide).
 - **Dependencies:** Validation spikes — SPA fallback & base path for nested History routes; localStorage quota/error behavior (baseline handling awareness).
 - **Notable risks / contracts:** Router sole URL/history writer and route→view contract (D1, D3); preserve/restore and clear-filters behavior (D1, D3, D7); SPA fallback/base correctness and nested-route deep-link/refresh (D1, §3 design/serving). Cross-cutting invariants INV-URL-SINGLE-WRITER, INV-ROUTE-RENDER. Required coverage per tech spec §5 (routing/list params) and testing guide (URL↔UI↔results, routing/view contracts, deep-link/refresh/serving).
-- **Verification:** `/verify` for chunk scope; `/review` if non-trivial. Required automated tests per acceptance/risk mapping (integration + E2E for routing, list params, preservation/restore, clear-filters, deep-link/refresh/base). Independent `reviewer` initially flagged missing nested-route deep-link/refresh and preserve/restore E2E; addressed in follow-up fix cycle. Gate: `npm run lint`, `npm test -- --run`, `npm run build`, `npm run e2e` all pass (2026-11-12).
+- **Verification:** `/verify` for chunk scope; `/assess` if non-trivial. Required automated tests per acceptance/risk mapping (integration + E2E for routing, list params, preservation/restore, clear-filters, deep-link/refresh/base). Independent `reviewer` initially flagged missing nested-route deep-link/refresh and preserve/restore E2E; addressed in follow-up fix cycle. Gate: `npm run lint`, `npm test -- --run`, `npm run build`, `npm run e2e` all pass (2026-11-12).
 
 ### Chunk 2 — Spellbook domain, persistence, and management/edit views
 
@@ -41,7 +41,7 @@ Default order (recommended, not a straitjacket). Each chunk is independently val
   - [ ] All spellbook changes are auto-saved to `localStorage` and restored on revisit without partial/corrupt state on load/save failures; full spellbook content is never stored in the URL (routes identify view and spellbook ID only) (§2, §8.1, §10).
 - **Dependencies:** Chunk 1 (router and view rendering).
 - **Notable risks / contracts:** `SpellbookStore` as single writer for spellbook domain/persistence and route↔active coordination (D2, D3, D4). Versioned persistence envelope and boundary parse/validate with safe failure (D4). Route/identity transitions and redirects (D1, D3). Cross-cutting invariants INV-PERSISTENCE-ROUNDTRIP, INV-ROUTE-RENDER, INV-URL-SINGLE-WRITER; feature invariants spellbook/route identity consistency (tech spec §6). Required coverage per tech spec §5 (management, transitions, persistence).
-- **Verification:** `/verify` for chunk scope; `/review` if non-trivial. Required automated tests per acceptance/risk mapping (unit for domain/persistence, integration for store↔UI/route binding, E2E for key create/select/duplicate/delete/deep-link flows).
+- **Verification:** `/verify` for chunk scope; `/assess` if non-trivial. Required automated tests per acceptance/risk mapping (unit for domain/persistence, integration for store↔UI/route binding, E2E for key create/select/duplicate/delete/deep-link flows).
 
 ### Chunk 3 — Sections, spell addition, ordering, and movement
 
@@ -55,7 +55,7 @@ Default order (recommended, not a straitjacket). Each chunk is independently val
   - [ ] Spells reorder within a section via move up/down and/or 1-based position edit; a moved spell (single or bulk, to existing or new section) is placed at the end of the target section. Bulk move supports multi-select then move selected to target (§6, §10). Cross-section drag-and-drop remains out of scope.
 - **Dependencies:** Chunk 2 (active spellbook, domain/persistence, editable view). Chunk 1 (list/filter snapshot source and preserved list state).
 - **Notable risks / contracts:** Domain-enforced rules for add/target/dedupe/snapshot, section placement/conversion/delete/clear, ordering/clamp, and move-to-end (D7, D4). No intra-section duplicate spell IDs and ordered references (tech spec §2, §6; D4). Uniform section model (`name:null` default). Required coverage per tech spec §5 (add, sections, ordering/move) and testing guide (interactive controls, integration of UI binding).
-- **Verification:** `/verify` for chunk scope; `/review` if non-trivial. Required automated tests per acceptance/risk mapping (unit for domain rules/edge cases, integration for add/move/section UI flows and rendered contracts).
+- **Verification:** `/verify` for chunk scope; `/assess` if non-trivial. Required automated tests per acceptance/risk mapping (unit for domain rules/edge cases, integration for add/move/section UI flows and rendered contracts).
 
 ### Chunk 4 — JSON export and import
 
@@ -68,7 +68,7 @@ Default order (recommended, not a straitjacket). Each chunk is independently val
   - [ ] Valid import is applied atomically per contract (overwrite replaces active book content while keeping active identity/route stable; create-new creates a new spellbook) and preserves valid content/order per spec/contract; empty named sections are preserved (§5.2, §8.2, tech spec D5).
 - **Dependencies:** Chunk 2 (spellbook domain/persistence, active book). Chunk 3 (section/spell shape and normalization rules).
 - **Notable risks / contracts:** Versioned single-book payload and boundary runtime validation/normalization (D4, D5). Overwrite keeps active UUID / regenerate section IDs; create-new mints new IDs (D5). Atomic apply, no partial/corrupt state, unknown-ID skip with summary (INV-IMPORT-NO-PARTIAL, INV-PERSISTENCE-ROUNDTRIP). Required coverage per tech spec §5 (JSON boundary, round-trip/error cases).
-- **Verification:** `/verify` for chunk scope; `/review` if non-trivial. Required automated tests per acceptance/risk mapping (unit for schema/validation/normalization, integration for import flows/UI errors/summaries and export/import round-trips).
+- **Verification:** `/verify` for chunk scope; `/assess` if non-trivial. Required automated tests per acceptance/risk mapping (unit for schema/validation/normalization, integration for import flows/UI errors/summaries and export/import round-trips).
 
 ### Chunk 5 — PDF export (read-only, Paged.js, searchable)
 
@@ -82,7 +82,7 @@ Default order (recommended, not a straitjacket). Each chunk is independently val
   - [ ] Headers/footers/metadata: optional spellbook title shown at start (display “Spellbook” if empty/unnamed), section headers for named sections (default/unnamed has no header), page numbers at bottom of each page; no generation date or path labels as metadata (§9). Empty named sections render header-only in PDF (§5.2, §10).
 - **Dependencies:** Chunk 2 (spellbook resolution/data and routes). Chunk 3 (section/spell content, ordering, empty-section rendering). Validation spikes — Paged.js searchable PDF in Chromium & Firefox; Paged.js 2-column flow & break rules; Paged.js performance & integration.
 - **Notable risks / contracts:** Dedicated read-only print route and Paged.js pagination with searchable text (D6). Cross-browser (Chromium/Firefox) parity and print rules (D6, §9). SPA fallback/base/asset loading for nested print route (D1, serving). Required coverage per tech spec §5 (PDF/print route and content) and testing guide (deep-link/refresh, routing/view). Spike-validated behaviors (searchability/pagination/breaks/perf) must be verified; missing automated coverage for affected user-visible/routing/serving behavior is blocking per reviewer guidelines.
-- **Verification:** `/verify` for chunk scope; `/review` if non-trivial. Required automated tests per acceptance/risk mapping (E2E for print route/rendering/deep-link/refresh and stable assertions; spike-driven verification for cross-browser searchable PDF and pagination/break behavior, automated where feasible).
+- **Verification:** `/verify` for chunk scope; `/assess` if non-trivial. Required automated tests per acceptance/risk mapping (E2E for print route/rendering/deep-link/refresh and stable assertions; spike-driven verification for cross-browser searchable PDF and pagination/break behavior, automated where feasible).
 
 ## Validation spikes / prerequisites
 
@@ -94,9 +94,20 @@ Default order (recommended, not a straitjacket). Each chunk is independently val
 | Paged.js performance & integration | Ensure pagination time/memory acceptable for large spellbooks and library loads in dev/build/preview with app base path (D6). | Measure on representative large dataset; verify dev/build/preview loading and print route behavior. | todo |
 | localStorage quota/error behavior | Handle read/write/parse/quota failures safely without corrupting in-memory or persisted state (D4, INV-PERSISTENCE-ROUNDTRIP). | Simulate quota/parse/write errors; confirm safe handling, no partial state, and appropriate user feedback strategy. | todo |
 
+## Fixes / findings
+
+Record user-reported bugs and review findings remediated on completed/reopened work (use `/fix`).
+
+| ID | Source (bug/finding) | Chunk | Summary | Status | Outcome / evidence |
+|---|---|---|---|---|---|
+| F1 | Review finding (advisory) | 1 | `SpellStore.fromURLParams` only applied present params and did not reset omitted fields; router could enter `/spelllist` with stale prior filter state when URL omitted them, risking URL↔UI↔results divergence. | done | `src/stores/spellStore.ts` resets to canonical defaults before applying URL params. Unit: `src/router/router.test.ts` (“deep-links with subset params…”). Default e2e routing subset case added in `e2e/routing.spec.ts`; `npm test -- --run src/router/router.test.ts src/stores/spellStore.test.ts` passed (13). |
+| F2 | Review finding (advisory) | 1 | Playwright `test-results/*` artifacts were git-tracked despite ignore rule, causing churn/noise. | done | Untracked committed artifacts via `git rm --cached -r --ignore-unmatch test-results`; `.gitignore` keeps `test-results/` ignored. |
+| F3 | Review finding (advisory) | 1 | Automated E2E coverage for nested History routes/deep-link+refresh/assets under base `/AnimaSpellBook/` was missing (unit coverage only). | done | Added base-path Playwright config/spec (`playwright.base.config.ts`, `e2e/routing.base.spec.ts`, excluded from default config). Evidence: base build+preview run passed nested `/spellbooks` deep-link/refresh/rendered-view/assets and `/spelllist` query handling under `/AnimaSpellBook/`. |
+| F4 | Review finding (advisory) | 1 | Unknown app paths redirect to `/spelllist` baseline; future routes must enforce spec-specific redirects (guardrail). | accepted | No code change now (Chunk 1 scope). Guardrail recorded for Chunk 2/5 route additions and tests per tech spec D3. |
+
 ## Modification rules
 
-- **Autonomous (record rationale in change log):** reorder upcoming chunks, split/merge, adjust internal approach, or mark a step irrelevant based on findings—only if functional scope/acceptance criteria and technical-spec decisions/contracts are preserved.
+- **Autonomous (record rationale in change log):** reorder upcoming chunks, split/merge, adjust internal approach, mark a step irrelevant based on findings, or perform routine fix bookkeeping (reopen to `fixing`, link finding/issue, status/outcome updates)—only if functional scope/acceptance criteria and technical-spec decisions/contracts are preserved.
 - **Consult user first:** drop/defer a chunk or requirement, change functional scope or acceptance criteria, major reprioritization, or deviate from a technical-spec decision/contract.
 
 ## Change log
@@ -104,3 +115,5 @@ Default order (recommended, not a straitjacket). Each chunk is independently val
 | Date | Change | Rationale | User consulted? |
 |---|---|---|---|
 | 2026-11-12 | Chunk 1 marked Done. Implemented base-aware router, reactive route/view wiring, clear-filters and list-param preserve/restore, SPA config and E2E for redirect/clear/preserve-restore/nested deep-link-refresh. Added follow-up fix cycle to satisfy reviewer blocking E2E gaps. | Complete Chunk 1 acceptance and verification per specs; record independent review finding and resolution. | No (implementation continuation) |
+| 2026-11-13 | Reopened Chunk 1 to `Fixing` to remediate advisory review findings F1–F4 (`/fix`). | Address reported advisories in-scope (harden URL-canonical list params, untrack test artifacts, add base-path E2E evidence) and record F4 guardrail; maintain plan traceability. | No (user requested “fix as you see fit”) |
+| 2026-11-13 | Remediated F1–F3 and recorded F4 guardrail; Chunk 1 set back to Done. | Hardened `fromURLParams` canonical reset (F1), untracked Playwright artifacts (F2), added `/AnimaSpellBook/` base-path E2E evidence for nested deep-link/refresh and list params (F3); F4 accepted as forward-looking guardrail for future routes. | No (user requested “fix as you see fit”) |

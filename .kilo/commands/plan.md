@@ -38,11 +38,11 @@ If a required spec is missing or ambiguous for a non-trivial/cross-cutting/user-
    - **Structural gate (required):** run `node scripts/check-doc.mjs --type plan <path>` on the written plan. Fix any reported issues and rerun until it passes before reporting. A plan that fails structural validation is not complete.
 
 4. **Report**
-   - Summarize: plan path, chunk outline (order and goals), key risks/spikes to watch, and that implementation proceeds chunk-by-chunk with per-chunk `/verify` (and `/review` when non-trivial). Stop after producing the plan; do not implement.
+   - Summarize: plan path, chunk outline (order and goals), key risks/spikes to watch, and that implementation proceeds chunk-by-chunk with per-chunk `/verify` (and `/assess` when non-trivial). Stop after producing the plan; do not implement.
 
 ## Implementation & plan evolution (guidance for executing the plan)
 
-- **Per-chunk gate:** complete each chunk with its acceptance criteria satisfied, then run `/verify` for that chunk's scope (and `/review` for non-trivial work) before moving on. Do not defer integration to a big-bang finish.
+- **Per-chunk gate:** complete each chunk with its acceptance criteria satisfied, then run `/verify` for that chunk's scope (and `/assess` for non-trivial work) before moving on. Do not defer integration to a big-bang finish. Use `/fix` (reopen/trace) for user-reported bugs or review findings on done chunks rather than ad-hoc edits.
 - **Autonomous within a chunk:** the implementing agent chooses TDD iterations and tactical/how details (optional lightweight subplan/notes are fine) as long as they stay within chunk acceptance criteria and technical-spec contracts/boundaries. Do not override the tech spec.
 - **Plan modification (living but traceable):** update chunk status and record rationale for meaningful changes in the plan's change log.
   - **Autonomous (no user approval):** reorder upcoming chunks, split/merge chunks, adjust internal approach, or mark a step irrelevant based on findings—*only if* functional scope/acceptance criteria and technical-spec decisions/contracts are preserved.

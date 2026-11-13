@@ -74,7 +74,7 @@ Assumptions/behaviors to prove before or early in implementation (do not treat a
 |---|---|---|---|
 |  |  |  |  |
 
-## 8. Reviewer Guidelines (for `/review`)
+## 8. Reviewer Guidelines (for `/assess`)
 
 - **Contracts to uphold:** (ownership, reactivity/binding, single-writer rules, boundaries from this spec)
 - **Boundary validation to uphold:** (typed boundary shapes; runtime parse/validate at specified untrusted/serialized edges with typed result or clear error and no partial/corrupt state; no unsafe raw-data use at those edges; mapped boundary/round-trip/error tests present)

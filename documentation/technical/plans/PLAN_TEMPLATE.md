@@ -18,13 +18,13 @@ Default order (recommended, not a straitjacket). Each chunk is independently val
 
 ### Chunk 1 — <short title>
 
-- **Status:** todo | in_progress | done | blocked
+- **Status:** todo | in_progress | done | blocked | fixing
 - **Functional perimeter:** (what user-visible/functional increment this delivers)
 - **Acceptance criteria (traceable to functional spec):**
   - [ ] 
 - **Dependencies:** (none / chunk N / spike)
 - **Notable risks / contracts:** (reference technical spec decisions/contracts and required coverage; keep technical/how detail minimal)
-- **Verification:** `/verify` for chunk scope; `/review` if non-trivial. Required automated tests per acceptance/risk mapping.
+- **Verification:** `/verify` for chunk scope; `/assess` if non-trivial. Required automated tests per acceptance/risk mapping.
 
 <!-- Repeat per chunk -->
 
@@ -34,9 +34,17 @@ Default order (recommended, not a straitjacket). Each chunk is independently val
 |---|---|---|---|
 |  |  |  |  |
 
+## Fixes / findings
+
+Record user-reported bugs and review findings remediated on completed/reopened work (use `/fix`).
+
+| ID | Source (bug/finding) | Chunk | Summary | Status | Outcome / evidence |
+|---|---|---|---|---|---|
+|  |  |  |  | open/fixing/done/accepted |  |
+
 ## Modification rules
 
-- **Autonomous (record rationale in change log):** reorder upcoming chunks, split/merge, adjust internal approach, or mark a step irrelevant based on findings—only if functional scope/acceptance criteria and technical-spec decisions/contracts are preserved.
+- **Autonomous (record rationale in change log):** reorder upcoming chunks, split/merge, adjust internal approach, mark a step irrelevant based on findings, or perform routine fix bookkeeping (reopen to `fixing`, link finding/issue, status/outcome updates)—only if functional scope/acceptance criteria and technical-spec decisions/contracts are preserved.
 - **Consult user first:** drop/defer a chunk or requirement, change functional scope or acceptance criteria, major reprioritization, or deviate from a technical-spec decision/contract.
 
 ## Change log

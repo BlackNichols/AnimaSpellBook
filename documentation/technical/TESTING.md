@@ -16,7 +16,7 @@ Prevent regressions across the full stack: pure logic **and** UI bindings/reacti
 1. **TDD for user-visible behavior**: add/extend an integration (or E2E smoke) case for the behavior *before* wiring UI; add unit tests for pure logic. For UI/routing/URL/view-binding changes, prefer a vertical slice with integration/E2E coverage of the rendered contract.
 2. Implement the smallest change to pass (use `/implement` for planned chunks to load context, check spec/plan coherence, then deliver one chunk end-to-end within spec contracts).
 3. Run the verification gate before claiming completion: use `/verify` and follow `AGENTS.md` (Definition of Done). At minimum for code changes run `npm run lint && npm test -- --run && npm run build`; for UI/flow/routing/URL/navigation/asset/base/serving changes also run `npm run e2e` (automated coverage required—no manual substitute for deep-link/refresh behavior).
-4. For non-trivial changes, use `/review` to assess test adequacy/coherence and architectural/contract risks against this guide.
+4. For non-trivial changes, use `/assess` to assess test adequacy/coherence and architectural/contract risks against this guide.
 
 ## What must have integration/E2E coverage
 - **URL params ↔ UI ↔ results** (e.g. loading with `?q=` shows the query in the input and filters rows).

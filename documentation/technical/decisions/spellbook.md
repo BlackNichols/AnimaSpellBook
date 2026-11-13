@@ -138,7 +138,7 @@
 | Paged.js performance & integration | Is pagination time/memory acceptable for large spellbooks and does Paged.js load/work in dev and production builds with app base path? | Measure on representative large dataset; test dev/build/preview | TBD |
 | localStorage quota/error behavior | How do quota/write failures surface and can we handle them without corrupting in-memory/persisted state? | Simulate quota/errors; ensure safe handling and user feedback strategy | TBD |
 
-## 8. Reviewer Guidelines (for `/review`)
+## 8. Reviewer Guidelines (for `/assess`)
 
 - **Contracts to uphold:** Router is the sole URL/history writer (INV-URL-SINGLE-WRITER); route changes must drive correct rendered view/state (INV-ROUTE-RENDER). `SpellbookStore` sole writer for spellbook domain/persistence; `SpellStore` sole writer for list state. Routes/redirects follow D1/D3 (`/spellbooks` empty-friendly, unknown ids → `/spelllist`, delete-active → `/spellbooks`, print route read-only/deep-linkable). No spellbook content in URLs.
 - **Boundary validation to uphold:** Typed route/param parsing and validation at URL boundary; runtime schema parse/validate at localStorage restore and JSON import boundaries with typed results or clear errors and no partial/corrupt state (INV-PERSISTENCE-ROUNDTRIP, INV-IMPORT-NO-PARTIAL). Import normalization (ID regeneration per D5, unknown spell IDs skipped with summary, dedupe/shape rules) applied atomically. No unsafe raw persisted/imported data used internally.

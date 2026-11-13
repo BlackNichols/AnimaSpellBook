@@ -1,6 +1,6 @@
 ---
 description: Independent read-only reviewer for spec/plan alignment, test adequacy, and architecture/contract risks
-mode: subagent
+mode: all
 permission:
   "*": deny
   read: allow
