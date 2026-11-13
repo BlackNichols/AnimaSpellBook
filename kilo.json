@@ -2,5 +2,18 @@
   "$schema": "https://app.kilo.ai/config.json",
   "plugin": [
     "../kilo-tdd-plugin/src/plugin.ts"
-  ]
+  ],
+  "tdd": {
+    "excludedPatterns": [
+      "node_modules/**",
+      ".git/**",
+      "dist/**",
+      "build/**",
+      ".kilo/**",
+      "coverage/**",
+      "test-results/**",
+      "playwright-report/**",
+      "blob-report/**"
+    ]
+  }
 }

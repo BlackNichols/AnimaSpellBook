@@ -18,16 +18,16 @@ Default order (recommended, not a straitjacket). Each chunk is independently val
 
 ### Chunk 1 — Foundational routing, list view, and filter preservation
 
-- **Status:** Planned
+- **Status:** Done
 - **Functional perimeter:** Establish History routing as the single URL owner for `/` and `/spelllist` with existing list behavior preserved; enable navigation between spell list and spellbook screens without losing list filters; provide a “Clear filters” control; ensure deep-link/refresh and asset/base behavior work on nested routes under required bases.
 - **Acceptance criteria (traceable to functional spec):**
-  - [ ] `/` redirects to `/spelllist` preserving query params (§3). `/spelllist` renders the spell list and supports existing search/filter/sort/columns behavior.
-  - [ ] List filter/search state is preserved across navigation away from and back to `/spelllist` and restored on return; a “Clear filters” control resets all active search/filter criteria to defaults (§3, §8.1).
-  - [ ] Route/URL changes drive the correct rendered view/state with no competing URL writers; list params are scoped to `/spelllist` (INV-URL-SINGLE-WRITER, INV-ROUTE-RENDER, tech spec D1).
-  - [ ] SPA fallback and asset/base handling support deep-link/refresh of nested History routes in dev/build/preview for supported base paths (`/`, `/AnimaSpellBook/`) with automated E2E coverage for affected routing/serving behavior (§3, §10, testing guide).
+  - [x] `/` redirects to `/spelllist` preserving query params (§3). `/spelllist` renders the spell list and supports existing search/filter/sort/columns behavior.
+  - [x] List filter/search state is preserved across navigation away from and back to `/spelllist` and restored on return; a “Clear filters” control resets all active search/filter criteria to defaults (§3, §8.1).
+  - [x] Route/URL changes drive the correct rendered view/state with no competing URL writers; list params are scoped to `/spelllist` (INV-URL-SINGLE-WRITER, INV-ROUTE-RENDER, tech spec D1).
+  - [x] SPA fallback and asset/base handling support deep-link/refresh of nested History routes in dev/build/preview for supported base paths (`/`, `/AnimaSpellBook/`) with automated E2E coverage for affected routing/serving behavior (§3, §10, testing guide).
 - **Dependencies:** Validation spikes — SPA fallback & base path for nested History routes; localStorage quota/error behavior (baseline handling awareness).
 - **Notable risks / contracts:** Router sole URL/history writer and route→view contract (D1, D3); preserve/restore and clear-filters behavior (D1, D3, D7); SPA fallback/base correctness and nested-route deep-link/refresh (D1, §3 design/serving). Cross-cutting invariants INV-URL-SINGLE-WRITER, INV-ROUTE-RENDER. Required coverage per tech spec §5 (routing/list params) and testing guide (URL↔UI↔results, routing/view contracts, deep-link/refresh/serving).
-- **Verification:** `/verify` for chunk scope; `/review` if non-trivial. Required automated tests per acceptance/risk mapping (integration + E2E for routing, list params, preservation/restore, clear-filters, deep-link/refresh/base).
+- **Verification:** `/verify` for chunk scope; `/review` if non-trivial. Required automated tests per acceptance/risk mapping (integration + E2E for routing, list params, preservation/restore, clear-filters, deep-link/refresh/base). Independent `reviewer` initially flagged missing nested-route deep-link/refresh and preserve/restore E2E; addressed in follow-up fix cycle. Gate: `npm run lint`, `npm test -- --run`, `npm run build`, `npm run e2e` all pass (2026-11-12).
 
 ### Chunk 2 — Spellbook domain, persistence, and management/edit views
 
@@ -103,4 +103,4 @@ Default order (recommended, not a straitjacket). Each chunk is independently val
 
 | Date | Change | Rationale | User consulted? |
 |---|---|---|---|
-| 2026-11-12 | Initial plan created from `SPELLBOOK.md` and `documentation/technical/decisions/spellbook.md`. | Establish vertical-slice implementation sequence, per-chunk acceptance/verification, and spike prerequisites aligned to specs. | No (plan creation requested) |
+| 2026-11-12 | Chunk 1 marked Done. Implemented base-aware router, reactive route/view wiring, clear-filters and list-param preserve/restore, SPA config and E2E for redirect/clear/preserve-restore/nested deep-link-refresh. Added follow-up fix cycle to satisfy reviewer blocking E2E gaps. | Complete Chunk 1 acceptance and verification per specs; record independent review finding and resolution. | No (implementation continuation) |

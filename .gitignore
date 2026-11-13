@@ -3,3 +3,4 @@ dist
 .kilo/plans
 .kilo/worktrees
 .kilo/tdd
+test-results/
