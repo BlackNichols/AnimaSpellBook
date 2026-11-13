@@ -280,10 +280,74 @@
             </template>
           </section>
         </template>
-        <section class="spellbooks-view" x-show="isSpellbooksView" aria-label="Spellbooks">
-          <h2>Spellbooks</h2>
-          <p>Spellbook management is not yet available in this view.</p>
-          <button type="button" class="btn btn-secondary" @click="goToSpellList()">Back to spell list</button>
+        <section class="spellbooks-view" x-show="isSpellbooksView || isSpellbookView" aria-label="Spellbooks">
+          <template x-if="isSpellbooksView">
+            <div class="spellbooks-management">
+              <h2>Spellbooks</h2>
+              <div class="spellbooks-actions">
+                <button type="button" class="btn btn-primary" data-testid="spellbook-create" @click="createSpellbook()">Create spellbook</button>
+                <button type="button" class="btn btn-secondary" @click="goToSpellList()">Back to spell list</button>
+              </div>
+              <template x-if="spellbooks.length === 0">
+                <div class="empty-state" data-testid="spellbooks-empty">
+                  <p>No spellbooks yet.</p>
+                  <p>Create a new spellbook to start organizing spells.</p>
+                </div>
+              </template>
+              <template x-if="spellbooks.length > 0">
+                <ul class="spellbook-list">
+                  <template x-for="book in spellbooks" :key="book.id">
+                    <li class="spellbook-list-item">
+                      <a :href="`/spellbooks/${book.id}`" @click.prevent="openSpellbook(book.id)" x-text="book.name"></a>
+                      <div class="spellbook-item-actions">
+                        <button type="button" class="btn btn-secondary btn-sm" @click="duplicateSpellbook(book.id)" :aria-label="`Duplicate ${book.name}`">Duplicate</button>
+                        <button type="button" class="btn btn-secondary btn-sm" @click="deleteSpellbook(book.id)" :aria-label="`Delete ${book.name}`">Delete</button>
+                      </div>
+                    </li>
+                  </template>
+                </ul>
+              </template>
+            </div>
+          </template>
+          <template x-if="isSpellbookView">
+            <div class="spellbook-editor" data-testid="spellbook-editor">
+              <div class="spellbook-editor-header">
+                <button type="button" class="btn btn-secondary btn-sm" @click="goToSpellbooks()">Back to spellbooks</button>
+                <button type="button" class="btn btn-secondary btn-sm" @click="goToSpellList()">Back to spell list</button>
+              </div>
+              <template x-if="activeSpellbook">
+                <div class="spellbook-editor-body">
+                  <div class="spellbook-name-row">
+                    <label for="spellbook-name">Spellbook name</label>
+                    <input id="spellbook-name" type="text" aria-label="Spellbook name" x-model="editingName" />
+                    <button type="button" class="btn btn-secondary btn-sm" @click="saveSpellbookName()">Save name</button>
+                  </div>
+                  <div class="spellbook-editor-actions">
+                    <button type="button" class="btn btn-secondary" @click="duplicateActiveSpellbook()">Duplicate spellbook</button>
+                    <button type="button" class="btn btn-secondary" @click="deleteActiveSpellbook()">Delete spellbook</button>
+                  </div>
+                  <section class="spellbook-sections" aria-label="Sections">
+                    <template x-for="section in activeSpellbook.sections" :key="section.id">
+                      <div class="spellbook-section">
+                        <h3 class="spellbook-section-title" x-text="section.name ?? 'Default section'"></h3>
+                        <template x-if="section.spellIds.length === 0">
+                          <p class="empty-state">No spells in this section.</p>
+                        </template>
+                        <ul class="spellbook-spell-list">
+                          <template x-for="sid in section.spellIds" :key="sid">
+                            <li x-text="sid"></li>
+                          </template>
+                        </ul>
+                      </div>
+                    </template>
+                  </section>
+                </div>
+              </template>
+              <template x-if="!activeSpellbook">
+                <p>Spellbook not found.</p>
+              </template>
+            </div>
+          </template>
         </section>
       </main>
 
