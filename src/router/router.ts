@@ -1,19 +1,22 @@
 import type { SpellStore } from '@/stores/spellStore';
+import type { SpellbookStore } from '@/stores/spellbookStore';
 
-export type RouteView = 'spelllist' | 'spellbooks';
+export type RouteView = 'spelllist' | 'spellbooks' | 'spellbook';
 
 export interface RouteState {
   view: RouteView;
   path: string;
   search: string;
+  spellbookId: string | null;
 }
 
 export type ResolveResult =
   | { type: 'redirect'; to: string }
-  | { type: 'route'; view: RouteView };
+  | { type: 'route'; view: RouteView; spellbookId?: string };
 
 export interface RouterOptions {
   base?: string;
+  spellbookStore?: SpellbookStore;
 }
 
 function normalizeBase(base: string | undefined): string {
@@ -35,20 +38,23 @@ function parseUrl(url: string): { pathname: string; search: string } {
   return { pathname: normalizePath(url.slice(0, q) || '/'), search: url.slice(q) };
 }
 
-function viewForPath(pathname: string): RouteView | null {
-  if (pathname === '/spelllist') return 'spelllist';
-  if (pathname === '/spellbooks') return 'spellbooks';
+function matchPath(pathname: string): { view: RouteView; spellbookId?: string } | null {
+  if (pathname === '/spelllist') return { view: 'spelllist' };
+  if (pathname === '/spellbooks') return { view: 'spellbooks' };
+  const m = /^\/spellbooks\/([^/]+)$/.exec(pathname);
+  if (m) return { view: 'spellbook', spellbookId: m[1] };
   return null;
 }
 
 export function createRouter(store: SpellStore, options: RouterOptions = {}) {
   const base = normalizeBase(options.base);
+  const spellbookStore = options.spellbookStore;
   let savedListSearch = '';
   let started = false;
   let suppressStoreSync = false;
   const listeners = new Set<() => void>();
 
-  const route: RouteState = { view: 'spelllist', path: '/spelllist', search: '' };
+  const route: RouteState = { view: 'spelllist', path: '/spelllist', search: '', spellbookId: null };
 
   function stripBase(pathname: string): string {
     const p = normalizePath(pathname);
@@ -76,10 +82,11 @@ export function createRouter(store: SpellStore, options: RouterOptions = {}) {
     return () => listeners.delete(cb);
   }
 
-  function setRoute(view: RouteView, path: string, search: string) {
+  function setRoute(view: RouteView, path: string, search: string, spellbookId: string | null = null) {
     route.view = view;
     route.path = path;
     route.search = search;
+    route.spellbookId = spellbookId;
     notify();
   }
 
@@ -89,9 +96,14 @@ export function createRouter(store: SpellStore, options: RouterOptions = {}) {
     if (pathname === '/' || pathname === '') {
       return { type: 'redirect', to: `/spelllist${search}` };
     }
-    const view = viewForPath(pathname);
-    if (view) return { type: 'route', view };
-    // Chunk 1 baseline: unknown paths treated as redirect to spelllist (preserve none)
+    const match = matchPath(pathname);
+    if (match) {
+      if (match.view === 'spellbook') {
+        return { type: 'route', view: 'spellbook', spellbookId: match.spellbookId };
+      }
+      return { type: 'route', view: match.view };
+    }
+    // Unknown paths: redirect to /spelllist (F4 guardrail for future spec-specific routes)
     return { type: 'redirect', to: '/spelllist' };
   }
 
@@ -115,25 +127,48 @@ export function createRouter(store: SpellStore, options: RouterOptions = {}) {
   }
 
   function enter(pathname: string, search: string, mode: 'push' | 'replace') {
-    const view = viewForPath(pathname) ?? 'spelllist';
+    const match = matchPath(pathname);
+    const view = match?.view ?? 'spelllist';
+
     if (view === 'spelllist') {
       const effectiveSearch = search || (route.view !== 'spelllist' ? savedListSearch : '');
       applyListParams(effectiveSearch);
       savedListSearch = effectiveSearch;
-      setRoute('spelllist', '/spelllist', effectiveSearch);
+      setRoute('spelllist', '/spelllist', effectiveSearch, null);
       const url = withBase(`/spelllist${effectiveSearch}`);
       if (mode === 'push') window.history.pushState({}, '', url);
       else window.history.replaceState({}, '', url);
-    } else {
-      // leaving spelllist: preserve current list params snapshot
-      if (route.view === 'spelllist') {
-        const params = store.toURLParams();
-        savedListSearch = params.toString() ? `?${params.toString()}` : route.search;
-      }
-      setRoute(view, pathname, '');
-      const url = withBase(pathname);
+      return;
+    }
+
+    // leaving spelllist: preserve current list params snapshot
+    if (route.view === 'spelllist') {
+      const params = store.toURLParams();
+      savedListSearch = params.toString() ? `?${params.toString()}` : route.search;
+    }
+
+    if (view === 'spellbooks') {
+      setRoute('spellbooks', '/spellbooks', '', null);
+      const url = withBase('/spellbooks');
       if (mode === 'push') window.history.pushState({}, '', url);
       else window.history.replaceState({}, '', url);
+      return;
+    }
+
+    if (view === 'spellbook') {
+      const id = match?.spellbookId ?? '';
+      if (!spellbookStore || !spellbookStore.getSpellbook(id)) {
+        // Unknown/missing spellbook id -> redirect to /spelllist
+        window.history.replaceState({}, '', withBase('/spelllist'));
+        enter('/spelllist', '', 'replace');
+        return;
+      }
+      spellbookStore.setActiveSpellbook(id);
+      setRoute('spellbook', `/spellbooks/${id}`, '', id);
+      const url = withBase(`/spellbooks/${id}`);
+      if (mode === 'push') window.history.pushState({}, '', url);
+      else window.history.replaceState({}, '', url);
+      return;
     }
   }
 
@@ -147,12 +182,19 @@ export function createRouter(store: SpellStore, options: RouterOptions = {}) {
       enter(next.pathname, next.search, 'replace');
       return;
     }
+    if (res.type === 'route' && res.view === 'spellbook') {
+      const id = res.spellbookId ?? '';
+      if (!spellbookStore || !spellbookStore.getSpellbook(id)) {
+        window.history.replaceState({}, '', withBase('/spelllist'));
+        enter('/spelllist', '', 'replace');
+        return;
+      }
+    }
     enter(appPathname, search, mode);
   }
 
   function navigate(path: string) {
     const { pathname, search } = parseUrl(path);
-    // `path` may be app path (e.g. /spellbooks) or full; treat as app path
     const appPath = `${normalizePath(pathname)}${search}`;
     const res = resolve(withBase(appPath));
     if (res.type === 'redirect') {
@@ -162,6 +204,12 @@ export function createRouter(store: SpellStore, options: RouterOptions = {}) {
       return;
     }
     enter(normalizePath(pathname), search, 'push');
+  }
+
+  function handleActiveDeleted() {
+    // After deleting the active spellbook, always navigate to /spellbooks (D3)
+    window.history.pushState({}, '', withBase('/spellbooks'));
+    enter('/spellbooks', '', 'replace');
   }
 
   function start() {
@@ -213,5 +261,6 @@ export function createRouter(store: SpellStore, options: RouterOptions = {}) {
     navigate,
     clearFilters,
     onRouteChange,
+    handleActiveDeleted,
   };
 }
