@@ -124,3 +124,16 @@ describe('UI integration (rendered behavior + URL sync)', () => {
     expect(store.filteredSpells.every((s) => s.action === 'Active' && s.types.includes('Attack'))).toBe(true);
   });
 });
+
+import fs from 'fs';
+import path from 'path';
+
+describe('Spellbook app wiring (Chunk 2)', () => {
+  it('renders spellbook management and editable view scaffolding with create/select and editing hooks', () => {
+    const html = fs.readFileSync(path.resolve(process.cwd(), 'index.html'), 'utf8');
+    expect(html).toContain('data-testid="spellbooks-empty"');
+    expect(html).toContain('data-testid="spellbook-create"');
+    expect(html).toContain('data-testid="spellbook-editor"');
+    expect(html).toContain('aria-label="Spellbook name"');
+  });
+});
