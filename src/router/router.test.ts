@@ -106,3 +106,70 @@ describe('Router (Chunk 1 foundational)', () => {
     expect(window.location.search).toBe('');
   });
 });
+
+describe('Router (Chunk 2 spellbooks)', () => {
+  let store: SpellStore;
+  let sb: any;
+
+  beforeEach(async () => {
+    resetEnv('/');
+    localStorage.clear();
+    store = new SpellStore();
+    await store.loadSpells();
+    const sbMod = await import('../stores/spellbookStore');
+    sb = new sbMod.SpellbookStore();
+    sb.load();
+  });
+
+  async function loadRouter() {
+    const mod = './router';
+    // @vite-ignore - module intentionally missing in RED phase
+    return await import(/* @vite-ignore */ mod);
+  }
+
+  it('resolves /spellbooks to spellbooks view', async () => {
+    resetEnv('/spellbooks');
+    const { createRouter } = await loadRouter();
+    const router = createRouter(store, { spellbookStore: sb });
+    const result = router.resolve(window.location.pathname + window.location.search);
+    expect(result).toEqual({ type: 'route', view: 'spellbooks' });
+  });
+
+  it('resolves /spellbooks/:id to editable view and activates that spellbook on enter', async () => {
+    const id = sb.createSpellbook();
+    sb.createSpellbook();
+    resetEnv(`/spellbooks/${id}`);
+    const { createRouter } = await loadRouter();
+    const router = createRouter(store, { spellbookStore: sb });
+    router.start();
+    expect(router.route.view).toBe('spellbook');
+    expect(router.route.spellbookId).toBe(id);
+    expect(sb.activeSpellbookId).toBe(id);
+  });
+
+  it('redirects unknown /spellbooks/:id to /spelllist', async () => {
+    resetEnv('/spellbooks/does-not-exist');
+    const { createRouter } = await loadRouter();
+    const router = createRouter(store, { spellbookStore: sb });
+    router.start();
+    expect(window.location.pathname).toBe('/spelllist');
+    expect(router.route.view).toBe('spelllist');
+  });
+
+  it('navigating to /spellbooks/:id activates it and deleting active navigates to /spellbooks', async () => {
+    const id = sb.createSpellbook();
+    resetEnv('/spellbooks');
+    const { createRouter } = await loadRouter();
+    const router = createRouter(store, { spellbookStore: sb });
+    router.start();
+    expect(router.route.view).toBe('spellbooks');
+    router.navigate(`/spellbooks/${id}`);
+    expect(window.location.pathname).toBe(`/spellbooks/${id}`);
+    expect(sb.activeSpellbookId).toBe(id);
+    const res = sb.deleteSpellbook(id);
+    expect(res.deletedActive).toBe(true);
+    router.handleActiveDeleted();
+    expect(window.location.pathname).toBe('/spellbooks');
+    expect(router.route.view).toBe('spellbooks');
+  });
+});
