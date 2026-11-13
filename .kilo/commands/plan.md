@@ -8,9 +8,10 @@ Produce a strategic, chunked implementation plan from the functional spec and it
 
 ## Inputs
 
-- **Functional spec** (path/text provided by the user) — source of user-visible behavior and acceptance criteria.
-- **Technical spec** from `/technical-discovery` (path in `documentation/technical/decisions/` or provided) — source of decisions/rationale, contracts/ownership, boundaries, risks, risk→test mapping, and validation spikes. Read it fully.
-- Relevant context: `AGENTS.md`, `documentation/technical/TESTING.md`, and related docs.
+- **Feature state (default):** read `.kilo/feature.json` when present. Resolve inputs as **explicit argument > `.kilo/feature.json` > ask/stop**. Report resolved source/paths (`functionalSpec`, `technicalSpec`).
+- **Functional spec** (path/text provided by the user/resolved) — source of user-visible behavior and acceptance criteria.
+- **Technical spec** from `/technical-discovery` (path in `documentation/technical/decisions/` or provided/resolved) — source of decisions/rationale, contracts/ownership, boundaries, risks, risk→test mapping, and validation spikes. Read it fully.
+- Relevant context: `AGENTS.md`, `documentation/technical/TESTING.md`, `.kilo/FEATURE_STATE.md`, and related docs.
 
 If a required spec is missing or ambiguous for a non-trivial/cross-cutting/user-visible change, stop and recommend running `/technical-discovery` (or clarify inputs) before planning.
 
@@ -36,9 +37,10 @@ If a required spec is missing or ambiguous for a non-trivial/cross-cutting/user-
    - Write to `documentation/technical/plans/` (kebab-case name derived from the feature/topic) unless the user specifies a path. Use `documentation/technical/plans/PLAN_TEMPLATE.md`.
    - The plan MUST state: source specs, chunk list with per-chunk acceptance criteria/dependencies/risks/status, the default order, per-chunk verification expectations, and the plan modification rules below.
    - **Structural gate (required):** run `node scripts/check-doc.mjs --type plan <path>` on the written plan. Fix any reported issues and rerun until it passes before reporting. A plan that fails structural validation is not complete.
+   - **Update feature state:** if `.kilo/feature.json` exists (or the feature context is being established), set/update `feature` (when known), `functionalSpec`, `technicalSpec`, `plan` (written path), `activeChunk` (first chunk/default, when clear), `status: "planned"`, and `updatedAt` (ISO-8601). Preserve unrelated fields.
 
 4. **Report**
-   - Summarize: plan path, chunk outline (order and goals), key risks/spikes to watch, and that implementation proceeds chunk-by-chunk with per-chunk `/verify` (and `/assess` when non-trivial). Stop after producing the plan; do not implement.
+   - Summarize: resolved feature-state source/paths (if used), plan path, chunk outline (order and goals), key risks/spikes to watch, `.kilo/feature.json` updates (if any), and that implementation proceeds chunk-by-chunk with per-chunk `/verify` (and `/assess` when non-trivial). Stop after producing the plan; do not implement.
 
 ## Implementation & plan evolution (guidance for executing the plan)
 

@@ -8,9 +8,10 @@ Modify an existing implementation plan in a controlled, fail-fast way. Use this 
 
 ## Inputs
 
-- **Plan path** (in `documentation/technical/plans/` or provided by the user). If missing/unclear, stop and ask.
+- **Feature state (default):** read `.kilo/feature.json` when present. Resolve plan path as **explicit argument > `.kilo/feature.json.plan` > ask/stop**. Report resolved source/path.
+- **Plan path** (in `documentation/technical/plans/` or provided/resolved). If missing/unclear, stop and ask.
 - **Requested change and reason** (what must change and why; include evidence/findings).
-- **Related artifacts:** referenced technical spec and functional spec for coherence/impact.
+- **Related artifacts:** referenced technical spec and functional spec for coherence/impact (resolve via plan/feature state). Relevant context: `.kilo/FEATURE_STATE.md`.
 
 ## Process
 
@@ -30,5 +31,6 @@ Modify an existing implementation plan in a controlled, fail-fast way. Use this 
    - **Fail-fast structural validation (required):** immediately after each modification, run `node scripts/check-doc.mjs --type plan <path>`. Fix any reported issues and rerun until it passes before continuing. Do not leave the plan in an invalid state.
 
 4. **Report and handoff**
-   - Summarize: plan path, changes made, validation result, user consultation/decisions, and impact on remaining chunks/implementation.
+   - If the plan path moved/renamed, update `.kilo/feature.json.plan` (and `updatedAt`) when used. Keep feature state coherent with the plan.
+   - Summarize: resolved feature-state source (if used), plan path, changes made, validation result, user consultation/decisions, and impact on remaining chunks/implementation.
    - If implementation is in progress, recommend restarting `/implement` from step 1 (coherence/reflection/target validation) so work proceeds against the updated, valid plan. Stop after updating/reporting; do not implement.

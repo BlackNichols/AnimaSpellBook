@@ -8,8 +8,9 @@ Analyze a functional specification, identify what could go wrong, discuss soluti
 
 ## Inputs
 
+- **Feature state (optional):** read `.kilo/feature.json` when present. Resolve functional spec path as **explicit argument > `.kilo/feature.json.functionalSpec` > ask**. Report resolved source.
 - Functional spec (path or text provided by the user). Read it fully before proceeding.
-- Relevant context: `AGENTS.md`, `documentation/technical/TESTING.md`, `documentation/technical/INVARIANTS.md` (cross-cutting invariants), and any related docs in `documentation/technical/` or `documentation/specifications/`.
+- Relevant context: `AGENTS.md`, `documentation/technical/TESTING.md`, `documentation/technical/INVARIANTS.md` (cross-cutting invariants), `.kilo/FEATURE_STATE.md`, and any related docs in `documentation/technical/` or `documentation/specifications/`.
 
 ## Process
 
@@ -30,6 +31,7 @@ Analyze a functional specification, identify what could go wrong, discuss soluti
 
 4. **Produce the technical specification**
    - Write the spec to `documentation/technical/decisions/` (kebab-case name derived from the feature/topic) unless the user specifies a path. Use the template at `documentation/technical/decisions/TECHNICAL_SPEC_TEMPLATE.md`.
+   - **Update feature state:** if `.kilo/feature.json` exists (or the feature context is being established), set/update `feature` (when known), `functionalSpec` (if path known), `technicalSpec` (written path), `status: "discovery"`, and `updatedAt` (ISO-8601). Preserve unrelated fields; do not guess missing spec/plan paths.
    - The spec MUST include:
      - **Context & scope:** functional goal, in/out of scope, constraints, assumptions, and unknowns.
      - **Decisions (ADR-like):** for each material decision—context/problem, options considered, chosen solution, rationale, consequences/tradeoffs, and status. Record why decisions were taken so implementation can challenge the spec with context.
@@ -43,4 +45,4 @@ Analyze a functional specification, identify what could go wrong, discuss soluti
    - **Structural gate (required):** run `node scripts/check-doc.mjs --type spec <path>` on the written spec. Fix any reported issues and rerun until it passes before reporting. A spec that fails structural validation is not complete.
 
 5. **Report**
-   - Summarize: spec path, key decisions taken, open assumptions/spikes, and notable risks/test expectations. Stop after producing the spec; do not implement.
+   - Summarize: resolved feature-state source (if used), spec path, key decisions taken, open assumptions/spikes, notable risks/test expectations, and `.kilo/feature.json` updates (if any). Stop after producing the spec; do not implement.

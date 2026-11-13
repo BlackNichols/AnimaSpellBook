@@ -8,13 +8,18 @@ Execute implementation work against an existing plan and its specs. This workflo
 
 ## Inputs
 
-- **Implementation plan** (path in `documentation/technical/plans/` or provided by the user). If none exists for non-trivial/cross-cutting/user-visible work, stop and recommend `/plan`.
+- **Feature state (default):** read `.kilo/feature.json` when present. Resolve inputs as **explicit user/command argument > `.kilo/feature.json` > ask/stop**. Report the resolved source and paths.
+  - `plan` → implementation plan path
+  - `technicalSpec` / `functionalSpec` → spec paths (prefer values referenced by the plan; if they differ from feature state, report and reconcile)
+  - `activeChunk` → target chunk hint (confirm against plan)
+- **Implementation plan** (path in `documentation/technical/plans/` or provided/resolved). If none exists for non-trivial/cross-cutting/user-visible work, stop and recommend `/plan`.
 - **Technical spec** and **functional spec** referenced by the plan (in `documentation/technical/decisions/` and `documentation/specifications/`). If missing, stop and recommend `/technical-discovery`/`/plan`.
-- Relevant context: `AGENTS.md`, `documentation/technical/TESTING.md`, and affected source/docs.
+- Relevant context: `AGENTS.md`, `documentation/technical/TESTING.md`, `.kilo/FEATURE_STATE.md`, and affected source/docs.
 
 ## Process
 
 1. **Load context**
+   - **Resolve feature state (if used):** read `.kilo/feature.json` and determine plan/spec/chunk from explicit args or feature state; report resolved source/paths. Update `.kilo/feature.json` (`status: "implementing"` when starting work, `activeChunk`, `updatedAt`) if present/applicable.
    - **Validate targets first (required):** identify the referenced technical spec, functional spec, and implementation plan. Run `node scripts/check-doc.mjs --type spec <tech-spec-path>` and `node scripts/check-doc.mjs --type plan <plan-path>`. If either fails, report the errors and stop—do not read or use an invalid spec/plan. If a functional spec path is missing/invalid and required, report it.
    - Read the plan, technical spec, and functional spec in full (only after validation passes). Note contracts/ownership, boundaries, risk→test mapping, validation spikes, applicable cross-cutting invariants (`documentation/technical/INVARIANTS.md`), feature-specific invariants, and chunk acceptance criteria.
    - Read the current code and existing tests relevant to the target chunk (and recent git state) to understand the actual baseline.
@@ -27,8 +32,9 @@ Execute implementation work against an existing plan and its specs. This workflo
    - **If coherent:** state briefly that specs/plan align with the current code and the target chunk’s scope/boundaries, then proceed.
 
 3. **Select and scope one chunk**
-   - Choose the next chunk to work on (default plan order) and confirm its functional perimeter, acceptance criteria, dependencies, and required contracts/coverage.
+   - Choose the next chunk to work on (default plan order, or `activeChunk` from resolved feature state when valid) and confirm its functional perimeter, acceptance criteria, dependencies, and required contracts/coverage.
    - Work on one chunk at a time. Do not combine chunks into big-bang changes.
+   - Update `.kilo/feature.json` `activeChunk`/`status`/`updatedAt` when selecting/changing chunk (if used).
    - If chunking/order/approach should change, follow plan modification rules (below) before or as you adjust.
 
 4. **Implement the chunk (vertical, contract-first)**
@@ -55,7 +61,7 @@ Execute implementation work against an existing plan and its specs. This workflo
    - **Record in plan (immediate validation):** update the plan chunk status and add a change log entry for meaningful changes (what changed, rationale, whether the user was consulted). Immediately run `node scripts/check-doc.mjs --type plan <plan-path>`, fix any structural errors, and rerun until it passes before reporting. Do not proceed with invalid plan artifacts.
 
 6. **Report**
-   - Summarize: chunk worked, coherence/reflection outcome, implementation and test changes, `/verify` and `/assess` results, plan updates, and open items/risks. Do not claim completion unless the required gate passed per `AGENTS.md`.
+   - Summarize: resolved feature-state source/paths (if used), chunk worked, coherence/reflection outcome, implementation and test changes, `/verify` and independent review results, plan updates, and open items/risks. Keep `.kilo/feature.json` consistent (`activeChunk`, `status`, `updatedAt`) when used. Do not claim completion unless the required gate passed per `AGENTS.md`.
 
 ## Plan modification rules (traceable)
 

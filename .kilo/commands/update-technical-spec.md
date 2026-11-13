@@ -8,9 +8,10 @@ Modify an existing technical spec (decision record) in a controlled, fail-fast w
 
 ## Inputs
 
-- **Technical spec path** (in `documentation/technical/decisions/` or provided by the user). If missing/unclear, stop and ask.
+- **Feature state (default):** read `.kilo/feature.json` when present. Resolve technical spec path as **explicit argument > `.kilo/feature.json.technicalSpec` > ask/stop**. Report resolved source/path.
+- **Technical spec path** (in `documentation/technical/decisions/` or provided/resolved). If missing/unclear, stop and ask.
 - **Requested change and reason** (what must change and why; include evidence from code/findings when applicable).
-- **Related artifacts:** functional spec and implementation plan (if any) for impact assessment.
+- **Related artifacts:** functional spec and implementation plan (if any, resolve via feature state/refs) for impact assessment. Relevant context: `.kilo/FEATURE_STATE.md`.
 
 ## Process
 
@@ -32,4 +33,5 @@ Modify an existing technical spec (decision record) in a controlled, fail-fast w
    - If implementation is in progress, stop implementation work and require `/implement` to be restarted from step 1 (coherence/reflection) after spec/plan updates are complete and valid.
 
 5. **Report**
-   - Summarize: spec path, changes made, validation result, user consultation/decisions, plan impact, and next steps (`/update-plan` if needed, then restart `/implement`). Stop after updating/reporting; do not implement.
+   - If the spec path moved/renamed, update `.kilo/feature.json.technicalSpec` (and `updatedAt`) when used. Keep feature state coherent.
+   - Summarize: resolved feature-state source (if used), spec path, changes made, validation result, user consultation/decisions, plan impact, and next steps (`/update-plan` if needed, then restart `/implement`). Stop after updating/reporting; do not implement.
