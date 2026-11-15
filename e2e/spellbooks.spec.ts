@@ -67,3 +67,15 @@ test('adding an individual spell from /spelllist with no spellbooks creates defa
   await expect(page.locator('.spellbook-section-title').first()).toHaveText('Default section');
   await expect(page.locator('.spellbook-spell-item')).toHaveCount(1);
 });
+
+test('adding all filtered spells from /spelllist snapshots displayed results and adds to default section (creating spellbook when none exists)', async ({ page }) => {
+  await page.goto('/spelllist?q=Create%20Light');
+  await expect(page.locator('.spell-row').first()).toBeVisible();
+  const displayedCount = await page.locator('.spell-row').count();
+  expect(displayedCount).toBeGreaterThan(0);
+  await page.getByTestId('add-all-filtered').click();
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
+  await expect(page.getByLabel('Spellbook name')).toHaveValue('Spellbook 1');
+  await expect(page.locator('.spellbook-section-title').first()).toHaveText('Default section');
+  await expect(page.locator('.spellbook-spell-item')).toHaveCount(displayedCount);
+});
