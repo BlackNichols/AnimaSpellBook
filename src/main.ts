@@ -219,6 +219,21 @@ const appShell = {
     if (Number.isNaN(n)) return;
     spellbookStore.reorderSpellInSection(book.id, section.id, spellId, n);
   },
+  moveSpellPrompt(section: { id: string }, spellIds: string[]) {
+    const book = this.activeSpellbook;
+    if (!book) return;
+    const options = book.sections
+      .map((s, i) => `${i + 1}: ${s.name ?? 'Default'}`)
+      .join('\n');
+    const ans = window.prompt(`Move to which section?\n${options}`, '1');
+    if (ans === null) return;
+    const idx = parseInt(ans, 10);
+    if (Number.isNaN(idx)) return;
+    const clamped = Math.max(1, Math.min(book.sections.length, idx));
+    const target = book.sections[clamped - 1];
+    if (!target || target.id === section.id) return;
+    spellbookStore.moveSpellsToSection(book.id, section.id, spellIds, target.id);
+  },
   async init() {
     spellbookStore.load();
     await spellStore.loadSpells();
