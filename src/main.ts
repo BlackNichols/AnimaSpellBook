@@ -123,14 +123,49 @@ const appShell = {
     const bookId = this.ensureActiveSpellbookForAdd();
     const book = spellbookStore.getSpellbook(bookId);
     if (!book) return;
-    // Chunk 3 minimal: if only default/unnamed section context, add to first (default) section.
     const named = book.sections.filter((s) => s.name !== null);
+    let targetId: string | null = null;
     if (named.length === 0) {
-      const targetId = book.sections[0]?.id;
-      if (targetId) spellbookStore.addSpellsToSection(bookId, targetId, spellIds);
-      return;
+      targetId = book.sections[0]?.id ?? null;
+    } else {
+      const options = book.sections
+        .map((s, i) => `${i + 1}: ${s.name ?? 'Default'}`)
+        .join('\n');
+      const ans = window.prompt(
+        `Add to which section?\n${options}\nEnter number, or "n" to create a new named section:`,
+        '1'
+      );
+      if (ans === null) return;
+      if (ans.toLowerCase() === 'n') {
+        targetId = this.promptCreateSectionForBook(bookId);
+      } else {
+        const idx = parseInt(ans, 10);
+        if (Number.isNaN(idx)) targetId = book.sections[0]?.id ?? null;
+        else {
+          const clamped = Math.max(1, Math.min(book.sections.length, idx));
+          targetId = book.sections[clamped - 1]?.id ?? null;
+        }
+      }
     }
-    // Named sections exist: target selection/prompt to be implemented with corresponding behavior/tests.
+    if (targetId) {
+      spellbookStore.addSpellsToSection(bookId, targetId, spellIds);
+      if (routeState.view === 'spelllist') router.navigate(`/spellbooks/${bookId}`);
+    }
+  },
+  promptCreateSectionForBook(bookId: string): string | null {
+    const name = window.prompt('New section name:', 'Section');
+    if (name === null) return null;
+    const placementAns = window.prompt('Place section: "first", "last", or position number:', 'last');
+    if (placementAns === null) return null;
+    const t = placementAns.trim().toLowerCase();
+    let placement: 'first' | 'last' | { index: number } = 'last';
+    if (t === 'first') placement = 'first';
+    else if (t === 'last' || t === '') placement = 'last';
+    else {
+      const n = parseInt(t, 10);
+      placement = Number.isNaN(n) ? 'last' : { index: n };
+    }
+    return spellbookStore.createNamedSection(bookId, name, { placement });
   },
   async init() {
     spellbookStore.load();
