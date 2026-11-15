@@ -94,3 +94,25 @@ test('creating first named section in editor converts default section in place p
   await expect(page.locator('.spellbook-section-title').first()).toHaveText('Combat');
   await expect(page.locator('.spellbook-spell-item')).toHaveCount(1);
 });
+
+test('adding a spell from /spelllist when named sections exist prompts for target section and adds to chosen existing section', async ({ page }) => {
+  await page.goto('/spelllist');
+  await page.locator('[data-testid^="add-spell-"]').nth(0).click();
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
+
+  const answers = ['Combat', 'last', 'Utility', 'last', '2'];
+  page.on('dialog', (d) => d.accept(answers.shift() ?? ''));
+  await page.getByTestId('add-section').click();
+  await expect(page.locator('.spellbook-section')).toHaveCount(1);
+  await page.getByTestId('add-section').click();
+  await expect(page.locator('.spellbook-section')).toHaveCount(2);
+
+  await page.getByRole('button', { name: 'Back to spell list' }).click();
+  await expect(page).toHaveURL(/\/spelllist$/);
+  await page.locator('[data-testid^="add-spell-"]').nth(1).click();
+
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
+  const sections = page.locator('.spellbook-section');
+  await expect(sections.nth(0).locator('.spellbook-spell-item')).toHaveCount(1);
+  await expect(sections.nth(1).locator('.spellbook-spell-item')).toHaveCount(1);
+});
