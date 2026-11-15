@@ -348,8 +348,13 @@
                           <p class="empty-state">No spells in this section.</p>
                         </template>
                         <ul class="spellbook-spell-list">
-                          <template x-for="sid in section.spellIds" :key="sid">
-                            <li class="spellbook-spell-item" x-text="spellName(sid)"></li>
+                          <template x-for="(sid, idx) in section.spellIds" :key="`${section.id}-${sid}-${idx}`">
+                            <li class="spellbook-spell-item">
+                              <span class="spellbook-spell-name" x-text="spellName(sid)"></span>
+                              <div class="spellbook-spell-actions">
+                                <button type="button" class="btn btn-secondary btn-sm" @click="reorderSpellPrompt(section, sid)">Spell position</button>
+                              </div>
+                            </li>
                           </template>
                         </ul>
                       </div>

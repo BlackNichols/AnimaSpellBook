@@ -199,3 +199,24 @@ test('deleting a non-last named section can move its spells to a chosen existing
   await expect(page.locator('.spellbook-section-title').first()).toHaveText('Default section');
   await expect(page.locator('.spellbook-spell-item')).toHaveCount(1);
 });
+
+test('reordering a spell within a section by 1-based position updates spell order', async ({ page }) => {
+  await page.goto('/spelllist');
+  await expect(page.locator('[data-testid^="add-spell-"]').first()).toBeVisible();
+  await page.locator('[data-testid^="add-spell-"]').nth(0).click();
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
+  await expect(page.locator('.spellbook-spell-item')).toHaveCount(1);
+  await page.getByRole('button', { name: 'Back to spell list' }).click();
+  await page.locator('[data-testid^="add-spell-"]').nth(1).click();
+  await expect(page.locator('.spellbook-spell-item')).toHaveCount(2);
+
+  const items = page.locator('.spellbook-spell-item');
+  const first = (await items.nth(0).textContent()) ?? '';
+  const second = (await items.nth(1).textContent()) ?? '';
+
+  page.once('dialog', (d) => d.accept('1'));
+  await page.getByRole('button', { name: 'Spell position' }).nth(1).click();
+
+  await expect(items.nth(0)).toHaveText(second);
+  await expect(items.nth(1)).toHaveText(first);
+});
