@@ -57,3 +57,13 @@ test('delete active spellbook navigates to /spellbooks empty; deep-link/refresh 
   await page.goto('/spellbooks/does-not-exist');
   await expect(page).toHaveURL(/\/spelllist$/);
 });
+
+test('adding an individual spell from /spelllist with no spellbooks creates default active spellbook and adds it to default section', async ({ page }) => {
+  await page.goto('/spelllist');
+  await expect(page.locator('[data-testid^="add-spell-"]').first()).toBeVisible();
+  await page.locator('[data-testid^="add-spell-"]').first().click();
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
+  await expect(page.getByLabel('Spellbook name')).toHaveValue('Spellbook 1');
+  await expect(page.locator('.spellbook-section-title').first()).toHaveText('Default section');
+  await expect(page.locator('.spellbook-spell-item')).toHaveCount(1);
+});
