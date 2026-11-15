@@ -335,7 +335,12 @@
                   <section class="spellbook-sections" aria-label="Sections">
                     <template x-for="section in activeSpellbook.sections" :key="section.id">
                       <div class="spellbook-section">
-                        <h3 class="spellbook-section-title" x-text="section.name ?? 'Default section'"></h3>
+                        <div class="spellbook-section-header">
+                          <h3 class="spellbook-section-title" x-text="section.name ?? 'Default section'"></h3>
+                          <div class="spellbook-section-actions">
+                            <button type="button" class="btn btn-secondary btn-sm" @click="renameSectionPrompt(section)">Rename section</button>
+                          </div>
+                        </div>
                         <template x-if="section.spellIds.length === 0">
                           <p class="empty-state">No spells in this section.</p>
                         </template>

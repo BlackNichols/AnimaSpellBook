@@ -116,3 +116,22 @@ test('adding a spell from /spelllist when named sections exist prompts for targe
   await expect(sections.nth(0).locator('.spellbook-spell-item')).toHaveCount(1);
   await expect(sections.nth(1).locator('.spellbook-spell-item')).toHaveCount(1);
 });
+
+test('renaming a named section from spellbook editor updates its header while keeping spells', async ({ page }) => {
+  await page.goto('/spelllist');
+  await page.locator('[data-testid^="add-spell-"]').first().click();
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
+
+  const answers = ['Combat', 'last'];
+  page.on('dialog', (d) => d.accept(answers.shift() ?? ''));
+  await page.getByTestId('add-section').click();
+  await expect(page.locator('.spellbook-section-title').first()).toHaveText('Combat');
+  await expect(page.locator('.spellbook-spell-item')).toHaveCount(1);
+
+  page.removeAllListeners('dialog');
+  page.once('dialog', (d) => d.accept('Battle'));
+  await page.getByRole('button', { name: 'Rename section' }).first().click();
+
+  await expect(page.locator('.spellbook-section-title').first()).toHaveText('Battle');
+  await expect(page.locator('.spellbook-spell-item')).toHaveCount(1);
+});
