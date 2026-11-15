@@ -332,9 +332,22 @@ export class SpellbookStore {
     if (book.sections.length === 0) {
       // Deleted the only section: recreate default unnamed section preserving its spells.
       book.sections.push({ id: uuid(), name: null, spellIds: [...section.spellIds] });
-    } else if (book.sections.length === 1 && book.sections[0]!.name !== null) {
-      // Deleting the last named section among multiple: remaining becomes the default unnamed section.
-      book.sections[0]!.name = null;
+    } else {
+      const deletedWasNamed = section.name !== null;
+      const hasNamedRemaining = book.sections.some((s) => s.name !== null);
+      if (deletedWasNamed && !hasNamedRemaining) {
+        // Last named section deleted (§5.1): remaining becomes default unnamed and receives deleted section's spells.
+        const remaining = book.sections[0]!;
+        const existing = new Set(remaining.spellIds);
+        for (const sid of section.spellIds) {
+          if (existing.has(sid)) continue;
+          remaining.spellIds.push(sid);
+          existing.add(sid);
+        }
+        remaining.name = null;
+        book.sections = [remaining];
+      }
+      // Non-last named deletion (§5.5): other named sections remain unchanged (no conversion).
     }
     this.persist();
     this.notify();

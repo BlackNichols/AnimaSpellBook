@@ -192,7 +192,13 @@ const appShell = {
     const book = this.activeSpellbook;
     if (!book) return;
     const named = book.sections.filter((s) => s.name !== null);
-    if (named.length <= 1) {
+    const isLastNamed = section.name !== null && named.length === 1;
+    if (isLastNamed) {
+      // Last named section: becomes default unnamed with its spells moved in (no prompt).
+      spellbookStore.deleteSection(book.id, section.id, { mode: 'deleteSpells' });
+      return;
+    }
+    if (book.sections.length <= 1) {
       spellbookStore.deleteSection(book.id, section.id, { mode: 'deleteSpells' });
       return;
     }
