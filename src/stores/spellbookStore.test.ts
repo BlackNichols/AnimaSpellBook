@@ -106,3 +106,17 @@ describe('SpellbookStore - persistence envelope and core management', () => {
     expect(parsed.version).toBe(1);
   });
 });
+
+  it('setActiveSpellbook is idempotent: no persist/notify when activating already-active id', () => {
+    const store = new SpellbookStore();
+    store.load();
+    const a = store.createSpellbook();
+    const rawAfterCreate = localStorage.getItem(STORAGE_KEY);
+    let notifications = 0;
+    store.subscribe(() => notifications++);
+    const result = store.setActiveSpellbook(a);
+    expect(result).toBe(true);
+    expect(store.activeSpellbookId).toBe(a);
+    expect(notifications).toBe(0);
+    expect(localStorage.getItem(STORAGE_KEY)).toBe(rawAfterCreate);
+  });
