@@ -181,27 +181,43 @@ describe('SpellbookStore - add spells to section (Chunk 3)', () => {
     expect(book.sections.find((s) => s.id === idB)!.name).toBe('Beta2');
     expect(book.sections.find((s) => s.id === idB)!.spellIds).toEqual([]);
 
+    // delete non-last named: move spells to chosen existing section (remaining named sections stay named)
     store.addSpellsToSection(bookId, idC, ['c1']);
     store.deleteSection(bookId, idC, { mode: 'move', targetSectionId: defaultId });
     book = store.getSpellbook(bookId)!;
     expect(book.sections.some((s) => s.id === idC)).toBe(false);
+    expect(book.sections.find((s) => s.id === defaultId)!.name).toBe('Alpha');
     expect(book.sections.find((s) => s.id === defaultId)!.spellIds).toEqual(['a', 'b', 'c1']);
+    expect(book.sections.every((s) => s.name !== null)).toBe(true);
 
+    // delete non-last named: delete spells with it (remaining named sections stay named)
     const idZ = store.createNamedSection(bookId, 'Zeta', { placement: 'last' })!;
     store.addSpellsToSection(bookId, idZ, ['z1']);
     store.deleteSection(bookId, idZ, { mode: 'deleteSpells' });
-    expect(store.getSpellbook(bookId)!.sections.some((s) => s.id === idZ)).toBe(false);
+    book = store.getSpellbook(bookId)!;
+    expect(book.sections.some((s) => s.id === idZ)).toBe(false);
+    expect(book.sections.map((s) => s.name)).toEqual(['Delta', 'Alpha', 'Beta2']);
 
+    // delete non-last named among multiple named (Beta2 empty): Alpha,Delta remain named
     store.addSpellsToSection(bookId, defaultId, ['keep']);
     const deltaId = store.getSpellbook(bookId)!.sections.find((s) => s.name === 'Delta')!.id;
     const betaId = store.getSpellbook(bookId)!.sections.find((s) => s.name === 'Beta2')!.id;
-    store.deleteSection(bookId, betaId, { mode: 'deleteSpells' });
+    store.deleteSection(bookId, betaId, { mode: 'deleteSpells' }); // non-last (3 named) -> Delta,Alpha remain named
+    book = store.getSpellbook(bookId)!;
+    expect(book.sections.map((s) => s.name)).toEqual(['Delta', 'Alpha']);
+
     store.addSpellsToSection(bookId, deltaId, ['d1']);
-    store.deleteSection(bookId, deltaId, { mode: 'deleteSpells' });
+    store.deleteSection(bookId, defaultId, { mode: 'deleteSpells' }); // delete Alpha (non-last now) -> Delta remains as only named
+    book = store.getSpellbook(bookId)!;
+    expect(book.sections).toHaveLength(1);
+    expect(book.sections[0]!.name).toBe('Delta');
+    expect(book.sections[0]!.spellIds).toEqual(['d1']);
+
+    store.deleteSection(bookId, deltaId, { mode: 'deleteSpells' }); // deleting last named -> becomes default unnamed, its spells moved into it
     book = store.getSpellbook(bookId)!;
     expect(book.sections).toHaveLength(1);
     expect(book.sections[0]!.name).toBeNull();
-    expect(book.sections[0]!.spellIds).toEqual(['a', 'b', 'c1', 'keep']);
+    expect(book.sections[0]!.spellIds).toEqual(['d1']);
   });
 
   it('reorders spells within a section and moves spells to another section appended to end (skipping target duplicates)', () => {

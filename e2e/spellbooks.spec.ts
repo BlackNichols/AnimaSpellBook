@@ -196,7 +196,7 @@ test('deleting a non-last named section can move its spells to a chosen existing
   await page.getByRole('button', { name: 'Delete section' }).first().click();
 
   await expect(page.locator('.spellbook-section')).toHaveCount(1);
-  await expect(page.locator('.spellbook-section-title').first()).toHaveText('Default section');
+  await expect(page.locator('.spellbook-section-title').first()).toHaveText('Utility');
   await expect(page.locator('.spellbook-spell-item')).toHaveCount(1);
 });
 
