@@ -270,4 +270,18 @@ export class SpellbookStore {
     this.notify();
     return section.id;
   }
+
+  reorderSection(bookId: string, sectionId: string, newPositionOneBased: number): boolean {
+    const book = this.getSpellbook(bookId);
+    if (!book) return false;
+    const from = book.sections.findIndex((s) => s.id === sectionId);
+    if (from === -1) return false;
+    const [section] = book.sections.splice(from, 1);
+    if (!section) return false;
+    const clamped = Math.max(1, Math.min(book.sections.length + 1, newPositionOneBased));
+    book.sections.splice(clamped - 1, 0, section);
+    this.persist();
+    this.notify();
+    return true;
+  }
 }
