@@ -155,4 +155,52 @@ describe('SpellbookStore - add spells to section (Chunk 3)', () => {
     store.reorderSection(bookId, ids[0]!, 99);
     expect(store.getSpellbook(bookId)!.sections.map((s) => s.name)).toEqual(['C', 'B', 'A']);
   });
+
+  it('converts default on first named section, supports placement, rename, clear, and delete behaviors', () => {
+    const store = new SpellbookStore();
+    store.load();
+    const bookId = store.createSpellbook();
+    const defaultId = store.getSpellbook(bookId)!.sections[0]!.id;
+    store.addSpellsToSection(bookId, defaultId, ['a', 'b']);
+
+    store.createNamedSection(bookId, 'Alpha', { placement: 'last' });
+    let book = store.getSpellbook(bookId)!;
+    expect(book.sections).toHaveLength(1);
+    expect(book.sections[0]).toMatchObject({ id: defaultId, name: 'Alpha', spellIds: ['a', 'b'] });
+
+    const idB = store.createNamedSection(bookId, 'Beta', { placement: 'last' })!;
+    const idC = store.createNamedSection(bookId, 'Gamma', { placement: 'first' })!;
+    expect(store.getSpellbook(bookId)!.sections.map((s) => s.name)).toEqual(['Gamma', 'Alpha', 'Beta']);
+    store.createNamedSection(bookId, 'Delta', { placement: { index: 2 } });
+    expect(store.getSpellbook(bookId)!.sections.map((s) => s.name)).toEqual(['Gamma', 'Delta', 'Alpha', 'Beta']);
+
+    store.renameSection(bookId, idB, 'Beta2');
+    store.addSpellsToSection(bookId, idB, ['x', 'y']);
+    store.clearSection(bookId, idB);
+    book = store.getSpellbook(bookId)!;
+    expect(book.sections.find((s) => s.id === idB)!.name).toBe('Beta2');
+    expect(book.sections.find((s) => s.id === idB)!.spellIds).toEqual([]);
+
+    store.addSpellsToSection(bookId, idC, ['c1']);
+    store.deleteSection(bookId, idC, { mode: 'move', targetSectionId: defaultId });
+    book = store.getSpellbook(bookId)!;
+    expect(book.sections.some((s) => s.id === idC)).toBe(false);
+    expect(book.sections.find((s) => s.id === defaultId)!.spellIds).toEqual(['a', 'b', 'c1']);
+
+    const idZ = store.createNamedSection(bookId, 'Zeta', { placement: 'last' })!;
+    store.addSpellsToSection(bookId, idZ, ['z1']);
+    store.deleteSection(bookId, idZ, { mode: 'deleteSpells' });
+    expect(store.getSpellbook(bookId)!.sections.some((s) => s.id === idZ)).toBe(false);
+
+    store.addSpellsToSection(bookId, defaultId, ['keep']);
+    const deltaId = store.getSpellbook(bookId)!.sections.find((s) => s.name === 'Delta')!.id;
+    const betaId = store.getSpellbook(bookId)!.sections.find((s) => s.name === 'Beta2')!.id;
+    store.deleteSection(bookId, betaId, { mode: 'deleteSpells' });
+    store.addSpellsToSection(bookId, deltaId, ['d1']);
+    store.deleteSection(bookId, deltaId, { mode: 'deleteSpells' });
+    book = store.getSpellbook(bookId)!;
+    expect(book.sections).toHaveLength(1);
+    expect(book.sections[0]!.name).toBeNull();
+    expect(book.sections[0]!.spellIds).toEqual(['a', 'b', 'c1', 'keep']);
+  });
 });
