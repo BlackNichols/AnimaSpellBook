@@ -47,6 +47,11 @@
   padding: 0 var(--space-4) var(--space-4);
 }
 
+.spellbooks-view {
+  grid-column: 1 / -1;
+  padding: var(--space-6);
+}
+
 .table-wrapper {
   background: var(--color-bg-elevated);
   border: 1px solid var(--color-border);
