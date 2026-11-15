@@ -350,6 +350,7 @@
                         <ul class="spellbook-spell-list">
                           <template x-for="(sid, idx) in section.spellIds" :key="`${section.id}-${sid}-${idx}`">
                             <li class="spellbook-spell-item">
+                              <label class="spell-select"><input type="checkbox" aria-label="Select spell" @change="toggleSpellSelection(section.id, sid, $event.target.checked)" /></label>
                               <span class="spellbook-spell-name" x-text="spellName(sid)"></span>
                               <div class="spellbook-spell-actions">
                                 <button type="button" class="btn btn-secondary btn-sm" @click="reorderSpellPrompt(section, sid)">Spell position</button>
@@ -358,6 +359,9 @@
                             </li>
                           </template>
                         </ul>
+                        <div class="spellbook-section-bulk" x-show="selectedCountForSection(section.id) > 0">
+                          <button type="button" class="btn btn-secondary btn-sm" @click="moveSelectedPrompt(section)">Move selected</button>
+                        </div>
                       </div>
                     </template>
                   </section>

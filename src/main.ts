@@ -238,6 +238,32 @@ const appShell = {
     }
     if (!targetId || targetId === section.id) return;
     spellbookStore.moveSpellsToSection(book.id, section.id, spellIds, targetId);
+    this.selectedSpellIdsBySection = {
+      ...this.selectedSpellIdsBySection,
+      [section.id]: [],
+    };
+  },
+  selectedSpellIdsBySection: {} as Record<string, string[]>,
+  toggleSpellSelection(sectionId: string, spellId: string, checked: boolean) {
+    const cur = this.selectedSpellIdsBySection[sectionId] ?? [];
+    if (checked) {
+      if (!cur.includes(spellId)) cur.push(spellId);
+    } else {
+      const i = cur.indexOf(spellId);
+      if (i >= 0) cur.splice(i, 1);
+    }
+    this.selectedSpellIdsBySection = {
+      ...this.selectedSpellIdsBySection,
+      [sectionId]: [...cur],
+    };
+  },
+  selectedCountForSection(sectionId: string) {
+    return (this.selectedSpellIdsBySection[sectionId] ?? []).length;
+  },
+  moveSelectedPrompt(section: { id: string }) {
+    const selected = this.selectedSpellIdsBySection[section.id] ?? [];
+    if (selected.length === 0) return;
+    this.moveSpellPrompt(section, [...selected]);
   },
   async init() {
     spellbookStore.load();
