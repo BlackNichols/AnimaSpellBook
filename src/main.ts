@@ -167,6 +167,13 @@ const appShell = {
     }
     return spellbookStore.createNamedSection(bookId, name, { placement });
   },
+  renameSectionPrompt(section: { id: string; name: string | null }) {
+    const book = this.activeSpellbook;
+    if (!book) return;
+    const name = window.prompt('Rename section:', section.name ?? '');
+    if (name === null) return;
+    spellbookStore.renameSection(book.id, section.id, name);
+  },
   async init() {
     spellbookStore.load();
     await spellStore.loadSpells();
