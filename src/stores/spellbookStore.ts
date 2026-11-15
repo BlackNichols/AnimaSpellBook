@@ -175,6 +175,7 @@ export class SpellbookStore {
 
   setActiveSpellbook(id: string): boolean {
     if (!this.getSpellbook(id)) return false;
+    if (this.activeSpellbookId === id) return true;
     this.activeSpellbookId = id;
     this.persist();
     this.notify();
