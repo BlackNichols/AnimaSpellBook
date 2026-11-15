@@ -174,6 +174,11 @@ const appShell = {
     if (name === null) return;
     spellbookStore.renameSection(book.id, section.id, name);
   },
+  clearSectionAction(section: { id: string }) {
+    const book = this.activeSpellbook;
+    if (!book) return;
+    spellbookStore.clearSection(book.id, section.id);
+  },
   async init() {
     spellbookStore.load();
     await spellStore.loadSpells();
