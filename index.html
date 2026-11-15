@@ -230,6 +230,7 @@
             </div>
             <div class="stats-bar" x-cloak>
               <span x-text="`${rows.length} of ${total} spells`"></span>
+              <button type="button" class="btn btn-secondary btn-sm" data-testid="add-all-filtered" @click="$dispatch('add-all-filtered-spells')">Add all filtered</button>
             </div>
             <div class="table-wrapper">
               <div class="table-container">

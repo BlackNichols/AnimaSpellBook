@@ -139,6 +139,11 @@ document.addEventListener('add-spell-to-spellbook', ((e: CustomEvent<{ spellId: 
   if (spellId) appShell.addSpellsFromList([spellId]);
 }) as EventListener);
 
+document.addEventListener('add-all-filtered-spells', () => {
+  const ids = spellStore.filteredSpells.map((s) => s.id);
+  appShell.addSpellsFromList(ids);
+});
+
 declare global {
   interface Window {
     Alpine: typeof Alpine;
