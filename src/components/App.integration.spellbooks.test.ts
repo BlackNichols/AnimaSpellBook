@@ -36,6 +36,7 @@ async function mountSpellbookApp(url = '/spellbooks') {
 
   const app = {
     editingName: '',
+    selectedSpellIdsBySection: {} as Record<string, string[]>,
     get route() { return routeState; },
     get isSpellListView() { return routeState.view === 'spelllist'; },
     get isSpellbooksView() { return routeState.view === 'spellbooks'; },
@@ -73,6 +74,17 @@ async function mountSpellbookApp(url = '/spellbooks') {
       if (!id) return;
       this.deleteSpellbook(id);
     },
+    spellName(spellId: string) { return spellId; },
+    promptCreateSection() {},
+    renameSectionPrompt() {},
+    reorderSectionPrompt() {},
+    clearSectionAction() {},
+    deleteSectionPrompt() {},
+    reorderSpellPrompt() {},
+    moveSpellPrompt() {},
+    toggleSpellSelection() {},
+    selectedCountForSection() { return 0; },
+    moveSelectedPrompt() {},
     async init() {
       spellbookStore.load();
       router.start();
