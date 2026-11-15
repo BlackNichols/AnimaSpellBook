@@ -89,6 +89,23 @@ const appShell = {
     if (!id) return;
     this.deleteSpellbook(id);
   },
+  promptCreateSection() {
+    const book = this.activeSpellbook;
+    if (!book) return;
+    const name = window.prompt('New section name:', 'Section');
+    if (name === null) return;
+    const placementAns = window.prompt('Place section: "first", "last", or position number:', 'last');
+    if (placementAns === null) return;
+    const t = placementAns.trim().toLowerCase();
+    let placement: 'first' | 'last' | { index: number } = 'last';
+    if (t === 'first') placement = 'first';
+    else if (t === 'last' || t === '') placement = 'last';
+    else {
+      const n = parseInt(t, 10);
+      placement = Number.isNaN(n) ? 'last' : { index: n };
+    }
+    spellbookStore.createNamedSection(book.id, name, { placement });
+  },
   spellName(spellId: string) {
     const spell = spellStore.spells.find((s) => s.id === spellId);
     return spell?.name ?? spellId;
