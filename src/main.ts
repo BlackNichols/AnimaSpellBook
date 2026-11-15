@@ -179,6 +179,15 @@ const appShell = {
     if (!book) return;
     spellbookStore.clearSection(book.id, section.id);
   },
+  reorderSectionPrompt(section: { id: string }) {
+    const book = this.activeSpellbook;
+    if (!book) return;
+    const ans = window.prompt('New 1-based section position:', '1');
+    if (ans === null) return;
+    const n = parseInt(ans, 10);
+    if (Number.isNaN(n)) return;
+    spellbookStore.reorderSection(book.id, section.id, n);
+  },
   async init() {
     spellbookStore.load();
     await spellStore.loadSpells();
