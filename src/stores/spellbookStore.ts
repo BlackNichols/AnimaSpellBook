@@ -284,4 +284,56 @@ export class SpellbookStore {
     this.notify();
     return true;
   }
+
+  renameSection(bookId: string, sectionId: string, name: string): boolean {
+    const book = this.getSpellbook(bookId);
+    if (!book) return false;
+    const section = book.sections.find((s) => s.id === sectionId);
+    if (!section) return false;
+    section.name = name;
+    this.persist();
+    this.notify();
+    return true;
+  }
+
+  clearSection(bookId: string, sectionId: string): boolean {
+    const book = this.getSpellbook(bookId);
+    if (!book) return false;
+    const section = book.sections.find((s) => s.id === sectionId);
+    if (!section) return false;
+    section.spellIds = [];
+    this.persist();
+    this.notify();
+    return true;
+  }
+
+  deleteSection(
+    bookId: string,
+    sectionId: string,
+    opts: { mode: 'deleteSpells' } | { mode: 'move'; targetSectionId: string }
+  ): boolean {
+    const book = this.getSpellbook(bookId);
+    if (!book) return false;
+    const idx = book.sections.findIndex((s) => s.id === sectionId);
+    if (idx === -1) return false;
+    const [section] = book.sections.splice(idx, 1);
+    if (!section) return false;
+    if (opts.mode === 'move') {
+      const target = book.sections.find((s) => s.id === opts.targetSectionId);
+      if (target) {
+        const existing = new Set(target.spellIds);
+        for (const sid of section.spellIds) {
+          if (existing.has(sid)) continue;
+          target.spellIds.push(sid);
+          existing.add(sid);
+        }
+      }
+    }
+    if (book.sections.length === 1 && book.sections[0]!.name !== null) {
+      book.sections[0]!.name = null;
+    }
+    this.persist();
+    this.notify();
+    return true;
+  }
 }
