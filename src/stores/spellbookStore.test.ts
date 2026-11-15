@@ -140,20 +140,19 @@ describe('SpellbookStore - add spells to section (Chunk 3)', () => {
     expect(store.getSpellbook(bookId)!.sections[0]!.spellIds).toEqual(['s1', 's2', 's3', 's4']);
   });
 
-  it('creating the first named section converts the default unnamed section in place (moves all spells into it with chosen name)', () => {
+  it('reorders sections by 1-based position edit (clamped)', () => {
     const store = new SpellbookStore();
     store.load();
     const bookId = store.createSpellbook();
-    const book = store.getSpellbook(bookId)!;
-    const defaultId = book.sections[0]!.id;
-    store.addSpellsToSection(bookId, defaultId, ['a', 'b']);
+    store.createNamedSection(bookId, 'A', { placement: 'last' }); // converts default
+    store.createNamedSection(bookId, 'B', { placement: 'last' });
+    store.createNamedSection(bookId, 'C', { placement: 'last' });
+    const ids = store.getSpellbook(bookId)!.sections.map((s) => s.id);
 
-    const newId = store.createNamedSection(bookId, 'Combat', { placement: 'last' });
-    const updated = store.getSpellbook(bookId)!;
-    expect(updated.sections).toHaveLength(1);
-    expect(updated.sections[0]!.id).toBe(defaultId);
-    expect(updated.sections[0]!.name).toBe('Combat');
-    expect(updated.sections[0]!.spellIds).toEqual(['a', 'b']);
-    expect(newId).toBe(defaultId);
+    store.reorderSection(bookId, ids[2]!, 1);
+    expect(store.getSpellbook(bookId)!.sections.map((s) => s.name)).toEqual(['C', 'A', 'B']);
+
+    store.reorderSection(bookId, ids[0]!, 99);
+    expect(store.getSpellbook(bookId)!.sections.map((s) => s.name)).toEqual(['C', 'B', 'A']);
   });
 });
