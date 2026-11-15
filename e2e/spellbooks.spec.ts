@@ -333,3 +333,56 @@ test('bulk moving selected spells to another existing section appends them to en
   await expect(beta.locator('.spellbook-spell-item .spellbook-spell-name').nth(0)).toHaveText(names[0]!);
   await expect(beta.locator('.spellbook-spell-item .spellbook-spell-name').nth(1)).toHaveText(names[1]!);
 });
+
+test('deleting a non-last named section and choosing to delete its spells removes only that section and its spells', async ({ page }) => {
+  await page.goto('/spelllist');
+  await page.locator('[data-testid^="add-spell-"]').nth(0).click();
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
+  await page.getByRole('button', { name: 'Back to spell list' }).click();
+  await page.locator('[data-testid^="add-spell-"]').nth(1).click();
+  await expect(page.locator('.spellbook-spell-item')).toHaveCount(2);
+
+  const answers = ['Combat', 'last', 'Utility', 'last'];
+  page.on('dialog', (d) => d.accept(answers.shift() ?? ''));
+  await page.getByTestId('add-section').click();
+  await page.getByTestId('add-section').click();
+  await expect(page.locator('.spellbook-section')).toHaveCount(2);
+  const combat = page.locator('.spellbook-section').nth(0);
+  const utility = page.locator('.spellbook-section').nth(1);
+  await expect(combat.locator('.spellbook-spell-item')).toHaveCount(2);
+  const kept = (await utility.locator('.spellbook-spell-item .spellbook-spell-name').allTextContents()).slice();
+
+  page.removeAllListeners('dialog');
+  // Cancel = delete spells with section (do not move)
+  page.once('dialog', (d) => void d.dismiss());
+  await combat.getByRole('button', { name: 'Delete section' }).click();
+
+  await expect(page.locator('.spellbook-section')).toHaveCount(1);
+  await expect(page.locator('.spellbook-section-title').first()).toHaveText('Utility');
+  await expect(page.locator('.spellbook-spell-item')).toHaveCount(kept.length);
+  await expect(page.locator('.spellbook-spell-item .spellbook-spell-name')).toHaveText(kept);
+});
+
+test('adding all filtered spells snapshots displayed results and is unaffected by later filter changes', async ({ page }) => {
+  await page.goto('/spelllist?q=Create%20Light');
+  const rows = page.locator('.spell-row');
+  await expect(rows.first()).toBeVisible();
+  const displayedCount = await rows.count();
+  expect(displayedCount).toBeGreaterThan(0);
+
+  await page.getByTestId('add-all-filtered').click();
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
+  await expect(page.locator('.spellbook-spell-item')).toHaveCount(displayedCount);
+
+  // Change filters after add-all: spellbook contents must remain the snapshotted set.
+  await page.getByRole('button', { name: 'Back to spell list' }).click();
+  await expect(page).toHaveURL(/\/spelllist/);
+  await page.goto('/spelllist?q=zzzz-no-spell-matches-this');
+  await expect(page.locator('.spell-row')).toHaveCount(0);
+
+  await page.goto('/spellbooks');
+  await expect(page).toHaveURL(/\/spellbooks$/);
+  await page.getByRole('link', { name: 'Spellbook 1' }).click();
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
+  await expect(page.locator('.spellbook-spell-item')).toHaveCount(displayedCount);
+});
