@@ -239,6 +239,7 @@
                       <template x-for="col in columns" :key="col">
                         <th scope="col" x-text="columnLabel(col)"></th>
                       </template>
+                      <th scope="col">Spellbook</th>
                     </tr>
                   </thead>
                   <template x-for="spell in rows" :key="spell.id">
@@ -247,9 +248,12 @@
                         <template x-for="col in columns" :key="`${spell.id}-${col}`">
                           <td x-text="formatValue(getField(spell, col))"></td>
                         </template>
+                        <td>
+                          <button type="button" class="btn btn-secondary btn-sm" :data-testid="`add-spell-${spell.id}`" @click.stop="$dispatch('add-spell-to-spellbook', { spellId: spell.id })">Add</button>
+                        </td>
                       </tr>
                       <tr class="spell-detail-row" x-show="isExpanded(spell)">
-                        <td :colspan="columns.length">
+                        <td :colspan="columns.length + 1">
                           <div class="spell-detail">
                             <dl class="spell-detail-meta">
                               <div><dt>Action</dt><dd x-text="spell.action"></dd></div>
@@ -335,7 +339,7 @@
                         </template>
                         <ul class="spellbook-spell-list">
                           <template x-for="sid in section.spellIds" :key="sid">
-                            <li x-text="sid"></li>
+                            <li class="spellbook-spell-item" x-text="spellName(sid)"></li>
                           </template>
                         </ul>
                       </div>

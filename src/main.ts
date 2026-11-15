@@ -89,6 +89,32 @@ const appShell = {
     if (!id) return;
     this.deleteSpellbook(id);
   },
+  spellName(spellId: string) {
+    const spell = spellStore.spells.find((s) => s.id === spellId);
+    return spell?.name ?? spellId;
+  },
+  ensureActiveSpellbookForAdd(): string {
+    let id = spellbookStore.activeSpellbookId;
+    if (!id || !spellbookStore.getSpellbook(id)) {
+      id = spellbookStore.createSpellbook();
+      router.navigate(`/spellbooks/${id}`);
+    }
+    return id;
+  },
+  addSpellsFromList(spellIds: string[]) {
+    if (spellIds.length === 0) return;
+    const bookId = this.ensureActiveSpellbookForAdd();
+    const book = spellbookStore.getSpellbook(bookId);
+    if (!book) return;
+    // Chunk 3 minimal: if only default/unnamed section context, add to first (default) section.
+    const named = book.sections.filter((s) => s.name !== null);
+    if (named.length === 0) {
+      const targetId = book.sections[0]?.id;
+      if (targetId) spellbookStore.addSpellsToSection(bookId, targetId, spellIds);
+      return;
+    }
+    // Named sections exist: target selection/prompt to be implemented with corresponding behavior/tests.
+  },
   async init() {
     spellbookStore.load();
     await spellStore.loadSpells();
@@ -107,6 +133,11 @@ Alpine.data('app', () => appShell);
 Alpine.data('spellTable', () => SpellTable(spellStore));
 Alpine.data('filterPanel', () => FilterPanel(spellStore));
 Alpine.data('searchBox', () => SearchBox(spellStore));
+
+document.addEventListener('add-spell-to-spellbook', ((e: CustomEvent<{ spellId: string }>) => {
+  const spellId = e.detail?.spellId;
+  if (spellId) appShell.addSpellsFromList([spellId]);
+}) as EventListener);
 
 declare global {
   interface Window {
