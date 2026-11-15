@@ -175,3 +175,27 @@ test('reordering a named section by 1-based position updates section order', asy
   await expect(page.locator('.spellbook-section-title').nth(0)).toHaveText('Utility');
   await expect(page.locator('.spellbook-section-title').nth(1)).toHaveText('Combat');
 });
+
+test('deleting a non-last named section can move its spells to a chosen existing section', async ({ page }) => {
+  await page.goto('/spelllist');
+  await page.locator('[data-testid^="add-spell-"]').first().click();
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
+
+  const answers = ['Combat', 'last', 'Utility', 'last'];
+  page.on('dialog', (d) => d.accept(answers.shift() ?? ''));
+  await page.getByTestId('add-section').click();
+  await page.getByTestId('add-section').click();
+  await expect(page.locator('.spellbook-section')).toHaveCount(2);
+  await expect(page.locator('.spellbook-section').nth(0).locator('.spellbook-spell-item')).toHaveCount(1);
+
+  page.removeAllListeners('dialog');
+  page.once('dialog', (d) => {
+    void d.accept(); // confirm: move spells
+    page.once('dialog', (d2) => void d2.accept('2')); // target section number
+  });
+  await page.getByRole('button', { name: 'Delete section' }).first().click();
+
+  await expect(page.locator('.spellbook-section')).toHaveCount(1);
+  await expect(page.locator('.spellbook-section-title').first()).toHaveText('Default section');
+  await expect(page.locator('.spellbook-spell-item')).toHaveCount(1);
+});
