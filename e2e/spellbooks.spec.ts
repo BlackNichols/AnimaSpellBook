@@ -155,3 +155,23 @@ test('clearing a named section removes only its spells and leaves the empty sect
   await expect(page.locator('.spellbook-spell-item')).toHaveCount(0);
   await expect(page.locator('.spellbook-section')).toContainText('No spells in this section.');
 });
+
+test('reordering a named section by 1-based position updates section order', async ({ page }) => {
+  await page.goto('/spelllist');
+  await page.locator('[data-testid^="add-spell-"]').first().click();
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
+
+  const answers = ['Combat', 'last', 'Utility', 'last'];
+  page.on('dialog', (d) => d.accept(answers.shift() ?? ''));
+  await page.getByTestId('add-section').click();
+  await page.getByTestId('add-section').click();
+  await expect(page.locator('.spellbook-section-title').nth(0)).toHaveText('Combat');
+  await expect(page.locator('.spellbook-section-title').nth(1)).toHaveText('Utility');
+
+  page.removeAllListeners('dialog');
+  page.once('dialog', (d) => d.accept('1'));
+  await page.getByRole('button', { name: 'Section position' }).nth(1).click();
+
+  await expect(page.locator('.spellbook-section-title').nth(0)).toHaveText('Utility');
+  await expect(page.locator('.spellbook-section-title').nth(1)).toHaveText('Combat');
+});
