@@ -1,9 +1,0 @@
-{
-  "feature": "spellbook",
-  "functionalSpec": "documentation/specifications/features/SPELLBOOK.md",
-  "technicalSpec": "documentation/technical/decisions/spellbook.md",
-  "plan": "documentation/technical/plans/spellbook.md",
-  "activeChunk": "Chunk 2 — Spellbook domain, persistence, and management/edit views",
-  "status": "fixing",
-  "updatedAt": "2026-11-15T12:02:00Z"
-}

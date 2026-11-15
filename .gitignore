@@ -3,4 +3,5 @@ dist
 .kilo/plans
 .kilo/worktrees
 .kilo/tdd
+.kilo/feature.json
 test-results/
