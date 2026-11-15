@@ -79,3 +79,18 @@ test('adding all filtered spells from /spelllist snapshots displayed results and
   await expect(page.locator('.spellbook-section-title').first()).toHaveText('Default section');
   await expect(page.locator('.spellbook-spell-item')).toHaveCount(displayedCount);
 });
+
+test('creating first named section in editor converts default section in place preserving spells', async ({ page }) => {
+  await page.goto('/spelllist');
+  await page.locator('[data-testid^="add-spell-"]').first().click();
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
+  await expect(page.locator('.spellbook-spell-item')).toHaveCount(1);
+
+  const answers = ['Combat', 'last'];
+  page.on('dialog', (d) => d.accept(answers.shift() ?? ''));
+  await page.getByTestId('add-section').click();
+
+  await expect(page.locator('.spellbook-section')).toHaveCount(1);
+  await expect(page.locator('.spellbook-section-title').first()).toHaveText('Combat');
+  await expect(page.locator('.spellbook-spell-item')).toHaveCount(1);
+});

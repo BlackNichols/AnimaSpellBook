@@ -330,6 +330,7 @@
                   <div class="spellbook-editor-actions">
                     <button type="button" class="btn btn-secondary" @click="duplicateActiveSpellbook()">Duplicate spellbook</button>
                     <button type="button" class="btn btn-secondary" @click="deleteActiveSpellbook()">Delete spellbook</button>
+                    <button type="button" class="btn btn-secondary" data-testid="add-section" @click="promptCreateSection()">Add section</button>
                   </div>
                   <section class="spellbook-sections" aria-label="Sections">
                     <template x-for="section in activeSpellbook.sections" :key="section.id">
