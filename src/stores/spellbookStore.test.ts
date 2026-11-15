@@ -203,4 +203,29 @@ describe('SpellbookStore - add spells to section (Chunk 3)', () => {
     expect(book.sections[0]!.name).toBeNull();
     expect(book.sections[0]!.spellIds).toEqual(['a', 'b', 'c1', 'keep']);
   });
+
+  it('reorders spells within a section and moves spells to another section appended to end (skipping target duplicates)', () => {
+    const store = new SpellbookStore();
+    store.load();
+    const bookId = store.createSpellbook();
+    const s1 = store.getSpellbook(bookId)!.sections[0]!.id;
+    store.createNamedSection(bookId, 'Alpha', { placement: 'last' });
+    const s2 = store.createNamedSection(bookId, 'Beta', { placement: 'last' })!;
+    store.addSpellsToSection(bookId, s1, ['a', 'b', 'c', 'd']);
+    store.addSpellsToSection(bookId, s2, ['x']);
+
+    store.reorderSpellInSection(bookId, s1, 'c', 1);
+    expect(store.getSpellbook(bookId)!.sections.find((s) => s.id === s1)!.spellIds).toEqual(['c', 'a', 'b', 'd']);
+    store.reorderSpellInSection(bookId, s1, 'c', 99);
+    expect(store.getSpellbook(bookId)!.sections.find((s) => s.id === s1)!.spellIds).toEqual(['a', 'b', 'd', 'c']);
+
+    store.moveSpellsToSection(bookId, s1, ['b', 'd'], s2);
+    expect(store.getSpellbook(bookId)!.sections.find((s) => s.id === s1)!.spellIds).toEqual(['a', 'c']);
+    expect(store.getSpellbook(bookId)!.sections.find((s) => s.id === s2)!.spellIds).toEqual(['x', 'b', 'd']);
+
+    store.addSpellsToSection(bookId, s1, ['x']);
+    store.moveSpellsToSection(bookId, s1, ['x', 'a'], s2);
+    expect(store.getSpellbook(bookId)!.sections.find((s) => s.id === s1)!.spellIds).toEqual(['c']);
+    expect(store.getSpellbook(bookId)!.sections.find((s) => s.id === s2)!.spellIds).toEqual(['x', 'b', 'd', 'a']);
+  });
 });
