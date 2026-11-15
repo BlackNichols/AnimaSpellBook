@@ -223,4 +223,24 @@ export class SpellbookStore {
     this.notify();
     return { deleted: true, deletedActive: wasActive };
   }
+
+  addSpellsToSection(bookId: string, sectionId: string, spellIds: string[]): boolean {
+    const book = this.getSpellbook(bookId);
+    if (!book) return false;
+    const section = book.sections.find((s) => s.id === sectionId);
+    if (!section) return false;
+    const existing = new Set(section.spellIds);
+    let added = false;
+    for (const sid of spellIds) {
+      if (existing.has(sid)) continue;
+      section.spellIds.push(sid);
+      existing.add(sid);
+      added = true;
+    }
+    if (added) {
+      this.persist();
+      this.notify();
+    }
+    return true;
+  }
 }
