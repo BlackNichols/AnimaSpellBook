@@ -336,4 +336,55 @@ export class SpellbookStore {
     this.notify();
     return true;
   }
+
+  reorderSpellInSection(
+    bookId: string,
+    sectionId: string,
+    spellId: string,
+    newPositionOneBased: number
+  ): boolean {
+    const book = this.getSpellbook(bookId);
+    if (!book) return false;
+    const section = book.sections.find((s) => s.id === sectionId);
+    if (!section) return false;
+    const from = section.spellIds.indexOf(spellId);
+    if (from === -1) return false;
+    const [sid] = section.spellIds.splice(from, 1);
+    if (sid === undefined) return false;
+    const clamped = Math.max(1, Math.min(section.spellIds.length + 1, newPositionOneBased));
+    section.spellIds.splice(clamped - 1, 0, sid);
+    this.persist();
+    this.notify();
+    return true;
+  }
+
+  moveSpellsToSection(
+    bookId: string,
+    fromSectionId: string,
+    spellIds: string[],
+    toSectionId: string
+  ): boolean {
+    const book = this.getSpellbook(bookId);
+    if (!book) return false;
+    const from = book.sections.find((s) => s.id === fromSectionId);
+    const to = book.sections.find((s) => s.id === toSectionId);
+    if (!from || !to) return false;
+    const toMove = new Set(spellIds);
+    const remaining: string[] = [];
+    const movingOrdered: string[] = [];
+    for (const sid of from.spellIds) {
+      if (toMove.has(sid)) movingOrdered.push(sid);
+      else remaining.push(sid);
+    }
+    from.spellIds = remaining;
+    const existing = new Set(to.spellIds);
+    for (const sid of movingOrdered) {
+      if (existing.has(sid)) continue;
+      to.spellIds.push(sid);
+      existing.add(sid);
+    }
+    this.persist();
+    this.notify();
+    return true;
+  }
 }
