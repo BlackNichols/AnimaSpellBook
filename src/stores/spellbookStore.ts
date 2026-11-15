@@ -243,4 +243,31 @@ export class SpellbookStore {
     }
     return true;
   }
+
+  createNamedSection(
+    bookId: string,
+    name: string,
+    opts: { placement: 'first' | 'last' | { index: number } }
+  ): string | null {
+    const book = this.getSpellbook(bookId);
+    if (!book) return null;
+    if (book.sections.length === 1 && book.sections[0]!.name === null) {
+      book.sections[0]!.name = name;
+      this.persist();
+      this.notify();
+      return book.sections[0]!.id;
+    }
+    const section: Section = { id: uuid(), name, spellIds: [] };
+    let idx = book.sections.length;
+    if (opts.placement === 'first') idx = 0;
+    else if (opts.placement === 'last') idx = book.sections.length;
+    else {
+      const oneBased = opts.placement.index;
+      idx = Math.max(0, Math.min(book.sections.length, oneBased - 1));
+    }
+    book.sections.splice(idx, 0, section);
+    this.persist();
+    this.notify();
+    return section.id;
+  }
 }
