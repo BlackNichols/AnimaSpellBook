@@ -225,14 +225,19 @@ const appShell = {
     const options = book.sections
       .map((s, i) => `${i + 1}: ${s.name ?? 'Default'}`)
       .join('\n');
-    const ans = window.prompt(`Move to which section?\n${options}`, '1');
+    const ans = window.prompt(`Move to which section?\n${options}\nEnter number, or "n" for new section:`, '1');
     if (ans === null) return;
-    const idx = parseInt(ans, 10);
-    if (Number.isNaN(idx)) return;
-    const clamped = Math.max(1, Math.min(book.sections.length, idx));
-    const target = book.sections[clamped - 1];
-    if (!target || target.id === section.id) return;
-    spellbookStore.moveSpellsToSection(book.id, section.id, spellIds, target.id);
+    let targetId: string | null = null;
+    if (ans.toLowerCase() === 'n') {
+      targetId = this.promptCreateSectionForBook(book.id);
+    } else {
+      const idx = parseInt(ans, 10);
+      if (Number.isNaN(idx)) return;
+      const clamped = Math.max(1, Math.min(book.sections.length, idx));
+      targetId = book.sections[clamped - 1]?.id ?? null;
+    }
+    if (!targetId || targetId === section.id) return;
+    spellbookStore.moveSpellsToSection(book.id, section.id, spellIds, targetId);
   },
   async init() {
     spellbookStore.load();
