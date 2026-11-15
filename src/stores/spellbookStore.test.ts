@@ -139,4 +139,21 @@ describe('SpellbookStore - add spells to section (Chunk 3)', () => {
     store.addSpellsToSection(bookId, sectionId, ['s2', 's4', 's1']);
     expect(store.getSpellbook(bookId)!.sections[0]!.spellIds).toEqual(['s1', 's2', 's3', 's4']);
   });
+
+  it('creating the first named section converts the default unnamed section in place (moves all spells into it with chosen name)', () => {
+    const store = new SpellbookStore();
+    store.load();
+    const bookId = store.createSpellbook();
+    const book = store.getSpellbook(bookId)!;
+    const defaultId = book.sections[0]!.id;
+    store.addSpellsToSection(bookId, defaultId, ['a', 'b']);
+
+    const newId = store.createNamedSection(bookId, 'Combat', { placement: 'last' });
+    const updated = store.getSpellbook(bookId)!;
+    expect(updated.sections).toHaveLength(1);
+    expect(updated.sections[0]!.id).toBe(defaultId);
+    expect(updated.sections[0]!.name).toBe('Combat');
+    expect(updated.sections[0]!.spellIds).toEqual(['a', 'b']);
+    expect(newId).toBe(defaultId);
+  });
 });
