@@ -188,6 +188,28 @@ const appShell = {
     if (Number.isNaN(n)) return;
     spellbookStore.reorderSection(book.id, section.id, n);
   },
+  deleteSectionPrompt(section: { id: string; name: string | null }) {
+    const book = this.activeSpellbook;
+    if (!book) return;
+    const named = book.sections.filter((s) => s.name !== null);
+    if (named.length <= 1) {
+      spellbookStore.deleteSection(book.id, section.id, { mode: 'deleteSpells' });
+      return;
+    }
+    const move = window.confirm('Move spells to another section? (OK = move, Cancel = delete spells with section)');
+    if (move) {
+      const others = book.sections.filter((s) => s.id !== section.id);
+      const options = others.map((s, i) => `${i + 1}: ${s.name ?? 'Default'}`).join('\n');
+      const ans = window.prompt(`Move spells to which section?\n${options}`, '1');
+      if (ans === null) return;
+      const idx = parseInt(ans, 10);
+      const clamped = Math.max(1, Math.min(others.length, Number.isNaN(idx) ? 1 : idx));
+      const target = others[clamped - 1]!;
+      spellbookStore.deleteSection(book.id, section.id, { mode: 'move', targetSectionId: target.id });
+    } else {
+      spellbookStore.deleteSection(book.id, section.id, { mode: 'deleteSpells' });
+    }
+  },
   async init() {
     spellbookStore.load();
     await spellStore.loadSpells();

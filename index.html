@@ -341,6 +341,7 @@
                             <button type="button" class="btn btn-secondary btn-sm" @click="renameSectionPrompt(section)">Rename section</button>
                             <button type="button" class="btn btn-secondary btn-sm" @click="reorderSectionPrompt(section)">Section position</button>
                             <button type="button" class="btn btn-secondary btn-sm" @click="clearSectionAction(section)">Clear section</button>
+                            <button type="button" class="btn btn-secondary btn-sm" @click="deleteSectionPrompt(section)">Delete section</button>
                           </div>
                         </div>
                         <template x-if="section.spellIds.length === 0">
