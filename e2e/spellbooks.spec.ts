@@ -200,6 +200,26 @@ test('deleting a non-last named section can move its spells to a chosen existing
   await expect(page.locator('.spellbook-spell-item')).toHaveCount(1);
 });
 
+test('deleting the only named section from editor converts it back to default unnamed section preserving its spells', async ({ page }) => {
+  await page.goto('/spelllist');
+  await page.locator('[data-testid^="add-spell-"]').first().click();
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
+  await expect(page.locator('.spellbook-spell-item')).toHaveCount(1);
+
+  const answers = ['Combat', 'last'];
+  page.on('dialog', (d) => d.accept(answers.shift() ?? ''));
+  await page.getByTestId('add-section').click();
+  await expect(page.locator('.spellbook-section-title').first()).toHaveText('Combat');
+  await expect(page.locator('.spellbook-spell-item')).toHaveCount(1);
+
+  page.removeAllListeners('dialog');
+  await page.getByRole('button', { name: 'Delete section' }).first().click();
+
+  await expect(page.locator('.spellbook-section')).toHaveCount(1);
+  await expect(page.locator('.spellbook-section-title').first()).toHaveText('Default section');
+  await expect(page.locator('.spellbook-spell-item')).toHaveCount(1);
+});
+
 test('reordering a spell within a section by 1-based position updates spell order', async ({ page }) => {
   await page.goto('/spelllist');
   await expect(page.locator('[data-testid^="add-spell-"]').first()).toBeVisible();
