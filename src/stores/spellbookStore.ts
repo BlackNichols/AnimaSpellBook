@@ -329,7 +329,11 @@ export class SpellbookStore {
         }
       }
     }
-    if (book.sections.length === 1 && book.sections[0]!.name !== null) {
+    if (book.sections.length === 0) {
+      // Deleted the only section: recreate default unnamed section preserving its spells.
+      book.sections.push({ id: uuid(), name: null, spellIds: [...section.spellIds] });
+    } else if (book.sections.length === 1 && book.sections[0]!.name !== null) {
+      // Deleting the last named section among multiple: remaining becomes the default unnamed section.
       book.sections[0]!.name = null;
     }
     this.persist();
