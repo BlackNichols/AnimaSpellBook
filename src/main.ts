@@ -210,6 +210,15 @@ const appShell = {
       spellbookStore.deleteSection(book.id, section.id, { mode: 'deleteSpells' });
     }
   },
+  reorderSpellPrompt(section: { id: string }, spellId: string) {
+    const book = this.activeSpellbook;
+    if (!book) return;
+    const ans = window.prompt('New 1-based spell position:', '1');
+    if (ans === null) return;
+    const n = parseInt(ans, 10);
+    if (Number.isNaN(n)) return;
+    spellbookStore.reorderSpellInSection(book.id, section.id, spellId, n);
+  },
   async init() {
     spellbookStore.load();
     await spellStore.loadSpells();
