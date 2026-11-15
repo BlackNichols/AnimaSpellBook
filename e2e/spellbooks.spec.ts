@@ -271,3 +271,31 @@ test('moving a single spell to another existing section appends it to end of tar
   await expect(beta.locator('.spellbook-spell-item')).toHaveCount(1);
   await expect(beta.locator('.spellbook-spell-item .spellbook-spell-name').nth(0)).toHaveText(first);
 });
+
+test('moving a single spell to a newly created named section with chosen placement creates section and appends spell to end', async ({ page }) => {
+  await page.goto('/spelllist');
+  await page.locator('[data-testid^="add-spell-"]').nth(0).click();
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
+  await page.getByRole('button', { name: 'Back to spell list' }).click();
+  await page.locator('[data-testid^="add-spell-"]').nth(1).click();
+  await expect(page.locator('.spellbook-spell-item')).toHaveCount(2);
+
+  const answers = ['Alpha', 'last'];
+  page.on('dialog', (d) => d.accept(answers.shift() ?? ''));
+  await page.getByTestId('add-section').click();
+  await expect(page.locator('.spellbook-section')).toHaveCount(1);
+
+  const alpha = page.locator('.spellbook-section').nth(0);
+  const first = (await alpha.locator('.spellbook-spell-item .spellbook-spell-name').nth(0).textContent()) ?? '';
+
+  page.removeAllListeners('dialog');
+  const moveAnswers = ['n', 'Beta', 'last'];
+  page.on('dialog', (d) => d.accept(moveAnswers.shift() ?? ''));
+  await alpha.getByRole('button', { name: 'Move spell' }).nth(0).click();
+
+  await expect(page.locator('.spellbook-section')).toHaveCount(2);
+  await expect(page.locator('.spellbook-section-title').nth(0)).toHaveText('Alpha');
+  await expect(page.locator('.spellbook-section-title').nth(1)).toHaveText('Beta');
+  await expect(alpha.locator('.spellbook-spell-item')).toHaveCount(1);
+  await expect(page.locator('.spellbook-section').nth(1).locator('.spellbook-spell-item .spellbook-spell-name').nth(0)).toHaveText(first);
+});
