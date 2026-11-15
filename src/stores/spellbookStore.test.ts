@@ -120,3 +120,23 @@ describe('SpellbookStore - persistence envelope and core management', () => {
     expect(notifications).toBe(0);
     expect(localStorage.getItem(STORAGE_KEY)).toBe(rawAfterCreate);
   });
+
+describe('SpellbookStore - add spells to section (Chunk 3)', () => {
+  beforeEach(() => {
+    resetStorage();
+  });
+
+  it('appends given spell IDs to end of target section in order and skips duplicates already in that section', () => {
+    const store = new SpellbookStore();
+    store.load();
+    const bookId = store.createSpellbook();
+    const book = store.getSpellbook(bookId)!;
+    const sectionId = book.sections[0]!.id;
+
+    store.addSpellsToSection(bookId, sectionId, ['s1', 's2', 's1', 's3', 's2']);
+    expect(store.getSpellbook(bookId)!.sections[0]!.spellIds).toEqual(['s1', 's2', 's3']);
+
+    store.addSpellsToSection(bookId, sectionId, ['s2', 's4', 's1']);
+    expect(store.getSpellbook(bookId)!.sections[0]!.spellIds).toEqual(['s1', 's2', 's3', 's4']);
+  });
+});
