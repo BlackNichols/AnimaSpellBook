@@ -29,6 +29,19 @@ test('preserves and restores list filter state across navigation away and back t
   await expect(page.locator('#spell-search')).toHaveValue('fire');
 });
 
+test('spell list view provides explicit navigation to /spellbooks and preserves filters on return', async ({ page }) => {
+  await page.goto('/spelllist?q=fire&maintenance=daily');
+  await expect(page.locator('#spell-search')).toHaveValue('fire');
+  const nav = page.getByTestId('nav-spellbooks');
+  await expect(nav).toBeVisible();
+  await nav.click();
+  await expect(page).toHaveURL(/\/spellbooks$/);
+  await expect(page.getByRole('heading', { name: 'Spellbooks', exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Back to spell list' }).first().click();
+  await expect(page).toHaveURL(/\/spelllist\?q=fire&maintenance=daily/);
+  await expect(page.locator('#spell-search')).toHaveValue('fire');
+});
+
 test('deep-link subset params on /spelllist reset omitted filters to defaults', async ({ page }) => {
   await page.goto('/spelllist?q=fire&maintenance=daily');
   await expect(page.locator('#spell-search')).toHaveValue('fire');
