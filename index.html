@@ -21,6 +21,13 @@
           x-text="sidebarOpen ? 'Hide filters' : 'Show filters'"
         ></button>
         <h1>Anima Spellbook</h1>
+        <button
+          type="button"
+          class="btn btn-secondary btn-sm"
+          data-testid="nav-spellbooks"
+          x-show="isSpellListView"
+          @click="goToSpellbooks()"
+        >Spellbooks</button>
       </header>
 
       <main class="main-layout">
