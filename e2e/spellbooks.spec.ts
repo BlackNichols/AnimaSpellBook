@@ -103,6 +103,10 @@ test('adding all filtered spells from /spelllist lets user choose to stay on /sp
 test('creating first named section in editor converts default section in place preserving spells', async ({ page }) => {
   await page.goto('/spelllist');
   await page.locator('[data-testid^="add-spell-"]').first().click();
+  await expect(page).toHaveURL(/\/spelllist$/);
+  await page.getByTestId('nav-spellbooks').click();
+  await expect(page).toHaveURL(/\/spellbooks$/);
+  await page.getByRole('link', { name: 'Spellbook 1' }).click();
   await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
   await expect(page.locator('.spellbook-spell-item')).toHaveCount(1);
 
@@ -118,6 +122,10 @@ test('creating first named section in editor converts default section in place p
 test('adding a spell from /spelllist when named sections exist prompts for target section and adds to chosen existing section', async ({ page }) => {
   await page.goto('/spelllist');
   await page.locator('[data-testid^="add-spell-"]').nth(0).click();
+  await expect(page).toHaveURL(/\/spelllist$/);
+  await page.getByTestId('nav-spellbooks').click();
+  await expect(page).toHaveURL(/\/spellbooks$/);
+  await page.getByRole('link', { name: 'Spellbook 1' }).click();
   await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
 
   const answers = ['Combat', 'last', 'Utility', 'last', '2'];
@@ -130,6 +138,10 @@ test('adding a spell from /spelllist when named sections exist prompts for targe
   await page.getByRole('button', { name: 'Back to spell list' }).click();
   await expect(page).toHaveURL(/\/spelllist$/);
   await page.locator('[data-testid^="add-spell-"]').nth(1).click();
+  await expect(page).toHaveURL(/\/spelllist$/);
+  await page.getByTestId('nav-spellbooks').click();
+  await expect(page).toHaveURL(/\/spellbooks$/);
+  await page.getByRole('link', { name: 'Spellbook 1' }).click();
 
   await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
   const sections = page.locator('.spellbook-section');
@@ -140,6 +152,10 @@ test('adding a spell from /spelllist when named sections exist prompts for targe
 test('renaming a named section from spellbook editor updates its header while keeping spells', async ({ page }) => {
   await page.goto('/spelllist');
   await page.locator('[data-testid^="add-spell-"]').first().click();
+  await expect(page).toHaveURL(/\/spelllist$/);
+  await page.getByTestId('nav-spellbooks').click();
+  await expect(page).toHaveURL(/\/spellbooks$/);
+  await page.getByRole('link', { name: 'Spellbook 1' }).click();
   await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
 
   const answers = ['Combat', 'last'];
@@ -159,6 +175,10 @@ test('renaming a named section from spellbook editor updates its header while ke
 test('clearing a named section removes only its spells and leaves the empty section visible', async ({ page }) => {
   await page.goto('/spelllist');
   await page.locator('[data-testid^="add-spell-"]').first().click();
+  await expect(page).toHaveURL(/\/spelllist$/);
+  await page.getByTestId('nav-spellbooks').click();
+  await expect(page).toHaveURL(/\/spellbooks$/);
+  await page.getByRole('link', { name: 'Spellbook 1' }).click();
   await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
 
   const answers = ['Combat', 'last'];
@@ -179,6 +199,10 @@ test('clearing a named section removes only its spells and leaves the empty sect
 test('reordering a named section by 1-based position updates section order', async ({ page }) => {
   await page.goto('/spelllist');
   await page.locator('[data-testid^="add-spell-"]').first().click();
+  await expect(page).toHaveURL(/\/spelllist$/);
+  await page.getByTestId('nav-spellbooks').click();
+  await expect(page).toHaveURL(/\/spellbooks$/);
+  await page.getByRole('link', { name: 'Spellbook 1' }).click();
   await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
 
   const answers = ['Combat', 'last', 'Utility', 'last'];
@@ -199,6 +223,10 @@ test('reordering a named section by 1-based position updates section order', asy
 test('deleting a non-last named section can move its spells to a chosen existing section', async ({ page }) => {
   await page.goto('/spelllist');
   await page.locator('[data-testid^="add-spell-"]').first().click();
+  await expect(page).toHaveURL(/\/spelllist$/);
+  await page.getByTestId('nav-spellbooks').click();
+  await expect(page).toHaveURL(/\/spellbooks$/);
+  await page.getByRole('link', { name: 'Spellbook 1' }).click();
   await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
 
   const answers = ['Combat', 'last', 'Utility', 'last'];
@@ -223,6 +251,10 @@ test('deleting a non-last named section can move its spells to a chosen existing
 test('deleting the only named section from editor converts it back to default unnamed section preserving its spells', async ({ page }) => {
   await page.goto('/spelllist');
   await page.locator('[data-testid^="add-spell-"]').first().click();
+  await expect(page).toHaveURL(/\/spelllist$/);
+  await page.getByTestId('nav-spellbooks').click();
+  await expect(page).toHaveURL(/\/spellbooks$/);
+  await page.getByRole('link', { name: 'Spellbook 1' }).click();
   await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
   await expect(page.locator('.spellbook-spell-item')).toHaveCount(1);
 
@@ -244,10 +276,13 @@ test('reordering a spell within a section by 1-based position updates spell orde
   await page.goto('/spelllist');
   await expect(page.locator('[data-testid^="add-spell-"]').first()).toBeVisible();
   await page.locator('[data-testid^="add-spell-"]').nth(0).click();
-  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
-  await expect(page.locator('.spellbook-spell-item')).toHaveCount(1);
-  await page.getByRole('button', { name: 'Back to spell list' }).click();
+  await expect(page).toHaveURL(/\/spelllist$/);
   await page.locator('[data-testid^="add-spell-"]').nth(1).click();
+  await expect(page).toHaveURL(/\/spelllist$/);
+  await page.getByTestId('nav-spellbooks').click();
+  await expect(page).toHaveURL(/\/spellbooks$/);
+  await page.getByRole('link', { name: 'Spellbook 1' }).click();
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
   await expect(page.locator('.spellbook-spell-item')).toHaveCount(2);
 
   const items = page.locator('.spellbook-spell-item');
@@ -265,9 +300,13 @@ test('moving a single spell to another existing section appends it to end of tar
   await page.goto('/spelllist');
   await expect(page.locator('[data-testid^="add-spell-"]').first()).toBeVisible();
   await page.locator('[data-testid^="add-spell-"]').nth(0).click();
-  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
-  await page.getByRole('button', { name: 'Back to spell list' }).click();
+  await expect(page).toHaveURL(/\/spelllist$/);
   await page.locator('[data-testid^="add-spell-"]').nth(1).click();
+  await expect(page).toHaveURL(/\/spelllist$/);
+  await page.getByTestId('nav-spellbooks').click();
+  await expect(page).toHaveURL(/\/spellbooks$/);
+  await page.getByRole('link', { name: 'Spellbook 1' }).click();
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
   await expect(page.locator('.spellbook-spell-item')).toHaveCount(2);
 
   const answers = ['Alpha', 'last', 'Beta', 'last'];
@@ -295,9 +334,13 @@ test('moving a single spell to another existing section appends it to end of tar
 test('moving a single spell to a newly created named section with chosen placement creates section and appends spell to end', async ({ page }) => {
   await page.goto('/spelllist');
   await page.locator('[data-testid^="add-spell-"]').nth(0).click();
-  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
-  await page.getByRole('button', { name: 'Back to spell list' }).click();
+  await expect(page).toHaveURL(/\/spelllist$/);
   await page.locator('[data-testid^="add-spell-"]').nth(1).click();
+  await expect(page).toHaveURL(/\/spelllist$/);
+  await page.getByTestId('nav-spellbooks').click();
+  await expect(page).toHaveURL(/\/spellbooks$/);
+  await page.getByRole('link', { name: 'Spellbook 1' }).click();
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
   await expect(page.locator('.spellbook-spell-item')).toHaveCount(2);
 
   const answers = ['Alpha', 'last'];
@@ -323,11 +366,15 @@ test('moving a single spell to a newly created named section with chosen placeme
 test('bulk moving selected spells to another existing section appends them to end of target and removes them from source', async ({ page }) => {
   await page.goto('/spelllist');
   await page.locator('[data-testid^="add-spell-"]').nth(0).click();
-  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
-  await page.getByRole('button', { name: 'Back to spell list' }).click();
+  await expect(page).toHaveURL(/\/spelllist$/);
   await page.locator('[data-testid^="add-spell-"]').nth(1).click();
-  await page.getByRole('button', { name: 'Back to spell list' }).click();
+  await expect(page).toHaveURL(/\/spelllist$/);
   await page.locator('[data-testid^="add-spell-"]').nth(2).click();
+  await expect(page).toHaveURL(/\/spelllist$/);
+  await page.getByTestId('nav-spellbooks').click();
+  await expect(page).toHaveURL(/\/spellbooks$/);
+  await page.getByRole('link', { name: 'Spellbook 1' }).click();
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
   await expect(page.locator('.spellbook-spell-item')).toHaveCount(3);
 
   const answers = ['Alpha', 'last', 'Beta', 'last'];
@@ -357,9 +404,13 @@ test('bulk moving selected spells to another existing section appends them to en
 test('deleting a non-last named section and choosing to delete its spells removes only that section and its spells', async ({ page }) => {
   await page.goto('/spelllist');
   await page.locator('[data-testid^="add-spell-"]').nth(0).click();
-  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
-  await page.getByRole('button', { name: 'Back to spell list' }).click();
+  await expect(page).toHaveURL(/\/spelllist$/);
   await page.locator('[data-testid^="add-spell-"]').nth(1).click();
+  await expect(page).toHaveURL(/\/spelllist$/);
+  await page.getByTestId('nav-spellbooks').click();
+  await expect(page).toHaveURL(/\/spellbooks$/);
+  await page.getByRole('link', { name: 'Spellbook 1' }).click();
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
   await expect(page.locator('.spellbook-spell-item')).toHaveCount(2);
 
   const answers = ['Combat', 'last', 'Utility', 'last'];
@@ -394,6 +445,7 @@ test('adding all filtered spells snapshots displayed results and is unaffected b
     return w.spellStore?.filteredSpells.map((s) => s.name) ?? [];
   });
 
+  page.once('dialog', (d) => d.accept());
   await page.getByTestId('add-all-filtered').click();
   await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
   await expect(page.locator('.spellbook-spell-item')).toHaveCount(displayedCount);
