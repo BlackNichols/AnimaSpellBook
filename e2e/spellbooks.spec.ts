@@ -58,25 +58,45 @@ test('delete active spellbook navigates to /spellbooks empty; deep-link/refresh 
   await expect(page).toHaveURL(/\/spelllist$/);
 });
 
-test('adding an individual spell from /spelllist with no spellbooks creates default active spellbook and adds it to default section', async ({ page }) => {
+test('adding an individual spell from /spelllist with no spellbooks creates default active spellbook, adds it to default section, and stays on /spelllist', async ({ page }) => {
   await page.goto('/spelllist');
   await expect(page.locator('[data-testid^="add-spell-"]').first()).toBeVisible();
   await page.locator('[data-testid^="add-spell-"]').first().click();
+  await expect(page).toHaveURL(/\/spelllist$/);
+  await page.getByTestId('nav-spellbooks').click();
+  await expect(page).toHaveURL(/\/spellbooks$/);
+  await page.getByRole('link', { name: 'Spellbook 1' }).click();
   await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
   await expect(page.getByLabel('Spellbook name')).toHaveValue('Spellbook 1');
   await expect(page.locator('.spellbook-section-title').first()).toHaveText('Default section');
   await expect(page.locator('.spellbook-spell-item')).toHaveCount(1);
 });
 
-test('adding all filtered spells from /spelllist snapshots displayed results and adds to default section (creating spellbook when none exists)', async ({ page }) => {
+test('adding all filtered spells from /spelllist snapshots displayed results, adds to default section (creating spellbook when none exists), and lets user choose to navigate', async ({ page }) => {
   await page.goto('/spelllist?q=Create%20Light');
   await expect(page.locator('.spell-row').first()).toBeVisible();
   const displayedCount = await page.locator('.spell-row').count();
   expect(displayedCount).toBeGreaterThan(0);
+  page.once('dialog', (d) => d.accept());
   await page.getByTestId('add-all-filtered').click();
   await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
   await expect(page.getByLabel('Spellbook name')).toHaveValue('Spellbook 1');
   await expect(page.locator('.spellbook-section-title').first()).toHaveText('Default section');
+  await expect(page.locator('.spellbook-spell-item')).toHaveCount(displayedCount);
+});
+
+test('adding all filtered spells from /spelllist lets user choose to stay on /spelllist', async ({ page }) => {
+  await page.goto('/spelllist?q=Create%20Light');
+  await expect(page.locator('.spell-row').first()).toBeVisible();
+  const displayedCount = await page.locator('.spell-row').count();
+  expect(displayedCount).toBeGreaterThan(0);
+  page.once('dialog', (d) => d.dismiss());
+  await page.getByTestId('add-all-filtered').click();
+  await expect(page).toHaveURL(/\/spelllist\?q=Create%20Light/);
+  await page.getByTestId('nav-spellbooks').click();
+  await expect(page).toHaveURL(/\/spellbooks/);
+  await page.getByRole('link', { name: 'Spellbook 1' }).click();
+  await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
   await expect(page.locator('.spellbook-spell-item')).toHaveCount(displayedCount);
 });
 
