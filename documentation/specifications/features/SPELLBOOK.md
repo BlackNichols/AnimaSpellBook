@@ -41,6 +41,11 @@ Allow users to build and manage spellbooks containing spells their character can
 - **Placement/order:** Added spells are appended to the end of the target section in the current displayed/filtered order.
 - **Snapshot:** Adding “all filtered/displayed spells” snapshots the current results into the spellbook; later filter changes do not affect spells already added.
 
+### 4.4 Post-add navigation
+
+- **Single spell:** After adding an individual spell, the user stays on the spell list (no redirect).
+- **All filtered/displayed spells:** After adding all filtered/displayed spells, the user must be able to choose whether to stay on the spell list or navigate to the target spellbook view. This applies whether the target spellbook already existed or was created by the add action.
+
 ## 5. Sections
 
 ### 5.1 Default (unnamed) section
@@ -128,6 +133,7 @@ Sections are ordered relative to each other. The user reorders sections by editi
 ## 10. Key acceptance behaviors
 
 - Adding spells when no spellbook exists creates a default-named active spellbook and adds the spells.
+- After adding an individual spell, the user stays on the spell list. After adding all filtered/displayed spells, the user can choose to stay on the spell list or navigate to the target spellbook view.
 - Creating the first named section converts the default section into it, moving all spells inside.
 - Deleting the last named section moves its spells into the unnamed default section (no header).
 - Deleting a non-last named section requires choosing to delete contained spells or move them to another section.
