@@ -156,6 +156,21 @@ describe('SpellbookStore - add spells to section (Chunk 3)', () => {
     expect(store.getSpellbook(bookId)!.sections.map((s) => s.name)).toEqual(['C', 'B', 'A']);
   });
 
+  it('deleteSection with invalid move target returns false and does not mutate', () => {
+    const store = new SpellbookStore();
+    store.load();
+    const bookId = store.createSpellbook('Guard');
+    const defaultId = store.getSpellbook(bookId)!.sections[0]!.id;
+    store.addSpellsToSection(bookId, defaultId, ['a']);
+    const idB = store.createNamedSection(bookId, 'Beta', { placement: 'last' })!;
+    store.addSpellsToSection(bookId, idB, ['b']);
+    const before = JSON.stringify(store.getSpellbook(bookId)!.sections);
+
+    const ok = store.deleteSection(bookId, idB, { mode: 'move', targetSectionId: 'missing' });
+    expect(ok).toBe(false);
+    expect(JSON.stringify(store.getSpellbook(bookId)!.sections)).toBe(before);
+  });
+
   it('converts default on first named section, supports placement, rename, clear, and delete behaviors', () => {
     const store = new SpellbookStore();
     store.load();
