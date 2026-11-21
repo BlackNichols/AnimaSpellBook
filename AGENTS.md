@@ -46,13 +46,9 @@ Before claiming any task complete, run the verification gate (use `/verify`) and
 
 ## Git-Backed TDD Enforcement Plugin (policy)
 
-This repo loads the local plugin `../kilo-tdd-plugin/src/plugin.ts` via `kilo.json`. Plugin settings live in plugin-owned `.kilo/tdd.json` (preferred; avoids host `kilo.json` schema rejection of unknown keys). The plugin enforces a Git-backed RED → GREEN → commit TDD cycle through custom tools and `tool.execute.before` hooks. For the operational TDD cycle and tool usage during chunk implementation, follow `/implement` (step 4) and `/fix` (step 4); see `../kilo-tdd-plugin/README.md` for full details.
+This repo loads the local plugin `../kilo-tdd-plugin/src/plugin.ts` via `kilo.json` (config: `.kilo/tdd.json`). The plugin enforces the RED → GREEN → commit cycle through `tdd_*` tools and `tool.execute.before` hooks.
 
-### Guardrails & limitations
-
-- **Do not bypass or exploit enforcement:** Actively bypassing plugin gaps (e.g. unhooked paths, shell obfuscation, alternate tools) is forbidden. If the plugin blocks or impedes legitimate work, report the issue/limitation to the user and wait for their decision; do not work around it unilaterally.
-- **Enforcement scope (tool-boundary only):** hooks apply to Kilo tool calls. Writes outside intercepted paths, unhooked subagent/MCP contexts, or novel shell constructs may evade detection; `task`/likely MCP tool names are blocked fail-closed during active cycles but this is not a provable seal.
-- **Blocked/fail-closed behavior:** production edits are blocked in `RED_TEST`/`TEST_CORRECTION`; edits to RED-protected test files are blocked during implementation/verification/assess; direct git mutations via shell are blocked during an active cycle; many unscoped/opaque shell writes and unparseable patches fail-closed.
-- **GREEN coverage & attribution:** `tdd_verify_green` may be called multiple times (e.g. Vitest + Playwright); `tdd_commit_green` requires GREEN coverage for every required RED test file (test-classified RED baseline). Pass `testFiles` and/or use scoped commands (or structured reports) so runs are attributable to the intended RED tests; unscoped runs without per-file evidence fail closed.
-- **Correction flow:** `tdd_revert_implementation` snapshots implementation as a detached commit (no stash) then reverts to RED; after `tdd_amend_red`, restore saved implementation with `tdd_restore_implementation` (3-way apply, conflict-aborted with snapshot retained) before re-verifying GREEN.
-- **Git safety:** plugin git mutations use explicit file paths (no `git add .`, no `git reset --hard`). Use `tdd_status` to inspect cycle state, config source, required/covered/missing GREEN coverage, and snapshots.
+- **How to start:** when a TDD cycle is required, begin with `tdd_start {behavior}`. Preconditions: clean git working tree (excluding `.kilo/**`), no in-progress git operation, and no active incomplete cycle.
+- **Follow plugin feedback:** every `tdd_*` response and enforcement error includes `## TDD Guidance` with current state, allowed next commands, forbidden actions, and rules. Treat it as the source of truth for progressing the cycle; use `tdd_status` to re-orient.
+- **Do not bypass enforcement:** do not work around hook/tool blocks via shell obfuscation, alternate tools, or unhooked paths. If blocked on legitimate work, report the limitation and wait for the user's decision.
+- **Limits:** enforcement is tool-boundary only (not a provable sandbox). See `../kilo-tdd-plugin/README.md` for details.
