@@ -114,11 +114,10 @@ const appShell = {
     let id = spellbookStore.activeSpellbookId;
     if (!id || !spellbookStore.getSpellbook(id)) {
       id = spellbookStore.createSpellbook();
-      router.navigate(`/spellbooks/${id}`);
     }
     return id;
   },
-  addSpellsFromList(spellIds: string[]) {
+  addSpellsFromList(spellIds: string[], options?: { navigateToBook?: boolean }) {
     if (spellIds.length === 0) return;
     const bookId = this.ensureActiveSpellbookForAdd();
     const book = spellbookStore.getSpellbook(bookId);
@@ -128,11 +127,11 @@ const appShell = {
     if (named.length === 0) {
       targetId = book.sections[0]?.id ?? null;
     } else {
-      const options = book.sections
+      const optionsList = book.sections
         .map((s, i) => `${i + 1}: ${s.name ?? 'Default'}`)
         .join('\n');
       const ans = window.prompt(
-        `Add to which section?\n${options}\nEnter number, or "n" to create a new named section:`,
+        `Add to which section?\n${optionsList}\nEnter number, or "n" to create a new named section:`,
         '1'
       );
       if (ans === null) return;
@@ -149,7 +148,7 @@ const appShell = {
     }
     if (targetId) {
       spellbookStore.addSpellsToSection(bookId, targetId, spellIds);
-      if (routeState.view === 'spelllist') router.navigate(`/spellbooks/${bookId}`);
+      if (options?.navigateToBook) router.navigate(`/spellbooks/${bookId}`);
     }
   },
   promptCreateSectionForBook(bookId: string): string | null {
@@ -297,7 +296,9 @@ document.addEventListener('add-spell-to-spellbook', ((e: CustomEvent<{ spellId: 
 
 document.addEventListener('add-all-filtered-spells', () => {
   const ids = spellStore.filteredSpells.map((s) => s.id);
-  appShell.addSpellsFromList(ids);
+  if (ids.length === 0) return;
+  const navigateToBook = window.confirm('Spells added. Open spellbook? (OK = open, Cancel = stay on spell list)');
+  appShell.addSpellsFromList(ids, { navigateToBook });
 });
 
 declare global {
