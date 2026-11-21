@@ -307,6 +307,12 @@ export class SpellbookStore {
     return true;
   }
 
+  /**
+   * Delete a section. For non-last named deletions, caller chooses move/deleteSpells.
+   * If the deleted section was the last named section, remaining becomes default unnamed
+   * and its spells are preserved (spec §5.1) regardless of mode.
+   * Returns false and does not mutate when mode is 'move' and targetSectionId is invalid.
+   */
   deleteSection(
     bookId: string,
     sectionId: string,
@@ -316,6 +322,10 @@ export class SpellbookStore {
     if (!book) return false;
     const idx = book.sections.findIndex((s) => s.id === sectionId);
     if (idx === -1) return false;
+    if (opts.mode === 'move') {
+      const target = book.sections.find((s) => s.id === opts.targetSectionId);
+      if (!target) return false;
+    }
     const [section] = book.sections.splice(idx, 1);
     if (!section) return false;
     if (opts.mode === 'move') {
