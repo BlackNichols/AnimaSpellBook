@@ -11,7 +11,7 @@ Before claiming any task complete, run the verification gate (use `/verify`) and
 | Change type | Required checks |
 |---|---|
 | Code/config/runtime changes | `npm run lint`, `npm test -- --run`, `npm run build` must all pass |
-| UI, view, flow, routing, URL/navigation, asset/base, or serving changes | All of the above, plus `npm run e2e` (Playwright). Deep-link/refresh/SPA-fallback and asset/base behavior on nested routes (e.g. `/spellbooks/:id`) must be covered by automated E2E tests; missing coverage for affected behavior is a test gap to fix, not a manual substitute. If E2E cannot run, state why explicitly and treat the gate as incomplete. |
+| UI, view, flow, routing, URL/navigation, asset/base, or serving changes | All of the above, plus `npm run e2e` (Playwright, preview/build gate). Deep-link/refresh/SPA-fallback and asset/base behavior on nested routes (e.g. `/spellbooks/:id`) must be covered by automated E2E tests; missing coverage for affected behavior is a test gap to fix, not a manual substitute. During TDD iteration, `npm run e2e:dev -- <affected spec>` may be used for fast red/green feedback; the final gate still requires `npm run e2e`. If E2E cannot run, state why explicitly and treat the gate as incomplete. |
 | Docs/non-runtime-only changes | State what was checked. Run lint/test/build if the change could affect them. |
 
 - Stop on first failing required check; fix and rerun the full required gate.

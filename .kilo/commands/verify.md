@@ -14,7 +14,7 @@ Run the project's verification gate before claiming completion. Follow AGENTS.md
 
 2. **Run required checks (stop on first failure)**
    - For code/config/runtime changes: run `npm run lint`, `npm test -- --run`, and `npm run build`.
-   - For UI/view/flow/routing/URL/navigation/asset/base/serving changes: run all of the above plus `npm run e2e`. Deep-link/refresh/SPA-fallback and asset/base behavior on nested routes (e.g. `/spellbooks/:id`) must be covered by automated E2E tests—do not substitute manual checks. If `npm run e2e` cannot run (e.g. browsers not installed/environment unavailable), state why explicitly and treat the gate as incomplete.
+   - For UI/view/flow/routing/URL/navigation/asset/base/serving changes: run all of the above plus `npm run e2e` (preview/build gate; `playwright.config.ts`, port 4173). Deep-link/refresh/SPA-fallback and asset/base behavior on nested routes (e.g. `/spellbooks/:id`) must be covered by automated E2E tests—do not substitute manual checks. `npm run e2e:dev` is for TDD iteration only and does not satisfy this gate. If `npm run e2e` cannot run (e.g. browsers not installed/environment unavailable), state why explicitly and treat the gate as incomplete.
    - For docs/non-runtime-only changes: state what was checked; run lint/test/build if they could be affected.
 
 3. **Report**

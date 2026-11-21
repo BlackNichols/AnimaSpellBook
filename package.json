@@ -11,7 +11,9 @@
     "format": "prettier --write \"src/**/*.{ts,css,html}\"",
     "test": "vitest run",
     "test:watch": "vitest",
-    "e2e": "playwright test"
+    "e2e": "playwright test -c playwright.config.ts",
+    "e2e:preview": "playwright test -c playwright.config.ts",
+    "e2e:dev": "playwright test -c playwright.dev.config.ts"
   },
   "dependencies": {
     "alpinejs": "3.14.0"

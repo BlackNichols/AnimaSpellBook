@@ -13,7 +13,7 @@ export default defineConfig({
     command:
       'npm run build && GITHUB_PAGES=1 npm run preview -- --host 127.0.0.1 --port 4174',
     url: 'http://127.0.0.1:4174/AnimaSpellBook/',
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: process.env.PW_REUSE_SERVER === '1',
     timeout: 120_000,
   },
 });
