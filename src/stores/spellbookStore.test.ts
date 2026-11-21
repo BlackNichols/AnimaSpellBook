@@ -159,7 +159,7 @@ describe('SpellbookStore - add spells to section (Chunk 3)', () => {
   it('deleteSection with invalid move target returns false and does not mutate', () => {
     const store = new SpellbookStore();
     store.load();
-    const bookId = store.createSpellbook('Guard');
+    const bookId = store.createSpellbook();
     const defaultId = store.getSpellbook(bookId)!.sections[0]!.id;
     store.addSpellsToSection(bookId, defaultId, ['a']);
     const idB = store.createNamedSection(bookId, 'Beta', { placement: 'last' })!;

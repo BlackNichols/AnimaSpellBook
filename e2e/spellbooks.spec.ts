@@ -369,10 +369,15 @@ test('adding all filtered spells snapshots displayed results and is unaffected b
   await expect(rows.first()).toBeVisible();
   const displayedCount = await rows.count();
   expect(displayedCount).toBeGreaterThan(0);
+  const displayedNames = await page.evaluate(() => {
+    const w = window as unknown as { spellStore?: { filteredSpells: { name: string }[] } };
+    return w.spellStore?.filteredSpells.map((s) => s.name) ?? [];
+  });
 
   await page.getByTestId('add-all-filtered').click();
   await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
   await expect(page.locator('.spellbook-spell-item')).toHaveCount(displayedCount);
+  await expect(page.locator('.spellbook-spell-item .spellbook-spell-name')).toHaveText(displayedNames);
 
   // Change filters after add-all: spellbook contents must remain the snapshotted set.
   await page.getByRole('button', { name: 'Back to spell list' }).click();
@@ -385,4 +390,5 @@ test('adding all filtered spells snapshots displayed results and is unaffected b
   await page.getByRole('link', { name: 'Spellbook 1' }).click();
   await expect(page).toHaveURL(/\/spellbooks\/[^/]+$/);
   await expect(page.locator('.spellbook-spell-item')).toHaveCount(displayedCount);
+  await expect(page.locator('.spellbook-spell-item .spellbook-spell-name')).toHaveText(displayedNames);
 });
